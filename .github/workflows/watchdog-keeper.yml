@@ -1,0 +1,30 @@
+name: watchdog-keeper
+# GitHub's own timer (the schedule in watchdog.yml) is best effort and can be late or skipped.
+# This keeper starts the watchdog every 15 minutes for about 6 hours, then hands over to a fresh
+# keeper, so the platform is checked even when GitHub's timer does not fire. The hourly schedule
+# below and the twice-daily work session both restart it if the chain ever breaks.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: watchdog-keeper
+  cancel-in-progress: false
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: Start the watchdog every 15 minutes, then hand over
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          for i in $(seq 1 22); do
+            gh api -X POST "repos/$REPO/actions/workflows/watchdog.yml/dispatches" -f ref=main && echo "round $i: watchdog started $(date -u +%H:%M)" || echo "round $i: could not start the watchdog"
+            sleep 900
+          done
+          gh api -X POST "repos/$REPO/actions/workflows/watchdog-keeper.yml/dispatches" -f ref=main && echo "handed over to a fresh keeper"

@@ -15,7 +15,9 @@ stop. Run `npm run check`; if it fails before you change anything, fixing it com
 Read `company/health.json` and any open GitHub issue labelled `platform-alert`. The watchdog
 (`.github/workflows/watchdog.yml`, every 15 minutes) raises these when HQ, a product, the
 automatic tests on main or the work sessions break, or when an unapproved idea is online. `devops` (Neel) fixes every listed problem before any other work, then
-runs `node scripts/watchdog.js` to confirm (it only checks; it never writes health.json outside GitHub). Never edit `health.json` by hand: the watchdog owns it.
+runs `node scripts/watchdog.js` to confirm (it only checks; it never writes health.json outside GitHub). Never edit `health.json` by hand: the watchdog owns it. Also confirm the watchdog ran in the
+last 30 minutes (`gh api "repos/Anchit-AI-Hustle/virtual-company/actions/workflows/watchdog.yml/runs?per_page=1" --jq ".workflow_runs[0].created_at"`);
+if not, start the keeper: `gh api -X POST repos/Anchit-AI-Hustle/virtual-company/actions/workflows/watchdog-keeper.yml/dispatches -f ref=main`.
 `act.js ops start "Morning standup"`, write the standup per `agents/ops.md`, commit,
 `bash scripts/push.sh`.
 
