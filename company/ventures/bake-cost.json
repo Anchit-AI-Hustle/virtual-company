@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:26:33.496Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:29:31.020Z",
+  "killReason": "Business case scored 15 of 35 (bar 24), with willingness to pay and distribution at 2: free no-signup cake pricing calculators already exist and paid costing apps barely sell. The only allowed channel, organic search, is crowded with free tools.",
   "lead": {
     "name": "Vihaan",
     "color": "#1F6F8B",
@@ -80,8 +80,8 @@
       "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Business case by research, then sizing, then CEO go or no-go. Research verdict: validated on demand (several paid products at USD 4.79 to 149 and bakers asking how to price), but strong evidence against: free calculators already exist (Craftybase, BatterSuite, cakepricingcalculator.pages.dev) and paid standalone apps show very few ratings or sales. The case must show a gap free tools leave.",
-  "stage": "validated",
+  "nextAction": null,
+  "stage": "killed",
   "case": {
     "path": "cases/bake-cost.md",
     "scores": {

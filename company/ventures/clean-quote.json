@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:27:41.269Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:29:31.020Z",
+  "killReason": "Business case scored 16 of 35 (bar 24), with distribution at 2 and recurring revenue at 1: Jobber, Housecall Pro and ShiftFlow give free cleaning calculators and quote templates. There is no allowed channel to reach solo cleaners without ads, outreach or the owner Etsy identity.",
   "lead": {
     "name": "Aditi",
     "color": "#9C4A1A",
@@ -60,8 +60,8 @@
       "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Business case by research, sizing by sizing, then CEO go or no-go. Evidence for: paid quoting tools (QuotePro 19 USD/mo, QuoteIQ 29.99 USD/mo, ZenMaid 19 USD/mo, Launch27 75 USD/mo) and paid Etsy pricing calculators (SimplyPMA 940 shop sales). Evidence against: Jobber, Housecall Pro, Connecteam and ShiftFlow give free cleaning calculators and estimate templates, Jobber free for 5 quotes a month. Demand is real but mostly US, and the free gap is narrow.",
-  "stage": "validated",
+  "nextAction": null,
+  "stage": "killed",
   "evidenceAgainst": [
     {
       "claim": "Jobber offers a free house cleaning cost calculator (visit type, square feet, bedrooms, bathrooms, add-ons) that outputs a price range.",

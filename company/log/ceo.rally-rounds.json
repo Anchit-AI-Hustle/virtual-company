@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T14:29:23.705Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go. Case scores 14 of 35 against a bar of 24, with willingnessToPay 2, distribution 2 and competitionGap 1. Spot-checked: Reclub is free with round robins and live scoring for up to 8 courts and 24 players, and Pickleheads gives 2 free round robins a month and sells extras at 5 USD. Search intent leans free and printable. No sourced pivot exists.",
+    "ventureId": "rally-rounds",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:29:35.588Z",
+    "agent": "ceo",
+    "action": "No-go on rally-rounds: case 14 of 35, free browser round robins with live scores already exist. Killed.",
+    "ventureId": "rally-rounds",
+    "kind": "done"
+  }
+]

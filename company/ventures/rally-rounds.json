@@ -1,6 +1,6 @@
 {
   "priceINR": null,
-  "stage": "validated",
+  "stage": "killed",
   "evidence": [
     {
       "claim": "Dink! Pickleball Round Robins sells Premium Annual for $24.99 and Premium Permanent access for $39.99 as in-app purchases, with 17 ratings averaging 4.6.",
@@ -37,8 +37,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T14:25:59.467Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:29:31.020Z",
+  "killReason": "Business case scored 14 of 35 (bar 24), with willingness to pay and distribution at 2 and competition gap at 1: Reclub and others already give free browser round robins with live scores. Search intent leans free, and the paying money sits with networked brands like Pickleheads.",
   "id": "rally-rounds",
   "title": "Rally Rounds",
   "oneLiner": "Pickleball round robin schedules and live scores for club organisers, no app install",
@@ -51,7 +51,7 @@
     "distribution": 2,
     "total": 13
   },
-  "nextAction": "Business case by research, then sizing, then CEO go or no-go. Against: Reclub is free with live scores, Pickleheads gives 2 free round robins a month and has 9.2k reviews; the paid gap is narrow (no install, no account, cheaper than $5 per extra event).",
+  "nextAction": null,
   "lead": {
     "name": "Reyansh",
     "color": "#2F6B3A",
