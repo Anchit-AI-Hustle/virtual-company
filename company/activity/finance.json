@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No revenue, no costs. FX unchanged at 94.2754 INR per USD from 2026-11-14 (Xflow)",
+  "state": "done",
+  "task": "Ledger: Rs 0 revenue, Rs 0 costs. FX 94.2754 INR per USD already recorded today with source",
   "ventureId": null,
-  "since": "2026-11-14T07:06:57.791Z"
+  "since": "2026-11-14T14:13:07.061Z"
 }

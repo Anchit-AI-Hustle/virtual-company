@@ -12,5 +12,12 @@
     "action": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:13:03.261Z",
+    "agent": "devops",
+    "action": "No live products to check; HQ 200, watchdog all checks passed",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

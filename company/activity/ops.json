@@ -1,6 +1,6 @@
 {
   "state": "done",
-  "task": "Moved Seatwise back to spec after the product review failed it; lead Ira fixes the spec next cycle",
+  "task": "Standup: health ok, watchdog ran 13:59 UTC, CI green, 34 tests pass, no platform alerts, no reject comments on decided issues. 0 ventures in pods, 3 open ideas, Seatwise and Paychase killed last cycle. CEO to refill ideas and staff pods.",
   "ventureId": "seatwise",
-  "since": "2026-11-14T07:29:22.439Z"
+  "since": "2026-11-14T14:13:03.211Z"
 }

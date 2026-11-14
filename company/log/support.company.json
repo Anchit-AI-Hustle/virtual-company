@@ -12,5 +12,12 @@
     "action": "No live product and no contact channel yet, so no customer messages to answer",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:13:07.138Z",
+    "agent": "support",
+    "action": "No live ventures, no messages",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
