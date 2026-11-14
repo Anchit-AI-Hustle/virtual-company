@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:17:00.956Z",
+  "updatedAt": "2026-11-14T14:27:41.269Z",
   "killReason": null,
   "lead": {
     "name": "Aditi",
@@ -83,5 +83,19 @@
       "url": "https://www.shiftflow.app/free-tools/free-house-cleaning-cost-calculator",
       "foundAt": "2026-11-14"
     }
-  ]
+  ],
+  "case": {
+    "path": "cases/clean-quote.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 1
+    },
+    "total": 16,
+    "recommendation": "no-go"
+  }
 }
