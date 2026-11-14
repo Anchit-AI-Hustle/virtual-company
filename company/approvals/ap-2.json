@@ -5,11 +5,32 @@
   "ask": "Open a payment rail (Razorpay or owner choice) the company can use for product payment pages",
   "why": "No product the company builds can earn money until there is a way to get paid. The agents cannot open a payment account for you.",
   "costINR": 0,
-  "ifNo": "Every product stays free and the company earns nothing.",
-  "status": "pending",
+  "status": "decided",
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2",
   "createdAt": "2026-11-14T06:50:27.227Z",
-  "title": "Set up a way to take payments",
-  "youDo": "Open a Razorpay account (or any payment provider you prefer) in your name. The agents will ask for a payment link per product when one is ready to sell.",
-  "urgent": false
+  "title": "Decide how to take payments once a product is ready",
+  "options": [
+    {
+      "option": "Do nothing for now and decide again when a product clears its business case and sizing",
+      "realism": 5,
+      "profitINR12m": 0,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Both ideas assessed so far were stopped (Seatwise case 11 of 35, PayChase sizing Rs 14,723 expected a year), so there is nothing to sell and a payment account would earn Rs 0 now."
+    },
+    {
+      "option": "Ask the owner to open a Razorpay account now",
+      "realism": 1,
+      "profitINR12m": 0,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Razorpay needs the owner's own identity and bank details (KYC), which agents cannot provide, and nothing is ready to sell."
+    }
+  ],
+  "decision": {
+    "choice": "Do nothing for now and decide again when a product clears its business case and sizing",
+    "reason": "There is nothing to sell yet, so a payment account adds no profit today. When a product passes its business case, sizing and QA, the desk decides again; if the best option then needs the owner's identity it will ask him with plain steps.",
+    "decidedAt": "2026-11-14T10:45:00.000Z",
+    "decidedBy": "ceo"
+  }
 }

@@ -440,3 +440,25 @@ test('watchdog: spots each kind of outage and stays quiet when healthy', () => {
   assert.strictEqual(nextHealth(down, { problems: [{ id: 'hq-down', text: 'x' }], redeploy: false }, 'T2'), null);
   for (const p of assess(Object.assign({}, ok, { hq: { status: 0 }, lastWorkAt: '2026-11-13T00:00:00Z' })).problems) assert.ok(!p.text.includes(dash), 'no dashes');
 });
+
+test('decision desk: decisions need scored options and the best realistic choice', () => {
+  const opt = (option, realism, profit, cost = 0) => ({ option, realism, profitINR12m: profit, costINR: cost, reversible: true, basis: 'https://example.com/b' });
+  const dec = (options, choice, extra = {}) => Object.assign({ id: 'ap-company-9', type: 'account', ask: 'x', title: 'Pick a thing', status: 'decided', options, decision: { choice, reason: 'best', decidedAt: '2026-11-14T10:00:00Z', decidedBy: 'ceo' } }, extra);
+  const ceoLog = { 'ceo.company.json': [{ at: '2026-11-14T10:00:00Z', agent: 'ceo', action: 'Decided: Pick a thing: A', kind: 'done' }] };
+  const run = (a, logs = ceoLog) => rules(fixture({ approvals: [a], logs }));
+  assert.ok(!run(dec([opt('A', 5, 1000), opt('Do nothing', 5, 0)], 'A')).includes('decision'), 'a good decision passes');
+  assert.ok(run(dec([opt('A', 5, 1000)], 'A')).includes('decision'), 'one option is not an analysis');
+  assert.ok(run(dec([opt('A', 5, 100), opt('B', 4, 900)], 'A')).includes('decision'), 'a realistic, more profitable option must win');
+  assert.ok(run(dec([opt('A', 2, 9000), opt('B', 5, 0)], 'A')).includes('decision'), 'an unrealistic option cannot be chosen');
+  assert.ok(run(dec([opt('Paid', 4, 9000, 500), opt('B', 5, 0)], 'B')).includes('decision'), 'over the spending cap must score realism 1');
+  assert.ok(!run(dec([opt('Paid', 1, 9000, 500), opt('B', 5, 0)], 'B')).includes('decision'), 'paid option correctly scored 1 is fine');
+  assert.ok(run(dec([opt('A', 5, 1000), opt('B', 5, 0)], 'A'), {}).includes('decision'), 'the CEO must log it');
+});
+
+test('QA check removes only Cloudflare\'s injected scripts', () => {
+  const { stripHostingScripts } = require('../scripts/qa-check.js');
+  const own = '<script src="/app.js"></script><script>console.error("mine")</script>';
+  const cf = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v1" integrity="x"></script><script>(function(){function c(){var b=a.contentDocument;window.__CF$cv$params={r:\'1\'};}})();</script>';
+  assert.strictEqual(stripHostingScripts(own + cf), own);
+  assert.strictEqual(stripHostingScripts(own), own);
+});

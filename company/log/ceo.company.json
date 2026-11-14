@@ -25,5 +25,19 @@
     "action": "No owner decision on issues 1 to 4 yet. Kill rules: nothing in validating or live. Priority this run: Seatwise is closest to revenue but blocked on owner; spend the run on Growth prep and validating Rally Rounds",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T10:37:13.075Z",
+    "agent": "ceo",
+    "action": "Decided: Cloudflare scripts: QA removes them before checking, no owner step needed",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T10:37:13.107Z",
+    "agent": "ceo",
+    "action": "Decided: payments: not now, decide again when a product clears its case and sizing",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

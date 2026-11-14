@@ -61,6 +61,7 @@ function buildHq(dir) {
       fx: rate ? { usdInr: rate, asOf: config.fx.asOf, source: config.fx.source } : null,
       monthlyCapINR: config.budget.monthlyCapINR
     },
+    decisions: approvals.filter((a) => a.status === 'decided' || a.status === 'overturned').map((a) => ({ id: a.id, title: a.title, status: a.status, why: a.why, options: a.options, decision: a.decision, issueUrl: a.issueUrl })).sort((a, b) => ((b.decision || {}).decidedAt || '').localeCompare((a.decision || {}).decidedAt || '')),
     approvals: approvals.filter((a) => a.status === 'pending').sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || '')),
     ventures: sorted.map((v) => ({
       id: v.id, title: v.title, oneLiner: v.oneLiner, customer: v.customer, revenueModel: v.revenueModel,

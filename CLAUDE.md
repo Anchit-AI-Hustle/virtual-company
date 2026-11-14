@@ -55,28 +55,34 @@ A venture moves one stage at a time, and only when the gate for that stage is me
 | spec        | Research wrote a business case (`cases/<id>.md`) that clears `config.businessCase`; the sizing agent counted users by cohort, likelihood and 12 month earnings (`cases/<id>.sizing.json`) and it clears `config.sizing`; the CEO gave a go decision; a spec file with acceptance tests exists |
 | building    | The spec passed the product review. At most `wip.pods` ventures are worked at once |
 | qa          | The lead says every acceptance test passes locally |
-| live        | Independent QA passed it at 390, 820 and 1440 px with zero console errors; product, engineering, design, security and legal reviews passed; it is served at `https://<id>.anchit-tandon.com` |
+| live        | Independent QA passed it at 390, 820 and 1440 px with zero console errors from the product (`scripts/qa-check.js`); product, engineering, design, security and legal reviews passed; it is served at `https://<id>.anchit-tandon.com` |
 | scaling     | It met the survival numbers in `config.json` inside the live test window |
 | killed      | A written reason. Killing is a good outcome, not a failure |
 
-## Things only the owner can approve
+## Decisions: the company decides for itself
 
-Agents never do these on their own. They file an approval (see `agents/ceo.md`) and carry on
-with other work:
+The owner wants the company to choose the best option on every decision itself, after
+analysing how realistic and how profitable each option is. Nothing waits on him to decide.
+The CEO runs the decision desk in `agents/ceo.md` with Finance and Legal: list at least two
+options (one is always "do nothing for now"), score each for realism, 12 month profit,
+cost and reversibility with sources, pick the one with the best realistic expected profit,
+record it in `company/approvals/<id>.json` as `decided`, and tell the owner on HQ and in the
+digest. He can overturn any decision by commenting `reject` on its issue.
 
-- Spending any money, or signing up for anything paid. The budget is zero until approved.
-- Posting publicly as the owner or the company on any social or community platform.
-- Contacting people who did not contact us first (cold email, DMs, calls).
-- Creating, changing or closing accounts or payment rails, changing DNS records, or buying
-  domains. Creating a Vercel project in team `anchit-ai-hustle` and adding a
-  `<id>.anchit-tandon.com` subdomain to it is routine engineering and needs no approval: the
-  wildcard DNS already routes every subdomain to Vercel.
-- Setting or changing a price that real customers will be charged.
-- Deleting data, repos, projects or deployments.
-- Anything with legal weight: terms, refunds, claims about results, regulated categories.
+The analysis must respect these limits. An option that breaks one scores realism 1 and is not
+chosen, so the desk looks for another way:
 
-Publishing a product page on a subdomain of anchit-tandon.com is allowed without approval,
-once it passes QA. That is the company doing its job.
+- Spending: at most `autoDecide.monthlySpendCapINR` a month (now Rs 0). Paid options lose.
+- No posting as the owner, no messages to people who did not contact us first, no fake
+  reviews or claims: these break platform rules and the law, so they never win.
+- Nothing that needs the owner's identity or logins (KYC, his accounts, DNS, contracts in his
+  name). When the best option truly needs his hands, file it as `pending` with plain steps,
+  and keep working on everything else.
+- No deleting data, repos, projects or deployments; no regulated categories or legal promises.
+- Creating a Vercel project in team `anchit-ai-hustle` and adding a `<id>.anchit-tandon.com`
+  subdomain is routine engineering: the wildcard DNS already routes every subdomain to Vercel.
+
+Publishing a product page on a subdomain of anchit-tandon.com is allowed once it passes QA.
 
 ## Honesty rules
 

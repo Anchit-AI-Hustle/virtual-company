@@ -258,5 +258,15 @@
     "minExpectedINR12m": 300000,
     "minLikelihoodPct": 15,
     "maxLikelihoodPctWithoutComparables": 40
+  },
+  "autoDecide": {
+    "enabled": true,
+    "monthlySpendCapINR": 0,
+    "minOptions": 2,
+    "scoreKeys": [
+      "realism",
+      "profit",
+      "reversibility"
+    ]
   }
 }

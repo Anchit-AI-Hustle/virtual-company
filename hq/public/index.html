@@ -41,6 +41,10 @@
   .ask .when { display: inline-block; margin: 0 0 8px; padding: 2px 10px; border-radius: 999px; font-size: 0.8125rem; font-weight: 600; }
   .ask .when.now { background: #FBE3D6; color: #8A3300; }
   .ask .when.later { background: #E7EEF7; color: #24456E; }
+  .asksh { margin: 18px 0 8px; font-size: 1.0625rem; }
+  .ask.done { border-left-color: #0B7A5E; background: #F1F7F3; }
+  .ask .chosen { font-weight: 700; margin: 4px 0; }
+  table.cohorts tr.pick td { font-weight: 700; background: #E6F4EE; }
   .ask .step2 { margin: 12px 0 6px; font-weight: 700; }
   .ask .howto { margin: 10px 0 0; padding-left: 20px; font-size: 0.9375rem; line-height: 1.5; background: #F6F4EE; border-radius: 10px; padding: 10px 12px 10px 30px; }
   .status span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -295,8 +299,8 @@
     </section>
 
     <section class="view" id="view-decisions" hidden aria-labelledby="h-dec"><div class="panel">
-      <h2 id="h-dec">Decisions for you</h2>
-      <p class="sub">The agents only stop for these: money, prices, public posts and account changes. Everything else runs on its own.</p>
+      <h2 id="h-dec">Decisions</h2>
+      <p class="sub">The agents decide everything themselves, after checking how realistic and profitable each option is. You can see every choice below and overturn any of it.</p>
       <div id="asks"></div>
     </div></section>
 
@@ -324,7 +328,7 @@
       <h2 id="h-help">How it works</h2>
       <ol class="how">
         <li><p><b>Agents run the company twice a day</b><span id="howWhen">A CEO agent picks ideas, and a team of agents checks demand, builds and tests them.</span></p></li>
-        <li><p><b>You only make the big calls</b><span>Money, prices, public posts and account changes wait for your yes in Decisions. Everything else is automatic.</span></p></li>
+        <li><p><b>The agents decide, you can overrule</b><span>Every decision is made by the agents after scoring how realistic and profitable each option is. See them in Decisions and overturn any you disagree with.</span></p></li>
         <li><p><b>Finished products go live</b><span>Each gets its own address on anchit-tandon.com once every check passes.</span></p></li>
       </ol>
       <p class="sub">In the office, each person is one AI agent doing exactly what it last reported. Typing means working, a raised hand with a red flag means stuck, a tick means just finished, and coffee means nothing to do. New work plays out live, and Replay today acts out the last 24 hours. To pause the whole company, add a file named PAUSE to its repository.</p>
@@ -484,10 +488,40 @@
   function copyWord(w) { try { navigator.clipboard.writeText(w); } catch (e) { /* not allowed: the steps say to type it */ } }
   function renderAsks(d) {
     var box = $('asks'); box.textContent = '';
-    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. When the agents need a yes on money, prices, public posts or accounts, it shows up here and in the reception board in the office.')); return; }
     var nx = nextSession(d);
+    box.appendChild(el('h3', 'asksh', 'Needs you'));
+    if (!d.approvals.length) box.appendChild(el('p', 'empty', 'Nothing needs you. The agents decide everything themselves after checking how realistic and profitable each option is. Something only lands here when it truly needs your own login or ID.'));
+    else renderPending(d, box, nx);
+    renderDecided(d, box);
+  }
+  function renderDecided(d, box) {
+    var list = d.decisions || [];
+    box.appendChild(el('h3', 'asksh', 'Decided for you'));
+    if (!list.length) { box.appendChild(el('p', 'empty', 'No decisions yet.')); return; }
+    var ul = el('ul', 'asks');
+    list.forEach(function (a) {
+      var li = el('li', 'ask done' + (a.status === 'overturned' ? ' over' : ''));
+      li.appendChild(el('h3', null, a.title));
+      li.appendChild(el('p', 'when ' + (a.status === 'overturned' ? 'now' : 'later'), a.status === 'overturned' ? 'You overturned this' : 'Decided ' + when(a.decision.decidedAt)));
+      li.appendChild(el('p', 'chosen', 'Chosen: ' + a.decision.choice + '.'));
+      li.appendChild(el('p', null, a.decision.reason));
+      var tb = el('table', 'cohorts'), hr = el('tr');
+      ['Option', 'Doable', 'Profit a year'].forEach(function (h) { hr.appendChild(el('th', null, h)); }); tb.appendChild(hr);
+      (a.options || []).slice().sort(function (x, y) { return y.realism - x.realism; }).forEach(function (o) {
+        var r = el('tr', o.option === a.decision.choice ? 'pick' : '');
+        r.appendChild(el('td', null, o.option)); r.appendChild(el('td', null, o.realism + ' of 5'));
+        r.appendChild(el('td', null, o.profitINR12m === null ? 'Not known yet' : inr(o.profitINR12m))); tb.appendChild(r);
+      });
+      li.appendChild(tb);
+      var u = safeUrl(a.issueUrl);
+      if (u && a.status !== 'overturned') { var p = el('p', 'help'); p.appendChild(document.createTextNode('Disagree? ')); var l = el('a', null, 'Open it and comment reject'); l.href = u + '#new_comment_field'; l.rel = 'noopener'; l.target = '_blank'; p.appendChild(l); p.appendChild(document.createTextNode(' and the agents decide again without that option.')); li.appendChild(p); }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+  function renderPending(d, box, nx) {
     var list = d.approvals.slice().sort(function (a, b) { return (b.urgent ? 1 : 0) - (a.urgent ? 1 : 0); });
-    box.appendChild(el('p', 'asksintro', plural(list.length, 'decision is', 'decisions are') + ' waiting for you. For each one: do the step it asks, then tell the agents yes or no. Your answer is read in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.'));
+    box.appendChild(el('p', 'asksintro', plural(list.length, 'task needs', 'tasks need') + ' your own login or ID. For each one: do the step it asks, then tell the agents yes or no. Your answer is read in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.'));
     var ul = el('ul', 'asks');
     list.forEach(function (a, i) {
       var li = el('li', 'ask');
@@ -581,7 +615,7 @@
       row.appendChild(dd); dl.appendChild(row);
     });
     var note = m.fx ? 'USD at ' + m.fx.usdInr + ' rupees to the dollar, recorded ' + m.fx.asOf + '.' : 'USD appears once the Finance agent records the exchange rate for the day.';
-    note += m.monthlyCapINR > 0 ? ' Approved spending: up to ' + inr(m.monthlyCapINR) + ' a month.' : ' The company spends nothing until you approve it.';
+    note += m.monthlyCapINR > 0 ? ' Approved spending: up to ' + inr(m.monthlyCapINR) + ' a month.' : ' The spending limit is Rs 0, so the agents only choose free options.';
     $('moneyNote').textContent = note;
   }
 

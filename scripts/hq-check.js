@@ -128,10 +128,10 @@ function serve() {
     // Every section opens from the navigation and never scrolls the page.
     for (const v of ['decisions', 'pipeline', 'activity', 'money']) {
       await page.locator(`.nav button[data-view="${v}"]`).click();
-      const vf = await page.evaluate((v) => ({ shown: !document.getElementById('view-' + v).hidden, scroll: document.documentElement.scrollHeight - window.innerHeight, asks: document.querySelectorAll('.ask').length, stations: document.querySelectorAll('.station').length, feed: document.querySelectorAll('#feed li').length }), v);
+      const vf = await page.evaluate((v) => ({ shown: !document.getElementById('view-' + v).hidden, scroll: document.documentElement.scrollHeight - window.innerHeight, asks: document.querySelectorAll('.ask:not(.done)').length, done: document.querySelectorAll('.ask.done').length, stations: document.querySelectorAll('.station').length, feed: document.querySelectorAll('#feed li').length }), v);
       if (!vf.shown) problems.push(v + ' did not open');
       if (vf.scroll > 1) problems.push(v + ' makes the page scroll');
-      if (v === 'decisions' && vf.asks !== want.approvals.length) problems.push(`decisions shows ${vf.asks} of ${want.approvals.length}`);
+      if (v === 'decisions' && (vf.asks !== want.approvals.length || vf.done !== (want.decisions || []).length)) problems.push(`decisions shows ${vf.asks} of ${want.approvals.length} waiting and ${vf.done} of ${(want.decisions || []).length} decided`);
       if (v === 'pipeline' && vf.stations !== 9) problems.push('pipeline shows ' + vf.stations + ' stages');
       if (v === 'activity' && !vf.feed) problems.push('activity is empty');
       await page.screenshot({ path: path.join(shots, `${tag}-${v}.png`) });

@@ -159,7 +159,28 @@ function validate(dir) {
     if (!a.id || approvalIds.has(a.id)) err('approval', `${tag}: missing or duplicate id`);
     approvalIds.set(a.id, a);
     if (!config.approvalTypes.includes(a.type)) err('approval', `${tag}: unknown type ${a.type}`);
-    if (!['pending', 'approved', 'rejected', 'withdrawn'].includes(a.status)) err('approval', `${tag}: unknown status`);
+    if (!['pending', 'approved', 'rejected', 'withdrawn', 'decided', 'overturned'].includes(a.status)) err('approval', `${tag}: unknown status`);
+    if (a.status === 'decided' || a.status === 'overturned') {
+      const ad = config.autoDecide || { minOptions: 2 };
+      const opts = Array.isArray(a.options) ? a.options : [];
+      if (opts.length < ad.minOptions) err('decision', `${tag}: needs at least ${ad.minOptions} options analysed`);
+      for (const o of opts) {
+        if (!o.option || !(o.realism >= 1 && o.realism <= 5) || !(o.profitINR12m === null || Number.isFinite(o.profitINR12m)) || !Number.isFinite(o.costINR) || typeof o.reversible !== 'boolean' || !o.basis) err('decision', `${tag}: option "${o.option || '?'}" needs realism 1 to 5, profitINR12m (or null), costINR, reversible and basis`);
+        if (Number.isFinite(o.costINR) && o.costINR > (ad.monthlySpendCapINR || 0) && o.realism > 1) err('decision', `${tag}: option "${o.option}" costs more than the spending cap, so its realism must be 1`);
+      }
+      const d = a.decision || {};
+      const chosen = opts.find((o) => o.option === d.choice);
+      if (!chosen) err('decision', `${tag}: the choice must be one of the options`);
+      else {
+        if (chosen.realism < 3) err('decision', `${tag}: the chosen option is not realistic enough (realism under 3)`);
+        const val = (o) => (o.profitINR12m === null ? 0 : o.profitINR12m) - o.costINR;
+        const better = opts.filter((o) => o.realism >= 3 && val(o) > val(chosen));
+        if (better.length) err('decision', `${tag}: "${better[0].option}" is realistic and more profitable than the choice`);
+      }
+      if (d.decidedBy !== 'ceo' || !d.decidedAt || !(d.reason || '').trim()) err('decision', `${tag}: a decision needs decidedBy ceo, decidedAt and a reason`);
+      if (!log.some((e) => e.agent === 'ceo' && e.kind === 'done' && /^Decided/.test(e.action || ''))) err('decision', `${tag}: the CEO must log the decision`);
+      if (a.status === 'overturned' && !a.overturnedAt) err('decision', `${tag}: an overturned decision needs overturnedAt`);
+    }
     if (a.status === 'withdrawn' && !(a.withdrawnReason || '').trim()) err('approval', `${tag}: a withdrawn decision needs a reason`);
     if (typeof a.ask !== 'string' || !a.ask.trim()) err('approval', `${tag}: missing ask`);
     if (a.status === 'pending') for (const f of ['title', 'why', 'youDo']) if (typeof a[f] !== 'string' || !a[f].trim()) err('approval', `${tag}: a pending decision needs a plain ${f} for the owner`);

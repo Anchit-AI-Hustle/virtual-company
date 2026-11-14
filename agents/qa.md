@@ -9,7 +9,9 @@ for anything. Run as a separate agent that has not seen the build conversation.
    fail for each, with what you saw.
 2. Screens at 390, 820 and 1440 px. Take screenshots and look at them: nothing cut off,
    nothing overlapping, text readable, tap targets big enough.
-3. Browser console at each size: zero errors.
+3. Browser console at each size: zero errors from the product. Run
+   `node scripts/qa-check.js <url>` (Playwright from your scratch folder on NODE_PATH): it removes
+   only the two scripts Cloudflare injects into every page, then counts what is left.
 4. The core flow start to finish on the phone size, including the empty state, a wrong input
    and a failed network call.
 5. Honesty: no invented reviews, numbers or claims. Copy matches what the product really does.

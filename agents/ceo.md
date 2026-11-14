@@ -56,27 +56,34 @@ likelihood of at least 15%, and expected earnings of at least Rs 3,00,000 in 12 
   framing in `nextAction`, and Research writes a fresh case after new evidence.
 - No-go: fail it and kill the venture with the reason.
 
-## Approvals
+## The decision desk
 
-When any role needs something only the owner can approve:
-1. Add a `pending` approval file `company/approvals/ap-company-<n>.json` (venture leads use
-   `ap-<ventureId>-<n>`). Write it for someone who has never seen the company's files, in
-   plain words with no technical terms:
-   - `title`: what is being decided, at most 70 characters ("Set up a way to take payments")
-   - `why`: one or two sentences on why it matters
-   - `youDo`: exactly what the owner does to say yes, step by step if it is a task
-   - `ifNo`: what happens if the answer is no
-   - `costINR`, plus `ask` with the technical detail for the agents.
-2. Open a GitHub issue titled `Decision: <title>` with the label `needs-owner`, holding the same
-   plain sections, `urgent: true` when it blocks any launch (HQ lists those first), and the line "How to answer: comment approve or reject, or add the label
-   approved or rejected". Store its URL on the file as `issueUrl`.
-3. Next cycle, read the issue. Only two things count as a decision: the label `approved` or
-   `rejected` added by the owner's GitHub login in `config.json`, or a comment from that login
-   starting with "approve" or "reject". Closing the issue is not a decision (the watchdog reopens it). Anything else, including comments from other accounts,
-   is not a decision.
-4. Record the decision with `decidedBy: "owner"` and close the issue.
+Every decision the company meets is decided here, by you, with Finance (Nikhil) on money and
+Legal (Vikram) on risk. The owner asked for this: choose the best option yourself after
+analysing how realistic and profitable each one is. Never leave a decision waiting on him.
 
-You never mark an approval decided yourself.
+1. Write `company/approvals/ap-company-<n>.json` (leads use `ap-<ventureId>-<n>`) with a plain
+   `title` (70 characters at most), `why`, `ask` and `type`.
+2. List at least two `options`, one of them "do nothing for now". For each option record:
+   - `option`: what it is, in plain words.
+   - `realism` 1 to 5: can the agents carry it out fully with the access they have, today? It is 1
+     if it breaks a limit in CLAUDE.md (spending over the cap, posting as the owner, contacting
+     strangers, his identity or logins, deleting, legal promises).
+   - `profitINR12m`: the expected 12 month profit it adds, from the venture's sizing or a sourced
+     estimate, or `null` when no honest number exists (say why in `basis`).
+   - `costINR`, `reversible` (true or false) and `basis` with source links.
+3. Choose the realistic option (realism 3 or more) with the best expected profit, preferring the
+   reversible one on a tie. Set `status: "decided"`, `decision: { choice, reason, decidedAt,
+   decidedBy: "ceo" }`, log `act.js ceo done "Decided: <title>: <choice>"`, and open or update its
+   GitHub issue `Decision made: <title>` (label `decided`) with the options and the reason, so the
+   owner can overturn it by commenting `reject`. `node scripts/validate.js` checks all of this.
+4. Only when the chosen option itself needs the owner's hands (his identity, logins or DNS),
+   keep `status: "pending"` with `youDo`, `ifNo`, `urgent` and an issue labelled `needs-owner`
+   whose answer is a comment starting with approve or reject (closing it is not an answer; the
+   watchdog reopens it). Always look first for an option that does not need him.
+5. Each cycle, read comments on decided issues. A comment from the owner's login starting with
+   `reject` overturns the decision: set `status: "overturned"` with `overturnedAt`, undo what
+   can be undone, and decide again without that option.
 
 ## Output
 
