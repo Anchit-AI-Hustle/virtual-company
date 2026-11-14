@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-14T06:50:01.975Z",
+    "agent": "product",
+    "action": "Seatwise spec written: paste, tables, tap to seat, auto-seat, print, CSV, all in the browser",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:27.282Z",
+    "agent": "product",
+    "action": "Seatwise moved validated to spec",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:29:01.927Z",
+    "agent": "product",
+    "action": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

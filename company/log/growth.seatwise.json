@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T07:05:04.171Z",
+    "agent": "growth",
+    "action": "Started: Seatwise search basics and launch drafts",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T07:05:27.656Z",
+    "agent": "growth",
+    "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

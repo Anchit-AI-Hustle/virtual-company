@@ -1,0 +1,25 @@
+{
+  "priceINR": null,
+  "stage": "idea",
+  "evidence": [],
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T06:49:00.906Z",
+  "updatedAt": "2026-11-14T06:49:00.906Z",
+  "killReason": null,
+  "id": "rota-sheet",
+  "title": "Rota Sheet",
+  "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
+  "customer": "Owners of small shops and cafes with under 10 staff",
+  "revenueModel": "Paid printable rota pack",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 2,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 11
+  },
+  "nextAction": "Research. Against: free rota tools from Findmyshift and BrightHR already exist (https://www.findmyshift.co.uk/free-staff-rota-software)",
+  "lead": null
+}

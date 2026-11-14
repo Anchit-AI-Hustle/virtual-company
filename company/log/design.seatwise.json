@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-11-14T06:50:02.010Z",
+    "agent": "design",
+    "action": "Design section added to Seatwise spec: rose and paper tokens, plan screen first",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:52:46.499Z",
+    "agent": "design",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:56:34.690Z",
+    "agent": "design",
+    "action": "Blocked: Seatwise design review failed: header Pro link is 41.6 px wide, below the 44 px minimum. Back to engineer",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T06:59:27.074Z",
+    "agent": "design",
+    "action": "Seatwise design re-review passed: all tap targets at least 44 px",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-14T06:50:02.083Z",
+    "agent": "sales",
+    "action": "Started: Filing Seatwise price and payment rail approvals",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:50:27.252Z",
+    "agent": "sales",
+    "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:05:04.139Z",
+    "agent": "sales",
+    "action": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

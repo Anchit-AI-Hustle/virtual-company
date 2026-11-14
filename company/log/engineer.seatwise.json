@@ -1,0 +1,37 @@
+[
+  {
+    "at": "2026-11-14T06:50:35.281Z",
+    "agent": "engineer",
+    "action": "Started: Building Seatwise in plain HTML, CSS and JS",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:52:44.376Z",
+    "agent": "engineer",
+    "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:56:34.827Z",
+    "agent": "engineer",
+    "action": "Started: Fixing Seatwise review defects",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:59:27.041Z",
+    "agent": "engineer",
+    "action": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.326Z",
+    "agent": "engineer",
+    "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

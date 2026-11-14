@@ -1,0 +1,12 @@
+{
+  "id": "ap-4",
+  "ventureId": "seatwise",
+  "type": "account",
+  "ask": "Set Cloudflare records for seatwise, hq and the wildcard to DNS only, or turn off Web Analytics auto setup and bot JavaScript detections",
+  "why": "Cloudflare injects an analytics beacon and a bot script into every page; the CSP blocks them, giving 3 console errors per page, so live QA fails. Proxying also breaks the constitution",
+  "costINR": 0,
+  "ifNo": "Seatwise and every future product stay out of live",
+  "status": "pending",
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4",
+  "createdAt": "2026-11-14T07:03:31.954Z"
+}

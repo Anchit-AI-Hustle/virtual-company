@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-14T06:48:35.634Z",
+    "agent": "finance",
+    "action": "Started: Record USD to INR rate",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:48:35.693Z",
+    "agent": "finance",
+    "action": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:05:04.039Z",
+    "agent": "finance",
+    "action": "No revenue, no costs. FX unchanged at 94.2754 INR per USD from 2026-11-14 (Xflow)",
+    "ventureId": null,
+    "kind": "done"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "priceINR": null,
+  "stage": "idea",
+  "evidence": [],
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T06:49:00.906Z",
+  "updatedAt": "2026-11-14T06:49:00.906Z",
+  "killReason": null,
+  "id": "shaadi-budget",
+  "title": "Shaadi Budget",
+  "oneLiner": "Indian wedding budget planner by function and vendor, works offline",
+  "customer": "Indian families planning a wedding",
+  "revenueModel": "One-time paid planner",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 3,
+    "buildEffort": 5,
+    "distribution": 3,
+    "total": 13
+  },
+  "nextAction": "Research: evidence of paid Indian wedding budget planners. Overlaps Seatwise audience, could be a Seatwise add-on",
+  "lead": null
+}

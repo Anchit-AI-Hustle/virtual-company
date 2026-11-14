@@ -4,5 +4,26 @@
     "agent": "ceo",
     "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas.",
     "ventureId": null
+  },
+  {
+    "at": "2026-11-14T06:49:00.839Z",
+    "agent": "ceo",
+    "action": "Started: Pipeline empty: asking Research for live evidence and generating 5 scored ideas",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T07:04:58.225Z",
+    "agent": "ceo",
+    "action": "Started: Reading owner decisions on approval issues 1 to 4",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T07:04:58.267Z",
+    "agent": "ceo",
+    "action": "No owner decision on issues 1 to 4 yet. Kill rules: nothing in validating or live. Priority this run: Seatwise is closest to revenue but blocked on owner; spend the run on Growth prep and validating Rally Rounds",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

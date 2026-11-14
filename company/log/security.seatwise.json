@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T06:52:46.531Z",
+    "agent": "security",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:56:34.758Z",
+    "agent": "security",
+    "action": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

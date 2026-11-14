@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-14T06:42:03.614Z",
+    "agent": "security",
+    "action": "Started: Secret scan of tracked files",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:48:35.527Z",
+    "agent": "security",
+    "action": "Secret scan: no keys, tokens or passwords in tracked files",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:05:04.008Z",
+    "agent": "security",
+    "action": "Secret scan clean: no keys, tokens or passwords in tracked files",
+    "ventureId": null,
+    "kind": "done"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-11-14T06:52:46.559Z",
+    "agent": "legal",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:56:34.796Z",
+    "agent": "legal",
+    "action": "Seatwise legal review passed. Terms of sale and refund policy needed before Pro is sold, filing legal approval",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:27.141Z",
+    "agent": "legal",
+    "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.365Z",
+    "agent": "legal",
+    "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "at": "2026-11-14T06:52:46.466Z",
+    "agent": "qa",
+    "action": "Started: Independent test of Seatwise at 390, 820, 1440",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:56:34.725Z",
+    "agent": "qa",
+    "action": "Seatwise local QA: all 15 acceptance tests pass, 0 console errors at 390, 820, 1440. Defects to fix: table seats can be set to 0, focus lost after unseat, 1 guests plural, CSV formula cells, USD missing on Pro page",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:27.106Z",
+    "agent": "qa",
+    "action": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:32.014Z",
+    "agent": "qa",
+    "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T07:06:57.173Z",
+    "agent": "qa",
+    "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "at": "2026-11-14T06:59:34.770Z",
+    "agent": "devops",
+    "action": "Started: Releasing Seatwise to seatwise.anchit-tandon.com",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:59:50.292Z",
+    "agent": "devops",
+    "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:31.978Z",
+    "agent": "devops",
+    "action": "Seatwise deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR READY, https://seatwise.anchit-tandon.com returns 200 with our headers. Cloudflare standby: no Cloudflare deploy tools this session, skipped",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:32.057Z",
+    "agent": "devops",
+    "action": "Blocked: Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T07:04:58.301Z",
+    "agent": "devops",
+    "action": "Started: Uptime check of Seatwise and Cloudflare injection",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T07:05:03.976Z",
+    "agent": "devops",
+    "action": "Blocked: Seatwise returns 200 on /, /pro.html, /stats.json; Cloudflare still injects its bot script, still waiting on owner approval ap-4",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  }
+]

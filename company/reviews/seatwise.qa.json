@@ -1,0 +1,13 @@
+{
+  "role": "qa",
+  "passed": false,
+  "reviewer": "qa",
+  "viewports": [
+    390,
+    820,
+    1440
+  ],
+  "consoleErrors": 3,
+  "checkedAt": "2026-11-14T07:06:26Z",
+  "notes": "Regression after Growth change (854bfaa): robots, sitemap, canonical, OG, core flow at 390 and layout at all sizes pass; 0 errors from our code. Still 3 console errors per page from Cloudflare-injected scripts. Blocked on ap-4."
+}

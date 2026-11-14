@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T06:49:01.031Z",
+    "agent": "ceo",
+    "action": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:32.105Z",
+    "agent": "ceo",
+    "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "state": "blocked",
+  "task": "Seatwise returns 200 on /, /pro.html, /stats.json; Cloudflare still injects its bot script, still waiting on owner approval ap-4",
+  "ventureId": "seatwise",
+  "since": "2026-11-14T07:05:03.976Z"
+}

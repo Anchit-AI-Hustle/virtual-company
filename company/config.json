@@ -53,9 +53,9 @@
     "note": "Zero until the owner approves a spend request."
   },
   "fx": {
-    "usdInr": null,
-    "asOf": null,
-    "source": null
+    "usdInr": 94.2754,
+    "asOf": "2026-11-14",
+    "source": "https://www.xflowpay.com/tools/currency-converter/usd-to-inr-rate?amount=26"
   },
   "reservedSubdomains": [
     "admin",

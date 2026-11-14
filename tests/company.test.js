@@ -250,7 +250,9 @@ test('HQ data totals money in INR, converts to USD only with a recorded rate, an
     { date: '2026-11-14', ventureId: null, type: 'cost', amountINR: 400, note: 'Tool', source: 'invoice', approvalId: 'ap-1' }
   ];
   const ventures = [venture({ id: 'low-score', score: { demand: 1, speedToRevenue: 1, buildEffort: 1, distribution: 1, total: 4 } }), venture()];
-  const noFx = buildHq(fixture({ ventures, ledger, approvals: [approved] }));
+  const noFxCfg = JSON.parse(JSON.stringify(config));
+  noFxCfg.fx = { usdInr: null, asOf: null, source: null };
+  const noFx = buildHq(fixture({ config: noFxCfg, ventures, ledger, approvals: [approved] }));
   assert.deepStrictEqual([noFx.money.revenueINR, noFx.money.costINR, noFx.money.netINR, noFx.money.netUSD], [1000, 400, 600, null]);
   assert.strictEqual(noFx.ventures[0].id, 'invoice-buddy');
   const cfg = JSON.parse(JSON.stringify(config));

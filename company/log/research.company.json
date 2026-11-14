@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T06:49:00.874Z",
+    "agent": "research",
+    "action": "Started: Live web search for demand: seating charts, round robins, invoicing, rent receipts, rotas",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:49:00.999Z",
+    "agent": "research",
+    "action": "Evidence filed: Seatwise 4 sourced signals (validated), Rally Rounds 2 (not yet), rent receipt and GST invoice tools dropped as free everywhere",
+    "ventureId": null,
+    "kind": "done"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "priceINR": null,
+  "stage": "idea",
+  "evidence": [],
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T06:49:00.906Z",
+  "updatedAt": "2026-11-14T06:49:00.906Z",
+  "killReason": null,
+  "id": "paychase",
+  "title": "Paychase",
+  "oneLiner": "Polite payment reminder sequence and overdue tracker for Indian freelancers",
+  "customer": "Indian freelancers with clients who pay late",
+  "revenueModel": "One-time template and tracker purchase",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 5,
+    "distribution": 2,
+    "total": 13
+  },
+  "nextAction": "Research: find people paying for payment chasing tools. Legal: no claims about statutory interest without owner legal approval",
+  "lead": null
+}

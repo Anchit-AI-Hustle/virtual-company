@@ -1,0 +1,63 @@
+{
+  "priceINR": 799,
+  "stage": "spec",
+  "evidence": [
+    {
+      "claim": "SeatFlow, a seating chart maker app, sells a Lifetime unlock for $17.99 and a Weekly plan for $2.99 as in-app purchases.",
+      "url": "https://apps.apple.com/us/app/id6760965608",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "PlanSeats charges $8.99 a month for its Planner plan and $50 one time for Planner Lifetime, with a free Starter tier.",
+      "url": "https://www.capterra.com/p/10042224/PlanSeats/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A WeddingWire forum thread complains an update to its seating chart tool removed features like dragging whole parties and room and table size inputs, and the poster planned to use a different seating chart generator.",
+      "url": "https://www.weddingwire.com/wedding-forums/update-to-the-weddingwire-seating-chart-tool/9d9943a640a133db.html",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A WeddingWire forum thread active until July 2025 reports the seating planner only seats whole households and that guests disappeared from the planner.",
+      "url": "https://www.weddingwire.com/wedding-forums/wedding-wire-seating-chart-planning-tool/b07569630de58820.html",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "specPath": "specs/seatwise.md",
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T06:49:00.906Z",
+  "updatedAt": "2026-11-14T07:29:22Z",
+  "killReason": null,
+  "id": "seatwise",
+  "title": "Seatwise",
+  "oneLiner": "Plan a wedding seating chart on your phone in minutes, private, no signup",
+  "customer": "Couples and family members planning a wedding or large event seating",
+  "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 4,
+    "total": 14
+  },
+  "nextAction": "Lead fixes the spec per the product review: record pre-order intent on the Pro page and count it in stats.json, add error-state tests (blank or zero tables, more guests than seats, oversized group), test every screen at 390, 820 and 1440 px, collect the event name for Print, add a zero-network-requests test. Then product re-review, code changes, engineer review, and the live check after ap-4",
+  "qaLocal": {
+    "passed": true,
+    "reviewer": "qa",
+    "viewports": [
+      390,
+      820,
+      1440
+    ],
+    "consoleErrors": 0,
+    "checkedAt": "2026-11-14T06:59:27.019Z",
+    "notes": "Independent local QA: 15 of 15 acceptance tests pass; defects D1 to D7 fixed and re-tested. Live URL still to test."
+  },
+  "vercelProjectId": "prj_Cx0xrFIKG2WpZQNqr5Pgs3VcVcUC",
+  "lead": {
+    "name": "Ira",
+    "color": "#7A3E9D",
+    "trait": "Founder energy. Talks to the problem before the solution."
+  }
+}

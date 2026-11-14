@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T06:50:02.047Z",
+    "agent": "data",
+    "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:05:04.073Z",
+    "agent": "data",
+    "action": "Seatwise stats.json reports null visits by design (no analytics). Nothing live to count",
+    "ventureId": "seatwise",
+    "kind": "done"
+  }
+]
