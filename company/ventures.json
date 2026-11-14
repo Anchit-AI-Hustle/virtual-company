@@ -1,7 +1,7 @@
 [
   {
-    "priceINR": null,
-    "stage": "validated",
+    "priceINR": 799,
+    "stage": "spec",
     "evidence": [
       {
         "claim": "SeatFlow, a seating chart maker app, sells a Lifetime unlock for $17.99 and a Weekly plan for $2.99 as in-app purchases.",
@@ -24,13 +24,13 @@
         "foundAt": "2026-11-14"
       }
     ],
-    "specPath": null,
+    "specPath": "specs/seatwise.md",
     "url": null,
     "qa": null,
     "metrics": null,
     "reviews": {},
     "createdAt": "2026-11-14T06:49:00.906Z",
-    "updatedAt": "2026-11-14T06:49:10.409Z",
+    "updatedAt": "2026-11-14T06:50:27.227Z",
     "killReason": null,
     "id": "seatwise",
     "title": "Seatwise",
@@ -44,7 +44,7 @@
       "distribution": 4,
       "total": 14
     },
-    "nextAction": "Product writes spec; Sales files price"
+    "nextAction": "Engineer builds ventures/seatwise per spec"
   },
   {
     "priceINR": null,

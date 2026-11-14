@@ -123,5 +123,54 @@
     "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:01.942Z",
+    "agent": "ops",
+    "action": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:01.975Z",
+    "agent": "product",
+    "action": "Seatwise spec written: paste, tables, tap to seat, auto-seat, print, CSV, all in the browser",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:02.010Z",
+    "agent": "design",
+    "action": "Design section added to Seatwise spec: rose and paper tokens, plan screen first",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:02.047Z",
+    "agent": "data",
+    "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:02.083Z",
+    "agent": "sales",
+    "action": "Started: Filing Seatwise price and payment rail approvals",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:50:27.252Z",
+    "agent": "sales",
+    "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:27.282Z",
+    "agent": "product",
+    "action": "Seatwise moved validated to spec",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

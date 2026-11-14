@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:49:27.990Z",
+  "builtAt": "2026-11-14T06:50:27.393Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -35,7 +35,32 @@
     },
     "monthlyCapINR": 0
   },
-  "approvals": [],
+  "approvals": [
+    {
+      "id": "ap-1",
+      "ventureId": "seatwise",
+      "type": "pricing",
+      "ask": "Approve INR 799 one-time as the Seatwise Pro price",
+      "why": "Competitors charge 17.99 USD (SeatFlow Lifetime) and 50 USD (PlanSeats Lifetime) for the same job",
+      "costINR": 0,
+      "ifNo": "Pro stays not on sale, free planner keeps running",
+      "status": "pending",
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/1",
+      "createdAt": "2026-11-14T06:50:27.227Z"
+    },
+    {
+      "id": "ap-2",
+      "ventureId": null,
+      "type": "account",
+      "ask": "Open a payment rail (Razorpay Payment Pages or your choice) and create a Seatwise Pro payment page",
+      "why": "The company has no way to take money; no product can earn without it",
+      "costINR": 0,
+      "ifNo": "Products stay free and revenue stays at INR 0",
+      "status": "pending",
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2",
+      "createdAt": "2026-11-14T06:50:27.227Z"
+    }
+  ],
   "ventures": [
     {
       "id": "seatwise",
@@ -43,16 +68,16 @@
       "oneLiner": "Plan a wedding seating chart on your phone in minutes, private, no signup",
       "customer": "Couples and family members planning a wedding or large event seating",
       "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
-      "priceINR": null,
-      "stage": "validated",
+      "priceINR": 799,
+      "stage": "spec",
       "score": 14,
       "url": null,
-      "nextAction": "Product writes spec; Sales files price",
+      "nextAction": "Engineer builds ventures/seatwise per spec",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T06:49:10.409Z",
+      "updatedAt": "2026-11-14T06:50:27.227Z",
       "evidenceCount": 4,
-      "specPath": null,
+      "specPath": "specs/seatwise.md",
       "reviews": {
         "design": null,
         "security": null,
@@ -206,15 +231,15 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "state": "done",
-      "task": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow",
-      "since": "2026-11-14T06:41:56.619Z",
+      "task": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again",
+      "since": "2026-11-14T06:50:01.942Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:41:56.619Z",
-        "action": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow"
+        "at": "2026-11-14T06:50:01.942Z",
+        "action": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again"
       },
-      "actions": 2
+      "actions": 3
     },
     {
       "id": "research",
@@ -242,15 +267,15 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "state": "done",
-      "task": "No live ventures, no counts to read",
-      "since": "2026-11-14T06:48:35.568Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
+      "since": "2026-11-14T06:50:02.047Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T06:48:35.568Z",
-        "action": "No live ventures, no counts to read"
+        "at": "2026-11-14T06:50:02.047Z",
+        "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved"
       },
-      "actions": 1
+      "actions": 2
     },
     {
       "id": "product",
@@ -259,13 +284,16 @@
       "department": "product",
       "color": "#0E6E8C",
       "trait": "Cuts scope until it ships in three cycles.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Seatwise moved validated to spec",
+      "since": "2026-11-14T06:50:27.282Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
+      "last": {
+        "at": "2026-11-14T06:50:27.282Z",
+        "action": "Seatwise moved validated to spec"
+      },
+      "actions": 2
     },
     {
       "id": "design",
@@ -274,13 +302,16 @@
       "department": "product",
       "color": "#1C93B5",
       "trait": "Designs for a thumb on a 390 px screen first.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Design section added to Seatwise spec: rose and paper tokens, plan screen first",
+      "since": "2026-11-14T06:50:02.010Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
+      "last": {
+        "at": "2026-11-14T06:50:02.010Z",
+        "action": "Design section added to Seatwise spec: rose and paper tokens, plan screen first"
+      },
+      "actions": 1
     },
     {
       "id": "engineer",
@@ -370,13 +401,16 @@
       "department": "market",
       "color": "#D99A1E",
       "trait": "Makes paying the easiest step on the page.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
+      "since": "2026-11-14T06:50:27.252Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
+      "last": {
+        "at": "2026-11-14T06:50:27.252Z",
+        "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2"
+      },
+      "actions": 2
     },
     {
       "id": "support",
@@ -451,6 +485,36 @@
   "ventureTrail": {
     "seatwise": [
       {
+        "at": "2026-11-14T06:50:27.282Z",
+        "agent": "product",
+        "action": "Seatwise moved validated to spec"
+      },
+      {
+        "at": "2026-11-14T06:50:27.252Z",
+        "agent": "sales",
+        "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2"
+      },
+      {
+        "at": "2026-11-14T06:50:02.083Z",
+        "agent": "sales",
+        "action": "Started: Filing Seatwise price and payment rail approvals"
+      },
+      {
+        "at": "2026-11-14T06:50:02.047Z",
+        "agent": "data",
+        "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved"
+      },
+      {
+        "at": "2026-11-14T06:50:02.010Z",
+        "agent": "design",
+        "action": "Design section added to Seatwise spec: rose and paper tokens, plan screen first"
+      },
+      {
+        "at": "2026-11-14T06:50:01.975Z",
+        "agent": "product",
+        "action": "Seatwise spec written: paste, tables, tap to seat, auto-seat, print, CSV, all in the browser"
+      },
+      {
         "at": "2026-11-14T06:49:10.432Z",
         "agent": "research",
         "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones"
@@ -467,6 +531,55 @@
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T06:50:27.282Z",
+      "agent": "product",
+      "action": "Seatwise moved validated to spec",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:27.252Z",
+      "agent": "sales",
+      "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:02.083Z",
+      "agent": "sales",
+      "action": "Started: Filing Seatwise price and payment rail approvals",
+      "ventureId": "seatwise",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:50:02.047Z",
+      "agent": "data",
+      "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:02.010Z",
+      "agent": "design",
+      "action": "Design section added to Seatwise spec: rose and paper tokens, plan screen first",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:01.975Z",
+      "agent": "product",
+      "action": "Seatwise spec written: paste, tables, tap to seat, auto-seat, print, CSV, all in the browser",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:01.942Z",
+      "agent": "ops",
+      "action": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-14T06:49:10.432Z",
       "agent": "research",
