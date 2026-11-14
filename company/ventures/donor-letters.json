@@ -4,14 +4,14 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:32:23.142Z",
-  "updatedAt": "2026-11-14T14:33:05.398Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:35:40.150Z",
+  "killReason": "Killed at validating. The need is real (QuickBooks has no donor statements, paid apps exist), but the exact product is already free: CharityCharge turns a gift CSV into annual donor summaries in the browser at no cost, B1.church and Zeffy produce year-end statements free, and the nearest paid spreadsheet tool (Statement Press) charges only $29 a year with a free tier. Organic search is the only allowed channel and it is already crowded with free generators, and the season closes by late January, leaving about ten weeks to build, rank and sell. Same pattern that killed earlier ideas: free tools already do the job.",
   "lead": {
     "name": "Myra",
     "color": "#A0306B",
     "trait": "Writes the spec as if a stranger had to build it."
   },
-  "stage": "validating",
+  "stage": "killed",
   "id": "donor-letters",
   "title": "Donor Letters",
   "oneLiner": "Year-end giving statements for every donor from one spreadsheet or QuickBooks export, printed or emailed as PDFs",
@@ -34,7 +34,59 @@
       "claim": "The Donor Receipts app for QuickBooks Online gives 50 receipts free and then sells more receipts for $25.",
       "url": "https://ufuoma-ogaga-5d6r.squarespace.com/blog/take-the-stress-out-of-giving-statements",
       "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A nonprofit asks in the QuickBooks community whether QBO can send year-end donor statements with 501(c)(3) wording; the accepted answer says QuickBooks will not create proper donor statements and points to a third-party app.",
+      "url": "https://quickbooks.intuit.com/community/account-management-7/nonprofit-here-we-need-to-send-out-year-end-donor-statements-including-customized-language-501c3-corporation-no-goods-services-exchanged-etc-possible-in-qb-online-70234",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Statement Press sells exactly this product, year-end giving statements as per-donor PDFs from pasted Excel or Google Sheets data in the browser, at $29 a year with a limited free version.",
+      "url": "https://alternativeto.net/software/statement-press/about/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Aplos, nonprofit accounting software that includes donation tracking and giving statements in every package, starts at $79 a month.",
+      "url": "https://www.aplos.com/pricing",
+      "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Research. Season peaks in January, so it must ship by late December or wait a year. Against: B1.church is free for every church with no paid tiers and already creates year-end giving statements (https://support.churchapps.org/docs/b1-admin/guides/year-end-reports), and donor CRMs bundle this. Legal: no promise of tax compliance."
+  "nextAction": "None. Killed at validating, see killReason, evidence and evidenceAgainst.",
+  "evidenceAgainst": [
+    {
+      "claim": "CharityCharge offers a free browser tool that checks a gift CSV, groups each donor gifts by year and produces printable annual summaries without uploading donor data, which is the same job as this product.",
+      "url": "https://dash.charitycharge.com/tools/year-end",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "B1.church is free for every church and generates year-end giving statements as a printable batch or per-donor files.",
+      "url": "https://support.churchapps.org/docs/b1-admin/guides/year-end-reports",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Zeffy is 100% free for nonprofits and sends one cumulative annual receipt to recurring donors, and also receipts recorded offline gifts.",
+      "url": "https://www.zeffy.com/feature/donation-receipts",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The closest paid spreadsheet competitor, Statement Press, charges only $29 a year and has a free tier, so the price ceiling for a spreadsheet-based tool is very low.",
+      "url": "https://alternativeto.net/software/statement-press/about/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The Donor Receipts app for QuickBooks Online gives 50 receipts free and then $25 for more with no subscription, so the QuickBooks side is already served cheaply.",
+      "url": "https://ufuoma-ogaga-5d6r.squarespace.com/blog/take-the-stress-out-of-giving-statements",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Free single-receipt generators already crowd the search results for this need, such as Givebutter and a free-forever pages.dev generator.",
+      "url": "https://givebutter.com/freebies/donation-receipt-generator",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The most cited QuickBooks thread on this need has 58 replies but only 303 views since December 2017, which is thin search pull for the only allowed channel.",
+      "url": "https://quickbooks.intuit.com/community/reports-and-accounting-5/year-end-donation-letters-37655",
+      "foundAt": "2026-11-14"
+    }
+  ]
 }

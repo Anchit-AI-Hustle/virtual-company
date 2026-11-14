@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T14:33:45.949Z",
+    "agent": "lead-donor-letters",
+    "action": "Started: Validating donor-letters: searching for sourced demand and evidence against",
+    "ventureId": "donor-letters",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T14:35:40.177Z",
+    "agent": "lead-donor-letters",
+    "action": "Validation verdict kill: 5 sourced signals for, 7 against; CharityCharge already does CSV to annual donor summaries free, B1.church and Zeffy free, nearest paid tool is 29 USD a year",
+    "ventureId": "donor-letters",
+    "kind": "done"
+  }
+]
