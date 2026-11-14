@@ -6,7 +6,7 @@
 // and do not affect users. This check removes exactly those two injections before the page
 // runs, so every remaining error is the product's own and must be zero.
 // Usage: NODE_PATH=<scratch>/node_modules node scripts/qa-check.js https://<id>.anchit-tandon.com
-const { chromium } = require('playwright');
+
 
 const BEACON = /<script[^>]*static\.cloudflareinsights\.com[^>]*><\/script>/g;
 const BOT_CHECK = /<script>\(function\(\)\{function c\(\)\{[\s\S]*?__CF\$cv\$params[\s\S]*?<\/script>/g;
@@ -16,6 +16,7 @@ function stripHostingScripts(html) {
 }
 
 async function check(url) {
+  const { chromium } = require('playwright');
   const browser = await chromium.launch();
   const out = [];
   try {
