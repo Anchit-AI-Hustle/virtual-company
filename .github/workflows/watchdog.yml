@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 50
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -34,10 +34,14 @@ jobs:
           git config user.email "watchdog@users.noreply.github.com"
           git add company/health.json
           git commit -m "Watchdog: platform ${{ steps.check.outputs.status }}"
-          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep $((i*10)); done
+          for i in 1 2 3 4; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*10))
+          done
           exit 1
       - name: Tell the owner (one alert issue, opened on a problem and closed on recovery)
-        if: steps.check.outputs.changed == 'yes'
+        if: always() && steps.check.outputs.problems_changed == 'yes'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -50,6 +54,7 @@ jobs:
             gh issue close "$open" --comment "$(cat /tmp/watchdog-report.md)"
           fi
       - name: Keep waiting decisions open (closing an issue is not an answer)
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -60,6 +65,8 @@ jobs:
             [ "$st" = "pending" ] && [ -n "$url" ] || continue
             n=${url##*/}
             [ "$(gh api repos/${{ github.repository }}/issues/$n --jq .state)" = "closed" ] || continue
+            labelled=$(gh api "repos/${{ github.repository }}/issues/$n/events?per_page=100" --jq "[.[] | select(.event==\"labeled\" and .actor.login==\"$owner\" and (.label.name==\"approved\" or .label.name==\"rejected\"))] | length")
+            [ "$labelled" = "0" ] || continue
             answered=$(gh api "repos/${{ github.repository }}/issues/$n/comments?per_page=100" --jq "[.[] | select(.user.login==\"$owner\") | select(.body|test(\"^\\\\s*(approve|reject)\";\"i\"))] | length")
             [ "$answered" = "0" ] || continue
             gh api -X PATCH repos/${{ github.repository }}/issues/$n -f state=open >/dev/null

@@ -390,9 +390,10 @@
     st.appendChild(document.createTextNode('. ' + plural(live, 'product', 'products') + ' live, ' + works + ' in progress. Updated ' + ago(d.builtAt) + '.'));
     $('status').className = 'status' + (working ? ' on' : '');
     var h = d.health;
-    if (h && h.status === 'problem' && h.problems && h.problems.length) {
+    var shown = h && h.problems ? h.problems.filter(function (p) { return !(p.id === 'hq-stale' && d.builtAt > h.since); }) : [];
+    if (h && h.status === 'problem' && shown.length) {
       st.appendChild(document.createTextNode(' '));
-      st.appendChild(el('b', 'alert', 'Being fixed: ' + h.problems[0].text + (h.problems.length > 1 ? ' (+' + (h.problems.length - 1) + ' more)' : '')));
+      st.appendChild(el('b', 'alert', 'Being fixed: ' + shown[0].text + (shown.length > 1 ? ' (+' + (shown.length - 1) + ' more)' : '')));
       $('status').className = 'status warn';
     }
     var n = d.approvals.length, badge = $('badge');
@@ -677,8 +678,10 @@
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (d) {
         if (!d || !d.office || !d.ventures) throw new Error('bad data');
-        fails = 0; save(d);
-        if (!data || d.builtAt !== data.builtAt) render(d); else renderStatus(d);
+        fails = 0;
+        try { if (!data || d.builtAt !== data.builtAt) render(d); else renderStatus(d); }
+        catch (err) { if (window.console) console.warn('HQ could not draw this update', err); return; }
+        save(d);
       })
       .catch(function () {
         fails++; offline();

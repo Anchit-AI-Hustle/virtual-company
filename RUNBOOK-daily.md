@@ -15,7 +15,7 @@ stop. Run `npm run check`; if it fails before you change anything, fixing it com
 Read `company/health.json` and any open GitHub issue labelled `platform-alert`. The watchdog
 (`.github/workflows/watchdog.yml`, every 15 minutes) raises these when HQ, a product or the
 work sessions break. `devops` (Neel) fixes every listed problem before any other work, then
-runs `node scripts/watchdog.js` to confirm. Never edit `health.json` by hand: the watchdog owns it.
+runs `node scripts/watchdog.js` to confirm (it only checks; it never writes health.json outside GitHub). Never edit `health.json` by hand: the watchdog owns it.
 `act.js ops start "Morning standup"`, write the standup per `agents/ops.md`, commit,
 `bash scripts/push.sh`.
 

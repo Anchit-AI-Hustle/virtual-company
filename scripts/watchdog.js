@@ -92,12 +92,16 @@ if (require.main === module) {
     console.log(result.problems.length ? 'PROBLEMS:\n- ' + result.problems.map((p) => p.text).join('\n- ') : 'All checks passed.');
     console.log(`checked HQ ${s.hq.status}, data ${s.data.status}, products ${s.products.length}, last work ${s.lastWorkAt}, books changed ${s.booksChangedAt}`);
     const next = nextHealth(s.health, result, new Date(now).toISOString());
-    if (next) {
+    const key = (ps) => (ps || []).map((x) => x.id).sort().join(',');
+    const problemsChanged = key(result.problems) !== key(s.health && s.health.problems) || (s.health ? s.health.status : 'ok') !== (result.problems.length ? 'problem' : 'ok');
+    const mayWrite = process.env.GITHUB_ACTIONS === 'true' || process.argv.includes('--write');
+    if (next && !mayWrite) console.log('(check only: health.json is written by the watchdog on GitHub, not here)');
+    if (next && mayWrite) {
       fs.writeFileSync(path.join(root, 'company/health.json'), JSON.stringify(next, null, 2) + '\n');
       console.log('health.json updated' + (result.redeploy ? ' (asks for a fresh HQ deploy)' : ''));
     }
     if (process.env.GITHUB_OUTPUT) {
-      fs.appendFileSync(process.env.GITHUB_OUTPUT, `status=${result.problems.length ? 'problem' : 'ok'}\nchanged=${next ? 'yes' : 'no'}\n`);
+      fs.appendFileSync(process.env.GITHUB_OUTPUT, `status=${result.problems.length ? 'problem' : 'ok'}\nchanged=${next ? 'yes' : 'no'}\nproblems_changed=${problemsChanged ? 'yes' : 'no'}\n`);
       fs.writeFileSync('/tmp/watchdog-report.md', result.problems.length
         ? 'The watchdog found a problem with the platform:\n\n' + result.problems.map((p) => '- ' + p.text).join('\n') + '\n\nThe next work session fixes these first. If the work sessions themselves stopped, open claude.ai, check the plan usage, and run the "Venture company cycle" scheduled task once.'
         : 'All checks pass again. Closing.');
