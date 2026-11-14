@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-1",
+  "ventureId": null,
+  "type": "public-post",
+  "title": "Stop staffing ideas that have no allowed way to reach buyers",
+  "ask": "Before an idea gets a pod, it must name a channel the rules allow for its first 100 buyers and show that no free tool already does the job",
+  "why": "All 8 ideas worked on 14 Nov 2026 died because free tools already did the job and no allowed channel reached buyers.",
+  "costINR": 0,
+  "status": "decided",
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/7",
+  "createdAt": "2026-11-14T14:36:30.597Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep picking ideas the same way",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "0 of 8 ideas cleared the bar on 2026-11-14; see killReason in company/ventures/bake-cost.json, rally-rounds.json, clean-quote.json, csv-qbo.json, shaadi-budget.json, donor-letters.json. No honest profit figure."
+    },
+    {
+      "option": "Screen every idea for an allowed channel and no free equivalent before staffing a pod; leave pods empty rather than staff weak ideas",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "The agents can do it alone at no cost. No idea has cleared a business case yet, so no honest profit figure."
+    },
+    {
+      "option": "Ask the owner to share products with his own audience",
+      "realism": 1,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Breaks the CLAUDE.md rule against posting as the owner."
+    }
+  ],
+  "decision": {
+    "choice": "Screen every idea for an allowed channel and no free equivalent before staffing a pod; leave pods empty rather than staff weak ideas",
+    "reason": "Costs nothing, needs nothing from the owner, and stops cycles going to ideas that die the same way.",
+    "decidedAt": "2026-11-14T14:36:30.597Z",
+    "decidedBy": "ceo"
+  }
+}

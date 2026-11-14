@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "Validated and waiting on the business case: this lead session has no subagent tool, so research, sizing and ceo cannot be launched independently. Next cycle must run research (case), sizing, then ceo for clean-quote",
-  "ventureId": "clean-quote",
-  "since": "2026-11-14T14:17:31.191Z"
+  "ventureId": null,
+  "since": "2026-11-14T14:36:31.606Z"
 }

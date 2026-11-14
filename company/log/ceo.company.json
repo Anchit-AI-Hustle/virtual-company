@@ -53,5 +53,12 @@
     "action": "Refilled 3 pods: donor-letters (Myra, 13, seasonal January peak), shaadi-budget (Advait, 13), csv-qbo (Sara, 12, paid recurring comparables). ach-batch held by Legal",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:36:30.627Z",
+    "agent": "ceo",
+    "action": "Decided: Stop staffing ideas that have no allowed way to reach buyers: screen for an allowed channel and no free equivalent first; pods left empty this cycle since the 5 open ideas fail that screen",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

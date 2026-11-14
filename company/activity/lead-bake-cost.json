@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "Validated. Business case, sizing and CEO decision need independent research, sizing and ceo agents; this lead session has no tool to launch subagents, and the lead may not write them itself",
-  "ventureId": "bake-cost",
-  "since": "2026-11-14T14:16:44.642Z"
+  "ventureId": null,
+  "since": "2026-11-14T14:36:31.515Z"
 }

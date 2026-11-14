@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "Validated; business case, sizing and CEO decision need independent research, sizing and ceo subagents, and this session has no tool to launch subagents. Not writing them myself",
-  "ventureId": "rally-rounds",
-  "since": "2026-11-14T14:16:42.200Z"
+  "ventureId": null,
+  "since": "2026-11-14T14:36:31.555Z"
 }

@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Standup: health ok, watchdog ran 13:59 UTC, CI green, 34 tests pass, no platform alerts, no reject comments on decided issues. 0 ventures in pods, 3 open ideas, Seatwise and Paychase killed last cycle. CEO to refill ideas and staff pods.",
-  "ventureId": "seatwise",
-  "since": "2026-11-14T14:13:03.211Z"
+  "ventureId": null,
+  "since": "2026-11-14T14:36:30.747Z"
 }
