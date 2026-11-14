@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:59:27.261Z",
+  "builtAt": "2026-11-14T06:59:50.409Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -369,15 +369,15 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "state": "done",
-      "task": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product",
-      "since": "2026-11-14T06:42:03.578Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
+      "since": "2026-11-14T06:59:50.292Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T06:42:03.578Z",
-        "action": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product"
+        "at": "2026-11-14T06:59:50.292Z",
+        "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main"
       },
-      "actions": 2
+      "actions": 4
     },
     {
       "id": "security",
@@ -503,6 +503,16 @@
   "ventureTrail": {
     "seatwise": [
       {
+        "at": "2026-11-14T06:59:50.292Z",
+        "agent": "devops",
+        "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main"
+      },
+      {
+        "at": "2026-11-14T06:59:34.770Z",
+        "agent": "devops",
+        "action": "Started: Releasing Seatwise to seatwise.anchit-tandon.com"
+      },
+      {
         "at": "2026-11-14T06:59:27.141Z",
         "agent": "legal",
         "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold"
@@ -551,16 +561,6 @@
         "at": "2026-11-14T06:52:46.559Z",
         "agent": "legal",
         "action": "Started: Launch review of Seatwise"
-      },
-      {
-        "at": "2026-11-14T06:52:46.531Z",
-        "agent": "security",
-        "action": "Started: Launch review of Seatwise"
-      },
-      {
-        "at": "2026-11-14T06:52:46.499Z",
-        "agent": "design",
-        "action": "Started: Launch review of Seatwise"
       }
     ],
     "rally-rounds": [],
@@ -569,6 +569,20 @@
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T06:59:50.292Z",
+      "agent": "devops",
+      "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:59:34.770Z",
+      "agent": "devops",
+      "action": "Started: Releasing Seatwise to seatwise.anchit-tandon.com",
+      "ventureId": "seatwise",
+      "kind": "start"
+    },
     {
       "at": "2026-11-14T06:59:27.141Z",
       "agent": "legal",

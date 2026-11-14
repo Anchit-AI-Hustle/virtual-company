@@ -11,6 +11,9 @@ Any static server from this folder, for example `npx serve .` or `python3 -m htt
 
 ## Deploy
 
+Vercel project id `prj_Cx0xrFIKG2WpZQNqr5Pgs3VcVcUC`. Pushes that do not touch this folder skip the build.
+
+
 Vercel project `vc-seatwise` in team `anchit-ai-hustle`, linked to this repo with root
 directory `ventures/seatwise`, domain `seatwise.anchit-tandon.com`. Static files only, no build
 step. Security headers are in `vercel.json`.

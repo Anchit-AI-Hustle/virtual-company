@@ -277,5 +277,19 @@
     "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:34.770Z",
+    "agent": "devops",
+    "action": "Started: Releasing Seatwise to seatwise.anchit-tandon.com",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:59:50.292Z",
+    "agent": "devops",
+    "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

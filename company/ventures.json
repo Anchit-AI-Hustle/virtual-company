@@ -72,7 +72,8 @@
       "consoleErrors": 0,
       "checkedAt": "2026-11-14T06:59:27.019Z",
       "notes": "Independent local QA: 15 of 15 acceptance tests pass; defects D1 to D7 fixed and re-tested. Live URL still to test."
-    }
+    },
+    "vercelProjectId": "prj_Cx0xrFIKG2WpZQNqr5Pgs3VcVcUC"
   },
   {
     "priceINR": null,
