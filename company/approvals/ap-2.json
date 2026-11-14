@@ -10,5 +10,6 @@
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2",
   "createdAt": "2026-11-14T06:50:27.227Z",
   "title": "Set up a way to take payments",
-  "youDo": "Open a Razorpay account (or any payment provider you prefer) in your name, then comment approve. The agents will ask for a payment link per product when one is ready to sell."
+  "youDo": "Open a Razorpay account (or any payment provider you prefer) in your name. The agents will ask for a payment link per product when one is ready to sell.",
+  "urgent": false
 }

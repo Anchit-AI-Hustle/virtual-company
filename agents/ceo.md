@@ -68,7 +68,7 @@ When any role needs something only the owner can approve:
    - `ifNo`: what happens if the answer is no
    - `costINR`, plus `ask` with the technical detail for the agents.
 2. Open a GitHub issue titled `Decision: <title>` with the label `needs-owner`, holding the same
-   plain sections and the line "How to answer: comment approve or reject, or add the label
+   plain sections, `urgent: true` when it blocks any launch (HQ lists those first), and the line "How to answer: comment approve or reject, or add the label
    approved or rejected". Store its URL on the file as `issueUrl`.
 3. Next cycle, read the issue. Only two things count as a decision: the label `approved` or
    `rejected` added by the owner's GitHub login in `config.json`, or a comment from that login

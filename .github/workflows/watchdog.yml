@@ -1,0 +1,46 @@
+name: watchdog
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: watchdog
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: check
+        run: node scripts/watchdog.js
+      - name: Record the change (this also triggers a fresh HQ deploy)
+        if: steps.check.outputs.changed == 'yes'
+        run: |
+          git config user.name "watchdog"
+          git config user.email "watchdog@users.noreply.github.com"
+          git add company/health.json
+          git commit -m "Watchdog: platform ${{ steps.check.outputs.status }}"
+          for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep $((i*10)); done
+          exit 1
+      - name: Tell the owner (one alert issue, opened on a problem and closed on recovery)
+        if: steps.check.outputs.changed == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh issue list --label platform-alert --state open --json number --jq '.[0].number')
+          if [ "${{ steps.check.outputs.status }}" = "problem" ]; then
+            gh label create platform-alert --color B60205 --description "Raised by the watchdog" 2>/dev/null || true
+            if [ -n "$open" ]; then gh issue comment "$open" --body-file /tmp/watchdog-report.md
+            else gh issue create --title "Platform alert: something needs fixing" --label platform-alert --body-file /tmp/watchdog-report.md; fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "$(cat /tmp/watchdog-report.md)"
+          fi

@@ -50,7 +50,8 @@ function buildHq(dir) {
 
   return {
     builtAt: new Date().toISOString(),
-    company: { name: config.name, domain: config.domain, owner: config.owner.name },
+    health: (() => { try { return JSON.parse(fs.readFileSync(path.join(dir, 'company/health.json'), 'utf8')); } catch (e) { return null; } })(),
+    company: { name: config.name, domain: config.domain, owner: config.owner.name, ownerLogin: config.owner.github },
     stages: config.stages,
     schedule: config.schedule || null,
     wip: config.wip,

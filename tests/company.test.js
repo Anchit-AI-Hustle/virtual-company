@@ -416,3 +416,27 @@ test('market sizing: needed before spec, recomputed, and held to the bar', () =>
   assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { cohorts: [cohort('A', 1000, 10, 5, 99), cohort('B', 1000, 10, 5, 99)] }) }).includes('sizing'), 'tiny market fails');
   assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { cohorts: [Object.assign({}, GOOD_SIZING.cohorts[0], { sizeSource: 'trust me' }), GOOD_SIZING.cohorts[1]] }) }).includes('sizing'), 'unsourced size fails');
 });
+
+test('watchdog: spots each kind of outage and stays quiet when healthy', () => {
+  const { assess, nextHealth } = require('../scripts/watchdog.js');
+  const now = Date.parse('2026-11-14T12:00:00Z');
+  const ok = { now, hq: { status: 200, body: '<div class="plan">Office</div>' }, data: { status: 200, json: { builtAt: '2026-11-14T11:00:00Z' } }, booksChangedAt: '2026-11-14T10:59:00Z', lastWorkAt: '2026-11-14T09:00:00Z', products: [], health: null };
+  const ids = (s) => assess(Object.assign({}, ok, s)).problems.map((p) => p.id);
+  assert.deepStrictEqual(ids({}), []);
+  assert.deepStrictEqual(ids({ hq: { status: 0 } }), ['hq-down']);
+  assert.deepStrictEqual(ids({ data: { status: 500 } }), ['hq-data']);
+  assert.deepStrictEqual(ids({ products: [{ id: 'x', title: 'X', url: 'https://x.anchit-tandon.com', status: 503 }] }), ['product-x']);
+  assert.deepStrictEqual(ids({ lastWorkAt: '2026-11-13T18:00:00Z' }), ['cycle-missed']);
+  // A change pushed 5 minutes ago is still deploying; 30 minutes ago means the deploy failed.
+  assert.deepStrictEqual(ids({ booksChangedAt: '2026-11-14T11:55:00Z' }), []);
+  const stale = assess(Object.assign({}, ok, { booksChangedAt: '2026-11-14T11:30:00Z' }));
+  assert.deepStrictEqual(stale.problems.map((p) => p.id), ['hq-stale']);
+  assert.ok(stale.redeploy, 'asks for a redeploy');
+  assert.ok(!assess(Object.assign({}, ok, { booksChangedAt: '2026-11-14T11:30:00Z', health: { lastRedeployAt: '2026-11-14T11:40:00Z' } })).redeploy, 'at most one redeploy an hour');
+  // health.json changes only when the picture changes.
+  assert.strictEqual(nextHealth({ status: 'ok', problems: [] }, { problems: [], redeploy: false }, 'T'), null);
+  const down = nextHealth({ status: 'ok', problems: [] }, { problems: [{ id: 'hq-down', text: 'x' }], redeploy: false }, 'T1');
+  assert.strictEqual(down.status, 'problem'); assert.strictEqual(down.since, 'T1');
+  assert.strictEqual(nextHealth(down, { problems: [{ id: 'hq-down', text: 'x' }], redeploy: false }, 'T2'), null);
+  for (const p of assess(Object.assign({}, ok, { hq: { status: 0 }, lastWorkAt: '2026-11-13T00:00:00Z' })).problems) assert.ok(!p.text.includes(dash), 'no dashes');
+});

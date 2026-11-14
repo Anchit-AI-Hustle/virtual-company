@@ -10,5 +10,6 @@
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4",
   "createdAt": "2026-11-14T07:03:31.954Z",
   "title": "Turn off Cloudflare's proxy for your subdomains",
-  "youDo": "In Cloudflare, open DNS for anchit-tandon.com and switch the records for seatwise, hq and * (the wildcard) from Proxied (orange cloud) to DNS only (grey cloud). About 2 minutes. Then comment approve."
+  "youDo": "In Cloudflare, open DNS for anchit-tandon.com and switch the records for seatwise, hq and * (the wildcard) from Proxied (orange cloud) to DNS only (grey cloud). About 2 minutes.",
+  "urgent": true
 }

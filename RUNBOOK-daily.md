@@ -12,6 +12,10 @@ that skips it looks absent. Push after every finished step so the office stays c
 Attach and clone `Anchit-AI-Hustle/virtual-company` with push access (add_repo, then a shallow
 clone). Read `CLAUDE.md`, then the brain in `company/`. If `PAUSE` exists, report "paused" and
 stop. Run `npm run check`; if it fails before you change anything, fixing it comes first.
+Read `company/health.json` and any open GitHub issue labelled `platform-alert`. The watchdog
+(`.github/workflows/watchdog.yml`, every 15 minutes) raises these when HQ, a product or the
+work sessions break. `devops` (Neel) fixes every listed problem before any other work, then
+runs `node scripts/watchdog.js` to confirm. Never edit `health.json` by hand: the watchdog owns it.
 `act.js ops start "Morning standup"`, write the standup per `agents/ops.md`, commit,
 `bash scripts/push.sh`.
 

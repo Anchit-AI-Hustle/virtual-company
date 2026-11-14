@@ -35,6 +35,14 @@
   .status { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; font-size: 0.875rem; color: var(--ink-soft); }
   .status i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); flex: none; }
   .status.on i { background: var(--go); }
+  .status.warn i { background: #C7781F; }
+  .status .alert { color: #9A4A00; font-weight: 600; }
+  .asksintro { margin: 0 0 12px; font-size: 1rem; }
+  .ask .when { display: inline-block; margin: 0 0 8px; padding: 2px 10px; border-radius: 999px; font-size: 0.8125rem; font-weight: 600; }
+  .ask .when.now { background: #FBE3D6; color: #8A3300; }
+  .ask .when.later { background: #E7EEF7; color: #24456E; }
+  .ask .step2 { margin: 12px 0 6px; font-weight: 700; }
+  .ask .howto { margin: 10px 0 0; padding-left: 20px; font-size: 0.9375rem; line-height: 1.5; background: #F6F4EE; border-radius: 10px; padding: 10px 12px 10px 30px; }
   .status span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .status b { color: var(--ink); font-weight: 600; }
   .iconbtn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 44px; min-height: 44px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--sheet); font-weight: 600; font-size: 0.875rem; cursor: pointer; white-space: nowrap; }
@@ -381,6 +389,12 @@
     var works = d.ventures.filter(function (v) { return ['validating', 'validated', 'spec', 'building', 'qa'].indexOf(v.stage) > -1; }).length;
     st.appendChild(document.createTextNode('. ' + plural(live, 'product', 'products') + ' live, ' + works + ' in progress. Updated ' + ago(d.builtAt) + '.'));
     $('status').className = 'status' + (working ? ' on' : '');
+    var h = d.health;
+    if (h && h.status === 'problem' && h.problems && h.problems.length) {
+      st.appendChild(document.createTextNode(' '));
+      st.appendChild(el('b', 'alert', 'Being fixed: ' + h.problems[0].text + (h.problems.length > 1 ? ' (+' + (h.problems.length - 1) + ' more)' : '')));
+      $('status').className = 'status warn';
+    }
     var n = d.approvals.length, badge = $('badge');
     badge.hidden = !n; badge.textContent = n;
     var cyc = (d.schedule && d.schedule.cycles) || [];
@@ -466,30 +480,47 @@
   $('replay').addEventListener('click', function () { if (replaying) endReplay(); else startReplay(); });
 
   // Decisions
+  function copyWord(w) { try { navigator.clipboard.writeText(w); } catch (e) { /* not allowed: the steps say to type it */ } }
   function renderAsks(d) {
     var box = $('asks'); box.textContent = '';
     if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. When the agents need a yes on money, prices, public posts or accounts, it shows up here and in the reception board in the office.')); return; }
+    var nx = nextSession(d);
+    var list = d.approvals.slice().sort(function (a, b) { return (b.urgent ? 1 : 0) - (a.urgent ? 1 : 0); });
+    box.appendChild(el('p', 'asksintro', plural(list.length, 'decision is', 'decisions are') + ' waiting for you. For each one: do the step it asks, then tell the agents yes or no. Your answer is read in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.'));
     var ul = el('ul', 'asks');
-    d.approvals.forEach(function (a) {
+    list.forEach(function (a, i) {
       var li = el('li', 'ask');
-      li.appendChild(el('h3', null, a.title || a.ask));
+      var h = el('h3', null, (i + 1) + '. ' + (a.title || a.ask)); li.appendChild(h);
+      li.appendChild(el('p', 'when ' + (a.urgent ? 'now' : 'later'), a.urgent ? 'Needed before anything can launch' : 'Can wait until a product is ready'));
       var dl = el('dl');
       function row(k, v) { if (!v) return; dl.appendChild(el('dt', null, k)); dl.appendChild(el('dd', null, v)); }
-      row('Why it matters', a.why); row('What you do', a.youDo); row('If you say no', a.ifNo);
+      row('Why it matters', a.why); row('Step 1: what you do', a.youDo); row('If you say no', a.ifNo);
       row('Cost', typeof a.costINR === 'number' && a.costINR > 0 ? inr(a.costINR) : 'Free');
       li.appendChild(dl);
       var u = safeUrl(a.issueUrl);
       if (u) {
+        li.appendChild(el('p', 'step2', 'Step 2: tell the agents your answer'));
         var act = el('p', 'actions');
-        var yes = el('a', 'btn', 'Approve'); yes.href = u; yes.rel = 'noopener'; yes.target = '_blank';
-        var no = el('a', 'btn ghost', 'Reject'); no.href = u; no.rel = 'noopener'; no.target = '_blank';
-        act.appendChild(yes); act.appendChild(no); li.appendChild(act);
+        var guide = el('ol', 'howto'); guide.hidden = true;
+        function go(word) {
+          return function () {
+            copyWord(word);
+            guide.textContent = '';
+            ['GitHub opened in a new tab. Sign in as ' + (d.company.ownerLogin || 'your GitHub account') + ' if it asks.',
+             'Scroll to the comment box at the bottom of that page.',
+             'Type ' + word + ' (it is already copied, so you can paste it). You can add a note after the word.',
+             'Press the green Comment button. That is all.'].forEach(function (t) { guide.appendChild(el('li', null, t)); });
+            guide.hidden = false;
+          };
+        }
+        var yes = el('a', 'btn', 'Approve'); yes.href = u + '#new_comment_field'; yes.rel = 'noopener'; yes.target = '_blank'; yes.addEventListener('click', go('approve'));
+        var no = el('a', 'btn ghost', 'Say no'); no.href = u + '#new_comment_field'; no.rel = 'noopener'; no.target = '_blank'; no.addEventListener('click', go('reject'));
+        act.appendChild(yes); act.appendChild(no); li.appendChild(act); li.appendChild(guide);
       }
       ul.appendChild(li);
     });
     box.appendChild(ul);
-    var nx = nextSession(d);
-    box.appendChild(el('p', 'help', 'Approve and Reject open the decision on GitHub. Write a comment that starts with approve or reject (a note after it is fine). The agents act on it in their next work session' + (nx ? ', ' + nx + ' IST' : '') + '.'));
+    box.appendChild(el('p', 'help', 'Already answered? This list updates after the next work session' + (nx ? ' (' + nx + ' IST)' : '') + ', when the agents read your comment. Only comments from your own GitHub account count.'));
   }
 
   // Pipeline
@@ -628,13 +659,35 @@
     }
   }
 
+  // Keeps working through a bad connection or a failed deploy: the last good view is kept in
+  // this browser and shown at once, and a failed load is retried with growing waits.
+  var CACHE = 'venture-hq-data', fails = 0, retry = null;
+  function saved() { try { return JSON.parse(localStorage.getItem(CACHE)); } catch (e) { return null; } }
+  function save(d) { try { localStorage.setItem(CACHE, JSON.stringify(d)); } catch (e) { /* storage full or blocked: fine */ } }
+  function offline() {
+    var st = $('statusText'); st.textContent = '';
+    st.appendChild(el('b', null, 'Reconnecting'));
+    st.appendChild(document.createTextNode(data ? '. Showing the office as of ' + ago(data.builtAt) + '.' : '. The office will appear as soon as it loads.'));
+    $('status').className = 'status warn';
+  }
   function poll() {
     if (document.hidden && data) return;
+    clearTimeout(retry);
     fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(function (d) { if (!data || d.builtAt !== data.builtAt) render(d); else renderStatus(d); })
-      .catch(function () { if (!data) $('statusText').textContent = 'The office did not load. Check your connection and reload.'; });
+      .then(function (d) {
+        if (!d || !d.office || !d.ventures) throw new Error('bad data');
+        fails = 0; save(d);
+        if (!data || d.builtAt !== data.builtAt) render(d); else renderStatus(d);
+      })
+      .catch(function () {
+        fails++; offline();
+        retry = setTimeout(poll, Math.min(60000, 3000 * Math.pow(2, fails - 1)));
+      });
   }
+  var cached = saved();
+  if (cached && cached.office && cached.ventures) { try { render(cached); } catch (e) { data = null; } }
+  window.addEventListener('online', poll);
   var start = (location.hash || '').slice(1);
   if (['decisions', 'pipeline', 'activity', 'money', 'help'].indexOf(start) > -1) show(start);
   poll();

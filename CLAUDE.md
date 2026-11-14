@@ -27,7 +27,7 @@ not progress.
 - `company/` - the brain, one file per thing so parallel agents never collide:
   `ventures/<id>.json`, `approvals/<id>.json`, `activity/<agent>.json`,
   `log/<agent>.<venture or company>.json`, `reviews/<venture>.<role>.json`; plus the shared,
-  single-writer `config.json`,
+  single-writer `config.json`, `health.json` (written only by the watchdog),
   `team.json`, `departments.json` and `ledger.json`.
 - `cases/` - one business case per venture: market, competition, willingness to pay,
   distribution, unit economics, risks and a scorecard. No case, no spec.
