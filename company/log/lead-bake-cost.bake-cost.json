@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T14:15:13.593Z",
+    "agent": "lead-bake-cost",
+    "action": "Started: Validating: collecting sourced demand evidence for home baker costing",
+    "ventureId": "bake-cost",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T14:16:14.863Z",
+    "agent": "lead-bake-cost",
+    "action": "Validating finished: stage moved to validated with sourced evidence for and against",
+    "ventureId": "bake-cost",
+    "kind": "done"
+  }
+]

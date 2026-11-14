@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:16:14.788Z",
   "killReason": null,
   "lead": {
     "name": "Vihaan",
@@ -33,8 +33,53 @@
       "claim": "Bake Margin, a 2026 iOS app for baker recipe costing and margins, is listed on the App Store.",
       "url": "https://apps.apple.com/us/app/bake-margin/id6781448292",
       "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "CakeBoss, desktop pricing and order software for home cake businesses, sells for a one-time USD 149 per user (5 reviews, 4.2 rating).",
+      "url": "https://www.capterra.com/p/127935/CakeBoss/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Bake Margin sells a Pro tier for baker costing, quotes and invoices at USD 3.99 a month, USD 24.99 a year or USD 59.99 lifetime; no rating count shown yet.",
+      "url": "https://apps.apple.com/us/app/bake-margin/id6781448292",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Cost A Cake Pro is a paid USD 4.99 iOS app, rated 2.3 from 15 ratings, which shows people pay but are poorly served.",
+      "url": "https://apps.apple.com/us/app/cost-a-cake-pro/id615555385?l=en",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "An Etsy cake pricing spreadsheet for home bakers sells at USD 4.79 (shop shows 1 sale, no reviews).",
+      "url": "https://www.etsy.com/listing/4598876375",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A home baker on Cake Central asks how to price a custom fondant cake (USD 2.50 vs 4 per serving); replies say work out real costs and at least USD 10 an hour.",
+      "url": "https://www.cakecentral.com/forum/t/757030/help-me-out-guys-how-much-should-i-charge-for-this-cake/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A home baker on Cake Central asks how to price a cheesecake, whether to count ingredients, labour and delivery (9 replies, 2018).",
+      "url": "https://www.cakecentral.com/forum/t/847411/i-know-its-been-asked-about-a-million-times/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "AGAINST: Craftybase offers a free cake pricing calculator covering ingredients, labour, overhead and margin, no sign-up.",
+      "url": "https://craftybase.com/cake-pricing-calculator",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "AGAINST: BatterSuite offers a free cake pricing calculator with labour, overhead and margin; saved recipes and quotes are its paid tier.",
+      "url": "https://www.producthunt.com/products/battersuite/reviews",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "AGAINST: Bakers Pricing Calculator charges USD 59.99 on iOS but shows only 1 rating, so paid standalone calculators sell weakly.",
+      "url": "https://apps.apple.com/us/app/id1588565115",
+      "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Validate: confirm prices paid for baker costing tools on vendor pages and find bakers asking how to price orders. Against: many apps already exist (Cake Aide https://apps.apple.com/us/app/cake-aide/id1442054379)",
-  "stage": "validating"
+  "nextAction": "Business case by research, then sizing, then CEO go or no-go. Research verdict: validated on demand (several paid products at USD 4.79 to 149 and bakers asking how to price), but strong evidence against: free calculators already exist (Craftybase, BatterSuite, cakepricingcalculator.pages.dev) and paid standalone apps show very few ratings or sales. The case must show a gap free tools leave.",
+  "stage": "validated"
 }
