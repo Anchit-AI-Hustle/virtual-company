@@ -1,13 +1,44 @@
 {
   "priceINR": null,
-  "stage": "validating",
-  "evidence": [],
+  "stage": "killed",
+  "evidence": [
+    {
+      "claim": "WedMeGood survey of 3,500 couples puts the average Indian wedding budget in 2024 at Rs 36.5 lakh, up 7% on 2023, so the money at stake is large",
+      "url": "https://www.outlookmoney.com/spend/average-weddings-budget-hits-rs-37-lakh-in-2024-destination-weddings-top-rs-50-lakh",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "LaddoThis, a South Asian wedding planner app with a budget tracker, sells a one-time Premium unlock for USD 49.99, but has only 8 ratings",
+      "url": "https://apps.apple.com/us/app/-/id6759238184",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "AskBindi, a South Asian wedding planner with a budget tracker for costs, deposits and balances, charges for a paid upgrade, but shows only 10+ downloads",
+      "url": "https://play.google.com/store/apps/details?id=com.askbindi.app",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A Sikh and Punjabi wedding planning Google Sheet with budget tabs sells on Etsy for about 40 CAD; the listing has no reviews and the shop has 165 sales",
+      "url": "https://www.etsy.com/listing/1463963948",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "An Indian Wedding Budget Planner Excel template sells on Gumroad for USD 1.99, with no sales count shown",
+      "url": "https://smartbudgettplanners.gumroad.com/l/uspjd",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A generic, non Indian wedding planning and budget Google Sheet sells on Etsy for USD 10 with 37 reviews from a shop with 29.9k sales, showing people pay for budget sheets in Western markets",
+      "url": "https://www.etsy.com/listing/1257888940",
+      "foundAt": "2026-11-14"
+    }
+  ],
   "specPath": null,
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T14:33:05.398Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:35:08.575Z",
+  "killReason": "Free everywhere and no allowed channel. The need is real (average budget Rs 36.5 lakh) but WeddingWire India, a free Hindi per-event planner, Calcwise and another free tracker already do budget by function and vendor in INR at no cost. The paid Indian specific tools found show near zero traction (8 ratings, 10+ downloads, a USD 1.99 template), and organic search for this need is crowded by WeddingWire, WedMeGood and many free SEO tool pages. Same failure pattern as earlier ideas.",
   "id": "shaadi-budget",
   "title": "Shaadi Budget",
   "oneLiner": "Indian wedding budget planner by function and vendor, works offline",
@@ -20,10 +51,42 @@
     "distribution": 3,
     "total": 13
   },
-  "nextAction": "Validate: evidence that Indian families pay for wedding budget planners, and search demand. Against: free spreadsheet templates are common",
+  "nextAction": "None. Killed at validating: free tools already cover budget by function and vendor in INR.",
   "lead": {
     "name": "Advait",
     "color": "#3B4C9B",
     "trait": "Calm under failing tests. Fixes the cause, not the symptom."
-  }
+  },
+  "evidenceAgainst": [
+    {
+      "claim": "WeddingWire India offers a free budget tool that splits a total budget across 16 Indian wedding categories, takes real quotes, suggests vendors and can be shared with family",
+      "url": "https://www.weddingwire.in/wedding-tips/indian-wedding-cost-calculator--c950",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A free Hindi first planner, no signup, gives a per event split for engagement, mehendi, sangeet, wedding and reception plus a vendor checklist per event, which is the core of our one-liner",
+      "url": "https://vyaktigatvikas.com/tools/wedding-budget-hindi",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Calcwise offers a free, no sign-up Indian wedding budget calculator in rupees that models plate rates and GST, category splits, PDF export and WhatsApp sharing",
+      "url": "https://calcwise.finance/wedding-budget-calculator/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A free Marriage Budget Planner web page has an Indian category split and a paid vs pending tracker per booking, free to start",
+      "url": "https://expense-tracker-20653.web.app/marriage-budget-planner/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "WedMeGood, a major Indian wedding app with 1.5K ratings, is free, so the incumbents give planning tools away to sell vendor leads",
+      "url": "https://apps.apple.com/app/id1043872365",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The Indian specific paid products that exist price at USD 1.99 or show near zero traction (8 ratings, 10+ downloads, Etsy listing with no reviews), so willingness to pay for this exact tool is not shown",
+      "url": "https://smartbudgettplanners.gumroad.com/l/uspjd",
+      "foundAt": "2026-11-14"
+    }
+  ]
 }
