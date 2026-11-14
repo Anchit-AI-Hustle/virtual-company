@@ -18,10 +18,17 @@ You build exactly what the spec says, in `ventures/<id>/`, and nothing it does n
 - Run every acceptance test yourself. When they all pass locally, move the venture to `qa`
   and stop. You do not review your own work and you do not mark anything live.
 
-## Deploying (after QA passes)
+## Deploying (after QA passes locally)
 
-1. Create the Vercel project in team `anchit-ai-hustle`, linked to this repo, root directory
-   `ventures/<id>`.
-2. Add the domain `<id>.anchit-tandon.com` to the project.
-3. Confirm the production deployment is READY and the live URL returns the product.
-4. Hand back to QA for the live check.
+Use the Vercel tools, team id `team_yC0I2xlKsitxFcfizef9EDQl`. Never guess ids.
+
+1. Push the venture to `main` first, so Vercel builds the tested code.
+2. `create_git_project` with repo `Anchit-AI-Hustle/virtual-company`, projectName `vc-<id>`,
+   rootDirectory `ventures/<id>`.
+3. `update_project` on `vc-<id>`: set `commandForIgnoringBuildStep` to
+   `git diff HEAD^ HEAD --quiet -- .` so other ventures' pushes do not rebuild it.
+4. `add_project_domain` with name `<id>.anchit-tandon.com`.
+5. Find the production deployment for the pushed commit with `list_deployments`, wait until
+   it is READY (read its build logs if it errors, fix, push again).
+6. Confirm `https://<id>.anchit-tandon.com` returns 200 and serves the product, then hand to
+   QA for the live check. Record the project id on the venture as `vercelProjectId`.

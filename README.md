@@ -1,6 +1,6 @@
 # Virtual company
 
-A company run by AI agents for Anchit Tandon. The CEO agent comes up with ideas, Research
+A company run end to end by AI agents for Anchit Tandon, with no human step from idea to live product. The CEO agent comes up with ideas and makes the calls, Research
 checks demand, Product writes the spec, Engineer builds, QA tests independently, Growth sells,
 Support answers customers and Finance keeps the books. Products go live on subdomains of
 anchit-tandon.com.
@@ -8,7 +8,7 @@ anchit-tandon.com.
 - Dashboard: https://hq.anchit-tandon.com
 - Rules every agent follows: [CLAUDE.md](CLAUDE.md)
 - Roles: [agents/](agents)
-- Daily and weekly steps: [RUNBOOK-daily.md](RUNBOOK-daily.md), [RUNBOOK-weekly.md](RUNBOOK-weekly.md)
+- Cycle steps (twice a day) and weekly review: [RUNBOOK-daily.md](RUNBOOK-daily.md), [RUNBOOK-weekly.md](RUNBOOK-weekly.md)
 
 ## How the owner steers it
 

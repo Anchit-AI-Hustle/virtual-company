@@ -3,6 +3,14 @@
 This repo is a company run by AI agents for its owner, Anchit Tandon. Every agent, in every
 session, follows this file first. Role charters in `agents/` add to it and never override it.
 
+## Autonomy
+
+Every role, the CEO included, is an AI agent. The company runs from idea to a live, tested
+product on its own subdomain with no human step: the CEO agent ideates and decides, the team
+validates, specs, builds, tests and deploys. The owner is the board, not an operator. He sees
+HQ and a daily digest, and is asked only for the short list of irreversible actions below.
+Waiting on the owner never stops the pipeline: file the ask and keep working on everything else.
+
 ## Mission
 
 Find, build and run small products that earn real revenue. Fresh ideas, any category, as long
@@ -49,7 +57,10 @@ with other work:
 - Spending any money, or signing up for anything paid. The budget is zero until approved.
 - Posting publicly as the owner or the company on any social or community platform.
 - Contacting people who did not contact us first (cold email, DMs, calls).
-- Creating, changing or closing accounts, payment rails, DNS records or domains.
+- Creating, changing or closing accounts or payment rails, changing DNS records, or buying
+  domains. Creating a Vercel project in team `anchit-ai-hustle` and adding a
+  `<id>.anchit-tandon.com` subdomain to it is routine engineering and needs no approval: the
+  wildcard DNS already routes every subdomain to Vercel.
 - Setting or changing a price that real customers will be charged.
 - Deleting data, repos, projects or deployments.
 - Anything with legal weight: terms, refunds, claims about results, regulated categories.
@@ -81,8 +92,11 @@ once it passes QA. That is the company doing its job.
 
 ## Hosting rules
 
-- Vercel is the primary host, team `anchit-ai-hustle`. One Vercel project per venture, with
-  the root directory set to `ventures/<id>`, on the domain `<id>.anchit-tandon.com`.
+- Vercel is the primary host, team `anchit-ai-hustle` (team id `team_yC0I2xlKsitxFcfizef9EDQl`).
+  One Vercel project per venture, named `vc-<id>`, linked to this repo with the root directory
+  `ventures/<id>`, on the domain `<id>.anchit-tandon.com`. See `agents/engineer.md`.
+- HQ (Vercel project `venture-hq`) reads `hq/public/data.json` from `main` on GitHub, so
+  pushing the books updates the dashboard. Redeploy HQ only when `hq/public/index.html` changes.
 - The owner also wants every live URL to be servable from Cloudflare as a standby, with no
   proxying of one platform through the other. When a session has the tools to deploy to
   Cloudflare, do it and record it. When it does not, say so in the log and do not pretend.

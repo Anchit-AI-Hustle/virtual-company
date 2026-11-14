@@ -1,6 +1,6 @@
 # Weekly review
 
-Once a week the CEO and Finance step back from the daily work.
+Once a week the CEO agent and Finance agent step back from the daily work. Nobody is watching: decide, act, report.
 
 1. Setup as in the daily runbook, steps 0 and 1.
 2. Finance writes the week's profit and loss per venture and for the company, sorted by

@@ -306,8 +306,14 @@
     });
   }
 
-  fetch('data.json', { cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  // Live state comes from the repo, so every agent cycle shows up without a redeploy.
+  // The copy bundled with the page is the fallback.
+  var LIVE = 'https://raw.githubusercontent.com/Anchit-AI-Hustle/virtual-company/main/hq/public/data.json';
+  function load(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+  }
+  load(LIVE + '?t=' + Date.now())
+    .catch(function () { return load('data.json'); })
     .then(function (d) {
       $('name').textContent = d.company.name;
       document.title = d.company.name;
