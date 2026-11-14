@@ -12,5 +12,12 @@
     "action": "Validated: 3 independent paid signals (Dink, Pickleheads, DinkDrop) plus SFIA 24.3M players; against: Reclub free with live scores, Pickleheads 2 free a month",
     "ventureId": "rally-rounds",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:16:42.200Z",
+    "agent": "lead-rally-rounds",
+    "action": "Blocked: Validated; business case, sizing and CEO decision need independent research, sizing and ceo subagents, and this session has no tool to launch subagents. Not writing them myself",
+    "ventureId": "rally-rounds",
+    "kind": "blocked"
   }
 ]
