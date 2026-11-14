@@ -56,30 +56,63 @@
   .ask .meta { font-size: 0.875rem; color: var(--ink-soft); margin-top: 4px; }
   .btn { display: inline-flex; align-items: center; margin-top: 10px; font-weight: 600; padding: 0 14px; background: var(--ink); color: #fff; border-radius: 8px; text-decoration: none; min-height: 44px; border: 0; cursor: pointer; }
 
-  .floor { background: var(--floor); border-radius: 18px; padding: 10px; display: grid; gap: 10px; }
-  .room { background: var(--paper); border-radius: 12px; padding: 12px; }
-  .room h3 { margin: 0 0 10px; font: 600 0.9375rem/1.3 var(--body); color: var(--ink-soft); display: flex; justify-content: space-between; gap: 8px; }
-  .room h3 span { font-weight: 500; color: var(--go); }
-  .desks { display: grid; gap: 8px; }
-  .desk { width: 100%; text-align: left; background: var(--sheet); border: 1px solid transparent; border-radius: 12px; padding: 12px; display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; cursor: pointer; min-height: 44px; }
-  .desk:hover { border-color: var(--line); }
-  .desk.is-working { border-color: var(--go); }
-  .desk.is-blocked { border-color: var(--stop); background: var(--stop-wash); }
-  .face { position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 1.0625rem/1 var(--display); }
-  .desk .face::after { content: ""; position: absolute; right: -2px; bottom: -2px; width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--sheet); background: var(--line); }
-  .is-working .face::after { background: var(--go); }
-  .is-done .face::after { background: #3F6FD8; }
-  .is-blocked .face::after { background: var(--stop); border-color: var(--stop-wash); }
-  .who { min-width: 0; }
-  .who b { display: block; font-weight: 600; }
-  .who small { display: block; color: var(--ink-soft); font-size: 0.8125rem; line-height: 1.35; }
-  .doing { display: block; margin-top: 6px; font-size: 0.875rem; line-height: 1.4; overflow-wrap: anywhere; }
-  .doing em { font-style: normal; font-weight: 600; }
-  .is-idle .doing { color: var(--ink-soft); }
-  .when { display: block; margin-top: 4px; font-size: 0.75rem; color: var(--ink-soft); }
+  /* The office: rooms with a wall, a floor and people at desks */
+  .office-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 0 0 12px; }
+  .office-now { font-size: 0.875rem; color: var(--ink-soft); min-height: 1.4em; overflow-wrap: anywhere; flex: 1 1 220px; }
+  .office-now b { color: var(--ink); font-weight: 600; }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--ink); background: var(--sheet); color: var(--ink); font-weight: 600; cursor: pointer; }
+  .floor { position: relative; background: #DCE2EB; border-radius: 20px; padding: 10px; display: grid; gap: 10px; overflow: hidden; }
+  .room { position: relative; border-radius: 14px; overflow: hidden; background: repeating-linear-gradient(90deg, #EFE7DC 0 46px, #EAE1D4 46px 47px); }
+  .room-pods { background: repeating-linear-gradient(90deg, #E6EEE9 0 46px, #DFE8E2 46px 47px); }
+  .wall { position: relative; display: flex; align-items: center; gap: 10px; padding: 10px 12px 10px; background: #C9D3E1; border-bottom: 5px solid #B3BFD0; min-height: 52px; }
+  .sign { margin: 0; font: 700 0.9375rem/1.2 var(--display); letter-spacing: -0.01em; color: var(--ink); background: var(--sheet); padding: 6px 10px; border-radius: 6px; box-shadow: 0 2px 0 #9AA6BD; }
+  .busy { font-size: 0.8125rem; color: var(--ink-soft); }
+  .board { margin-left: auto; font-size: 0.75rem; font-weight: 600; background: var(--you-wash); color: #7A5600; border: 2px solid var(--you); padding: 3px 8px; border-radius: 4px; }
+  .decor.window { width: 54px; height: 27px; margin-left: auto; flex: none; }
+  .board + .decor.window, .decor.window + .board { margin-left: 0; }
+  .decor.plant { position: absolute; right: 6px; bottom: 4px; width: 26px; height: 36px; pointer-events: none; }
+  .desks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 6px; padding: 8px 6px 12px; }
+  .desk { position: relative; display: flex; flex-direction: column; align-items: center; background: transparent; border: 0; padding: 66px 2px 0; border-radius: 12px; cursor: pointer; min-width: 0; text-align: center; }
+  .desk:hover .tag b, .desk:focus-visible .tag b { text-decoration: underline; text-underline-offset: 3px; }
+  .person { width: 100%; max-width: 156px; height: auto; display: block; }
+  .tag { display: block; margin-top: 2px; min-width: 0; max-width: 100%; }
+  .tag b { display: block; font-weight: 700; font-size: 0.9375rem; }
+  .tag small { display: block; color: var(--ink-soft); font-size: 0.75rem; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bubble { position: absolute; top: 4px; left: 4px; right: 4px; display: flex; gap: 6px; align-items: flex-start; text-align: left; background: var(--sheet); border: 2px solid var(--ink); border-radius: 12px; padding: 5px 7px; font-size: 0.75rem; line-height: 1.3; box-shadow: 0 3px 0 rgba(20, 33, 61, 0.12); }
+  .bubble::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 12px; height: 12px; background: inherit; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: translateX(-50%) rotate(45deg); }
+  .bubble[hidden] { display: none; }
+  .btxt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+  .ico { width: 14px; height: 14px; flex: none; margin-top: 1px; }
+  .b-working { border-color: var(--go); color: var(--ink); }
+  .b-working::after { border-color: var(--go); }
+  .b-working .ico { color: var(--go); }
+  .b-done { border-color: #3F6FD8; }
+  .b-done::after { border-color: #3F6FD8; }
+  .b-done .ico { color: #3F6FD8; }
+  .b-blocked { border-color: var(--stop); background: var(--stop-wash); }
+  .b-blocked::after { border-color: var(--stop); }
+  .b-blocked .ico { color: var(--stop); }
+  .paper { position: absolute; left: 0; top: 0; width: 18px; height: 22px; margin: -11px 0 0 -9px; background: #fff; border: 2px solid var(--ink); border-radius: 2px; box-shadow: 0 4px 10px rgba(20, 33, 61, 0.25); pointer-events: none; z-index: 5; background-image: linear-gradient(var(--line) 2px, transparent 2px); background-size: 100% 5px; background-position: 0 4px; }
   @media (prefers-reduced-motion: no-preference) {
-    .is-working .face::after { animation: beat 1.6s ease-in-out infinite; }
-    @keyframes beat { 50% { transform: scale(1.25); } }
+    .is-working .arm.left { animation: typeL 0.42s ease-in-out infinite alternate; }
+    .is-working .arm.right { animation: typeR 0.42s ease-in-out infinite alternate; }
+    .is-working .glow { animation: glow 2.4s ease-in-out infinite; }
+    .is-blocked .arm.raise { animation: wave 1.1s ease-in-out infinite; transform-origin: 80px 66px; }
+    .is-idle .body { animation: breathe 4s ease-in-out infinite; transform-origin: 60px 96px; }
+    .is-idle .steam path { animation: steam 2.6s ease-in-out infinite; }
+    .is-idle .steam path + path { animation-delay: 1.3s; }
+    .eyes { animation: blink 5s infinite; transform-origin: 60px 41px; }
+    .is-acting .bubble { animation: pop 0.35s ease-out; }
+    .is-acting .head { animation: nod 0.8s ease-in-out 2; transform-origin: 60px 55px; }
+    @keyframes typeL { to { transform: translate(1.5px, -2px); } }
+    @keyframes typeR { from { transform: translate(-1.5px, -2px); } to { transform: none; } }
+    @keyframes glow { 50% { opacity: 0.15; } }
+    @keyframes wave { 50% { transform: rotate(-9deg); } }
+    @keyframes breathe { 50% { transform: scaleY(1.012); } }
+    @keyframes steam { 0% { opacity: 0; transform: translateY(2px); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(-5px); } }
+    @keyframes blink { 0%, 95%, 100% { transform: none; } 97% { transform: scaleY(0.1); } }
+    @keyframes pop { from { transform: scale(0.85); opacity: 0; } to { transform: none; opacity: 1; } }
+    @keyframes nod { 50% { transform: rotate(4deg); } }
   }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8125rem; color: var(--ink-soft); margin: 12px 2px 0; }
   .legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
@@ -87,11 +120,14 @@
   .lg-done::before { background: #3F6FD8; }
   .lg-blocked::before { background: var(--stop); }
   .lg-idle::before { background: var(--line); }
+  .face { position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 1.0625rem/1 var(--display); overflow: hidden; }
+  .face svg, .mini svg { width: 100%; height: 100%; display: block; }
+  .face.has-person, .mini.has-person { background: #C9D3E1 !important; }
 
   .feed { list-style: none; margin: 0; padding: 0; }
   .feed li { display: grid; grid-template-columns: 32px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
   .feed li.empty { display: block; }
-  .mini { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 0.8125rem/1 var(--display); }
+  .mini { overflow: hidden; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 0.8125rem/1 var(--display); }
   .feed p { margin: 0; overflow-wrap: anywhere; }
   .feed time { display: block; font-size: 0.8125rem; color: var(--ink-soft); }
   .feed .is-new p { font-weight: 600; }
@@ -182,9 +218,13 @@
 
     <section aria-labelledby="h-office">
       <h2 id="h-office">The office</h2>
-      <p class="sub">Sixteen AI agents in six departments, plus one lead agent for every idea being worked. Each desk shows what that agent is doing right now, from the status it writes as it works. Open a desk to see its record.</p>
+      <p class="sub">Sixteen AI agents in six departments, plus one lead for every idea being worked. Each person does exactly what that agent last reported: typing while working, a raised hand when blocked, a tick when finished, coffee when idle. New work plays out live as it arrives. Tap a person to see their record.</p>
+      <div class="office-bar">
+        <p class="office-now" id="officeNow" aria-live="polite">Live view</p>
+        <button type="button" class="btn-ghost" id="replay">Replay today</button>
+      </div>
       <div class="floor" id="floor"></div>
-      <p class="legend"><span class="lg-working">Working</span><span class="lg-done">Just finished</span><span class="lg-blocked">Blocked</span><span class="lg-idle">Idle</span></p>
+      <p class="legend"><span class="lg-working">Working</span><span class="lg-done">Just finished</span><span class="lg-blocked">Blocked, needs a decision</span><span class="lg-idle">Idle</span></p>
     </section>
 
     <div class="split">
@@ -213,6 +253,7 @@
   </footer>
 </div>
 
+<script src="office.js"></script>
 <dialog id="detail" aria-labelledby="detailTitle"><div class="panel" id="panel"></div></dialog>
 
 <script>
@@ -252,9 +293,15 @@
   function titleOfVenture(id) { var v = data.ventures.filter(function (x) { return x.id === id; })[0]; return v ? v.title : null; }
   function agentById(id) { return (data.office || []).filter(function (a) { return a.id === id; })[0]; }
   function face(a, cls) {
-    var f = el('span', cls || 'face', initials(a ? a.name : '?'));
-    f.style.background = a ? a.color : '#4A5670';
+    var f = el('span', cls || 'face');
     f.setAttribute('aria-hidden', 'true');
+    if (a && a.id && window.Office) {
+      f.className += ' has-person';
+      f.innerHTML = Office.personSvg(a, 'idle').replace('viewBox="0 0 120 112"', 'viewBox="38 18 44 44"');
+    } else {
+      f.textContent = initials(a ? a.name : '?');
+      f.style.background = a ? a.color : '#4A5670';
+    }
     return f;
   }
 
@@ -296,39 +343,44 @@
   }
 
   function renderFloor(d) {
-    var floor = $('floor'); floor.textContent = '';
-    d.departments.forEach(function (dep) {
-      var people = d.office.filter(function (a) { return a.department === dep.id; });
-      var busy = people.filter(function (a) { return a.state === 'working'; }).length;
-      var room = el('div', 'room');
-      var h = el('h3', null, dep.name);
-      h.appendChild(el('span', null, busy ? busy + ' working' : ''));
-      room.appendChild(h);
-      var desks = el('div', 'desks');
-      people.forEach(function (a) {
-        var b = el('button', 'desk is-' + a.state);
-        b.type = 'button';
-        b.appendChild(face(a));
-        var who = el('span', 'who');
-        who.appendChild(el('b', null, a.name));
-        who.appendChild(el('small', null, a.title));
-        var doing = el('span', 'doing');
-        if (a.state === 'idle') doing.textContent = a.last ? 'Idle. Last: ' + a.last.action : 'Idle. Not needed yet.';
-        else {
-          doing.appendChild(el('em', null, STATE_WORDS[a.state] + ' '));
-          doing.appendChild(document.createTextNode((a.task || '') + (a.ventureTitle ? ' (' + a.ventureTitle + ')' : '')));
-        }
-        who.appendChild(doing);
-        if (a.since && a.state !== 'idle') who.appendChild(el('span', 'when', ago(a.since)));
-        b.appendChild(who);
-        b.setAttribute('aria-label', a.name + ', ' + a.title + ', ' + (a.state === 'idle' ? 'idle' : STATE_WORDS[a.state] + ' ' + (a.task || '')));
-        b.addEventListener('click', function () { openAgent(a.id); });
-        desks.appendChild(b);
-      });
-      room.appendChild(desks);
-      floor.appendChild(room);
+    if (replaying) return;
+    Office.render($('floor'), d, { onOpen: openAgent });
+  }
+
+  // Replay: act out every real log line of the day, in order, then return to the live view.
+  var replaying = false;
+  function setNow(text, who) {
+    var n = $('officeNow'); n.textContent = '';
+    if (who) { n.appendChild(el('b', null, who + ': ')); }
+    n.appendChild(document.createTextNode(text));
+  }
+  function startReplay() {
+    if (!data) return;
+    var day = new Date(Date.now() - 864e5).toISOString();
+    var events = data.log.filter(function (e) { return e.at >= day; }).slice().reverse();
+    if (!events.length) { setNow('Nothing has happened in the last 24 hours to replay.'); return; }
+    replaying = true;
+    Office.render($('floor'), resetOffice(data), { onOpen: openAgent });
+    $('floor').dataset.follow = '1';
+    $('replay').textContent = 'Stop replay';
+    Office.play($('floor'), data, events, {
+      gap: 1300,
+      onStep: function (e, i, n) { var a = agentById(e.agent); setNow(when(e.at) + ', ' + e.action + ' (' + i + ' of ' + n + ')', a ? a.name : e.agent); },
+      onEnd: endReplay
     });
   }
+  function endReplay() {
+    Office.stop();
+    replaying = false;
+    $('floor').dataset.follow = '';
+    $('replay').textContent = 'Replay today';
+    setNow('Live view');
+    renderFloor(data);
+  }
+  function resetOffice(d) {
+    return Object.assign({}, d, { office: d.office.map(function (a) { return Object.assign({}, a, { state: 'idle', task: null }); }) });
+  }
+  $('replay').addEventListener('click', function () { if (replaying) endReplay(); else startReplay(); });
 
   function feedItem(e, cls) {
     var a = agentById(e.agent);
@@ -476,12 +528,21 @@
   dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
 
   function render(d) {
+    var first = !data;
+    var fresh = first ? [] : d.log.filter(function (e) { return !seen[e.at + e.agent + e.action]; }).slice().reverse();
     data = d;
     $('name').textContent = d.company.name;
     var s = statusLine(d);
     $('status').textContent = s.head;
     $('statusNote').textContent = s.note;
     renderAsks(d); renderFloor(d); renderRail(d); renderFeed(d); renderMoney(d);
+    if (fresh.length && !replaying) {
+      Office.play($('floor'), d, fresh, {
+        gap: 1500,
+        onStep: function (e) { var a = agentById(e.agent); setNow('Just now, ' + e.action, a ? a.name : e.agent); },
+        onEnd: function () { setNow('Live view'); renderFloor(data); }
+      });
+    }
   }
   function tick() {
     if (!checkedAt || !data) return;

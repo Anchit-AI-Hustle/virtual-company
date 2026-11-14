@@ -20,6 +20,7 @@ const shots = path.join(ROOT, 'shots');
 function sampleState() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'hq-sample-'));
   fs.cpSync(path.join(ROOT, 'company'), path.join(dir, 'company'), { recursive: true });
+  for (const sub of ['ventures', 'approvals', 'activity', 'log', 'reviews']) fs.rmSync(path.join(dir, 'company', sub), { recursive: true, force: true });
   const put = (rel, v) => { const f = path.join(dir, 'company', rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(v)); };
   const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/config.json'), 'utf8'));
   const t = (h) => new Date(Date.now() - h * 3600e3).toISOString();
@@ -117,6 +118,18 @@ function serve() {
       await page.locator('.close').click();
     }
 
+    // The office must show a person at every desk, and the replay must act out real log lines.
+    const people = await page.locator('.desk svg.person').count();
+    if (people !== facts.desks) problems.push(`expected a person at every desk, saw ${people} of ${facts.desks}`);
+    await page.locator('#floor').screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-office.png`) });
+    await page.locator('#replay').click();
+    await page.waitForTimeout(3200);
+    const acting = await page.locator('.desk.is-acting').count();
+    const now = await page.locator('#officeNow').textContent();
+    if (!acting || !/of \d+/.test(now)) problems.push('replay did not act out any log line: ' + now);
+    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-replay.png`) });
+    await page.locator('#replay').click();
+    if ((await page.locator('#replay').textContent()) !== 'Replay today') problems.push('replay did not stop');
     await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}.png`), fullPage: true });
     console.log(`${problems.length ? 'FAIL' : 'PASS'} ${width}px | "${facts.status}" | rooms ${facts.rooms} | desks ${facts.desks} (${facts.working} working) | cards ${facts.cards} | feed ${facts.feed} | overflow ${facts.overflow} | font ${facts.font}`);
     for (const p of problems) console.log('   ' + p);
