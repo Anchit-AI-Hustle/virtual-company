@@ -3,10 +3,12 @@
   "ventureId": "seatwise",
   "type": "pricing",
   "ask": "Approve INR 799 one-time as the Seatwise Pro price",
-  "why": "Competitors charge 17.99 USD (SeatFlow Lifetime) and 50 USD (PlanSeats Lifetime) for the same job",
+  "why": "Research found couples already pay for wedding seating tools. This is the proposed price for the paid version.",
   "costINR": 0,
   "ifNo": "Pro stays not on sale, free planner keeps running",
   "status": "pending",
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/1",
-  "createdAt": "2026-11-14T06:50:27.227Z"
+  "createdAt": "2026-11-14T06:50:27.227Z",
+  "title": "Price Seatwise Pro at Rs 799, paid once",
+  "youDo": "Comment approve to accept Rs 799, or reject with the price you prefer."
 }

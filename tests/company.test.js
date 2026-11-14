@@ -165,8 +165,10 @@ test('a killed venture records why, and scores add up', () => {
 });
 
 test('only the owner can decide an approval', () => {
-  const pending = { id: 'ap-1', ventureId: null, type: 'money', ask: 'Spend Rs 500 on a domain', costINR: 500, status: 'pending', issueUrl: null, createdAt: '2026-11-14T03:00:00Z', decidedBy: null, decidedAt: null };
+  const pending = { id: 'ap-1', ventureId: null, type: 'money', ask: 'Spend Rs 500 on a domain', title: 'Buy a domain for Rs 500', why: 'The product needs its own name', youDo: 'Comment approve', costINR: 500, status: 'pending', issueUrl: null, createdAt: '2026-11-14T03:00:00Z', decidedBy: null, decidedAt: null };
   assert.deepStrictEqual(validate(fixture({ approvals: [pending] })), []);
+  const jargon = Object.assign({}, pending); delete jargon.why; delete jargon.youDo;
+  assert.ok(rules(fixture({ approvals: [jargon] })).includes('approval'), 'a decision without a plain reason and action is rejected');
   assert.ok(rules(fixture({ approvals: [Object.assign({}, pending, { status: 'approved', decidedBy: 'ceo', decidedAt: '2026-11-14T04:00:00Z' })] })).includes('approval'));
   assert.deepStrictEqual(validate(fixture({ approvals: [Object.assign({}, pending, { status: 'approved', decidedBy: 'owner', decidedAt: '2026-11-14T04:00:00Z' })] })), []);
 });

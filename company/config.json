@@ -208,5 +208,16 @@
       "color": "#4A6420",
       "trait": "Ships, measures, decides."
     }
-  ]
+  ],
+  "schedule": {
+    "timezone": "Asia/Kolkata",
+    "cycles": [
+      "10:41",
+      "19:41"
+    ],
+    "weekly": {
+      "day": "Sunday",
+      "time": "17:13"
+    }
+  }
 }

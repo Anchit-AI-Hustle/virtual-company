@@ -49,6 +49,20 @@
   .sub { margin: 0 0 16px; color: var(--ink-soft); font-size: 0.9375rem; max-width: 64ch; }
   .empty { color: var(--ink-soft); margin: 0; }
 
+  .how { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 8px; counter-reset: how; max-width: 980px; }
+  .how li { counter-increment: how; display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; background: var(--sheet); border-radius: 12px; padding: 12px 14px; font-size: 0.9375rem; }
+  .how li::before { content: counter(how); width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font: 700 0.9375rem/1 var(--display); }
+  .how p { margin: 4px 0 0; }
+  .how b { display: block; }
+  .how span { color: var(--ink-soft); }
+  .ask h3 { margin: 0; font: 700 1.0625rem/1.3 var(--display); letter-spacing: -0.01em; }
+  .ask dl { margin: 8px 0 0; display: grid; gap: 6px; font-size: 0.9375rem; }
+  .ask dt { font-weight: 600; font-size: 0.8125rem; color: var(--ink-soft); }
+  .ask dd { margin: 0; }
+  .ask .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .ask .actions .btn { margin-top: 0; }
+  .ask .actions .btn-ghost { text-decoration: none; }
+  .asks-help { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; max-width: 70ch; }
   .asks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
   .ask { background: var(--you-wash); border-left: 6px solid var(--you); border-radius: 4px 12px 12px 4px; padding: 14px 16px; }
   .ask p { margin: 0; }
@@ -184,7 +198,8 @@
   @media (min-width: 700px) {
     .wrap { padding: 26px 28px 80px; }
     .floor { grid-template-columns: repeat(2, 1fr); padding: 12px; gap: 12px; }
-    .asks { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+    .asks { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+    .how { grid-template-columns: repeat(3, 1fr); }
     .money { grid-template-columns: repeat(3, 1fr); }
     .money div { flex-direction: column; align-items: flex-start; }
     .money dd { text-align: left; font-size: 1.75rem; }
@@ -211,16 +226,22 @@
     <h1 class="status" id="status">Opening the office</h1>
     <p class="status-note" id="statusNote"></p>
 
+    <ol class="how" aria-label="How the company works">
+      <li><p><b>Agents run the company twice a day</b><span id="howWhen">A CEO agent picks ideas, a team of agents checks demand, builds and tests them.</span></p></li>
+      <li><p><b>You only make the big calls</b><span>Money, prices, public posts and account changes wait for your yes. Everything else is automatic.</span></p></li>
+      <li><p><b>Finished products go live</b><span>Each one gets its own address on anchit-tandon.com, once every check passes.</span></p></li>
+    </ol>
+
     <section aria-labelledby="h-asks">
-      <h2 id="h-asks">Waiting on you</h2>
+      <h2 id="h-asks">Decisions for you</h2>
       <div id="asks"></div>
     </section>
 
     <section aria-labelledby="h-office">
       <h2 id="h-office">The office</h2>
-      <p class="sub">Sixteen AI agents in six departments, plus one lead for every idea being worked. Each person does exactly what that agent last reported: typing while working, a raised hand when blocked, a tick when finished, coffee when idle. New work plays out live as it arrives. Tap a person to see their record.</p>
+      <p class="sub">Each person is one AI agent, doing exactly what it last reported. Typing means working, a raised hand means stuck, a tick means just finished, coffee means nothing to do. New work plays out here as it happens. Tap anyone to see what they have done.</p>
       <div class="office-bar">
-        <p class="office-now" id="officeNow" aria-live="polite">Live view</p>
+        <p class="office-now" id="officeNow" aria-live="polite">Live view. Press Replay to watch the last 24 hours.</p>
         <button type="button" class="btn-ghost" id="replay">Replay today</button>
       </div>
       <div class="floor" id="floor"></div>
@@ -230,7 +251,7 @@
     <div class="split">
       <section aria-labelledby="h-pipe">
         <h2 id="h-pipe">Pipeline</h2>
-        <p class="sub">Every idea and product, by stage. Open one to see who worked on it and what is checked.</p>
+        <p class="sub">Every idea, from first research to a live product. Tap one to see who worked on it and which checks it has passed.</p>
         <div class="rail" id="rail"></div>
         <p class="wip" id="wip"></p>
       </section>
@@ -310,36 +331,54 @@
     var live = d.ventures.filter(function (v) { return v.stage === 'live' || v.stage === 'scaling'; }).length;
     var works = d.ventures.filter(function (v) { return ['validating', 'validated', 'spec', 'building', 'qa'].indexOf(v.stage) > -1; }).length;
     var ideas = d.ventures.filter(function (v) { return v.stage === 'idea'; }).length;
-    var head;
-    if (working) head = plural(working, 'agent is', 'agents are') + ' at work';
-    else if (live) head = plural(live, 'product is', 'products are') + ' live';
-    else if (!d.ventures.length) head = 'The office is open, nothing built yet';
-    else head = 'The team is between cycles';
-    var bits = [];
-    if (live) bits.push(plural(live, 'product live', 'products live'));
-    if (works) bits.push(works + ' in the works');
-    if (ideas) bits.push(plural(ideas, 'idea waiting', 'ideas waiting'));
-    var note = bits.length ? bits.join(', ') + '.' : 'The CEO agent writes and scores the first ideas in the next cycle.';
-    if (d.approvals.length) note += ' ' + plural(d.approvals.length, 'decision needs', 'decisions need') + ' you.';
+    var next = nextSession(d);
+    var head = working ? plural(working, 'agent is', 'agents are') + ' working right now'
+      : next ? 'The agents work again ' + next.replace(' IST', '') : 'The agents are resting';
+    var bits = [plural(live, 'product live', 'products live'), works + ' being built', plural(ideas, 'idea', 'ideas') + ' in the queue'];
+    var note = bits.join(', ') + '.';
+    if (d.approvals.length) note += ' ' + plural(d.approvals.length, 'decision needs', 'decisions need') + ' you below.';
     return { head: head, note: note };
   }
 
   function renderAsks(d) {
     var box = $('asks'); box.textContent = '';
-    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. Spending, public posts, outreach, prices and account changes will show up here first.')); return; }
+    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. When the agents need a yes on money, prices, public posts or accounts, it will show up here.')); return; }
     var ul = el('ul', 'asks');
     d.approvals.forEach(function (a) {
       var li = el('li', 'ask');
-      li.appendChild(el('p', 'what', a.ask));
-      var bits = [a.type.replace('-', ' ')];
-      if (typeof a.costINR === 'number' && a.costINR > 0) bits.push('costs ' + inr(a.costINR));
-      if (a.createdAt) bits.push('asked ' + when(a.createdAt));
-      li.appendChild(el('p', 'meta', bits.join(', ')));
+      li.appendChild(el('h3', null, a.title || a.ask));
+      var dl = el('dl');
+      function row(k, v) { if (!v) return; dl.appendChild(el('dt', null, k)); dl.appendChild(el('dd', null, v)); }
+      row('Why it matters', a.why);
+      row('What you do', a.youDo);
+      row('If you say no', a.ifNo);
+      row('Cost', typeof a.costINR === 'number' && a.costINR > 0 ? inr(a.costINR) : 'Free');
+      li.appendChild(dl);
       var u = safeUrl(a.issueUrl);
-      if (u) { var link = el('a', 'btn', 'Approve or reject'); link.href = u; link.rel = 'noopener'; li.appendChild(link); }
+      if (u) {
+        var act = el('p', 'actions');
+        var yes = el('a', 'btn', 'Approve'); yes.href = u; yes.rel = 'noopener'; yes.target = '_blank'; yes.setAttribute('aria-label', 'Approve: ' + (a.title || a.ask) + ' (opens GitHub)');
+        var no = el('a', 'btn-ghost', 'Reject'); no.href = u; no.rel = 'noopener'; no.target = '_blank'; no.setAttribute('aria-label', 'Reject: ' + (a.title || a.ask) + ' (opens GitHub)');
+        act.appendChild(yes); act.appendChild(no);
+        li.appendChild(act);
+      }
       ul.appendChild(li);
     });
     box.appendChild(ul);
+    box.appendChild(el('p', 'asks-help', 'Approve and Reject open the decision on GitHub. Write a comment starting with approve or reject (a note after it is fine). The agents act on it in their next work session' + (nextSession(d) ? ', ' + nextSession(d) : '') + '.'));
+  }
+
+  // When the agents next work, from the schedule in the company config (times in IST).
+  function nextSession(d) {
+    var sc = d.schedule; if (!sc || !sc.cycles || !sc.cycles.length) return null;
+    var now = new Date(Date.now() + 330 * 60000);
+    var mins = now.getUTCHours() * 60 + now.getUTCMinutes();
+    var times = sc.cycles.map(function (t) { var p = t.split(':'); return +p[0] * 60 + +p[1]; }).sort(function (x, y) { return x - y; });
+    var next = times.filter(function (t) { return t > mins; })[0];
+    var day = 'today';
+    if (next === undefined) { next = times[0]; day = 'tomorrow'; }
+    var h = Math.floor(next / 60), m = next % 60;
+    return day + ' at ' + ((h + 11) % 12 + 1) + ':' + (m < 10 ? '0' : '') + m + ' ' + (h < 12 ? 'AM' : 'PM') + ' IST';
   }
 
   function renderFloor(d) {
@@ -374,7 +413,7 @@
     replaying = false;
     $('floor').dataset.follow = '';
     $('replay').textContent = 'Replay today';
-    setNow('Live view');
+    setNow('Live view. Press Replay to watch the last 24 hours.');
     renderFloor(data);
   }
   function resetOffice(d) {
@@ -540,13 +579,13 @@
       Office.play($('floor'), d, fresh, {
         gap: 1500,
         onStep: function (e) { var a = agentById(e.agent); setNow('Just now, ' + e.action, a ? a.name : e.agent); },
-        onEnd: function () { setNow('Live view'); renderFloor(data); }
+        onEnd: function () { setNow('Live view. Press Replay to watch the last 24 hours.'); renderFloor(data); }
       });
     }
   }
   function tick() {
     if (!checkedAt || !data) return;
-    $('updated').textContent = 'Books updated ' + ago(data.builtAt) + ', checked ' + ago(checkedAt);
+    $('updated').textContent = 'Last update ' + ago(data.builtAt);
     $('pulse').className = 'pulse' + (Date.now() - new Date(checkedAt).getTime() > POLL_MS * 3 ? ' stale' : '');
   }
 

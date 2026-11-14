@@ -141,6 +141,8 @@ function validate(dir) {
     if (!config.approvalTypes.includes(a.type)) err('approval', `${tag}: unknown type ${a.type}`);
     if (!['pending', 'approved', 'rejected'].includes(a.status)) err('approval', `${tag}: unknown status`);
     if (typeof a.ask !== 'string' || !a.ask.trim()) err('approval', `${tag}: missing ask`);
+    if (a.status === 'pending') for (const f of ['title', 'why', 'youDo']) if (typeof a[f] !== 'string' || !a[f].trim()) err('approval', `${tag}: a pending decision needs a plain ${f} for the owner`);
+    if (a.title && a.title.length > 70) err('approval', `${tag}: title must be 70 characters or fewer`);
     if (a.status !== 'pending' && (a.decidedBy !== 'owner' || !a.decidedAt)) err('approval', `${tag}: only the owner can decide an approval`);
     if (a.status === 'pending' && (a.decidedBy || a.decidedAt)) err('approval', `${tag}: pending approval cannot carry a decision`);
   }

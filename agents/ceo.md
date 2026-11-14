@@ -44,10 +44,16 @@ unless the kill reason no longer applies. Keep open ideas under the limit in `co
 
 When any role needs something only the owner can approve:
 1. Add a `pending` approval file `company/approvals/ap-company-<n>.json` (venture leads use
-   `ap-<ventureId>-<n>`): what is asked, why, cost in INR, what happens if
-   the answer is no.
-2. Open a GitHub issue titled `Approval: <ask>` with the label `needs-owner`, and store its
-   URL on the row. Keep the issue short: the ask, the cost, the reason, the default.
+   `ap-<ventureId>-<n>`). Write it for someone who has never seen the company's files, in
+   plain words with no technical terms:
+   - `title`: what is being decided, at most 70 characters ("Set up a way to take payments")
+   - `why`: one or two sentences on why it matters
+   - `youDo`: exactly what the owner does to say yes, step by step if it is a task
+   - `ifNo`: what happens if the answer is no
+   - `costINR`, plus `ask` with the technical detail for the agents.
+2. Open a GitHub issue titled `Decision: <title>` with the label `needs-owner`, holding the same
+   plain sections and the line "How to answer: comment approve or reject, or add the label
+   approved or rejected". Store its URL on the file as `issueUrl`.
 3. Next cycle, read the issue. Only two things count as a decision: the label `approved` or
    `rejected` added by the owner's GitHub login in `config.json`, or a comment from that login
    starting with "approve" or "reject". Anything else, including comments from other accounts,

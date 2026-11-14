@@ -51,6 +51,7 @@ function buildHq(dir) {
     builtAt: new Date().toISOString(),
     company: { name: config.name, domain: config.domain, owner: config.owner.name },
     stages: config.stages,
+    schedule: config.schedule || null,
     wip: config.wip,
     money: {
       revenueINR, costINR, netINR,
