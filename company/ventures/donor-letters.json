@@ -4,10 +4,14 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:32:23.142Z",
-  "updatedAt": "2026-11-14T14:32:23.142Z",
+  "updatedAt": "2026-11-14T14:33:05.398Z",
   "killReason": null,
-  "lead": null,
-  "stage": "idea",
+  "lead": {
+    "name": "Myra",
+    "color": "#A0306B",
+    "trait": "Writes the spec as if a stranger had to build it."
+  },
+  "stage": "validating",
   "id": "donor-letters",
   "title": "Donor Letters",
   "oneLiner": "Year-end giving statements for every donor from one spreadsheet or QuickBooks export, printed or emailed as PDFs",

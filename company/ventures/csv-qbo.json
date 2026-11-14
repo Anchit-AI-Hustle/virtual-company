@@ -4,10 +4,14 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:32:23.142Z",
-  "updatedAt": "2026-11-14T14:32:23.142Z",
+  "updatedAt": "2026-11-14T14:33:05.398Z",
   "killReason": null,
-  "lead": null,
-  "stage": "idea",
+  "lead": {
+    "name": "Sara",
+    "color": "#8A5A00",
+    "trait": "Thinks like the buyer, prices like the seller."
+  },
+  "stage": "validating",
   "id": "csv-qbo",
   "title": "CSV to QBO",
   "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
