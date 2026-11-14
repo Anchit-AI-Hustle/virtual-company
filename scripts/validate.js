@@ -153,6 +153,15 @@ function validate(dir) {
   if (openIdeas > config.wip.openIdeas) err('wip', `${openIdeas} open ideas, limit is ${config.wip.openIdeas}`);
 
   // Approvals
+  // Only approved ideas get code: a folder in ventures/ must belong to a venture that reached
+  // building (approved case, sizing, CEO go and spec review), or one stopped later (parked).
+  const vdir = path.join(dir, 'ventures');
+  if (fs.existsSync(vdir)) for (const id of fs.readdirSync(vdir)) {
+    if (!fs.statSync(path.join(vdir, id)).isDirectory()) continue;
+    const v = ventures.find((x) => x.id === id);
+    if (!v) err('approved-only', `ventures/${id}/ has code but no venture file`);
+    else if (v.stage !== 'killed' && at(v.stage) < at('building')) err('approved-only', `ventures/${id}/ has code before the idea was approved for building (stage ${v.stage})`);
+  }
   const approvalIds = new Map();
   for (const a of approvals) {
     const tag = `approval ${a.id}`;

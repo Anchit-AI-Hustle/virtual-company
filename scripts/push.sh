@@ -35,7 +35,14 @@ for attempt in 1 2 3 4 5; do
   done
   [ "$ok_pull" = 1 ] || { cat /tmp/push-pull.log >&2; echo "Could not pull main" >&2; exit 4; }
 
-  if ! ${PUSH_CHECK:-npm run -s check} >/tmp/push-check.log 2>&1; then
+  # Run the checks the way GitHub CI does: a clean copy of the commit outside any folder with
+  # extra node modules, and no NODE_PATH, so nothing that only exists here can hide a failure.
+  ci_mirror() {
+    local d; d=$(mktemp -d /tmp/vc-ci-XXXXXX)
+    git clone -q --no-hardlinks . "$d" && (cd "$d" && env -u NODE_PATH npm run -s check); local rc=$?
+    rm -rf "$d"; return $rc
+  }
+  if ! ${PUSH_CHECK:-ci_mirror} >/tmp/push-check.log 2>&1; then
     echo "Checks fail after merging with main. Not pushing. Fix and run again:" >&2
     grep -E "FAIL|not ok" /tmp/push-check.log | head -20 >&2
     exit 3

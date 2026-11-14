@@ -26,5 +26,12 @@
     "action": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T10:51:27.092Z",
+    "agent": "ceo",
+    "action": "Decided: Seatwise offline: pause its project, only approved ideas stay live",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

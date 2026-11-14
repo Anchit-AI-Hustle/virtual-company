@@ -40,5 +40,12 @@
     "action": "Blocked: Seatwise returns 200 on /, /pro.html, /stats.json; Cloudflare still injects its bot script, still waiting on owner approval ap-4",
     "ventureId": "seatwise",
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T10:51:26.928Z",
+    "agent": "devops",
+    "action": "Paused vc-seatwise: the stopped idea is offline, project and code kept",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

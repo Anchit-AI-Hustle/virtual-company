@@ -1,0 +1,44 @@
+{
+  "id": "ap-seatwise-3",
+  "ventureId": "seatwise",
+  "type": "account",
+  "ask": "Pause Vercel project vc-seatwise (prj_Cx0xrFIKG2WpZQNqr5Pgs3VcVcUC) so the stopped idea is no longer served at seatwise.anchit-tandon.com",
+  "title": "Take the stopped Seatwise product offline",
+  "why": "Seatwise was stopped after its business case scored 11 of 35, but its free planner was still online. Only approved ideas may be live.",
+  "costINR": 0,
+  "createdAt": "2026-11-14T10:50:00.000Z",
+  "status": "decided",
+  "options": [
+    {
+      "option": "Pause its Vercel project",
+      "realism": 5,
+      "profitINR12m": 0,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Vercel pause_project blocks the production deployment and can be undone with unpause_project. Seatwise earns nothing (no payment set up, case 11 of 35)."
+    },
+    {
+      "option": "Delete its Vercel project",
+      "realism": 1,
+      "profitINR12m": 0,
+      "costINR": 0,
+      "reversible": false,
+      "basis": "Deleting projects is outside the decision limits in CLAUDE.md."
+    },
+    {
+      "option": "Do nothing for now",
+      "realism": 5,
+      "profitINR12m": 0,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Leaves an idea online that was never approved, against the owner's rule that only approved ideas are deployed."
+    }
+  ],
+  "decision": {
+    "choice": "Pause its Vercel project",
+    "reason": "The owner wants only approved ideas deployed. Pausing takes Seatwise offline at no cost, keeps its code and project, and can be undone in one step.",
+    "decidedAt": "2026-11-14T10:50:00.000Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/6"
+}

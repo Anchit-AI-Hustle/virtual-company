@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: read
 concurrency:
   group: watchdog
   cancel-in-progress: false
@@ -26,6 +27,8 @@ jobs:
         with:
           node-version: 22
       - id: check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/watchdog.js
       - name: Record the change (this also triggers a fresh HQ deploy)
         if: steps.check.outputs.changed == 'yes'

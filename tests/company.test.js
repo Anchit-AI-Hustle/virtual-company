@@ -462,3 +462,23 @@ test('QA check removes only Cloudflare\'s injected scripts', () => {
   assert.strictEqual(stripHostingScripts(own + cf), own);
   assert.strictEqual(stripHostingScripts(own), own);
 });
+
+test('only approved ideas get code or stay online', () => {
+  const code = { 'ventures/invoice-buddy/index.html': '<p>hi</p>' };
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'validated', evidence })], files: code })).includes('approved-only'), 'no code before approval');
+  assert.ok(!rules(fixture({ ventures: [venture({ stage: 'killed', killReason: 'weak case' })], files: code })).includes('approved-only'), 'parked code of a stopped idea is allowed');
+  assert.ok(rules(fixture({ files: { 'ventures/ghost/index.html': 'x' } })).includes('approved-only'), 'code without a venture file');
+  const { assess } = require('../scripts/watchdog.js');
+  const base = { now: Date.parse('2026-11-14T12:00:00Z'), hq: { status: 200, body: 'class="plan"' }, data: { status: 200, json: { builtAt: '2026-11-14T11:00:00Z' } }, products: [] };
+  assert.deepStrictEqual(assess(Object.assign({}, base, { unapproved: [{ id: 'x', title: 'X', stage: 'killed', url: 'https://x.anchit-tandon.com/', status: 200 }] })).problems.map((p) => p.id), ['unapproved-x']);
+  assert.deepStrictEqual(assess(Object.assign({}, base, { unapproved: [{ id: 'x', title: 'X', stage: 'idea', url: 'https://x.anchit-tandon.com/', status: 404 }] })).problems, []);
+});
+
+test('watchdog raises an alarm when the automatic tests on main fail', () => {
+  const { assess } = require('../scripts/watchdog.js');
+  const base = { now: Date.parse('2026-11-14T12:00:00Z'), hq: { status: 200, body: 'class="plan"' }, data: { status: 200, json: { builtAt: '2026-11-14T11:00:00Z' } }, products: [] };
+  const ids = (ci) => assess(Object.assign({}, base, { ci })).problems.map((p) => p.id);
+  assert.deepStrictEqual(ids({ conclusion: 'failure', at: '2026-11-14T11:30:00Z', title: 'x' }), ['ci-red']);
+  assert.deepStrictEqual(ids({ conclusion: 'failure', at: '2026-11-14T11:55:00Z', title: 'x' }), [], 'a fix may be on its way for 10 minutes');
+  assert.deepStrictEqual(ids({ conclusion: 'success', at: '2026-11-14T11:30:00Z', title: 'x' }), []);
+});

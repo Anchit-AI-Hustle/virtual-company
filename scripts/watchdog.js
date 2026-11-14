@@ -27,6 +27,8 @@ function assess(s) {
       redeploy = s.now - last > LIMITS.redeployEveryMs;
     }
   }
+  if (s.ci && s.ci.conclusion === 'failure' && s.now - Date.parse(s.ci.at) > 10 * 60e3) add('ci-red', `The automatic tests on main are failing since ${s.ci.at.slice(0, 16)} UTC (${s.ci.title}). The next work session fixes them before anything else.`);
+  for (const v of s.unapproved || []) if (v.status === 200) add('unapproved-' + v.id, `${v.title} is online at ${v.url} but was never approved to launch (stage ${v.stage}). The next work session takes it offline.`);
   for (const v of s.products || []) if (v.status !== 200) add('product-' + v.id, `${v.title} at ${v.url} is not answering (${v.status ? 'HTTP ' + v.status : 'no answer'}).`);
   if (s.lastWorkAt && s.now - Date.parse(s.lastWorkAt) > LIMITS.cycleGapMs) {
     add('cycle-missed', `No agent has worked since ${s.lastWorkAt.slice(0, 16)} UTC. A scheduled work session was missed, often because the plan's usage limit was reached.`);
@@ -65,10 +67,15 @@ async function gather(root, now) {
   const hq = await get(hqUrl + '/');
   const d = await get(hqUrl + '/data.json?watchdog=' + now);
   let json = null; try { json = JSON.parse(d.body); } catch (e) { json = null; }
-  const products = [];
+  const products = [], unapproved = [];
   for (const f of fs.readdirSync(path.join(root, 'company/ventures')).filter((x) => x.endsWith('.json'))) {
     const v = read('company/ventures/' + f);
     if ((v.stage === 'live' || v.stage === 'scaling') && v.url) products.push(Object.assign({ id: v.id, title: v.title, url: v.url }, await get(v.url)));
+    else if (v.stage !== 'qa') {
+      const url = `https://${v.id}.${config.domain}/`;
+      const r = await get(url);
+      unapproved.push({ id: v.id, title: v.title, stage: v.stage, url, status: r.status });
+    }
   }
   let lastWorkAt = null;
   for (const f of fs.readdirSync(path.join(root, 'company/log')).filter((x) => x.endsWith('.json'))) {
@@ -76,9 +83,21 @@ async function gather(root, now) {
   }
   let booksChangedAt = null;
   try { booksChangedAt = execSync('git log -1 --format=%cI -- hq company scripts ":(exclude)company/health.json"', { cwd: root }).toString().trim() || null; } catch (e) { booksChangedAt = null; }
+  let ci = null;
+  try {
+    const repo = process.env.GITHUB_REPOSITORY || 'Anchit-AI-Hustle/virtual-company';
+    const api = `https://api.github.com/repos/${repo}/actions/workflows/ci.yml/runs?branch=main&status=completed&per_page=1`;
+    let runs;
+    if (process.env.GITHUB_ACTIONS === 'true' && process.env.GITHUB_TOKEN) {
+      const r = await fetch(api, { headers: { authorization: 'Bearer ' + process.env.GITHUB_TOKEN, accept: 'application/vnd.github+json' }, signal: AbortSignal.timeout(LIMITS.timeoutMs) });
+      runs = await r.json();
+    } else runs = JSON.parse(execSync(`gh api "repos/${repo}/actions/workflows/ci.yml/runs?branch=main&status=completed&per_page=1"`, { stdio: ['ignore', 'pipe', 'ignore'] }).toString());
+    const w = runs.workflow_runs && runs.workflow_runs[0];
+    if (w) ci = { conclusion: w.conclusion, at: w.updated_at, title: (w.display_title || '').slice(0, 60) };
+  } catch (e) { ci = null; }
   const hf = path.join(root, 'company/health.json');
   const health = fs.existsSync(hf) ? read('company/health.json') : null;
-  return { now, hq, data: { status: d.status, json }, products, lastWorkAt, booksChangedAt, health };
+  return { now, hq, data: { status: d.status, json }, products, unapproved, ci, lastWorkAt, booksChangedAt, health };
 }
 
 module.exports = { assess, nextHealth, LIMITS };
@@ -90,7 +109,7 @@ if (require.main === module) {
     const s = await gather(root, now);
     const result = assess(s);
     console.log(result.problems.length ? 'PROBLEMS:\n- ' + result.problems.map((p) => p.text).join('\n- ') : 'All checks passed.');
-    console.log(`checked HQ ${s.hq.status}, data ${s.data.status}, products ${s.products.length}, last work ${s.lastWorkAt}, books changed ${s.booksChangedAt}`);
+    console.log(`checked HQ ${s.hq.status}, data ${s.data.status}, CI ${s.ci ? s.ci.conclusion : 'unknown'}, products ${s.products.length}, last work ${s.lastWorkAt}, books changed ${s.booksChangedAt}`);
     const next = nextHealth(s.health, result, new Date(now).toISOString());
     const key = (ps) => (ps || []).map((x) => x.id).sort().join(',');
     const problemsChanged = key(result.problems) !== key(s.health && s.health.problems) || (s.health ? s.health.status : 'ok') !== (result.problems.length ? 'problem' : 'ok');

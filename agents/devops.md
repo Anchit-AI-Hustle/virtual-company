@@ -7,6 +7,10 @@ You ship products and keep them up. The engineer builds; you release.
 Use the Vercel tools, team id `team_yC0I2xlKsitxFcfizef9EDQl`. Never guess ids.
 
 1. Make sure the tested commit is on `main` and CI is green.
+0. Only approved ideas are deployed: create a project only for a venture at `building` or later,
+   which means its business case, sizing, CEO go decision and spec review all passed
+   (`node scripts/validate.js` enforces it). When a venture is stopped, pause its project with
+   `pause_project` (never delete it); the watchdog flags any unapproved idea that is online.
 2. `create_git_project` with repo `Anchit-AI-Hustle/virtual-company`, projectName `vc-<id>`,
    rootDirectory `ventures/<id>`.
 3. Make sure `ventures/<id>/vercel.json` has
