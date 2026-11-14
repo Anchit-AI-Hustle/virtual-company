@@ -56,7 +56,7 @@ const payload = sample ? sampleState() : null;
 function localData() { return payload || JSON.parse(fs.readFileSync(path.join(pub, 'data.json'), 'utf8')); }
 
 function serve() {
-  const types = { '.html': 'text/html', '.json': 'application/json' };
+  const types = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/javascript' };
   const server = http.createServer((req, res) => {
     const url = req.url.split('?')[0];
     const file = path.join(pub, url === '/' ? 'index.html' : url);
@@ -73,65 +73,84 @@ function serve() {
   const url = base || `http://127.0.0.1:${server.address().port}/`;
   const browser = await chromium.launch();
   let failed = false;
-  for (const width of [390, 820, 1440]) {
-    const page = await browser.newPage({ viewport: { width, height: width < 500 ? 844 : 1000 } });
+  for (const [width, height] of [[390, 844], [820, 1180], [1440, 900]]) {
+    const page = await browser.newPage({ viewport: { width, height } });
     const problems = [];
     page.on('console', (m) => { if (m.type() === 'error') problems.push('console: ' + m.text()); });
     page.on('pageerror', (e) => problems.push('pageerror: ' + e.message));
     page.on('response', (r) => { if (r.status() >= 400) problems.push(`http ${r.status()}: ${r.url()}`); });
+    const tag = `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}`;
     await page.goto(url, { waitUntil: 'networkidle' });
-    await page.waitForFunction(() => !/Opening the office/.test(document.getElementById('status').textContent), null, { timeout: 20000 });
-    const facts = await page.evaluate(() => ({
-      status: document.getElementById('status').textContent,
-      overflow: document.documentElement.scrollWidth - window.innerWidth,
-      rooms: document.querySelectorAll('.room').length,
-      desks: document.querySelectorAll('.desk').length,
-      working: document.querySelectorAll('.desk.is-working').length,
-      stations: document.querySelectorAll('.station').length,
-      cards: document.querySelectorAll('.card').length,
-      feed: document.querySelectorAll('#feed li').length,
-      smallTaps: [...document.querySelectorAll('.desk, .card, .btn')].filter((a) => a.getBoundingClientRect().height < 44).length,
-      font: getComputedStyle(document.getElementById('status')).fontFamily.split(',')[0]
-    }));
-    if (/did not load/.test(facts.status)) problems.push('data failed to load');
-    if (facts.overflow > 0) problems.push('horizontal overflow of ' + facts.overflow + 'px');
+    await page.waitForSelector('.plan .desk', { timeout: 20000 });
+    await page.waitForTimeout(400);
     const want = await page.evaluate(() => fetch('data.json', { cache: 'no-store' }).then((r) => r.json()));
-    if (facts.rooms !== want.departments.length) problems.push(`expected ${want.departments.length} rooms, saw ${facts.rooms}`);
-    if (facts.desks !== want.office.length || facts.desks < 16) problems.push(`expected ${want.office.length} desks, saw ${facts.desks}`);
-    if (facts.stations !== 9) problems.push('expected 9 stages, saw ' + facts.stations);
-    if (facts.smallTaps) problems.push(facts.smallTaps + ' tap targets under 44px');
-    if (sample && (facts.working !== 4 || facts.cards !== 6 || facts.rooms !== 7 || facts.desks !== 20)) problems.push(`sample should show 7 rooms, 20 desks, 4 working and 6 cards, saw ${facts.rooms}, ${facts.desks}, ${facts.working} and ${facts.cards}`);
+    const f = await page.evaluate(() => {
+      const st = document.getElementById('stage').getBoundingClientRect();
+      const pl = document.querySelector('.plan').getBoundingClientRect();
+      return {
+        status: document.getElementById('statusText').textContent,
+        pageScroll: document.documentElement.scrollHeight - window.innerHeight,
+        pageOverflowX: document.documentElement.scrollWidth - window.innerWidth,
+        planFits: pl.left >= st.left - 1 && pl.top >= st.top - 1 && pl.right <= st.right + 1 && pl.bottom <= st.bottom + 1,
+        planShare: (pl.width * pl.height) / (st.width * st.height),
+        rooms: document.querySelectorAll('.proom').length,
+        desks: document.querySelectorAll('.plan .desk').length,
+        people: document.querySelectorAll('.plan .desk svg.person').length,
+        working: document.querySelectorAll('.plan .desk.is-working').length,
+        smallTaps: [...document.querySelectorAll('.nav button, .iconbtn')].filter((x) => x.offsetParent && x.getBoundingClientRect().height < 44).length,
+        font: getComputedStyle(document.querySelector('.brand')).fontFamily.split(',')[0]
+      };
+    });
+    if (f.pageScroll > 1) problems.push('the page scrolls by ' + f.pageScroll + 'px; it must fit one screen');
+    if (f.pageOverflowX > 0) problems.push('horizontal overflow of ' + f.pageOverflowX + 'px');
+    if (!f.planFits) problems.push('the floor plan does not fit inside its area');
+    if (f.planShare < 0.45) problems.push('the floor plan uses only ' + Math.round(f.planShare * 100) + '% of its area');
+    if (f.rooms !== 9) problems.push('expected 9 rooms on the plan, saw ' + f.rooms);
+    if (f.desks !== want.office.length || f.people !== f.desks) problems.push(`expected ${want.office.length} people at desks, saw ${f.people} of ${f.desks}`);
+    if (f.smallTaps) problems.push(f.smallTaps + ' navigation buttons under 44px');
+    if (sample && f.working !== 4) problems.push('sample should show 4 people working, saw ' + f.working);
+    await page.screenshot({ path: path.join(shots, tag + '-office.png') });
 
-    // Open a desk, then a product, and make sure each panel shows real content and closes.
-    await page.locator('.desk').nth(6).click();
-    const agentPanel = await page.evaluate(() => ({ open: document.getElementById('detail').open, title: document.getElementById('detailTitle').textContent, overflow: document.getElementById('detail').scrollWidth - document.getElementById('detail').clientWidth }));
-    if (!agentPanel.open || !agentPanel.title) problems.push('desk panel did not open');
-    if (agentPanel.overflow > 0) problems.push('desk panel overflows sideways');
-    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-desk.png`) });
+    // A person opens their record, Escape closes it.
+    await page.locator('.plan .desk').nth(6).click();
+    if (!(await page.evaluate(() => document.getElementById('detail').open && !!document.getElementById('detailTitle').textContent))) problems.push('person panel did not open');
     await page.keyboard.press('Escape');
-    if (await page.evaluate(() => document.getElementById('detail').open)) problems.push('desk panel did not close with Escape');
-    if (facts.cards) {
-      await page.locator('.card').first().click();
-      const vp = await page.evaluate(() => ({ open: document.getElementById('detail').open, checks: document.querySelectorAll('.checks li').length }));
-      if (!vp.open || vp.checks !== 8) problems.push('product panel did not open with its 8 checks');
-      await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-venture.png`) });
-      await page.locator('.close').click();
-    }
 
-    // The office must show a person at every desk, and the replay must act out real log lines.
-    const people = await page.locator('.desk svg.person').count();
-    if (people !== facts.desks) problems.push(`expected a person at every desk, saw ${people} of ${facts.desks}`);
-    await page.locator('#floor').screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-office.png`) });
+    // Step inside a room and back to the floor plan.
+    await page.locator('button.plabel').nth(3).click();
+    const inside = await page.evaluate(() => ({ room: !!document.querySelector('.roomview .room'), people: document.querySelectorAll('.roomview .desk svg.person').length, scroll: document.documentElement.scrollHeight - window.innerHeight }));
+    if (!inside.room || !inside.people) problems.push('stepping inside a room showed nobody');
+    if (inside.scroll > 1) problems.push('the page scrolls inside a room');
+    await page.screenshot({ path: path.join(shots, tag + '-room.png') });
+    await page.locator('#crumb .iconbtn').click();
+    if (!(await page.locator('.plan').count())) problems.push('back to floor plan failed');
+
+    // Every section opens from the navigation and never scrolls the page.
+    for (const v of ['decisions', 'pipeline', 'activity', 'money']) {
+      await page.locator(`.nav button[data-view="${v}"]`).click();
+      const vf = await page.evaluate((v) => ({ shown: !document.getElementById('view-' + v).hidden, scroll: document.documentElement.scrollHeight - window.innerHeight, asks: document.querySelectorAll('.ask').length, stations: document.querySelectorAll('.station').length, feed: document.querySelectorAll('#feed li').length }), v);
+      if (!vf.shown) problems.push(v + ' did not open');
+      if (vf.scroll > 1) problems.push(v + ' makes the page scroll');
+      if (v === 'decisions' && vf.asks !== want.approvals.length) problems.push(`decisions shows ${vf.asks} of ${want.approvals.length}`);
+      if (v === 'pipeline' && vf.stations !== 9) problems.push('pipeline shows ' + vf.stations + ' stages');
+      if (v === 'activity' && !vf.feed) problems.push('activity is empty');
+      await page.screenshot({ path: path.join(shots, `${tag}-${v}.png`) });
+    }
+    await page.locator('#helpBtn').click();
+    if (await page.locator('#view-help').isHidden()) problems.push('how it works did not open');
+    await page.locator('.nav button[data-view="office"]').click();
+
+    // Replay acts out real log lines on the floor plan.
     await page.locator('#replay').click();
     await page.waitForTimeout(3200);
-    const acting = await page.locator('.desk.is-acting').count();
-    const now = await page.locator('#officeNow').textContent();
+    const acting = await page.locator('.plan .desk.is-acting').count();
+    const now = await page.locator('#now').textContent();
     if (!acting || !/of \d+/.test(now)) problems.push('replay did not act out any log line: ' + now);
-    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-replay.png`) });
+    await page.screenshot({ path: path.join(shots, tag + '-replay.png') });
     await page.locator('#replay').click();
-    if ((await page.locator('#replay').textContent()) !== 'Replay today') problems.push('replay did not stop');
-    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}.png`), fullPage: true });
-    console.log(`${problems.length ? 'FAIL' : 'PASS'} ${width}px | "${facts.status}" | rooms ${facts.rooms} | desks ${facts.desks} (${facts.working} working) | cards ${facts.cards} | feed ${facts.feed} | overflow ${facts.overflow} | font ${facts.font}`);
+    if ((await page.locator('#replay .lbl').textContent()) !== 'Replay today') problems.push('replay did not stop');
+
+    console.log(`${problems.length ? 'FAIL' : 'PASS'} ${width}x${height} | "${f.status.slice(0, 60)}" | rooms ${f.rooms} | people ${f.people} (${f.working} working) | plan fills ${Math.round(f.planShare * 100)}% | page scroll ${f.pageScroll} | font ${f.font}`);
     for (const p of problems) console.log('   ' + p);
     if (problems.length) failed = true;
     await page.close();
