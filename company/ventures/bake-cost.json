@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:16:14.788Z",
+  "updatedAt": "2026-11-14T14:26:33.496Z",
   "killReason": null,
   "lead": {
     "name": "Vihaan",
@@ -81,5 +81,19 @@
     }
   ],
   "nextAction": "Business case by research, then sizing, then CEO go or no-go. Research verdict: validated on demand (several paid products at USD 4.79 to 149 and bakers asking how to price), but strong evidence against: free calculators already exist (Craftybase, BatterSuite, cakepricingcalculator.pages.dev) and paid standalone apps show very few ratings or sales. The case must show a gap free tools leave.",
-  "stage": "validated"
+  "stage": "validated",
+  "case": {
+    "path": "cases/bake-cost.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 2,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 1,
+      "recurringRevenue": 2
+    },
+    "total": 15,
+    "recommendation": "no-go"
+  }
 }

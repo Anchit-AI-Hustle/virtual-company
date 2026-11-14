@@ -5,5 +5,12 @@
     "action": "Validated bake-cost: 8 sourced signals for (paid apps USD 4.79 to 149, baker pricing questions), 3 against (free calculators, weak paid app sales)",
     "ventureId": "bake-cost",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:26:33.526Z",
+    "agent": "research",
+    "action": "Business case written: 15 of 35, no-go; free calculators and apps already do it, paid costing tools barely sell, no payment rail",
+    "ventureId": "bake-cost",
+    "kind": "done"
   }
 ]
