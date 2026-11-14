@@ -1,9 +1,9 @@
 {
   "ops": {
-    "state": "done",
-    "task": "Standup: Seatwise deployed READY but live gate blocked on Cloudflare DNS (ap-4); 4 approvals pending, none decided; WIP slot held by Seatwise so no new build; today: uptime, Growth SEO and launch drafts, Rally Rounds research, People review",
+    "state": "idle",
+    "task": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR",
     "ventureId": null,
-    "since": "2026-11-14T07:04:58.191Z"
+    "since": "2026-11-14T07:06:57.926Z"
   },
   "devops": {
     "state": "blocked",
@@ -12,87 +12,87 @@
     "since": "2026-11-14T07:05:03.976Z"
   },
   "security": {
-    "state": "done",
+    "state": "idle",
     "task": "Secret scan clean: no keys, tokens or passwords in tracked files",
     "ventureId": null,
-    "since": "2026-11-14T07:05:04.008Z"
+    "since": "2026-11-14T07:06:57.669Z"
   },
   "data": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise stats.json reports null visits by design (no analytics). Nothing live to count",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T07:05:04.073Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:06:57.538Z"
   },
   "support": {
-    "state": "done",
+    "state": "idle",
     "task": "No live product and no contact channel yet, so no customer messages to answer",
     "ventureId": null,
-    "since": "2026-11-14T07:05:04.107Z"
+    "since": "2026-11-14T07:06:57.762Z"
   },
   "finance": {
-    "state": "done",
+    "state": "idle",
     "task": "No revenue, no costs. FX unchanged at 94.2754 INR per USD from 2026-11-14 (Xflow)",
     "ventureId": null,
-    "since": "2026-11-14T07:05:04.039Z"
+    "since": "2026-11-14T07:06:57.791Z"
   },
   "ceo": {
-    "state": "done",
+    "state": "idle",
     "task": "No owner decision on issues 1 to 4 yet. Kill rules: nothing in validating or live. Priority this run: Seatwise is closest to revenue but blocked on owner; spend the run on Growth prep and validating Rally Rounds",
     "ventureId": null,
-    "since": "2026-11-14T07:04:58.267Z"
+    "since": "2026-11-14T07:06:57.470Z"
   },
   "research": {
     "state": "idle",
-    "task": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source",
+    "task": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture",
     "ventureId": null,
-    "since": "2026-11-14T07:03:45.861Z"
+    "since": "2026-11-14T07:06:57.504Z"
   },
   "legal": {
     "state": "idle",
-    "task": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
+    "task": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
     "ventureId": null,
-    "since": "2026-11-14T07:03:46.220Z"
+    "since": "2026-11-14T07:06:57.817Z"
   },
   "product": {
     "state": "idle",
-    "task": "Seatwise moved validated to spec",
+    "task": "No spec work: Seatwise spec is current, no other venture validated",
     "ventureId": null,
-    "since": "2026-11-14T07:03:45.940Z"
+    "since": "2026-11-14T07:06:57.571Z"
   },
   "design": {
     "state": "idle",
-    "task": "Seatwise design re-review passed: all tap targets at least 44 px",
+    "task": "No design work: Seatwise reviewed and passed, no new spec this run",
     "ventureId": null,
-    "since": "2026-11-14T07:03:45.976Z"
+    "since": "2026-11-14T07:06:57.602Z"
   },
   "sales": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T07:05:04.139Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:06:57.731Z"
   },
   "engineer": {
     "state": "idle",
-    "task": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
+    "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
     "ventureId": null,
-    "since": "2026-11-14T07:03:46.009Z"
+    "since": "2026-11-14T07:06:57.637Z"
   },
   "qa": {
     "state": "blocked",
-    "task": "Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
+    "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
     "ventureId": "seatwise",
-    "since": "2026-11-14T07:03:32.014Z"
+    "since": "2026-11-14T07:06:57.173Z"
   },
   "growth": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T07:05:27.656Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:06:57.699Z"
   },
   "people": {
     "state": "idle",
-    "task": null,
+    "task": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
     "ventureId": null,
-    "since": "2026-11-14T07:03:46.255Z"
+    "since": "2026-11-14T07:06:57.847Z"
   }
 }

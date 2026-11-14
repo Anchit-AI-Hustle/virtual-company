@@ -35,8 +35,8 @@
         1440
       ],
       "consoleErrors": 3,
-      "checkedAt": "2026-11-14T07:02:40Z",
-      "notes": "Live URL: core flow passes at 390, no horizontal scroll at 390, 820, 1440, HTTPS and headers fine. FAIL: 3 console errors per page from scripts Cloudflare injects (Web Analytics beacon and challenge-platform bot script) blocked by our CSP. Repo code is clean."
+      "checkedAt": "2026-11-14T07:06:26Z",
+      "notes": "Regression after Growth change (854bfaa): robots, sitemap, canonical, OG, core flow at 390 and layout at all sizes pass; 0 errors from our code. Still 3 console errors per page from Cloudflare-injected scripts. Blocked on ap-4."
     },
     "metrics": null,
     "reviews": {
@@ -57,7 +57,7 @@
       }
     },
     "createdAt": "2026-11-14T06:49:00.906Z",
-    "updatedAt": "2026-11-14T07:03:31.954Z",
+    "updatedAt": "2026-11-14T07:06:57.148Z",
     "killReason": null,
     "id": "seatwise",
     "title": "Seatwise",
@@ -107,7 +107,7 @@
     "metrics": null,
     "reviews": {},
     "createdAt": "2026-11-14T06:49:00.906Z",
-    "updatedAt": "2026-11-14T07:03:45.734Z",
+    "updatedAt": "2026-11-14T07:06:57.148Z",
     "killReason": null,
     "id": "rally-rounds",
     "title": "Rally Rounds",
@@ -121,7 +121,7 @@
       "distribution": 2,
       "total": 13
     },
-    "nextAction": "Research: needs a third independent signal read at the source. Against: crowded, many organiser apps already listed in search (Reclub, Pickleheads, Round Robin Assistant, Pickleball Scheduler)"
+    "nextAction": "Not yet. Against: organiser tools read at source are free (Reclub calls itself free to use https://pickleball.reclub.co/for-organizers ; Pickleball Scheduler is free with 3 ratings https://apps.apple.com/us/app/id6741597305). Needs a paying signal beyond Dink and Pickleheads before the CEO picks it"
   },
   {
     "priceINR": null,

@@ -431,5 +431,68 @@
     "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.173Z",
+    "agent": "qa",
+    "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T07:06:57.206Z",
+    "agent": "research",
+    "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture",
+    "ventureId": "rally-rounds",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.241Z",
+    "agent": "product",
+    "action": "No spec work: Seatwise spec is current, no other venture validated",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.282Z",
+    "agent": "design",
+    "action": "No design work: Seatwise reviewed and passed, no new spec this run",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.326Z",
+    "agent": "engineer",
+    "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.365Z",
+    "agent": "legal",
+    "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.405Z",
+    "agent": "people",
+    "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:06:57.439Z",
+    "agent": "ops",
+    "action": "Started: Closing the run",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T07:06:57.891Z",
+    "agent": "ops",
+    "action": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T07:05:27.820Z",
+  "builtAt": "2026-11-14T07:06:58.057Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -99,7 +99,7 @@
       "nextAction": "Blocked on owner approval ap-4 (Cloudflare DNS only). Then QA re-runs the live check at https://seatwise.anchit-tandon.com; on 0 console errors move qa then live. Deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR is READY",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T07:03:31.954Z",
+      "updatedAt": "2026-11-14T07:06:57.148Z",
       "evidenceCount": 4,
       "specPath": "specs/seatwise.md",
       "reviews": {
@@ -142,10 +142,10 @@
       "stage": "idea",
       "score": 13,
       "url": null,
-      "nextAction": "Research: needs a third independent signal read at the source. Against: crowded, many organiser apps already listed in search (Reclub, Pickleheads, Round Robin Assistant, Pickleball Scheduler)",
+      "nextAction": "Not yet. Against: organiser tools read at source are free (Reclub calls itself free to use https://pickleball.reclub.co/for-organizers ; Pickleball Scheduler is free with 3 ratings https://apps.apple.com/us/app/id6741597305). Needs a paying signal beyond Dink and Pickleheads before the CEO picks it",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T07:03:45.734Z",
+      "updatedAt": "2026-11-14T07:06:57.148Z",
       "evidenceCount": 2,
       "specPath": null,
       "reviews": {
@@ -236,9 +236,9 @@
       "department": "leadership",
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
-      "state": "done",
+      "state": "idle",
       "task": "No owner decision on issues 1 to 4 yet. Kill rules: nothing in validating or live. Priority this run: Seatwise is closest to revenue but blocked on owner; spend the run on Growth prep and validating Rally Rounds",
-      "since": "2026-11-14T07:04:58.267Z",
+      "since": "2026-11-14T07:06:57.470Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -254,16 +254,16 @@
       "department": "leadership",
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
-      "state": "done",
-      "task": "Standup: Seatwise deployed READY but live gate blocked on Cloudflare DNS (ap-4); 4 approvals pending, none decided; WIP slot held by Seatwise so no new build; today: uptime, Growth SEO and launch drafts, Rally Rounds research, People review",
-      "since": "2026-11-14T07:04:58.191Z",
+      "state": "idle",
+      "task": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR",
+      "since": "2026-11-14T07:06:57.926Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T07:04:58.191Z",
-        "action": "Standup: Seatwise deployed READY but live gate blocked on Cloudflare DNS (ap-4); 4 approvals pending, none decided; WIP slot held by Seatwise so no new build; today: uptime, Growth SEO and launch drafts, Rally Rounds research, People review"
+        "at": "2026-11-14T07:06:57.891Z",
+        "action": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR"
       },
-      "actions": 7
+      "actions": 9
     },
     {
       "id": "research",
@@ -273,15 +273,15 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "state": "idle",
-      "task": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source",
-      "since": "2026-11-14T07:03:45.861Z",
+      "task": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture",
+      "since": "2026-11-14T07:06:57.504Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T07:03:45.755Z",
-        "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
+        "at": "2026-11-14T07:06:57.206Z",
+        "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture"
       },
-      "actions": 4
+      "actions": 5
     },
     {
       "id": "data",
@@ -290,11 +290,11 @@
       "department": "strategy",
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise stats.json reports null visits by design (no analytics). Nothing live to count",
-      "since": "2026-11-14T07:05:04.073Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:06:57.538Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T07:05:04.073Z",
         "action": "Seatwise stats.json reports null visits by design (no analytics). Nothing live to count"
@@ -309,15 +309,15 @@
       "color": "#0E6E8C",
       "trait": "Cuts scope until it ships in three cycles.",
       "state": "idle",
-      "task": "Seatwise moved validated to spec",
-      "since": "2026-11-14T07:03:45.940Z",
+      "task": "No spec work: Seatwise spec is current, no other venture validated",
+      "since": "2026-11-14T07:06:57.571Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:50:27.282Z",
-        "action": "Seatwise moved validated to spec"
+        "at": "2026-11-14T07:06:57.241Z",
+        "action": "No spec work: Seatwise spec is current, no other venture validated"
       },
-      "actions": 2
+      "actions": 3
     },
     {
       "id": "design",
@@ -327,15 +327,15 @@
       "color": "#1C93B5",
       "trait": "Designs for a thumb on a 390 px screen first.",
       "state": "idle",
-      "task": "Seatwise design re-review passed: all tap targets at least 44 px",
-      "since": "2026-11-14T07:03:45.976Z",
+      "task": "No design work: Seatwise reviewed and passed, no new spec this run",
+      "since": "2026-11-14T07:06:57.602Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:59:27.074Z",
-        "action": "Seatwise design re-review passed: all tap targets at least 44 px"
+        "at": "2026-11-14T07:06:57.282Z",
+        "action": "No design work: Seatwise reviewed and passed, no new spec this run"
       },
-      "actions": 4
+      "actions": 5
     },
     {
       "id": "engineer",
@@ -345,15 +345,15 @@
       "color": "#0B7A5E",
       "trait": "Plain HTML, CSS and JS unless the spec forces more.",
       "state": "idle",
-      "task": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
-      "since": "2026-11-14T07:03:46.009Z",
+      "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+      "since": "2026-11-14T07:06:57.637Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:59:27.041Z",
-        "action": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page"
+        "at": "2026-11-14T07:06:57.326Z",
+        "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build"
       },
-      "actions": 4
+      "actions": 5
     },
     {
       "id": "qa",
@@ -363,15 +363,15 @@
       "color": "#2E9C7E",
       "trait": "Independent. Trusts screenshots, not claims.",
       "state": "blocked",
-      "task": "Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
-      "since": "2026-11-14T07:03:32.014Z",
+      "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
+      "since": "2026-11-14T07:06:57.173Z",
       "ventureId": "seatwise",
       "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T07:03:32.014Z",
-        "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4"
+        "at": "2026-11-14T07:06:57.173Z",
+        "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4"
       },
-      "actions": 4
+      "actions": 5
     },
     {
       "id": "devops",
@@ -398,9 +398,9 @@
       "department": "engineering",
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan clean: no keys, tokens or passwords in tracked files",
-      "since": "2026-11-14T07:05:04.008Z",
+      "since": "2026-11-14T07:06:57.669Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -416,11 +416,11 @@
       "department": "market",
       "color": "#C27A00",
       "trait": "Brings the right buyers without spending a rupee.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-14T07:05:27.656Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:06:57.699Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T07:05:27.656Z",
         "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live"
@@ -434,11 +434,11 @@
       "department": "market",
       "color": "#D99A1E",
       "trait": "Makes paying the easiest step on the page.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-14T07:05:04.139Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:06:57.731Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T07:05:04.139Z",
         "action": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then"
@@ -452,9 +452,9 @@
       "department": "market",
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
-      "state": "done",
+      "state": "idle",
       "task": "No live product and no contact channel yet, so no customer messages to answer",
-      "since": "2026-11-14T07:05:04.107Z",
+      "since": "2026-11-14T07:06:57.762Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -470,9 +470,9 @@
       "department": "business",
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
-      "state": "done",
+      "state": "idle",
       "task": "No revenue, no costs. FX unchanged at 94.2754 INR per USD from 2026-11-14 (Xflow)",
-      "since": "2026-11-14T07:05:04.039Z",
+      "since": "2026-11-14T07:06:57.791Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -489,15 +489,15 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "state": "idle",
-      "task": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
-      "since": "2026-11-14T07:03:46.220Z",
+      "task": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
+      "since": "2026-11-14T07:06:57.817Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:59:27.141Z",
-        "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold"
+        "at": "2026-11-14T07:06:57.365Z",
+        "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval"
       },
-      "actions": 5
+      "actions": 6
     },
     {
       "id": "people",
@@ -507,16 +507,34 @@
       "color": "#C2667D",
       "trait": "Reviews every agent's work and fixes the process.",
       "state": "idle",
-      "task": null,
-      "since": "2026-11-14T07:03:46.255Z",
+      "task": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
+      "since": "2026-11-14T07:06:57.847Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T07:06:57.405Z",
+        "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed"
+      },
+      "actions": 1
     }
   ],
   "ventureTrail": {
     "seatwise": [
+      {
+        "at": "2026-11-14T07:06:57.365Z",
+        "agent": "legal",
+        "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval"
+      },
+      {
+        "at": "2026-11-14T07:06:57.326Z",
+        "agent": "engineer",
+        "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build"
+      },
+      {
+        "at": "2026-11-14T07:06:57.173Z",
+        "agent": "qa",
+        "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4"
+      },
       {
         "at": "2026-11-14T07:05:27.656Z",
         "agent": "growth",
@@ -561,24 +579,14 @@
         "at": "2026-11-14T07:03:32.014Z",
         "agent": "qa",
         "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4"
-      },
-      {
-        "at": "2026-11-14T07:03:31.978Z",
-        "agent": "devops",
-        "action": "Seatwise deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR READY, https://seatwise.anchit-tandon.com returns 200 with our headers. Cloudflare standby: no Cloudflare deploy tools this session, skipped"
-      },
-      {
-        "at": "2026-11-14T06:59:50.292Z",
-        "agent": "devops",
-        "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main"
-      },
-      {
-        "at": "2026-11-14T06:59:34.770Z",
-        "agent": "devops",
-        "action": "Started: Releasing Seatwise to seatwise.anchit-tandon.com"
       }
     ],
     "rally-rounds": [
+      {
+        "at": "2026-11-14T07:06:57.206Z",
+        "agent": "research",
+        "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture"
+      },
       {
         "at": "2026-11-14T07:03:45.755Z",
         "agent": "research",
@@ -590,6 +598,69 @@
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T07:06:57.891Z",
+      "agent": "ops",
+      "action": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.439Z",
+      "agent": "ops",
+      "action": "Started: Closing the run",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T07:06:57.405Z",
+      "agent": "people",
+      "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.365Z",
+      "agent": "legal",
+      "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.326Z",
+      "agent": "engineer",
+      "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.282Z",
+      "agent": "design",
+      "action": "No design work: Seatwise reviewed and passed, no new spec this run",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.241Z",
+      "agent": "product",
+      "action": "No spec work: Seatwise spec is current, no other venture validated",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.206Z",
+      "agent": "research",
+      "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.173Z",
+      "agent": "qa",
+      "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
+      "ventureId": "seatwise",
+      "kind": "blocked"
+    },
     {
       "at": "2026-11-14T07:05:27.656Z",
       "agent": "growth",
@@ -946,69 +1017,6 @@
       "action": "Started: Pipeline empty: asking Research for live evidence and generating 5 scored ideas",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-14T06:48:35.693Z",
-      "agent": "finance",
-      "action": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T06:48:35.634Z",
-      "agent": "finance",
-      "action": "Started: Record USD to INR rate",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T06:48:35.600Z",
-      "agent": "support",
-      "action": "No live ventures, no customer messages",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T06:48:35.568Z",
-      "agent": "data",
-      "action": "No live ventures, no counts to read",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T06:48:35.527Z",
-      "agent": "security",
-      "action": "Secret scan: no keys, tokens or passwords in tracked files",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T06:42:03.614Z",
-      "agent": "security",
-      "action": "Started: Secret scan of tracked files",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T06:42:03.578Z",
-      "agent": "devops",
-      "action": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T06:42:03.546Z",
-      "agent": "devops",
-      "action": "Started: Uptime check of live URLs",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T06:41:56.619Z",
-      "agent": "ops",
-      "action": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow",
-      "ventureId": null,
-      "kind": "done"
     }
   ]
 }
