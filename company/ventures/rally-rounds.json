@@ -1,6 +1,6 @@
 {
   "priceINR": null,
-  "stage": "validating",
+  "stage": "validated",
   "evidence": [
     {
       "claim": "Dink! Pickleball Round Robins sells Premium Annual for $24.99 and Premium Permanent access for $39.99 as in-app purchases, with 17 ratings averaging 4.6.",
@@ -11,13 +11,33 @@
       "claim": "Pickleheads charges players $19.99 a year or $2.99 a month for Plus, which unlocks unlimited round robins, tournaments, leagues and ladders for organisers.",
       "url": "https://www.pickleheads.com/guides/everything-organizers-can-do-with-plus-powered-tools",
       "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Pickleheads pricing page caps free and Plus accounts at 2 round robins a month, sells extra round robins at $5 each, and charges organisers $14.99 a month for Pro with 10 a month.",
+      "url": "https://www.pickleheads.com/pricing",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "DinkDrop Pickleball Round Robin on the US App Store sells Pickleball Pro in-app purchases at $2.99, $19.99 and $44.99, rated 4.5 from 11 ratings.",
+      "url": "https://apps.apple.com/us/app/-/id6463497983",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "SFIA reports 24.3 million Americans aged 6 and older played pickleball in 2025, up from 4.2 million in 2020.",
+      "url": "https://sfia.org/research/u-s-pickleball-participation/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The Pickleheads round robin tool page shows a 4.9 app rating from 9.2k reviews and a facility with nearly 500 players using it, so organisers actively use round robin software.",
+      "url": "https://www.pickleheads.com/round-robin",
+      "foundAt": "2026-11-14"
     }
   ],
   "specPath": null,
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:16:06.965Z",
   "killReason": null,
   "id": "rally-rounds",
   "title": "Rally Rounds",
@@ -31,10 +51,27 @@
     "distribution": 2,
     "total": 13
   },
-  "nextAction": "Validate: find a third paid signal and organisers asking for round robin tools. Against: Reclub and Pickleball Scheduler are free",
+  "nextAction": "Business case by research, then sizing, then CEO go or no-go. Against: Reclub is free with live scores, Pickleheads gives 2 free round robins a month and has 9.2k reviews; the paid gap is narrow (no install, no account, cheaper than $5 per extra event).",
   "lead": {
     "name": "Reyansh",
     "color": "#2F6B3A",
     "trait": "Lets the numbers decide what to cut."
-  }
+  },
+  "evidenceAgainst": [
+    {
+      "claim": "Reclub describes itself as a free-to-use app with round robin generation, live scoring and live standings for up to 8 courts and 24 players.",
+      "url": "https://pickleball.reclub.co/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Pickleball Scheduler on the US App Store is free with no listed in-app purchases (3.7 from 3 ratings).",
+      "url": "https://apps.apple.com/us/app/id6741597305",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Pickleheads gives every free account 2 round robins a month, so casual organisers already have a free option from a dominant brand.",
+      "url": "https://www.pickleheads.com/pricing",
+      "foundAt": "2026-11-14"
+    }
+  ]
 }
