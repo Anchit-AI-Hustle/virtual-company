@@ -16,6 +16,9 @@ function fixture(overrides = {}) {
   fs.mkdirSync(path.join(dir, 'company'));
   fs.mkdirSync(path.join(dir, 'specs'));
   const files = {
+    team: overrides.team || JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8')),
+    departments: JSON.parse(fs.readFileSync(path.join(ROOT, 'company/departments.json'), 'utf8')),
+    activity: overrides.activity || {},
     config: overrides.config || config,
     ventures: overrides.ventures || [],
     approvals: overrides.approvals || [],
@@ -25,6 +28,8 @@ function fixture(overrides = {}) {
   for (const [name, data] of Object.entries(files)) {
     fs.writeFileSync(path.join(dir, 'company', name + '.json'), JSON.stringify(data, null, 2));
   }
+  fs.cpSync(path.join(ROOT, 'agents'), path.join(dir, 'agents'), { recursive: true });
+  fs.mkdirSync(path.join(dir, 'hq/public'), { recursive: true });
   for (const [rel, text] of Object.entries(overrides.files || {})) {
     fs.mkdirSync(path.dirname(path.join(dir, rel)), { recursive: true });
     fs.writeFileSync(path.join(dir, rel), text);
@@ -38,6 +43,8 @@ const evidence = [
   { claim: 'Forum thread asking for it', url: 'https://example.com/c', foundAt: '2026-11-14' }
 ];
 const goodQa = { passed: true, reviewer: 'qa', viewports: [390, 820, 1440], consoleErrors: 0, checkedAt: '2026-11-14T10:00:00Z' };
+const passed = { passed: true, at: '2026-11-14T10:00:00Z', notes: 'ok' };
+const goodReviews = { design: passed, security: passed, legal: passed };
 
 function venture(extra = {}) {
   return Object.assign({
@@ -103,7 +110,7 @@ test('only one venture may be in build or QA at a time', () => {
 });
 
 test('a venture cannot go live without independent QA on all three screen sizes', () => {
-  const base = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com' };
+  const base = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com', reviews: goodReviews };
   const files = { 'specs/a.md': '# a' };
   const cases = [
     { qa: null },
@@ -123,7 +130,7 @@ test('a venture cannot go live without independent QA on all three screen sizes'
 test('a live venture must sit on its own subdomain of the owner domain', () => {
   const files = { 'specs/a.md': '# a' };
   const dir = fixture({
-    ventures: [venture({ stage: 'live', evidence, specPath: 'specs/a.md', qa: goodQa, url: 'https://invoice-buddy.vercel.app' })],
+    ventures: [venture({ stage: 'live', evidence, specPath: 'specs/a.md', qa: goodQa, reviews: goodReviews, url: 'https://invoice-buddy.vercel.app' })],
     files
   });
   assert.ok(errorsOf(dir).includes('url'));
@@ -200,4 +207,63 @@ test('the published HQ data matches the company state', () => {
   delete published.builtAt;
   delete fresh.builtAt;
   assert.deepStrictEqual(published, fresh);
+});
+
+test('a venture cannot go live without design, security and legal sign-off', () => {
+  const files = { 'specs/a.md': '# a' };
+  const base = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com', qa: goodQa };
+  for (const missing of ['design', 'security', 'legal']) {
+    const reviews = Object.assign({}, goodReviews);
+    delete reviews[missing];
+    const dir = fixture({ ventures: [venture(Object.assign({}, base, { reviews }))], files });
+    assert.ok(validate(dir).some((e) => e.rule === 'review' && e.message.includes(missing)), missing);
+  }
+  const failed = Object.assign({}, goodReviews, { legal: { passed: false, at: '2026-11-14T10:00:00Z' } });
+  assert.ok(errorsOf(fixture({ ventures: [venture(Object.assign({}, base, { reviews: failed }))], files })).includes('review'));
+});
+
+test('every department is staffed and every agent has a name, charter and known department', () => {
+  const team = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8'));
+  assert.ok(team.length >= 16);
+  const broken = team.map((t) => Object.assign({}, t));
+  broken[3].charter = 'agents/nobody.md';
+  assert.ok(errorsOf(fixture({ team: broken })).includes('team'));
+  const unknown = team.map((t) => Object.assign({}, t));
+  unknown[0].department = 'canteen';
+  assert.ok(errorsOf(fixture({ team: unknown })).includes('team'));
+});
+
+test('every role in the team appears in the cycle runbook', () => {
+  const team = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8'));
+  const runbook = fs.readFileSync(path.join(ROOT, 'RUNBOOK-daily.md'), 'utf8') + fs.readFileSync(path.join(ROOT, 'RUNBOOK-weekly.md'), 'utf8');
+  for (const t of team) assert.ok(runbook.includes('`' + t.id + '`'), t.id + ' is missing from the runbooks');
+});
+
+test('act.js records real status and a log line, and rejects unknown agents and dashes', () => {
+  const { act } = require('../scripts/act.js');
+  const dir = fixture({});
+  act(dir, 'research', 'start', 'Searching for demand', 'invoice-buddy', '2026-11-14T05:00:00Z');
+  act(dir, 'research', 'done', 'Found 3 sources', 'invoice-buddy', '2026-11-14T05:10:00Z');
+  const activity = JSON.parse(fs.readFileSync(path.join(dir, 'company/activity.json'), 'utf8'));
+  assert.deepStrictEqual(activity.research, { state: 'done', task: 'Found 3 sources', ventureId: 'invoice-buddy', since: '2026-11-14T05:10:00Z' });
+  const log = JSON.parse(fs.readFileSync(path.join(dir, 'company/log.json'), 'utf8'));
+  assert.strictEqual(log.length, 2);
+  assert.strictEqual(log[0].action, 'Started: Searching for demand');
+  assert.deepStrictEqual(validate(dir), []);
+  const hq = JSON.parse(fs.readFileSync(path.join(dir, 'hq/public/data.json'), 'utf8'));
+  assert.strictEqual(hq.office.find((a) => a.id === 'research').state, 'done');
+  assert.throws(() => act(dir, 'intern', 'start', 'x'));
+  assert.throws(() => act(dir, 'qa', 'start', 'a ' + String.fromCharCode(0x2014) + ' b'));
+  assert.throws(() => act(dir, 'qa', 'start', ''));
+});
+
+test('HQ office lists every agent with department, status and current venture title', () => {
+  const dir = fixture({ ventures: [venture()], activity: { engineer: { state: 'working', task: 'Building the form', ventureId: 'invoice-buddy', since: '2026-11-14T05:00:00Z' } } });
+  const hq = buildHq(dir);
+  assert.strictEqual(hq.office.length, 16);
+  const dev = hq.office.find((a) => a.id === 'engineer');
+  assert.strictEqual(dev.state, 'working');
+  assert.strictEqual(dev.ventureTitle, 'Invoice Buddy');
+  assert.strictEqual(hq.office.find((a) => a.id === 'legal').state, 'idle');
+  assert.strictEqual(hq.departments.length, 6);
 });

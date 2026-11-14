@@ -2,17 +2,84 @@
   "name": "Venture HQ",
   "domain": "anchit-tandon.com",
   "hqSubdomain": "hq",
-  "owner": { "github": "anchit-tandon", "name": "Anchit Tandon" },
-  "roster": ["ceo", "research", "product", "engineer", "qa", "growth", "support", "finance"],
-  "stages": ["idea", "validating", "validated", "spec", "building", "qa", "live", "scaling", "killed"],
-  "wip": { "building": 1, "liveTests": 3, "openIdeas": 12 },
+  "owner": {
+    "github": "anchit-tandon",
+    "name": "Anchit Tandon"
+  },
+  "roster": [
+    "ceo",
+    "ops",
+    "research",
+    "data",
+    "product",
+    "design",
+    "engineer",
+    "qa",
+    "devops",
+    "security",
+    "growth",
+    "sales",
+    "support",
+    "finance",
+    "legal",
+    "people"
+  ],
+  "stages": [
+    "idea",
+    "validating",
+    "validated",
+    "spec",
+    "building",
+    "qa",
+    "live",
+    "scaling",
+    "killed"
+  ],
+  "wip": {
+    "building": 1,
+    "liveTests": 3,
+    "openIdeas": 12
+  },
   "killRules": {
     "validationDays": 3,
     "liveTestDays": 14,
-    "minSignalsToSurvive": { "signups": 20, "paidOrders": 3 }
+    "minSignalsToSurvive": {
+      "signups": 20,
+      "paidOrders": 3
+    }
   },
-  "budget": { "monthlyCapINR": 0, "note": "Zero until the owner approves a spend request." },
-  "fx": { "usdInr": null, "asOf": null, "source": null },
-  "reservedSubdomains": ["www", "hq", "kits", "anchor", "loosenup", "api", "mail", "admin", "app"],
-  "approvalTypes": ["money", "public-post", "outreach", "account", "pricing", "deletion", "legal"]
+  "budget": {
+    "monthlyCapINR": 0,
+    "note": "Zero until the owner approves a spend request."
+  },
+  "fx": {
+    "usdInr": null,
+    "asOf": null,
+    "source": null
+  },
+  "reservedSubdomains": [
+    "www",
+    "hq",
+    "kits",
+    "anchor",
+    "loosenup",
+    "api",
+    "mail",
+    "admin",
+    "app"
+  ],
+  "approvalTypes": [
+    "money",
+    "public-post",
+    "outreach",
+    "account",
+    "pricing",
+    "deletion",
+    "legal"
+  ],
+  "reviewsToGoLive": [
+    "design",
+    "security",
+    "legal"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:24:26.315Z",
+  "builtAt": "2026-11-14T06:31:57.097Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -33,45 +33,278 @@
   },
   "approvals": [],
   "ventures": [],
-  "team": [
+  "departments": [
     {
-      "agent": "ceo",
-      "last": {
-        "at": "2026-11-14T03:00:00Z",
-        "agent": "ceo",
-        "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas.",
-        "ventureId": null
-      }
+      "id": "leadership",
+      "name": "Leadership"
     },
     {
-      "agent": "research",
-      "last": null
+      "id": "strategy",
+      "name": "Strategy and Data"
     },
     {
-      "agent": "product",
-      "last": null
+      "id": "product",
+      "name": "Product and Design"
     },
     {
-      "agent": "engineer",
-      "last": null
+      "id": "engineering",
+      "name": "Engineering"
     },
     {
-      "agent": "qa",
-      "last": null
+      "id": "market",
+      "name": "Growth, Sales and Support"
     },
     {
-      "agent": "growth",
-      "last": null
-    },
-    {
-      "agent": "support",
-      "last": null
-    },
-    {
-      "agent": "finance",
-      "last": null
+      "id": "business",
+      "name": "Finance, Legal and People"
     }
   ],
+  "office": [
+    {
+      "id": "ceo",
+      "name": "Arya",
+      "title": "Chief Executive",
+      "department": "leadership",
+      "color": "#14213D",
+      "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T03:00:00Z",
+        "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas."
+      },
+      "actions": 1
+    },
+    {
+      "id": "ops",
+      "name": "Kabir",
+      "title": "Chief of Staff",
+      "department": "leadership",
+      "color": "#3D4F7C",
+      "trait": "Runs the day: standup, handoffs, books, digest.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "research",
+      "name": "Meera",
+      "title": "Head of Research",
+      "department": "strategy",
+      "color": "#6B4E9B",
+      "trait": "No link, no claim. Hunts for people already paying.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "data",
+      "name": "Anaya",
+      "title": "Data and Analytics Lead",
+      "department": "strategy",
+      "color": "#8A6BC2",
+      "trait": "Defines what gets counted, and counts it honestly.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "product",
+      "name": "Rohan",
+      "title": "Product Manager",
+      "department": "product",
+      "color": "#0E6E8C",
+      "trait": "Cuts scope until it ships in three cycles.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "design",
+      "name": "Zoya",
+      "title": "Product Designer",
+      "department": "product",
+      "color": "#1C93B5",
+      "trait": "Designs for a thumb on a 390 px screen first.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "engineer",
+      "name": "Dev",
+      "title": "Software Engineer",
+      "department": "engineering",
+      "color": "#0B7A5E",
+      "trait": "Plain HTML, CSS and JS unless the spec forces more.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "qa",
+      "name": "Ishaan",
+      "title": "QA Engineer",
+      "department": "engineering",
+      "color": "#2E9C7E",
+      "trait": "Independent. Trusts screenshots, not claims.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "devops",
+      "name": "Neel",
+      "title": "DevOps and Release",
+      "department": "engineering",
+      "color": "#4FB394",
+      "trait": "Nothing is shipped until the live URL works.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "security",
+      "name": "Tara",
+      "title": "Security and Privacy",
+      "department": "engineering",
+      "color": "#167A6A",
+      "trait": "No secrets in code, no personal data in public.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "growth",
+      "name": "Sana",
+      "title": "Growth and Marketing",
+      "department": "market",
+      "color": "#C27A00",
+      "trait": "Brings the right buyers without spending a rupee.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "sales",
+      "name": "Arjun",
+      "title": "Sales and Pricing",
+      "department": "market",
+      "color": "#D99A1E",
+      "trait": "Makes paying the easiest step on the page.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "support",
+      "name": "Priya",
+      "title": "Customer Support",
+      "department": "market",
+      "color": "#B36B00",
+      "trait": "Nobody waits. Every complaint becomes a fix.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "finance",
+      "name": "Nikhil",
+      "title": "Finance",
+      "department": "business",
+      "color": "#8C3B4F",
+      "trait": "If it has no source, it is not in the books.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "legal",
+      "name": "Vikram",
+      "title": "Legal and Compliance",
+      "department": "business",
+      "color": "#A84D63",
+      "trait": "Keeps every claim true and every category safe.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "people",
+      "name": "Kavya",
+      "title": "People and Performance",
+      "department": "business",
+      "color": "#C2667D",
+      "trait": "Reviews every agent's work and fixes the process.",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    }
+  ],
+  "ventureTrail": {},
   "log": [
     {
       "at": "2026-11-14T03:00:00Z",

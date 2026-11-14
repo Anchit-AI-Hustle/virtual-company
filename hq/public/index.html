@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Venture HQ</title>
-<meta name="description" content="Owner dashboard for a company run by AI agents.">
+<meta name="description" content="The live office of a company run by AI agents.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213D'/%3E%3Cpath d='M8 21l5-9 4 6 3-4 4 7' fill='none' stroke='%23F2A900' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
   :root {
     --paper: #EDF0F5;
     --sheet: #FFFFFF;
+    --floor: #E3E8F0;
     --ink: #14213D;
     --ink-soft: #4A5670;
     --line: #C9D0DC;
@@ -22,66 +23,99 @@
     --go: #0B7A5E;
     --go-wash: #DDF2EA;
     --stop: #B8324A;
+    --stop-wash: #F8E1E6;
     --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
     --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font: 400 1rem/1.5 var(--body);
-  }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.5 var(--body); }
   a { color: inherit; text-underline-offset: 3px; }
-  a:focus-visible, button:focus-visible { outline: 3px solid var(--you); outline-offset: 2px; border-radius: 4px; }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 20px 18px 64px; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--you); outline-offset: 2px; border-radius: 6px; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 18px 16px 64px; }
 
-  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; font-size: 0.875rem; color: var(--ink-soft); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.875rem; color: var(--ink-soft); }
   .top strong { font: 700 1rem var(--display); color: var(--ink); letter-spacing: -0.01em; }
+  .pulse { display: inline-flex; align-items: center; gap: 8px; }
+  .pulse i { width: 9px; height: 9px; border-radius: 50%; background: var(--go); display: inline-block; }
+  .pulse.stale i { background: var(--line); }
 
-  .status {
-    font: 700 clamp(2rem, 8.4vw, 4.25rem)/1.02 var(--display);
-    letter-spacing: -0.035em;
-    margin: 28px 0 10px;
-    max-width: 16ch;
-    text-wrap: balance;
-  }
-  .status-note { margin: 0 0 8px; color: var(--ink-soft); max-width: 58ch; }
+  .status { font: 700 clamp(2rem, 8.2vw, 4rem)/1.03 var(--display); letter-spacing: -0.035em; margin: 26px 0 10px; max-width: 18ch; text-wrap: balance; }
+  .status-note { margin: 0; color: var(--ink-soft); max-width: 60ch; }
 
   section { margin-top: 44px; }
-  h2 { font: 700 1.375rem/1.2 var(--display); letter-spacing: -0.02em; margin: 0 0 14px; }
+  h2 { font: 700 1.375rem/1.2 var(--display); letter-spacing: -0.02em; margin: 0 0 6px; }
+  .sub { margin: 0 0 16px; color: var(--ink-soft); font-size: 0.9375rem; max-width: 64ch; }
   .empty { color: var(--ink-soft); margin: 0; }
 
-  /* Waiting on you */
   .asks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
   .ask { background: var(--you-wash); border-left: 6px solid var(--you); border-radius: 4px 12px 12px 4px; padding: 14px 16px; }
   .ask p { margin: 0; }
   .ask .what { font-weight: 600; }
   .ask .meta { font-size: 0.875rem; color: var(--ink-soft); margin-top: 4px; }
-  .ask a { display: inline-block; margin-top: 10px; font-weight: 600; padding: 9px 14px; background: var(--ink); color: #fff; border-radius: 8px; text-decoration: none; min-height: 44px; line-height: 26px; }
+  .btn { display: inline-flex; align-items: center; margin-top: 10px; font-weight: 600; padding: 0 14px; background: var(--ink); color: #fff; border-radius: 8px; text-decoration: none; min-height: 44px; border: 0; cursor: pointer; }
 
-  /* Pipeline: a rail of stations */
-  .rail { display: grid; gap: 0; border-top: 2px solid var(--ink); }
+  .floor { background: var(--floor); border-radius: 18px; padding: 10px; display: grid; gap: 10px; }
+  .room { background: var(--paper); border-radius: 12px; padding: 12px; }
+  .room h3 { margin: 0 0 10px; font: 600 0.9375rem/1.3 var(--body); color: var(--ink-soft); display: flex; justify-content: space-between; gap: 8px; }
+  .room h3 span { font-weight: 500; color: var(--go); }
+  .desks { display: grid; gap: 8px; }
+  .desk { width: 100%; text-align: left; background: var(--sheet); border: 1px solid transparent; border-radius: 12px; padding: 12px; display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; cursor: pointer; min-height: 44px; }
+  .desk:hover { border-color: var(--line); }
+  .desk.is-working { border-color: var(--go); }
+  .desk.is-blocked { border-color: var(--stop); background: var(--stop-wash); }
+  .face { position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 1.0625rem/1 var(--display); }
+  .desk .face::after { content: ""; position: absolute; right: -2px; bottom: -2px; width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--sheet); background: var(--line); }
+  .is-working .face::after { background: var(--go); }
+  .is-done .face::after { background: #3F6FD8; }
+  .is-blocked .face::after { background: var(--stop); border-color: var(--stop-wash); }
+  .who { min-width: 0; }
+  .who b { display: block; font-weight: 600; }
+  .who small { display: block; color: var(--ink-soft); font-size: 0.8125rem; line-height: 1.35; }
+  .doing { display: block; margin-top: 6px; font-size: 0.875rem; line-height: 1.4; overflow-wrap: anywhere; }
+  .doing em { font-style: normal; font-weight: 600; }
+  .is-idle .doing { color: var(--ink-soft); }
+  .when { display: block; margin-top: 4px; font-size: 0.75rem; color: var(--ink-soft); }
+  @media (prefers-reduced-motion: no-preference) {
+    .is-working .face::after { animation: beat 1.6s ease-in-out infinite; }
+    @keyframes beat { 50% { transform: scale(1.25); } }
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8125rem; color: var(--ink-soft); margin: 12px 2px 0; }
+  .legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+  .lg-working::before { background: var(--go); }
+  .lg-done::before { background: #3F6FD8; }
+  .lg-blocked::before { background: var(--stop); }
+  .lg-idle::before { background: var(--line); }
+
+  .feed { list-style: none; margin: 0; padding: 0; }
+  .feed li { display: grid; grid-template-columns: 32px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .feed li.empty { display: block; }
+  .mini { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 700 0.8125rem/1 var(--display); }
+  .feed p { margin: 0; overflow-wrap: anywhere; }
+  .feed time { display: block; font-size: 0.8125rem; color: var(--ink-soft); }
+  .feed .is-new p { font-weight: 600; }
+
+  .rail { display: grid; border-top: 2px solid var(--ink); }
   .station { display: grid; grid-template-columns: 9.5rem 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
   .station h3 { margin: 0; font: 500 1rem/1.4 var(--body); display: flex; align-items: baseline; gap: 8px; }
   .station h3 b { font: 700 1.25rem/1 var(--display); min-width: 1.4ch; }
   .station.is-empty h3 { color: var(--ink-soft); }
   .station.is-empty h3 b { color: var(--line); }
   .cards { display: grid; gap: 8px; min-width: 0; }
-  .card { background: var(--sheet); border-radius: 10px; padding: 12px 14px; min-width: 0; }
+  .card { width: 100%; text-align: left; background: var(--sheet); border: 1px solid transparent; border-radius: 10px; padding: 12px 14px; min-width: 0; cursor: pointer; }
+  .card:hover { border-color: var(--line); }
   .card h4 { margin: 0; font: 600 1rem/1.3 var(--body); overflow-wrap: anywhere; }
   .card p { margin: 4px 0 0; font-size: 0.9375rem; color: var(--ink-soft); overflow-wrap: anywhere; }
   .card .next { color: var(--ink); }
-  .card .facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 0.875rem; }
-  .card .facts span { white-space: nowrap; }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 0.875rem; }
+  .facts span { white-space: nowrap; }
   .card.is-live { box-shadow: inset 4px 0 0 var(--go); }
   .card.is-killed { background: transparent; border: 1px dashed var(--line); }
   .card.is-killed h4 { color: var(--stop); }
   .wip { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; }
 
-  /* Money */
-  .money { display: grid; gap: 1px; background: var(--line); border-radius: 12px; overflow: hidden; }
+  .money { display: grid; gap: 1px; background: var(--line); border-radius: 12px; overflow: hidden; margin: 0; }
   .money div { background: var(--sheet); padding: 14px 16px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
   .money dt { color: var(--ink-soft); }
   .money dd { margin: 0; font: 700 1.375rem/1.1 var(--display); letter-spacing: -0.02em; text-align: right; }
@@ -90,29 +124,36 @@
   .money .net dd.down { color: var(--stop); }
   .money-note { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; max-width: 62ch; }
 
-  /* Team */
-  .team { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
-  .team li { padding: 10px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 6.5rem 1fr; gap: 12px; }
-  .team .role { font-weight: 600; }
-  .team .did { color: var(--ink-soft); font-size: 0.9375rem; overflow-wrap: anywhere; }
-
-  /* Log */
-  .log { list-style: none; margin: 0; padding: 0; }
-  .log li { padding: 10px 0; border-bottom: 1px solid var(--line); }
-  .log time { display: block; font-size: 0.8125rem; color: var(--ink-soft); }
-  .log p { margin: 2px 0 0; overflow-wrap: anywhere; }
+  dialog { border: 0; padding: 0; border-radius: 16px; width: min(560px, calc(100vw - 24px)); max-height: calc(100vh - 32px); color: var(--ink); background: var(--sheet); }
+  dialog::backdrop { background: rgba(20, 33, 61, 0.45); }
+  .panel { padding: 20px; }
+  .panel header { display: grid; grid-template-columns: 56px 1fr 44px; gap: 14px; align-items: center; }
+  .panel header .face { width: 56px; height: 56px; font-size: 1.375rem; }
+  .panel h3 { margin: 0; font: 700 1.375rem/1.2 var(--display); letter-spacing: -0.02em; overflow-wrap: anywhere; }
+  .panel header p { margin: 2px 0 0; color: var(--ink-soft); font-size: 0.9375rem; }
+  .close { width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--sheet); cursor: pointer; font-size: 1.25rem; line-height: 1; }
+  .panel .trait { margin: 16px 0 0; }
+  .panel h4 { margin: 20px 0 6px; font: 600 1rem var(--body); }
+  .checks { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .checks li { padding: 4px 10px; border-radius: 999px; background: var(--paper); font-size: 0.875rem; }
+  .checks .ok { background: var(--go-wash); color: var(--go); }
+  .checks .no { background: var(--stop-wash); color: var(--stop); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-weight: 600; }
 
   footer { margin-top: 56px; font-size: 0.875rem; color: var(--ink-soft); }
 
-  @media (min-width: 760px) {
-    .wrap { padding: 28px 32px 80px; }
+  @media (min-width: 700px) {
+    .wrap { padding: 26px 28px 80px; }
+    .floor { grid-template-columns: repeat(2, 1fr); padding: 12px; gap: 12px; }
     .asks { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
     .money { grid-template-columns: repeat(3, 1fr); }
     .money div { flex-direction: column; align-items: flex-start; }
     .money dd { text-align: left; font-size: 1.75rem; }
-    .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
-    .two section { margin-top: 44px; }
+    .cards { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  }
+  @media (min-width: 1100px) {
+    .floor { grid-template-columns: repeat(3, 1fr); }
+    .split { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
   }
   @media (max-width: 420px) {
     .station { grid-template-columns: 1fr; gap: 8px; }
@@ -124,11 +165,11 @@
 <div class="wrap">
   <header class="top">
     <strong id="name">Venture HQ</strong>
-    <span id="updated">Loading the latest state</span>
+    <span class="pulse stale" id="pulse"><i aria-hidden="true"></i><span id="updated">Connecting to the office</span></span>
   </header>
 
   <main>
-    <h1 class="status" id="status">Opening the books</h1>
+    <h1 class="status" id="status">Opening the office</h1>
     <p class="status-note" id="statusNote"></p>
 
     <section aria-labelledby="h-asks">
@@ -136,39 +177,50 @@
       <div id="asks"></div>
     </section>
 
-    <section aria-labelledby="h-pipe">
-      <h2 id="h-pipe">Pipeline</h2>
-      <div class="rail" id="rail"></div>
-      <p class="wip" id="wip"></p>
+    <section aria-labelledby="h-office">
+      <h2 id="h-office">The office</h2>
+      <p class="sub">Sixteen AI agents in six departments. Each desk shows what that agent is doing right now, from the status it writes as it works. Open a desk to see its record.</p>
+      <div class="floor" id="floor"></div>
+      <p class="legend"><span class="lg-working">Working</span><span class="lg-done">Just finished</span><span class="lg-blocked">Blocked</span><span class="lg-idle">Idle</span></p>
     </section>
+
+    <div class="split">
+      <section aria-labelledby="h-pipe">
+        <h2 id="h-pipe">Pipeline</h2>
+        <p class="sub">Every idea and product, by stage. Open one to see who worked on it and what is checked.</p>
+        <div class="rail" id="rail"></div>
+        <p class="wip" id="wip"></p>
+      </section>
+      <section aria-labelledby="h-feed">
+        <h2 id="h-feed">Live feed</h2>
+        <p class="sub">Everything the agents did, newest first.</p>
+        <ul class="feed" id="feed"></ul>
+      </section>
+    </div>
 
     <section aria-labelledby="h-money">
       <h2 id="h-money">Money</h2>
       <dl class="money" id="money"></dl>
       <p class="money-note" id="moneyNote"></p>
     </section>
-
-    <div class="two">
-      <section aria-labelledby="h-team">
-        <h2 id="h-team">Team</h2>
-        <ul class="team" id="team"></ul>
-      </section>
-      <section aria-labelledby="h-log">
-        <h2 id="h-log">Recent decisions</h2>
-        <ul class="log" id="log"></ul>
-      </section>
-    </div>
   </main>
 
   <footer>
-    <p>Every number here comes from the company books. To pause the company, add a file named PAUSE to the repo.</p>
+    <p>Every status, number and line here comes from the company's books in its repository. To pause the company, add a file named PAUSE to the repo.</p>
   </footer>
 </div>
 
+<dialog id="detail" aria-labelledby="detailTitle"><div class="panel" id="panel"></div></dialog>
+
 <script>
 (function () {
+  var REPO = 'Anchit-AI-Hustle/virtual-company';
+  var DATA_PATH = 'hq/public/data.json';
+  var POLL_MS = 75000;
   var STAGE_NAMES = { idea: 'Ideas', validating: 'Checking demand', validated: 'Demand proven', spec: 'Spec written', building: 'Building', qa: 'In testing', live: 'Live', scaling: 'Scaling', killed: 'Stopped' };
-  var ROLE_NAMES = { ceo: 'CEO', research: 'Research', product: 'Product', engineer: 'Engineer', qa: 'QA', growth: 'Growth', support: 'Support', finance: 'Finance' };
+  var STATE_WORDS = { working: 'Working on', done: 'Finished', blocked: 'Blocked on', idle: 'Idle' };
+  var data = null, sha = null, checkedAt = null, seen = {};
+
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -180,39 +232,51 @@
   function usd(n) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(n); }
   function when(iso) {
     var d = new Date(iso);
-    if (isNaN(d)) return '';
+    if (!iso || isNaN(d)) return '';
     return d.toLocaleString(undefined, { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+  }
+  function ago(iso) {
+    if (!iso) return '';
+    var s = Math.round((Date.now() - new Date(iso).getTime()) / 1000);
+    if (isNaN(s)) return '';
+    if (s < 60) return 'just now';
+    if (s < 3600) return Math.round(s / 60) + ' min ago';
+    if (s < 86400) return Math.round(s / 3600) + ' h ago';
+    return when(iso);
   }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   function safeUrl(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
+  function initials(name) { return (name || '?').slice(0, 1).toUpperCase(); }
+  function agentById(id) { return (data.office || []).filter(function (a) { return a.id === id; })[0]; }
+  function face(a, cls) {
+    var f = el('span', cls || 'face', initials(a ? a.name : '?'));
+    f.style.background = a ? a.color : '#4A5670';
+    f.setAttribute('aria-hidden', 'true');
+    return f;
+  }
 
   function statusLine(d) {
+    var working = d.office.filter(function (a) { return a.state === 'working'; }).length;
     var live = d.ventures.filter(function (v) { return v.stage === 'live' || v.stage === 'scaling'; }).length;
     var works = d.ventures.filter(function (v) { return ['validating', 'validated', 'spec', 'building', 'qa'].indexOf(v.stage) > -1; }).length;
     var ideas = d.ventures.filter(function (v) { return v.stage === 'idea'; }).length;
-    var asks = d.approvals.length;
-    var head, note;
-    if (!d.ventures.length) {
-      head = 'Open for business, nothing built yet';
-      note = 'The CEO agent writes and scores the first ideas in the next daily cycle. They will appear in the pipeline below.';
-    } else if (live) {
-      head = plural(live, 'product is', 'products are') + ' live';
-      note = plural(works, 'more is', 'more are') + ' in the works and ' + plural(ideas, 'idea is', 'ideas are') + ' waiting for a turn.';
-    } else if (works) {
-      head = plural(works, 'product', 'products') + ' in the works';
-      note = 'Nothing is live yet. ' + plural(ideas, 'idea is', 'ideas are') + ' waiting for a turn.';
-    } else {
-      head = plural(ideas, 'idea', 'ideas') + ' on the table';
-      note = 'The CEO agent picks the strongest one to check for demand next.';
-    }
-    if (asks) note += ' ' + plural(asks, 'decision needs', 'decisions need') + ' you.';
+    var head;
+    if (working) head = plural(working, 'agent is', 'agents are') + ' at work';
+    else if (live) head = plural(live, 'product is', 'products are') + ' live';
+    else if (!d.ventures.length) head = 'The office is open, nothing built yet';
+    else head = 'The team is between cycles';
+    var bits = [];
+    if (live) bits.push(plural(live, 'product live', 'products live'));
+    if (works) bits.push(works + ' in the works');
+    if (ideas) bits.push(plural(ideas, 'idea waiting', 'ideas waiting'));
+    var note = bits.length ? bits.join(', ') + '.' : 'The CEO agent writes and scores the first ideas in the next cycle.';
+    if (d.approvals.length) note += ' ' + plural(d.approvals.length, 'decision needs', 'decisions need') + ' you.';
     return { head: head, note: note };
   }
 
   function renderAsks(d) {
-    var box = $('asks');
-    box.textContent = '';
-    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. Spending, public posts, outreach and account changes will show up here first.')); return; }
+    var box = $('asks'); box.textContent = '';
+    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. Spending, public posts, outreach, prices and account changes will show up here first.')); return; }
     var ul = el('ul', 'asks');
     d.approvals.forEach(function (a) {
       var li = el('li', 'ask');
@@ -222,15 +286,72 @@
       if (a.createdAt) bits.push('asked ' + when(a.createdAt));
       li.appendChild(el('p', 'meta', bits.join(', ')));
       var u = safeUrl(a.issueUrl);
-      if (u) { var link = el('a', null, 'Approve or reject'); link.href = u; link.rel = 'noopener'; li.appendChild(link); }
+      if (u) { var link = el('a', 'btn', 'Approve or reject'); link.href = u; link.rel = 'noopener'; li.appendChild(link); }
       ul.appendChild(li);
     });
     box.appendChild(ul);
   }
 
+  function renderFloor(d) {
+    var floor = $('floor'); floor.textContent = '';
+    d.departments.forEach(function (dep) {
+      var people = d.office.filter(function (a) { return a.department === dep.id; });
+      var busy = people.filter(function (a) { return a.state === 'working'; }).length;
+      var room = el('div', 'room');
+      var h = el('h3', null, dep.name);
+      h.appendChild(el('span', null, busy ? busy + ' working' : ''));
+      room.appendChild(h);
+      var desks = el('div', 'desks');
+      people.forEach(function (a) {
+        var b = el('button', 'desk is-' + a.state);
+        b.type = 'button';
+        b.appendChild(face(a));
+        var who = el('span', 'who');
+        who.appendChild(el('b', null, a.name));
+        who.appendChild(el('small', null, a.title));
+        var doing = el('span', 'doing');
+        if (a.state === 'idle') doing.textContent = a.last ? 'Idle. Last: ' + a.last.action : 'Idle. Not needed yet.';
+        else {
+          doing.appendChild(el('em', null, STATE_WORDS[a.state] + ' '));
+          doing.appendChild(document.createTextNode((a.task || '') + (a.ventureTitle ? ' (' + a.ventureTitle + ')' : '')));
+        }
+        who.appendChild(doing);
+        if (a.since && a.state !== 'idle') who.appendChild(el('span', 'when', ago(a.since)));
+        b.appendChild(who);
+        b.setAttribute('aria-label', a.name + ', ' + a.title + ', ' + (a.state === 'idle' ? 'idle' : STATE_WORDS[a.state] + ' ' + (a.task || '')));
+        b.addEventListener('click', function () { openAgent(a.id); });
+        desks.appendChild(b);
+      });
+      room.appendChild(desks);
+      floor.appendChild(room);
+    });
+  }
+
+  function feedItem(e, cls) {
+    var a = agentById(e.agent);
+    var li = el('li', cls || '');
+    li.appendChild(face(a, 'mini'));
+    var body = el('div');
+    var t = el('time', null, (a ? a.name + ', ' + a.title : e.agent) + ', ' + ago(e.at));
+    t.dateTime = e.at;
+    body.appendChild(t);
+    body.appendChild(el('p', null, e.action));
+    li.appendChild(body);
+    return li;
+  }
+  function renderFeed(d) {
+    var ul = $('feed'); ul.textContent = '';
+    if (!d.log.length) { ul.appendChild(el('li', 'empty', 'Nothing yet.')); return; }
+    var first = !Object.keys(seen).length;
+    d.log.slice(0, 25).forEach(function (e) {
+      var key = e.at + e.agent + e.action;
+      ul.appendChild(feedItem(e, !first && !seen[key] ? 'is-new' : ''));
+      seen[key] = true;
+    });
+  }
+
   function renderRail(d) {
-    var rail = $('rail');
-    rail.textContent = '';
+    var rail = $('rail'); rail.textContent = '';
     d.stages.forEach(function (stage) {
       var items = d.ventures.filter(function (v) { return v.stage === stage; });
       var row = el('div', 'station' + (items.length ? '' : ' is-empty'));
@@ -240,23 +361,19 @@
       row.appendChild(h);
       var cards = el('div', 'cards');
       items.forEach(function (v) {
-        var c = el('article', 'card' + (stage === 'live' || stage === 'scaling' ? ' is-live' : '') + (stage === 'killed' ? ' is-killed' : ''));
-        var title = el('h4');
-        var u = safeUrl(v.url);
-        if (u) { var a = el('a', null, v.title); a.href = u; a.rel = 'noopener'; title.appendChild(a); } else { title.textContent = v.title; }
-        c.appendChild(title);
+        var c = el('button', 'card' + (stage === 'live' || stage === 'scaling' ? ' is-live' : '') + (stage === 'killed' ? ' is-killed' : ''));
+        c.type = 'button';
+        c.appendChild(el('h4', null, v.title));
         c.appendChild(el('p', null, v.oneLiner));
         if (stage === 'killed' && v.killReason) c.appendChild(el('p', null, 'Stopped because: ' + v.killReason));
         else if (v.nextAction) c.appendChild(el('p', 'next', 'Next: ' + v.nextAction));
-        var facts = el('div', 'facts');
+        var facts = el('span', 'facts');
         facts.appendChild(el('span', null, 'Score ' + v.score + ' of 20'));
         if (typeof v.priceINR === 'number') facts.appendChild(el('span', null, 'Price ' + inr(v.priceINR)));
         if (v.evidenceCount) facts.appendChild(el('span', null, plural(v.evidenceCount, 'source', 'sources')));
-        if (v.metrics) {
-          if (typeof v.metrics.signups === 'number') facts.appendChild(el('span', null, plural(v.metrics.signups, 'signup', 'signups')));
-          if (typeof v.metrics.paidOrders === 'number') facts.appendChild(el('span', null, plural(v.metrics.paidOrders, 'paid order', 'paid orders')));
-        }
+        if (v.metrics && typeof v.metrics.paidOrders === 'number') facts.appendChild(el('span', null, plural(v.metrics.paidOrders, 'paid order', 'paid orders')));
         c.appendChild(facts);
+        c.addEventListener('click', function () { openVenture(v.id); });
         cards.appendChild(c);
       });
       row.appendChild(cards);
@@ -266,8 +383,7 @@
   }
 
   function renderMoney(d) {
-    var m = d.money, dl = $('money');
-    dl.textContent = '';
+    var m = d.money, dl = $('money'); dl.textContent = '';
     [['Revenue', m.revenueINR, m.revenueUSD, ''], ['Costs', m.costINR, m.costUSD, ''], ['Net', m.netINR, m.netUSD, 'net']].forEach(function (r) {
       var row = el('div', r[3]);
       row.appendChild(el('dt', null, r[0]));
@@ -276,58 +392,127 @@
       row.appendChild(dd);
       dl.appendChild(row);
     });
-    var note = m.fx ? 'USD at ' + m.fx.usdInr + ' rupees to the dollar, recorded ' + m.fx.asOf + '.' : 'USD appears once Finance records the exchange rate for the day.';
+    var note = m.fx ? 'USD at ' + m.fx.usdInr + ' rupees to the dollar, recorded ' + m.fx.asOf + '.' : 'USD appears once the Finance agent records the exchange rate for the day.';
     note += m.monthlyCapINR > 0 ? ' Approved spending cap: ' + inr(m.monthlyCapINR) + ' a month.' : ' Spending cap is zero until you approve a request.';
     $('moneyNote').textContent = note;
   }
 
-  function renderTeam(d) {
-    var ul = $('team');
-    ul.textContent = '';
-    d.team.forEach(function (t) {
-      var li = el('li');
-      li.appendChild(el('span', 'role', ROLE_NAMES[t.agent] || t.agent));
-      li.appendChild(el('span', 'did', t.last ? t.last.action + ' (' + when(t.last.at) + ')' : 'Has not been needed yet'));
-      ul.appendChild(li);
+  var dlg = $('detail'), panel = $('panel');
+  function openPanel(build) {
+    panel.textContent = '';
+    build(panel);
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+  }
+  function head(title, sub, faceNode) {
+    var h = el('header');
+    h.appendChild(faceNode);
+    var t = el('div');
+    var h3 = el('h3', null, title); h3.id = 'detailTitle';
+    t.appendChild(h3);
+    t.appendChild(el('p', null, sub));
+    h.appendChild(t);
+    var x = el('button', 'close', '×'); x.type = 'button'; x.setAttribute('aria-label', 'Close');
+    x.addEventListener('click', function () { dlg.close(); });
+    h.appendChild(x);
+    return h;
+  }
+  function trail(list) {
+    var ul = el('ul', 'feed');
+    if (!list.length) { ul.appendChild(el('li', 'empty', 'No work logged yet.')); return ul; }
+    list.forEach(function (e) { ul.appendChild(feedItem(e)); });
+    return ul;
+  }
+  function openAgent(id) {
+    var a = agentById(id); if (!a) return;
+    openPanel(function (p) {
+      p.appendChild(head(a.name, a.title, face(a)));
+      p.appendChild(el('p', 'trait', a.trait));
+      p.appendChild(el('h4', null, 'Right now'));
+      p.appendChild(el('p', null, a.state === 'idle' ? 'Idle' : STATE_WORDS[a.state] + ' ' + (a.task || '') + (a.ventureTitle ? ' (' + a.ventureTitle + ')' : '') + (a.since ? ', ' + ago(a.since) : '')));
+      p.appendChild(el('h4', null, 'Recent work (' + plural(a.actions, 'entry', 'entries') + ' in total)'));
+      p.appendChild(trail(data.log.filter(function (e) { return e.agent === a.id; }).slice(0, 10)));
+      var links = el('p', 'links');
+      var c = el('a', null, 'Read the job description'); c.href = 'https://github.com/' + REPO + '/blob/main/agents/' + a.id + '.md'; c.rel = 'noopener';
+      links.appendChild(c);
+      p.appendChild(links);
     });
   }
-
-  function renderLog(d) {
-    var ul = $('log');
-    ul.textContent = '';
-    if (!d.log.length) { ul.appendChild(el('li', 'empty', 'No decisions logged yet.')); return; }
-    d.log.slice(0, 12).forEach(function (e) {
-      var li = el('li');
-      var t = el('time', null, when(e.at) + ', ' + (ROLE_NAMES[e.agent] || e.agent));
-      t.dateTime = e.at;
-      li.appendChild(t);
-      li.appendChild(el('p', null, e.action));
-      ul.appendChild(li);
+  function openVenture(id) {
+    var v = data.ventures.filter(function (x) { return x.id === id; })[0]; if (!v) return;
+    openPanel(function (p) {
+      var f = el('span', 'face', initials(v.title)); f.style.background = v.stage === 'live' || v.stage === 'scaling' ? '#0B7A5E' : '#14213D';
+      f.setAttribute('aria-hidden', 'true');
+      p.appendChild(head(v.title, STAGE_NAMES[v.stage] + ', score ' + v.score + ' of 20', f));
+      p.appendChild(el('p', 'trait', v.oneLiner.replace(/[.!?]?$/, '.') + (v.customer ? ' For ' + v.customer + '.' : '')));
+      p.appendChild(el('h4', null, 'Checks'));
+      var checks = el('ul', 'checks');
+      function chk(label, val) { checks.appendChild(el('li', val === true ? 'ok' : val === false ? 'no' : '', label + (val === true ? ': passed' : val === false ? ': failed' : ': not yet'))); }
+      chk(plural(v.evidenceCount, 'demand source', 'demand sources'), v.evidenceCount >= 3 ? true : null);
+      chk('Spec', v.specPath ? true : null);
+      chk('QA', v.qaPassed);
+      chk('Design review', v.reviews.design);
+      chk('Security review', v.reviews.security);
+      chk('Legal review', v.reviews.legal);
+      p.appendChild(checks);
+      if (v.nextAction && v.stage !== 'killed') { p.appendChild(el('h4', null, 'Next')); p.appendChild(el('p', null, v.nextAction)); }
+      if (v.killReason) { p.appendChild(el('h4', null, 'Why it stopped')); p.appendChild(el('p', null, v.killReason)); }
+      p.appendChild(el('h4', null, 'Who did what'));
+      p.appendChild(trail((data.ventureTrail || {})[v.id] || []));
+      var links = el('p', 'links');
+      var u = safeUrl(v.url);
+      if (u) { var live = el('a', null, 'Open the live product'); live.href = u; live.rel = 'noopener'; links.appendChild(live); }
+      if (v.specPath) { var s = el('a', null, 'Read the spec'); s.href = 'https://github.com/' + REPO + '/blob/main/' + v.specPath; s.rel = 'noopener'; links.appendChild(s); }
+      if (['building', 'qa', 'live', 'scaling'].indexOf(v.stage) > -1) { var code = el('a', null, 'See the code'); code.href = 'https://github.com/' + REPO + '/tree/main/ventures/' + v.id; code.rel = 'noopener'; links.appendChild(code); }
+      p.appendChild(links);
     });
   }
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
 
-  // Live state comes from the repo, so every agent cycle shows up without a redeploy.
-  // The copy bundled with the page is the fallback.
-  var LIVE = 'https://raw.githubusercontent.com/Anchit-AI-Hustle/virtual-company/main/hq/public/data.json';
-  function load(url) {
+  function render(d) {
+    data = d;
+    $('name').textContent = d.company.name;
+    var s = statusLine(d);
+    $('status').textContent = s.head;
+    $('statusNote').textContent = s.note;
+    renderAsks(d); renderFloor(d); renderRail(d); renderFeed(d); renderMoney(d);
+  }
+  function tick() {
+    if (!checkedAt || !data) return;
+    $('updated').textContent = 'Books updated ' + ago(data.builtAt) + ', checked ' + ago(checkedAt);
+    $('pulse').className = 'pulse' + (Date.now() - new Date(checkedAt).getTime() > POLL_MS * 3 ? ' stale' : '');
+  }
+
+  function getJson(url) {
     return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
   }
-  load(LIVE + '?t=' + Date.now())
-    .catch(function () { return load('data.json'); })
-    .then(function (d) {
-      $('name').textContent = d.company.name;
-      document.title = d.company.name;
-      $('updated').textContent = 'Books updated ' + when(d.builtAt);
-      var s = statusLine(d);
-      $('status').textContent = s.head;
-      $('statusNote').textContent = s.note;
-      renderAsks(d); renderRail(d); renderMoney(d); renderTeam(d); renderLog(d);
-    })
-    .catch(function () {
-      $('status').textContent = 'The books did not load';
-      $('statusNote').textContent = 'Check your connection and reload. If it keeps happening, the last company cycle may not have finished publishing.';
-      $('updated').textContent = '';
-    });
+  // Find the newest commit that touched the books, then read that exact version, so a new
+  // push shows up within about a minute instead of waiting on a cache.
+  function poll() {
+    if (document.hidden && data) return;
+    getJson('https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(DATA_PATH) + '&per_page=1')
+      .then(function (list) {
+        var latest = list && list[0] && list[0].sha;
+        if (!latest) throw new Error('no commit');
+        if (latest === sha && data) return null;
+        return getJson('https://raw.githubusercontent.com/' + REPO + '/' + latest + '/' + DATA_PATH).then(function (d) { sha = latest; return d; });
+      })
+      .catch(function () {
+        return getJson('https://raw.githubusercontent.com/' + REPO + '/main/' + DATA_PATH + '?t=' + Date.now())
+          .catch(function () { return data ? null : getJson('data.json'); });
+      })
+      .then(function (d) { if (d) render(d); checkedAt = new Date().toISOString(); tick(); })
+      .catch(function () {
+        if (!data) {
+          $('status').textContent = 'The office did not load';
+          $('statusNote').textContent = 'Check your connection and reload. If it keeps happening, the last company cycle may not have finished publishing.';
+          $('updated').textContent = 'Not connected';
+        }
+      });
+  }
+  poll();
+  setInterval(poll, POLL_MS);
+  setInterval(tick, 15000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) poll(); });
 })();
 </script>
 </body>

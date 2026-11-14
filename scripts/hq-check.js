@@ -1,49 +1,60 @@
 #!/usr/bin/env node
-// Browser check for the HQ page at phone, tablet and desktop widths.
+// Browser check for HQ at phone, tablet and desktop widths.
 // Usage: NODE_PATH=<dir with playwright>/node_modules node scripts/hq-check.js [baseUrl] [--sample]
-// With no baseUrl it serves hq/public locally. --sample swaps in a busy made-up state to test layout.
+//   no baseUrl: serves hq/public locally and answers the page's GitHub polling with local data
+//   --sample:   a busy made-up company state, to test layout under load (never published)
 const http = require('node:http');
 const fs = require('node:fs');
+const os = require('node:os');
 const path = require('node:path');
 const { chromium } = require('playwright');
+const { buildHq } = require('./build-hq.js');
 
+const ROOT = path.join(__dirname, '..');
 const args = process.argv.slice(2);
 const sample = args.includes('--sample');
 const base = args.find((a) => /^https?:/.test(a));
-const pub = path.join(__dirname, '..', 'hq', 'public');
-const shots = path.join(__dirname, '..', 'shots');
+const pub = path.join(ROOT, 'hq', 'public');
+const shots = path.join(ROOT, 'shots');
 
-const SAMPLE = {
-  builtAt: new Date().toISOString(),
-  company: { name: 'Venture HQ', domain: 'anchit-tandon.com', owner: 'Anchit Tandon' },
-  stages: ['idea', 'validating', 'validated', 'spec', 'building', 'qa', 'live', 'scaling', 'killed'],
-  wip: { building: 1, liveTests: 3, openIdeas: 12 },
-  money: { revenueINR: 4776, costINR: 900, netINR: 3876, revenueUSD: 50.27, costUSD: 9.47, netUSD: 40.8, fx: { usdInr: 95, asOf: '2026-11-14', source: 'https://example.com' }, monthlyCapINR: 2000 },
-  approvals: [
-    { id: 'ap-2', type: 'public-post', ask: 'Publish the launch post for Invoice Buddy in two freelancer communities, text attached in the issue', costINR: 0, createdAt: '2026-11-14T02:00:00Z', issueUrl: 'https://github.com/Anchit-AI-Hustle/virtual-company/issues/2' },
-    { id: 'ap-1', type: 'money', ask: 'Spend on a payment gateway setup fee', costINR: 900, createdAt: '2026-11-13T02:00:00Z', issueUrl: 'https://github.com/Anchit-AI-Hustle/virtual-company/issues/1' }
-  ],
-  ventures: [
-    { id: 'invoice-buddy', title: 'Invoice Buddy', oneLiner: 'GST invoices in one minute for freelancers', stage: 'live', score: 17, priceINR: 199, url: 'https://invoice-buddy.anchit-tandon.com', nextAction: 'Add a sample invoice to the first screen', metrics: { signups: 41, paidOrders: 24 }, evidenceCount: 5 },
-    { id: 'rent-receipt', title: 'Rent Receipt Maker with a very long product name that has to wrap properly', oneLiner: 'HRA rent receipts for the whole year in one PDF, ready for the employer portal', stage: 'building', score: 16, priceINR: 99, url: null, nextAction: 'Finish PDF export and the pay screen', metrics: null, evidenceCount: 4 },
-    { id: 'menu-qr', title: 'Menu QR', oneLiner: 'QR menus for small cafes', stage: 'validating', score: 14, priceINR: null, url: null, nextAction: 'Find 3 sources showing cafes pay for this', metrics: null, evidenceCount: 1 },
-    { id: 'resume-fit', title: 'Resume Fit', oneLiner: 'Checks a resume against a job post', stage: 'idea', score: 13, priceINR: null, url: null, nextAction: 'Wait for a turn', metrics: null, evidenceCount: 0 },
-    { id: 'wedding-budget', title: 'Wedding Budget Sheet', oneLiner: 'A planner for Indian wedding costs', stage: 'idea', score: 12, priceINR: null, url: null, nextAction: 'Wait for a turn', metrics: null, evidenceCount: 0 },
-    { id: 'pet-names', title: 'Pet Name Finder', oneLiner: 'Names for pets', stage: 'killed', score: 6, priceINR: null, url: null, nextAction: null, killReason: 'Free everywhere, nobody pays', metrics: null, evidenceCount: 0 }
-  ],
-  team: ['ceo', 'research', 'product', 'engineer', 'qa', 'growth', 'support', 'finance'].map((agent, i) => ({ agent, last: i === 6 ? null : { at: '2026-11-14T03:00:00Z', agent, action: 'Did the work for this cycle and wrote it down in the books for the next role' } })),
-  log: Array.from({ length: 8 }, (_, i) => ({ at: `2026-11-1${4 - (i > 4 ? 1 : 0)}T0${i}:00:00Z`, agent: 'ceo', action: 'Picked Rent Receipt Maker to build next because it has the highest score among proven ideas', ventureId: 'rent-receipt' }))
-};
+function sampleState() {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'hq-sample-'));
+  fs.cpSync(path.join(ROOT, 'company'), path.join(dir, 'company'), { recursive: true });
+  const w = (n, v) => fs.writeFileSync(path.join(dir, 'company', n + '.json'), JSON.stringify(v));
+  const t = (h) => new Date(Date.now() - h * 3600e3).toISOString();
+  const v = (id, title, oneLiner, stage, total, extra) => Object.assign({ id, title, oneLiner, customer: 'Indian freelancers', revenueModel: 'One-time', priceINR: null, stage, score: { demand: 4, speedToRevenue: 4, buildEffort: 4, distribution: total - 12, total }, evidence: [], specPath: null, url: null, qa: null, reviews: {}, metrics: null, nextAction: 'Wait for a turn', createdAt: t(30), updatedAt: t(1), killReason: null }, extra || {});
+  const ev = [1, 2, 3].map((i) => ({ claim: 'c' + i, url: 'https://example.com/' + i, foundAt: '2026-11-14' }));
+  w('ventures', [
+    v('invoice-buddy', 'Invoice Buddy', 'GST invoices in one minute', 'live', 17, { priceINR: 199, url: 'https://invoice-buddy.anchit-tandon.com', evidence: ev, specPath: 'specs/x.md', metrics: { paidOrders: 24 }, nextAction: 'Add a sample invoice to the first screen', qa: { passed: true }, reviews: { design: { passed: true }, security: { passed: true }, legal: { passed: true } } }),
+    v('rent-receipt', 'Rent Receipt Maker with a very long product name that has to wrap properly', 'HRA rent receipts for the whole year in one PDF', 'building', 16, { priceINR: 99, evidence: ev, specPath: 'specs/y.md', nextAction: 'Finish PDF export' }),
+    v('menu-qr', 'Menu QR', 'QR menus for small cafes', 'validating', 14, { evidence: ev.slice(0, 1), nextAction: 'Find 2 more sources' }),
+    v('resume-fit', 'Resume Fit', 'Checks a resume against a job post', 'idea', 13),
+    v('pet-names', 'Pet Name Finder', 'Names for pets', 'killed', 13, { killReason: 'Free everywhere, nobody pays' })
+  ]);
+  w('approvals', [{ id: 'ap-1', ventureId: 'invoice-buddy', type: 'public-post', ask: 'Publish the Invoice Buddy launch post in two freelancer communities', costINR: 0, status: 'pending', issueUrl: 'https://github.com/Anchit-AI-Hustle/virtual-company/issues/1', createdAt: t(2), decidedBy: null, decidedAt: null }]);
+  w('activity', {
+    ops: { state: 'working', task: 'Running the afternoon cycle', ventureId: null, since: t(0.2) },
+    engineer: { state: 'working', task: 'Building the PDF export', ventureId: 'rent-receipt', since: t(0.4) },
+    research: { state: 'working', task: 'Searching cafe owner forums for paid menu tools', ventureId: 'menu-qr', since: t(0.1) },
+    qa: { state: 'done', task: 'Passed Invoice Buddy on the live URL', ventureId: 'invoice-buddy', since: t(3) },
+    sales: { state: 'blocked', task: 'No payment rail approved yet', ventureId: 'invoice-buddy', since: t(5) }
+  });
+  const team = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8'));
+  w('log', team.map((m, i) => ({ at: t(i * 0.7), agent: m.id, action: m.name + ' did a real piece of work for this cycle and wrote it down for the next role', ventureId: i % 2 ? 'invoice-buddy' : 'rent-receipt' })));
+  return buildHq(dir);
+}
+
+const payload = sample ? sampleState() : null;
+function localData() { return payload || JSON.parse(fs.readFileSync(path.join(pub, 'data.json'), 'utf8')); }
 
 function serve() {
   const types = { '.html': 'text/html', '.json': 'application/json' };
   const server = http.createServer((req, res) => {
     const url = req.url.split('?')[0];
-    if (sample && url === '/data.json') { res.writeHead(200, { 'content-type': 'application/json' }); return res.end(JSON.stringify(SAMPLE)); }
     const file = path.join(pub, url === '/' ? 'index.html' : url);
     if (!file.startsWith(pub) || !fs.existsSync(file)) { res.writeHead(404); return res.end('not found'); }
     res.writeHead(200, { 'content-type': types[path.extname(file)] || 'text/plain' });
-    res.end(fs.readFileSync(file));
+    res.end(url === '/data.json' ? JSON.stringify(localData()) : fs.readFileSync(file));
   });
   return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve(server)));
 }
@@ -56,31 +67,55 @@ function serve() {
   let failed = false;
   for (const width of [390, 820, 1440]) {
     const page = await browser.newPage({ viewport: { width, height: width < 500 ? 844 : 1000 } });
+    if (!base) {
+      // Answer the page's GitHub polling locally, exactly as GitHub would.
+      await page.route('https://api.github.com/**', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify([{ sha: 'local' }]) }));
+      await page.route('https://raw.githubusercontent.com/**', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify(localData()) }));
+    }
     const problems = [];
     page.on('console', (m) => { if (m.type() === 'error') problems.push('console: ' + m.text()); });
     page.on('pageerror', (e) => problems.push('pageerror: ' + e.message));
     page.on('response', (r) => { if (r.status() >= 400) problems.push(`http ${r.status()}: ${r.url()}`); });
     await page.goto(url, { waitUntil: 'networkidle' });
-    await page.waitForFunction(() => !/Opening the books/.test(document.getElementById('status').textContent), null, { timeout: 15000 });
+    await page.waitForFunction(() => !/Opening the office/.test(document.getElementById('status').textContent), null, { timeout: 20000 });
     const facts = await page.evaluate(() => ({
       status: document.getElementById('status').textContent,
       overflow: document.documentElement.scrollWidth - window.innerWidth,
+      rooms: document.querySelectorAll('.room').length,
+      desks: document.querySelectorAll('.desk').length,
+      working: document.querySelectorAll('.desk.is-working').length,
       stations: document.querySelectorAll('.station').length,
       cards: document.querySelectorAll('.card').length,
-      asks: document.querySelectorAll('.ask').length,
-      team: document.querySelectorAll('.team li').length,
-      smallTaps: [...document.querySelectorAll('.ask a')].filter((a) => a.getBoundingClientRect().height < 44).length,
+      feed: document.querySelectorAll('#feed li').length,
+      smallTaps: [...document.querySelectorAll('.desk, .card, .btn')].filter((a) => a.getBoundingClientRect().height < 44).length,
       font: getComputedStyle(document.getElementById('status')).fontFamily.split(',')[0]
     }));
     if (/did not load/.test(facts.status)) problems.push('data failed to load');
     if (facts.overflow > 0) problems.push('horizontal overflow of ' + facts.overflow + 'px');
+    if (facts.rooms !== 6) problems.push('expected 6 rooms, saw ' + facts.rooms);
+    if (facts.desks !== 16) problems.push('expected 16 desks, saw ' + facts.desks);
     if (facts.stations !== 9) problems.push('expected 9 stages, saw ' + facts.stations);
-    if (facts.team !== 8) problems.push('expected 8 roles, saw ' + facts.team);
     if (facts.smallTaps) problems.push(facts.smallTaps + ' tap targets under 44px');
-    if (sample && (facts.cards !== 6 || facts.asks !== 2)) problems.push(`sample should show 6 cards and 2 asks, saw ${facts.cards} and ${facts.asks}`);
-    const shot = path.join(shots, `hq-${sample ? 'sample' : (base ? 'live' : 'local')}-${width}.png`);
-    await page.screenshot({ path: shot, fullPage: true });
-    console.log(`${problems.length ? 'FAIL' : 'PASS'} ${width}px | "${facts.status}" | cards ${facts.cards} | asks ${facts.asks} | overflow ${facts.overflow} | font ${facts.font}`);
+    if (sample && (facts.working !== 3 || facts.cards !== 5)) problems.push(`sample should show 3 working desks and 5 cards, saw ${facts.working} and ${facts.cards}`);
+
+    // Open a desk, then a product, and make sure each panel shows real content and closes.
+    await page.locator('.desk').nth(6).click();
+    const agentPanel = await page.evaluate(() => ({ open: document.getElementById('detail').open, title: document.getElementById('detailTitle').textContent, overflow: document.getElementById('detail').scrollWidth - document.getElementById('detail').clientWidth }));
+    if (!agentPanel.open || !agentPanel.title) problems.push('desk panel did not open');
+    if (agentPanel.overflow > 0) problems.push('desk panel overflows sideways');
+    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-desk.png`) });
+    await page.keyboard.press('Escape');
+    if (await page.evaluate(() => document.getElementById('detail').open)) problems.push('desk panel did not close with Escape');
+    if (facts.cards) {
+      await page.locator('.card').first().click();
+      const vp = await page.evaluate(() => ({ open: document.getElementById('detail').open, checks: document.querySelectorAll('.checks li').length }));
+      if (!vp.open || vp.checks !== 6) problems.push('product panel did not open with its 6 checks');
+      await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}-venture.png`) });
+      await page.locator('.close').click();
+    }
+
+    await page.screenshot({ path: path.join(shots, `hq-${sample ? 'sample' : base ? 'live' : 'local'}-${width}.png`), fullPage: true });
+    console.log(`${problems.length ? 'FAIL' : 'PASS'} ${width}px | "${facts.status}" | rooms ${facts.rooms} | desks ${facts.desks} (${facts.working} working) | cards ${facts.cards} | feed ${facts.feed} | overflow ${facts.overflow} | font ${facts.font}`);
     for (const p of problems) console.log('   ' + p);
     if (problems.length) failed = true;
     await page.close();

@@ -26,15 +26,33 @@ function textFiles(dir) {
 function validate(dir) {
   const errors = [];
   const err = (rule, message) => errors.push({ rule, message });
-  let config, ventures, approvals, ledger, log;
+  let config, ventures, approvals, ledger, log, team, departments, activity;
   try {
     config = read(dir, 'config');
     ventures = read(dir, 'ventures');
     approvals = read(dir, 'approvals');
     ledger = read(dir, 'ledger');
     log = read(dir, 'log');
+    team = read(dir, 'team');
+    departments = read(dir, 'departments');
+    activity = read(dir, 'activity');
   } catch (e) {
     return [{ rule: 'parse', message: e.message }];
+  }
+  const deptIds = new Set(departments.map((d) => d.id));
+  const teamIds = team.map((t) => t.id);
+  if (JSON.stringify(teamIds) !== JSON.stringify(config.roster)) err('team', 'config.roster must list the team in the same order as company/team.json');
+  for (const t of team) {
+    if (!t.name || !t.title || !t.trait) err('team', `agent ${t.id}: needs a name, title and trait`);
+    if (!deptIds.has(t.department)) err('team', `agent ${t.id}: unknown department ${t.department}`);
+    if (!/^#[0-9A-Fa-f]{6}$/.test(t.color || '')) err('team', `agent ${t.id}: color must be a hex value`);
+    if (!t.charter || !fs.existsSync(path.join(dir, t.charter))) err('team', `agent ${t.id}: charter file missing`);
+  }
+  for (const d of departments) if (!team.some((t) => t.department === d.id)) err('team', `department ${d.id} has nobody in it`);
+  for (const [agent, a] of Object.entries(activity)) {
+    if (!teamIds.includes(agent)) err('activity', `unknown agent ${agent}`);
+    if (!['working', 'done', 'blocked', 'idle'].includes(a.state)) err('activity', `agent ${agent}: unknown state ${a.state}`);
+    if (!a.since) err('activity', `agent ${agent}: needs since`);
   }
   const stages = config.stages;
   const at = (s) => stages.indexOf(s);
@@ -74,6 +92,10 @@ function validate(dir) {
       const sizes = Array.isArray(q.viewports) ? q.viewports : [];
       const ok = q.passed === true && q.reviewer === 'qa' && q.consoleErrors === 0 && [390, 820, 1440].every((w) => sizes.includes(w)) && q.checkedAt;
       if (!ok) err('qa', `${tag}: cannot be live without a passing independent QA record (390, 820, 1440, zero console errors)`);
+      for (const r of config.reviewsToGoLive || []) {
+        const rev = (v.reviews || {})[r];
+        if (!rev || rev.passed !== true || !rev.at) err('review', `${tag}: cannot be live without a passing ${r} review`);
+      }
     }
   }
 

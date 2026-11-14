@@ -1,0 +1,8 @@
+[
+  { "id": "leadership",  "name": "Leadership" },
+  { "id": "strategy",    "name": "Strategy and Data" },
+  { "id": "product",     "name": "Product and Design" },
+  { "id": "engineering", "name": "Engineering" },
+  { "id": "market",      "name": "Growth, Sales and Support" },
+  { "id": "business",    "name": "Finance, Legal and People" }
+]

@@ -13,6 +13,9 @@ function buildHq(dir) {
   const approvals = read(dir, 'approvals');
   const ledger = read(dir, 'ledger');
   const log = read(dir, 'log');
+  const team = read(dir, 'team');
+  const departments = read(dir, 'departments');
+  const activity = read(dir, 'activity');
 
   const sum = (type) => ledger.filter((l) => l.type === type).reduce((t, l) => t + l.amountINR, 0);
   const revenueINR = sum('revenue');
@@ -46,10 +49,27 @@ function buildHq(dir) {
       id: v.id, title: v.title, oneLiner: v.oneLiner, customer: v.customer, revenueModel: v.revenueModel,
       priceINR: v.priceINR, stage: v.stage, score: v.score.total, url: v.url, nextAction: v.nextAction,
       metrics: v.metrics, killReason: v.killReason, updatedAt: v.updatedAt,
-      evidenceCount: Array.isArray(v.evidence) ? v.evidence.length : 0
+      evidenceCount: Array.isArray(v.evidence) ? v.evidence.length : 0,
+      specPath: v.specPath || null,
+      reviews: Object.fromEntries(['design', 'security', 'legal'].map((r) => [r, v.reviews && v.reviews[r] ? !!v.reviews[r].passed : null])),
+      qaPassed: v.qa ? !!v.qa.passed : null
     })),
-    team: config.roster.map((agent) => ({ agent, last: lastByAgent[agent] || null })),
-    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 30)
+    departments,
+    office: team.map((t) => {
+      const a = activity[t.id] || {};
+      const v = a.ventureId ? ventures.find((x) => x.id === a.ventureId) : null;
+      const last = lastByAgent[t.id] || null;
+      return {
+        id: t.id, name: t.name, title: t.title, department: t.department, color: t.color, trait: t.trait,
+        state: a.state || 'idle', task: a.task || null, since: a.since || null,
+        ventureId: a.ventureId || null, ventureTitle: v ? v.title : null,
+        last: last ? { at: last.at, action: last.action } : null,
+        actions: log.filter((e) => e.agent === t.id).length
+      };
+    }),
+    ventureTrail: Object.fromEntries(ventures.map((v) => [v.id, log.filter((e) => e.ventureId === v.id)
+      .sort((a, b) => b.at.localeCompare(a.at)).slice(0, 12).map((e) => ({ at: e.at, agent: e.agent, action: e.action }))])),
+    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 60)
   };
 }
 

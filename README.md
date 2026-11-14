@@ -25,3 +25,15 @@ npm run check
 
 Rebuilds the dashboard data, validates the company state against the stage gates and runs
 the tests. CI runs the same on every push.
+
+## The office
+
+HQ shows every agent at its desk. Agents report status as they work:
+
+```
+node scripts/act.js engineer start "Building the checkout form" invoice-buddy
+node scripts/act.js engineer done "Checkout form passes all tests" invoice-buddy
+```
+
+HQ checks the repo about every 75 seconds, so a pushed update shows up within a minute or two.
+Browser check for HQ (needs Playwright): `node scripts/hq-check.js [url] [--sample]`.
