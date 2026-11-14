@@ -95,8 +95,10 @@ once it passes QA. That is the company doing its job.
 - Vercel is the primary host, team `anchit-ai-hustle` (team id `team_yC0I2xlKsitxFcfizef9EDQl`).
   One Vercel project per venture, named `vc-<id>`, linked to this repo with the root directory
   `ventures/<id>`, on the domain `<id>.anchit-tandon.com`. See `agents/engineer.md`.
-- HQ (Vercel project `venture-hq`) reads `hq/public/data.json` from `main` on GitHub, so
-  pushing the books updates the dashboard. Redeploy HQ only when `hq/public/index.html` changes.
+- HQ (Vercel project `venture-hq`, root directory `hq`) is linked to this repo: every push to
+  `main` that changes `hq/` republishes it, and the page polls its own `data.json`. Pushing the
+  books is all it takes to update the office. Keep pushes to one per finished step: each push
+  is a Vercel deployment and the plan allows about 100 a day across all projects.
 - The owner also wants every live URL to be servable from Cloudflare as a standby, with no
   proxying of one platform through the other. When a session has the tools to deploy to
   Cloudflare, do it and record it. When it does not, say so in the log and do not pretend.

@@ -35,5 +35,6 @@ node scripts/act.js engineer start "Building the checkout form" invoice-buddy
 node scripts/act.js engineer done "Checkout form passes all tests" invoice-buddy
 ```
 
-HQ checks the repo about every 75 seconds, so a pushed update shows up within a minute or two.
+Each push republishes HQ and the page checks for new data every minute, so a pushed update
+shows up within a minute or two.
 Browser check for HQ (needs Playwright): `node scripts/hq-check.js [url] [--sample]`.

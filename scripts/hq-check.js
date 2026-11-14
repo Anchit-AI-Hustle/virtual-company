@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Browser check for HQ at phone, tablet and desktop widths.
 // Usage: NODE_PATH=<dir with playwright>/node_modules node scripts/hq-check.js [baseUrl] [--sample]
-//   no baseUrl: serves hq/public locally and answers the page's GitHub polling with local data
+//   no baseUrl: serves hq/public locally
 //   --sample:   a busy made-up company state, to test layout under load (never published)
 const http = require('node:http');
 const fs = require('node:fs');
@@ -67,11 +67,6 @@ function serve() {
   let failed = false;
   for (const width of [390, 820, 1440]) {
     const page = await browser.newPage({ viewport: { width, height: width < 500 ? 844 : 1000 } });
-    if (!base) {
-      // Answer the page's GitHub polling locally, exactly as GitHub would.
-      await page.route('https://api.github.com/**', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify([{ sha: 'local' }]) }));
-      await page.route('https://raw.githubusercontent.com/**', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify(localData()) }));
-    }
     const problems = [];
     page.on('console', (m) => { if (m.type() === 'error') problems.push('console: ' + m.text()); });
     page.on('pageerror', (e) => problems.push('pageerror: ' + e.message));
