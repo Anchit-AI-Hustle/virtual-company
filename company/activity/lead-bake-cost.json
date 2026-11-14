@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Validating finished: stage moved to validated with sourced evidence for and against",
+  "state": "blocked",
+  "task": "Validated. Business case, sizing and CEO decision need independent research, sizing and ceo agents; this lead session has no tool to launch subagents, and the lead may not write them itself",
   "ventureId": "bake-cost",
-  "since": "2026-11-14T14:16:14.863Z"
+  "since": "2026-11-14T14:16:44.642Z"
 }
