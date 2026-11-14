@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:41:56.720Z",
+  "builtAt": "2026-11-14T06:49:10.585Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -25,14 +25,134 @@
     "revenueINR": 0,
     "costINR": 0,
     "netINR": 0,
-    "revenueUSD": null,
-    "costUSD": null,
-    "netUSD": null,
-    "fx": null,
+    "revenueUSD": 0,
+    "costUSD": 0,
+    "netUSD": 0,
+    "fx": {
+      "usdInr": 94.2754,
+      "asOf": "2026-11-14",
+      "source": "https://www.xflowpay.com/tools/currency-converter/usd-to-inr-rate?amount=26"
+    },
     "monthlyCapINR": 0
   },
   "approvals": [],
-  "ventures": [],
+  "ventures": [
+    {
+      "id": "seatwise",
+      "title": "Seatwise",
+      "oneLiner": "Plan a wedding seating chart on your phone in minutes, private, no signup",
+      "customer": "Couples and family members planning a wedding or large event seating",
+      "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
+      "priceINR": null,
+      "stage": "validated",
+      "score": 14,
+      "url": null,
+      "nextAction": "Product writes spec; Sales files price",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:10.409Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "reviews": {
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null
+    },
+    {
+      "id": "paychase",
+      "title": "Paychase",
+      "oneLiner": "Polite payment reminder sequence and overdue tracker for Indian freelancers",
+      "customer": "Indian freelancers with clients who pay late",
+      "revenueModel": "One-time template and tracker purchase",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Research: find people paying for payment chasing tools. Legal: no claims about statutory interest without owner legal approval",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "reviews": {
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null
+    },
+    {
+      "id": "rally-rounds",
+      "title": "Rally Rounds",
+      "oneLiner": "Pickleball round robin schedules and live scores for club organisers, no app install",
+      "customer": "Volunteer pickleball and padel session organisers",
+      "revenueModel": "Free for small sessions, paid organiser pass",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Research: find a third independent signal and a community that welcomes tools. Against: many free generators exist",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "evidenceCount": 2,
+      "specPath": null,
+      "reviews": {
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null
+    },
+    {
+      "id": "shaadi-budget",
+      "title": "Shaadi Budget",
+      "oneLiner": "Indian wedding budget planner by function and vendor, works offline",
+      "customer": "Indian families planning a wedding",
+      "revenueModel": "One-time paid planner",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Research: evidence of paid Indian wedding budget planners. Overlaps Seatwise audience, could be a Seatwise add-on",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "reviews": {
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null
+    },
+    {
+      "id": "rota-sheet",
+      "title": "Rota Sheet",
+      "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
+      "customer": "Owners of small shops and cafes with under 10 staff",
+      "revenueModel": "Paid printable rota pack",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 11,
+      "url": null,
+      "nextAction": "Research. Against: free rota tools from Findmyshift and BrightHR already exist (https://www.findmyshift.co.uk/free-staff-rota-software)",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "reviews": {
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null
+    }
+  ],
   "departments": [
     {
       "id": "leadership",
@@ -67,16 +187,16 @@
       "department": "leadership",
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend",
+      "since": "2026-11-14T06:49:01.031Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T03:00:00Z",
-        "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas."
+        "at": "2026-11-14T06:49:01.031Z",
+        "action": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend"
       },
-      "actions": 1
+      "actions": 3
     },
     {
       "id": "ops",
@@ -103,13 +223,16 @@
       "department": "strategy",
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones",
+      "since": "2026-11-14T06:49:10.432Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
+      "last": {
+        "at": "2026-11-14T06:49:10.432Z",
+        "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones"
+      },
+      "actions": 3
     },
     {
       "id": "data",
@@ -118,13 +241,16 @@
       "department": "strategy",
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "No live ventures, no counts to read",
+      "since": "2026-11-14T06:48:35.568Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:48:35.568Z",
+        "action": "No live ventures, no counts to read"
+      },
+      "actions": 1
     },
     {
       "id": "product",
@@ -193,13 +319,16 @@
       "department": "engineering",
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product",
+      "since": "2026-11-14T06:42:03.578Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:42:03.578Z",
+        "action": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product"
+      },
+      "actions": 2
     },
     {
       "id": "security",
@@ -208,13 +337,16 @@
       "department": "engineering",
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "Secret scan: no keys, tokens or passwords in tracked files",
+      "since": "2026-11-14T06:48:35.527Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:48:35.527Z",
+        "action": "Secret scan: no keys, tokens or passwords in tracked files"
+      },
+      "actions": 2
     },
     {
       "id": "growth",
@@ -253,13 +385,16 @@
       "department": "market",
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "No live ventures, no customer messages",
+      "since": "2026-11-14T06:48:35.600Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:48:35.600Z",
+        "action": "No live ventures, no customer messages"
+      },
+      "actions": 1
     },
     {
       "id": "finance",
@@ -268,13 +403,16 @@
       "department": "business",
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
+      "since": "2026-11-14T06:48:35.693Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:48:35.693Z",
+        "action": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR"
+      },
+      "actions": 2
     },
     {
       "id": "legal",
@@ -283,13 +421,16 @@
       "department": "business",
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "Screened 5 ideas: none in excluded categories. Paychase must not make statutory interest claims without a legal approval. No competitor brand names on our pages",
+      "since": "2026-11-14T06:49:00.967Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:49:00.967Z",
+        "action": "Screened 5 ideas: none in excluded categories. Paychase must not make statutory interest claims without a legal approval. No competitor brand names on our pages"
+      },
+      "actions": 2
     },
     {
       "id": "people",
@@ -307,8 +448,130 @@
       "actions": 0
     }
   ],
-  "ventureTrail": {},
+  "ventureTrail": {
+    "seatwise": [
+      {
+        "at": "2026-11-14T06:49:10.432Z",
+        "agent": "research",
+        "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones"
+      },
+      {
+        "at": "2026-11-14T06:49:01.031Z",
+        "agent": "ceo",
+        "action": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend"
+      }
+    ],
+    "rally-rounds": [],
+    "paychase": [],
+    "shaadi-budget": [],
+    "rota-sheet": []
+  },
   "log": [
+    {
+      "at": "2026-11-14T06:49:10.432Z",
+      "agent": "research",
+      "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:49:01.031Z",
+      "agent": "ceo",
+      "action": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:49:00.999Z",
+      "agent": "research",
+      "action": "Evidence filed: Seatwise 4 sourced signals (validated), Rally Rounds 2 (not yet), rent receipt and GST invoice tools dropped as free everywhere",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:49:00.967Z",
+      "agent": "legal",
+      "action": "Screened 5 ideas: none in excluded categories. Paychase must not make statutory interest claims without a legal approval. No competitor brand names on our pages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:49:00.930Z",
+      "agent": "legal",
+      "action": "Started: Category screen of 5 new ideas",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:49:00.874Z",
+      "agent": "research",
+      "action": "Started: Live web search for demand: seating charts, round robins, invoicing, rent receipts, rotas",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:49:00.839Z",
+      "agent": "ceo",
+      "action": "Started: Pipeline empty: asking Research for live evidence and generating 5 scored ideas",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:48:35.693Z",
+      "agent": "finance",
+      "action": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:48:35.634Z",
+      "agent": "finance",
+      "action": "Started: Record USD to INR rate",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:48:35.600Z",
+      "agent": "support",
+      "action": "No live ventures, no customer messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:48:35.568Z",
+      "agent": "data",
+      "action": "No live ventures, no counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:48:35.527Z",
+      "agent": "security",
+      "action": "Secret scan: no keys, tokens or passwords in tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:42:03.614Z",
+      "agent": "security",
+      "action": "Started: Secret scan of tracked files",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T06:42:03.578Z",
+      "agent": "devops",
+      "action": "Uptime: no live or scaling ventures, nothing to check. Cloudflare standby skipped, no live product",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:42:03.546Z",
+      "agent": "devops",
+      "action": "Started: Uptime check of live URLs",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-14T06:41:56.619Z",
       "agent": "ops",
