@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:59:50.409Z",
+  "builtAt": "2026-11-14T07:03:32.256Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -36,6 +36,18 @@
     "monthlyCapINR": 0
   },
   "approvals": [
+    {
+      "id": "ap-4",
+      "ventureId": "seatwise",
+      "type": "account",
+      "ask": "Set Cloudflare records for seatwise, hq and the wildcard to DNS only, or turn off Web Analytics auto setup and bot JavaScript detections",
+      "why": "Cloudflare injects an analytics beacon and a bot script into every page; the CSP blocks them, giving 3 console errors per page, so live QA fails. Proxying also breaks the constitution",
+      "costINR": 0,
+      "ifNo": "Seatwise and every future product stay out of live",
+      "status": "pending",
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4",
+      "createdAt": "2026-11-14T07:03:31.954Z"
+    },
     {
       "id": "ap-3",
       "ventureId": "seatwise",
@@ -81,13 +93,13 @@
       "customer": "Couples and family members planning a wedding or large event seating",
       "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
       "priceINR": 799,
-      "stage": "qa",
+      "stage": "building",
       "score": 14,
       "url": null,
-      "nextAction": "DevOps releases to seatwise.anchit-tandon.com, QA re-tests the live URL",
+      "nextAction": "Blocked on owner approval ap-4 (Cloudflare DNS only). Then QA re-runs the live check at https://seatwise.anchit-tandon.com; on 0 console errors move qa then live. Deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR is READY",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T06:59:27.019Z",
+      "updatedAt": "2026-11-14T07:03:31.954Z",
       "evidenceCount": 4,
       "specPath": "specs/seatwise.md",
       "reviews": {
@@ -95,7 +107,7 @@
         "security": true,
         "legal": true
       },
-      "qaPassed": null
+      "qaPassed": false
     },
     {
       "id": "paychase",
@@ -225,15 +237,15 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "state": "done",
-      "task": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend",
-      "since": "2026-11-14T06:49:01.031Z",
+      "task": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
+      "since": "2026-11-14T07:03:32.105Z",
       "ventureId": "seatwise",
       "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T06:49:01.031Z",
-        "action": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend"
+        "at": "2026-11-14T07:03:32.105Z",
+        "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics"
       },
-      "actions": 3
+      "actions": 4
     },
     {
       "id": "ops",
@@ -350,16 +362,16 @@
       "department": "engineering",
       "color": "#2E9C7E",
       "trait": "Independent. Trusts screenshots, not claims.",
-      "state": "done",
-      "task": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship",
-      "since": "2026-11-14T06:59:27.106Z",
+      "state": "blocked",
+      "task": "Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
+      "since": "2026-11-14T07:03:32.014Z",
       "ventureId": "seatwise",
       "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T06:59:27.106Z",
-        "action": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship"
+        "at": "2026-11-14T07:03:32.014Z",
+        "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4"
       },
-      "actions": 3
+      "actions": 4
     },
     {
       "id": "devops",
@@ -368,16 +380,16 @@
       "department": "engineering",
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
-      "state": "done",
-      "task": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
-      "since": "2026-11-14T06:59:50.292Z",
+      "state": "blocked",
+      "task": "Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)",
+      "since": "2026-11-14T07:03:32.057Z",
       "ventureId": "seatwise",
       "ventureTitle": "Seatwise",
       "last": {
-        "at": "2026-11-14T06:59:50.292Z",
-        "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main"
+        "at": "2026-11-14T07:03:32.057Z",
+        "action": "Blocked: Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)"
       },
-      "actions": 4
+      "actions": 6
     },
     {
       "id": "security",
@@ -503,6 +515,26 @@
   "ventureTrail": {
     "seatwise": [
       {
+        "at": "2026-11-14T07:03:32.105Z",
+        "agent": "ceo",
+        "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics"
+      },
+      {
+        "at": "2026-11-14T07:03:32.057Z",
+        "agent": "devops",
+        "action": "Blocked: Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)"
+      },
+      {
+        "at": "2026-11-14T07:03:32.014Z",
+        "agent": "qa",
+        "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4"
+      },
+      {
+        "at": "2026-11-14T07:03:31.978Z",
+        "agent": "devops",
+        "action": "Seatwise deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR READY, https://seatwise.anchit-tandon.com returns 200 with our headers. Cloudflare standby: no Cloudflare deploy tools this session, skipped"
+      },
+      {
         "at": "2026-11-14T06:59:50.292Z",
         "agent": "devops",
         "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main"
@@ -541,26 +573,6 @@
         "at": "2026-11-14T06:56:34.796Z",
         "agent": "legal",
         "action": "Seatwise legal review passed. Terms of sale and refund policy needed before Pro is sold, filing legal approval"
-      },
-      {
-        "at": "2026-11-14T06:56:34.758Z",
-        "agent": "security",
-        "action": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text"
-      },
-      {
-        "at": "2026-11-14T06:56:34.725Z",
-        "agent": "qa",
-        "action": "Seatwise local QA: all 15 acceptance tests pass, 0 console errors at 390, 820, 1440. Defects to fix: table seats can be set to 0, focus lost after unseat, 1 guests plural, CSV formula cells, USD missing on Pro page"
-      },
-      {
-        "at": "2026-11-14T06:56:34.690Z",
-        "agent": "design",
-        "action": "Blocked: Seatwise design review failed: header Pro link is 41.6 px wide, below the 44 px minimum. Back to engineer"
-      },
-      {
-        "at": "2026-11-14T06:52:46.559Z",
-        "agent": "legal",
-        "action": "Started: Launch review of Seatwise"
       }
     ],
     "rally-rounds": [],
@@ -569,6 +581,34 @@
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T07:03:32.105Z",
+      "agent": "ceo",
+      "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:03:32.057Z",
+      "agent": "devops",
+      "action": "Blocked: Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)",
+      "ventureId": "seatwise",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T07:03:32.014Z",
+      "agent": "qa",
+      "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
+      "ventureId": "seatwise",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T07:03:31.978Z",
+      "agent": "devops",
+      "action": "Seatwise deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR READY, https://seatwise.anchit-tandon.com returns 200 with our headers. Cloudflare standby: no Cloudflare deploy tools this session, skipped",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
     {
       "at": "2026-11-14T06:59:50.292Z",
       "agent": "devops",

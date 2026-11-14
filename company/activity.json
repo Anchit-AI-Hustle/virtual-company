@@ -6,10 +6,10 @@
     "since": "2026-11-14T06:50:01.942Z"
   },
   "devops": {
-    "state": "done",
-    "task": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
+    "state": "blocked",
+    "task": "Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)",
     "ventureId": "seatwise",
-    "since": "2026-11-14T06:59:50.292Z"
+    "since": "2026-11-14T07:03:32.057Z"
   },
   "security": {
     "state": "done",
@@ -37,9 +37,9 @@
   },
   "ceo": {
     "state": "done",
-    "task": "5 ideas scored. Picked Seatwise (14): people pay 17.99 to 50 USD for seating tools and complain about free ones; buildable in plain JS with no backend",
+    "task": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
     "ventureId": "seatwise",
-    "since": "2026-11-14T06:49:01.031Z"
+    "since": "2026-11-14T07:03:32.105Z"
   },
   "research": {
     "state": "done",
@@ -78,9 +78,9 @@
     "since": "2026-11-14T06:59:27.041Z"
   },
   "qa": {
-    "state": "done",
-    "task": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship",
+    "state": "blocked",
+    "task": "Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
     "ventureId": "seatwise",
-    "since": "2026-11-14T06:59:27.106Z"
+    "since": "2026-11-14T07:03:32.014Z"
   }
 }

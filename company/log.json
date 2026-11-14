@@ -291,5 +291,33 @@
     "action": "Created Vercel project vc-seatwise with root ventures/seatwise, ignore step set, domain seatwise.anchit-tandon.com verified. Deploying from main",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:31.978Z",
+    "agent": "devops",
+    "action": "Seatwise deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR READY, https://seatwise.anchit-tandon.com returns 200 with our headers. Cloudflare standby: no Cloudflare deploy tools this session, skipped",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T07:03:32.014Z",
+    "agent": "qa",
+    "action": "Blocked: Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T07:03:32.057Z",
+    "agent": "devops",
+    "action": "Blocked: Cloudflare proxy in front of Vercel injects scripts into seatwise and hq; DNS change is owner-only, filed ap-4 (issue 4)",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T07:03:32.105Z",
+    "agent": "ceo",
+    "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

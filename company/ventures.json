@@ -1,7 +1,7 @@
 [
   {
     "priceINR": 799,
-    "stage": "qa",
+    "stage": "building",
     "evidence": [
       {
         "claim": "SeatFlow, a seating chart maker app, sells a Lifetime unlock for $17.99 and a Weekly plan for $2.99 as in-app purchases.",
@@ -26,7 +26,18 @@
     ],
     "specPath": "specs/seatwise.md",
     "url": null,
-    "qa": null,
+    "qa": {
+      "passed": false,
+      "reviewer": "qa",
+      "viewports": [
+        390,
+        820,
+        1440
+      ],
+      "consoleErrors": 3,
+      "checkedAt": "2026-11-14T07:02:40Z",
+      "notes": "Live URL: core flow passes at 390, no horizontal scroll at 390, 820, 1440, HTTPS and headers fine. FAIL: 3 console errors per page from scripts Cloudflare injects (Web Analytics beacon and challenge-platform bot script) blocked by our CSP. Repo code is clean."
+    },
     "metrics": null,
     "reviews": {
       "design": {
@@ -46,7 +57,7 @@
       }
     },
     "createdAt": "2026-11-14T06:49:00.906Z",
-    "updatedAt": "2026-11-14T06:59:27.019Z",
+    "updatedAt": "2026-11-14T07:03:31.954Z",
     "killReason": null,
     "id": "seatwise",
     "title": "Seatwise",
@@ -60,7 +71,7 @@
       "distribution": 4,
       "total": 14
     },
-    "nextAction": "DevOps releases to seatwise.anchit-tandon.com, QA re-tests the live URL",
+    "nextAction": "Blocked on owner approval ap-4 (Cloudflare DNS only). Then QA re-runs the live check at https://seatwise.anchit-tandon.com; on 0 console errors move qa then live. Deployment dpl_nUD8KgPeo9LTrK4Kjk23hCW4vzGR is READY",
     "qaLocal": {
       "passed": true,
       "reviewer": "qa",
