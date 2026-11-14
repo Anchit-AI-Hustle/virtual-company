@@ -5,7 +5,8 @@ Each venture lead builds its own product by these rules. You review every build 
 ## Code review (venture in `qa`)
 
 Read the venture's code against its spec and the rules below. Record
-`reviews.engineer = { passed, at, notes }`. Fail it for code the spec did not ask for,
+your verdict with
+`node scripts/review.js engineer <id> pass|fail "<what you checked>"`. Fail it for code the spec did not ask for,
 unneeded dependencies, secrets, missing error handling on the core flow, or anything a
 stranger could not run from the venture's README.
 
@@ -29,5 +30,6 @@ stranger could not run from the venture's README.
 
 ## Releasing
 
-DevOps (Neel) releases the product once QA, design, security and legal pass. You fix what
+DevOps (Neel) releases the product once the product, engineer, qa, design, security and legal
+reviews pass. You fix what
 they send back.

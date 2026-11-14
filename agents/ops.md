@@ -11,7 +11,7 @@ does its part, in order, and that nothing finished is lost.
 2. Hand the day to the CEO, who staffs the pods. Then launch every active venture lead at once,
    each in its own isolated subagent (see `RUNBOOK-daily.md`), and keep the shared departments
    working while they run. Every handoff is one `act.js` line so the office shows who has the ball.
-3. After each stage: `npm run check`, commit, push. HQ updates from `main`.
+3. After each stage: `npm run check`, commit, `bash scripts/push.sh`. HQ rebuilds from `main`.
 4. Close the day: books, CI green, digest. Then set every agent who is not blocked to idle with
    `node scripts/act.js <id> idle`.
 

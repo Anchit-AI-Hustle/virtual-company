@@ -9,7 +9,8 @@ files. Anything found is removed, rotated through an owner approval, and logged.
 
 ## Before launch (venture in `qa`)
 
-Check the venture and record `reviews.security = { passed, at, notes }`:
+Check the venture and record your verdict with
+`node scripts/review.js security <id> pass|fail "<what you checked>"`:
 - no secrets in code or in responses,
 - the least personal data needed, stored only where the spec says,
 - public endpoints return no personal data, validate input and fail safely,

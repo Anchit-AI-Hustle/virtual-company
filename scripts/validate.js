@@ -29,7 +29,7 @@ function validate(dir) {
   const err = (rule, message) => errors.push({ rule, message });
   let brain;
   try { brain = loadBrain(dir); } catch (e) { return [{ rule: 'parse', message: e.message }]; }
-  const { config, team, departments, ventures, approvals, ledger, log, activity } = brain;
+  const { config, team, departments, ventures, approvals, ledger, log, activity, reviews } = brain;
 
   // Folder files must be named after what they hold, so parallel writers never collide.
   const named = (sub, key) => {
@@ -80,7 +80,7 @@ function validate(dir) {
 
     if (v.lead) {
       if (!v.lead.name || !/^#[0-9A-Fa-f]{6}$/.test(v.lead.color || '')) err('lead', `${tag}: lead needs a name and a hex color`);
-      if (team.some((t) => t.name === v.lead.name)) err('lead', `${tag}: lead name ${v.lead.name} is already a department agent`);
+      if (!config.leads.some((l) => l.name === v.lead.name)) err('lead', `${tag}: lead ${v.lead.name} is not in config.leads`);
       if (v.stage !== 'killed' && v.lead.name) {
         if (leadNames.has(v.lead.name)) err('lead', `${tag}: lead ${v.lead.name} already leads ${leadNames.get(v.lead.name)}`);
         leadNames.set(v.lead.name, v.id);
@@ -100,17 +100,29 @@ function validate(dir) {
     if (at(v.stage) >= at('spec')) {
       if (!v.specPath || !fs.existsSync(path.join(dir, v.specPath))) err('spec', `${tag}: spec file missing`);
     }
+    // A verdict counts only if it passed, has a time, and the reviewer itself logged it.
+    const verdict = (role) => {
+      const r = (reviews[v.id] || {})[role];
+      if (!r || r.passed !== true || !r.at) return null;
+      const proof = log.some((e) => e.agent === role && e.ventureId === v.id && e.kind === 'done');
+      return proof ? r : null;
+    };
+    if (at(v.stage) >= at('building') && !verdict('product')) err('review', `${tag}: cannot be built before the product review of its spec passes`);
     if (at(v.stage) >= at('live')) {
-      if (v.url !== `https://${v.id}.${config.domain}`) err('url', `${tag}: live url must be https://${v.id}.${config.domain}`);
-      const q = v.qa || {};
+      const liveUrl = `https://${v.id}.${config.domain}`;
+      if (v.url !== liveUrl) err('url', `${tag}: live url must be ${liveUrl}`);
+      const q = verdict('qa') || {};
       const sizes = Array.isArray(q.viewports) ? q.viewports : [];
-      const ok = q.passed === true && q.reviewer === 'qa' && q.consoleErrors === 0 && [390, 820, 1440].every((w) => sizes.includes(w)) && q.checkedAt;
-      if (!ok) err('qa', `${tag}: cannot be live without a passing independent QA record (390, 820, 1440, zero console errors)`);
+      const ok = q.passed === true && q.consoleErrors === 0 && [390, 820, 1440].every((w) => sizes.includes(w)) && q.url === liveUrl;
+      if (!ok) err('qa', `${tag}: cannot be live without a passing QA review of ${liveUrl} at 390, 820 and 1440 px with zero console errors, logged by qa`);
       for (const r of config.reviewsToGoLive || []) {
-        const rev = (v.reviews || {})[r];
-        if (!rev || rev.passed !== true || !rev.at) err('review', `${tag}: cannot be live without a passing ${r} review`);
+        if (!verdict(r)) err('review', `${tag}: cannot be live without a passing ${r} review, logged by ${r}`);
       }
     }
+  }
+  for (const [ventureId, roles] of Object.entries(reviews)) {
+    if (!ventures.some((v) => v.id === ventureId)) err('review', `reviews for unknown venture ${ventureId}`);
+    for (const role of Object.keys(roles)) if (!['qa'].concat(config.reviewsToGoLive || []).includes(role)) err('review', `unknown review role ${role} for ${ventureId}`);
   }
 
   const active = ventures.filter((v) => ACTIVE.includes(v.stage)).length;
@@ -166,7 +178,10 @@ function validate(dir) {
   const logDir = path.join(dir, 'company', 'log');
   if (fs.existsSync(logDir)) {
     for (const f of fs.readdirSync(logDir).filter((x) => x.endsWith('.json'))) {
-      const [agent, scope] = f.replace(/\.json$/, '').split('.');
+      const parts = f.replace(/\.json$/, '').split('.');
+      if (parts.length !== 2) { err('log', `company/log/${f} must be named <agent>.<venture or company>.json`); continue; }
+      const [agent, scope] = parts;
+      if (!agents.has(agent)) err('log', `company/log/${f} belongs to unknown agent ${agent}`);
       const lines = JSON.parse(fs.readFileSync(path.join(logDir, f), 'utf8'));
       if (lines.some((e) => e.agent !== agent || (e.ventureId || 'company') !== scope)) err('log', `company/log/${f} holds lines for another agent or venture`);
     }

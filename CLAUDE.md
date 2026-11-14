@@ -26,7 +26,8 @@ not progress.
   repo. The departments review and release their work independently.
 - `company/` - the brain, one file per thing so parallel agents never collide:
   `ventures/<id>.json`, `approvals/<id>.json`, `activity/<agent>.json`,
-  `log/<agent>.<venture or company>.json`; plus the shared, single-writer `config.json`,
+  `log/<agent>.<venture or company>.json`, `reviews/<venture>.<role>.json`; plus the shared,
+  single-writer `config.json`,
   `team.json`, `departments.json` and `ledger.json`.
 - `specs/` - one spec per venture, with acceptance tests.
 - `ventures/<id>/` - each product's code. Each one is its own Vercel project.
@@ -34,6 +35,8 @@ not progress.
 - `RUNBOOK-daily.md` and `RUNBOOK-weekly.md` - the exact steps of each scheduled cycle.
 
 Agents hand off through the files in `company/`, never through memory of a past session.
+Agents publish only with `bash scripts/push.sh`, and reviewers record verdicts only with
+`node scripts/review.js`.
 Every session starts cold: read the brain, do the work, write the brain.
 
 ## The pipeline

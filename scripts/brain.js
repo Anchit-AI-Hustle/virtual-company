@@ -4,6 +4,7 @@
 //   company/approvals/<id>.json           one approval each
 //   company/activity/<agent>.json         one agent's current status
 //   company/log/<agent>.<scope>.json      one agent's log lines for one venture (or "company")
+//   company/reviews/<venture>.<role>.json  one reviewer's verdict on one venture
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -23,12 +24,17 @@ function loadBrain(root) {
   const log = [];
   for (const x of readDir(c('log'))) for (const e of x.data) log.push(e);
   log.sort((a, b) => a.at.localeCompare(b.at));
+  const reviews = {};
+  for (const x of readDir(c('reviews'))) {
+    const [ventureId, role] = x.file.replace(/\.json$/, '').split('.');
+    (reviews[ventureId] = reviews[ventureId] || {})[role] = x.data;
+  }
   return {
     config: readJson(c('config.json')),
     team: readJson(c('team.json')),
     departments: readJson(c('departments.json')),
     ledger: readJson(c('ledger.json')),
-    ventures, approvals, activity, log
+    ventures, approvals, activity, log, reviews
   };
 }
 

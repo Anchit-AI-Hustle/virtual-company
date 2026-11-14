@@ -58,15 +58,18 @@
     "source": null
   },
   "reservedSubdomains": [
-    "www",
+    "admin",
+    "anchor",
+    "api",
+    "app",
+    "company",
     "hq",
     "kits",
-    "anchor",
     "loosenup",
-    "api",
     "mail",
-    "admin",
-    "app"
+    "pods",
+    "reviews",
+    "www"
   ],
   "approvalTypes": [
     "money",
@@ -144,6 +147,66 @@
       "name": "Yash",
       "color": "#4D6B1F",
       "trait": "Measures twice, launches once."
+    },
+    {
+      "name": "Diya",
+      "color": "#7B3F61",
+      "trait": "Asks who pays before asking what to build."
+    },
+    {
+      "name": "Kabeer",
+      "color": "#1E5F74",
+      "trait": "Turns a rough idea into a working page by evening."
+    },
+    {
+      "name": "Riya",
+      "color": "#8C4A2F",
+      "trait": "Reads every support message twice."
+    },
+    {
+      "name": "Shaurya",
+      "color": "#35603A",
+      "trait": "Picks one metric and moves it."
+    },
+    {
+      "name": "Anika",
+      "color": "#5E3A87",
+      "trait": "Makes the hard flow feel obvious."
+    },
+    {
+      "name": "Veer",
+      "color": "#2D4E8A",
+      "trait": "Cuts features without regret."
+    },
+    {
+      "name": "Mahi",
+      "color": "#946200",
+      "trait": "Prices with proof from the market."
+    },
+    {
+      "name": "Ayaan",
+      "color": "#17655F",
+      "trait": "Finds where buyers already gather."
+    },
+    {
+      "name": "Pari",
+      "color": "#7A3FA0",
+      "trait": "Writes copy a tired person understands."
+    },
+    {
+      "name": "Rudra",
+      "color": "#7D2B39",
+      "trait": "Tests the risky assumption first."
+    },
+    {
+      "name": "Saanvi",
+      "color": "#295C8C",
+      "trait": "Keeps every promise on the page true."
+    },
+    {
+      "name": "Dhruv",
+      "color": "#4A6420",
+      "trait": "Ships, measures, decides."
     }
   ]
 }

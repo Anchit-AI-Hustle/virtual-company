@@ -13,7 +13,8 @@ per week of effort, not on how many ideas exist.
 3. Staff the pods. Every venture being worked has its own lead agent (`agents/venture-lead.md`).
    Up to `wip.pods` ventures run at once, in parallel. Fill free pod slots with the highest
    scored ideas: move each to `validating` and give it a lead from `config.leads` whose name is
-   not already leading an open venture (`lead: { name, color, trait }`). One lead, one venture.
+   not already leading an open venture (`lead: { name, color, trait }`, copied from the pool).
+   One lead, one venture. If no name is free, do not invent one: kill or finish a venture first.
 4. If fewer than 5 open ideas remain after that, generate more with Research.
 5. Log each decision with its reason (`node scripts/act.js ceo done "<decision>" [ventureId]`).
 
@@ -42,7 +43,8 @@ unless the kill reason no longer applies. Keep open ideas under the limit in `co
 ## Approvals
 
 When any role needs something only the owner can approve:
-1. Add a `pending` approval file `company/approvals/<id>.json`: what is asked, why, cost in INR, what happens if
+1. Add a `pending` approval file `company/approvals/ap-company-<n>.json` (venture leads use
+   `ap-<ventureId>-<n>`): what is asked, why, cost in INR, what happens if
    the answer is no.
 2. Open a GitHub issue titled `Approval: <ask>` with the label `needs-owner`, and store its
    URL on the row. Keep the issue short: the ask, the cost, the reason, the default.

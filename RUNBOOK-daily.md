@@ -12,7 +12,8 @@ that skips it looks absent. Push after every finished step so the office stays c
 Attach and clone `Anchit-AI-Hustle/virtual-company` with push access (add_repo, then a shallow
 clone). Read `CLAUDE.md`, then the brain in `company/`. If `PAUSE` exists, report "paused" and
 stop. Run `npm run check`; if it fails before you change anything, fixing it comes first.
-`act.js ops start "Morning standup"`, write the standup per `agents/ops.md`, commit, push.
+`act.js ops start "Morning standup"`, write the standup per `agents/ops.md`, commit,
+`bash scripts/push.sh`.
 
 ## 1. Keep the lights on
 
@@ -26,19 +27,21 @@ stop. Run `npm run check`; if it fails before you change anything, fixing it com
 
 Follow `agents/ceo.md`: read the owner's decisions on approval issues, apply kill rules, keep
 at least 5 scored ideas (with `research`, Meera, and `legal`, Vikram, screening categories),
-and give every venture being worked its own lead, up to `wip.pods` at once. Commit, push.
+and give every venture being worked its own lead, up to `wip.pods` at once. Commit,
+`bash scripts/push.sh`.
 
 ## 3. Run the pods in parallel
 
-Launch one subagent per active venture, all in the same turn so they run at the same time,
+Launch one subagent per active venture, plus one for each live venture (a short growth pass), all in the same turn so they run at the same time,
 each with `isolation: "worktree"` so each has its own copy of the repo. Give each this brief:
 
 > You are <lead name>, the venture lead for <venture id>, agent id lead-<venture id>. Read
 > CLAUDE.md and agents/venture-lead.md, then company/ventures/<venture id>.json. Push this
 > venture as far through the gates as you can this session, following venture-lead.md
-> exactly. For reviews, launch separate subagents for `product` (spec), then `engineer`,
-> `qa`, `design`, `security` and `legal` (build) that have not seen your work. Releases follow agents/devops.md. Report
-> through act.js, push after each finished stage, and end with a three-line report.
+> exactly. For reviews, launch separate subagents, one at a time, for `product` (spec), then
+> `engineer`, `qa`, `design`, `security` and `legal` (build), none of which have seen your work. Releases follow agents/devops.md. Report
+> through act.js, publish with `bash scripts/push.sh` after each finished stage, and end
+> with a three-line report.
 
 While the pods run, the Chief of Staff keeps the shared departments going (step 1 work that
 is left, `growth` and `sales` on live products). When every pod has reported, pull `main`.
@@ -48,13 +51,13 @@ is left, `growth` and `sales` on live products). When every pod has reported, pu
 | validating to validated | the venture's lead, as researcher |
 | validated to spec | the lead, as product manager, designer, data lead and pricing; `product` (Rohan) reviews the spec |
 | spec to qa | the lead, as engineer |
-| qa to ready | independent reviewers: `engineer` (Dev, code review), `qa`, `design`, `security`, `legal` |
-| ready to live | `devops` releases, `qa` re-tests the live URL |
+| qa, all reviews passed locally | independent reviewers: `engineer` (Dev, code review), `qa`, `design`, `security`, `legal` |
+| qa to live | `devops` releases, `qa` re-tests and records the live URL |
 | live | the lead with `growth` and `sales`; owner-only steps filed as approvals |
 
 ## 4. Close the day (`ops`, Kabir)
 
-Set agents who are not blocked to idle. `npm run check`, commit, push. Confirm CI is green with
+Set agents who are not blocked to idle. `npm run check`, commit, `bash scripts/push.sh`. Confirm CI is green with
 `gh run list --repo Anchit-AI-Hustle/virtual-company --limit 1`. HQ rebuilds from the books on
 every push.
 

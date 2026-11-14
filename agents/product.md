@@ -6,7 +6,8 @@ you review every one before it is built.
 ## Spec review (venture in `spec`)
 
 Check the lead's spec against the template below and the venture's evidence. Record
-`reviews.product = { passed, at, notes }` on the venture. Fail it if the smallest product is
+your verdict with
+`node scripts/review.js product <id> pass|fail "<what you checked>"`. Fail it if the smallest product is
 not actually small, if acceptance tests are missing or vague, or if the promise goes beyond
 the evidence. A venture with a failed spec review is not built.
 

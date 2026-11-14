@@ -9,7 +9,7 @@ const { loadBrain, leadId } = require('./brain.js');
 const round2 = (n) => Math.round(n * 100) / 100;
 
 function buildHq(dir) {
-  const { config, team, departments, ledger, ventures, approvals, activity, log } = loadBrain(dir);
+  const { config, team, departments, ledger, ventures, approvals, activity, log, reviews } = loadBrain(dir);
 
   const sum = (type) => ledger.filter((l) => l.type === type).reduce((t, l) => t + l.amountINR, 0);
   const revenueINR = sum('revenue');
@@ -20,7 +20,7 @@ function buildHq(dir) {
 
   const stageRank = (s) => config.stages.indexOf(s);
   const sorted = ventures.slice().sort((a, b) =>
-    (b.score.total - a.score.total) || (stageRank(b.stage) - stageRank(a.stage)) || a.id.localeCompare(b.id));
+    (((b.score || {}).total || 0) - ((a.score || {}).total || 0)) || (stageRank(b.stage) - stageRank(a.stage)) || a.id.localeCompare(b.id));
 
   const lastByAgent = {};
   const countByAgent = {};
@@ -61,13 +61,13 @@ function buildHq(dir) {
     approvals: approvals.filter((a) => a.status === 'pending').sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || '')),
     ventures: sorted.map((v) => ({
       id: v.id, title: v.title, oneLiner: v.oneLiner, customer: v.customer, revenueModel: v.revenueModel,
-      priceINR: v.priceINR, stage: v.stage, score: v.score.total, url: v.url, nextAction: v.nextAction,
+      priceINR: v.priceINR, stage: v.stage, score: (v.score || {}).total || 0, url: v.url, nextAction: v.nextAction,
       metrics: v.metrics, killReason: v.killReason, updatedAt: v.updatedAt,
       evidenceCount: Array.isArray(v.evidence) ? v.evidence.length : 0,
       specPath: v.specPath || null,
       lead: v.lead ? { id: leadId(v.id), name: v.lead.name, color: v.lead.color } : null,
-      reviews: Object.fromEntries((config.reviewsToGoLive || []).map((r) => [r, v.reviews && v.reviews[r] ? !!v.reviews[r].passed : null])),
-      qaPassed: v.qa ? !!v.qa.passed : null
+      reviews: Object.fromEntries((config.reviewsToGoLive || []).map((r) => { const x = (reviews[v.id] || {})[r]; return [r, x ? !!x.passed : null]; })),
+      qaPassed: (reviews[v.id] || {}).qa ? !!reviews[v.id].qa.passed : null
     })),
     departments: departments.concat(podVentures.length ? [{ id: 'pods', name: 'Venture pods' }] : []),
     office,

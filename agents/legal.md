@@ -10,7 +10,7 @@ children, anything copying a brand, anything needing a licence).
 
 ## Before launch (venture in `qa`)
 
-Record `reviews.legal = { passed, at, notes }` after checking:
+Record your verdict with `node scripts/review.js legal <id> pass|fail "<notes>"` after checking:
 - every claim on the page is true today and has no invented numbers or testimonials,
 - a short plain privacy note says what is collected and why,
 - prices, refunds and what the buyer gets are stated plainly before payment,

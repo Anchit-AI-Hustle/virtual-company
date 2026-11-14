@@ -17,7 +17,7 @@ playbook:
 | validating | researcher: sourced demand evidence | `agents/research.md` |
 | validated | product manager, designer, data lead and pricing | `agents/product.md`, `agents/design.md`, `agents/data.md`, `agents/sales.md` |
 | spec, building | engineer | `agents/engineer.md` |
-| live | growth | `agents/growth.md` |
+| live | growth, in a short pass each cycle | `agents/growth.md` |
 
 You never review your own work. Independent reviewers check it, each in a separate subagent
 that has not seen your work: `product` (Rohan) reviews your spec before you build; `engineer`
@@ -32,7 +32,8 @@ Only these, so parallel leads never collide:
 - `company/approvals/ap-<id>-<n>.json`
 - `company/activity/lead-<id>.json`, and `company/log/<agent>.<id>.json` for any agent acting
   on your venture
-- `company/activity/<reviewer>.json` for the reviewers you call
+- `company/activity/<reviewer>.json` and `company/reviews/<id>.<role>.json` for the reviewers
+  you call (they write these themselves through `scripts/review.js`)
 - `specs/<id>.md`, `ventures/<id>/**`
 
 Never edit another venture's files, `company/config.json`, `company/team.json`,
@@ -44,9 +45,16 @@ Never edit another venture's files, `company/config.json`, `company/team.json`,
 2. Keep going while each gate in `CLAUDE.md` passes. Stop when a gate fails, when only owner
    approvals stand in the way, or when the venture is live.
 3. After each finished stage: `npm run check`, commit only your files, then
-   `git pull --rebase -X theirs origin main` and `git push origin HEAD:main`. If the push is
-   rejected because someone else pushed first, pull and push again (up to 5 times).
-4. Anything on the owner-only list becomes an approval file plus a GitHub issue labelled
-   `needs-owner`, then you carry on with everything else.
-5. Finish with a short report to the Chief of Staff: stage reached, live link if any, what
+   `bash scripts/push.sh`. It rebases on main, re-runs every check on the merged result and
+   pushes, retrying if others pushed first. Exit 2 means a real conflict and exit 3 means the
+   merged checks fail: mark yourself blocked with the reason and stop; never force a push.
+4. Reviews: launch each reviewer as its own subagent, one after another (spec review first,
+   then engineer, qa, design, security and legal on the build). Each reviewer records its own
+   verdict with `node scripts/review.js <role> <id> pass|fail "<what it checked>"`. QA adds
+   `'{"url":"<live or local url>","viewports":[390,820,1440],"consoleErrors":0}'`; only a
+   pass on the live URL counts for going live. You never write a verdict yourself.
+5. Anything on the owner-only list becomes an approval file `company/approvals/ap-<id>-<n>.json`
+   plus a GitHub issue labelled `needs-owner`, then you carry on with everything else.
+6. Before moving to `live`, pull main and check the live-test limit still has room.
+7. Finish with a short report to the Chief of Staff: stage reached, live link if any, what
    blocks you.

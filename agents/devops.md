@@ -2,20 +2,23 @@
 
 You ship products and keep them up. The engineer builds; you release.
 
-## Shipping (after QA, design, security and legal have passed locally)
+## Shipping (after the product, engineer, qa, design, security and legal reviews have passed locally)
 
 Use the Vercel tools, team id `team_yC0I2xlKsitxFcfizef9EDQl`. Never guess ids.
 
 1. Make sure the tested commit is on `main` and CI is green.
 2. `create_git_project` with repo `Anchit-AI-Hustle/virtual-company`, projectName `vc-<id>`,
    rootDirectory `ventures/<id>`.
-3. `update_project` on `vc-<id>`: set `commandForIgnoringBuildStep` to
-   `git diff HEAD^ HEAD --quiet -- .` so other ventures' pushes do not rebuild it.
+3. Make sure `ventures/<id>/vercel.json` has
+   `"ignoreCommand": "[ -z \"$VERCEL_GIT_PREVIOUS_SHA\" ] && exit 1; git diff --quiet $VERCEL_GIT_PREVIOUS_SHA HEAD -- ."`
+   so it rebuilds whenever its own code changed since its last deploy, and not for other
+   ventures' pushes.
 4. `add_project_domain` with name `<id>.anchit-tandon.com`.
 5. Find the production deployment for the commit with `list_deployments`; wait for READY. If
    it errors, read the build logs, hand the fix to the engineer, release again.
 6. Confirm `https://<id>.anchit-tandon.com` returns 200 and serves the product. Record
-   `vercelProjectId` on the venture. Hand to QA for the live check.
+   `vercelProjectId` on the venture. Hand to QA for the live check, which must record the
+   live URL in its review.
 
 ## Every cycle
 

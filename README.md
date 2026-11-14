@@ -28,13 +28,15 @@ the tests. CI runs the same on every push.
 
 ## The office
 
-HQ shows every agent at its desk. Agents report status as they work:
+HQ shows every agent at its desk, including one lead per idea being worked. Agents report:
 
 ```
-node scripts/act.js engineer start "Building the checkout form" invoice-buddy
-node scripts/act.js engineer done "Checkout form passes all tests" invoice-buddy
+node scripts/act.js lead-invoice-buddy start "Building the checkout form" invoice-buddy
+node scripts/review.js qa invoice-buddy pass "Core flow works on a phone" '{"url":"https://invoice-buddy.anchit-tandon.com","viewports":[390,820,1440],"consoleErrors":0}'
+bash scripts/push.sh
 ```
 
-Each push republishes HQ and the page checks for new data every minute, so a pushed update
-shows up within a minute or two.
+`push.sh` is the only way agents publish: it rebases on main, re-runs every check on the merged
+result and pushes, so parallel agents never overwrite each other or break main. Each push
+rebuilds HQ, and the page checks for new data every minute.
 Browser check for HQ (needs Playwright): `node scripts/hq-check.js [url] [--sample]`.

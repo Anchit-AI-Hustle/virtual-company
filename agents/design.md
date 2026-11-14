@@ -15,5 +15,6 @@ Choose a look that fits the venture's customer, not a generic template.
 ## Before launch (venture in `qa`)
 
 Review QA's screenshots at 390, 820 and 1440 px. Record on the venture
-`reviews.design = { passed, at, notes }`. Fail it for broken layout, unreadable text, a
+your verdict with
+`node scripts/review.js design <id> pass|fail "<what you checked>"`. Fail it for broken layout, unreadable text, a
 confusing first screen, or copy that over-promises.

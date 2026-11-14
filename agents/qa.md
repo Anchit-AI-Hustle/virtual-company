@@ -19,7 +19,5 @@ for anything. Run as a separate agent that has not seen the build conversation.
 
 ## Result
 
-Write the venture's `qa` record: `{ passed, reviewer: "qa", viewports: [390, 820, 1440],
-consoleErrors, checkedAt, notes }`. If anything fails, `passed` is false, the venture goes
-back to `building` with the failures listed in `nextAction`. Only a pass on the live URL lets
-the venture enter `live`.
+Record it with `node scripts/review.js qa <id> pass|fail "<notes>" '{"url":"<url tested>","viewports":[390,820,1440],"consoleErrors":<n>}'`. If anything fails, `passed` is false, the venture goes
+back to `building` with the failures listed in `nextAction`. Only a pass recorded against the live URL lets the venture enter `live`.
