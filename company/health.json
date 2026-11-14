@@ -1,6 +1,11 @@
 {
-  "status": "ok",
-  "since": "2026-11-14T10:01:47.507Z",
-  "problems": [],
-  "lastRedeployAt": null
+  "status": "problem",
+  "since": "2026-11-14T15:14:28.405Z",
+  "problems": [
+    {
+      "id": "hq-stale",
+      "text": "HQ is showing books from 2026-11-14T14:35 UTC, older than the latest change. A deploy did not go through."
+    }
+  ],
+  "lastRedeployAt": "2026-11-14T15:14:28.405Z"
 }
