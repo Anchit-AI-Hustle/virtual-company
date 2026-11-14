@@ -5,7 +5,7 @@
 //
 //   node scripts/review.js <role> <ventureId> pass|fail "<notes>" [json extras]
 //
-// <role> is product, engineer, qa, design, security or legal. QA adds its extras as JSON:
+// <role> is ceo (go decision on the business case), product, engineer, qa, design, security or legal. QA adds its extras as JSON:
 //   '{"url":"https://x.anchit-tandon.com","viewports":[390,820,1440],"consoleErrors":0}'
 const fs = require('node:fs');
 const path = require('node:path');
@@ -14,7 +14,7 @@ const { act } = require('./act.js');
 
 function review(root, role, ventureId, verdict, notes, extras = {}, now = new Date().toISOString()) {
   const brain = loadBrain(root);
-  const roles = ['qa'].concat(brain.config.reviewsToGoLive || []);
+  const roles = ['qa', 'ceo'].concat(brain.config.reviewsToGoLive || []);
   if (!roles.includes(role)) throw new Error(`Unknown review role "${role}". Use ${roles.join(', ')}.`);
   if (!brain.ventures.some((v) => v.id === ventureId)) throw new Error(`Unknown venture "${ventureId}".`);
   if (!['pass', 'fail'].includes(verdict)) throw new Error('Verdict must be pass or fail.');

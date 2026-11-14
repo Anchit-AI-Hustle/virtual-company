@@ -12,5 +12,19 @@
     "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T09:38:02.937Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go: the case scores 11 of 35, far under the bar, because free seating tools with no signup already exist, Indian weddings rarely use assigned tables, and there is no way to reach paying buyers without ads or posting. Kill it, park the free planner without launching it, and give the slot to an idea with repeat revenue.",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T09:38:31.485Z",
+    "agent": "ceo",
+    "action": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

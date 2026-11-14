@@ -25,10 +25,23 @@ function fixture(o = {}) {
   w('company/team.json', o.team || TEAM);
   w('company/departments.json', readRoot('company/departments.json'));
   w('company/ledger.json', o.ledger || []);
-  for (const v of o.ventures || []) w(`company/ventures/${v.id}.json`, v);
+  const later = ['spec', 'building', 'qa', 'live', 'scaling'];
+  const logs0 = {};
+  for (const v0 of o.ventures || []) {
+    const v = Object.assign({}, v0);
+    // Ventures past validation get a passing business case and go decision unless a test opts out.
+    if (later.includes(v.stage) && !o.noCase && v.case === undefined) {
+      v.case = goodCase(v.id);
+      w(v.case.path, CASE_TEXT);
+      logs0[`research.${v.id}.json`] = [{ at: '2026-11-14T04:00:00Z', agent: 'research', action: 'Business case written: solid', ventureId: v.id, kind: 'done' }];
+      o.reviews = Object.assign({}, o.reviews || {});
+      o.reviews[v.id] = Object.assign({ ceo: { passed: true, at: '2026-11-14T04:30:00Z', notes: 'go' } }, o.reviews[v.id] || {});
+    }
+    w(`company/ventures/${v.id}.json`, v);
+  }
   for (const a of o.approvals || []) w(`company/approvals/${a.id}.json`, a);
   for (const [agent, s] of Object.entries(o.activity || {})) w(`company/activity/${agent}.json`, s);
-  const logs = Object.assign({}, o.logs || {});
+  const logs = Object.assign({}, logs0, o.logs || {});
   for (const [vid, roles] of Object.entries(o.reviews || {})) {
     for (const [role, r] of Object.entries(roles)) {
       w(`company/reviews/${vid}.${role}.json`, r);
@@ -48,6 +61,13 @@ const passed = { passed: true, at: '2026-11-14T10:00:00Z', notes: 'ok' };
 const goodReviews = { product: passed, engineer: passed, design: passed, security: passed, legal: passed, qa: goodQa };
 const productOnly = { 'invoice-buddy': { product: passed } };
 const lead = (i) => config.leads[i];
+
+
+const CASE_TEXT = config.businessCase.sections.map((h, i) => `## ${i + 1}. ${h}\n\nText.\n`).join('\n');
+const goodScores = { pain: 4, willingnessToPay: 4, marketSize: 3, distribution: 4, competitionGap: 3, speedToRevenue: 4, recurringRevenue: 3 };
+function goodCase(id, scores = goodScores) {
+  return { path: `cases/${id}.md`, scores, total: Object.values(scores).reduce((a, b) => a + b, 0), recommendation: 'go' };
+}
 
 function venture(extra = {}) {
   return Object.assign({
@@ -347,4 +367,24 @@ test('push.sh lets two parallel agents publish without losing work, and stops on
   const bad = JSON.parse(fs.readFileSync(vf(A), 'utf8')); bad.stage = 'building'; fs.writeFileSync(vf(A), JSON.stringify(bad));
   sh('git commit -qam bad', A);
   assert.strictEqual(push(A).status, 3);
+});
+
+test('no spec without a business case written by research and a CEO go decision', () => {
+  const spec = (extra = {}, o = {}) => fixture(Object.assign({ ventures: [venture(Object.assign({ stage: 'spec', lead: lead(0), evidence, specPath: 'specs/a.md' }, extra))], files: specFile }, o));
+  assert.deepStrictEqual(validate(spec()), []);
+  assert.ok(rules(spec({}, { noCase: true })).includes('case'), 'no case at all');
+  // A case that misses a section
+  const thin = spec({ case: goodCase('invoice-buddy') }, { noCase: true, files: Object.assign({}, specFile, { 'cases/invoice-buddy.md': '## Summary\nOnly this' }) });
+  assert.ok(validate(thin).some((e) => e.rule === 'case' && /missing/.test(e.message)));
+  // Scores under the bar: weak willingness to pay
+  const weak = Object.assign({}, goodScores, { willingnessToPay: 2 });
+  const low = spec({}, { noCase: true });
+  fs.mkdirSync(path.join(low, 'cases'), { recursive: true });
+  fs.writeFileSync(path.join(low, 'cases/invoice-buddy.md'), CASE_TEXT);
+  const vf = path.join(low, 'company/ventures/invoice-buddy.json');
+  fs.writeFileSync(vf, JSON.stringify(Object.assign(JSON.parse(fs.readFileSync(vf, 'utf8')), { case: goodCase('invoice-buddy', weak) })));
+  assert.ok(validate(low).some((e) => e.rule === 'case' && /below the bar/.test(e.message)));
+  // A good case without the CEO's go decision
+  const noGo = spec({}, { reviews: { 'invoice-buddy': { ceo: { passed: false, at: '2026-11-14T04:30:00Z', notes: 'pivot' } } } });
+  assert.ok(rules(noGo).includes('review'));
 });

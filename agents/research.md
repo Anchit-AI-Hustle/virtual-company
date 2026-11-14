@@ -21,3 +21,29 @@ After research, tell the CEO one of:
 - kill: evidence that the need is absent, free everywhere, or needs a licence or big spend.
 
 You do not move stages yourself beyond `validating` to `validated`. You never invent a source.
+
+## Business case (venture in `validated`)
+
+Demand alone is not a business. Before any spec is written, you, not the venture's lead, write
+`cases/<id>.md` with these sections, each answered with sourced facts:
+
+1. Summary: five lines at most.
+2. Market: who exactly pays, in which country, and roughly how many per year. Make sure the
+   market and the currency match (no rupee prices for a need that only exists abroad).
+3. Problem: how painful, and whether it repeats or happens once.
+4. Competition: at least six alternatives including the free ones, each priced from its own
+   page, and the gap we fill. If free tools already do it well, say so.
+5. Willingness to pay: evidence that people pay for this, at what price, in which currency.
+6. Distribution: how the first 100 buyers find it without ads or cold outreach, with evidence
+   of search demand or communities, and how crowded that channel is.
+7. Unit economics: worst, likely and best 90 day revenue, with the arithmetic, and costs.
+8. Risks: what would prove it wrong, with numbers and a date.
+9. Options: proceed, pivot (to what exactly), or stop, one line each.
+10. Scorecard: 1 to 5 each for pain, willingnessToPay, marketSize, distribution,
+    competitionGap, speedToRevenue, recurringRevenue, with one line of reasoning each.
+11. Recommendation: go, pivot or no-go.
+12. Sources.
+
+Record the scores on the venture as `case: { path, scores, total, recommendation }`, and log
+`node scripts/act.js research done "Business case written: <one line>" <id>`. Write as a sceptic:
+your job is to stop weak ideas before they cost a build.

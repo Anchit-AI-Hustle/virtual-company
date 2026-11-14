@@ -219,5 +219,36 @@
       "day": "Sunday",
       "time": "17:13"
     }
+  },
+  "businessCase": {
+    "sections": [
+      "Summary",
+      "Market",
+      "Problem",
+      "Competition",
+      "Willingness to pay",
+      "Distribution",
+      "Unit economics",
+      "Risks",
+      "Options",
+      "Scorecard",
+      "Recommendation",
+      "Sources"
+    ],
+    "scoreKeys": [
+      "pain",
+      "willingnessToPay",
+      "marketSize",
+      "distribution",
+      "competitionGap",
+      "speedToRevenue",
+      "recurringRevenue"
+    ],
+    "minTotal": 24,
+    "minEach": 2,
+    "mustBeAtLeast3": [
+      "willingnessToPay",
+      "distribution"
+    ]
   }
 }

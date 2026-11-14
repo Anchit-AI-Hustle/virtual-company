@@ -68,7 +68,9 @@ function buildHq(dir) {
       specPath: v.specPath || null,
       lead: v.lead ? { id: leadId(v.id), name: v.lead.name, color: v.lead.color } : null,
       reviews: Object.fromEntries((config.reviewsToGoLive || []).map((r) => { const x = (reviews[v.id] || {})[r]; return [r, x ? !!x.passed : null]; })),
-      qaPassed: (reviews[v.id] || {}).qa ? !!reviews[v.id].qa.passed : null
+      qaPassed: (reviews[v.id] || {}).qa ? !!reviews[v.id].qa.passed : null,
+      goDecision: (reviews[v.id] || {}).ceo ? !!reviews[v.id].ceo.passed : null,
+      businessCase: v.case && v.case.path ? { path: v.case.path, total: v.case.total || null, recommendation: v.case.recommendation || null } : null
     })),
     departments: departments.concat(podVentures.length ? [{ id: 'pods', name: 'Venture pods' }] : []),
     office,

@@ -586,6 +586,7 @@
       var checks = el('ul', 'checks');
       function chk(label, val) { checks.appendChild(el('li', val === true ? 'ok' : val === false ? 'no' : '', label + (val === true ? ': passed' : val === false ? ': failed' : ': not yet'))); }
       chk(plural(v.evidenceCount, 'demand source', 'demand sources'), v.evidenceCount >= 3 ? true : null);
+      chk('Business case' + (v.businessCase && v.businessCase.total ? ' ' + v.businessCase.total + ' of 35' : ''), v.businessCase ? true : null); chk('Go decision', v.goDecision);
       chk('Spec', v.specPath ? true : null); chk('Spec review', v.reviews.product); chk('Code review', v.reviews.engineer);
       chk('QA', v.qaPassed); chk('Design review', v.reviews.design); chk('Security review', v.reviews.security); chk('Legal review', v.reviews.legal);
       p.appendChild(checks);
@@ -595,6 +596,7 @@
       p.appendChild(trail((data.ventureTrail || {})[v.id] || []));
       var links = el('p', 'links'), u = safeUrl(v.url);
       if (u) { var live = el('a', null, 'Open the live product'); live.href = u; live.rel = 'noopener'; live.target = '_blank'; links.appendChild(live); }
+      if (v.businessCase) { var bcl = el('a', null, 'Read the business case'); bcl.href = 'https://github.com/' + REPO + '/blob/main/' + v.businessCase.path; bcl.rel = 'noopener'; bcl.target = '_blank'; links.appendChild(bcl); }
       if (v.specPath) { var s = el('a', null, 'Read the spec'); s.href = 'https://github.com/' + REPO + '/blob/main/' + v.specPath; s.rel = 'noopener'; s.target = '_blank'; links.appendChild(s); }
       p.appendChild(links);
     });

@@ -107,6 +107,21 @@ function validate(dir) {
       const proof = log.some((e) => e.agent === role && e.ventureId === v.id && e.kind === 'done');
       return proof ? r : null;
     };
+    if (at(v.stage) >= at('spec')) {
+      const bc = config.businessCase, c = v.case || {};
+      const file = c.path && fs.existsSync(path.join(dir, c.path)) ? fs.readFileSync(path.join(dir, c.path), 'utf8') : null;
+      if (!file) err('case', `${tag}: no spec before a written business case (cases/${v.id}.md)`);
+      else for (const sec of bc.sections) if (!new RegExp('^#+\\s*(\\d+\\.\\s*)?' + sec, 'im').test(file)) err('case', `${tag}: business case is missing the "${sec}" section`);
+      const sc = c.scores || {};
+      if (!bc.scoreKeys.every((k) => Number.isInteger(sc[k]) && sc[k] >= 1 && sc[k] <= 5)) err('case', `${tag}: business case needs a 1 to 5 score for ${bc.scoreKeys.join(', ')}`);
+      else {
+        const total = bc.scoreKeys.reduce((t, k) => t + sc[k], 0);
+        if (c.total !== total) err('case', `${tag}: business case total does not add up`);
+        if (total < bc.minTotal || bc.scoreKeys.some((k) => sc[k] < bc.minEach) || bc.mustBeAtLeast3.some((k) => sc[k] < 3)) err('case', `${tag}: business case scores below the bar (${total} of 35, needs ${bc.minTotal}, no score under ${bc.minEach}, and at least 3 for ${bc.mustBeAtLeast3.join(' and ')})`);
+      }
+      if (!log.some((e) => e.agent === 'research' && e.ventureId === v.id && e.kind === 'done' && /business case/i.test(e.action))) err('case', `${tag}: the business case must be written and logged by research, not the venture lead`);
+      if (!verdict('ceo')) err('review', `${tag}: no spec before the CEO's go decision on the business case, logged by ceo`);
+    }
     if (at(v.stage) >= at('building') && !verdict('product')) err('review', `${tag}: cannot be built before the product review of its spec passes`);
     if (at(v.stage) >= at('live')) {
       const liveUrl = `https://${v.id}.${config.domain}`;
@@ -122,7 +137,7 @@ function validate(dir) {
   }
   for (const [ventureId, roles] of Object.entries(reviews)) {
     if (!ventures.some((v) => v.id === ventureId)) err('review', `reviews for unknown venture ${ventureId}`);
-    for (const role of Object.keys(roles)) if (!['qa'].concat(config.reviewsToGoLive || []).includes(role)) err('review', `unknown review role ${role} for ${ventureId}`);
+    for (const role of Object.keys(roles)) if (!['qa', 'ceo'].concat(config.reviewsToGoLive || []).includes(role)) err('review', `unknown review role ${role} for ${ventureId}`);
   }
 
   const active = ventures.filter((v) => ACTIVE.includes(v.stage)).length;
@@ -139,11 +154,12 @@ function validate(dir) {
     if (!a.id || approvalIds.has(a.id)) err('approval', `${tag}: missing or duplicate id`);
     approvalIds.set(a.id, a);
     if (!config.approvalTypes.includes(a.type)) err('approval', `${tag}: unknown type ${a.type}`);
-    if (!['pending', 'approved', 'rejected'].includes(a.status)) err('approval', `${tag}: unknown status`);
+    if (!['pending', 'approved', 'rejected', 'withdrawn'].includes(a.status)) err('approval', `${tag}: unknown status`);
+    if (a.status === 'withdrawn' && !(a.withdrawnReason || '').trim()) err('approval', `${tag}: a withdrawn decision needs a reason`);
     if (typeof a.ask !== 'string' || !a.ask.trim()) err('approval', `${tag}: missing ask`);
     if (a.status === 'pending') for (const f of ['title', 'why', 'youDo']) if (typeof a[f] !== 'string' || !a[f].trim()) err('approval', `${tag}: a pending decision needs a plain ${f} for the owner`);
     if (a.title && a.title.length > 70) err('approval', `${tag}: title must be 70 characters or fewer`);
-    if (a.status !== 'pending' && (a.decidedBy !== 'owner' || !a.decidedAt)) err('approval', `${tag}: only the owner can decide an approval`);
+    if ((a.status === 'approved' || a.status === 'rejected') && (a.decidedBy !== 'owner' || !a.decidedAt)) err('approval', `${tag}: only the owner can decide an approval`);
     if (a.status === 'pending' && (a.decidedBy || a.decidedAt)) err('approval', `${tag}: pending approval cannot carry a decision`);
   }
 

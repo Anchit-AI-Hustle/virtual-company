@@ -2,13 +2,13 @@
   "id": "ap-2",
   "ventureId": null,
   "type": "account",
-  "ask": "Open a payment rail (Razorpay Payment Pages or your choice) and create a Seatwise Pro payment page",
-  "why": "No product can earn money until there is a payment page. The company cannot create one without you.",
+  "ask": "Open a payment rail (Razorpay or owner choice) the company can use for product payment pages",
+  "why": "No product the company builds can earn money until there is a way to get paid. The agents cannot open a payment account for you.",
   "costINR": 0,
-  "ifNo": "Products stay free and revenue stays at INR 0",
+  "ifNo": "Every product stays free and the company earns nothing.",
   "status": "pending",
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2",
   "createdAt": "2026-11-14T06:50:27.227Z",
   "title": "Set up a way to take payments",
-  "youDo": "Create a Razorpay Payment Page (or any payment link you like) for Seatwise Pro at the approved price, then comment approve with the link."
+  "youDo": "Open a Razorpay account (or any payment provider you prefer) in your name, then comment approve. The agents will ask for a payment link per product when one is ready to sell."
 }

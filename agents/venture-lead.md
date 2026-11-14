@@ -15,7 +15,7 @@ playbook:
 | Stage | You work as | Charter |
 |-------|-------------|---------|
 | validating | researcher: sourced demand evidence | `agents/research.md` |
-| validated | product manager, designer, data lead and pricing | `agents/product.md`, `agents/design.md`, `agents/data.md`, `agents/sales.md` |
+| validated | wait for the business case (written by `research`, not you) and the CEO's go decision; then product manager, designer, data lead and pricing | `agents/research.md`, `agents/ceo.md`, `agents/product.md`, `agents/design.md`, `agents/data.md`, `agents/sales.md` |
 | spec, building | engineer | `agents/engineer.md` |
 | live | growth, in a short pass each cycle | `agents/growth.md` |
 

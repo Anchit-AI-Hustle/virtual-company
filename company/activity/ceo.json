@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No owner decision on issues 1 to 4 yet. Kill rules: nothing in validating or live. Priority this run: Seatwise is closest to revenue but blocked on owner; spend the run on Growth prep and validating Rally Rounds",
-  "ventureId": null,
-  "since": "2026-11-14T07:06:57.470Z"
+  "state": "done",
+  "task": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked",
+  "ventureId": "seatwise",
+  "since": "2026-11-14T09:38:31.485Z"
 }

@@ -49,7 +49,8 @@ is left, `growth` and `sales` on live products). When every pod has reported, pu
 | Stage | Done by |
 |-------|---------|
 | validating to validated | the venture's lead, as researcher |
-| validated to spec | the lead, as product manager, designer, data lead and pricing; `product` (Rohan) reviews the spec |
+| validated: business case | `research` (Meera) writes `cases/<id>.md` as a sceptic; `ceo` (Arya), as a separate subagent, decides go, pivot or no-go |
+| validated to spec (after go) | the lead, as product manager, designer, data lead and pricing; `product` (Rohan) reviews the spec |
 | spec to qa | the lead, as engineer |
 | qa, all reviews passed locally | independent reviewers: `engineer` (Dev, code review), `qa`, `design`, `security`, `legal` |
 | qa to live | `devops` releases, `qa` re-tests and records the live URL |

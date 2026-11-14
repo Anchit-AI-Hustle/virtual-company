@@ -6,9 +6,10 @@
   "why": "Before anyone pays, they must see what they get and the refund rule.",
   "costINR": 0,
   "ifNo": "Pro stays not on sale",
-  "status": "pending",
+  "status": "withdrawn",
   "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/3",
   "createdAt": "2026-11-14T06:59:27.019Z",
   "title": "Approve the terms of sale, with a 7 day refund",
-  "youDo": "Comment approve to use a 7 day refund on request, or reject with the rule you want."
+  "youDo": "Comment approve to use a 7 day refund on request, or reject with the rule you want.",
+  "withdrawnReason": "Seatwise was stopped after its business case failed"
 }

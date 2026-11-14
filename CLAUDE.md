@@ -29,6 +29,8 @@ not progress.
   `log/<agent>.<venture or company>.json`, `reviews/<venture>.<role>.json`; plus the shared,
   single-writer `config.json`,
   `team.json`, `departments.json` and `ledger.json`.
+- `cases/` - one business case per venture: market, competition, willingness to pay,
+  distribution, unit economics, risks and a scorecard. No case, no spec.
 - `specs/` - one spec per venture, with acceptance tests.
 - `ventures/<id>/` - each product's code. Each one is its own Vercel project.
 - `hq/` - the owner's live office at https://hq.anchit-tandon.com.
@@ -50,7 +52,7 @@ A venture moves one stage at a time, and only when the gate for that stage is me
 |-------------|------|
 | validating  | CEO picked it from the scored ideas |
 | validated   | 3 or more pieces of demand evidence, each with a source link |
-| spec        | A spec file with acceptance tests exists |
+| spec        | Research wrote a business case (`cases/<id>.md`) that clears the bar in `config.businessCase`, the CEO gave a go decision on it, and a spec file with acceptance tests exists |
 | building    | The spec passed the product review. At most `wip.pods` ventures are worked at once |
 | qa          | The lead says every acceptance test passes locally |
 | live        | Independent QA passed it at 390, 820 and 1440 px with zero console errors; product, engineering, design, security and legal reviews passed; it is served at `https://<id>.anchit-tandon.com` |

@@ -40,6 +40,20 @@ Score each idea 1 to 5 on four parts and add them up:
 Do not add an idea that overlaps a venture already in the brain, including killed ones,
 unless the kill reason no longer applies. Keep open ideas under the limit in `config.json`.
 
+## Go or no-go on every business case
+
+When Research has written `cases/<id>.md`, you decide, as a separate subagent that did not write
+it. Read the case and check its sources. The bar, enforced by the validator from
+`config.businessCase`: a total of at least 24 of 35, no score under 2, and at least 3 for both
+willingness to pay and distribution. Meeting the bar is necessary, not sufficient: you can
+still say no.
+
+- Go: `node scripts/review.js ceo <id> pass "<why it is worth building>"`. Only then may the
+  lead write the spec.
+- Pivot: fail it with the exact pivot, move the venture back to `validating` with the new
+  framing in `nextAction`, and Research writes a fresh case after new evidence.
+- No-go: fail it and kill the venture with the reason.
+
 ## Approvals
 
 When any role needs something only the owner can approve:
