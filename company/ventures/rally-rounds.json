@@ -1,6 +1,6 @@
 {
   "priceINR": null,
-  "stage": "idea",
+  "stage": "validating",
   "evidence": [
     {
       "claim": "Dink! Pickleball Round Robins sells Premium Annual for $24.99 and Premium Permanent access for $39.99 as in-app purchases, with 17 ratings averaging 4.6.",
@@ -17,7 +17,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T07:06:57.148Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
   "killReason": null,
   "id": "rally-rounds",
   "title": "Rally Rounds",
@@ -31,6 +31,10 @@
     "distribution": 2,
     "total": 13
   },
-  "nextAction": "Not yet. Against: organiser tools read at source are free (Reclub calls itself free to use https://pickleball.reclub.co/for-organizers ; Pickleball Scheduler is free with 3 ratings https://apps.apple.com/us/app/id6741597305). Needs a paying signal beyond Dink and Pickleheads before the CEO picks it",
-  "lead": null
+  "nextAction": "Validate: find a third paid signal and organisers asking for round robin tools. Against: Reclub and Pickleball Scheduler are free",
+  "lead": {
+    "name": "Reyansh",
+    "color": "#2F6B3A",
+    "trait": "Lets the numbers decide what to cut."
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "killReason": null,
+  "lead": null,
+  "id": "stall-tally",
+  "title": "Stall Tally",
+  "oneLiner": "Craft fair sales and stock tally for makers at market stalls, works offline",
+  "customer": "Makers selling at craft fairs and weekend markets",
+  "revenueModel": "Paid one-time unlock",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 12
+  },
+  "evidence": [
+    {
+      "claim": "An Etsy listing sells a craft fair sales tracker for Google Sheets with expenses, refunds and inventory.",
+      "url": "https://www.etsy.com/listing/4599648501",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Research. Against: Booth Math and VendStats apps already exist (https://apps.apple.com/us/app/id6770763212)",
+  "stage": "idea"
+}

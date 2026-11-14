@@ -1,0 +1,25 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "killReason": null,
+  "lead": null,
+  "id": "class-pass",
+  "title": "Class Pass Card",
+  "oneLiner": "Digital punch card for independent yoga and fitness instructors selling class packs",
+  "customer": "Independent yoga, dance and fitness instructors",
+  "revenueModel": "Paid monthly or one-time unlock",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 2,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 10
+  },
+  "evidence": [],
+  "nextAction": "Research: no evidence gathered yet",
+  "stage": "idea"
+}

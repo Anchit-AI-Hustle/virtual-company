@@ -1,0 +1,31 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "killReason": null,
+  "lead": null,
+  "id": "sitter-sheet",
+  "title": "Sitter Sheet",
+  "oneLiner": "Pet sitter client intake, visit report and invoice in one phone page",
+  "customer": "Independent pet sitters and dog walkers",
+  "revenueModel": "Paid one-time unlock",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 2,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 11
+  },
+  "evidence": [
+    {
+      "claim": "Paperform offers a pet sitting service client intake form template.",
+      "url": "https://paperform.co/templates/pet-sitting-service-client-intake-form/",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Research: paid pet sitter form packs on vendor pages. Against: free form builders exist (Paperform, Makeform)",
+  "stage": "idea"
+}

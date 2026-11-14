@@ -1,0 +1,40 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "killReason": null,
+  "lead": {
+    "name": "Vihaan",
+    "color": "#1F6F8B",
+    "trait": "Ships the smallest thing that earns, then iterates."
+  },
+  "id": "bake-cost",
+  "title": "Bake Cost",
+  "oneLiner": "Recipe costing and price quote calculator for home bakers, on the phone, no install",
+  "customer": "Home bakers and small cake sellers who price custom orders",
+  "revenueModel": "Free single recipe, paid one-time unlock for saved recipes and quotes",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 5,
+    "distribution": 2,
+    "total": 14
+  },
+  "evidence": [
+    {
+      "claim": "Cost A Cake Pro, a paid iOS app for pricing cakes, is listed on the App Store.",
+      "url": "https://apps.apple.com/us/app/cost-a-cake-pro/id615555385?l=en",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Bake Margin, a 2026 iOS app for baker recipe costing and margins, is listed on the App Store.",
+      "url": "https://apps.apple.com/us/app/bake-margin/id6781448292",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Validate: confirm prices paid for baker costing tools on vendor pages and find bakers asking how to price orders. Against: many apps already exist (Cake Aide https://apps.apple.com/us/app/cake-aide/id1442054379)",
+  "stage": "validating"
+}

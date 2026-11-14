@@ -12,5 +12,12 @@
     "action": "Screened 5 ideas: none in excluded categories. Paychase must not make statutory interest claims without a legal approval. No competitor brand names on our pages",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:14:21.069Z",
+    "agent": "legal",
+    "action": "Screened new ideas: none needs a licence, none aimed at children; passport photo and tuition fee ideas dropped (ID compliance claims, minors data)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

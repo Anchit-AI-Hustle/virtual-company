@@ -1,0 +1,35 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "killReason": null,
+  "lead": {
+    "name": "Aditi",
+    "color": "#9C4A1A",
+    "trait": "Obsessed with the first thirty seconds of the product."
+  },
+  "id": "clean-quote",
+  "title": "Clean Quote",
+  "oneLiner": "Instant house cleaning price quote builder for solo cleaners, shareable link",
+  "customer": "Solo and small house cleaning businesses",
+  "revenueModel": "Paid one-time pro unlock",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 5,
+    "distribution": 2,
+    "total": 13
+  },
+  "evidence": [
+    {
+      "claim": "An Etsy listing sells a cleaning business spreadsheet bundle covering pricing and a client tracker.",
+      "url": "https://www.etsy.com/listing/4565659268",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Validate: find priced cleaning quote tools and cleaners asking how to quote. Against: free calculators from Housecall Pro https://www.housecallpro.com/home-cleaning/templates-calculators/",
+  "stage": "validating"
+}

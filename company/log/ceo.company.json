@@ -39,5 +39,12 @@
     "action": "Decided: payments: not now, decide again when a product clears its case and sizing",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:14:21.119Z",
+    "agent": "ceo",
+    "action": "Staffed 3 pods: bake-cost (Vihaan, score 14), rally-rounds (Reyansh, 13, two paid comparables), clean-quote (Aditi, 13, paid Etsy bundles). Kept 5 open ideas",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
