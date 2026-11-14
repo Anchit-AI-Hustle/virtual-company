@@ -12,5 +12,12 @@
     "action": "Validated: 7 sourced signals that cleaners pay for quoting tools and Etsy pricing calculators, plus 4 free alternatives recorded against",
     "ventureId": "clean-quote",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:17:31.191Z",
+    "agent": "lead-clean-quote",
+    "action": "Blocked: Validated and waiting on the business case: this lead session has no subagent tool, so research, sizing and ceo cannot be launched independently. Next cycle must run research (case), sizing, then ceo for clean-quote",
+    "ventureId": "clean-quote",
+    "kind": "blocked"
   }
 ]
