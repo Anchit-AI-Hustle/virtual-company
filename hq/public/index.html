@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Venture HQ</title>
+<meta name="description" content="Owner dashboard for a company run by AI agents.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213D'/%3E%3Cpath d='M8 21l5-9 4 6 3-4 4 7' fill='none' stroke='%23F2A900' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EDF0F5;
+    --sheet: #FFFFFF;
+    --ink: #14213D;
+    --ink-soft: #4A5670;
+    --line: #C9D0DC;
+    --you: #F2A900;
+    --you-wash: #FFF4D6;
+    --go: #0B7A5E;
+    --go-wash: #DDF2EA;
+    --stop: #B8324A;
+    --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+    --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1rem/1.5 var(--body);
+  }
+  a { color: inherit; text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--you); outline-offset: 2px; border-radius: 4px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 20px 18px 64px; }
+
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; font-size: 0.875rem; color: var(--ink-soft); }
+  .top strong { font: 700 1rem var(--display); color: var(--ink); letter-spacing: -0.01em; }
+
+  .status {
+    font: 700 clamp(2rem, 8.4vw, 4.25rem)/1.02 var(--display);
+    letter-spacing: -0.035em;
+    margin: 28px 0 10px;
+    max-width: 16ch;
+    text-wrap: balance;
+  }
+  .status-note { margin: 0 0 8px; color: var(--ink-soft); max-width: 58ch; }
+
+  section { margin-top: 44px; }
+  h2 { font: 700 1.375rem/1.2 var(--display); letter-spacing: -0.02em; margin: 0 0 14px; }
+  .empty { color: var(--ink-soft); margin: 0; }
+
+  /* Waiting on you */
+  .asks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .ask { background: var(--you-wash); border-left: 6px solid var(--you); border-radius: 4px 12px 12px 4px; padding: 14px 16px; }
+  .ask p { margin: 0; }
+  .ask .what { font-weight: 600; }
+  .ask .meta { font-size: 0.875rem; color: var(--ink-soft); margin-top: 4px; }
+  .ask a { display: inline-block; margin-top: 10px; font-weight: 600; padding: 9px 14px; background: var(--ink); color: #fff; border-radius: 8px; text-decoration: none; min-height: 44px; line-height: 26px; }
+
+  /* Pipeline: a rail of stations */
+  .rail { display: grid; gap: 0; border-top: 2px solid var(--ink); }
+  .station { display: grid; grid-template-columns: 9.5rem 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .station h3 { margin: 0; font: 500 1rem/1.4 var(--body); display: flex; align-items: baseline; gap: 8px; }
+  .station h3 b { font: 700 1.25rem/1 var(--display); min-width: 1.4ch; }
+  .station.is-empty h3 { color: var(--ink-soft); }
+  .station.is-empty h3 b { color: var(--line); }
+  .cards { display: grid; gap: 8px; min-width: 0; }
+  .card { background: var(--sheet); border-radius: 10px; padding: 12px 14px; min-width: 0; }
+  .card h4 { margin: 0; font: 600 1rem/1.3 var(--body); overflow-wrap: anywhere; }
+  .card p { margin: 4px 0 0; font-size: 0.9375rem; color: var(--ink-soft); overflow-wrap: anywhere; }
+  .card .next { color: var(--ink); }
+  .card .facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 0.875rem; }
+  .card .facts span { white-space: nowrap; }
+  .card.is-live { box-shadow: inset 4px 0 0 var(--go); }
+  .card.is-killed { background: transparent; border: 1px dashed var(--line); }
+  .card.is-killed h4 { color: var(--stop); }
+  .wip { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; }
+
+  /* Money */
+  .money { display: grid; gap: 1px; background: var(--line); border-radius: 12px; overflow: hidden; }
+  .money div { background: var(--sheet); padding: 14px 16px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .money dt { color: var(--ink-soft); }
+  .money dd { margin: 0; font: 700 1.375rem/1.1 var(--display); letter-spacing: -0.02em; text-align: right; }
+  .money dd small { display: block; font: 400 0.8125rem/1.4 var(--body); color: var(--ink-soft); letter-spacing: 0; }
+  .money .net dd.up { color: var(--go); }
+  .money .net dd.down { color: var(--stop); }
+  .money-note { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; max-width: 62ch; }
+
+  /* Team */
+  .team { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .team li { padding: 10px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 6.5rem 1fr; gap: 12px; }
+  .team .role { font-weight: 600; }
+  .team .did { color: var(--ink-soft); font-size: 0.9375rem; overflow-wrap: anywhere; }
+
+  /* Log */
+  .log { list-style: none; margin: 0; padding: 0; }
+  .log li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .log time { display: block; font-size: 0.8125rem; color: var(--ink-soft); }
+  .log p { margin: 2px 0 0; overflow-wrap: anywhere; }
+
+  footer { margin-top: 56px; font-size: 0.875rem; color: var(--ink-soft); }
+
+  @media (min-width: 760px) {
+    .wrap { padding: 28px 32px 80px; }
+    .asks { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+    .money { grid-template-columns: repeat(3, 1fr); }
+    .money div { flex-direction: column; align-items: flex-start; }
+    .money dd { text-align: left; font-size: 1.75rem; }
+    .cards { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .two section { margin-top: 44px; }
+  }
+  @media (max-width: 420px) {
+    .station { grid-template-columns: 1fr; gap: 8px; }
+    .station.is-empty { padding: 8px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong id="name">Venture HQ</strong>
+    <span id="updated">Loading the latest state</span>
+  </header>
+
+  <main>
+    <h1 class="status" id="status">Opening the books</h1>
+    <p class="status-note" id="statusNote"></p>
+
+    <section aria-labelledby="h-asks">
+      <h2 id="h-asks">Waiting on you</h2>
+      <div id="asks"></div>
+    </section>
+
+    <section aria-labelledby="h-pipe">
+      <h2 id="h-pipe">Pipeline</h2>
+      <div class="rail" id="rail"></div>
+      <p class="wip" id="wip"></p>
+    </section>
+
+    <section aria-labelledby="h-money">
+      <h2 id="h-money">Money</h2>
+      <dl class="money" id="money"></dl>
+      <p class="money-note" id="moneyNote"></p>
+    </section>
+
+    <div class="two">
+      <section aria-labelledby="h-team">
+        <h2 id="h-team">Team</h2>
+        <ul class="team" id="team"></ul>
+      </section>
+      <section aria-labelledby="h-log">
+        <h2 id="h-log">Recent decisions</h2>
+        <ul class="log" id="log"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Every number here comes from the company books. To pause the company, add a file named PAUSE to the repo.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var STAGE_NAMES = { idea: 'Ideas', validating: 'Checking demand', validated: 'Demand proven', spec: 'Spec written', building: 'Building', qa: 'In testing', live: 'Live', scaling: 'Scaling', killed: 'Stopped' };
+  var ROLE_NAMES = { ceo: 'CEO', research: 'Research', product: 'Product', engineer: 'Engineer', qa: 'QA', growth: 'Growth', support: 'Support', finance: 'Finance' };
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined && text !== null) n.textContent = text;
+    return n;
+  }
+  function inr(n) { return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(n); }
+  function usd(n) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(n); }
+  function when(iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) return '';
+    return d.toLocaleString(undefined, { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
+  }
+  function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
+  function safeUrl(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
+
+  function statusLine(d) {
+    var live = d.ventures.filter(function (v) { return v.stage === 'live' || v.stage === 'scaling'; }).length;
+    var works = d.ventures.filter(function (v) { return ['validating', 'validated', 'spec', 'building', 'qa'].indexOf(v.stage) > -1; }).length;
+    var ideas = d.ventures.filter(function (v) { return v.stage === 'idea'; }).length;
+    var asks = d.approvals.length;
+    var head, note;
+    if (!d.ventures.length) {
+      head = 'Open for business, nothing built yet';
+      note = 'The CEO agent writes and scores the first ideas in the next daily cycle. They will appear in the pipeline below.';
+    } else if (live) {
+      head = plural(live, 'product is', 'products are') + ' live';
+      note = plural(works, 'more is', 'more are') + ' in the works and ' + plural(ideas, 'idea is', 'ideas are') + ' waiting for a turn.';
+    } else if (works) {
+      head = plural(works, 'product', 'products') + ' in the works';
+      note = 'Nothing is live yet. ' + plural(ideas, 'idea is', 'ideas are') + ' waiting for a turn.';
+    } else {
+      head = plural(ideas, 'idea', 'ideas') + ' on the table';
+      note = 'The CEO agent picks the strongest one to check for demand next.';
+    }
+    if (asks) note += ' ' + plural(asks, 'decision needs', 'decisions need') + ' you.';
+    return { head: head, note: note };
+  }
+
+  function renderAsks(d) {
+    var box = $('asks');
+    box.textContent = '';
+    if (!d.approvals.length) { box.appendChild(el('p', 'empty', 'Nothing needs you right now. Spending, public posts, outreach and account changes will show up here first.')); return; }
+    var ul = el('ul', 'asks');
+    d.approvals.forEach(function (a) {
+      var li = el('li', 'ask');
+      li.appendChild(el('p', 'what', a.ask));
+      var bits = [a.type.replace('-', ' ')];
+      if (typeof a.costINR === 'number' && a.costINR > 0) bits.push('costs ' + inr(a.costINR));
+      if (a.createdAt) bits.push('asked ' + when(a.createdAt));
+      li.appendChild(el('p', 'meta', bits.join(', ')));
+      var u = safeUrl(a.issueUrl);
+      if (u) { var link = el('a', null, 'Approve or reject'); link.href = u; link.rel = 'noopener'; li.appendChild(link); }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+
+  function renderRail(d) {
+    var rail = $('rail');
+    rail.textContent = '';
+    d.stages.forEach(function (stage) {
+      var items = d.ventures.filter(function (v) { return v.stage === stage; });
+      var row = el('div', 'station' + (items.length ? '' : ' is-empty'));
+      var h = el('h3');
+      h.appendChild(el('b', null, String(items.length)));
+      h.appendChild(document.createTextNode(STAGE_NAMES[stage] || stage));
+      row.appendChild(h);
+      var cards = el('div', 'cards');
+      items.forEach(function (v) {
+        var c = el('article', 'card' + (stage === 'live' || stage === 'scaling' ? ' is-live' : '') + (stage === 'killed' ? ' is-killed' : ''));
+        var title = el('h4');
+        var u = safeUrl(v.url);
+        if (u) { var a = el('a', null, v.title); a.href = u; a.rel = 'noopener'; title.appendChild(a); } else { title.textContent = v.title; }
+        c.appendChild(title);
+        c.appendChild(el('p', null, v.oneLiner));
+        if (stage === 'killed' && v.killReason) c.appendChild(el('p', null, 'Stopped because: ' + v.killReason));
+        else if (v.nextAction) c.appendChild(el('p', 'next', 'Next: ' + v.nextAction));
+        var facts = el('div', 'facts');
+        facts.appendChild(el('span', null, 'Score ' + v.score + ' of 20'));
+        if (typeof v.priceINR === 'number') facts.appendChild(el('span', null, 'Price ' + inr(v.priceINR)));
+        if (v.evidenceCount) facts.appendChild(el('span', null, plural(v.evidenceCount, 'source', 'sources')));
+        if (v.metrics) {
+          if (typeof v.metrics.signups === 'number') facts.appendChild(el('span', null, plural(v.metrics.signups, 'signup', 'signups')));
+          if (typeof v.metrics.paidOrders === 'number') facts.appendChild(el('span', null, plural(v.metrics.paidOrders, 'paid order', 'paid orders')));
+        }
+        c.appendChild(facts);
+        cards.appendChild(c);
+      });
+      row.appendChild(cards);
+      rail.appendChild(row);
+    });
+    $('wip').textContent = 'Limits: ' + plural(d.wip.building, 'product', 'products') + ' in build at a time, ' + d.wip.liveTests + ' in live test, ' + d.wip.openIdeas + ' open ideas.';
+  }
+
+  function renderMoney(d) {
+    var m = d.money, dl = $('money');
+    dl.textContent = '';
+    [['Revenue', m.revenueINR, m.revenueUSD, ''], ['Costs', m.costINR, m.costUSD, ''], ['Net', m.netINR, m.netUSD, 'net']].forEach(function (r) {
+      var row = el('div', r[3]);
+      row.appendChild(el('dt', null, r[0]));
+      var dd = el('dd', r[3] && r[1] !== 0 ? (r[1] > 0 ? 'up' : 'down') : '', inr(r[1]));
+      if (r[2] !== null) dd.appendChild(el('small', null, usd(r[2])));
+      row.appendChild(dd);
+      dl.appendChild(row);
+    });
+    var note = m.fx ? 'USD at ' + m.fx.usdInr + ' rupees to the dollar, recorded ' + m.fx.asOf + '.' : 'USD appears once Finance records the exchange rate for the day.';
+    note += m.monthlyCapINR > 0 ? ' Approved spending cap: ' + inr(m.monthlyCapINR) + ' a month.' : ' Spending cap is zero until you approve a request.';
+    $('moneyNote').textContent = note;
+  }
+
+  function renderTeam(d) {
+    var ul = $('team');
+    ul.textContent = '';
+    d.team.forEach(function (t) {
+      var li = el('li');
+      li.appendChild(el('span', 'role', ROLE_NAMES[t.agent] || t.agent));
+      li.appendChild(el('span', 'did', t.last ? t.last.action + ' (' + when(t.last.at) + ')' : 'Has not been needed yet'));
+      ul.appendChild(li);
+    });
+  }
+
+  function renderLog(d) {
+    var ul = $('log');
+    ul.textContent = '';
+    if (!d.log.length) { ul.appendChild(el('li', 'empty', 'No decisions logged yet.')); return; }
+    d.log.slice(0, 12).forEach(function (e) {
+      var li = el('li');
+      var t = el('time', null, when(e.at) + ', ' + (ROLE_NAMES[e.agent] || e.agent));
+      t.dateTime = e.at;
+      li.appendChild(t);
+      li.appendChild(el('p', null, e.action));
+      ul.appendChild(li);
+    });
+  }
+
+  fetch('data.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (d) {
+      $('name').textContent = d.company.name;
+      document.title = d.company.name;
+      $('updated').textContent = 'Books updated ' + when(d.builtAt);
+      var s = statusLine(d);
+      $('status').textContent = s.head;
+      $('statusNote').textContent = s.note;
+      renderAsks(d); renderRail(d); renderMoney(d); renderTeam(d); renderLog(d);
+    })
+    .catch(function () {
+      $('status').textContent = 'The books did not load';
+      $('statusNote').textContent = 'Check your connection and reload. If it keeps happening, the last company cycle may not have finished publishing.';
+      $('updated').textContent = '';
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "virtual-company",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A company run by AI agents: ideate, validate, build, sell, support.",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build:hq": "node scripts/build-hq.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/build-hq.js && node scripts/validate.js && node --test tests/*.test.js"
+  }
+}

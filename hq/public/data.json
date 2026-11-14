@@ -1,0 +1,83 @@
+{
+  "builtAt": "2026-11-14T03:03:20.561Z",
+  "company": {
+    "name": "Venture HQ",
+    "domain": "anchit-tandon.com",
+    "owner": "Anchit Tandon"
+  },
+  "stages": [
+    "idea",
+    "validating",
+    "validated",
+    "spec",
+    "building",
+    "qa",
+    "live",
+    "scaling",
+    "killed"
+  ],
+  "wip": {
+    "building": 1,
+    "liveTests": 3,
+    "openIdeas": 12
+  },
+  "money": {
+    "revenueINR": 0,
+    "costINR": 0,
+    "netINR": 0,
+    "revenueUSD": null,
+    "costUSD": null,
+    "netUSD": null,
+    "fx": null,
+    "monthlyCapINR": 0
+  },
+  "approvals": [],
+  "ventures": [],
+  "team": [
+    {
+      "agent": "ceo",
+      "last": {
+        "at": "2026-11-14T03:00:00Z",
+        "agent": "ceo",
+        "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas.",
+        "ventureId": null
+      }
+    },
+    {
+      "agent": "research",
+      "last": null
+    },
+    {
+      "agent": "product",
+      "last": null
+    },
+    {
+      "agent": "engineer",
+      "last": null
+    },
+    {
+      "agent": "qa",
+      "last": null
+    },
+    {
+      "agent": "growth",
+      "last": null
+    },
+    {
+      "agent": "support",
+      "last": null
+    },
+    {
+      "agent": "finance",
+      "last": null
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-11-14T03:00:00Z",
+      "agent": "ceo",
+      "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas.",
+      "ventureId": null
+    }
+  ]
+}
