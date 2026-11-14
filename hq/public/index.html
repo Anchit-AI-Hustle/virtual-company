@@ -116,7 +116,10 @@
   .desk .tag b { display: block; font-weight: 700; }
   .desk .tag small { display: block; color: var(--ink-soft); line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .desk:hover .tag b, .desk:focus-visible .tag b { text-decoration: underline; text-underline-offset: 3px; }
-  .desk.mini { width: 108px; padding-top: 44px; }
+  .desk.mini { flex: 0 1 108px; width: auto; min-width: 0; padding-top: 44px; }
+  table.cohorts { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 4px 0 8px; }
+  table.cohorts th, table.cohorts td { text-align: left; padding: 4px 6px; border-bottom: 1px solid #E3E0D8; }
+  table.cohorts td:not(:first-child), table.cohorts th:not(:first-child) { text-align: right; white-space: nowrap; }
   .desk.mini .person { max-width: 96px; }
   .desk.mini .tag b { font-size: 1rem; }
   .desk.mini .tag small { display: none; }
@@ -586,10 +589,19 @@
       var checks = el('ul', 'checks');
       function chk(label, val) { checks.appendChild(el('li', val === true ? 'ok' : val === false ? 'no' : '', label + (val === true ? ': passed' : val === false ? ': failed' : ': not yet'))); }
       chk(plural(v.evidenceCount, 'demand source', 'demand sources'), v.evidenceCount >= 3 ? true : null);
-      chk('Business case' + (v.businessCase && v.businessCase.total ? ' ' + v.businessCase.total + ' of 35' : ''), v.businessCase ? true : null); chk('Go decision', v.goDecision);
+      chk('Business case' + (v.businessCase && v.businessCase.total ? ' ' + v.businessCase.total + ' of 35' : ''), v.businessCase ? true : null); chk('Market size', v.sizing ? v.sizing.clearsBar : null); chk('Go decision', v.goDecision);
       chk('Spec', v.specPath ? true : null); chk('Spec review', v.reviews.product); chk('Code review', v.reviews.engineer);
       chk('QA', v.qaPassed); chk('Design review', v.reviews.design); chk('Security review', v.reviews.security); chk('Legal review', v.reviews.legal);
       p.appendChild(checks);
+      if (v.sizing) {
+        var sz = v.sizing;
+        p.appendChild(el('h4', null, 'How big it could be'));
+        p.appendChild(el('p', null, 'If it works, about ' + sz.payingUsers.toLocaleString('en-IN') + ' people a year would pay, earning ' + inr(sz.likelyINR) + ' (bad case ' + inr(sz.worstINR) + ', best case ' + inr(sz.bestINR) + '). The chance it works is about ' + sz.likelihoodPct + ' in 100, so the realistic estimate is ' + inr(sz.expectedINR) + ' a year. ' + (sz.clearsBar ? 'That clears the bar to build.' : 'That is below the bar to build.')));
+        var tb = el('table', 'cohorts'), hr = el('tr');
+        ['Group', 'Paying people', 'Earnings a year'].forEach(function (h) { hr.appendChild(el('th', null, h)); }); tb.appendChild(hr);
+        sz.cohorts.forEach(function (c) { var r = el('tr'); r.appendChild(el('td', null, c.name)); r.appendChild(el('td', null, c.users.toLocaleString('en-IN'))); r.appendChild(el('td', null, inr(c.earningsINR))); tb.appendChild(r); });
+        p.appendChild(tb);
+      }
       if (v.nextAction && v.stage !== 'killed') { p.appendChild(el('h4', null, 'Next')); p.appendChild(el('p', null, v.nextAction)); }
       if (v.killReason) { p.appendChild(el('h4', null, 'Why it stopped')); p.appendChild(el('p', null, v.killReason)); }
       p.appendChild(el('h4', null, 'Who did what'));
@@ -597,6 +609,7 @@
       var links = el('p', 'links'), u = safeUrl(v.url);
       if (u) { var live = el('a', null, 'Open the live product'); live.href = u; live.rel = 'noopener'; live.target = '_blank'; links.appendChild(live); }
       if (v.businessCase) { var bcl = el('a', null, 'Read the business case'); bcl.href = 'https://github.com/' + REPO + '/blob/main/' + v.businessCase.path; bcl.rel = 'noopener'; bcl.target = '_blank'; links.appendChild(bcl); }
+      if (v.sizing) { var szl = el('a', null, 'Read the sizing'); szl.href = 'https://github.com/' + REPO + '/blob/main/' + v.sizing.path; szl.rel = 'noopener'; szl.target = '_blank'; links.appendChild(szl); }
       if (v.specPath) { var s = el('a', null, 'Read the spec'); s.href = 'https://github.com/' + REPO + '/blob/main/' + v.specPath; s.rel = 'noopener'; s.target = '_blank'; links.appendChild(s); }
       p.appendChild(links);
     });

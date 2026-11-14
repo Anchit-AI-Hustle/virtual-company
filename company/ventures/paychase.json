@@ -1,13 +1,13 @@
 {
   "priceINR": null,
-  "stage": "idea",
+  "stage": "killed",
   "evidence": [],
   "specPath": null,
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T06:49:00.906Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T13:30:00.000Z",
+  "killReason": "Market sizing: about 271 paying people and Rs 14,723 expected a year against a bar of Rs 3,00,000, with a 10% chance of working against a bar of 15%. Zoho Invoice and Refrens already send payment reminders free, and late payment hits most freelancers about once a year, so a one-time Rs 499 tool has little room. Stopped before any build.",
   "id": "paychase",
   "title": "Paychase",
   "oneLiner": "Polite payment reminder sequence and overdue tracker for Indian freelancers",
@@ -20,6 +20,9 @@
     "distribution": 2,
     "total": 13
   },
-  "nextAction": "Research: find people paying for payment chasing tools. Legal: no claims about statutory interest without owner legal approval",
-  "lead": null
+  "nextAction": null,
+  "lead": null,
+  "sizing": {
+    "path": "cases/paychase.sizing.json"
+  }
 }

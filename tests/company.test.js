@@ -33,6 +33,11 @@ function fixture(o = {}) {
     if (later.includes(v.stage) && !o.noCase && v.case === undefined) {
       v.case = goodCase(v.id);
       w(v.case.path, CASE_TEXT);
+      if (!o.noSizing && v.sizing === undefined) {
+        v.sizing = { path: `cases/${v.id}.sizing.json` };
+        w(v.sizing.path, o.sizingData || GOOD_SIZING);
+        logs0[`sizing.${v.id}.json`] = [{ at: '2026-11-14T04:10:00Z', agent: 'sizing', action: 'Sizing: done', ventureId: v.id, kind: 'done' }];
+      }
       logs0[`research.${v.id}.json`] = [{ at: '2026-11-14T04:00:00Z', agent: 'research', action: 'Business case written: solid', ventureId: v.id, kind: 'done' }];
       o.reviews = Object.assign({}, o.reviews || {});
       o.reviews[v.id] = Object.assign({ ceo: { passed: true, at: '2026-11-14T04:30:00Z', notes: 'go' } }, o.reviews[v.id] || {});
@@ -63,6 +68,13 @@ const productOnly = { 'invoice-buddy': { product: passed } };
 const lead = (i) => config.leads[i];
 
 
+const cohort = (name, size, reach, pay, price) => ({ name, country: 'India', size, sizeSource: 'https://example.com/size', reachablePct: reach, reachBasis: 'search', payingPct: pay, payingBasis: 'surveys', priceINR: price, purchasesPerYear: 1 });
+const GOOD_SIZING = {
+  problem: { who: 'freelancers', frequency: 'monthly', severity: 4, evidence: [{ claim: 'late pay', url: 'https://example.com/e' }] },
+  cohorts: [cohort('Designers', 1000000, 10, 5, 499), cohort('Writers', 500000, 10, 2, 299)],
+  likelihoodPct: 25, likelihoodBasis: 'comparables', comparables: [{ name: 'X', url: 'https://example.com/x', outcome: 'ok' }],
+  scenarios: { worstFactor: 0.3, bestFactor: 2.5 }
+};
 const CASE_TEXT = config.businessCase.sections.map((h, i) => `## ${i + 1}. ${h}\n\nText.\n`).join('\n');
 const goodScores = { pain: 4, willingnessToPay: 4, marketSize: 3, distribution: 4, competitionGap: 3, speedToRevenue: 4, recurringRevenue: 3 };
 function goodCase(id, scores = goodScores) {
@@ -244,7 +256,7 @@ test('act.js lets a venture lead report, writes only its own files, and rejects 
   assert.throws(() => act(dir, 'qa', 'start', 'x', 'no-such-venture'));
 });
 
-test('HQ office shows the 16 department agents plus one desk per active venture lead', () => {
+test('HQ office shows the 17 department agents plus one desk per active venture lead', () => {
   const dir = fixture({
     ventures: [venture({ stage: 'building', lead: lead(0), evidence, specPath: 'specs/a.md' }), venture({ id: 'menu-qr', stage: 'validating', lead: lead(1) }), venture({ id: 'resume-fit' })],
     reviews: productOnly,
@@ -252,7 +264,7 @@ test('HQ office shows the 16 department agents plus one desk per active venture 
     files: specFile
   });
   const hq = buildHq(dir);
-  assert.strictEqual(hq.office.length, 18);
+  assert.strictEqual(hq.office.length, 19);
   const pod = hq.office.find((a) => a.id === 'lead-invoice-buddy');
   assert.strictEqual(pod.name, lead(0).name);
   assert.strictEqual(pod.department, 'pods');
@@ -387,4 +399,20 @@ test('no spec without a business case written by research and a CEO go decision'
   // A good case without the CEO's go decision
   const noGo = spec({}, { reviews: { 'invoice-buddy': { ceo: { passed: false, at: '2026-11-14T04:30:00Z', notes: 'pivot' } } } });
   assert.ok(rules(noGo).includes('review'));
+});
+
+test('market sizing: needed before spec, recomputed, and held to the bar', () => {
+  const { computeSizing } = require('../scripts/sizing.js');
+  const r = computeSizing(GOOD_SIZING);
+  assert.equal(r.cohorts[0].users, 5000);
+  assert.equal(r.likelyINR, 5000 * 499 + 1000 * 299);
+  assert.equal(r.expectedINR, Math.round(r.likelyINR * 0.25));
+  const at = (o) => rules(fixture(Object.assign({ ventures: [venture({ stage: 'spec', spec: 'specs/invoice-buddy.md' })], files: { 'specs/invoice-buddy.md': '## Acceptance tests\n- [ ] works' } }, o)));
+  assert.ok(!at({}).includes('sizing'), 'good sizing passes');
+  assert.ok(at({ noSizing: true }).includes('sizing'), 'no sizing blocks the spec');
+  assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { cohorts: [GOOD_SIZING.cohorts[0]] }) }).includes('sizing'), 'one cohort is not enough');
+  assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { likelihoodPct: 10 }) }).includes('sizing'), 'low likelihood fails');
+  assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { likelihoodPct: 60 }) }).includes('sizing'), 'high likelihood needs 3 comparables');
+  assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { cohorts: [cohort('A', 1000, 10, 5, 99), cohort('B', 1000, 10, 5, 99)] }) }).includes('sizing'), 'tiny market fails');
+  assert.ok(at({ sizingData: Object.assign({}, GOOD_SIZING, { cohorts: [Object.assign({}, GOOD_SIZING.cohorts[0], { sizeSource: 'trust me' }), GOOD_SIZING.cohorts[1]] }) }).includes('sizing'), 'unsourced size fails');
 });

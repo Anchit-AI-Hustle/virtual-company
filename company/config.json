@@ -11,6 +11,7 @@
     "ops",
     "research",
     "data",
+    "sizing",
     "product",
     "design",
     "engineer",
@@ -229,6 +230,7 @@
       "Willingness to pay",
       "Distribution",
       "Unit economics",
+      "Sizing",
       "Risks",
       "Options",
       "Scorecard",
@@ -250,5 +252,11 @@
       "willingnessToPay",
       "distribution"
     ]
+  },
+  "sizing": {
+    "minCohorts": 2,
+    "minExpectedINR12m": 300000,
+    "minLikelihoodPct": 15,
+    "maxLikelihoodPctWithoutComparables": 40
   }
 }

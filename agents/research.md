@@ -37,6 +37,8 @@ Demand alone is not a business. Before any spec is written, you, not the venture
 6. Distribution: how the first 100 buyers find it without ads or cold outreach, with evidence
    of search demand or communities, and how crowded that channel is.
 7. Unit economics: worst, likely and best 90 day revenue, with the arithmetic, and costs.
+   Then the sizing agent (Farhan) adds a Sizing section with users by cohort, likelihood and
+   12 month earnings (see `agents/sizing.md`).
 8. Risks: what would prove it wrong, with numbers and a date.
 9. Options: proceed, pivot (to what exactly), or stop, one line each.
 10. Scorecard: 1 to 5 each for pain, willingnessToPay, marketSize, distribution,

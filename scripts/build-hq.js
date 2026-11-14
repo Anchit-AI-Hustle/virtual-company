@@ -5,6 +5,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { loadBrain, leadId } = require('./brain.js');
+const { computeSizing, checkSizing, loadSizing } = require('./sizing.js');
 
 const round2 = (n) => Math.round(n * 100) / 100;
 
@@ -70,6 +71,7 @@ function buildHq(dir) {
       reviews: Object.fromEntries((config.reviewsToGoLive || []).map((r) => { const x = (reviews[v.id] || {})[r]; return [r, x ? !!x.passed : null]; })),
       qaPassed: (reviews[v.id] || {}).qa ? !!reviews[v.id].qa.passed : null,
       goDecision: (reviews[v.id] || {}).ceo ? !!reviews[v.id].ceo.passed : null,
+      sizing: (() => { const sz = v.sizing && v.sizing.path ? loadSizing(dir, v.sizing.path) : null; if (!sz) return null; try { return Object.assign({ path: v.sizing.path, clearsBar: checkSizing(sz, config.sizing).length === 0, problem: sz.problem ? { who: sz.problem.who, frequency: sz.problem.frequency } : null }, computeSizing(sz)); } catch (e) { return null; } })(),
       businessCase: v.case && v.case.path ? { path: v.case.path, total: v.case.total || null, recommendation: v.case.recommendation || null } : null
     })),
     departments: departments.concat(podVentures.length ? [{ id: 'pods', name: 'Venture pods' }] : []),

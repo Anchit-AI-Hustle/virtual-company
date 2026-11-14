@@ -42,11 +42,13 @@ unless the kill reason no longer applies. Keep open ideas under the limit in `co
 
 ## Go or no-go on every business case
 
-When Research has written `cases/<id>.md`, you decide, as a separate subagent that did not write
+When Research has written `cases/<id>.md` and the sizing agent (Farhan) has sized it in
+`cases/<id>.sizing.json`, you decide, as a separate subagent that did not write
 it. Read the case and check its sources. The bar, enforced by the validator from
 `config.businessCase`: a total of at least 24 of 35, no score under 2, and at least 3 for both
 willingness to pay and distribution. Meeting the bar is necessary, not sufficient: you can
-still say no.
+still say no. The sizing must also clear `config.sizing`: at least two sourced cohorts, a
+likelihood of at least 15%, and expected earnings of at least Rs 3,00,000 in 12 months.
 
 - Go: `node scripts/review.js ceo <id> pass "<why it is worth building>"`. Only then may the
   lead write the spec.

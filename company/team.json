@@ -1,18 +1,155 @@
 [
-  { "id": "ceo",      "name": "Arya",   "title": "Chief Executive",            "department": "leadership",  "color": "#14213D", "charter": "agents/ceo.md",      "trait": "Decisive. Kills weak ideas fast and backs the one with proof." },
-  { "id": "ops",      "name": "Kabir",  "title": "Chief of Staff",             "department": "leadership",  "color": "#3D4F7C", "charter": "agents/ops.md",      "trait": "Runs the day: standup, handoffs, books, digest." },
-  { "id": "research", "name": "Meera",  "title": "Head of Research",           "department": "strategy",    "color": "#6B4E9B", "charter": "agents/research.md", "trait": "No link, no claim. Hunts for people already paying." },
-  { "id": "data",     "name": "Anaya",  "title": "Data and Analytics Lead",    "department": "strategy",    "color": "#8A6BC2", "charter": "agents/data.md",     "trait": "Defines what gets counted, and counts it honestly." },
-  { "id": "product",  "name": "Rohan",  "title": "Product Manager",            "department": "product",     "color": "#0E6E8C", "charter": "agents/product.md",  "trait": "Cuts scope until it ships in three cycles." },
-  { "id": "design",   "name": "Zoya",   "title": "Product Designer",           "department": "product",     "color": "#1C93B5", "charter": "agents/design.md",   "trait": "Designs for a thumb on a 390 px screen first." },
-  { "id": "engineer", "name": "Dev",    "title": "Software Engineer",          "department": "engineering", "color": "#0B7A5E", "charter": "agents/engineer.md", "trait": "Plain HTML, CSS and JS unless the spec forces more." },
-  { "id": "qa",       "name": "Ishaan", "title": "QA Engineer",                "department": "engineering", "color": "#2E9C7E", "charter": "agents/qa.md",       "trait": "Independent. Trusts screenshots, not claims." },
-  { "id": "devops",   "name": "Neel",   "title": "DevOps and Release",         "department": "engineering", "color": "#4FB394", "charter": "agents/devops.md",   "trait": "Nothing is shipped until the live URL works." },
-  { "id": "security", "name": "Tara",   "title": "Security and Privacy",       "department": "engineering", "color": "#167A6A", "charter": "agents/security.md", "trait": "No secrets in code, no personal data in public." },
-  { "id": "growth",   "name": "Sana",   "title": "Growth and Marketing",       "department": "market",      "color": "#C27A00", "charter": "agents/growth.md",   "trait": "Brings the right buyers without spending a rupee." },
-  { "id": "sales",    "name": "Arjun",  "title": "Sales and Pricing",          "department": "market",      "color": "#D99A1E", "charter": "agents/sales.md",    "trait": "Makes paying the easiest step on the page." },
-  { "id": "support",  "name": "Priya",  "title": "Customer Support",           "department": "market",      "color": "#B36B00", "charter": "agents/support.md",  "trait": "Nobody waits. Every complaint becomes a fix." },
-  { "id": "finance",  "name": "Nikhil", "title": "Finance",                    "department": "business",    "color": "#8C3B4F", "charter": "agents/finance.md",  "trait": "If it has no source, it is not in the books." },
-  { "id": "legal",    "name": "Vikram", "title": "Legal and Compliance",       "department": "business",    "color": "#A84D63", "charter": "agents/legal.md",    "trait": "Keeps every claim true and every category safe." },
-  { "id": "people",   "name": "Kavya",  "title": "People and Performance",     "department": "business",    "color": "#C2667D", "charter": "agents/people.md",   "trait": "Reviews every agent's work and fixes the process." }
+  {
+    "id": "ceo",
+    "name": "Arya",
+    "title": "Chief Executive",
+    "department": "leadership",
+    "color": "#14213D",
+    "charter": "agents/ceo.md",
+    "trait": "Decisive. Kills weak ideas fast and backs the one with proof."
+  },
+  {
+    "id": "ops",
+    "name": "Kabir",
+    "title": "Chief of Staff",
+    "department": "leadership",
+    "color": "#3D4F7C",
+    "charter": "agents/ops.md",
+    "trait": "Runs the day: standup, handoffs, books, digest."
+  },
+  {
+    "id": "research",
+    "name": "Meera",
+    "title": "Head of Research",
+    "department": "strategy",
+    "color": "#6B4E9B",
+    "charter": "agents/research.md",
+    "trait": "No link, no claim. Hunts for people already paying."
+  },
+  {
+    "id": "data",
+    "name": "Anaya",
+    "title": "Data and Analytics Lead",
+    "department": "strategy",
+    "color": "#8A6BC2",
+    "charter": "agents/data.md",
+    "trait": "Defines what gets counted, and counts it honestly."
+  },
+  {
+    "id": "sizing",
+    "name": "Farhan",
+    "title": "Market Sizing and Forecasting",
+    "department": "strategy",
+    "color": "#5B3E8A",
+    "charter": "agents/sizing.md",
+    "trait": "Counts the buyers, group by group, before anyone builds."
+  },
+  {
+    "id": "product",
+    "name": "Rohan",
+    "title": "Product Manager",
+    "department": "product",
+    "color": "#0E6E8C",
+    "charter": "agents/product.md",
+    "trait": "Cuts scope until it ships in three cycles."
+  },
+  {
+    "id": "design",
+    "name": "Zoya",
+    "title": "Product Designer",
+    "department": "product",
+    "color": "#1C93B5",
+    "charter": "agents/design.md",
+    "trait": "Designs for a thumb on a 390 px screen first."
+  },
+  {
+    "id": "engineer",
+    "name": "Dev",
+    "title": "Software Engineer",
+    "department": "engineering",
+    "color": "#0B7A5E",
+    "charter": "agents/engineer.md",
+    "trait": "Plain HTML, CSS and JS unless the spec forces more."
+  },
+  {
+    "id": "qa",
+    "name": "Ishaan",
+    "title": "QA Engineer",
+    "department": "engineering",
+    "color": "#2E9C7E",
+    "charter": "agents/qa.md",
+    "trait": "Independent. Trusts screenshots, not claims."
+  },
+  {
+    "id": "devops",
+    "name": "Neel",
+    "title": "DevOps and Release",
+    "department": "engineering",
+    "color": "#4FB394",
+    "charter": "agents/devops.md",
+    "trait": "Nothing is shipped until the live URL works."
+  },
+  {
+    "id": "security",
+    "name": "Tara",
+    "title": "Security and Privacy",
+    "department": "engineering",
+    "color": "#167A6A",
+    "charter": "agents/security.md",
+    "trait": "No secrets in code, no personal data in public."
+  },
+  {
+    "id": "growth",
+    "name": "Sana",
+    "title": "Growth and Marketing",
+    "department": "market",
+    "color": "#C27A00",
+    "charter": "agents/growth.md",
+    "trait": "Brings the right buyers without spending a rupee."
+  },
+  {
+    "id": "sales",
+    "name": "Arjun",
+    "title": "Sales and Pricing",
+    "department": "market",
+    "color": "#D99A1E",
+    "charter": "agents/sales.md",
+    "trait": "Makes paying the easiest step on the page."
+  },
+  {
+    "id": "support",
+    "name": "Priya",
+    "title": "Customer Support",
+    "department": "market",
+    "color": "#B36B00",
+    "charter": "agents/support.md",
+    "trait": "Nobody waits. Every complaint becomes a fix."
+  },
+  {
+    "id": "finance",
+    "name": "Nikhil",
+    "title": "Finance",
+    "department": "business",
+    "color": "#8C3B4F",
+    "charter": "agents/finance.md",
+    "trait": "If it has no source, it is not in the books."
+  },
+  {
+    "id": "legal",
+    "name": "Vikram",
+    "title": "Legal and Compliance",
+    "department": "business",
+    "color": "#A84D63",
+    "charter": "agents/legal.md",
+    "trait": "Keeps every claim true and every category safe."
+  },
+  {
+    "id": "people",
+    "name": "Kavya",
+    "title": "People and Performance",
+    "department": "business",
+    "color": "#C2667D",
+    "charter": "agents/people.md",
+    "trait": "Reviews every agent's work and fixes the process."
+  }
 ]

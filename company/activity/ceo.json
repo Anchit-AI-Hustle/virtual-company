@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked",
-  "ventureId": "seatwise",
-  "since": "2026-11-14T09:38:31.485Z"
+  "state": "idle",
+  "task": "Stopped PayChase on the sizing: free tools already send reminders and the market is too small",
+  "ventureId": null,
+  "since": "2026-11-14T09:45:19.767Z"
 }

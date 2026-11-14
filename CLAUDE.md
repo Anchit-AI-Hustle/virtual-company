@@ -19,7 +19,7 @@ not progress.
 
 ## How the company is organised
 
-- `agents/` - one charter per role. Sixteen department agents in `company/team.json`, plus one
+- `agents/` - one charter per role. Seventeen department agents in `company/team.json`, plus one
   venture lead per active idea (`agents/venture-lead.md`).
 - One idea, one lead. Every venture the CEO picks gets its own named lead agent who owns it
   from research to revenue. Leads run in parallel, each in its own session and copy of the
@@ -52,7 +52,7 @@ A venture moves one stage at a time, and only when the gate for that stage is me
 |-------------|------|
 | validating  | CEO picked it from the scored ideas |
 | validated   | 3 or more pieces of demand evidence, each with a source link |
-| spec        | Research wrote a business case (`cases/<id>.md`) that clears the bar in `config.businessCase`, the CEO gave a go decision on it, and a spec file with acceptance tests exists |
+| spec        | Research wrote a business case (`cases/<id>.md`) that clears `config.businessCase`; the sizing agent counted users by cohort, likelihood and 12 month earnings (`cases/<id>.sizing.json`) and it clears `config.sizing`; the CEO gave a go decision; a spec file with acceptance tests exists |
 | building    | The spec passed the product review. At most `wip.pods` ventures are worked at once |
 | qa          | The lead says every acceptance test passes locally |
 | live        | Independent QA passed it at 390, 820 and 1440 px with zero console errors; product, engineering, design, security and legal reviews passed; it is served at `https://<id>.anchit-tandon.com` |

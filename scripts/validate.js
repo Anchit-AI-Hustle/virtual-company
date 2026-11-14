@@ -4,6 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { loadBrain, leadId, knownAgents } = require('./brain.js');
+const { checkSizing, loadSizing } = require('./sizing.js');
 
 const isUrl = (s) => typeof s === 'string' && /^https?:\/\/[^\s]+\.[^\s]+/.test(s);
 const DASH = new RegExp('[' + String.fromCharCode(0x2013, 0x2014) + ']');
@@ -120,6 +121,10 @@ function validate(dir) {
         if (total < bc.minTotal || bc.scoreKeys.some((k) => sc[k] < bc.minEach) || bc.mustBeAtLeast3.some((k) => sc[k] < 3)) err('case', `${tag}: business case scores below the bar (${total} of 35, needs ${bc.minTotal}, no score under ${bc.minEach}, and at least 3 for ${bc.mustBeAtLeast3.join(' and ')})`);
       }
       if (!log.some((e) => e.agent === 'research' && e.ventureId === v.id && e.kind === 'done' && /business case/i.test(e.action))) err('case', `${tag}: the business case must be written and logged by research, not the venture lead`);
+      const sz = v.sizing && v.sizing.path ? loadSizing(dir, v.sizing.path) : null;
+      if (!sz) err('sizing', `${tag}: no spec before the market sizing (cases/${v.id}.sizing.json)`);
+      else for (const pr of checkSizing(sz, config.sizing)) err('sizing', `${tag}: sizing ${pr}`);
+      if (!log.some((e) => e.agent === 'sizing' && e.ventureId === v.id && e.kind === 'done')) err('sizing', `${tag}: the sizing must be done and logged by the sizing agent`);
       if (!verdict('ceo')) err('review', `${tag}: no spec before the CEO's go decision on the business case, logged by ceo`);
     }
     if (at(v.stage) >= at('building') && !verdict('product')) err('review', `${tag}: cannot be built before the product review of its spec passes`);

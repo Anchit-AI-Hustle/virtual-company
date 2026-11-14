@@ -1,0 +1,76 @@
+{
+  "problem": {
+    "who": "Indian freelancers and very small service businesses (designers, developers, writers, marketers, small agencies) whose clients pay invoices after the due date, and who find it awkward to chase. Most of them already have a free invoicing tool that sends reminders, so the unmet need is narrow: the wording and the nerve to send reminder 2 and 3, not the sending itself.",
+    "frequency": "yearly",
+    "severity": 3,
+    "evidence": [
+      { "claim": "PayPal survey of 500 Indian freelancers: many are paid only 2 to 4 weeks after invoicing, which creates a cash flow gap; about 61% say they have not been paid at least once in their career (report wording unclear). Secondary: newspaper coverage of the PayPal report.", "url": "https://www.pressreader.com/india/hindustan-times-st-jaipur/20180116/282136406819302" },
+      { "claim": "Atradius India 2025: just over half of B2B invoices are still outstanding at the due date, invoices take on average 34 days beyond due date to turn into cash, and about 5% are written off.", "url": "https://atradiuscollections.com/fr/ca/publications/rapports/b2b-payment-practices-trends-india-2025" },
+      { "claim": "Lok Sabha answer: 1,55,240 delayed payment applications worth Rs 37,165.82 crore were filed on MSME Samadhaan from 30 Oct 2017 to 31 Jul 2023, about 27,000 a year.", "url": "https://eparlib.nic.in/bitstream/123456789/2501340/1/AU2328.pdf" },
+      { "claim": "IPSE (UK): 54% of freelancers had a client payment delay in their career, 35% in the last 12 months. This is the best frequency anchor found: a delay is roughly a once a year event per freelancer, not a weekly one.", "url": "https://www.ipse.co.uk/policy/research/financial-wellbeing/late-payment-within-the-self-employed-sector.html" },
+      { "claim": "Freelancers Union (US, 2015 survey): 50% of freelancers had trouble getting paid in 2014, late or not at all.", "url": "https://onlabor.org/wp-content/uploads/2017/05/FU_NonpaymentReport_r3.pdf" },
+      { "claim": "Free alternative: Zoho Invoice in India is described by Zoho as forever free, and lists automated payment reminders among its free features.", "url": "https://www.zoho.com/in/invoice/kb/general/zoho-invoice-free.html" }
+    ]
+  },
+  "cohorts": [
+    {
+      "name": "Indian high-skilled gig workers and freelancers billing domestic clients",
+      "country": "IN",
+      "size": 1355200,
+      "sizeSource": "https://pib.gov.in/PressReleasePage.aspx?PRID=1837277",
+      "reachablePct": 0.5,
+      "reachBasis": "Size: NITI Aayog via PIB puts India's gig workforce at 77 lakh in 2020-21 with 22% high-skilled, so 16,94,000 high-skilled; I take out the 20% assigned to the foreign-billing cohort below to avoid double counting, leaving 13,55,200. NITI counts all gig workers, not only invoicing freelancers, so this is a ceiling. Reach: without ads or outreach the only channel is organic search for phrases like payment reminder message to client, plus a free template. Those results are held by Zoho, Refrens, Vyapar and many blogs, and any chatbot writes the same message for free. 0.5% finding a new tool in year one is generous for a new domain with no backlinks; no source measures it, so this is a judgement.",
+      "payingPct": 2,
+      "payingBasis": "Lenny's Newsletter benchmarks freemium free-to-paid at 3 to 5% good and 6 to 8% great (https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion). I go below good because the same job is free: Zoho Invoice is forever free with automated reminders (https://www.zoho.com/in/invoice/kb/general/zoho-invoice-free.html), Refrens offers email and WhatsApp reminders with a free plan (https://www.refrens.com/en-gb/invoicing-software-with-automated-payment-reminders), and one-time purchases of templates are easy to copy.",
+      "priceINR": 499,
+      "purchasesPerYear": 1
+    },
+    {
+      "name": "Indian freelancers billing foreign clients",
+      "country": "IN",
+      "size": 338800,
+      "sizeSource": "https://pib.gov.in/PressReleasePage.aspx?PRID=1837277",
+      "reachablePct": 1,
+      "reachBasis": "Size: no primary count of Indian freelancers with foreign clients exists. The PayPal survey says 80% of its 500 freelancers work with both international and domestic clients (https://www.pressreader.com/india/hindustan-times-st-jaipur/20180116/282136406819302), but that sample is PayPal users and so biased toward foreign billing. I take a conservative 20% of NITI's 16,94,000 high-skilled gig workers, which is 3,38,800. Reach: this group is more online and searches in English, so I allow 1%, still a judgement with no measured source.",
+      "payingPct": 3,
+      "payingBasis": "Earns in USD and has higher incomes (PayPal survey average around INR 20 lakh a year, secondary source above), so I place it at the bottom of the 3 to 5% good freemium range from Lenny's Newsletter (https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion). Offsetting this, payment platforms they already use (Upwork escrow, PayPal, Skydo invoices) reduce the need to chase.",
+      "priceINR": 499,
+      "purchasesPerYear": 1
+    },
+    {
+      "name": "US freelancers doing skilled knowledge work",
+      "country": "US",
+      "size": 30000000,
+      "sizeSource": "https://investors.upwork.com/news-releases/news-release-details/upwork-study-finds-64-million-americans-freelanced-2023-adding",
+      "reachablePct": 0.01,
+      "reachBasis": "Size: Upwork Freelance Forward 2023 says about 30 million of 64 million US freelancers did knowledge work. Reach is tiny: an India-built, INR-first tool with no ads competes in US search with FreshBooks, Invoice Ninja, Bonsai, Chaser and dozens of indie tools such as PayNudge and PayNudger. 0.01% (3,000 people a year) is a judgement with no measured source.",
+      "payingPct": 1,
+      "payingBasis": "Invoice Ninja gates auto late-payment reminders behind Pro at USD 14 a month (https://invoiceninja.com/pricing-plans/), so US buyers do pay for this, but PayNudge at USD 9 a month reports no paying customers (https://dev.to/simon_zhang_c9791e1374295/i-built-a-saas-to-stop-the-awkward-hey-did-you-get-my-invoice-conversation-48g7). 1% is below the freemium benchmark to reflect that.",
+      "priceINR": 899,
+      "purchasesPerYear": 1
+    },
+    {
+      "name": "Indian micro and small businesses escalating late payment on MSME Samadhaan (weakest cohort)",
+      "country": "IN",
+      "size": 27000,
+      "sizeSource": "https://eparlib.nic.in/bitstream/123456789/2501340/1/AU2328.pdf",
+      "reachablePct": 1,
+      "reachBasis": "Size: 1,55,240 applications over 69 months (Oct 2017 to Jul 2023) is about 27,000 a year. This is the only primary count of Indian small sellers with a proven, severe late payment problem. They search for remedies, so 1% could find a reminder tool, but they are already past polite reminders and into a legal process.",
+      "payingPct": 1,
+      "payingBasis": "A polite reminder sequence is the wrong product for a business that has filed a statutory complaint; they need legal notices or recovery services, and the product cannot make claims about statutory interest without owner legal approval. 1% is a judgement, kept low.",
+      "priceINR": 499,
+      "purchasesPerYear": 1
+    }
+  ],
+  "likelihoodPct": 10,
+  "likelihoodBasis": "Base rate: the direct indie comparables found (PayNudge, PayNudger, Koteshen and many similar Indie Hackers threads about reminder 2) report no paying customers or revenue, and one founder says getting users is taking much longer than building. The players that survive are either free and bundled into a larger invoicing or accounting suite (Zoho Invoice, Refrens, Vyapar) or sell to larger businesses at high prices (Chaser from GBP 199 a month). A one-time Rs 499 template and tracker has no repeat revenue, no moat against free tools or a chatbot, and no distribution channel allowed without owner approval (no ads, no posting, no outreach). What raises it slightly: the pain is real and emotional (awkwardness), and the build is tiny. 10% is below the 15% bar; I found no evidence to justify more.",
+  "comparables": [
+    { "name": "Zoho Invoice", "url": "https://www.zoho.com/in/invoice/kb/general/zoho-invoice-free.html", "outcome": "Free forever in India with automated payment reminders included. Sets the price of the core job at zero." },
+    { "name": "Refrens", "url": "https://www.refrens.com/en-gb/invoicing-software-with-automated-payment-reminders", "outcome": "Indian invoicing tool with email and WhatsApp reminders, a free plan and paid plans from USD 220 a year (Capterra, secondary: https://www.capterra.com/p/204191/Refrens/pricing/). Reminders are a feature inside a suite, not a standalone product." },
+    { "name": "Invoice Ninja", "url": "https://invoiceninja.com/pricing-plans/", "outcome": "Survives with a free tier (5 clients) and puts auto late-payment reminders in Pro at USD 14 a month. Shows reminders can be a paid upsell, but inside a full invoicing product." },
+    { "name": "Chaser", "url": "https://www.chaserhq.com/chaser-detailed-pricing-breakdown", "outcome": "Standalone receivables chasing that works, but for companies: cheapest plan GBP 199 a month for up to GBP 4 million revenue. Not a freelancer price point." },
+    { "name": "PayNudge", "url": "https://dev.to/simon_zhang_c9791e1374295/i-built-a-saas-to-stop-the-awkward-hey-did-you-get-my-invoice-conversation-48g7", "outcome": "Indie reminder tool for freelancers at USD 9 a month. No users or revenue reported; founder says getting users is taking much longer than building." },
+    { "name": "PayNudger", "url": "https://www.indiehackers.com/post/chasing-overdue-invoices-is-awkward-i-built-a-small-tool-to-automate-reminders-4f89bae266", "outcome": "Indie polite overdue reminder tool. Only reported user is the founder's relative; no price, no revenue." }
+  ],
+  "scenarios": { "worstFactor": 0.2, "bestFactor": 3 }
+}
