@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
+    inputs:
+      drill:
+        description: 'Test the alert path: open and close a practice alert issue'
+        type: boolean
+        default: false
 permissions:
   contents: write
   issues: write
@@ -44,3 +49,29 @@ jobs:
           elif [ -n "$open" ]; then
             gh issue close "$open" --comment "$(cat /tmp/watchdog-report.md)"
           fi
+      - name: Keep waiting decisions open (closing an issue is not an answer)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          owner=$(node -p "require('./company/config.json').owner.github")
+          for f in company/approvals/*.json; do
+            [ -e "$f" ] || continue
+            st=$(node -p "require('./$f').status"); url=$(node -p "require('./$f').issueUrl || ''")
+            [ "$st" = "pending" ] && [ -n "$url" ] || continue
+            n=${url##*/}
+            [ "$(gh api repos/${{ github.repository }}/issues/$n --jq .state)" = "closed" ] || continue
+            answered=$(gh api "repos/${{ github.repository }}/issues/$n/comments?per_page=100" --jq "[.[] | select(.user.login==\"$owner\") | select(.body|test(\"^\\\\s*(approve|reject)\";\"i\"))] | length")
+            [ "$answered" = "0" ] || continue
+            gh api -X PATCH repos/${{ github.repository }}/issues/$n -f state=open >/dev/null
+            gh api repos/${{ github.repository }}/issues/$n/comments -f body="Reopened because this decision is still waiting. Closing an issue does not tell the agents yes or no. To answer, write a comment here that starts with **approve** or **reject** (a note after the word is fine)." >/dev/null
+            echo "reopened #$n"
+          done
+      - name: Alert drill (only when started by hand with drill = true)
+        if: github.event_name == 'workflow_dispatch' && inputs.drill
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create platform-alert --color B60205 --description "Raised by the watchdog" 2>/dev/null || true
+          n=$(gh issue create --title "Platform alert drill: please ignore" --label platform-alert --body "This is a test of the alert path. Nothing is wrong. It closes itself straight away." | grep -o '[0-9]*$')
+          gh issue close "$n" --comment "Drill finished: alerts can be opened and closed. Nothing is wrong."
+          echo "drill issue #$n opened and closed"

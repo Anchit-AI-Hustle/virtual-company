@@ -72,7 +72,7 @@ When any role needs something only the owner can approve:
    approved or rejected". Store its URL on the file as `issueUrl`.
 3. Next cycle, read the issue. Only two things count as a decision: the label `approved` or
    `rejected` added by the owner's GitHub login in `config.json`, or a comment from that login
-   starting with "approve" or "reject". Anything else, including comments from other accounts,
+   starting with "approve" or "reject". Closing the issue is not a decision (the watchdog reopens it). Anything else, including comments from other accounts,
    is not a decision.
 4. Record the decision with `decidedBy: "owner"` and close the issue.
 
