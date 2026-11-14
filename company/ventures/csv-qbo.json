@@ -1,0 +1,41 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:32:23.142Z",
+  "updatedAt": "2026-11-14T14:32:23.142Z",
+  "killReason": null,
+  "lead": null,
+  "stage": "idea",
+  "id": "csv-qbo",
+  "title": "CSV to QBO",
+  "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
+  "customer": "US bookkeepers and small business owners importing bank history into QuickBooks",
+  "revenueModel": "Monthly subscription in USD after a free first file",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 12
+  },
+  "evidence": [
+    {
+      "claim": "DocuClipper sells CSV to QBO conversion from $29 a month for 60 pages.",
+      "url": "https://docuclipper.com/solutions/convert-csv-to-qbo",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "ProperSoft sells its CSV2QBO converter with plans from $19.99 a month.",
+      "url": "https://www.propersoft.net/csv2qbo",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "A QuickBooks community user asks for a CSV to QBO converter, saying the independent ones are not very good; a reply points to a $60 converter.",
+      "url": "https://quickbooks.intuit.com/community/banking-4/cvs-convertor-32368",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Research. Against: Statement Extract already offers a CSV to QBO converter that it describes as free forever with unlimited files (https://statementextract.pages.dev/convert/csv-to-qbo/), so the search results already hold free clones and distribution is crowded."
+}

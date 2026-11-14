@@ -1,0 +1,36 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:32:23.142Z",
+  "updatedAt": "2026-11-14T14:32:23.142Z",
+  "killReason": null,
+  "lead": null,
+  "stage": "idea",
+  "id": "donor-letters",
+  "title": "Donor Letters",
+  "oneLiner": "Year-end giving statements for every donor from one spreadsheet or QuickBooks export, printed or emailed as PDFs",
+  "customer": "Small US churches and nonprofits that track gifts in QuickBooks or a spreadsheet",
+  "revenueModel": "Annual season pass per organisation in USD, priced per batch of statements",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 4,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 13
+  },
+  "evidence": [
+    {
+      "claim": "A QuickBooks Online user says the software does not let nonprofits create end-of-year donation letters, and replies point to third-party apps such as BRC Donor Statements and DonorStatements.com.",
+      "url": "https://quickbooks.intuit.com/community/reports-and-accounting-5/year-end-donation-letters-37655",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "The Donor Receipts app for QuickBooks Online gives 50 receipts free and then sells more receipts for $25.",
+      "url": "https://ufuoma-ogaga-5d6r.squarespace.com/blog/take-the-stress-out-of-giving-statements",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Research. Season peaks in January, so it must ship by late December or wait a year. Against: B1.church is free for every church with no paid tiers and already creates year-end giving statements (https://support.churchapps.org/docs/b1-admin/guides/year-end-reports), and donor CRMs bundle this. Legal: no promise of tax compliance."
+}

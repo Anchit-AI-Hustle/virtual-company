@@ -19,5 +19,12 @@
     "action": "Gathered first live evidence for 5 new ideas: bake-cost, clean-quote, stall-tally, sitter-sheet, class-pass",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:32:23.227Z",
+    "agent": "research",
+    "action": "New sourced ideas: csv-qbo, ach-batch, donor-letters",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

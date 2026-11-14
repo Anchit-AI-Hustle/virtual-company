@@ -1,0 +1,41 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-14T14:32:23.142Z",
+  "updatedAt": "2026-11-14T14:32:23.142Z",
+  "killReason": null,
+  "lead": null,
+  "stage": "idea",
+  "id": "ach-batch",
+  "title": "ACH Batch",
+  "oneLiner": "Build a bank-ready NACHA ACH payment file from a spreadsheet of payees in the browser, nothing uploaded",
+  "customer": "US small businesses and bookkeepers paying contractors or payroll by ACH through their bank",
+  "revenueModel": "Monthly subscription in USD, first file free",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 13
+  },
+  "evidence": [
+    {
+      "claim": "Halfpricesoft sells ezACH desktop software that creates NACHA files for $199 per installation.",
+      "url": "https://www.halfpricesoft.com/NACHA-ACH-direct-deposit-software.asp",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "PayFile Pro, a paid browser tool that turns a payments CSV into a NACHA file, is listed with a one-time licence of $10 to $75 or credit packs from $10.",
+      "url": "https://alternativeto.net/software/payfile-pro/about/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Treasury Software sells ACH software for creating NACHA files from spreadsheets, with optional paid maintenance after 90 days.",
+      "url": "https://www.treasurysoftware.com/NACHA-File-ACH.html",
+      "foundAt": "2026-11-14"
+    }
+  ],
+  "nextAction": "Research. Against: some banks take a plain CSV of ACH payments directly, for example Chase lets business users import a formatted CSV file of ACH payment instructions (https://chase.com/content/dam/chaseonline/en/demos/cbo/pdfs/cbo_csvfile_helpguide.pdf), and PayFile Pro already fills the browser-tool gap cheaply. Legal must check that handling bank account numbers in the browser only is acceptable."
+}
