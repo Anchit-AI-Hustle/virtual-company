@@ -37,7 +37,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T14:16:06.965Z",
+  "updatedAt": "2026-11-14T14:25:59.467Z",
   "killReason": null,
   "id": "rally-rounds",
   "title": "Rally Rounds",
@@ -73,5 +73,19 @@
       "url": "https://www.pickleheads.com/pricing",
       "foundAt": "2026-11-14"
     }
-  ]
+  ],
+  "case": {
+    "path": "cases/rally-rounds.md",
+    "scores": {
+      "pain": 2,
+      "willingnessToPay": 2,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 1,
+      "speedToRevenue": 1,
+      "recurringRevenue": 3
+    },
+    "total": 14,
+    "recommendation": "no-go"
+  }
 }
