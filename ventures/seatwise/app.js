@@ -107,10 +107,14 @@
     var g = state.guests.find(function (x) { return x.id === gid; });
     if (!g) return;
     var from = state.tables[g.table] ? state.tables[g.table].name : '';
+    g.lastTable = g.table;
     g.table = null;
     say(g.name + ' moved back from ' + from);
     save();
     renderPlan();
+    var cards = document.querySelectorAll('#tables .table-head');
+    var head = cards[g.lastTable];
+    if (head) head.focus();
   }
 
   function autoSeat() {
@@ -140,7 +144,7 @@
     picked = null;
     save();
     renderPlan();
-    say(left ? left + ' guests still need a seat. Add a table or more seats.' : 'Auto-seat done.');
+    say(left ? left + (left === 1 ? ' guest still needs' : ' guests still need') + ' a seat. Add a table or more seats.' : 'Auto-seat done.');
   }
 
   function renderPlan() {
@@ -201,12 +205,16 @@
       nameIn.addEventListener('change', function () {
         tb.name = clean(nameIn.value).slice(0, 40) || 'Table ' + (i + 1);
         save(); renderPlan();
+        var again = document.querySelectorAll('#tables .table-tools input[type=number]')[i];
+        if (again) again.focus();
       });
       var seatsIn = el('input', { type: 'number', min: '1', max: '50', value: String(tb.seats), inputmode: 'numeric', 'aria-label': 'Seats at ' + tb.name });
       seatsIn.addEventListener('change', function () {
         var n = parseInt(seatsIn.value, 10);
-        if (!(n >= at.length && n <= 50)) { say('Seats at ' + tb.name + ' must be between ' + Math.max(1, at.length) + ' and 50.'); seatsIn.value = tb.seats; return; }
+        if (!(n >= Math.max(1, at.length) && n <= 50)) { say('Seats at ' + tb.name + ' must be between ' + Math.max(1, at.length) + ' and 50.'); seatsIn.value = tb.seats; return; }
         tb.seats = n; save(); renderPlan();
+        var back = document.querySelectorAll('#tables .table-head')[i];
+        if (back) back.focus();
       });
       tools.appendChild(nameIn);
       tools.appendChild(seatsIn);
@@ -235,7 +243,7 @@
     v.appendChild(az);
   }
 
-  function csvCell(s) { s = String(s == null ? '' : s); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+  function csvCell(s) { s = String(s == null ? '' : s); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
   function downloadCsv() {
     var rows = ['name,group,table'].concat(state.guests.map(function (g) {
       return [g.name, g.group, g.table != null ? state.tables[g.table].name : ''].map(csvCell).join(',');

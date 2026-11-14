@@ -43,7 +43,7 @@ One flow: paste guests, set tables, seat guests by tapping, print the chart.
 4. Plan: top bar "N of M seated" and buttons "Auto-seat", "Print", "CSV". Unseated list with a
    search box. Table cards "Table 1 . 6 of 8". Empty state "Everyone has a seat." Full table:
    "Table 3 is full".
-5. Print (`?print` view, browser print): event name, tables with guests, A to Z list.
+5. Print (the Print button or the browser's print, which builds a print-only view): event name, tables with guests, A to Z list.
 6. Pro (`/pro.html`): "Seatwise Pro is not on sale yet." Planned features, proposed price.
 7. Privacy note in footer: "Your list never leaves this device. Seatwise stores it only in your
    browser's local storage."

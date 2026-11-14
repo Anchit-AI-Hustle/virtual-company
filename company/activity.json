@@ -13,9 +13,9 @@
   },
   "security": {
     "state": "done",
-    "task": "Secret scan: no keys, tokens or passwords in tracked files",
-    "ventureId": null,
-    "since": "2026-11-14T06:48:35.527Z"
+    "task": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text",
+    "ventureId": "seatwise",
+    "since": "2026-11-14T06:56:34.758Z"
   },
   "data": {
     "state": "done",
@@ -49,9 +49,9 @@
   },
   "legal": {
     "state": "done",
-    "task": "Screened 5 ideas: none in excluded categories. Paychase must not make statutory interest claims without a legal approval. No competitor brand names on our pages",
-    "ventureId": null,
-    "since": "2026-11-14T06:49:00.967Z"
+    "task": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
+    "ventureId": "seatwise",
+    "since": "2026-11-14T06:59:27.141Z"
   },
   "product": {
     "state": "done",
@@ -61,9 +61,9 @@
   },
   "design": {
     "state": "done",
-    "task": "Design section added to Seatwise spec: rose and paper tokens, plan screen first",
+    "task": "Seatwise design re-review passed: all tap targets at least 44 px",
     "ventureId": "seatwise",
-    "since": "2026-11-14T06:50:02.010Z"
+    "since": "2026-11-14T06:59:27.074Z"
   },
   "sales": {
     "state": "done",
@@ -73,8 +73,14 @@
   },
   "engineer": {
     "state": "done",
-    "task": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+    "task": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
     "ventureId": "seatwise",
-    "since": "2026-11-14T06:52:44.376Z"
+    "since": "2026-11-14T06:59:27.041Z"
+  },
+  "qa": {
+    "state": "done",
+    "task": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship",
+    "ventureId": "seatwise",
+    "since": "2026-11-14T06:59:27.106Z"
   }
 }

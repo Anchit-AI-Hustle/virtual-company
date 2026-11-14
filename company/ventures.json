@@ -28,9 +28,25 @@
     "url": null,
     "qa": null,
     "metrics": null,
-    "reviews": {},
+    "reviews": {
+      "design": {
+        "passed": true,
+        "at": "2026-11-14T06:59:27.019Z",
+        "notes": "Re-review passed after fix: all tap targets at least 44 px at 390, 820, 1440, input border 4.07 to 1, first screen clear"
+      },
+      "security": {
+        "passed": true,
+        "at": "2026-11-14T06:59:27.019Z",
+        "notes": "No secrets, no requests after load, strict CSP with zero violations, XSS names render as text, CSV formula cells neutralised"
+      },
+      "legal": {
+        "passed": true,
+        "at": "2026-11-14T06:59:27.019Z",
+        "notes": "Claims true as built, privacy note says what and why, Pro page says price proposed and nothing sold. Terms and refunds filed as ap-3 before any sale"
+      }
+    },
     "createdAt": "2026-11-14T06:49:00.906Z",
-    "updatedAt": "2026-11-14T06:52:44.351Z",
+    "updatedAt": "2026-11-14T06:59:27.019Z",
     "killReason": null,
     "id": "seatwise",
     "title": "Seatwise",
@@ -44,7 +60,19 @@
       "distribution": 4,
       "total": 14
     },
-    "nextAction": "QA tests independently at 390, 820, 1440; design, security and legal review"
+    "nextAction": "DevOps releases to seatwise.anchit-tandon.com, QA re-tests the live URL",
+    "qaLocal": {
+      "passed": true,
+      "reviewer": "qa",
+      "viewports": [
+        390,
+        820,
+        1440
+      ],
+      "consoleErrors": 0,
+      "checkedAt": "2026-11-14T06:59:27.019Z",
+      "notes": "Independent local QA: 15 of 15 acceptance tests pass; defects D1 to D7 fixed and re-tested. Live URL still to test."
+    }
   },
   {
     "priceINR": null,

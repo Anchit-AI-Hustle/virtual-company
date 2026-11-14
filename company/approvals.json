@@ -22,5 +22,17 @@
     "status": "pending",
     "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2",
     "createdAt": "2026-11-14T06:50:27.227Z"
+  },
+  {
+    "id": "ap-3",
+    "ventureId": "seatwise",
+    "type": "legal",
+    "ask": "Approve terms of sale and a refund policy before Seatwise Pro is sold (default: 7 day refund on request)",
+    "why": "Terms and refunds carry legal weight; needed only once price and rail are approved",
+    "costINR": 0,
+    "ifNo": "Pro stays not on sale",
+    "status": "pending",
+    "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/3",
+    "createdAt": "2026-11-14T06:59:27.019Z"
   }
 ]

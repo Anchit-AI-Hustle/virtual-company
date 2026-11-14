@@ -186,5 +186,96 @@
     "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:52:46.466Z",
+    "agent": "qa",
+    "action": "Started: Independent test of Seatwise at 390, 820, 1440",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:52:46.499Z",
+    "agent": "design",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:52:46.531Z",
+    "agent": "security",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:52:46.559Z",
+    "agent": "legal",
+    "action": "Started: Launch review of Seatwise",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:56:34.690Z",
+    "agent": "design",
+    "action": "Blocked: Seatwise design review failed: header Pro link is 41.6 px wide, below the 44 px minimum. Back to engineer",
+    "ventureId": "seatwise",
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-14T06:56:34.725Z",
+    "agent": "qa",
+    "action": "Seatwise local QA: all 15 acceptance tests pass, 0 console errors at 390, 820, 1440. Defects to fix: table seats can be set to 0, focus lost after unseat, 1 guests plural, CSV formula cells, USD missing on Pro page",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:56:34.758Z",
+    "agent": "security",
+    "action": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:56:34.796Z",
+    "agent": "legal",
+    "action": "Seatwise legal review passed. Terms of sale and refund policy needed before Pro is sold, filing legal approval",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:56:34.827Z",
+    "agent": "engineer",
+    "action": "Started: Fixing Seatwise review defects",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:59:27.041Z",
+    "agent": "engineer",
+    "action": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:27.074Z",
+    "agent": "design",
+    "action": "Seatwise design re-review passed: all tap targets at least 44 px",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:27.106Z",
+    "agent": "qa",
+    "action": "Seatwise re-test passed: 7 defects fixed, 15 of 15 tests, 0 console errors at 390, 820, 1440. Ready to ship",
+    "ventureId": "seatwise",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:59:27.141Z",
+    "agent": "legal",
+    "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]
