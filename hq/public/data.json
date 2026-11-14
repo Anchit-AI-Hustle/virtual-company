@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:39:26.791Z",
+  "builtAt": "2026-11-14T06:41:56.720Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -85,13 +85,16 @@
       "department": "leadership",
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
-      "state": "idle",
-      "task": null,
-      "since": null,
+      "state": "done",
+      "task": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow",
+      "since": "2026-11-14T06:41:56.619Z",
       "ventureId": null,
       "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "last": {
+        "at": "2026-11-14T06:41:56.619Z",
+        "action": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow"
+      },
+      "actions": 2
     },
     {
       "id": "research",
@@ -306,6 +309,20 @@
   ],
   "ventureTrail": {},
   "log": [
+    {
+      "at": "2026-11-14T06:41:56.619Z",
+      "agent": "ops",
+      "action": "Standup: pipeline empty, nothing live, no approvals pending, ledger empty. Today: keep lights on, CEO generates and scores ideas, push the top one as far as gates allow",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:41:56.584Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-14T03:00:00Z",
       "agent": "ceo",
