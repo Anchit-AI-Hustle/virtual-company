@@ -1,9 +1,9 @@
 {
   "ops": {
-    "state": "done",
-    "task": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again",
+    "state": "idle",
+    "task": "Day closed. Seatwise built, reviewed and deployed READY; live gate blocked on Cloudflare DNS (ap-4). 4 approvals pending. Revenue 0 INR",
     "ventureId": null,
-    "since": "2026-11-14T06:50:01.942Z"
+    "since": "2026-11-14T07:03:46.331Z"
   },
   "devops": {
     "state": "blocked",
@@ -12,75 +12,87 @@
     "since": "2026-11-14T07:03:32.057Z"
   },
   "security": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:56:34.758Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.042Z"
   },
   "data": {
-    "state": "done",
+    "state": "idle",
     "task": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:50:02.047Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:45.901Z"
   },
   "support": {
-    "state": "done",
+    "state": "idle",
     "task": "No live ventures, no customer messages",
     "ventureId": null,
-    "since": "2026-11-14T06:48:35.600Z"
+    "since": "2026-11-14T07:03:46.149Z"
   },
   "finance": {
-    "state": "done",
+    "state": "idle",
     "task": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
     "ventureId": null,
-    "since": "2026-11-14T06:48:35.693Z"
+    "since": "2026-11-14T07:03:46.184Z"
   },
   "ceo": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T07:03:32.105Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:45.822Z"
   },
   "research": {
-    "state": "done",
-    "task": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:49:10.432Z"
+    "state": "idle",
+    "task": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source",
+    "ventureId": null,
+    "since": "2026-11-14T07:03:45.861Z"
   },
   "legal": {
-    "state": "done",
+    "state": "idle",
     "task": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:59:27.141Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.220Z"
   },
   "product": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise moved validated to spec",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:50:27.282Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:45.940Z"
   },
   "design": {
-    "state": "done",
+    "state": "idle",
     "task": "Seatwise design re-review passed: all tap targets at least 44 px",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:59:27.074Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:45.976Z"
   },
   "sales": {
-    "state": "done",
+    "state": "idle",
     "task": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:50:27.252Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.112Z"
   },
   "engineer": {
-    "state": "done",
+    "state": "idle",
     "task": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
-    "ventureId": "seatwise",
-    "since": "2026-11-14T06:59:27.041Z"
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.009Z"
   },
   "qa": {
     "state": "blocked",
     "task": "Seatwise live check failed: Cloudflare proxy injects an analytics beacon and bot script, CSP blocks them, 3 console errors per page. Back to building until owner approves ap-4",
     "ventureId": "seatwise",
     "since": "2026-11-14T07:03:32.014Z"
+  },
+  "growth": {
+    "state": "idle",
+    "task": null,
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.077Z"
+  },
+  "people": {
+    "state": "idle",
+    "task": null,
+    "ventureId": null,
+    "since": "2026-11-14T07:03:46.255Z"
   }
 }

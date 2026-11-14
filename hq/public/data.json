@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T07:03:32.256Z",
+  "builtAt": "2026-11-14T07:03:46.465Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -142,10 +142,10 @@
       "stage": "idea",
       "score": 13,
       "url": null,
-      "nextAction": "Research: find a third independent signal and a community that welcomes tools. Against: many free generators exist",
+      "nextAction": "Research: needs a third independent signal read at the source. Against: crowded, many organiser apps already listed in search (Reclub, Pickleheads, Round Robin Assistant, Pickleball Scheduler)",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "updatedAt": "2026-11-14T07:03:45.734Z",
       "evidenceCount": 2,
       "specPath": null,
       "reviews": {
@@ -236,11 +236,11 @@
       "department": "leadership",
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics",
-      "since": "2026-11-14T07:03:32.105Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:45.822Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T07:03:32.105Z",
         "action": "Seatwise back to building: product passes, only the owner-only Cloudflare fix remains. Not loosening CSP to allow third-party analytics"
@@ -254,16 +254,16 @@
       "department": "leadership",
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
-      "state": "done",
-      "task": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again",
-      "since": "2026-11-14T06:50:01.942Z",
+      "state": "idle",
+      "task": "Day closed. Seatwise built, reviewed and deployed READY; live gate blocked on Cloudflare DNS (ap-4). 4 approvals pending. Revenue 0 INR",
+      "since": "2026-11-14T07:03:46.331Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:50:01.942Z",
-        "action": "Logged: the earlier push of 78404ba had a failing test (fixture assumed no FX rate). Fixed in ffe67db, check green again"
+        "at": "2026-11-14T07:03:46.291Z",
+        "action": "Day closed. Seatwise built, reviewed and deployed READY; live gate blocked on Cloudflare DNS (ap-4). 4 approvals pending. Revenue 0 INR"
       },
-      "actions": 3
+      "actions": 5
     },
     {
       "id": "research",
@@ -272,16 +272,16 @@
       "department": "strategy",
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
-      "state": "done",
-      "task": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones",
-      "since": "2026-11-14T06:49:10.432Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "state": "idle",
+      "task": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source",
+      "since": "2026-11-14T07:03:45.861Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T06:49:10.432Z",
-        "action": "Seatwise validating to validated: 4 independent sourced signals that people pay for seating chart tools and are unhappy with free ones"
+        "at": "2026-11-14T07:03:45.755Z",
+        "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
       },
-      "actions": 3
+      "actions": 4
     },
     {
       "id": "data",
@@ -290,11 +290,11 @@
       "department": "strategy",
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
-      "state": "done",
+      "state": "idle",
       "task": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved",
-      "since": "2026-11-14T06:50:02.047Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:45.901Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:50:02.047Z",
         "action": "Measurement section added: no tracking, stats.json reports null counts until a counter is approved"
@@ -308,11 +308,11 @@
       "department": "product",
       "color": "#0E6E8C",
       "trait": "Cuts scope until it ships in three cycles.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise moved validated to spec",
-      "since": "2026-11-14T06:50:27.282Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:45.940Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:50:27.282Z",
         "action": "Seatwise moved validated to spec"
@@ -326,11 +326,11 @@
       "department": "product",
       "color": "#1C93B5",
       "trait": "Designs for a thumb on a 390 px screen first.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise design re-review passed: all tap targets at least 44 px",
-      "since": "2026-11-14T06:59:27.074Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:45.976Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:59:27.074Z",
         "action": "Seatwise design re-review passed: all tap targets at least 44 px"
@@ -344,11 +344,11 @@
       "department": "engineering",
       "color": "#0B7A5E",
       "trait": "Plain HTML, CSS and JS unless the spec forces more.",
-      "state": "done",
+      "state": "idle",
       "task": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page",
-      "since": "2026-11-14T06:59:27.041Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:46.009Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:59:27.041Z",
         "action": "Fixed Seatwise review defects: Pro link width, seats 0, focus after unseat, plural, CSV formula cells, USD on Pro page"
@@ -398,11 +398,11 @@
       "department": "engineering",
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
-      "state": "done",
+      "state": "idle",
       "task": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text",
-      "since": "2026-11-14T06:56:34.758Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:46.042Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:56:34.758Z",
         "action": "Seatwise security review passed: no secrets, no requests after load, strict CSP holds, XSS input renders as text"
@@ -418,7 +418,7 @@
       "trait": "Brings the right buyers without spending a rupee.",
       "state": "idle",
       "task": null,
-      "since": null,
+      "since": "2026-11-14T07:03:46.077Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": null,
@@ -431,11 +431,11 @@
       "department": "market",
       "color": "#D99A1E",
       "trait": "Makes paying the easiest step on the page.",
-      "state": "done",
+      "state": "idle",
       "task": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
-      "since": "2026-11-14T06:50:27.252Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:46.112Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:50:27.252Z",
         "action": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2"
@@ -449,9 +449,9 @@
       "department": "market",
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-14T06:48:35.600Z",
+      "since": "2026-11-14T07:03:46.149Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -467,9 +467,9 @@
       "department": "business",
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
-      "state": "done",
+      "state": "idle",
       "task": "FX recorded: 1 USD = 94.2754 INR on 2026-11-14 (Xflow converter, last updated 12:10 IST). Ledger empty, revenue 0 INR",
-      "since": "2026-11-14T06:48:35.693Z",
+      "since": "2026-11-14T07:03:46.184Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -485,11 +485,11 @@
       "department": "business",
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
-      "state": "done",
+      "state": "idle",
       "task": "Filed ap-3: terms of sale and refund policy needed before Pro is sold",
-      "since": "2026-11-14T06:59:27.141Z",
-      "ventureId": "seatwise",
-      "ventureTitle": "Seatwise",
+      "since": "2026-11-14T07:03:46.220Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-14T06:59:27.141Z",
         "action": "Filed ap-3: terms of sale and refund policy needed before Pro is sold"
@@ -505,7 +505,7 @@
       "trait": "Reviews every agent's work and fixes the process.",
       "state": "idle",
       "task": null,
-      "since": null,
+      "since": "2026-11-14T07:03:46.255Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": null,
@@ -575,12 +575,39 @@
         "action": "Seatwise legal review passed. Terms of sale and refund policy needed before Pro is sold, filing legal approval"
       }
     ],
-    "rally-rounds": [],
+    "rally-rounds": [
+      {
+        "at": "2026-11-14T07:03:45.755Z",
+        "agent": "research",
+        "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
+      }
+    ],
     "paychase": [],
     "shaadi-budget": [],
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T07:03:46.291Z",
+      "agent": "ops",
+      "action": "Day closed. Seatwise built, reviewed and deployed READY; live gate blocked on Cloudflare DNS (ap-4). 4 approvals pending. Revenue 0 INR",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:03:45.789Z",
+      "agent": "ops",
+      "action": "Started: Closing the day: books, idle agents, CI",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T07:03:45.755Z",
+      "agent": "research",
+      "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
     {
       "at": "2026-11-14T07:03:32.105Z",
       "agent": "ceo",
