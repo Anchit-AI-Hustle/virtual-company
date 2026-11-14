@@ -19,5 +19,19 @@
     "action": "No live products to check; HQ 200, watchdog all checks passed",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:44:13.344Z",
+    "agent": "devops",
+    "action": "Vercel hit its daily deployment limit at about 14:20 UTC: venture-hq builds for 6c7ad3a onwards were rate limited. Set vc-seatwise (offline, killed) to skip builds unless its folder changes, so it stops using half the quota",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-14T14:44:13.386Z",
+    "agent": "devops",
+    "action": "Blocked: HQ shows the books as of c041a58 until the Vercel deployment limit resets; the next push after reset republishes it",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]
