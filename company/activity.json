@@ -70,5 +70,11 @@
     "task": "Proposed Seatwise Pro at INR 799 one-time (refs: SeatFlow 17.99 USD, PlanSeats 50 USD). Filed pricing approval #1 and payment rail approval #2",
     "ventureId": "seatwise",
     "since": "2026-11-14T06:50:27.252Z"
+  },
+  "engineer": {
+    "state": "done",
+    "task": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+    "ventureId": "seatwise",
+    "since": "2026-11-14T06:52:44.376Z"
   }
 }

@@ -172,5 +172,19 @@
     "action": "Seatwise moved validated to spec",
     "ventureId": "seatwise",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-14T06:50:35.281Z",
+    "agent": "engineer",
+    "action": "Started: Building Seatwise in plain HTML, CSS and JS",
+    "ventureId": "seatwise",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T06:52:44.376Z",
+    "agent": "engineer",
+    "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+    "ventureId": "seatwise",
+    "kind": "done"
   }
 ]

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seatwise - wedding seating chart planner, free and private</title>
+<meta name="description" content="Paste your guest list, tap to seat each guest, print the seating chart. Free, private, no signup. Works on your phone.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="/">Seatwise</a>
+  <nav><a href="/pro.html">Pro</a></nav>
+</header>
+<main id="main">
+
+<section id="home" class="screen">
+  <h1>Seat every guest in minutes.</h1>
+  <p class="lead">Paste your list, tap to seat, print the chart. Free, private, no signup.</p>
+  <div class="row" id="homeActions">
+    <button class="btn primary" id="startBtn" type="button">Start planning</button>
+  </div>
+  <div class="row hidden" id="resumeActions">
+    <button class="btn primary" id="continueBtn" type="button">Continue your plan</button>
+    <button class="btn" id="resetBtn" type="button">Start over</button>
+  </div>
+  <ol class="steps">
+    <li><strong>Paste</strong> your guest list from notes, a sheet or a chat.</li>
+    <li><strong>Tap</strong> a guest, then a table. Or let Auto-seat do it.</li>
+    <li><strong>Print</strong> the chart and an A to Z "find your seat" list.</li>
+  </ol>
+</section>
+
+<section id="setup" class="screen hidden">
+  <h2>Your guests</h2>
+  <label for="eventName">Event name (optional)</label>
+  <input id="eventName" type="text" maxlength="80" placeholder="Asha and Vik's wedding">
+  <label for="guestInput">Paste your guest list, one per line. Add a comma and a group to keep families together.</label>
+  <textarea id="guestInput" rows="8" placeholder="Asha Rao, Rao family&#10;Vik Rao, Rao family&#10;Meena"></textarea>
+  <p class="msg error" id="guestError" role="alert"></p>
+  <button class="btn" id="addGuestsBtn" type="button">Add guests</button>
+  <p class="count" id="guestCount" aria-live="polite">0 guests</p>
+
+  <h2>Your tables</h2>
+  <div class="two">
+    <div><label for="tableCount">Number of tables</label>
+      <input id="tableCount" type="number" min="1" max="200" value="10" inputmode="numeric"></div>
+    <div><label for="seatCount">Seats per table</label>
+      <input id="seatCount" type="number" min="1" max="50" value="8" inputmode="numeric"></div>
+  </div>
+  <p class="msg error" id="tableError" role="alert"></p>
+  <button class="btn primary" id="makeTablesBtn" type="button">Make tables</button>
+</section>
+
+<section id="plan" class="screen hidden">
+  <div class="bar">
+    <p class="progress" id="progress" aria-live="polite">0 of 0 seated</p>
+    <div class="row">
+      <button class="btn primary" id="autoBtn" type="button">Auto-seat</button>
+      <button class="btn" id="printBtn" type="button">Print</button>
+      <button class="btn" id="csvBtn" type="button">CSV</button>
+      <button class="btn ghost" id="editBtn" type="button">Edit guests</button>
+    </div>
+  </div>
+  <p class="msg" id="planMsg" role="status" aria-live="polite"></p>
+  <div class="layout">
+    <aside class="pool">
+      <h2>Unseated</h2>
+      <label for="search" class="sr">Search guests</label>
+      <input id="search" type="search" placeholder="Search guests">
+      <p class="hint" id="pickHint">Tap a guest, then tap a table.</p>
+      <ul id="unseated" class="guests"></ul>
+    </aside>
+    <div id="tables" class="tables"></div>
+  </div>
+</section>
+
+</main>
+
+<section id="printView" class="print-only" aria-hidden="true"></section>
+
+<footer class="foot">
+  <p>Your list never leaves this device. Seatwise stores it only in your browser's local storage.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

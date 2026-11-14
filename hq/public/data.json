@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T06:50:27.393Z",
+  "builtAt": "2026-11-14T06:52:44.508Z",
   "company": {
     "name": "Venture HQ",
     "domain": "anchit-tandon.com",
@@ -69,13 +69,13 @@
       "customer": "Couples and family members planning a wedding or large event seating",
       "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
       "priceINR": 799,
-      "stage": "spec",
+      "stage": "qa",
       "score": 14,
       "url": null,
-      "nextAction": "Engineer builds ventures/seatwise per spec",
+      "nextAction": "QA tests independently at 390, 820, 1440; design, security and legal review",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-14T06:50:27.227Z",
+      "updatedAt": "2026-11-14T06:52:44.351Z",
       "evidenceCount": 4,
       "specPath": "specs/seatwise.md",
       "reviews": {
@@ -320,13 +320,16 @@
       "department": "engineering",
       "color": "#0B7A5E",
       "trait": "Plain HTML, CSS and JS unless the spec forces more.",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+      "since": "2026-11-14T06:52:44.376Z",
+      "ventureId": "seatwise",
+      "ventureTitle": "Seatwise",
+      "last": {
+        "at": "2026-11-14T06:52:44.376Z",
+        "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA"
+      },
+      "actions": 2
     },
     {
       "id": "qa",
@@ -485,6 +488,16 @@
   "ventureTrail": {
     "seatwise": [
       {
+        "at": "2026-11-14T06:52:44.376Z",
+        "agent": "engineer",
+        "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA"
+      },
+      {
+        "at": "2026-11-14T06:50:35.281Z",
+        "agent": "engineer",
+        "action": "Started: Building Seatwise in plain HTML, CSS and JS"
+      },
+      {
         "at": "2026-11-14T06:50:27.282Z",
         "agent": "product",
         "action": "Seatwise moved validated to spec"
@@ -531,6 +544,20 @@
     "rota-sheet": []
   },
   "log": [
+    {
+      "at": "2026-11-14T06:52:44.376Z",
+      "agent": "engineer",
+      "action": "Seatwise built. All 15 acceptance tests pass locally at 390, 820, 1440 with zero console errors. Fixed event name being cleared when adding guests. Handed to QA",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T06:50:35.281Z",
+      "agent": "engineer",
+      "action": "Started: Building Seatwise in plain HTML, CSS and JS",
+      "ventureId": "seatwise",
+      "kind": "start"
+    },
     {
       "at": "2026-11-14T06:50:27.282Z",
       "agent": "product",
