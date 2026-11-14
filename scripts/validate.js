@@ -1,16 +1,17 @@
 #!/usr/bin/env node
-// Validates the company brain. Every cycle must end with this passing.
+// Validates the company brain. Every cycle, and every venture lead, must leave this passing.
 // Usage: node scripts/validate.js   (exit 1 on any error)
 const fs = require('node:fs');
 const path = require('node:path');
+const { loadBrain, leadId, knownAgents } = require('./brain.js');
 
-const read = (dir, name) => JSON.parse(fs.readFileSync(path.join(dir, 'company', name + '.json'), 'utf8'));
 const isUrl = (s) => typeof s === 'string' && /^https?:\/\/[^\s]+\.[^\s]+/.test(s);
 const DASH = new RegExp('[' + String.fromCharCode(0x2013, 0x2014) + ']');
+const ACTIVE = ['validating', 'validated', 'spec', 'building', 'qa'];
 
 function textFiles(dir) {
   const out = [];
-  const skip = new Set(['node_modules', '.git', '.vercel', 'tests']);
+  const skip = new Set(['node_modules', '.git', '.vercel', 'tests', 'shots']);
   const walk = (d) => {
     for (const entry of fs.readdirSync(d, { withFileTypes: true })) {
       if (skip.has(entry.name)) continue;
@@ -26,19 +27,23 @@ function textFiles(dir) {
 function validate(dir) {
   const errors = [];
   const err = (rule, message) => errors.push({ rule, message });
-  let config, ventures, approvals, ledger, log, team, departments, activity;
-  try {
-    config = read(dir, 'config');
-    ventures = read(dir, 'ventures');
-    approvals = read(dir, 'approvals');
-    ledger = read(dir, 'ledger');
-    log = read(dir, 'log');
-    team = read(dir, 'team');
-    departments = read(dir, 'departments');
-    activity = read(dir, 'activity');
-  } catch (e) {
-    return [{ rule: 'parse', message: e.message }];
-  }
+  let brain;
+  try { brain = loadBrain(dir); } catch (e) { return [{ rule: 'parse', message: e.message }]; }
+  const { config, team, departments, ventures, approvals, ledger, log, activity } = brain;
+
+  // Folder files must be named after what they hold, so parallel writers never collide.
+  const named = (sub, key) => {
+    const d = path.join(dir, 'company', sub);
+    if (!fs.existsSync(d)) return;
+    for (const f of fs.readdirSync(d).filter((x) => x.endsWith('.json'))) {
+      const item = JSON.parse(fs.readFileSync(path.join(d, f), 'utf8'));
+      if (item[key] + '.json' !== f) err('files', `company/${sub}/${f} must be named ${item[key]}.json`);
+    }
+  };
+  named('ventures', 'id');
+  named('approvals', 'id');
+
+  // Team and departments
   const deptIds = new Set(departments.map((d) => d.id));
   const teamIds = team.map((t) => t.id);
   if (JSON.stringify(teamIds) !== JSON.stringify(config.roster)) err('team', 'config.roster must list the team in the same order as company/team.json');
@@ -47,17 +52,15 @@ function validate(dir) {
     if (!deptIds.has(t.department)) err('team', `agent ${t.id}: unknown department ${t.department}`);
     if (!/^#[0-9A-Fa-f]{6}$/.test(t.color || '')) err('team', `agent ${t.id}: color must be a hex value`);
     if (!t.charter || !fs.existsSync(path.join(dir, t.charter))) err('team', `agent ${t.id}: charter file missing`);
+    if (t.id.startsWith('lead-')) err('team', `agent ${t.id}: department agent ids cannot start with lead-`);
   }
   for (const d of departments) if (!team.some((t) => t.department === d.id)) err('team', `department ${d.id} has nobody in it`);
-  for (const [agent, a] of Object.entries(activity)) {
-    if (!teamIds.includes(agent)) err('activity', `unknown agent ${agent}`);
-    if (!['working', 'done', 'blocked', 'idle'].includes(a.state)) err('activity', `agent ${agent}: unknown state ${a.state}`);
-    if (!a.since) err('activity', `agent ${agent}: needs since`);
-  }
+
+  // Ventures and their leads
   const stages = config.stages;
   const at = (s) => stages.indexOf(s);
   const seen = new Set();
-
+  const leadNames = new Map();
   for (const v of ventures) {
     const tag = `venture ${v.id}`;
     if (!/^[a-z][a-z0-9-]{1,30}$/.test(v.id || '') || /-$/.test(v.id || '')) err('id', `${tag}: id must be a lowercase subdomain-safe slug`);
@@ -74,6 +77,17 @@ function validate(dir) {
     const parts = ['demand', 'speedToRevenue', 'buildEffort', 'distribution'];
     if (!parts.every((k) => Number.isInteger(s[k]) && s[k] >= 1 && s[k] <= 5)) err('score', `${tag}: each score part must be an integer from 1 to 5`);
     else if (s.total !== parts.reduce((sum, k) => sum + s[k], 0)) err('score', `${tag}: score total does not add up`);
+
+    if (v.lead) {
+      if (!v.lead.name || !/^#[0-9A-Fa-f]{6}$/.test(v.lead.color || '')) err('lead', `${tag}: lead needs a name and a hex color`);
+      if (team.some((t) => t.name === v.lead.name)) err('lead', `${tag}: lead name ${v.lead.name} is already a department agent`);
+      if (v.stage !== 'killed' && v.lead.name) {
+        if (leadNames.has(v.lead.name)) err('lead', `${tag}: lead ${v.lead.name} already leads ${leadNames.get(v.lead.name)}`);
+        leadNames.set(v.lead.name, v.id);
+      }
+    } else if (v.stage !== 'idea' && v.stage !== 'killed') {
+      err('lead', `${tag}: every venture past the idea stage has its own lead agent`);
+    }
 
     if (v.stage === 'killed') {
       if (typeof v.killReason !== 'string' || !v.killReason.trim()) err('kill', `${tag}: killed without a reason`);
@@ -99,13 +113,14 @@ function validate(dir) {
     }
   }
 
-  const active = ventures.filter((v) => v.stage === 'building' || v.stage === 'qa').length;
-  if (active > config.wip.building) err('wip', `${active} ventures in build or QA, limit is ${config.wip.building}`);
+  const active = ventures.filter((v) => ACTIVE.includes(v.stage)).length;
+  if (active > config.wip.pods) err('wip', `${active} ventures being worked at once, limit is ${config.wip.pods} pods`);
   const liveTests = ventures.filter((v) => v.stage === 'live').length;
   if (liveTests > config.wip.liveTests) err('wip', `${liveTests} ventures in live test, limit is ${config.wip.liveTests}`);
   const openIdeas = ventures.filter((v) => v.stage === 'idea').length;
   if (openIdeas > config.wip.openIdeas) err('wip', `${openIdeas} open ideas, limit is ${config.wip.openIdeas}`);
 
+  // Approvals
   const approvalIds = new Map();
   for (const a of approvals) {
     const tag = `approval ${a.id}`;
@@ -118,6 +133,7 @@ function validate(dir) {
     if (a.status === 'pending' && (a.decidedBy || a.decidedAt)) err('approval', `${tag}: pending approval cannot carry a decision`);
   }
 
+  // Ledger
   const spentByApproval = new Map();
   for (const [i, l] of ledger.entries()) {
     const tag = `ledger row ${i + 1}`;
@@ -136,9 +152,24 @@ function validate(dir) {
     if (typeof cap !== 'number' || spent > cap) err('ledger', `approval ${id}: spent ${spent} against an approved ${cap}`);
   }
 
-  for (const [i, entry] of log.entries()) {
-    if (!config.roster.includes(entry.agent)) err('log', `log row ${i + 1}: unknown role ${entry.agent}`);
-    if (!entry.at || !entry.action) err('log', `log row ${i + 1}: needs at and action`);
+  // Activity and log
+  const agents = knownAgents(brain);
+  for (const [agent, a] of Object.entries(activity)) {
+    if (!agents.has(agent)) err('activity', `unknown agent ${agent}`);
+    if (!['working', 'done', 'blocked', 'idle'].includes(a.state)) err('activity', `agent ${agent}: unknown state ${a.state}`);
+    if (!a.since) err('activity', `agent ${agent}: needs since`);
+  }
+  for (const entry of log) {
+    if (!agents.has(entry.agent)) err('log', `log line by unknown agent ${entry.agent}`);
+    if (!entry.at || !entry.action) err('log', `log line by ${entry.agent}: needs at and action`);
+  }
+  const logDir = path.join(dir, 'company', 'log');
+  if (fs.existsSync(logDir)) {
+    for (const f of fs.readdirSync(logDir).filter((x) => x.endsWith('.json'))) {
+      const [agent, scope] = f.replace(/\.json$/, '').split('.');
+      const lines = JSON.parse(fs.readFileSync(path.join(logDir, f), 'utf8'));
+      if (lines.some((e) => e.agent !== agent || (e.ventureId || 'company') !== scope)) err('log', `company/log/${f} holds lines for another agent or venture`);
+    }
   }
 
   for (const file of textFiles(dir)) {
@@ -147,7 +178,7 @@ function validate(dir) {
   return errors;
 }
 
-module.exports = { validate };
+module.exports = { validate, leadId };
 
 if (require.main === module) {
   const errors = validate(path.join(__dirname, '..'));

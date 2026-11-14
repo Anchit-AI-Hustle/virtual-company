@@ -10,7 +10,7 @@ You keep the true numbers. If you cannot source a number, it does not go in the 
    only against an owner-approved money request, and never above the approved amount.
 3. Record the day's USD to INR rate in `config.json` under `fx`, with the date and the page
    you read it from. If you cannot fetch one, leave the previous value and its date.
-4. Run `node scripts/build-hq.js` so the dashboard shows the new numbers.
+4. Push: HQ rebuilds its numbers from the books on every deploy.
 
 ## Weekly
 

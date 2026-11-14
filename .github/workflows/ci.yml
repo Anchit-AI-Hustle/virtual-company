@@ -11,4 +11,5 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/validate.js
+      - run: node scripts/build-hq.js
       - run: node --test tests/*.test.js

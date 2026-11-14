@@ -1,11 +1,5 @@
 [
   {
-    "at": "2026-11-14T03:00:00Z",
-    "agent": "ceo",
-    "action": "Company founded. Pipeline is empty. First cycle will generate and score ideas.",
-    "ventureId": null
-  },
-  {
     "at": "2026-11-14T06:41:56.584Z",
     "agent": "ops",
     "action": "Started: Morning standup",

@@ -1,21 +1,15 @@
 #!/usr/bin/env node
-// Turns the company brain into the single data file the HQ page reads.
+// Turns the company brain into the one data file the HQ page reads.
+// Runs on every HQ deploy (Vercel build) and locally. The output is not committed.
 // Usage: node scripts/build-hq.js
 const fs = require('node:fs');
 const path = require('node:path');
+const { loadBrain, leadId } = require('./brain.js');
 
-const read = (dir, name) => JSON.parse(fs.readFileSync(path.join(dir, 'company', name + '.json'), 'utf8'));
 const round2 = (n) => Math.round(n * 100) / 100;
 
 function buildHq(dir) {
-  const config = read(dir, 'config');
-  const ventures = read(dir, 'ventures');
-  const approvals = read(dir, 'approvals');
-  const ledger = read(dir, 'ledger');
-  const log = read(dir, 'log');
-  const team = read(dir, 'team');
-  const departments = read(dir, 'departments');
-  const activity = read(dir, 'activity');
+  const { config, team, departments, ledger, ventures, approvals, activity, log } = loadBrain(dir);
 
   const sum = (type) => ledger.filter((l) => l.type === type).reduce((t, l) => t + l.amountINR, 0);
   const revenueINR = sum('revenue');
@@ -29,8 +23,28 @@ function buildHq(dir) {
     (b.score.total - a.score.total) || (stageRank(b.stage) - stageRank(a.stage)) || a.id.localeCompare(b.id));
 
   const lastByAgent = {};
-  for (const entry of log) {
-    if (!lastByAgent[entry.agent] || entry.at > lastByAgent[entry.agent].at) lastByAgent[entry.agent] = entry;
+  const countByAgent = {};
+  for (const e of log) {
+    countByAgent[e.agent] = (countByAgent[e.agent] || 0) + 1;
+    if (!lastByAgent[e.agent] || e.at > lastByAgent[e.agent].at) lastByAgent[e.agent] = e;
+  }
+  const titleOf = (id) => { const v = ventures.find((x) => x.id === id); return v ? v.title : null; };
+  const desk = (base) => {
+    const a = activity[base.id] || {};
+    const last = lastByAgent[base.id] || null;
+    return Object.assign({}, base, {
+      state: a.state || 'idle', task: a.task || null, since: a.since || null,
+      ventureId: a.ventureId || null, ventureTitle: titleOf(a.ventureId),
+      last: last ? { at: last.at, action: last.action } : null,
+      actions: countByAgent[base.id] || 0
+    });
+  };
+
+  // Department agents, then one venture lead per venture that is still being worked or run.
+  const office = team.map((t) => desk({ id: t.id, name: t.name, title: t.title, department: t.department, color: t.color, trait: t.trait, charter: t.charter }));
+  const podVentures = sorted.filter((v) => v.lead && v.stage !== 'killed' && v.stage !== 'idea');
+  for (const v of podVentures) {
+    office.push(desk({ id: leadId(v.id), name: v.lead.name, title: 'Lead, ' + v.title, department: 'pods', color: v.lead.color, trait: v.lead.trait || 'Owns ' + v.title + ' from research to revenue.', charter: 'agents/venture-lead.md', ventureOwned: v.id }));
   }
 
   return {
@@ -51,25 +65,15 @@ function buildHq(dir) {
       metrics: v.metrics, killReason: v.killReason, updatedAt: v.updatedAt,
       evidenceCount: Array.isArray(v.evidence) ? v.evidence.length : 0,
       specPath: v.specPath || null,
-      reviews: Object.fromEntries(['design', 'security', 'legal'].map((r) => [r, v.reviews && v.reviews[r] ? !!v.reviews[r].passed : null])),
+      lead: v.lead ? { id: leadId(v.id), name: v.lead.name, color: v.lead.color } : null,
+      reviews: Object.fromEntries((config.reviewsToGoLive || []).map((r) => [r, v.reviews && v.reviews[r] ? !!v.reviews[r].passed : null])),
       qaPassed: v.qa ? !!v.qa.passed : null
     })),
-    departments,
-    office: team.map((t) => {
-      const a = activity[t.id] || {};
-      const v = a.ventureId ? ventures.find((x) => x.id === a.ventureId) : null;
-      const last = lastByAgent[t.id] || null;
-      return {
-        id: t.id, name: t.name, title: t.title, department: t.department, color: t.color, trait: t.trait,
-        state: a.state || 'idle', task: a.task || null, since: a.since || null,
-        ventureId: a.ventureId || null, ventureTitle: v ? v.title : null,
-        last: last ? { at: last.at, action: last.action } : null,
-        actions: log.filter((e) => e.agent === t.id).length
-      };
-    }),
+    departments: departments.concat(podVentures.length ? [{ id: 'pods', name: 'Venture pods' }] : []),
+    office,
     ventureTrail: Object.fromEntries(ventures.map((v) => [v.id, log.filter((e) => e.ventureId === v.id)
-      .sort((a, b) => b.at.localeCompare(a.at)).slice(0, 12).map((e) => ({ at: e.at, agent: e.agent, action: e.action }))])),
-    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 60)
+      .sort((a, b) => b.at.localeCompare(a.at)).slice(0, 15).map((e) => ({ at: e.at, agent: e.agent, action: e.action }))])),
+    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 80)
   };
 }
 

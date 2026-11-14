@@ -7,6 +7,7 @@
     "validate": "node scripts/validate.js",
     "build:hq": "node scripts/build-hq.js",
     "test": "node --test tests/*.test.js",
-    "check": "node scripts/build-hq.js && node scripts/validate.js && node --test tests/*.test.js"
+    "check": "node scripts/validate.js && node scripts/build-hq.js && node --test tests/*.test.js",
+    "migrate": "node scripts/migrate-pods.js"
   }
 }

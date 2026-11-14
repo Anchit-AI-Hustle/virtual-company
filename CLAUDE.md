@@ -19,13 +19,18 @@ not progress.
 
 ## How the company is organised
 
-- `agents/` - one charter per role: ceo, research, product, engineer, qa, growth, support, finance.
-- `company/` - the brain. `ventures.json` (every idea and product, with its stage),
-  `approvals.json` (asks waiting on the owner), `ledger.json` (real money in and out),
-  `log.json` (who did what), `config.json` (limits and rules).
+- `agents/` - one charter per role. Sixteen department agents in `company/team.json`, plus one
+  venture lead per active idea (`agents/venture-lead.md`).
+- One idea, one lead. Every venture the CEO picks gets its own named lead agent who owns it
+  from research to revenue. Leads run in parallel, each in its own session and copy of the
+  repo. The departments review and release their work independently.
+- `company/` - the brain, one file per thing so parallel agents never collide:
+  `ventures/<id>.json`, `approvals/<id>.json`, `activity/<agent>.json`,
+  `log/<agent>.<venture or company>.json`; plus the shared, single-writer `config.json`,
+  `team.json`, `departments.json` and `ledger.json`.
 - `specs/` - one spec per venture, with acceptance tests.
 - `ventures/<id>/` - each product's code. Each one is its own Vercel project.
-- `hq/` - the owner's dashboard at https://hq.anchit-tandon.com.
+- `hq/` - the owner's live office at https://hq.anchit-tandon.com.
 - `RUNBOOK-daily.md` and `RUNBOOK-weekly.md` - the exact steps of each scheduled cycle.
 
 Agents hand off through the files in `company/`, never through memory of a past session.
@@ -43,9 +48,9 @@ A venture moves one stage at a time, and only when the gate for that stage is me
 | validating  | CEO picked it from the scored ideas |
 | validated   | 3 or more pieces of demand evidence, each with a source link |
 | spec        | A spec file with acceptance tests exists |
-| building    | No other venture is in build or QA (limit 1) |
-| qa          | Engineer says every acceptance test passes locally |
-| live        | QA agent (never the engineer) passed it at 390, 820 and 1440 px with zero console errors, and it is served at `https://<id>.anchit-tandon.com` |
+| building    | The spec passed the product review. At most `wip.pods` ventures are worked at once |
+| qa          | The lead says every acceptance test passes locally |
+| live        | Independent QA passed it at 390, 820 and 1440 px with zero console errors; product, engineering, design, security and legal reviews passed; it is served at `https://<id>.anchit-tandon.com` |
 | scaling     | It met the survival numbers in `config.json` inside the live test window |
 | killed      | A written reason. Killing is a good outcome, not a failure |
 
@@ -94,11 +99,12 @@ once it passes QA. That is the company doing its job.
 
 - Vercel is the primary host, team `anchit-ai-hustle` (team id `team_yC0I2xlKsitxFcfizef9EDQl`).
   One Vercel project per venture, named `vc-<id>`, linked to this repo with the root directory
-  `ventures/<id>`, on the domain `<id>.anchit-tandon.com`. See `agents/engineer.md`.
-- HQ (Vercel project `venture-hq`, root directory `hq`) is linked to this repo: every push to
-  `main` that changes `hq/` republishes it, and the page polls its own `data.json`. Pushing the
-  books is all it takes to update the office. Keep pushes to one per finished step: each push
-  is a Vercel deployment and the plan allows about 100 a day across all projects.
+  `ventures/<id>`, on the domain `<id>.anchit-tandon.com`. See `agents/devops.md`.
+- HQ (Vercel project `venture-hq`, root directory `hq`) is linked to this repo. Every push that
+  changes `hq/`, `company/` or `scripts/` republishes it, building `data.json` from the books,
+  and the page polls that file. Pushing the books is all it takes to update the office. Keep
+  pushes to one per finished step: each push is a Vercel deployment and the plan allows about
+  100 a day across all projects.
 - The owner also wants every live URL to be servable from Cloudflare as a standby, with no
   proxying of one platform through the other. When a session has the tools to deploy to
   Cloudflare, do it and record it. When it does not, say so in the log and do not pretend.

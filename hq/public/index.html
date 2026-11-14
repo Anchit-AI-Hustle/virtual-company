@@ -111,6 +111,9 @@
   .facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 0.875rem; }
   .facts span { white-space: nowrap; }
   .card.is-live { box-shadow: inset 4px 0 0 var(--go); }
+  .card .lead { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 0.8125rem; color: var(--ink-soft); }
+  .tiny { width: 20px; height: 20px; border-radius: 50%; display: inline-grid; place-items: center; color: #fff; font: 700 0.6875rem/1 var(--display); }
+  .linkish { background: none; border: 0; padding: 0; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; min-height: 24px; }
   .card.is-killed { background: transparent; border: 1px dashed var(--line); }
   .card.is-killed h4 { color: var(--stop); }
   .wip { font-size: 0.875rem; color: var(--ink-soft); margin: 10px 0 0; }
@@ -179,7 +182,7 @@
 
     <section aria-labelledby="h-office">
       <h2 id="h-office">The office</h2>
-      <p class="sub">Sixteen AI agents in six departments. Each desk shows what that agent is doing right now, from the status it writes as it works. Open a desk to see its record.</p>
+      <p class="sub">Sixteen AI agents in six departments, plus one lead agent for every idea being worked. Each desk shows what that agent is doing right now, from the status it writes as it works. Open a desk to see its record.</p>
       <div class="floor" id="floor"></div>
       <p class="legend"><span class="lg-working">Working</span><span class="lg-done">Just finished</span><span class="lg-blocked">Blocked</span><span class="lg-idle">Idle</span></p>
     </section>
@@ -246,6 +249,7 @@
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   function safeUrl(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
   function initials(name) { return (name || '?').slice(0, 1).toUpperCase(); }
+  function titleOfVenture(id) { var v = data.ventures.filter(function (x) { return x.id === id; })[0]; return v ? v.title : null; }
   function agentById(id) { return (data.office || []).filter(function (a) { return a.id === id; })[0]; }
   function face(a, cls) {
     var f = el('span', cls || 'face', initials(a ? a.name : '?'));
@@ -363,6 +367,7 @@
         var c = el('button', 'card' + (stage === 'live' || stage === 'scaling' ? ' is-live' : '') + (stage === 'killed' ? ' is-killed' : ''));
         c.type = 'button';
         c.appendChild(el('h4', null, v.title));
+        if (v.lead) { var lw = el('span', 'lead'); lw.appendChild(face({ name: v.lead.name, color: v.lead.color }, 'tiny')); lw.appendChild(document.createTextNode('Led by ' + v.lead.name)); c.appendChild(lw); }
         c.appendChild(el('p', null, v.oneLiner));
         if (stage === 'killed' && v.killReason) c.appendChild(el('p', null, 'Stopped because: ' + v.killReason));
         else if (v.nextAction) c.appendChild(el('p', 'next', 'Next: ' + v.nextAction));
@@ -378,7 +383,7 @@
       row.appendChild(cards);
       rail.appendChild(row);
     });
-    $('wip').textContent = 'Limits: ' + plural(d.wip.building, 'product', 'products') + ' in build at a time, ' + d.wip.liveTests + ' in live test, ' + d.wip.openIdeas + ' open ideas.';
+    $('wip').textContent = 'Up to ' + plural(d.wip.pods, 'idea', 'ideas') + ' worked at once, each by its own lead. Limits: ' + d.wip.liveTests + ' in live test, ' + d.wip.openIdeas + ' open ideas.';
   }
 
   function renderMoney(d) {
@@ -431,7 +436,8 @@
       p.appendChild(el('h4', null, 'Recent work (' + plural(a.actions, 'entry', 'entries') + ' in total)'));
       p.appendChild(trail(data.log.filter(function (e) { return e.agent === a.id; }).slice(0, 10)));
       var links = el('p', 'links');
-      var c = el('a', null, 'Read the job description'); c.href = 'https://github.com/' + REPO + '/blob/main/agents/' + a.id + '.md'; c.rel = 'noopener';
+      var c = el('a', null, 'Read the job description'); c.href = 'https://github.com/' + REPO + '/blob/main/' + (a.charter || 'agents/' + a.id + '.md'); c.rel = 'noopener';
+      if (a.ventureOwned) { var vl = el('button', 'linkish', 'Open ' + (titleOfVenture(a.ventureOwned) || 'the venture')); vl.type = 'button'; vl.addEventListener('click', function () { openVenture(a.ventureOwned); }); links.appendChild(vl); }
       links.appendChild(c);
       p.appendChild(links);
     });
@@ -448,6 +454,8 @@
       function chk(label, val) { checks.appendChild(el('li', val === true ? 'ok' : val === false ? 'no' : '', label + (val === true ? ': passed' : val === false ? ': failed' : ': not yet'))); }
       chk(plural(v.evidenceCount, 'demand source', 'demand sources'), v.evidenceCount >= 3 ? true : null);
       chk('Spec', v.specPath ? true : null);
+      chk('Spec review', v.reviews.product);
+      chk('Code review', v.reviews.engineer);
       chk('QA', v.qaPassed);
       chk('Design review', v.reviews.design);
       chk('Security review', v.reviews.security);

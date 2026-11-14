@@ -1,5 +1,4 @@
-// Acceptance tests for the company brain. Written before the validator.
-// Run: node --test tests/*.test.js
+// Acceptance tests for the company brain. Run: node --test tests/*.test.js
 const test = require('node:test');
 const assert = require('node:assert');
 const fs = require('node:fs');
@@ -7,179 +6,196 @@ const os = require('node:os');
 const path = require('node:path');
 const { validate } = require('../scripts/validate.js');
 const { buildHq } = require('../scripts/build-hq.js');
+const { act } = require('../scripts/act.js');
+const { migrate } = require('../scripts/migrate-pods.js');
 
 const ROOT = path.join(__dirname, '..');
-const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/config.json'), 'utf8'));
+const readRoot = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+const config = readRoot('company/config.json');
+const TEAM = readRoot('company/team.json');
+const dash = String.fromCharCode(0x2014);
 
-function fixture(overrides = {}) {
+// A temporary company with the real config, team and charters and the given state.
+function fixture(o = {}) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'vc-'));
-  fs.mkdirSync(path.join(dir, 'company'));
-  fs.mkdirSync(path.join(dir, 'specs'));
-  const files = {
-    team: overrides.team || JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8')),
-    departments: JSON.parse(fs.readFileSync(path.join(ROOT, 'company/departments.json'), 'utf8')),
-    activity: overrides.activity || {},
-    config: overrides.config || config,
-    ventures: overrides.ventures || [],
-    approvals: overrides.approvals || [],
-    ledger: overrides.ledger || [],
-    log: overrides.log || []
-  };
-  for (const [name, data] of Object.entries(files)) {
-    fs.writeFileSync(path.join(dir, 'company', name + '.json'), JSON.stringify(data, null, 2));
-  }
+  const w = (rel, v) => { fs.mkdirSync(path.dirname(path.join(dir, rel)), { recursive: true }); fs.writeFileSync(path.join(dir, rel), typeof v === 'string' ? v : JSON.stringify(v, null, 2)); };
+  w('company/config.json', o.config || config);
+  w('company/team.json', o.team || TEAM);
+  w('company/departments.json', readRoot('company/departments.json'));
+  w('company/ledger.json', o.ledger || []);
+  for (const v of o.ventures || []) w(`company/ventures/${v.id}.json`, v);
+  for (const a of o.approvals || []) w(`company/approvals/${a.id}.json`, a);
+  for (const [agent, s] of Object.entries(o.activity || {})) w(`company/activity/${agent}.json`, s);
+  for (const [file, lines] of Object.entries(o.logs || {})) w(`company/log/${file}`, lines);
+  for (const [rel, text] of Object.entries(o.files || {})) w(rel, text);
   fs.cpSync(path.join(ROOT, 'agents'), path.join(dir, 'agents'), { recursive: true });
   fs.mkdirSync(path.join(dir, 'hq/public'), { recursive: true });
-  for (const [rel, text] of Object.entries(overrides.files || {})) {
-    fs.mkdirSync(path.dirname(path.join(dir, rel)), { recursive: true });
-    fs.writeFileSync(path.join(dir, rel), text);
-  }
   return dir;
 }
 
-const evidence = [
-  { claim: 'People search for this', url: 'https://example.com/a', foundAt: '2026-11-14' },
-  { claim: 'Competitor charges for it', url: 'https://example.com/b', foundAt: '2026-11-14' },
-  { claim: 'Forum thread asking for it', url: 'https://example.com/c', foundAt: '2026-11-14' }
-];
+const evidence = [1, 2, 3].map((i) => ({ claim: 'Signal ' + i, url: 'https://example.com/' + i, foundAt: '2026-11-14' }));
 const goodQa = { passed: true, reviewer: 'qa', viewports: [390, 820, 1440], consoleErrors: 0, checkedAt: '2026-11-14T10:00:00Z' };
 const passed = { passed: true, at: '2026-11-14T10:00:00Z', notes: 'ok' };
-const goodReviews = { design: passed, security: passed, legal: passed };
+const goodReviews = { product: passed, engineer: passed, design: passed, security: passed, legal: passed };
+const lead = (i) => config.leads[i];
 
 function venture(extra = {}) {
   return Object.assign({
-    id: 'invoice-buddy',
-    title: 'Invoice Buddy',
-    oneLiner: 'GST invoices in one minute for freelancers',
-    customer: 'Indian freelancers',
-    revenueModel: 'One-time purchase',
-    priceINR: 199,
-    stage: 'idea',
+    id: 'invoice-buddy', title: 'Invoice Buddy', oneLiner: 'GST invoices in one minute for freelancers',
+    customer: 'Indian freelancers', revenueModel: 'One-time purchase', priceINR: 199, stage: 'idea',
     score: { demand: 3, speedToRevenue: 4, buildEffort: 4, distribution: 2, total: 13 },
-    evidence: [],
-    specPath: null,
-    url: null,
-    qa: null,
-    metrics: null,
-    nextAction: 'Research demand',
-    createdAt: '2026-11-14T03:00:00Z',
-    updatedAt: '2026-11-14T03:00:00Z',
-    killReason: null
+    evidence: [], specPath: null, url: null, qa: null, reviews: {}, metrics: null, lead: null,
+    nextAction: 'Research demand', createdAt: '2026-11-14T03:00:00Z', updatedAt: '2026-11-14T03:00:00Z', killReason: null
   }, extra);
 }
-
-const errorsOf = (dir) => validate(dir).map((e) => e.rule);
+const rules = (dir) => validate(dir).map((e) => e.rule);
+const liveBase = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com', qa: goodQa, reviews: goodReviews, lead: lead(0) };
+const specFile = { 'specs/a.md': '# a' };
 
 test('the committed company state is valid', () => {
   assert.deepStrictEqual(validate(ROOT), []);
 });
 
-test('an idea with no evidence is allowed', () => {
+test('an idea needs no lead and no evidence', () => {
   assert.deepStrictEqual(validate(fixture({ ventures: [venture()] })), []);
 });
 
+test('every venture past the idea stage has its own lead, and no lead runs two', () => {
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'validating' })] })).includes('lead'));
+  assert.deepStrictEqual(validate(fixture({ ventures: [venture({ stage: 'validating', lead: lead(0) })] })), []);
+  const twice = fixture({ ventures: [venture({ stage: 'validating', lead: lead(0) }), venture({ id: 'menu-qr', stage: 'validating', lead: lead(0) })] });
+  assert.ok(rules(twice).includes('lead'));
+  const clash = fixture({ ventures: [venture({ stage: 'validating', lead: { name: 'Arya', color: '#123456' } })] });
+  assert.ok(rules(clash).includes('lead'));
+});
+
+test('several ventures run in parallel up to the pod limit, not beyond', () => {
+  const v = (i, stage) => venture({ id: 'venture-' + 'abcdef'[i], stage, lead: lead(i), evidence, specPath: 'specs/a.md' });
+  const three = fixture({ ventures: [v(0, 'validating'), v(1, 'building'), v(2, 'qa')], files: specFile });
+  assert.deepStrictEqual(validate(three), []);
+  const four = fixture({ ventures: [v(0, 'validating'), v(1, 'building'), v(2, 'qa'), v(3, 'spec')], files: specFile });
+  assert.ok(rules(four).includes('wip'));
+});
+
 test('a venture cannot be validated without 3 sourced pieces of evidence', () => {
-  const dir = fixture({ ventures: [venture({ stage: 'validated', evidence: evidence.slice(0, 2) })] });
-  assert.ok(errorsOf(dir).includes('evidence'));
-  const noUrl = fixture({ ventures: [venture({ stage: 'validated', evidence: [evidence[0], evidence[1], { claim: 'x', url: 'trust me' }] })] });
-  assert.ok(errorsOf(noUrl).includes('evidence'));
-  const ok = fixture({ ventures: [venture({ stage: 'validated', evidence })] });
-  assert.deepStrictEqual(validate(ok), []);
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'validated', lead: lead(0), evidence: evidence.slice(0, 2) })] })).includes('evidence'));
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'validated', lead: lead(0), evidence: [evidence[0], evidence[1], { claim: 'x', url: 'trust me' }] })] })).includes('evidence'));
+  assert.deepStrictEqual(validate(fixture({ ventures: [venture({ stage: 'validated', lead: lead(0), evidence })] })), []);
 });
 
 test('spec stage and later need a spec file that exists', () => {
-  const missing = fixture({ ventures: [venture({ stage: 'spec', evidence, specPath: 'specs/invoice-buddy.md' })] });
-  assert.ok(errorsOf(missing).includes('spec'));
-  const ok = fixture({
-    ventures: [venture({ stage: 'spec', evidence, specPath: 'specs/invoice-buddy.md' })],
-    files: { 'specs/invoice-buddy.md': '# Spec' }
-  });
-  assert.deepStrictEqual(validate(ok), []);
-});
-
-test('only one venture may be in build or QA at a time', () => {
-  const files = { 'specs/a.md': '# a', 'specs/b.md': '# b' };
-  const dir = fixture({
-    ventures: [
-      venture({ id: 'alpha-tool', stage: 'building', evidence, specPath: 'specs/a.md' }),
-      venture({ id: 'beta-tool', stage: 'qa', evidence, specPath: 'specs/b.md' })
-    ],
-    files
-  });
-  assert.ok(errorsOf(dir).includes('wip'));
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'spec', lead: lead(0), evidence, specPath: 'specs/a.md' })] })).includes('spec'));
+  assert.deepStrictEqual(validate(fixture({ ventures: [venture({ stage: 'spec', lead: lead(0), evidence, specPath: 'specs/a.md' })], files: specFile })), []);
 });
 
 test('a venture cannot go live without independent QA on all three screen sizes', () => {
-  const base = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com', reviews: goodReviews };
-  const files = { 'specs/a.md': '# a' };
-  const cases = [
-    { qa: null },
-    { qa: Object.assign({}, goodQa, { passed: false }) },
-    { qa: Object.assign({}, goodQa, { viewports: [390, 1440] }) },
-    { qa: Object.assign({}, goodQa, { consoleErrors: 2 }) },
-    { qa: Object.assign({}, goodQa, { reviewer: 'engineer' }) }
-  ];
-  for (const c of cases) {
-    const dir = fixture({ ventures: [venture(Object.assign({}, base, c))], files });
-    assert.ok(errorsOf(dir).includes('qa'), JSON.stringify(c));
+  const cases = [null, Object.assign({}, goodQa, { passed: false }), Object.assign({}, goodQa, { viewports: [390, 1440] }),
+    Object.assign({}, goodQa, { consoleErrors: 2 }), Object.assign({}, goodQa, { reviewer: 'engineer' })];
+  for (const qa of cases) assert.ok(rules(fixture({ ventures: [venture(Object.assign({}, liveBase, { qa }))], files: specFile })).includes('qa'), JSON.stringify(qa));
+  assert.deepStrictEqual(validate(fixture({ ventures: [venture(liveBase)], files: specFile })), []);
+});
+
+test('a venture cannot go live without product, engineering, design, security and legal sign-off', () => {
+  for (const missing of config.reviewsToGoLive) {
+    const reviews = Object.assign({}, goodReviews);
+    delete reviews[missing];
+    const errs = validate(fixture({ ventures: [venture(Object.assign({}, liveBase, { reviews }))], files: specFile }));
+    assert.ok(errs.some((e) => e.rule === 'review' && e.message.includes(missing)), missing);
   }
-  const ok = fixture({ ventures: [venture(Object.assign({}, base, { qa: goodQa }))], files });
-  assert.deepStrictEqual(validate(ok), []);
+  const failed = Object.assign({}, goodReviews, { legal: { passed: false, at: '2026-11-14T10:00:00Z' } });
+  assert.ok(rules(fixture({ ventures: [venture(Object.assign({}, liveBase, { reviews: failed }))], files: specFile })).includes('review'));
 });
 
 test('a live venture must sit on its own subdomain of the owner domain', () => {
-  const files = { 'specs/a.md': '# a' };
-  const dir = fixture({
-    ventures: [venture({ stage: 'live', evidence, specPath: 'specs/a.md', qa: goodQa, reviews: goodReviews, url: 'https://invoice-buddy.vercel.app' })],
-    files
-  });
-  assert.ok(errorsOf(dir).includes('url'));
+  assert.ok(rules(fixture({ ventures: [venture(Object.assign({}, liveBase, { url: 'https://invoice-buddy.vercel.app' }))], files: specFile })).includes('url'));
 });
 
-test('venture ids are unique, subdomain safe and not reserved', () => {
-  assert.ok(errorsOf(fixture({ ventures: [venture(), venture()] })).includes('id'));
-  assert.ok(errorsOf(fixture({ ventures: [venture({ id: 'Bad_Name' })] })).includes('id'));
-  assert.ok(errorsOf(fixture({ ventures: [venture({ id: 'kits' })] })).includes('id'));
+test('venture ids are unique, subdomain safe, not reserved, and match their file name', () => {
+  assert.ok(rules(fixture({ ventures: [venture({ id: 'Bad_Name' })] })).includes('id'));
+  assert.ok(rules(fixture({ ventures: [venture({ id: 'kits' })] })).includes('id'));
+  const misnamed = fixture({ files: { 'company/ventures/other.json': JSON.stringify(venture()) } });
+  assert.ok(rules(misnamed).includes('files'));
 });
 
-test('a killed venture records why', () => {
-  assert.ok(errorsOf(fixture({ ventures: [venture({ stage: 'killed' })] })).includes('kill'));
+test('a killed venture records why, and scores add up', () => {
+  assert.ok(rules(fixture({ ventures: [venture({ stage: 'killed' })] })).includes('kill'));
   assert.deepStrictEqual(validate(fixture({ ventures: [venture({ stage: 'killed', killReason: 'No demand found in 3 days' })] })), []);
-});
-
-test('scores add up', () => {
-  const dir = fixture({ ventures: [venture({ score: { demand: 5, speedToRevenue: 5, buildEffort: 5, distribution: 5, total: 3 } })] });
-  assert.ok(errorsOf(dir).includes('score'));
+  assert.ok(rules(fixture({ ventures: [venture({ score: { demand: 5, speedToRevenue: 5, buildEffort: 5, distribution: 5, total: 3 } })] })).includes('score'));
 });
 
 test('only the owner can decide an approval', () => {
   const pending = { id: 'ap-1', ventureId: null, type: 'money', ask: 'Spend Rs 500 on a domain', costINR: 500, status: 'pending', issueUrl: null, createdAt: '2026-11-14T03:00:00Z', decidedBy: null, decidedAt: null };
   assert.deepStrictEqual(validate(fixture({ approvals: [pending] })), []);
-  const selfApproved = Object.assign({}, pending, { status: 'approved', decidedBy: 'ceo', decidedAt: '2026-11-14T04:00:00Z' });
-  assert.ok(errorsOf(fixture({ approvals: [selfApproved] })).includes('approval'));
-  const ownerApproved = Object.assign({}, pending, { status: 'approved', decidedBy: 'owner', decidedAt: '2026-11-14T04:00:00Z' });
-  assert.deepStrictEqual(validate(fixture({ approvals: [ownerApproved] })), []);
+  assert.ok(rules(fixture({ approvals: [Object.assign({}, pending, { status: 'approved', decidedBy: 'ceo', decidedAt: '2026-11-14T04:00:00Z' })] })).includes('approval'));
+  assert.deepStrictEqual(validate(fixture({ approvals: [Object.assign({}, pending, { status: 'approved', decidedBy: 'owner', decidedAt: '2026-11-14T04:00:00Z' })] })), []);
 });
 
 test('no cost is booked without an owner-approved request, and no revenue without a source', () => {
-  const cost = { date: '2026-11-14', ventureId: null, type: 'cost', amountINR: 500, note: 'Domain', source: 'invoice', approvalId: 'ap-1' };
-  assert.ok(errorsOf(fixture({ ledger: [cost] })).includes('ledger'));
   const approved = { id: 'ap-1', ventureId: null, type: 'money', ask: 'x', costINR: 500, status: 'approved', issueUrl: null, createdAt: '2026-11-14T03:00:00Z', decidedBy: 'owner', decidedAt: '2026-11-14T04:00:00Z' };
+  const cost = { date: '2026-11-14', ventureId: null, type: 'cost', amountINR: 500, note: 'Domain', source: 'invoice', approvalId: 'ap-1' };
+  assert.ok(rules(fixture({ ledger: [cost] })).includes('ledger'));
   assert.deepStrictEqual(validate(fixture({ ledger: [cost], approvals: [approved] })), []);
-  const overspend = Object.assign({}, cost, { amountINR: 900 });
-  assert.ok(errorsOf(fixture({ ledger: [overspend], approvals: [approved] })).includes('ledger'));
-  const revenue = { date: '2026-11-14', ventureId: null, type: 'revenue', amountINR: 199, note: 'Sale', source: '' };
-  assert.ok(errorsOf(fixture({ ledger: [revenue] })).includes('ledger'));
+  assert.ok(rules(fixture({ ledger: [Object.assign({}, cost, { amountINR: 900 })], approvals: [approved] })).includes('ledger'));
+  assert.ok(rules(fixture({ ledger: [{ date: '2026-11-14', ventureId: null, type: 'revenue', amountINR: 199, note: 'Sale', source: '' }] })).includes('ledger'));
 });
 
-test('log entries come from a real role', () => {
-  const dir = fixture({ log: [{ at: '2026-11-14T03:00:00Z', agent: 'intern', action: 'x', ventureId: null }] });
-  assert.ok(errorsOf(dir).includes('log'));
+test('log lines come from a real agent and sit in that agent and venture file', () => {
+  const line = (agent, ventureId) => ({ at: '2026-11-14T03:00:00Z', agent, action: 'x', ventureId });
+  assert.ok(rules(fixture({ logs: { 'intern.company.json': [line('intern', null)] } })).includes('log'));
+  assert.ok(rules(fixture({ logs: { 'qa.company.json': [line('ceo', null)] } })).includes('log'));
+  assert.deepStrictEqual(validate(fixture({ logs: { 'qa.company.json': [line('qa', null)] } })), []);
 });
 
 test('no em or en dashes anywhere in company text', () => {
-  const dir = fixture({ ventures: [venture({ oneLiner: 'Fast ' + String.fromCharCode(0x2014) + ' simple' })] });
-  assert.ok(errorsOf(dir).includes('dash'));
+  assert.ok(rules(fixture({ ventures: [venture({ oneLiner: 'Fast ' + dash + ' simple' })] })).includes('dash'));
+});
+
+test('every department is staffed and every agent has a name, charter and known department', () => {
+  assert.ok(TEAM.length >= 16);
+  const broken = TEAM.map((t) => Object.assign({}, t)); broken[3].charter = 'agents/nobody.md';
+  assert.ok(rules(fixture({ team: broken })).includes('team'));
+  const unknown = TEAM.map((t) => Object.assign({}, t)); unknown[0].department = 'canteen';
+  assert.ok(rules(fixture({ team: unknown })).includes('team'));
+});
+
+test('every department agent appears in the runbooks with real work', () => {
+  const runbook = fs.readFileSync(path.join(ROOT, 'RUNBOOK-daily.md'), 'utf8') + fs.readFileSync(path.join(ROOT, 'RUNBOOK-weekly.md'), 'utf8');
+  for (const t of TEAM) assert.ok(runbook.includes('`' + t.id + '`'), t.id + ' is missing from the runbooks');
+  assert.ok(runbook.includes('isolation: "worktree"'), 'pods must run in isolated worktrees');
+});
+
+test('act.js lets a venture lead report, writes only its own files, and rejects unknown agents and dashes', () => {
+  const dir = fixture({ ventures: [venture({ stage: 'validating', lead: lead(0) }), venture({ id: 'menu-qr', stage: 'validating', lead: lead(1) })] });
+  act(dir, 'lead-invoice-buddy', 'start', 'Searching for demand', 'invoice-buddy', '2026-11-14T05:00:00Z');
+  act(dir, 'lead-menu-qr', 'start', 'Reading cafe forums', 'menu-qr', '2026-11-14T05:01:00Z');
+  act(dir, 'qa', 'done', 'Passed menu QR locally', 'menu-qr', '2026-11-14T05:02:00Z');
+  const files = fs.readdirSync(path.join(dir, 'company/log')).sort();
+  assert.deepStrictEqual(files, ['lead-invoice-buddy.invoice-buddy.json', 'lead-menu-qr.menu-qr.json', 'qa.menu-qr.json']);
+  assert.deepStrictEqual(validate(dir), []);
+  assert.throws(() => act(dir, 'lead-nothing', 'start', 'x'));
+  assert.throws(() => act(dir, 'intern', 'start', 'x'));
+  assert.throws(() => act(dir, 'qa', 'start', 'a ' + dash + ' b'));
+  assert.throws(() => act(dir, 'qa', 'start', ''));
+  assert.throws(() => act(dir, 'qa', 'start', 'x', 'no-such-venture'));
+});
+
+test('HQ office shows the 16 department agents plus one desk per active venture lead', () => {
+  const dir = fixture({
+    ventures: [venture({ stage: 'building', lead: lead(0), evidence, specPath: 'specs/a.md' }), venture({ id: 'menu-qr', stage: 'validating', lead: lead(1) }), venture({ id: 'resume-fit' })],
+    activity: { 'lead-invoice-buddy': { state: 'working', task: 'Building the form', ventureId: 'invoice-buddy', since: '2026-11-14T05:00:00Z' } },
+    files: specFile
+  });
+  const hq = buildHq(dir);
+  assert.strictEqual(hq.office.length, 18);
+  const pod = hq.office.find((a) => a.id === 'lead-invoice-buddy');
+  assert.strictEqual(pod.name, lead(0).name);
+  assert.strictEqual(pod.department, 'pods');
+  assert.strictEqual(pod.state, 'working');
+  assert.strictEqual(pod.ventureTitle, 'Invoice Buddy');
+  assert.strictEqual(hq.departments.at(-1).id, 'pods');
+  assert.strictEqual(hq.office.find((a) => a.id === 'legal').state, 'idle');
+  assert.strictEqual(hq.ventures.find((v) => v.id === 'invoice-buddy').lead.name, lead(0).name);
+  assert.deepStrictEqual(Object.keys(hq.ventures[0].reviews), config.reviewsToGoLive);
 });
 
 test('HQ data totals money in INR, converts to USD only with a recorded rate, and sorts descending', () => {
@@ -190,80 +206,25 @@ test('HQ data totals money in INR, converts to USD only with a recorded rate, an
   ];
   const ventures = [venture({ id: 'low-score', score: { demand: 1, speedToRevenue: 1, buildEffort: 1, distribution: 1, total: 4 } }), venture()];
   const noFx = buildHq(fixture({ ventures, ledger, approvals: [approved] }));
-  assert.strictEqual(noFx.money.revenueINR, 1000);
-  assert.strictEqual(noFx.money.costINR, 400);
-  assert.strictEqual(noFx.money.netINR, 600);
-  assert.strictEqual(noFx.money.netUSD, null);
+  assert.deepStrictEqual([noFx.money.revenueINR, noFx.money.costINR, noFx.money.netINR, noFx.money.netUSD], [1000, 400, 600, null]);
   assert.strictEqual(noFx.ventures[0].id, 'invoice-buddy');
   const cfg = JSON.parse(JSON.stringify(config));
   cfg.fx = { usdInr: 100, asOf: '2026-11-14', source: 'https://example.com/rate' };
-  const withFx = buildHq(fixture({ config: cfg, ventures, ledger, approvals: [approved] }));
-  assert.strictEqual(withFx.money.netUSD, 6);
+  assert.strictEqual(buildHq(fixture({ config: cfg, ventures, ledger, approvals: [approved] })).money.netUSD, 6);
 });
 
-test('the published HQ data matches the company state', () => {
-  const published = JSON.parse(fs.readFileSync(path.join(ROOT, 'hq/public/data.json'), 'utf8'));
-  const fresh = buildHq(ROOT);
-  delete published.builtAt;
-  delete fresh.builtAt;
-  assert.deepStrictEqual(published, fresh);
-});
-
-test('a venture cannot go live without design, security and legal sign-off', () => {
-  const files = { 'specs/a.md': '# a' };
-  const base = { stage: 'live', evidence, specPath: 'specs/a.md', url: 'https://invoice-buddy.anchit-tandon.com', qa: goodQa };
-  for (const missing of ['design', 'security', 'legal']) {
-    const reviews = Object.assign({}, goodReviews);
-    delete reviews[missing];
-    const dir = fixture({ ventures: [venture(Object.assign({}, base, { reviews }))], files });
-    assert.ok(validate(dir).some((e) => e.rule === 'review' && e.message.includes(missing)), missing);
-  }
-  const failed = Object.assign({}, goodReviews, { legal: { passed: false, at: '2026-11-14T10:00:00Z' } });
-  assert.ok(errorsOf(fixture({ ventures: [venture(Object.assign({}, base, { reviews: failed }))], files })).includes('review'));
-});
-
-test('every department is staffed and every agent has a name, charter and known department', () => {
-  const team = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8'));
-  assert.ok(team.length >= 16);
-  const broken = team.map((t) => Object.assign({}, t));
-  broken[3].charter = 'agents/nobody.md';
-  assert.ok(errorsOf(fixture({ team: broken })).includes('team'));
-  const unknown = team.map((t) => Object.assign({}, t));
-  unknown[0].department = 'canteen';
-  assert.ok(errorsOf(fixture({ team: unknown })).includes('team'));
-});
-
-test('every role in the team appears in the cycle runbook', () => {
-  const team = JSON.parse(fs.readFileSync(path.join(ROOT, 'company/team.json'), 'utf8'));
-  const runbook = fs.readFileSync(path.join(ROOT, 'RUNBOOK-daily.md'), 'utf8') + fs.readFileSync(path.join(ROOT, 'RUNBOOK-weekly.md'), 'utf8');
-  for (const t of team) assert.ok(runbook.includes('`' + t.id + '`'), t.id + ' is missing from the runbooks');
-});
-
-test('act.js records real status and a log line, and rejects unknown agents and dashes', () => {
-  const { act } = require('../scripts/act.js');
+test('migration moves the single-file brain to one file per item and gives worked ventures a lead', () => {
   const dir = fixture({});
-  act(dir, 'research', 'start', 'Searching for demand', 'invoice-buddy', '2026-11-14T05:00:00Z');
-  act(dir, 'research', 'done', 'Found 3 sources', 'invoice-buddy', '2026-11-14T05:10:00Z');
-  const activity = JSON.parse(fs.readFileSync(path.join(dir, 'company/activity.json'), 'utf8'));
-  assert.deepStrictEqual(activity.research, { state: 'done', task: 'Found 3 sources', ventureId: 'invoice-buddy', since: '2026-11-14T05:10:00Z' });
-  const log = JSON.parse(fs.readFileSync(path.join(dir, 'company/log.json'), 'utf8'));
-  assert.strictEqual(log.length, 2);
-  assert.strictEqual(log[0].action, 'Started: Searching for demand');
+  const c = (n) => path.join(dir, 'company', n);
+  fs.writeFileSync(c('ventures.json'), JSON.stringify([venture(), venture({ id: 'menu-qr', stage: 'validating' })]));
+  fs.writeFileSync(c('approvals.json'), JSON.stringify([]));
+  fs.writeFileSync(c('activity.json'), JSON.stringify({ ops: { state: 'done', task: 'Standup', ventureId: null, since: '2026-11-14T05:00:00Z' } }));
+  fs.writeFileSync(c('log.json'), JSON.stringify([{ at: '2026-11-14T05:00:00Z', agent: 'ops', action: 'Standup', ventureId: null }, { at: '2026-11-14T05:01:00Z', agent: 'research', action: 'Found it', ventureId: 'menu-qr' }]));
+  migrate(dir);
+  for (const old of ['ventures.json', 'approvals.json', 'activity.json', 'log.json']) assert.ok(!fs.existsSync(c(old)), old);
+  assert.ok(fs.existsSync(c('log/research.menu-qr.json')));
+  assert.strictEqual(JSON.parse(fs.readFileSync(c('ventures/menu-qr.json'), 'utf8')).lead.name, config.leads[0].name);
+  assert.strictEqual(JSON.parse(fs.readFileSync(c('ventures/invoice-buddy.json'), 'utf8')).lead, null);
   assert.deepStrictEqual(validate(dir), []);
-  const hq = JSON.parse(fs.readFileSync(path.join(dir, 'hq/public/data.json'), 'utf8'));
-  assert.strictEqual(hq.office.find((a) => a.id === 'research').state, 'done');
-  assert.throws(() => act(dir, 'intern', 'start', 'x'));
-  assert.throws(() => act(dir, 'qa', 'start', 'a ' + String.fromCharCode(0x2014) + ' b'));
-  assert.throws(() => act(dir, 'qa', 'start', ''));
-});
-
-test('HQ office lists every agent with department, status and current venture title', () => {
-  const dir = fixture({ ventures: [venture()], activity: { engineer: { state: 'working', task: 'Building the form', ventureId: 'invoice-buddy', since: '2026-11-14T05:00:00Z' } } });
-  const hq = buildHq(dir);
-  assert.strictEqual(hq.office.length, 16);
-  const dev = hq.office.find((a) => a.id === 'engineer');
-  assert.strictEqual(dev.state, 'working');
-  assert.strictEqual(dev.ventureTitle, 'Invoice Buddy');
-  assert.strictEqual(hq.office.find((a) => a.id === 'legal').state, 'idle');
-  assert.strictEqual(hq.departments.length, 6);
+  assert.deepStrictEqual(migrate(dir), []);
 });

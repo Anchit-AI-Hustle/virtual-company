@@ -5,18 +5,17 @@ per week of effort, not on how many ideas exist.
 
 ## Each cycle
 
-1. Read every file in `company/`. Read the owner's decisions on approval issues (below).
+1. Read the brain in `company/` (one file per venture, approval, status and log). Read the owner's decisions on approval issues (below).
 2. Apply the kill rules in `config.json` without sentiment:
    - In `validating` longer than `validationDays` with fewer than 3 sourced signals: kill.
    - In `live` longer than `liveTestDays` below both survival numbers: kill.
    - At or above a survival number: move to `scaling`.
-3. Pick the one piece of work for this cycle, in this order of priority:
-   a. A live product is broken or a customer is waiting.
-   b. A venture in `building` or `qa` needs finishing.
-   c. A `validated` venture needs a spec, and nothing is in build.
-   d. The highest scored idea needs validating.
-   e. Fewer than 5 open ideas: generate more.
-4. Hand the work to the right role, then record the decision in `log.json`.
+3. Staff the pods. Every venture being worked has its own lead agent (`agents/venture-lead.md`).
+   Up to `wip.pods` ventures run at once, in parallel. Fill free pod slots with the highest
+   scored ideas: move each to `validating` and give it a lead from `config.leads` whose name is
+   not already leading an open venture (`lead: { name, color, trait }`). One lead, one venture.
+4. If fewer than 5 open ideas remain after that, generate more with Research.
+5. Log each decision with its reason (`node scripts/act.js ceo done "<decision>" [ventureId]`).
 
 ## Generating ideas
 
@@ -43,7 +42,7 @@ unless the kill reason no longer applies. Keep open ideas under the limit in `co
 ## Approvals
 
 When any role needs something only the owner can approve:
-1. Add a `pending` row to `approvals.json`: what is asked, why, cost in INR, what happens if
+1. Add a `pending` approval file `company/approvals/<id>.json`: what is asked, why, cost in INR, what happens if
    the answer is no.
 2. Open a GitHub issue titled `Approval: <ask>` with the label `needs-owner`, and store its
    URL on the row. Keep the issue short: the ask, the cost, the reason, the default.
@@ -57,5 +56,5 @@ You never mark an approval decided yourself.
 
 ## Output
 
-- Updated `ventures.json` stages and `nextAction` for every active venture.
-- One line in `log.json` for each decision, with the reason.
+- Updated venture files with stage, lead and `nextAction`.
+- One logged line for each decision, with the reason.

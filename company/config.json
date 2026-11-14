@@ -36,8 +36,8 @@
     "killed"
   ],
   "wip": {
-    "building": 1,
-    "liveTests": 3,
+    "pods": 3,
+    "liveTests": 5,
     "openIdeas": 12
   },
   "killRules": {
@@ -78,8 +78,72 @@
     "legal"
   ],
   "reviewsToGoLive": [
+    "product",
+    "engineer",
     "design",
     "security",
     "legal"
+  ],
+  "leads": [
+    {
+      "name": "Ira",
+      "color": "#7A3E9D",
+      "trait": "Founder energy. Talks to the problem before the solution."
+    },
+    {
+      "name": "Vihaan",
+      "color": "#1F6F8B",
+      "trait": "Ships the smallest thing that earns, then iterates."
+    },
+    {
+      "name": "Aditi",
+      "color": "#9C4A1A",
+      "trait": "Obsessed with the first thirty seconds of the product."
+    },
+    {
+      "name": "Reyansh",
+      "color": "#2F6B3A",
+      "trait": "Lets the numbers decide what to cut."
+    },
+    {
+      "name": "Myra",
+      "color": "#A0306B",
+      "trait": "Writes the spec as if a stranger had to build it."
+    },
+    {
+      "name": "Advait",
+      "color": "#3B4C9B",
+      "trait": "Calm under failing tests. Fixes the cause, not the symptom."
+    },
+    {
+      "name": "Sara",
+      "color": "#8A5A00",
+      "trait": "Thinks like the buyer, prices like the seller."
+    },
+    {
+      "name": "Kian",
+      "color": "#14706B",
+      "trait": "Hunts for the channel buyers already use."
+    },
+    {
+      "name": "Navya",
+      "color": "#6D3FB0",
+      "trait": "Turns every complaint into the next feature."
+    },
+    {
+      "name": "Arnav",
+      "color": "#8B2E3C",
+      "trait": "Quick to test, quicker to kill what does not work."
+    },
+    {
+      "name": "Tanvi",
+      "color": "#2A6496",
+      "trait": "Keeps scope tiny and quality high."
+    },
+    {
+      "name": "Yash",
+      "color": "#4D6B1F",
+      "trait": "Measures twice, launches once."
+    }
   ]
 }
