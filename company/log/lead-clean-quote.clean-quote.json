@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T14:15:20.708Z",
+    "agent": "lead-clean-quote",
+    "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder",
+    "ventureId": "clean-quote",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T14:17:00.983Z",
+    "agent": "lead-clean-quote",
+    "action": "Validated: 7 sourced signals that cleaners pay for quoting tools and Etsy pricing calculators, plus 4 free alternatives recorded against",
+    "ventureId": "clean-quote",
+    "kind": "done"
+  }
+]

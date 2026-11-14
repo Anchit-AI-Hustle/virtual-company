@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
+  "updatedAt": "2026-11-14T14:17:00.956Z",
   "killReason": null,
   "lead": {
     "name": "Aditi",
@@ -28,8 +28,60 @@
       "claim": "An Etsy listing sells a cleaning business spreadsheet bundle covering pricing and a client tracker.",
       "url": "https://www.etsy.com/listing/4565659268",
       "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "QuotePro, a quoting and pricing platform built for residential and commercial cleaning businesses, starts at a flat 19 USD a month.",
+      "url": "https://www.softwareadvice.com/product/539705-QuotePro/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "An Etsy cleaning business pricing calculator and quote template sells for about 8.20 USD; its shop SimplyPMA shows 940 sales and the listing 31 favorites.",
+      "url": "https://www.etsy.com/listing/4388244254/cleaning-business-pricing-calculator",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Etsy search for cleaning price calculator returns several paid cleaning pricing and quote spreadsheets priced from 5 to 24 USD, one with 58 reviews.",
+      "url": "https://www.etsy.com/market/cleaning_price_calculator",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "QuoteIQ charges from 29.99 USD a month (Essentials, 1 user) with no free plan for its quoting and estimate software.",
+      "url": "https://myquoteiq.com/pricing/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "ZenMaid, maid service software, charges 19, 39 and 49 USD a month for its Starter, Pro and Pro Max plans.",
+      "url": "https://zenmaid.com/answers/en/articles/2423512-how-much-does-zenmaid-cost",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Launch27 sells cleaning business booking forms that price jobs online at 75, 150 and 299 USD a month.",
+      "url": "https://launch27.com/pricing",
+      "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Validate: find priced cleaning quote tools and cleaners asking how to quote. Against: free calculators from Housecall Pro https://www.housecallpro.com/home-cleaning/templates-calculators/",
-  "stage": "validating"
+  "nextAction": "Business case by research, sizing by sizing, then CEO go or no-go. Evidence for: paid quoting tools (QuotePro 19 USD/mo, QuoteIQ 29.99 USD/mo, ZenMaid 19 USD/mo, Launch27 75 USD/mo) and paid Etsy pricing calculators (SimplyPMA 940 shop sales). Evidence against: Jobber, Housecall Pro, Connecteam and ShiftFlow give free cleaning calculators and estimate templates, Jobber free for 5 quotes a month. Demand is real but mostly US, and the free gap is narrow.",
+  "stage": "validated",
+  "evidenceAgainst": [
+    {
+      "claim": "Jobber offers a free house cleaning cost calculator (visit type, square feet, bedrooms, bathrooms, add-ons) that outputs a price range.",
+      "url": "https://www.getjobber.com/free-tools/house-cleaning-cost-calculator/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Jobber gives a free cleaning estimate template as PDF and Excel, and its software is free for up to five estimates, jobs and invoices a month.",
+      "url": "https://getjobber.com/free-tools/estimate-template/cleaning/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Housecall Pro offers free home cleaning price, bid, labor, margin and markup calculators and a free estimate template.",
+      "url": "https://www.housecallpro.com/home-cleaning/templates-calculators/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "ShiftFlow offers a free, no sign-up house cleaning cost calculator that runs in the browser, plus a separate free quote generator.",
+      "url": "https://www.shiftflow.app/free-tools/free-house-cleaning-cost-calculator",
+      "foundAt": "2026-11-14"
+    }
+  ]
 }
