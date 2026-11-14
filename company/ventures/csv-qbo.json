@@ -4,14 +4,14 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:32:23.142Z",
-  "updatedAt": "2026-11-14T14:33:05.398Z",
-  "killReason": null,
+  "updatedAt": "2026-11-14T14:34:35.125Z",
+  "killReason": "The need is real (DocuClipper from $29 a month, ProperSoft from $19.99 a month) but at least four free in-browser, no-upload converters already do exactly this job (Statement Extract free forever unlimited, Ledgerbridge, FileTailored, Somacon for IIF), and QuickBooks Online imports CSV natively. Our pitch of in-browser, nothing uploaded is already the free incumbents pitch, and organic search, our only allowed channel, is crowded with them. Same failure pattern as earlier ideas: free tools already do the job and there is no channel.",
   "lead": {
     "name": "Sara",
     "color": "#8A5A00",
     "trait": "Thinks like the buyer, prices like the seller."
   },
-  "stage": "validating",
+  "stage": "killed",
   "id": "csv-qbo",
   "title": "CSV to QBO",
   "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
@@ -39,7 +39,44 @@
       "claim": "A QuickBooks community user asks for a CSV to QBO converter, saying the independent ones are not very good; a reply points to a $60 converter.",
       "url": "https://quickbooks.intuit.com/community/banking-4/cvs-convertor-32368",
       "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Ledgerbridge has a guide for users whose bank only offers CSV downloads and need a QuickBooks file, showing the problem is searched for.",
+      "url": "https://ledgerbridge-2ja.pages.dev/guides/bank-only-offers-csv",
+      "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Research. Against: Statement Extract already offers a CSV to QBO converter that it describes as free forever with unlimited files (https://statementextract.pages.dev/convert/csv-to-qbo/), so the search results already hold free clones and distribution is crowded."
+  "nextAction": "None. Killed at validating; no business case or spec needed.",
+  "evidenceAgainst": [
+    {
+      "claim": "Statement Extract offers a CSV to QBO converter it describes as free forever, unlimited transactions, running entirely in the browser.",
+      "url": "https://statementextract.pages.dev/convert/csv-to-qbo/",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Ledgerbridge offers a free in-browser CSV to QBO, QFX and OFX converter with no upload and per-bank pages, with only a one-time $29 Pro upgrade for unlimited rows.",
+      "url": "https://ledgerbridge-2ja.pages.dev/guides/import-csv-into-quickbooks-desktop",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "FileTailored offers a CSV to QBO converter that it says runs locally in the browser with a free try button.",
+      "url": "https://filetailored-new.pages.dev/tools/converters/csv-to-qbo",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Somacon offers a free, unlimited in-browser CSV to IIF converter for QuickBooks Desktop.",
+      "url": "https://somacon.com/p590.php",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "QuickBooks Online itself accepts 3 or 4 column CSV bank uploads directly, so Online users need no QBO file.",
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/bank-transactions/import-bank-transactions-using-excel-csv-files/00/185578",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "claim": "Search results for free CSV to QBO converters already hold several free no-upload clones alongside paid vendors, so the only allowed channel, organic search, is crowded.",
+      "url": "https://ledgerbridge-2ja.pages.dev/",
+      "foundAt": "2026-11-14"
+    }
+  ]
 }

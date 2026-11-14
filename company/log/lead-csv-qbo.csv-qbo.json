@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-14T14:33:43.890Z",
+    "agent": "lead-csv-qbo",
+    "action": "Started: Validating csv-qbo: searching for sourced demand evidence and free alternatives",
+    "ventureId": "csv-qbo",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-14T14:34:35.157Z",
+    "agent": "lead-csv-qbo",
+    "action": "Killed csv-qbo at validating: 4 sourced signals for, 6 against; free in-browser converters already do the job and QBO Online imports CSV natively",
+    "ventureId": "csv-qbo",
+    "kind": "done"
+  }
+]
