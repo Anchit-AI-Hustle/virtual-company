@@ -5,7 +5,8 @@
 # 1. Rebase on the latest main. Files are one per item, so conflicts should not happen. The
 #    only expected overlap is an agent status file in company/activity/ (a shared reviewer
 #    reporting for two pods): the newest status wins. Any other conflict stops the push.
-# 2. Re-run every check on the merged result, so main never goes red.
+# 2. Rebuild HQ's data from the merged books, then re-run every check on the result exactly as
+#    CI does, so main never goes red.
 # 3. Push. If someone pushed first, start again (up to 5 tries).
 # Exit codes: 0 pushed, 2 real conflict (rebase aborted), 3 checks failed after merging, 4 gave up.
 set -u
@@ -20,7 +21,7 @@ for attempt in 1 2 3 4 5; do
     while [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] || [ -d "$(git rev-parse --git-path rebase-merge)" ]; do
       conflicted=$(git diff --name-only --diff-filter=U)
       [ -z "$conflicted" ] && break
-      if echo "$conflicted" | grep -qv '^company/activity/'; then
+      if echo "$conflicted" | grep -qvE '^(company/activity/|hq/public/data\.json$)'; then
         echo "Conflict outside agent status files: $conflicted" >&2
         git rebase --abort
         exit 2
@@ -34,6 +35,13 @@ for attempt in 1 2 3 4 5; do
     sleep $((p * 3))
   done
   [ "$ok_pull" = 1 ] || { cat /tmp/push-pull.log >&2; echo "Could not pull main" >&2; exit 4; }
+
+  # HQ reads its live data from the committed hq/public/data.json, so rebuild it from the
+  # merged books and fold it into this push. No Vercel deploy is needed for data changes.
+  if node scripts/build-hq.js >/dev/null 2>&1; then
+    git add hq/public/data.json
+    git diff --cached --quiet || git -c user.name="$(git log -1 --format=%an)" -c user.email="$(git log -1 --format=%ae)" commit -q --amend --no-edit
+  fi
 
   # Run the checks the way GitHub CI does: a clean copy of the commit outside any folder with
   # extra node modules, and no NODE_PATH, so nothing that only exists here can hide a failure.

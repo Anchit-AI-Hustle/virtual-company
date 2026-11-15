@@ -1,0 +1,1924 @@
+{
+  "builtAt": "2026-11-15T09:02:52.889Z",
+  "health": {
+    "status": "ok",
+    "since": "2026-11-14T16:29:35.790Z",
+    "problems": [],
+    "lastRedeployAt": "2026-11-14T16:14:33.878Z"
+  },
+  "company": {
+    "name": "Venture HQ",
+    "domain": "anchit-tandon.com",
+    "owner": "Anchit Tandon",
+    "ownerLogin": "anchit-tandon"
+  },
+  "stages": [
+    "idea",
+    "validating",
+    "validated",
+    "spec",
+    "building",
+    "qa",
+    "live",
+    "scaling",
+    "killed"
+  ],
+  "schedule": {
+    "timezone": "Asia/Kolkata",
+    "cycles": [
+      "01:41",
+      "04:41",
+      "07:41",
+      "10:41",
+      "13:41",
+      "16:41",
+      "19:41",
+      "22:41"
+    ],
+    "weekly": {
+      "day": "Sunday",
+      "time": "17:13"
+    }
+  },
+  "wip": {
+    "pods": 3,
+    "liveTests": 5,
+    "openIdeas": 12
+  },
+  "money": {
+    "revenueINR": 0,
+    "costINR": 0,
+    "netINR": 0,
+    "revenueUSD": 0,
+    "costUSD": 0,
+    "netUSD": 0,
+    "fx": {
+      "usdInr": 94.2754,
+      "asOf": "2026-11-14",
+      "source": "https://www.xflowpay.com/tools/currency-converter/usd-to-inr-rate?amount=26"
+    },
+    "monthlyCapINR": 0
+  },
+  "decisions": [
+    {
+      "id": "ap-company-1",
+      "title": "Stop staffing ideas that have no allowed way to reach buyers",
+      "status": "decided",
+      "why": "All 8 ideas worked on 14 Nov 2026 died because free tools already did the job and no allowed channel reached buyers.",
+      "options": [
+        {
+          "option": "Do nothing for now: keep picking ideas the same way",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "0 of 8 ideas cleared the bar on 2026-11-14; see killReason in company/ventures/bake-cost.json, rally-rounds.json, clean-quote.json, csv-qbo.json, shaadi-budget.json, donor-letters.json. No honest profit figure."
+        },
+        {
+          "option": "Screen every idea for an allowed channel and no free equivalent before staffing a pod; leave pods empty rather than staff weak ideas",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "The agents can do it alone at no cost. No idea has cleared a business case yet, so no honest profit figure."
+        },
+        {
+          "option": "Ask the owner to share products with his own audience",
+          "realism": 1,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Breaks the CLAUDE.md rule against posting as the owner."
+        }
+      ],
+      "decision": {
+        "choice": "Screen every idea for an allowed channel and no free equivalent before staffing a pod; leave pods empty rather than staff weak ideas",
+        "reason": "Costs nothing, needs nothing from the owner, and stops cycles going to ideas that die the same way.",
+        "decidedAt": "2026-11-14T14:36:30.597Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/7"
+    },
+    {
+      "id": "ap-seatwise-3",
+      "title": "Take the stopped Seatwise product offline",
+      "status": "decided",
+      "why": "Seatwise was stopped after its business case scored 11 of 35, but its free planner was still online. Only approved ideas may be live.",
+      "options": [
+        {
+          "option": "Pause its Vercel project",
+          "realism": 5,
+          "profitINR12m": 0,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Vercel pause_project blocks the production deployment and can be undone with unpause_project. Seatwise earns nothing (no payment set up, case 11 of 35)."
+        },
+        {
+          "option": "Delete its Vercel project",
+          "realism": 1,
+          "profitINR12m": 0,
+          "costINR": 0,
+          "reversible": false,
+          "basis": "Deleting projects is outside the decision limits in CLAUDE.md."
+        },
+        {
+          "option": "Do nothing for now",
+          "realism": 5,
+          "profitINR12m": 0,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Leaves an idea online that was never approved, against the owner's rule that only approved ideas are deployed."
+        }
+      ],
+      "decision": {
+        "choice": "Pause its Vercel project",
+        "reason": "The owner wants only approved ideas deployed. Pausing takes Seatwise offline at no cost, keeps its code and project, and can be undone in one step.",
+        "decidedAt": "2026-11-14T10:50:00.000Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/6"
+    },
+    {
+      "id": "ap-2",
+      "title": "Decide how to take payments once a product is ready",
+      "status": "decided",
+      "why": "No product the company builds can earn money until there is a way to get paid. The agents cannot open a payment account for you.",
+      "options": [
+        {
+          "option": "Do nothing for now and decide again when a product clears its business case and sizing",
+          "realism": 5,
+          "profitINR12m": 0,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Both ideas assessed so far were stopped (Seatwise case 11 of 35, PayChase sizing Rs 14,723 expected a year), so there is nothing to sell and a payment account would earn Rs 0 now."
+        },
+        {
+          "option": "Ask the owner to open a Razorpay account now",
+          "realism": 1,
+          "profitINR12m": 0,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Razorpay needs the owner's own identity and bank details (KYC), which agents cannot provide, and nothing is ready to sell."
+        }
+      ],
+      "decision": {
+        "choice": "Do nothing for now and decide again when a product clears its business case and sizing",
+        "reason": "There is nothing to sell yet, so a payment account adds no profit today. When a product passes its business case, sizing and QA, the desk decides again; if the best option then needs the owner's identity it will ask him with plain steps.",
+        "decidedAt": "2026-11-14T10:45:00.000Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/2"
+    },
+    {
+      "id": "ap-4",
+      "title": "Get past Cloudflare's injected scripts so products can launch",
+      "status": "decided",
+      "why": "Cloudflare adds its own scripts to every page on your subdomains. They show errors, so no product can pass its launch check. It also goes against your rule of no proxies.",
+      "options": [
+        {
+          "option": "Keep Cloudflare as it is and have QA remove its two injected scripts before checking",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Tested 2026-11-14 with scripts/qa-check.js on https://seatwise.anchit-tandon.com and https://hq.anchit-tandon.com: 0 errors from the product at 390, 820 and 1440 px. Unblocks every launch; no product is ready yet, so no honest profit figure."
+        },
+        {
+          "option": "Ask the owner to switch the subdomains to DNS only in Cloudflare",
+          "realism": 1,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Needs the owner's Cloudflare login and a DNS change, and the wildcard record also serves his other live sites. The issue was closed on 2026-11-14 without the change being made."
+        },
+        {
+          "option": "Loosen each product's security rules to allow Cloudflare's scripts",
+          "realism": 2,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Cloudflare's bot check script changes on every request (3 requests gave 3 different hashes), so it can only be allowed with unsafe-inline, which weakens protection against script injection on every product."
+        },
+        {
+          "option": "Do nothing for now",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Every product fails its launch check, so nothing can earn."
+        }
+      ],
+      "decision": {
+        "choice": "Keep Cloudflare as it is and have QA remove its two injected scripts before checking",
+        "reason": "It unblocks every launch today at no cost, keeps each product's security rules strict, needs nothing from the owner and can be undone in one commit. The DNS change needs the owner's login and touches his other sites.",
+        "decidedAt": "2026-11-14T10:45:00.000Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4"
+    }
+  ],
+  "approvals": [],
+  "ventures": [
+    {
+      "id": "bake-cost",
+      "title": "Bake Cost",
+      "oneLiner": "Recipe costing and price quote calculator for home bakers, on the phone, no install",
+      "customer": "Home bakers and small cake sellers who price custom orders",
+      "revenueModel": "Free single recipe, paid one-time unlock for saved recipes and quotes",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 14,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Business case scored 15 of 35 (bar 24), with willingness to pay and distribution at 2: free no-signup cake pricing calculators already exist and paid costing apps barely sell. The only allowed channel, organic search, is crowded with free tools.",
+      "updatedAt": "2026-11-14T14:29:31.020Z",
+      "evidenceCount": 11,
+      "specPath": null,
+      "lead": {
+        "id": "lead-bake-cost",
+        "name": "Vihaan",
+        "color": "#1F6F8B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/bake-cost.md",
+        "total": 15,
+        "recommendation": "no-go"
+      }
+    },
+    {
+      "id": "seatwise",
+      "title": "Seatwise",
+      "oneLiner": "Plan a wedding seating chart on your phone in minutes, private, no signup",
+      "customer": "Couples and family members planning a wedding or large event seating",
+      "revenueModel": "Free planner, one-time paid Pro unlock (price pending owner approval)",
+      "priceINR": 799,
+      "stage": "killed",
+      "score": 14,
+      "url": null,
+      "nextAction": "None. Parked. Code kept in ventures/seatwise.",
+      "metrics": null,
+      "killReason": "Business case scored 11 of 35 (bar 24): free no-signup seating tools already exist, most Indian weddings do not use assigned tables, and there is no way to reach paying buyers without ads or posting. Built free planner parked, not launched.",
+      "updatedAt": "2026-11-14T09:38:31Z",
+      "evidenceCount": 4,
+      "specPath": "specs/seatwise.md",
+      "lead": {
+        "id": "lead-seatwise",
+        "name": "Ira",
+        "color": "#7A3E9D"
+      },
+      "reviews": {
+        "product": false,
+        "engineer": null,
+        "design": true,
+        "security": true,
+        "legal": true
+      },
+      "qaPassed": false,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/seatwise.md",
+        "total": 11,
+        "recommendation": "no-go"
+      }
+    },
+    {
+      "id": "clean-quote",
+      "title": "Clean Quote",
+      "oneLiner": "Instant house cleaning price quote builder for solo cleaners, shareable link",
+      "customer": "Solo and small house cleaning businesses",
+      "revenueModel": "Paid one-time pro unlock",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Business case scored 16 of 35 (bar 24), with distribution at 2 and recurring revenue at 1: Jobber, Housecall Pro and ShiftFlow give free cleaning calculators and quote templates. There is no allowed channel to reach solo cleaners without ads, outreach or the owner Etsy identity.",
+      "updatedAt": "2026-11-14T14:29:31.020Z",
+      "evidenceCount": 7,
+      "specPath": null,
+      "lead": {
+        "id": "lead-clean-quote",
+        "name": "Aditi",
+        "color": "#9C4A1A"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/clean-quote.md",
+        "total": 16,
+        "recommendation": "no-go"
+      }
+    },
+    {
+      "id": "donor-letters",
+      "title": "Donor Letters",
+      "oneLiner": "Year-end giving statements for every donor from one spreadsheet or QuickBooks export, printed or emailed as PDFs",
+      "customer": "Small US churches and nonprofits that track gifts in QuickBooks or a spreadsheet",
+      "revenueModel": "Annual season pass per organisation in USD, priced per batch of statements",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": "None. Killed at validating, see killReason, evidence and evidenceAgainst.",
+      "metrics": null,
+      "killReason": "Killed at validating. The need is real (QuickBooks has no donor statements, paid apps exist), but the exact product is already free: CharityCharge turns a gift CSV into annual donor summaries in the browser at no cost, B1.church and Zeffy produce year-end statements free, and the nearest paid spreadsheet tool (Statement Press) charges only $29 a year with a free tier. Organic search is the only allowed channel and it is already crowded with free generators, and the season closes by late January, leaving about ten weeks to build, rank and sell. Same pattern that killed earlier ideas: free tools already do the job.",
+      "updatedAt": "2026-11-14T14:35:40.150Z",
+      "evidenceCount": 5,
+      "specPath": null,
+      "lead": {
+        "id": "lead-donor-letters",
+        "name": "Myra",
+        "color": "#A0306B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "paychase",
+      "title": "Paychase",
+      "oneLiner": "Polite payment reminder sequence and overdue tracker for Indian freelancers",
+      "customer": "Indian freelancers with clients who pay late",
+      "revenueModel": "One-time template and tracker purchase",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Market sizing: about 271 paying people and Rs 14,723 expected a year against a bar of Rs 3,00,000, with a 10% chance of working against a bar of 15%. Zoho Invoice and Refrens already send payment reminders free, and late payment hits most freelancers about once a year, so a one-time Rs 499 tool has little room. Stopped before any build.",
+      "updatedAt": "2026-11-14T13:30:00.000Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": {
+        "path": "cases/paychase.sizing.json",
+        "clearsBar": false,
+        "problem": {
+          "who": "Indian freelancers and very small service businesses (designers, developers, writers, marketers, small agencies) whose clients pay invoices after the due date, and who find it awkward to chase. Most of them already have a free invoicing tool that sends reminders, so the unmet need is narrow: the wording and the nerve to send reminder 2 and 3, not the sending itself.",
+          "frequency": "yearly"
+        },
+        "cohorts": [
+          {
+            "name": "Indian high-skilled gig workers and freelancers billing domestic clients",
+            "country": "IN",
+            "size": 1355200,
+            "reachablePct": 0.5,
+            "payingPct": 2,
+            "priceINR": 499,
+            "purchasesPerYear": 1,
+            "users": 136,
+            "earningsINR": 67864
+          },
+          {
+            "name": "Indian freelancers billing foreign clients",
+            "country": "IN",
+            "size": 338800,
+            "reachablePct": 1,
+            "payingPct": 3,
+            "priceINR": 499,
+            "purchasesPerYear": 1,
+            "users": 102,
+            "earningsINR": 50898
+          },
+          {
+            "name": "US freelancers doing skilled knowledge work",
+            "country": "US",
+            "size": 30000000,
+            "reachablePct": 0.01,
+            "payingPct": 1,
+            "priceINR": 899,
+            "purchasesPerYear": 1,
+            "users": 30,
+            "earningsINR": 26970
+          },
+          {
+            "name": "Indian micro and small businesses escalating late payment on MSME Samadhaan (weakest cohort)",
+            "country": "IN",
+            "size": 27000,
+            "reachablePct": 1,
+            "payingPct": 1,
+            "priceINR": 499,
+            "purchasesPerYear": 1,
+            "users": 3,
+            "earningsINR": 1497
+          }
+        ],
+        "payingUsers": 271,
+        "worstINR": 29446,
+        "likelyINR": 147229,
+        "bestINR": 441687,
+        "likelihoodPct": 10,
+        "expectedINR": 14723
+      },
+      "businessCase": null
+    },
+    {
+      "id": "rally-rounds",
+      "title": "Rally Rounds",
+      "oneLiner": "Pickleball round robin schedules and live scores for club organisers, no app install",
+      "customer": "Volunteer pickleball and padel session organisers",
+      "revenueModel": "Free for small sessions, paid organiser pass",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Business case scored 14 of 35 (bar 24), with willingness to pay and distribution at 2 and competition gap at 1: Reclub and others already give free browser round robins with live scores. Search intent leans free, and the paying money sits with networked brands like Pickleheads.",
+      "updatedAt": "2026-11-14T14:29:31.020Z",
+      "evidenceCount": 6,
+      "specPath": null,
+      "lead": {
+        "id": "lead-rally-rounds",
+        "name": "Reyansh",
+        "color": "#2F6B3A"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/rally-rounds.md",
+        "total": 14,
+        "recommendation": "no-go"
+      }
+    },
+    {
+      "id": "shaadi-budget",
+      "title": "Shaadi Budget",
+      "oneLiner": "Indian wedding budget planner by function and vendor, works offline",
+      "customer": "Indian families planning a wedding",
+      "revenueModel": "One-time paid planner",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": "None. Killed at validating: free tools already cover budget by function and vendor in INR.",
+      "metrics": null,
+      "killReason": "Free everywhere and no allowed channel. The need is real (average budget Rs 36.5 lakh) but WeddingWire India, a free Hindi per-event planner, Calcwise and another free tracker already do budget by function and vendor in INR at no cost. The paid Indian specific tools found show near zero traction (8 ratings, 10+ downloads, a USD 1.99 template), and organic search for this need is crowded by WeddingWire, WedMeGood and many free SEO tool pages. Same failure pattern as earlier ideas.",
+      "updatedAt": "2026-11-14T14:35:08.575Z",
+      "evidenceCount": 6,
+      "specPath": null,
+      "lead": {
+        "id": "lead-shaadi-budget",
+        "name": "Advait",
+        "color": "#3B4C9B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "ach-batch",
+      "title": "ACH Batch",
+      "oneLiner": "Build a bank-ready NACHA ACH payment file from a spreadsheet of payees in the browser, nothing uploaded",
+      "customer": "US small businesses and bookkeepers paying contractors or payroll by ACH through their bank",
+      "revenueModel": "Monthly subscription in USD, first file free",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Held by Legal: a wrong NACHA file can misdirect real payments and the tool would handle bank account numbers, a real risk to users. Not staffed. Research. Against: some banks take a plain CSV of ACH payments directly, for example Chase lets business users import a formatted CSV file of ACH payment instructions (https://chase.com/content/dam/chaseonline/en/demos/cbo/pdfs/cbo_csvfile_helpguide.pdf), and PayFile Pro already fills the browser-tool gap cheaply. Legal must check that handling bank account numbers in the browser only is acceptable.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T14:33:05.398Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "csv-qbo",
+      "title": "CSV to QBO",
+      "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
+      "customer": "US bookkeepers and small business owners importing bank history into QuickBooks",
+      "revenueModel": "Monthly subscription in USD after a free first file",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 12,
+      "url": null,
+      "nextAction": "None. Killed at validating; no business case or spec needed.",
+      "metrics": null,
+      "killReason": "The need is real (DocuClipper from $29 a month, ProperSoft from $19.99 a month) but at least four free in-browser, no-upload converters already do exactly this job (Statement Extract free forever unlimited, Ledgerbridge, FileTailored, Somacon for IIF), and QuickBooks Online imports CSV natively. Our pitch of in-browser, nothing uploaded is already the free incumbents pitch, and organic search, our only allowed channel, is crowded with them. Same failure pattern as earlier ideas: free tools already do the job and there is no channel.",
+      "updatedAt": "2026-11-14T14:34:35.125Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": {
+        "id": "lead-csv-qbo",
+        "name": "Sara",
+        "color": "#8A5A00"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "master-key-gen",
+      "title": "Master Key Generator",
+      "oneLiner": "Build a master key system for pin tumbler locks in the browser: printable bitting list and pinning chart with MACS and pin stack checks",
+      "customer": "Small locksmith shops, facility maintenance staff and landlords who master key their own pin tumbler locks, US first",
+      "revenueModel": "Free build and preview, paid per downloadable chart or a low price unlimited pass, in USD",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 12,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Killed at validating. People do pay (CLK charts $10.15, Aero Key $120, HPC MasterKing $340.68), but Key-En-Lock launched a free Master Key System Builder on 22 Feb 2026 that already covers Schlage C, Kwikset KW1, Yale, Corbin Russwin and Best SFIC with pinning and bitting chart PDFs (https://keyenlock.com/blog/master-key-system-builder/), ABUS gives a free designer, and demand evidence is small and old (paid apps with 7 to 19 ratings, forum requests from 2006 to 2018). Fails screen (b) of issue 7.",
+      "updatedAt": "2026-11-15T05:25:12.811Z",
+      "evidenceCount": 8,
+      "specPath": null,
+      "lead": {
+        "id": "lead-master-key-gen",
+        "name": "Kian",
+        "color": "#14706B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "stall-tally",
+      "title": "Stall Tally",
+      "oneLiner": "Craft fair sales and stock tally for makers at market stalls, works offline",
+      "customer": "Makers selling at craft fairs and weekend markets",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 12,
+      "url": null,
+      "nextAction": "Research. Against: Booth Math and VendStats apps already exist (https://apps.apple.com/us/app/id6770763212)",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T14:14:20.986Z",
+      "evidenceCount": 1,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "rota-sheet",
+      "title": "Rota Sheet",
+      "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
+      "customer": "Owners of small shops and cafes with under 10 staff",
+      "revenueModel": "Paid printable rota pack",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 11,
+      "url": null,
+      "nextAction": "Research. Against: free rota tools from Findmyshift and BrightHR already exist (https://www.findmyshift.co.uk/free-staff-rota-software)",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T06:49:00.906Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "sitter-sheet",
+      "title": "Sitter Sheet",
+      "oneLiner": "Pet sitter client intake, visit report and invoice in one phone page",
+      "customer": "Independent pet sitters and dog walkers",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 11,
+      "url": null,
+      "nextAction": "Research: paid pet sitter form packs on vendor pages. Against: free form builders exist (Paperform, Makeform)",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T14:14:20.986Z",
+      "evidenceCount": 1,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "class-pass",
+      "title": "Class Pass Card",
+      "oneLiner": "Digital punch card for independent yoga and fitness instructors selling class packs",
+      "customer": "Independent yoga, dance and fitness instructors",
+      "revenueModel": "Paid monthly or one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 10,
+      "url": null,
+      "nextAction": "Research: no evidence gathered yet",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-14T14:14:20.986Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    }
+  ],
+  "departments": [
+    {
+      "id": "leadership",
+      "name": "Leadership"
+    },
+    {
+      "id": "strategy",
+      "name": "Strategy and Data"
+    },
+    {
+      "id": "product",
+      "name": "Product and Design"
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering"
+    },
+    {
+      "id": "market",
+      "name": "Growth, Sales and Support"
+    },
+    {
+      "id": "business",
+      "name": "Finance, Legal and People"
+    }
+  ],
+  "office": [
+    {
+      "id": "ceo",
+      "name": "Arya",
+      "title": "Chief Executive",
+      "department": "leadership",
+      "color": "#14213D",
+      "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
+      "charter": "agents/ceo.md",
+      "state": "idle",
+      "task": "Pods left empty this cycle: 14 niches screened today, none passes both the allowed channel and no free tool tests. 5 open ideas kept on file; Research to look next at trade niches served only by old paid desktop software",
+      "since": "2026-11-15T05:25:24.019Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:25:12.898Z",
+        "action": "Pods left empty this cycle: 14 niches screened today, none passes both the allowed channel and no free tool tests. 5 open ideas kept on file; Research to look next at trade niches served only by old paid desktop software"
+      },
+      "actions": 24
+    },
+    {
+      "id": "ops",
+      "name": "Kabir",
+      "title": "Chief of Staff",
+      "department": "leadership",
+      "color": "#3D4F7C",
+      "trait": "Runs the day: standup, handoffs, books, digest.",
+      "charter": "agents/ops.md",
+      "state": "idle",
+      "task": "Closed the cycle: 14 niches screened, 1 staffed (master-key-gen, Kian) and killed at validating for a free equivalent; pods empty; 0 live; revenue Rs 0; checks green",
+      "since": "2026-11-15T05:25:24.370Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:25:24.336Z",
+        "action": "Closed the cycle: 14 niches screened, 1 staffed (master-key-gen, Kian) and killed at validating for a free equivalent; pods empty; 0 live; revenue Rs 0; checks green"
+      },
+      "actions": 16
+    },
+    {
+      "id": "research",
+      "name": "Meera",
+      "title": "Head of Research",
+      "department": "strategy",
+      "color": "#6B4E9B",
+      "trait": "No link, no claim. Hunts for people already paying.",
+      "charter": "agents/research.md",
+      "state": "idle",
+      "task": "Idea sourcing: 13 niches checked, 12 dropped for good free tools or no payers; 1 passes the screen: master-key-gen (paid comparables $3.99 to $120, no free web generator found)",
+      "since": "2026-11-15T05:25:24.051Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:21:02.061Z",
+        "action": "Idea sourcing: 13 niches checked, 12 dropped for good free tools or no payers; 1 passes the screen: master-key-gen (paid comparables $3.99 to $120, no free web generator found)"
+      },
+      "actions": 14
+    },
+    {
+      "id": "data",
+      "name": "Anaya",
+      "title": "Data and Analytics Lead",
+      "department": "strategy",
+      "color": "#8A6BC2",
+      "trait": "Defines what gets counted, and counts it honestly.",
+      "charter": "agents/data.md",
+      "state": "idle",
+      "task": "No live ventures, no counts to check",
+      "since": "2026-11-15T05:25:24.270Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:13:46.724Z",
+        "action": "No live ventures, no counts to check"
+      },
+      "actions": 5
+    },
+    {
+      "id": "sizing",
+      "name": "Farhan",
+      "title": "Market Sizing and Forecasting",
+      "department": "strategy",
+      "color": "#5B3E8A",
+      "trait": "Counts the buyers, group by group, before anyone builds.",
+      "charter": "agents/sizing.md",
+      "state": "idle",
+      "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
+      "since": "2026-11-14T14:36:30.900Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T09:45:19.653Z",
+        "action": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar"
+      },
+      "actions": 1
+    },
+    {
+      "id": "product",
+      "name": "Rohan",
+      "title": "Product Manager",
+      "department": "product",
+      "color": "#0E6E8C",
+      "trait": "Cuts scope until it ships in three cycles.",
+      "charter": "agents/product.md",
+      "state": "idle",
+      "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
+      "since": "2026-11-14T14:36:30.955Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:29:01.927Z",
+        "action": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests."
+      },
+      "actions": 4
+    },
+    {
+      "id": "design",
+      "name": "Zoya",
+      "title": "Product Designer",
+      "department": "product",
+      "color": "#1C93B5",
+      "trait": "Designs for a thumb on a 390 px screen first.",
+      "charter": "agents/design.md",
+      "state": "idle",
+      "task": "No design work: Seatwise reviewed and passed, no new spec this run",
+      "since": "2026-11-14T14:36:31.005Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:06:57.282Z",
+        "action": "No design work: Seatwise reviewed and passed, no new spec this run"
+      },
+      "actions": 5
+    },
+    {
+      "id": "engineer",
+      "name": "Dev",
+      "title": "Software Engineer",
+      "department": "engineering",
+      "color": "#0B7A5E",
+      "trait": "Plain HTML, CSS and JS unless the spec forces more.",
+      "charter": "agents/engineer.md",
+      "state": "idle",
+      "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+      "since": "2026-11-14T14:36:31.059Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:06:57.326Z",
+        "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build"
+      },
+      "actions": 5
+    },
+    {
+      "id": "qa",
+      "name": "Ishaan",
+      "title": "QA Engineer",
+      "department": "engineering",
+      "color": "#2E9C7E",
+      "trait": "Independent. Trusts screenshots, not claims.",
+      "charter": "agents/qa.md",
+      "state": "idle",
+      "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
+      "since": "2026-11-14T14:36:31.108Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:06:57.173Z",
+        "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4"
+      },
+      "actions": 5
+    },
+    {
+      "id": "devops",
+      "name": "Neel",
+      "title": "DevOps and Release",
+      "department": "engineering",
+      "color": "#4FB394",
+      "trait": "Nothing is shipped until the live URL works.",
+      "charter": "agents/devops.md",
+      "state": "idle",
+      "task": "Uptime: 0 live products to check; HQ 200 and data 200 per watchdog.js",
+      "since": "2026-11-15T05:25:24.202Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:13:46.662Z",
+        "action": "Uptime: 0 live products to check; HQ 200 and data 200 per watchdog.js"
+      },
+      "actions": 13
+    },
+    {
+      "id": "security",
+      "name": "Tara",
+      "title": "Security and Privacy",
+      "department": "engineering",
+      "color": "#167A6A",
+      "trait": "No secrets in code, no personal data in public.",
+      "charter": "agents/security.md",
+      "state": "idle",
+      "task": "Secret scan clean: no keys, tokens or private keys in tracked files",
+      "since": "2026-11-15T05:25:24.122Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:13:46.600Z",
+        "action": "Secret scan clean: no keys, tokens or private keys in tracked files"
+      },
+      "actions": 8
+    },
+    {
+      "id": "growth",
+      "name": "Sana",
+      "title": "Growth and Marketing",
+      "department": "market",
+      "color": "#C27A00",
+      "trait": "Brings the right buyers without spending a rupee.",
+      "charter": "agents/growth.md",
+      "state": "idle",
+      "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
+      "since": "2026-11-14T14:36:31.234Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:05:27.656Z",
+        "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live"
+      },
+      "actions": 2
+    },
+    {
+      "id": "sales",
+      "name": "Arjun",
+      "title": "Sales and Pricing",
+      "department": "market",
+      "color": "#D99A1E",
+      "trait": "Makes paying the easiest step on the page.",
+      "charter": "agents/sales.md",
+      "state": "idle",
+      "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
+      "since": "2026-11-14T14:36:31.283Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:05:04.139Z",
+        "action": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then"
+      },
+      "actions": 3
+    },
+    {
+      "id": "support",
+      "name": "Priya",
+      "title": "Customer Support",
+      "department": "market",
+      "color": "#B36B00",
+      "trait": "Nobody waits. Every complaint becomes a fix.",
+      "charter": "agents/support.md",
+      "state": "idle",
+      "task": "No live ventures, no customer messages to handle",
+      "since": "2026-11-15T05:25:24.233Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:13:46.692Z",
+        "action": "No live ventures, no customer messages to handle"
+      },
+      "actions": 4
+    },
+    {
+      "id": "finance",
+      "name": "Nikhil",
+      "title": "Finance",
+      "department": "business",
+      "color": "#8C3B4F",
+      "trait": "If it has no source, it is not in the books.",
+      "charter": "agents/finance.md",
+      "state": "idle",
+      "task": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
+      "since": "2026-11-15T05:25:24.166Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:13:46.631Z",
+        "action": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded"
+      },
+      "actions": 5
+    },
+    {
+      "id": "legal",
+      "name": "Vikram",
+      "title": "Legal and Compliance",
+      "department": "business",
+      "color": "#A84D63",
+      "trait": "Keeps every claim true and every category safe.",
+      "charter": "agents/legal.md",
+      "state": "idle",
+      "task": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)",
+      "since": "2026-11-15T05:25:24.087Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-15T05:21:02.101Z",
+        "action": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)"
+      },
+      "actions": 9
+    },
+    {
+      "id": "people",
+      "name": "Kavya",
+      "title": "People and Performance",
+      "department": "business",
+      "color": "#C2667D",
+      "trait": "Reviews every agent's work and fixes the process.",
+      "charter": "agents/people.md",
+      "state": "idle",
+      "task": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
+      "since": "2026-11-14T14:36:31.479Z",
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": {
+        "at": "2026-11-14T07:06:57.405Z",
+        "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed"
+      },
+      "actions": 1
+    }
+  ],
+  "ventureTrail": {
+    "ach-batch": [],
+    "bake-cost": [
+      {
+        "at": "2026-11-14T14:29:35.542Z",
+        "agent": "ceo",
+        "action": "No-go on bake-cost: case 15 of 35, free calculators meet the need and the only channel is crowded search. Killed."
+      },
+      {
+        "at": "2026-11-14T14:29:23.660Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 15 of 35 against a bar of 24, with willingnessToPay 2 and distribution 2. Spot-checked: Craftybase gives a free no-signup cake pricing calculator with ingredients, labour, overhead and margin. Paid costing apps show almost no ratings or sales, and organic search is the only allowed channel and is crowded with free tools. No pivot named in the case clears distribution 3."
+      },
+      {
+        "at": "2026-11-14T14:26:33.526Z",
+        "agent": "research",
+        "action": "Business case written: 15 of 35, no-go; free calculators and apps already do it, paid costing tools barely sell, no payment rail"
+      },
+      {
+        "at": "2026-11-14T14:16:44.642Z",
+        "agent": "lead-bake-cost",
+        "action": "Blocked: Validated. Business case, sizing and CEO decision need independent research, sizing and ceo agents; this lead session has no tool to launch subagents, and the lead may not write them itself"
+      },
+      {
+        "at": "2026-11-14T14:16:14.863Z",
+        "agent": "lead-bake-cost",
+        "action": "Validating finished: stage moved to validated with sourced evidence for and against"
+      },
+      {
+        "at": "2026-11-14T14:16:14.819Z",
+        "agent": "research",
+        "action": "Validated bake-cost: 8 sourced signals for (paid apps USD 4.79 to 149, baker pricing questions), 3 against (free calculators, weak paid app sales)"
+      },
+      {
+        "at": "2026-11-14T14:15:13.593Z",
+        "agent": "lead-bake-cost",
+        "action": "Started: Validating: collecting sourced demand evidence for home baker costing"
+      }
+    ],
+    "class-pass": [],
+    "clean-quote": [
+      {
+        "at": "2026-11-14T14:29:35.644Z",
+        "agent": "ceo",
+        "action": "No-go on clean-quote: case 16 of 35, free cleaning calculators from Jobber and others and no allowed channel. Killed."
+      },
+      {
+        "at": "2026-11-14T14:29:23.748Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 16 of 35 against a bar of 24, with distribution 2 and recurringRevenue 1. Spot-checked: Jobber gives a free no-signup house cleaning cost calculator, and Housecall Pro and ShiftFlow give free ones too. The booking-page pivot in the case enters a crowded paid category and still has no channel we may use, so it does not clear the bar."
+      },
+      {
+        "at": "2026-11-14T14:27:41.300Z",
+        "agent": "research",
+        "action": "Business case written: 16/35, no-go; free calculators everywhere, no channel or payment rail"
+      },
+      {
+        "at": "2026-11-14T14:17:31.191Z",
+        "agent": "lead-clean-quote",
+        "action": "Blocked: Validated and waiting on the business case: this lead session has no subagent tool, so research, sizing and ceo cannot be launched independently. Next cycle must run research (case), sizing, then ceo for clean-quote"
+      },
+      {
+        "at": "2026-11-14T14:17:00.983Z",
+        "agent": "lead-clean-quote",
+        "action": "Validated: 7 sourced signals that cleaners pay for quoting tools and Etsy pricing calculators, plus 4 free alternatives recorded against"
+      },
+      {
+        "at": "2026-11-14T14:15:20.708Z",
+        "agent": "lead-clean-quote",
+        "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder"
+      }
+    ],
+    "csv-qbo": [
+      {
+        "at": "2026-11-14T14:34:35.157Z",
+        "agent": "lead-csv-qbo",
+        "action": "Killed csv-qbo at validating: 4 sourced signals for, 6 against; free in-browser converters already do the job and QBO Online imports CSV natively"
+      },
+      {
+        "at": "2026-11-14T14:33:43.890Z",
+        "agent": "lead-csv-qbo",
+        "action": "Started: Validating csv-qbo: searching for sourced demand evidence and free alternatives"
+      }
+    ],
+    "donor-letters": [
+      {
+        "at": "2026-11-14T14:35:40.177Z",
+        "agent": "lead-donor-letters",
+        "action": "Validation verdict kill: 5 sourced signals for, 7 against; CharityCharge already does CSV to annual donor summaries free, B1.church and Zeffy free, nearest paid tool is 29 USD a year"
+      },
+      {
+        "at": "2026-11-14T14:33:45.949Z",
+        "agent": "lead-donor-letters",
+        "action": "Started: Validating donor-letters: searching for sourced demand and evidence against"
+      }
+    ],
+    "master-key-gen": [
+      {
+        "at": "2026-11-15T05:25:12.869Z",
+        "agent": "lead-master-key-gen",
+        "action": "Venture killed by the CEO on my research verdict"
+      },
+      {
+        "at": "2026-11-15T05:25:12.835Z",
+        "agent": "ceo",
+        "action": "Killed master-key-gen at validating: a free builder (Key-En-Lock, Feb 2026) already does the whole job for the same buyers, verified on its own page"
+      },
+      {
+        "at": "2026-11-15T05:24:21.198Z",
+        "agent": "lead-master-key-gen",
+        "action": "Blocked: Awaiting CEO kill or continue decision; this session cannot launch separate research, sizing or CEO agents"
+      },
+      {
+        "at": "2026-11-15T05:24:21.151Z",
+        "agent": "lead-master-key-gen",
+        "action": "Research: 8 sourced paid signals confirmed, but Key-En-Lock offers a free builder doing the whole product (Kwikset, Schlage, MACS, pinning PDFs); verdict kill recommended to CEO"
+      },
+      {
+        "at": "2026-11-15T05:21:34.350Z",
+        "agent": "lead-master-key-gen",
+        "action": "Started: Validating: live web search on demand and free alternatives"
+      },
+      {
+        "at": "2026-11-15T05:21:02.101Z",
+        "agent": "legal",
+        "action": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)"
+      }
+    ],
+    "paychase": [
+      {
+        "at": "2026-11-14T09:45:19.689Z",
+        "agent": "ceo",
+        "action": "Stopped PayChase on the sizing: free tools already send reminders and the market is too small"
+      },
+      {
+        "at": "2026-11-14T09:45:19.653Z",
+        "agent": "sizing",
+        "action": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar"
+      }
+    ],
+    "rally-rounds": [
+      {
+        "at": "2026-11-14T14:29:35.588Z",
+        "agent": "ceo",
+        "action": "No-go on rally-rounds: case 14 of 35, free browser round robins with live scores already exist. Killed."
+      },
+      {
+        "at": "2026-11-14T14:29:23.705Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 14 of 35 against a bar of 24, with willingnessToPay 2, distribution 2 and competitionGap 1. Spot-checked: Reclub is free with round robins and live scoring for up to 8 courts and 24 players, and Pickleheads gives 2 free round robins a month and sells extras at 5 USD. Search intent leans free and printable. No sourced pivot exists."
+      },
+      {
+        "at": "2026-11-14T14:25:59.505Z",
+        "agent": "research",
+        "action": "Business case written: 14 of 35, no-go; free no-signup browser tools (PicklePal, Bounce, Bracket Maker) already fill the gap and there is no payment rail"
+      },
+      {
+        "at": "2026-11-14T14:16:42.200Z",
+        "agent": "lead-rally-rounds",
+        "action": "Blocked: Validated; business case, sizing and CEO decision need independent research, sizing and ceo subagents, and this session has no tool to launch subagents. Not writing them myself"
+      },
+      {
+        "at": "2026-11-14T14:16:06.998Z",
+        "agent": "lead-rally-rounds",
+        "action": "Validated: 3 independent paid signals (Dink, Pickleheads, DinkDrop) plus SFIA 24.3M players; against: Reclub free with live scores, Pickleheads 2 free a month"
+      },
+      {
+        "at": "2026-11-14T14:15:13.458Z",
+        "agent": "lead-rally-rounds",
+        "action": "Started: Validating: searching for sourced demand evidence for and against round robin tools"
+      },
+      {
+        "at": "2026-11-14T07:06:57.206Z",
+        "agent": "research",
+        "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture"
+      },
+      {
+        "at": "2026-11-14T07:03:45.755Z",
+        "agent": "research",
+        "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
+      }
+    ],
+    "rota-sheet": [],
+    "seatwise": [
+      {
+        "at": "2026-11-14T10:51:27.092Z",
+        "agent": "ceo",
+        "action": "Decided: Seatwise offline: pause its project, only approved ideas stay live"
+      },
+      {
+        "at": "2026-11-14T10:51:26.928Z",
+        "agent": "devops",
+        "action": "Paused vc-seatwise: the stopped idea is offline, project and code kept"
+      },
+      {
+        "at": "2026-11-14T09:38:31.485Z",
+        "agent": "ceo",
+        "action": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked"
+      },
+      {
+        "at": "2026-11-14T09:38:31.443Z",
+        "agent": "research",
+        "action": "Business case written: Seatwise scores 11 of 35, recommend no-go"
+      },
+      {
+        "at": "2026-11-14T09:38:02.937Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go: the case scores 11 of 35, far under the bar, because free seating tools with no signup already exist, Indian weddings rarely use assigned tables, and there is no way to reach paying buyers without ads or posting. Kill it, park the free planner without launching it, and give the slot to an idea with repeat revenue."
+      },
+      {
+        "at": "2026-11-14T07:29:22.439Z",
+        "agent": "ops",
+        "action": "Moved Seatwise back to spec after the product review failed it; lead Ira fixes the spec next cycle"
+      },
+      {
+        "at": "2026-11-14T07:29:01.927Z",
+        "agent": "product",
+        "action": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests."
+      },
+      {
+        "at": "2026-11-14T07:06:57.365Z",
+        "agent": "legal",
+        "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval"
+      },
+      {
+        "at": "2026-11-14T07:06:57.326Z",
+        "agent": "engineer",
+        "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build"
+      },
+      {
+        "at": "2026-11-14T07:06:57.173Z",
+        "agent": "qa",
+        "action": "Blocked: Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4"
+      },
+      {
+        "at": "2026-11-14T07:05:27.656Z",
+        "agent": "growth",
+        "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live"
+      },
+      {
+        "at": "2026-11-14T07:05:04.171Z",
+        "agent": "growth",
+        "action": "Started: Seatwise search basics and launch drafts"
+      },
+      {
+        "at": "2026-11-14T07:05:04.139Z",
+        "agent": "sales",
+        "action": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then"
+      },
+      {
+        "at": "2026-11-14T07:05:04.073Z",
+        "agent": "data",
+        "action": "Seatwise stats.json reports null visits by design (no analytics). Nothing live to count"
+      },
+      {
+        "at": "2026-11-14T07:05:03.976Z",
+        "agent": "devops",
+        "action": "Blocked: Seatwise returns 200 on /, /pro.html, /stats.json; Cloudflare still injects its bot script, still waiting on owner approval ap-4"
+      }
+    ],
+    "shaadi-budget": [
+      {
+        "at": "2026-11-14T14:35:08.608Z",
+        "agent": "lead-shaadi-budget",
+        "action": "Killed at validating: 6 signals for, 6 against; free INR tools from WeddingWire India, Calcwise and others already plan by function and vendor, and paid Indian tools show near zero traction"
+      },
+      {
+        "at": "2026-11-14T14:33:45.056Z",
+        "agent": "lead-shaadi-budget",
+        "action": "Started: Validating: searching the live web for demand evidence for and against an Indian wedding budget planner"
+      }
+    ],
+    "sitter-sheet": [],
+    "stall-tally": []
+  },
+  "log": [
+    {
+      "at": "2026-11-15T05:25:24.336Z",
+      "agent": "ops",
+      "action": "Closed the cycle: 14 niches screened, 1 staffed (master-key-gen, Kian) and killed at validating for a free equivalent; pods empty; 0 live; revenue Rs 0; checks green",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:25:12.898Z",
+      "agent": "ceo",
+      "action": "Pods left empty this cycle: 14 niches screened today, none passes both the allowed channel and no free tool tests. 5 open ideas kept on file; Research to look next at trade niches served only by old paid desktop software",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:25:12.869Z",
+      "agent": "lead-master-key-gen",
+      "action": "Venture killed by the CEO on my research verdict",
+      "ventureId": "master-key-gen",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:25:12.835Z",
+      "agent": "ceo",
+      "action": "Killed master-key-gen at validating: a free builder (Key-En-Lock, Feb 2026) already does the whole job for the same buyers, verified on its own page",
+      "ventureId": "master-key-gen",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:24:21.198Z",
+      "agent": "lead-master-key-gen",
+      "action": "Blocked: Awaiting CEO kill or continue decision; this session cannot launch separate research, sizing or CEO agents",
+      "ventureId": "master-key-gen",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-15T05:24:21.151Z",
+      "agent": "lead-master-key-gen",
+      "action": "Research: 8 sourced paid signals confirmed, but Key-En-Lock offers a free builder doing the whole product (Kwikset, Schlage, MACS, pinning PDFs); verdict kill recommended to CEO",
+      "ventureId": "master-key-gen",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:21:34.350Z",
+      "agent": "lead-master-key-gen",
+      "action": "Started: Validating: live web search on demand and free alternatives",
+      "ventureId": "master-key-gen",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T05:21:02.135Z",
+      "agent": "ceo",
+      "action": "Staffed 1 pod: master-key-gen (Kian, score 12), the only idea passing the issue 7 screen. Left 2 pods empty rather than staff the 5 open ideas, which all fail it",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:21:02.101Z",
+      "agent": "legal",
+      "action": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)",
+      "ventureId": "master-key-gen",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:21:02.061Z",
+      "agent": "research",
+      "action": "Idea sourcing: 13 niches checked, 12 dropped for good free tools or no payers; 1 passes the screen: master-key-gen (paid comparables $3.99 to $120, no free web generator found)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:46.756Z",
+      "agent": "research",
+      "action": "Started: Sourcing new ideas that pass the channel and free-tool screen (issue 7)",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T05:13:46.724Z",
+      "agent": "data",
+      "action": "No live ventures, no counts to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:46.692Z",
+      "agent": "support",
+      "action": "No live ventures, no customer messages to handle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:46.662Z",
+      "agent": "devops",
+      "action": "Uptime: 0 live products to check; HQ 200 and data 200 per watchdog.js",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:46.631Z",
+      "agent": "finance",
+      "action": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:46.600Z",
+      "agent": "security",
+      "action": "Secret scan clean: no keys, tokens or private keys in tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:13:35.602Z",
+      "agent": "security",
+      "action": "Started: Secret scan of the repo",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T05:13:27.298Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog ran 05:01 UTC and confirms all checks pass, CI green, no platform alerts, no reject comments on decided issues. 0 ventures in pods, 5 open ideas all failing the channel and free-tool screen (issue 7). CEO and Research to source new ideas that pass it.",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T05:12:48.890Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:44:13.386Z",
+      "agent": "devops",
+      "action": "Blocked: HQ shows the books as of c041a58 until the Vercel deployment limit resets; the next push after reset republishes it",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T14:44:13.344Z",
+      "agent": "devops",
+      "action": "Vercel hit its daily deployment limit at about 14:20 UTC: venture-hq builds for 6c7ad3a onwards were rate limited. Set vc-seatwise (offline, killed) to skip builds unless its folder changes, so it stops using half the quota",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:41:45.880Z",
+      "agent": "ops",
+      "action": "Closed the day: 8 ideas worked, all killed with sourced reasons, 1 decision made (issue 7), CI green, checks 34 of 34",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:36:30.627Z",
+      "agent": "ceo",
+      "action": "Decided: Stop staffing ideas that have no allowed way to reach buyers: screen for an allowed channel and no free equivalent first; pods left empty this cycle since the 5 open ideas fail that screen",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:35:40.177Z",
+      "agent": "lead-donor-letters",
+      "action": "Validation verdict kill: 5 sourced signals for, 7 against; CharityCharge already does CSV to annual donor summaries free, B1.church and Zeffy free, nearest paid tool is 29 USD a year",
+      "ventureId": "donor-letters",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:35:08.608Z",
+      "agent": "lead-shaadi-budget",
+      "action": "Killed at validating: 6 signals for, 6 against; free INR tools from WeddingWire India, Calcwise and others already plan by function and vendor, and paid Indian tools show near zero traction",
+      "ventureId": "shaadi-budget",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:34:35.157Z",
+      "agent": "lead-csv-qbo",
+      "action": "Killed csv-qbo at validating: 4 sourced signals for, 6 against; free in-browser converters already do the job and QBO Online imports CSV natively",
+      "ventureId": "csv-qbo",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:33:45.949Z",
+      "agent": "lead-donor-letters",
+      "action": "Started: Validating donor-letters: searching for sourced demand and evidence against",
+      "ventureId": "donor-letters",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:33:45.056Z",
+      "agent": "lead-shaadi-budget",
+      "action": "Started: Validating: searching the live web for demand evidence for and against an Indian wedding budget planner",
+      "ventureId": "shaadi-budget",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:33:43.890Z",
+      "agent": "lead-csv-qbo",
+      "action": "Started: Validating csv-qbo: searching for sourced demand evidence and free alternatives",
+      "ventureId": "csv-qbo",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:33:05.526Z",
+      "agent": "ceo",
+      "action": "Refilled 3 pods: donor-letters (Myra, 13, seasonal January peak), shaadi-budget (Advait, 13), csv-qbo (Sara, 12, paid recurring comparables). ach-batch held by Legal",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:33:05.436Z",
+      "agent": "legal",
+      "action": "Screened new ideas: ach-batch held (handles bank account numbers, a bad payment file can misdirect money); donor-letters ok if it gives no tax advice; csv-qbo ok",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:32:23.227Z",
+      "agent": "research",
+      "action": "New sourced ideas: csv-qbo, ach-batch, donor-letters",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:35.644Z",
+      "agent": "ceo",
+      "action": "No-go on clean-quote: case 16 of 35, free cleaning calculators from Jobber and others and no allowed channel. Killed.",
+      "ventureId": "clean-quote",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:35.588Z",
+      "agent": "ceo",
+      "action": "No-go on rally-rounds: case 14 of 35, free browser round robins with live scores already exist. Killed.",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:35.542Z",
+      "agent": "ceo",
+      "action": "No-go on bake-cost: case 15 of 35, free calculators meet the need and the only channel is crowded search. Killed.",
+      "ventureId": "bake-cost",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:23.748Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 16 of 35 against a bar of 24, with distribution 2 and recurringRevenue 1. Spot-checked: Jobber gives a free no-signup house cleaning cost calculator, and Housecall Pro and ShiftFlow give free ones too. The booking-page pivot in the case enters a crowded paid category and still has no channel we may use, so it does not clear the bar.",
+      "ventureId": "clean-quote",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:23.705Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 14 of 35 against a bar of 24, with willingnessToPay 2, distribution 2 and competitionGap 1. Spot-checked: Reclub is free with round robins and live scoring for up to 8 courts and 24 players, and Pickleheads gives 2 free round robins a month and sells extras at 5 USD. Search intent leans free and printable. No sourced pivot exists.",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:29:23.660Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 15 of 35 against a bar of 24, with willingnessToPay 2 and distribution 2. Spot-checked: Craftybase gives a free no-signup cake pricing calculator with ingredients, labour, overhead and margin. Paid costing apps show almost no ratings or sales, and organic search is the only allowed channel and is crowded with free tools. No pivot named in the case clears distribution 3.",
+      "ventureId": "bake-cost",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:27:41.300Z",
+      "agent": "research",
+      "action": "Business case written: 16/35, no-go; free calculators everywhere, no channel or payment rail",
+      "ventureId": "clean-quote",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:26:33.526Z",
+      "agent": "research",
+      "action": "Business case written: 15 of 35, no-go; free calculators and apps already do it, paid costing tools barely sell, no payment rail",
+      "ventureId": "bake-cost",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:25:59.505Z",
+      "agent": "research",
+      "action": "Business case written: 14 of 35, no-go; free no-signup browser tools (PicklePal, Bounce, Bracket Maker) already fill the gap and there is no payment rail",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:17:31.191Z",
+      "agent": "lead-clean-quote",
+      "action": "Blocked: Validated and waiting on the business case: this lead session has no subagent tool, so research, sizing and ceo cannot be launched independently. Next cycle must run research (case), sizing, then ceo for clean-quote",
+      "ventureId": "clean-quote",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T14:17:00.983Z",
+      "agent": "lead-clean-quote",
+      "action": "Validated: 7 sourced signals that cleaners pay for quoting tools and Etsy pricing calculators, plus 4 free alternatives recorded against",
+      "ventureId": "clean-quote",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:16:44.642Z",
+      "agent": "lead-bake-cost",
+      "action": "Blocked: Validated. Business case, sizing and CEO decision need independent research, sizing and ceo agents; this lead session has no tool to launch subagents, and the lead may not write them itself",
+      "ventureId": "bake-cost",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T14:16:42.200Z",
+      "agent": "lead-rally-rounds",
+      "action": "Blocked: Validated; business case, sizing and CEO decision need independent research, sizing and ceo subagents, and this session has no tool to launch subagents. Not writing them myself",
+      "ventureId": "rally-rounds",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-14T14:16:14.863Z",
+      "agent": "lead-bake-cost",
+      "action": "Validating finished: stage moved to validated with sourced evidence for and against",
+      "ventureId": "bake-cost",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:16:14.819Z",
+      "agent": "research",
+      "action": "Validated bake-cost: 8 sourced signals for (paid apps USD 4.79 to 149, baker pricing questions), 3 against (free calculators, weak paid app sales)",
+      "ventureId": "bake-cost",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:16:06.998Z",
+      "agent": "lead-rally-rounds",
+      "action": "Validated: 3 independent paid signals (Dink, Pickleheads, DinkDrop) plus SFIA 24.3M players; against: Reclub free with live scores, Pickleheads 2 free a month",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:15:20.708Z",
+      "agent": "lead-clean-quote",
+      "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder",
+      "ventureId": "clean-quote",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:15:13.593Z",
+      "agent": "lead-bake-cost",
+      "action": "Started: Validating: collecting sourced demand evidence for home baker costing",
+      "ventureId": "bake-cost",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:15:13.458Z",
+      "agent": "lead-rally-rounds",
+      "action": "Started: Validating: searching for sourced demand evidence for and against round robin tools",
+      "ventureId": "rally-rounds",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T14:14:21.119Z",
+      "agent": "ceo",
+      "action": "Staffed 3 pods: bake-cost (Vihaan, score 14), rally-rounds (Reyansh, 13, two paid comparables), clean-quote (Aditi, 13, paid Etsy bundles). Kept 5 open ideas",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:14:21.069Z",
+      "agent": "legal",
+      "action": "Screened new ideas: none needs a licence, none aimed at children; passport photo and tuition fee ideas dropped (ID compliance claims, minors data)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:14:21.019Z",
+      "agent": "research",
+      "action": "Gathered first live evidence for 5 new ideas: bake-cost, clean-quote, stall-tally, sitter-sheet, class-pass",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:07.138Z",
+      "agent": "support",
+      "action": "No live ventures, no messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:07.099Z",
+      "agent": "data",
+      "action": "No live ventures, no counts to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:07.061Z",
+      "agent": "finance",
+      "action": "Ledger: Rs 0 revenue, Rs 0 costs. FX 94.2754 INR per USD already recorded today with source",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:03.316Z",
+      "agent": "security",
+      "action": "Secret scan of repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:03.261Z",
+      "agent": "devops",
+      "action": "No live products to check; HQ 200, watchdog all checks passed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:03.211Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog ran 13:59 UTC, CI green, 34 tests pass, no platform alerts, no reject comments on decided issues. 0 ventures in pods, 3 open ideas, Seatwise and Paychase killed last cycle. CEO to refill ideas and staff pods.",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T14:13:03.162Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T10:51:27.092Z",
+      "agent": "ceo",
+      "action": "Decided: Seatwise offline: pause its project, only approved ideas stay live",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T10:51:26.928Z",
+      "agent": "devops",
+      "action": "Paused vc-seatwise: the stopped idea is offline, project and code kept",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T10:37:13.107Z",
+      "agent": "ceo",
+      "action": "Decided: payments: not now, decide again when a product clears its case and sizing",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T10:37:13.075Z",
+      "agent": "ceo",
+      "action": "Decided: Cloudflare scripts: QA removes them before checking, no owner step needed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T09:45:19.689Z",
+      "agent": "ceo",
+      "action": "Stopped PayChase on the sizing: free tools already send reminders and the market is too small",
+      "ventureId": "paychase",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T09:45:19.653Z",
+      "agent": "sizing",
+      "action": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
+      "ventureId": "paychase",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T09:38:31.485Z",
+      "agent": "ceo",
+      "action": "Stopped Seatwise: business case 11 of 35, free tools exist, little paying demand. Planner parked",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T09:38:31.443Z",
+      "agent": "research",
+      "action": "Business case written: Seatwise scores 11 of 35, recommend no-go",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T09:38:02.937Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go: the case scores 11 of 35, far under the bar, because free seating tools with no signup already exist, Indian weddings rarely use assigned tables, and there is no way to reach paying buyers without ads or posting. Kill it, park the free planner without launching it, and give the slot to an idea with repeat revenue.",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:29:22.439Z",
+      "agent": "ops",
+      "action": "Moved Seatwise back to spec after the product review failed it; lead Ira fixes the spec next cycle",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:29:01.927Z",
+      "agent": "product",
+      "action": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.891Z",
+      "agent": "ops",
+      "action": "Run closed. Seatwise READY on Vercel, product passes, live gate blocked only on Cloudflare (ap-4). 4 approvals pending. Revenue 0 INR",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.439Z",
+      "agent": "ops",
+      "action": "Started: Closing the run",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-14T07:06:57.405Z",
+      "agent": "people",
+      "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.365Z",
+      "agent": "legal",
+      "action": "Reviewed Growth launch drafts: no invented numbers, no competitor names, Pro marked not on sale. Publishing still needs a public-post approval",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.326Z",
+      "agent": "engineer",
+      "action": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
+      "ventureId": "seatwise",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.282Z",
+      "agent": "design",
+      "action": "No design work: Seatwise reviewed and passed, no new spec this run",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.241Z",
+      "agent": "product",
+      "action": "No spec work: Seatwise spec is current, no other venture validated",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-14T07:06:57.206Z",
+      "agent": "research",
+      "action": "Rally Rounds still not yet: Reclub and Pickleball Scheduler read at source are free; no third paying signal. Evidence against noted on the venture",
+      "ventureId": "rally-rounds",
+      "kind": "done"
+    }
+  ]
+}

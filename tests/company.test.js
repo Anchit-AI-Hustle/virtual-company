@@ -432,7 +432,7 @@ test('watchdog: spots each kind of outage and stays quiet when healthy', () => {
   const stale = assess(Object.assign({}, ok, { booksChangedAt: '2026-11-14T11:30:00Z' }));
   assert.deepStrictEqual(stale.problems.map((p) => p.id), ['hq-stale']);
   assert.ok(stale.redeploy, 'asks for a redeploy');
-  assert.ok(!assess(Object.assign({}, ok, { booksChangedAt: '2026-11-14T11:30:00Z', health: { lastRedeployAt: '2026-11-14T11:40:00Z' } })).redeploy, 'at most one redeploy an hour');
+  assert.ok(!assess(Object.assign({}, ok, { booksChangedAt: '2026-11-14T11:30:00Z', health: { lastRedeployAt: '2026-11-14T11:55:00Z' } })).redeploy, 'at most one rebuild every 10 minutes');
   // health.json changes only when the picture changes.
   assert.strictEqual(nextHealth({ status: 'ok', problems: [] }, { problems: [], redeploy: false }, 'T'), null);
   const down = nextHealth({ status: 'ok', problems: [] }, { problems: [{ id: 'hq-down', text: 'x' }], redeploy: false }, 'T1');

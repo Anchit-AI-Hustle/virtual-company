@@ -1,7 +1,7 @@
 {
   "buildCommand": "cd .. && node scripts/build-hq.js",
   "outputDirectory": "public",
-  "ignoreCommand": "[ -z \"$VERCEL_GIT_PREVIOUS_SHA\" ] && exit 1; git diff --quiet $VERCEL_GIT_PREVIOUS_SHA HEAD -- . ../company ../scripts",
+  "ignoreCommand": "[ -z \"$VERCEL_GIT_PREVIOUS_SHA\" ] && exit 1; git diff --quiet $VERCEL_GIT_PREVIOUS_SHA HEAD -- . ':(exclude)public/data.json' ../scripts/build-hq.js",
   "headers": [
     { "source": "/data.json", "headers": [{ "key": "Cache-Control", "value": "no-store" }] },
     { "source": "/(.*)", "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }, { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }] }

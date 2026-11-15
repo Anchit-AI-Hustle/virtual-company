@@ -30,15 +30,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/watchdog.js
-      - name: Record the change (this also triggers a fresh HQ deploy)
+      - name: Record the change and rebuild HQ's data (no deploy needed)
         if: steps.check.outputs.changed == 'yes'
         run: |
           git config user.name "watchdog"
           git config user.email "watchdog@users.noreply.github.com"
-          git add company/health.json
+          node scripts/build-hq.js >/dev/null
+          git add company/health.json hq/public/data.json
           git commit -m "Watchdog: platform ${{ steps.check.outputs.status }}"
           for i in 1 2 3 4; do
-            if git pull --rebase -q origin main && git push -q origin HEAD:main; then exit 0; fi
+            if git pull --rebase -q origin main || { git checkout --theirs hq/public/data.json 2>/dev/null; node scripts/build-hq.js >/dev/null; git add hq/public/data.json; GIT_EDITOR=true git rebase --continue; }; then
+              node scripts/build-hq.js >/dev/null; git add hq/public/data.json; git diff --cached --quiet || git commit -q -m "Watchdog: refresh HQ data"
+              git push -q origin HEAD:main && exit 0
+            fi
             git rebase --abort 2>/dev/null || true
             sleep $((i*10))
           done

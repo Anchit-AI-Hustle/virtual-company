@@ -327,7 +327,7 @@
     <section class="view" id="view-help" hidden aria-labelledby="h-help"><div class="panel">
       <h2 id="h-help">How it works</h2>
       <ol class="how">
-        <li><p><b>Agents run the company twice a day</b><span id="howWhen">A CEO agent picks ideas, and a team of agents checks demand, builds and tests them.</span></p></li>
+        <li><p><b>Agents run the company around the clock</b><span id="howWhen">A CEO agent picks ideas, and a team of agents checks demand, builds and tests them.</span></p></li>
         <li><p><b>The agents decide, you can overrule</b><span>Every decision is made by the agents after scoring how realistic and profitable each option is. See them in Decisions and overturn any you disagree with.</span></p></li>
         <li><p><b>Finished products go live</b><span>Each gets its own address on anchit-tandon.com once every check passes.</span></p></li>
       </ol>
@@ -349,7 +349,7 @@
 <script>
 (function () {
   var REPO = 'Anchit-AI-Hustle/virtual-company';
-  var POLL_MS = 60000;
+  var POLL_MS = 30000;
   var STAGE_NAMES = { idea: 'Ideas', validating: 'Checking demand', validated: 'Demand proven', spec: 'Spec written', building: 'Building', qa: 'In testing', live: 'Live', scaling: 'Scaling', killed: 'Stopped' };
   var STATE_WORDS = { working: 'Working on', done: 'Finished', blocked: 'Stuck on', idle: 'Idle' };
   var data = null, seen = {}, view = 'office', room = null, replaying = false;
@@ -403,7 +403,7 @@
     var n = d.approvals.length, badge = $('badge');
     badge.hidden = !n; badge.textContent = n;
     var cyc = (d.schedule && d.schedule.cycles) || [];
-    if (cyc.length) $('howWhen').textContent = 'At ' + cyc.join(' and ') + ' IST every day, a CEO agent picks ideas and a team of agents checks demand, builds and tests them.';
+    if (cyc.length) $('howWhen').textContent = (cyc.length > 3 ? plural(cyc.length, 'work session', 'work sessions') + ' a day, day and night (next at ' + (nextSession(d) || 'soon') + ' IST)' : 'At ' + cyc.join(' and ') + ' IST every day') + ': a CEO agent picks ideas and a team of agents checks demand, builds and tests them. Between sessions the office shows the last work.';
   }
 
   // Navigation
@@ -705,11 +705,23 @@
     st.appendChild(document.createTextNode(data ? '. Showing the office as of ' + ago(data.builtAt) + '.' : '. The office will appear as soon as it loads.'));
     $('status').className = 'status warn';
   }
+  // Live data comes straight from GitHub, so HQ never needs a deploy to update. Asking GitHub
+  // for the newest commit with cache revalidation costs nothing when nothing changed (304), and
+  // the file at an exact commit is never stale. Fallbacks: GitHub's latest copy (up to 5 minutes
+  // old), then the copy deployed with this page.
+  var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
+  function json(u, opt) { return fetch(u, opt).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); }
+  function latestData() {
+    return fetch('https://api.github.com/repos/' + REPO + '/commits/main', { cache: 'no-cache', headers: { Accept: 'application/vnd.github.sha' } })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(function (sha) { if (!/^[0-9a-f]{40}$/.test(sha.trim())) throw new Error('bad sha'); return json(RAW + sha.trim() + '/hq/public/data.json', { cache: 'force-cache' }); })
+      .catch(function () { return json(RAW + 'main/hq/public/data.json', { cache: 'no-cache' }); })
+      .catch(function () { return json('data.json?t=' + Date.now(), { cache: 'no-store' }); });
+  }
   function poll() {
     if (document.hidden && data) return;
     clearTimeout(retry);
-    fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    latestData()
       .then(function (d) {
         if (!d || !d.office || !d.ventures) throw new Error('bad data');
         fails = 0;

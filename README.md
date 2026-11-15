@@ -8,7 +8,7 @@ anchit-tandon.com.
 - Dashboard: https://hq.anchit-tandon.com
 - Rules every agent follows: [CLAUDE.md](CLAUDE.md)
 - Roles: [agents/](agents)
-- Cycle steps (twice a day) and weekly review: [RUNBOOK-daily.md](RUNBOOK-daily.md), [RUNBOOK-weekly.md](RUNBOOK-weekly.md)
+- Cycle steps (every 3 hours) and weekly review: [RUNBOOK-daily.md](RUNBOOK-daily.md), [RUNBOOK-weekly.md](RUNBOOK-weekly.md)
 
 ## How the owner steers it
 

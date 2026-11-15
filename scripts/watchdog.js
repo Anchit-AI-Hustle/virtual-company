@@ -9,7 +9,7 @@ const path = require('node:path');
 const { execSync } = require('node:child_process');
 
 const HOUR = 3600e3;
-const LIMITS = { deployGraceMs: 20 * 60e3, cycleGapMs: 16 * HOUR, redeployEveryMs: HOUR, timeoutMs: 15e3 };
+const LIMITS = { deployGraceMs: 10 * 60e3, cycleGapMs: 4 * HOUR, redeployEveryMs: 10 * 60e3, timeoutMs: 15e3 };
 
 // Pure judgement, so tests can feed it any situation. Returns { problems, redeploy }.
 function assess(s) {
@@ -18,11 +18,11 @@ function assess(s) {
   if (!s.hq || s.hq.status !== 200) add('hq-down', `HQ did not load (${s.hq ? 'HTTP ' + s.hq.status : 'no answer'}).`);
   else if (!/id="stage"|class="plan"|Office/.test(s.hq.body || '')) add('hq-broken', 'HQ loaded but the office page is missing.');
   let redeploy = false;
-  if (!s.data || s.data.status !== 200 || !s.data.json) add('hq-data', 'HQ could not read its data, so the office would look empty.');
+  if (!s.data || s.data.status !== 200 || !s.data.json) add('hq-data', 'HQ could not read its data from GitHub, so the office would look empty.');
   else if (s.booksChangedAt) {
     const built = Date.parse(s.data.json.builtAt), changed = Date.parse(s.booksChangedAt);
     if (built < changed && s.now - changed > LIMITS.deployGraceMs) {
-      add('hq-stale', `HQ is showing books from ${s.data.json.builtAt.slice(0, 16)} UTC, older than the latest change. A deploy did not go through.`);
+      add('hq-stale', `HQ is showing books from ${s.data.json.builtAt.slice(0, 16)} UTC, older than the latest work. The watchdog rebuilds them now.`);
       const last = s.health && s.health.lastRedeployAt ? Date.parse(s.health.lastRedeployAt) : 0;
       redeploy = s.now - last > LIMITS.redeployEveryMs;
     }
@@ -65,8 +65,12 @@ async function gather(root, now) {
   const config = read('company/config.json');
   const hqUrl = `https://hq.${config.domain}`;
   const hq = await get(hqUrl + '/');
-  const d = await get(hqUrl + '/data.json?watchdog=' + now);
+  // The office reads its data from GitHub: check that copy is reachable, and judge freshness by
+  // the committed file the page will read at the newest commit.
+  const repo = process.env.GITHUB_REPOSITORY || 'Anchit-AI-Hustle/virtual-company';
+  const d = await get(`https://raw.githubusercontent.com/${repo}/main/hq/public/data.json`);
   let json = null; try { json = JSON.parse(d.body); } catch (e) { json = null; }
+  try { const local = read('hq/public/data.json'); if (json && local.builtAt) json = Object.assign({}, json, { builtAt: local.builtAt }); } catch (e) { /* no local copy: use GitHub's */ }
   const products = [], unapproved = [];
   for (const f of fs.readdirSync(path.join(root, 'company/ventures')).filter((x) => x.endsWith('.json'))) {
     const v = read('company/ventures/' + f);
@@ -82,7 +86,7 @@ async function gather(root, now) {
     for (const e of read('company/log/' + f)) if (e.at && (!lastWorkAt || e.at > lastWorkAt)) lastWorkAt = e.at;
   }
   let booksChangedAt = null;
-  try { booksChangedAt = execSync('git log -1 --format=%cI -- hq company scripts ":(exclude)company/health.json"', { cwd: root }).toString().trim() || null; } catch (e) { booksChangedAt = null; }
+  try { booksChangedAt = execSync('git log -1 --format=%cI -- company cases ":(exclude)company/health.json"', { cwd: root }).toString().trim() || null; } catch (e) { booksChangedAt = null; }
   let ci = null;
   try {
     const repo = process.env.GITHUB_REPOSITORY || 'Anchit-AI-Hustle/virtual-company';
@@ -117,7 +121,7 @@ if (require.main === module) {
     if (next && !mayWrite) console.log('(check only: health.json is written by the watchdog on GitHub, not here)');
     if (next && mayWrite) {
       fs.writeFileSync(path.join(root, 'company/health.json'), JSON.stringify(next, null, 2) + '\n');
-      console.log('health.json updated' + (result.redeploy ? ' (asks for a fresh HQ deploy)' : ''));
+      console.log('health.json updated' + (result.redeploy ? ' (HQ data rebuilt)' : ''));
     }
     if (process.env.GITHUB_OUTPUT) {
       fs.appendFileSync(process.env.GITHUB_OUTPUT, `status=${result.problems.length ? 'problem' : 'ok'}\nchanged=${next ? 'yes' : 'no'}\nproblems_changed=${problemsChanged ? 'yes' : 'no'}\n`);
