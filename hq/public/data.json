@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T14:16:57.750Z",
+  "builtAt": "2026-11-15T14:19:03.883Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T12:17:01.264Z",
@@ -347,6 +347,39 @@
         "total": 11,
         "recommendation": "no-go"
       }
+    },
+    {
+      "id": "mahj-league",
+      "title": "Mahj League",
+      "oneLiner": "Web page that keeps weekly standings for American mahjong clubs and leagues, points only, no app install",
+      "customer": "Organisers of American mahjong clubs, open play nights and leagues in the US",
+      "revenueModel": "Paid season unlock per club; free single-game score sheet as the search magnet",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 14,
+      "url": null,
+      "nextAction": "Navya validates: check Mahjic, MahWins and other league tools for price and free tier, find organisers asking for league standings, and confirm the gap. 3 sourced signals already on file, so the lead can move it to validated if the gap holds; then Research writes the case. Screen (ap-company-2): payers despite free tools = Etsy score cards and league apps; free single-game calculators exist (https://mahjongg.ai.studio/tools/scoring-calculator/), the named gap is multi-week, multi-table club standings on a phone web page with no install. Searches to rank for: mahjong league scoring, mahjong score sheet, how to run a mahjong league; small sites such as https://mahjong4friends.com/guides/american-mahjong-scoring already rank. Against: Mahjic and MahWins apps may already close the gap; check their prices and free tiers. Legal: points only, never money or stakes, never reproduce the NMJL card.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-15T14:19:01.765Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": {
+        "id": "lead-mahj-league",
+        "name": "Navya",
+        "color": "#6D3FB0"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
     },
     {
       "id": "ach-batch",
@@ -812,6 +845,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -823,16 +860,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
-      "since": "2026-11-15T11:51:48.464Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11",
+      "since": "2026-11-15T14:19:01.784Z",
+      "ventureId": "mahj-league",
+      "ventureTitle": "Mahj League",
       "last": {
-        "at": "2026-11-15T11:51:48.326Z",
-        "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen"
+        "at": "2026-11-15T14:19:01.784Z",
+        "action": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11"
       },
-      "actions": 34
+      "actions": 35
     },
     {
       "id": "ops",
@@ -861,16 +898,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)",
-      "since": "2026-11-15T11:51:48.590Z",
+      "state": "done",
+      "task": "Idea sourcing (ap-company-2 screen): 6 niches checked, 1 added: mahj-league (US mahjong boom, paid Etsy score cards and league apps, gap is multi-week club standings with no install). Dropped: knit grading (free multi-size calculator at knitcalcs.pages.dev), golf leagues (Golf League Tracker and many paid and free tools), swim meets (SwimTopia Meet Maestro), soap costing (Craftybase and free sheet), mahjong single-game scoring (free calculators)",
+      "since": "2026-11-15T14:18:52.434Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:13:40.339Z",
-        "action": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)"
+        "at": "2026-11-15T14:18:52.434Z",
+        "action": "Idea sourcing (ap-company-2 screen): 6 niches checked, 1 added: mahj-league (US mahjong boom, paid Etsy score cards and league apps, gap is multi-week club standings with no install). Dropped: knit grading (free multi-size calculator at knitcalcs.pages.dev), golf leagues (Golf League Tracker and many paid and free tools), swim meets (SwimTopia Meet Maestro), soap costing (Craftybase and free sheet), mahjong single-game scoring (free calculators)"
       },
-      "actions": 18
+      "actions": 20
     },
     {
       "id": "data",
@@ -1013,16 +1050,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan: no change since last cycle's scan; npm run check passes 36 tests",
-      "since": "2026-11-15T11:51:49.128Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no keys, tokens or private keys found",
+      "since": "2026-11-15T14:17:09.305Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:12:46.474Z",
-        "action": "Secret scan: no change since last cycle's scan; npm run check passes 36 tests"
+        "at": "2026-11-15T14:17:09.305Z",
+        "action": "Secret scan of the repo: no keys, tokens or private keys found"
       },
-      "actions": 10
+      "actions": 11
     },
     {
       "id": "growth",
@@ -1089,16 +1126,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
-      "since": "2026-11-15T11:51:49.411Z",
+      "state": "done",
+      "task": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
+      "since": "2026-11-15T14:17:09.338Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:50:15.230Z",
-        "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page"
+        "at": "2026-11-15T14:17:09.338Z",
+        "action": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file"
       },
-      "actions": 8
+      "actions": 9
     },
     {
       "id": "legal",
@@ -1108,16 +1145,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "idle",
-      "task": "Category screen for this sourcing round: no idea reached legal review since none passed research. Flagged while screening: dance recital ordering handles childrens names (aimed-at-children risk), pigeon race results sit next to pool betting (gambling risk), headstone layout is grief sensitive. No regulated idea added.",
-      "since": "2026-11-15T11:51:49.482Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
+      "since": "2026-11-15T14:19:01.737Z",
+      "ventureId": "mahj-league",
+      "ventureTitle": "Mahj League",
       "last": {
-        "at": "2026-11-15T10:40:46.641Z",
-        "action": "Category screen for this sourcing round: no idea reached legal review since none passed research. Flagged while screening: dance recital ordering handles childrens names (aimed-at-children risk), pigeon race results sit next to pool betting (gambling risk), headstone layout is grief sensitive. No regulated idea added."
+        "at": "2026-11-15T14:19:01.737Z",
+        "action": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children"
       },
-      "actions": 10
+      "actions": 11
     },
     {
       "id": "people",
@@ -1137,6 +1174,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-mahj-league",
+      "name": "Navya",
+      "title": "Lead, Mahj League",
+      "department": "pods",
+      "color": "#6D3FB0",
+      "trait": "Turns every complaint into the next feature.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "mahj-league",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1239,6 +1293,18 @@
         "at": "2026-11-14T14:33:45.949Z",
         "agent": "lead-donor-letters",
         "action": "Started: Validating donor-letters: searching for sourced demand and evidence against"
+      }
+    ],
+    "mahj-league": [
+      {
+        "at": "2026-11-15T14:19:01.784Z",
+        "agent": "ceo",
+        "action": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11"
+      },
+      {
+        "at": "2026-11-15T14:19:01.737Z",
+        "agent": "legal",
+        "action": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children"
       }
     ],
     "master-key-gen": [
@@ -1427,6 +1493,48 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-15T14:19:01.784Z",
+      "agent": "ceo",
+      "action": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11",
+      "ventureId": "mahj-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:19:01.737Z",
+      "agent": "legal",
+      "action": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
+      "ventureId": "mahj-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:18:52.434Z",
+      "agent": "research",
+      "action": "Idea sourcing (ap-company-2 screen): 6 niches checked, 1 added: mahj-league (US mahjong boom, paid Etsy score cards and league apps, gap is multi-week club standings with no install). Dropped: knit grading (free multi-size calculator at knitcalcs.pages.dev), golf leagues (Golf League Tracker and many paid and free tools), swim meets (SwimTopia Meet Maestro), soap costing (Craftybase and free sheet), mahjong single-game scoring (free calculators)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:17:09.368Z",
+      "agent": "research",
+      "action": "Started: Sourcing new ideas under the ap-company-2 screen: paid despite free tools, a named gap, rankable searches",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T14:17:09.338Z",
+      "agent": "finance",
+      "action": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:17:09.305Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys, tokens or private keys found",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-15T14:16:55.930Z",
       "agent": "ops",
@@ -1942,48 +2050,6 @@
       "at": "2026-11-15T05:13:46.631Z",
       "agent": "finance",
       "action": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:13:46.600Z",
-      "agent": "security",
-      "action": "Secret scan clean: no keys, tokens or private keys in tracked files",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:13:35.602Z",
-      "agent": "security",
-      "action": "Started: Secret scan of the repo",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T05:13:27.298Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog ran 05:01 UTC and confirms all checks pass, CI green, no platform alerts, no reject comments on decided issues. 0 ventures in pods, 5 open ideas all failing the channel and free-tool screen (issue 7). CEO and Research to source new ideas that pass it.",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:12:48.890Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:44:13.386Z",
-      "agent": "devops",
-      "action": "Blocked: HQ shows the books as of c041a58 until the Vercel deployment limit resets; the next push after reset republishes it",
-      "ventureId": null,
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-14T14:44:13.344Z",
-      "agent": "devops",
-      "action": "Vercel hit its daily deployment limit at about 14:20 UTC: venture-hq builds for 6c7ad3a onwards were rate limited. Set vc-seatwise (offline, killed) to skip builds unless its folder changes, so it stops using half the quota",
       "ventureId": null,
       "kind": "done"
     }

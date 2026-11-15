@@ -68,5 +68,19 @@
     "action": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:17:09.368Z",
+    "agent": "research",
+    "action": "Started: Sourcing new ideas under the ap-company-2 screen: paid despite free tools, a named gap, rankable searches",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T14:18:52.434Z",
+    "agent": "research",
+    "action": "Idea sourcing (ap-company-2 screen): 6 niches checked, 1 added: mahj-league (US mahjong boom, paid Etsy score cards and league apps, gap is multi-week club standings with no install). Dropped: knit grading (free multi-size calculator at knitcalcs.pages.dev), golf leagues (Golf League Tracker and many paid and free tools), swim meets (SwimTopia Meet Maestro), soap costing (Craftybase and free sheet), mahjong single-game scoring (free calculators)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

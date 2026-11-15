@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
-  "ventureId": null,
-  "since": "2026-11-15T11:51:48.464Z"
+  "state": "done",
+  "task": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11",
+  "ventureId": "mahj-league",
+  "since": "2026-11-15T14:19:01.784Z"
 }

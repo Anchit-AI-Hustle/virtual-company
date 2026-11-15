@@ -54,5 +54,12 @@
     "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:17:09.338Z",
+    "agent": "finance",
+    "action": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

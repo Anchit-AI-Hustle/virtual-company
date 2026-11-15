@@ -1,0 +1,46 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-15T14:18:52.413Z",
+  "updatedAt": "2026-11-15T14:19:01.765Z",
+  "killReason": null,
+  "lead": {
+    "name": "Navya",
+    "color": "#6D3FB0",
+    "trait": "Turns every complaint into the next feature."
+  },
+  "id": "mahj-league",
+  "title": "Mahj League",
+  "oneLiner": "Web page that keeps weekly standings for American mahjong clubs and leagues, points only, no app install",
+  "customer": "Organisers of American mahjong clubs, open play nights and leagues in the US",
+  "revenueModel": "Paid season unlock per club; free single-game score sheet as the search magnet",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 14
+  },
+  "evidence": [
+    {
+      "claim": "Public radio reported in Jan 2026 that a century old tile game, mahjong, is suddenly drawing younger players and new clubs across the US.",
+      "url": "https://www.nhpr.org/2026-01-24/how-people-are-finding-community-through-the-tile-game-mahjong",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "People buy printable American mahjong score cards and hand trackers on Etsy even though free scoring calculators exist.",
+      "url": "https://www.etsy.com/listing/4313636937",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "A dedicated club and league app for American mahjong now exists on the App Store, showing organisers want league tooling.",
+      "url": "https://apps.apple.com/app/id6759616151",
+      "foundAt": "2026-11-15"
+    }
+  ],
+  "nextAction": "Navya validates: check Mahjic, MahWins and other league tools for price and free tier, find organisers asking for league standings, and confirm the gap. 3 sourced signals already on file, so the lead can move it to validated if the gap holds; then Research writes the case. Screen (ap-company-2): payers despite free tools = Etsy score cards and league apps; free single-game calculators exist (https://mahjongg.ai.studio/tools/scoring-calculator/), the named gap is multi-week, multi-table club standings on a phone web page with no install. Searches to rank for: mahjong league scoring, mahjong score sheet, how to run a mahjong league; small sites such as https://mahjong4friends.com/guides/american-mahjong-scoring already rank. Against: Mahjic and MahWins apps may already close the gap; check their prices and free tiers. Legal: points only, never money or stakes, never reproduce the NMJL card.",
+  "stage": "validating",
+  "stageSince": "2026-11-15T14:19:01.765Z"
+}
