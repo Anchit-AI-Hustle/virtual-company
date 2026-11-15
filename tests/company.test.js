@@ -494,3 +494,18 @@ test('every Vercel project skips builds safely and HQ deploys only for page chan
     if (must) assert.ok(cmd.includes(must) && cmd.includes('public/data.json'), 'HQ ignores data-only pushes');
   }
 });
+
+test('watchdog flags a missed work session only when one was due', () => {
+  const { assess, lastDueAt } = require('../scripts/watchdog.js');
+  const cycles = ['01:41', '04:41', '07:41', '10:41', '13:41', '16:41', '19:41', '22:41'];
+  // 15 Nov 2026, 15:30 IST = 10:00 UTC: the last session due with 45 min grace is 13:41 IST = 08:11 UTC.
+  const now = Date.parse('2026-11-15T10:00:00Z');
+  assert.strictEqual(new Date(lastDueAt(now, cycles)).toISOString(), '2026-11-15T08:11:00.000Z');
+  // 00:30 IST: the due session is the previous evening's 19:41 when there are two a day.
+  assert.strictEqual(new Date(lastDueAt(Date.parse('2026-11-15T19:00:00Z'), ['10:41', '19:41'])).toISOString(), '2026-11-15T14:11:00.000Z');
+  const base = { now, hq: { status: 200, body: 'class="plan"' }, data: { status: 200, json: { builtAt: '2026-11-15T09:00:00Z' } }, products: [], cycles };
+  const ids = (lastWorkAt) => assess(Object.assign({}, base, { lastWorkAt })).problems.map((p) => p.id);
+  assert.deepStrictEqual(ids('2026-11-15T08:30:00Z'), [], 'worked in the due session');
+  assert.deepStrictEqual(ids('2026-11-15T05:25:00Z'), ['cycle-missed'], 'the 13:41 session did not happen');
+  assert.deepStrictEqual(assess(Object.assign({}, base, { cycles: ['10:41', '19:41'], lastWorkAt: '2026-11-15T05:25:00Z' })).problems, [], 'no false alarm between two daily sessions');
+});

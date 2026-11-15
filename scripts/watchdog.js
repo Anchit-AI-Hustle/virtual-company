@@ -11,6 +11,20 @@ const { execSync } = require('node:child_process');
 const HOUR = 3600e3;
 const LIMITS = { deployGraceMs: 10 * 60e3, cycleGapMs: 4 * HOUR, redeployEveryMs: 10 * 60e3, timeoutMs: 15e3 };
 
+// The latest scheduled session start that should have produced work by now (45 minutes grace),
+// from config.schedule.cycles in India time ("HH:MM", UTC+5:30).
+function lastDueAt(now, cycles, graceMs = 45 * 60e3) {
+  const IST = 330 * 60e3, t = now - graceMs, day = 86400e3;
+  const base = Math.floor((t + IST) / day) * day - IST;
+  let best = null;
+  for (const d of [0, -1]) for (const c of cycles || []) {
+    const [h, m] = c.split(':').map(Number);
+    const at = base + d * day + (h * 60 + m) * 60e3;
+    if (at <= t && (best === null || at > best)) best = at;
+  }
+  return best;
+}
+
 // Pure judgement, so tests can feed it any situation. Returns { problems, redeploy }.
 function assess(s) {
   const problems = [];
@@ -30,7 +44,8 @@ function assess(s) {
   if (s.ci && s.ci.conclusion === 'failure' && s.now - Date.parse(s.ci.at) > 10 * 60e3) add('ci-red', `The automatic tests on main are failing since ${s.ci.at.slice(0, 16)} UTC (${s.ci.title}). The next work session fixes them before anything else.`);
   for (const v of s.unapproved || []) if (v.status === 200) add('unapproved-' + v.id, `${v.title} is online at ${v.url} but was never approved to launch (stage ${v.stage}). The next work session takes it offline.`);
   for (const v of s.products || []) if (v.status !== 200) add('product-' + v.id, `${v.title} at ${v.url} is not answering (${v.status ? 'HTTP ' + v.status : 'no answer'}).`);
-  if (s.lastWorkAt && s.now - Date.parse(s.lastWorkAt) > LIMITS.cycleGapMs) {
+  const due = s.cycles ? lastDueAt(s.now, s.cycles) : null;
+  if (s.lastWorkAt && (due !== null ? Date.parse(s.lastWorkAt) < due : s.now - Date.parse(s.lastWorkAt) > LIMITS.cycleGapMs)) {
     add('cycle-missed', `No agent has worked since ${s.lastWorkAt.slice(0, 16)} UTC. A scheduled work session was missed, often because the plan's usage limit was reached.`);
   }
   return { problems, redeploy };
@@ -101,10 +116,10 @@ async function gather(root, now) {
   } catch (e) { ci = null; }
   const hf = path.join(root, 'company/health.json');
   const health = fs.existsSync(hf) ? read('company/health.json') : null;
-  return { now, hq, data: { status: d.status, json }, products, unapproved, ci, lastWorkAt, booksChangedAt, health };
+  return { now, hq, data: { status: d.status, json }, products, unapproved, ci, cycles: (config.schedule || {}).cycles, lastWorkAt, booksChangedAt, health };
 }
 
-module.exports = { assess, nextHealth, LIMITS };
+module.exports = { assess, nextHealth, lastDueAt, LIMITS };
 
 if (require.main === module) {
   (async () => {
