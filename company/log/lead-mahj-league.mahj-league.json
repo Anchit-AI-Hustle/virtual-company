@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-15T14:19:35.745Z",
+    "agent": "lead-mahj-league",
+    "action": "Started: Validating mahj-league: checking Mahjic, MahWins and league tools, organiser demand and searches",
+    "ventureId": "mahj-league",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T14:27:17.523Z",
+    "agent": "lead-mahj-league",
+    "action": "Validated mahj-league: 9 sourced signals; Mahjic charges 57.99 USD a month for leagues, paid local leagues use MahWins (iPhone only); no web no install club standings tool found",
+    "ventureId": "mahj-league",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:27:17.555Z",
+    "agent": "lead-mahj-league",
+    "action": "Blocked: needs reviewers: research case, sizing, ceo go decision",
+    "ventureId": "mahj-league",
+    "kind": "blocked"
+  }
+]

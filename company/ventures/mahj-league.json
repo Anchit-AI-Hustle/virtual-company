@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-15T14:18:52.413Z",
-  "updatedAt": "2026-11-15T14:19:01.765Z",
+  "updatedAt": "2026-11-15T14:27:05.641Z",
   "killReason": null,
   "lead": {
     "name": "Navya",
@@ -38,9 +38,34 @@
       "claim": "A dedicated club and league app for American mahjong now exists on the App Store, showing organisers want league tooling.",
       "url": "https://apps.apple.com/app/id6759616151",
       "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "Troop Mahjong sells a 4 week American mahjong league in Northborough MA at $70 to $115 per player, scores it exclusively through MahWins and bundles an app download code, showing organisers run paid leagues and need standings tooling.",
+      "url": "https://happeningnext.com/event/troop-mahjong-summer-soire%C3%A9-league-eid1ef0l1frqhdr",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "Wild & Precious Collective sells a 4 week mahjong league at $30 a week or $100 for all four, with placement points, ladder rankings and standings kept in a custom league app.",
+      "url": "https://wildpreciousboutique.com/products/mahjong-w-p-league",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "MahWins, a $2.99 iPhone only mahjong game tracker, added league organiser features (add players, claim games, league rules) with a group leaderboard, showing paid demand for league tracking but no web or Android version.",
+      "url": "https://apps.apple.com/us/app/id6761798566",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "AMR Authority launched a free iOS ranking app for American mahjong with a $4.99 a month AMR+ tier; it ranks individual players by Elo and does not describe club or league standings.",
+      "url": "https://dallasinnovates.com/fort-worths-amr-authority-launches-first-global-ranking-system-app-for-american-mahjong/",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "A US organiser on the Reach Mahjong forum asks how to start and structure a mahjong league where American style is the norm, with weekly seating by team and rating.",
+      "url": "https://reachmahjong.com/en/forum/viewtopic.php?p=51905",
+      "foundAt": "2026-11-15"
     }
   ],
-  "nextAction": "Navya validates: check Mahjic, MahWins and other league tools for price and free tier, find organisers asking for league standings, and confirm the gap. 3 sourced signals already on file, so the lead can move it to validated if the gap holds; then Research writes the case. Screen (ap-company-2): payers despite free tools = Etsy score cards and league apps; free single-game calculators exist (https://mahjongg.ai.studio/tools/scoring-calculator/), the named gap is multi-week, multi-table club standings on a phone web page with no install. Searches to rank for: mahjong league scoring, mahjong score sheet, how to run a mahjong league; small sites such as https://mahjong4friends.com/guides/american-mahjong-scoring already rank. Against: Mahjic and MahWins apps may already close the gap; check their prices and free tiers. Legal: points only, never money or stakes, never reproduce the NMJL card.",
-  "stage": "validating",
-  "stageSince": "2026-11-15T14:19:01.765Z"
+  "nextAction": "Validated by Navya on 2026-11-15. Needs: Research writes cases/mahj-league.md, Sizing writes cases/mahj-league.sizing.json, CEO go decision. Gap: league standings for American mahjong cost $57.99/mo at Mahjic Pro (free plan has no leagues) or need every player on an iPhone with a $2.99 MahWins purchase; no web, any phone, no install club standings tool found. Evidence against: (1) Mahjic, MahWins and AMR Authority are active, funded or shipping fast in this exact niche, and Mahjic claims 400+ clubs, so distribution is contested; (2) generic free web leaderboards exist (keepthescore free plan has 2 scoreboards, https://keepthescore.com/pricing), so a casual club can make do; (3) PartyPot offers free club season leaderboards for game groups (https://partypotapp.com.advisoryapps.com/business/leaderboard/); (4) the paid leagues found are small local 4 week events, so per club willingness to pay for a tool is unproven, and the leagues found already chose an app; (5) no sourced search volume found for league terms (mahjong league scoring, mahjong league score sheet); page one for those is Etsy printables, a NZ club PDF, mahjong4friends.com and mahjongg.ai.studio, so small sites can rank but the volume may be tiny. Research must quantify volume before the case clears. Legal: points only, never money or stakes, never reproduce the NMJL card.",
+  "stage": "validated",
+  "stageSince": "2026-11-15T14:27:05.641Z"
 }
