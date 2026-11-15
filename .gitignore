@@ -5,3 +5,4 @@ node_modules
 shots/
 
 hq/public/data.json
+.claude/

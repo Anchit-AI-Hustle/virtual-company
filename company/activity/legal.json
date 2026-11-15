@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)",
-  "ventureId": "master-key-gen",
-  "since": "2026-11-15T05:21:02.101Z"
+  "ventureId": null,
+  "since": "2026-11-15T05:25:24.087Z"
 }
