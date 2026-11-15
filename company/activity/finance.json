@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Ledger: Rs 0 revenue, Rs 0 costs. FX 94.2754 INR per USD already recorded today with source",
+  "state": "done",
+  "task": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
   "ventureId": null,
-  "since": "2026-11-14T14:36:31.388Z"
+  "since": "2026-11-15T05:13:46.631Z"
 }

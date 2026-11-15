@@ -60,5 +60,12 @@
     "action": "Decided: Stop staffing ideas that have no allowed way to reach buyers: screen for an allowed channel and no free equivalent first; pods left empty this cycle since the 5 open ideas fail that screen",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T05:21:02.135Z",
+    "agent": "ceo",
+    "action": "Staffed 1 pod: master-key-gen (Kian, score 12), the only idea passing the issue 7 screen. Left 2 pods empty rather than staff the 5 open ideas, which all fail it",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

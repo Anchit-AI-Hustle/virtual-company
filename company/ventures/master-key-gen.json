@@ -1,0 +1,55 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-15T05:21:02.036Z",
+  "updatedAt": "2026-11-15T05:21:02.036Z",
+  "killReason": null,
+  "lead": {
+    "name": "Kian",
+    "color": "#14706B",
+    "trait": "Hunts for the channel buyers already use."
+  },
+  "id": "master-key-gen",
+  "title": "Master Key Generator",
+  "oneLiner": "Build a master key system for pin tumbler locks in the browser: printable bitting list and pinning chart with MACS and pin stack checks",
+  "customer": "Small locksmith shops, facility maintenance staff and landlords who master key their own pin tumbler locks, US first",
+  "revenueModel": "Free build and preview, paid per downloadable chart or a low price unlimited pass, in USD",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 12
+  },
+  "evidence": [
+    {
+      "claim": "CLK Supplies sells one emailed master key setup chart (1 master, 25 change keys, with pin list) for $10.15.",
+      "url": "https://www.clksupplies.com/products/master-key-setup-system-1-master-25-change-keys-system-12",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "CLK Supplies sells further chart sizes, such as 1 master with 50 change keys.",
+      "url": "https://www.clksupplies.com/products/master-key-set-up-system-1-master-50-change-keys-system-21",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "Aero Key master keying software sells for $120 and runs only on Windows.",
+      "url": "https://www.clksupplies.com/products/aero-key-master-keying-software",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "The iPhone app Master It, which creates and prints master key systems, is paid at $6.99.",
+      "url": "https://apps.apple.com/app/id645920825",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "The iPhone app Pin Head, a pinning calculator with MACS checks, is paid at $3.99.",
+      "url": "https://apps.apple.com/app/id782925810",
+      "foundAt": "2026-11-15"
+    }
+  ],
+  "nextAction": "Validating (lead Kian). Passed the issue 7 screen: allowed channel is organic search on long tail queries (master key system generator, pinning chart calculator) where results are vendor pages and old forum threads; no free general web generator found, only single brand designers. Against: small, old market (paid apps have 7 to 19 ratings) and lock makers give free designers, e.g. https://www.abus.com/uk/News/Design-Masterkey-Systems-Online. Legal condition: no key decoding, bypass or impressioning features; only systems the user designs for locks they own or service.",
+  "stage": "validating"
+}

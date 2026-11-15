@@ -26,5 +26,19 @@
     "action": "New sourced ideas: csv-qbo, ach-batch, donor-letters",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T05:13:46.756Z",
+    "agent": "research",
+    "action": "Started: Sourcing new ideas that pass the channel and free-tool screen (issue 7)",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T05:21:02.061Z",
+    "agent": "research",
+    "action": "Idea sourcing: 13 niches checked, 12 dropped for good free tools or no payers; 1 passes the screen: master-key-gen (paid comparables $3.99 to $120, no free web generator found)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

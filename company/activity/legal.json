@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Screened new ideas: ach-batch held (handles bank account numbers, a bad payment file can misdirect money); donor-letters ok if it gives no tax advice; csv-qbo ok",
-  "ventureId": null,
-  "since": "2026-11-14T14:36:31.439Z"
+  "state": "done",
+  "task": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)",
+  "ventureId": "master-key-gen",
+  "since": "2026-11-15T05:21:02.101Z"
 }

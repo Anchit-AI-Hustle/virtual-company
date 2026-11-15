@@ -26,5 +26,12 @@
     "action": "Ledger: Rs 0 revenue, Rs 0 costs. FX 94.2754 INR per USD already recorded today with source",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T05:13:46.631Z",
+    "agent": "finance",
+    "action": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
