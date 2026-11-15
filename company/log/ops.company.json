@@ -159,5 +159,19 @@
     "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:16:44.297Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T14:16:55.930Z",
+    "agent": "ops",
+    "action": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T13:08:24.623Z",
+  "builtAt": "2026-11-15T14:16:57.750Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T12:17:01.264Z",
@@ -842,16 +842,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
-      "since": "2026-11-15T11:51:48.525Z",
+      "state": "done",
+      "task": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture",
+      "since": "2026-11-15T14:16:55.930Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:51:48.362Z",
-        "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green"
+        "at": "2026-11-15T14:16:55.930Z",
+        "action": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture"
       },
-      "actions": 24
+      "actions": 26
     },
     {
       "id": "research",
@@ -994,16 +994,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
-      "since": "2026-11-15T11:51:49.045Z",
+      "state": "done",
+      "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
+      "since": "2026-11-15T14:16:55.892Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:19:04.426Z",
-        "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green"
+        "at": "2026-11-15T14:16:55.892Z",
+        "action": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check"
       },
-      "actions": 19
+      "actions": 21
     },
     {
       "id": "security",
@@ -1427,6 +1427,34 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-15T14:16:55.930Z",
+      "agent": "ops",
+      "action": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:16:55.892Z",
+      "agent": "devops",
+      "action": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:16:44.327Z",
+      "agent": "devops",
+      "action": "Started: Platform check: health, live URLs, watchdog",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T14:16:44.297Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-15T11:51:48.362Z",
       "agent": "ops",
@@ -1957,34 +1985,6 @@
       "agent": "devops",
       "action": "Vercel hit its daily deployment limit at about 14:20 UTC: venture-hq builds for 6c7ad3a onwards were rate limited. Set vc-seatwise (offline, killed) to skip builds unless its folder changes, so it stops using half the quota",
       "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:41:45.880Z",
-      "agent": "ops",
-      "action": "Closed the day: 8 ideas worked, all killed with sourced reasons, 1 decision made (issue 7), CI green, checks 34 of 34",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:36:30.627Z",
-      "agent": "ceo",
-      "action": "Decided: Stop staffing ideas that have no allowed way to reach buyers: screen for an allowed channel and no free equivalent first; pods left empty this cycle since the 5 open ideas fail that screen",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:35:40.177Z",
-      "agent": "lead-donor-letters",
-      "action": "Validation verdict kill: 5 sourced signals for, 7 against; CharityCharge already does CSV to annual donor summaries free, B1.church and Zeffy free, nearest paid tool is 29 USD a year",
-      "ventureId": "donor-letters",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:35:08.608Z",
-      "agent": "lead-shaadi-budget",
-      "action": "Killed at validating: 6 signals for, 6 against; free INR tools from WeddingWire India, Calcwise and others already plan by function and vendor, and paid Indian tools show near zero traction",
-      "ventureId": "shaadi-budget",
       "kind": "done"
     }
   ]
