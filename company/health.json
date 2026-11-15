@@ -1,6 +1,11 @@
 {
-  "status": "ok",
-  "since": "2026-11-15T10:38:56.922Z",
-  "problems": [],
-  "lastRedeployAt": "2026-11-14T16:14:33.878Z"
+  "status": "problem",
+  "since": "2026-11-15T12:02:00.256Z",
+  "problems": [
+    {
+      "id": "hq-stale",
+      "text": "HQ is showing books from 2026-11-15T11:51 UTC, older than the latest work. The watchdog rebuilds them now."
+    }
+  ],
+  "lastRedeployAt": "2026-11-15T12:02:00.256Z"
 }
