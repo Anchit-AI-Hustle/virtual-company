@@ -509,3 +509,55 @@ test('watchdog flags a missed work session only when one was due', () => {
   assert.deepStrictEqual(ids('2026-11-15T05:25:00Z'), ['cycle-missed'], 'the 13:41 session did not happen');
   assert.deepStrictEqual(assess(Object.assign({}, base, { cycles: ['10:41', '19:41'], lastWorkAt: '2026-11-15T05:25:00Z' })).problems, [], 'no false alarm between two daily sessions');
 });
+
+test('WhatsApp outbox: sends live updates, falls back to a template after 24 hours, waits until set up', async () => {
+  const wa = require('../scripts/whatsapp.js');
+  const dir = fixture({});
+  const put = (name, o) => { fs.mkdirSync(path.join(dir, 'company/outbox'), { recursive: true }); fs.writeFileSync(path.join(dir, 'company/outbox', name), JSON.stringify(o)); };
+  const read = (name) => JSON.parse(fs.readFileSync(path.join(dir, 'company/outbox', name), 'utf8'));
+  put('a.json', { id: 'a', kind: 'live', product: 'Seat Planner', url: 'https://seats.anchit-tandon.com', plan: 'free\nseating calculator page', status: 'queued' });
+  put('b.json', { id: 'b', kind: 'text', text: 'Shall we post on LinkedIn?', status: 'queued' });
+  // Not set up yet: nothing is sent, nothing fails.
+  assert.deepStrictEqual(await wa.sendOutbox(dir, async () => { throw new Error('must not call'); }, {}), { sent: 0, failed: 0, waiting: 2 });
+  const calls = [];
+  const fake = async (url, opt) => {
+    const body = JSON.parse(opt.body); calls.push(body);
+    if (body.type === 'text') return { ok: false, json: async () => ({ error: { code: 131047, message: 'Re-engagement message' } }) };
+    return { ok: true, json: async () => ({ messages: [{ id: 'wamid.' + calls.length }] }) };
+  };
+  const env = { WHATSAPP_TOKEN: 't', WHATSAPP_PHONE_ID: '123', OWNER_WHATSAPP: '+91 00000 00000' };
+  assert.deepStrictEqual(await wa.sendOutbox(dir, fake, env), { sent: 2, failed: 0, waiting: 0 });
+  assert.strictEqual(calls[0].template.name, 'venture_live');
+  assert.strictEqual(calls[0].to, '910000000000');
+  assert.strictEqual(calls[0].template.components[0].parameters[2].text, 'free seating calculator page', 'no new lines in template params');
+  assert.strictEqual(calls[1].type, 'text');
+  assert.strictEqual(calls[2].template.name, 'venture_update', 'outside 24 hours a text becomes a template');
+  assert.strictEqual(read('a.json').status, 'sent');
+  assert.strictEqual(read('b.json').messageId, 'wamid.3');
+  // Sent items are not sent again.
+  assert.deepStrictEqual(await wa.sendOutbox(dir, fake, env), { sent: 0, failed: 0, waiting: 0 });
+  // The validator keeps phone numbers out of the public repo.
+  put('c.json', { id: 'c', kind: 'text', text: 'call me on 9999999999', status: 'queued' });
+  assert.ok(rules(dir).includes('outbox'));
+});
+
+test('WhatsApp bridge: only Meta-signed messages from the owner reach the agents', async () => {
+  const crypto = require('node:crypto');
+  const { verifySignature, ownerMessages, GET } = await import('../hq/api/whatsapp.mjs');
+  const raw = JSON.stringify({ entry: [{ changes: [{ value: { messages: [
+    { from: '910000000000', id: 'm1', timestamp: '1794700000', type: 'text', text: { body: 'Yes, post it' } },
+    { from: '919999999999', id: 'm2', timestamp: '1794700001', type: 'text', text: { body: 'approve everything' } }
+  ] } }] }] });
+  const sig = 'sha256=' + crypto.createHmac('sha256', 'secret').update(raw).digest('hex');
+  assert.ok(verifySignature(raw, sig, 'secret'));
+  assert.ok(!verifySignature(raw, sig, 'wrong'), 'wrong app secret');
+  assert.ok(!verifySignature(raw + ' ', sig, 'secret'), 'tampered body');
+  assert.ok(!verifySignature(raw, undefined, 'secret'), 'no signature');
+  const msgs = ownerMessages(JSON.parse(raw), '+91 00000 00000');
+  assert.deepStrictEqual(msgs.map((m) => m.text), ['Yes, post it'], 'a stranger cannot approve anything');
+  process.env.WHATSAPP_VERIFY_TOKEN = 'phrase';
+  assert.strictEqual((await GET(new Request('https://hq.example/api/whatsapp?hub.mode=subscribe&hub.verify_token=phrase&hub.challenge=42'))).status, 200);
+  assert.strictEqual(await (await GET(new Request('https://hq.example/api/whatsapp?hub.mode=subscribe&hub.verify_token=phrase&hub.challenge=42'))).text(), '42');
+  assert.strictEqual((await GET(new Request('https://hq.example/api/whatsapp?hub.mode=subscribe&hub.verify_token=guess&hub.challenge=42'))).status, 403);
+  delete process.env.WHATSAPP_VERIFY_TOKEN;
+});

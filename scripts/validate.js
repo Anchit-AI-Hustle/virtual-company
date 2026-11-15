@@ -162,6 +162,17 @@ function validate(dir) {
     if (!v) err('approved-only', `ventures/${id}/ has code but no venture file`);
     else if (v.stage !== 'killed' && at(v.stage) < at('building')) err('approved-only', `ventures/${id}/ has code before the idea was approved for building (stage ${v.stage})`);
   }
+  // WhatsApp outbox: plain messages to the owner, sent by the whatsapp workflow.
+  const odir = path.join(dir, 'company', 'outbox');
+  if (fs.existsSync(odir)) for (const f of fs.readdirSync(odir).filter((x) => x.endsWith('.json'))) {
+    const o = JSON.parse(fs.readFileSync(path.join(odir, f), 'utf8'));
+    const tag = `outbox ${f}`;
+    if (!['live', 'text'].includes(o.kind)) err('outbox', `${tag}: kind must be live or text`);
+    if (!['queued', 'sent', 'failed'].includes(o.status)) err('outbox', `${tag}: status must be queued, sent or failed`);
+    if (o.kind === 'live' && !(o.product && /^https:\/\//.test(o.url || '') && o.plan)) err('outbox', `${tag}: a live message needs product, https url and plan`);
+    if (o.kind === 'text' && !(o.text || '').trim()) err('outbox', `${tag}: a text message needs text`);
+    if (/\d{10}/.test(JSON.stringify(o))) err('outbox', `${tag}: never put a phone number in the repo`);
+  }
   const approvalIds = new Map();
   for (const a of approvals) {
     const tag = `approval ${a.id}`;

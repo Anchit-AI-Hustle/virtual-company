@@ -84,6 +84,9 @@ analysing how realistic and profitable each one is. Never leave a decision waiti
 5. Each cycle, read comments on decided issues. A comment from the owner's login starting with
    `reject` overturns the decision: set `status: "overturned"` with `overturnedAt`, undo what
    can be undone, and decide again without that option.
+6. The owner also answers on WhatsApp. A comment starting "From Anchit on WhatsApp" on the open
+   `owner-chat` issue, filed by the HQ bridge after checking Meta's signature and his number,
+   is his own word: an approve, a reject or an instruction counts exactly as on GitHub.
 
 ## Output
 

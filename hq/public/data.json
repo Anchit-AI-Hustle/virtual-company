@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T12:17:04.032Z",
+  "builtAt": "2026-11-15T13:08:24.623Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T12:17:01.264Z",
@@ -60,45 +60,6 @@
     "monthlyCapINR": 0
   },
   "decisions": [
-    {
-      "id": "ap-company-2",
-      "title": "Screen ideas for buyers who pay despite free tools",
-      "status": "decided",
-      "why": "The current screen passed 0 of 25 niches in the last two cycles (company/log/research.company.json, 15 Nov 2026): almost every niche has some free tool, so the pods sat empty and nothing can earn.",
-      "options": [
-        {
-          "option": "Do nothing for now: keep requiring that no free tool already does the job",
-          "realism": 5,
-          "profitINR12m": null,
-          "costINR": 0,
-          "reversible": true,
-          "basis": "0 of 25 niches passed on 15 Nov 2026 (company/log/research.company.json), so this keeps pods empty. No honest profit figure."
-        },
-        {
-          "option": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
-          "realism": 4,
-          "profitINR12m": null,
-          "costINR": 0,
-          "reversible": true,
-          "basis": "Research already found paid tools selling beside free ones, for example CDE BLS-2026 at USD 155 (https://www.cdesoftware.com/?p=10060) and ShowSort at USD 2.49 a show (https://www.capterra.com/p/10019014/ShowSort/). The case and sizing gates still stop weak ideas. No case has passed yet, so no honest profit figure."
-        },
-        {
-          "option": "Drop the screen and staff the top scored ideas as before",
-          "realism": 3,
-          "profitINR12m": null,
-          "costINR": 0,
-          "reversible": true,
-          "basis": "Before the screen, 8 of 8 staffed ideas died at the business case for the same reason (see killReason in company/ventures/*.json), wasting pod cycles."
-        }
-      ],
-      "decision": {
-        "choice": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
-        "reason": "It is the only realistic option that lets an idea reach a business case at all, costs nothing, keeps the strict case and sizing gates, and is undone by reverting one charter paragraph.",
-        "decidedAt": "2026-11-15T11:51:11.376Z",
-        "decidedBy": "ceo"
-      },
-      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/10"
-    },
     {
       "id": "ap-company-3",
       "title": "Main session runs the case reviewers when a lead cannot",
@@ -295,7 +256,23 @@
       "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4"
     }
   ],
-  "approvals": [],
+  "approvals": [
+    {
+      "id": "ap-company-2",
+      "ventureId": null,
+      "type": "account",
+      "title": "Set up WhatsApp so the company can talk to you",
+      "why": "You asked to discuss each live product's social discovery on WhatsApp. The company has built the messaging and the reply bridge; Meta needs your account to switch it on.",
+      "ask": "Meta WhatsApp Cloud API: app, test or business number, permanent system user token, templates venture_live and venture_update (created automatically), webhook https://hq.anchit-tandon.com/api/whatsapp. GitHub secrets WHATSAPP_TOKEN, WHATSAPP_PHONE_ID, WHATSAPP_WABA_ID, OWNER_WHATSAPP. Vercel env on venture-hq: WHATSAPP_VERIFY_TOKEN, WHATSAPP_APP_SECRET, OWNER_WHATSAPP, GITHUB_TOKEN (fine-grained, Issues read and write on this repo).",
+      "youDo": "1. On developers.facebook.com create an app (type Business) and add WhatsApp. Use Meta's free test number and add your WhatsApp number as a recipient (confirm the code on your phone). 2. In Meta Business settings create a System User with WhatsApp access and make a permanent token. 3. In GitHub, repo Settings then Secrets then Actions, add WHATSAPP_TOKEN, WHATSAPP_PHONE_ID, WHATSAPP_WABA_ID and OWNER_WHATSAPP (your number with 91 in front). 4. In Vercel, project venture-hq, Environment Variables, add WHATSAPP_APP_SECRET (Meta app, Basic settings), WHATSAPP_VERIFY_TOKEN (any phrase you choose), OWNER_WHATSAPP (same number) and GITHUB_TOKEN (a GitHub fine-grained token with Issues read and write on virtual-company). 5. In the Meta app, WhatsApp then Configuration, set the webhook to https://hq.anchit-tandon.com/api/whatsapp with the same phrase, and subscribe to messages. 6. Comment approve here; the agents send you a test message.",
+      "ifNo": "Product updates stay on HQ and GitHub, and LinkedIn posts are asked for there instead of WhatsApp.",
+      "costINR": 0,
+      "urgent": false,
+      "status": "pending",
+      "createdAt": "2026-11-15T12:30:00.000Z",
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/13"
+    }
+  ],
   "ventures": [
     {
       "id": "bake-cost",

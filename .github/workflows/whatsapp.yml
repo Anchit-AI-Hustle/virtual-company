@@ -1,0 +1,46 @@
+name: whatsapp
+# Sends queued messages in company/outbox/ to the owner on WhatsApp, then records the result.
+# Until the owner adds the WhatsApp secrets, messages simply wait in the outbox.
+on:
+  push:
+    branches: [main]
+    paths: ['company/outbox/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: whatsapp
+  cancel-in-progress: false
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Make sure the message templates exist
+        env:
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_WABA_ID: ${{ secrets.WHATSAPP_WABA_ID }}
+        run: node scripts/whatsapp.js ensure-templates
+      - name: Send queued messages
+        env:
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
+          OWNER_WHATSAPP: ${{ secrets.OWNER_WHATSAPP }}
+        run: node scripts/whatsapp.js send
+      - name: Record what was sent
+        run: |
+          git diff --quiet -- company/outbox && exit 0
+          git config user.name "whatsapp"
+          git config user.email "whatsapp@users.noreply.github.com"
+          git add company/outbox
+          git commit -q -m "WhatsApp: record sent messages"
+          for i in 1 2 3 4; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*10))
+          done
+          exit 1

@@ -14,6 +14,17 @@ or speaking for the owner unless approved.
 - Prepare, but not publish: launch posts, community posts, outreach messages, ad copy. Save
   them in `ventures/<id>/growth/` ready to use.
 
+## Talking to the owner on WhatsApp
+
+The owner discusses social discovery with the company on WhatsApp (his choice, 15 Nov 2026).
+- When a venture goes live, write `company/outbox/<ventureId>-live.json`:
+  `{"id":"<ventureId>-live","kind":"live","ventureId":"<id>","product":"<name>","url":"<live url>","plan":"<one plain sentence: how its first users will find it, and whether a LinkedIn post is worth it>","status":"queued","createdAt":"<iso>"}`.
+  The `whatsapp` workflow sends it. Never put his number in the repo.
+- Each session, read new comments on the open GitHub issue labelled `owner-chat`: they are his
+  WhatsApp replies, filed by the HQ bridge. Act on them like any owner decision, and answer with
+  `company/outbox/<n>.json` of `"kind":"text"` and a `"text"` in plain words, no dashes.
+- A LinkedIn post still goes out only after he says yes, on WhatsApp or on its issue.
+
 ## What needs the owner's approval first
 
 - A LinkedIn post on the owner's account, only for a live product that is worth it (real users
