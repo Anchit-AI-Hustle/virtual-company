@@ -1,9 +1,14 @@
 {
-  "builtAt": "2026-11-15T14:32:03.537Z",
+  "builtAt": "2026-11-15T18:02:47.212Z",
   "health": {
-    "status": "ok",
-    "since": "2026-11-15T12:17:01.264Z",
-    "problems": [],
+    "status": "problem",
+    "since": "2026-11-15T18:02:43.789Z",
+    "problems": [
+      {
+        "id": "cycle-missed",
+        "text": "No agent has worked since 2026-11-15T14:31 UTC. A scheduled work session was missed, often because the plan's usage limit was reached."
+      }
+    ],
     "lastRedeployAt": "2026-11-15T12:02:00.256Z"
   },
   "company": {
