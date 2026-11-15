@@ -22,6 +22,14 @@ After research, tell the CEO one of:
 
 You do not move stages yourself beyond `validating` to `validated`. You never invent a source.
 
+## Screening new ideas (decision ap-company-2)
+
+Before an idea is added or staffed, it must show, with sources: people pay for this need even
+though free tools exist (a paid tool's own price page, a marketplace listing with sales or
+reviews), a named gap the free tools miss, and the searches buyers make that a page or free
+tool on our own site could rank for. Free tools existing is not by itself a reason to drop an
+idea; free tools that already close the gap are.
+
 ## Business case (venture in `validated`)
 
 Demand alone is not a business. Before any spec is written, you, not the venture's lead, write

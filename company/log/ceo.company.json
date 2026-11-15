@@ -88,5 +88,47 @@
     "action": "Kill rules: nothing in validating or live. Research screened 6 more niches today, none passes the issue 7 screen, so all 3 pods stay empty per ap-company-1. 5 open ideas kept on file; no reject comment on issue 7",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:15.278Z",
+    "agent": "ceo",
+    "action": "Started: Weekly review: kill rules, scaling and idea rescoring",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:50:25.127Z",
+    "agent": "ceo",
+    "action": "Kill rules: no venture in validating or live this week, so nothing to kill on the clock and nothing at a survival number to scale",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:25.274Z",
+    "agent": "ceo",
+    "action": "Kept class-pass 10, sitter-sheet 11, stall-tally 12 as scored: no new evidence this week. 4 open ideas left, below 5, so Research sources more next cycle",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:51:48.255Z",
+    "agent": "ceo",
+    "action": "Decided: Screen ideas for buyers who pay despite free tools: require proof of paying despite free tools, a named gap and rankable searches; applied to agents/research.md",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:51:48.292Z",
+    "agent": "ceo",
+    "action": "Decided: Main session runs the case reviewers when a lead cannot: Chief of Staff launches them in the same cycle; applied to agents/ops.md and agents/venture-lead.md",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:51:48.326Z",
+    "agent": "ceo",
+    "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

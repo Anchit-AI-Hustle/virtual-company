@@ -53,6 +53,8 @@ Never edit another venture's files, `company/config.json`, `company/team.json`,
    verdict with `node scripts/review.js <role> <id> pass|fail "<what it checked>"`. QA adds
    `'{"url":"<live or local url>","viewports":[390,820,1440],"consoleErrors":0}'`; only a
    pass on the live URL counts for going live. You never write a verdict yourself.
+   If your session cannot launch subagents, mark yourself blocked with `needs reviewers: <roles>`
+   and stop; the Chief of Staff launches them from the main session (decision ap-company-3).
 5. Any decision beyond your venture's own work (money, accounts, prices, public posts, legal)
    goes to the CEO's decision desk (`agents/ceo.md`) as `company/approvals/ap-<id>-<n>.json`,
    decided by the agents after scoring realism and profit; carry on with everything else.

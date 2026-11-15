@@ -6,7 +6,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-14T06:49:00.906Z",
+  "updatedAt": "2026-11-15T11:50:25.102Z",
   "killReason": null,
   "id": "rota-sheet",
   "title": "Rota Sheet",
@@ -17,9 +17,9 @@
     "demand": 2,
     "speedToRevenue": 2,
     "buildEffort": 4,
-    "distribution": 3,
-    "total": 11
+    "distribution": 2,
+    "total": 10
   },
-  "nextAction": "Research. Against: free rota tools from Findmyshift and BrightHR already exist (https://www.findmyshift.co.uk/free-staff-rota-software)",
+  "nextAction": "Rescored at the weekly review: distribution 3 to 2, because under the search-only rule our page would have to outrank free rota tools from Findmyshift and BrightHR (https://www.findmyshift.co.uk/free-staff-rota-software). Research only if a paid gap the free tools miss is found.",
   "lead": null
 }

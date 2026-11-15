@@ -5,5 +5,138 @@
     "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.738Z",
+    "agent": "people",
+    "action": "Started: Weekly scoring of all 17 agents",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:50:36.780Z",
+    "agent": "people",
+    "action": "Score ceo (Arya): 4 of 5. Killed 9 weak ideas on sourced cases and ran 5 decisions through the desk. Used. No rule broken. Gap: 0 ideas reached a go",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.818Z",
+    "agent": "people",
+    "action": "Score ops (Kabir): 4 of 5. Standups, closes and digests every cycle, checks green. Used. No rule broken",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.862Z",
+    "agent": "people",
+    "action": "Score research (Meera): 3 of 5. 4 business cases and 25 niches screened, all sourced, but 0 new ideas in the last 2 cycles because the screen passes nothing",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.901Z",
+    "agent": "people",
+    "action": "Score data (Anaya): 3 of 5. Honest null counts, no fake numbers. Little to do with nothing live",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.942Z",
+    "agent": "people",
+    "action": "Score sizing (Farhan): 3 of 5. One sourced sizing (PayChase) that stopped a weak build. Ran once only",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:36.978Z",
+    "agent": "people",
+    "action": "Score product (Rohan): 4 of 5. Wrote and independently failed the Seatwise spec on a real gap. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.021Z",
+    "agent": "people",
+    "action": "Score design (Zoya): 4 of 5. Caught a 41.6 px tap target, re-reviewed and passed. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.059Z",
+    "agent": "people",
+    "action": "Score engineer (Dev): 4 of 5. Fixed 7 Seatwise defects in one pass. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.099Z",
+    "agent": "people",
+    "action": "Score qa (Ishaan): 5 of 5. Found the Cloudflare injected script errors that led to decision ap-4. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.136Z",
+    "agent": "people",
+    "action": "Score devops (Neel): 4 of 5. Fixed HQ republish, paused stopped Seatwise as decided. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.175Z",
+    "agent": "people",
+    "action": "Score security (Tara): 4 of 5. Secret scans each cycle, Seatwise review passed with strict CSP. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.213Z",
+    "agent": "people",
+    "action": "Score growth (Sana): 3 of 5. Seatwise search basics and drafts, unused since Seatwise stopped",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.254Z",
+    "agent": "people",
+    "action": "Score sales (Arjun): 2 of 5. Filed Seatwise price and rail asks to the owner as pending instead of deciding at the desk; both later withdrawn or decided",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.292Z",
+    "agent": "people",
+    "action": "Score support (Priya): 3 of 5. Correctly reported no messages; nothing live to support",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.330Z",
+    "agent": "people",
+    "action": "Score finance (Nikhil): 4 of 5. Books at Rs 0 with source, refused an unsourced FX rate. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.375Z",
+    "agent": "people",
+    "action": "Score legal (Vikram): 4 of 5. Held ach-batch on user risk, reviewed Seatwise and drafts. Used",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:37.422Z",
+    "agent": "people",
+    "action": "Score people (Kavya): 3 of 5. Day one check only; first full scoring this run",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:48.209Z",
+    "agent": "people",
+    "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

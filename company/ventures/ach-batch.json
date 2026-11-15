@@ -4,10 +4,10 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:32:23.142Z",
-  "updatedAt": "2026-11-14T14:33:05.398Z",
-  "killReason": null,
+  "updatedAt": "2026-11-15T11:50:25.102Z",
+  "killReason": "Removed at the weekly review: the tool would build files that move real money from bank account numbers, so one wrong file can misdirect payments, a real risk to users that the product rules keep us out of. Legal held it for that reason, some banks already take a plain CSV (Chase), and PayFile Pro already fills the browser gap cheaply.",
   "lead": null,
-  "stage": "idea",
+  "stage": "killed",
   "id": "ach-batch",
   "title": "ACH Batch",
   "oneLiner": "Build a bank-ready NACHA ACH payment file from a spreadsheet of payees in the browser, nothing uploaded",
@@ -37,5 +37,5 @@
       "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Held by Legal: a wrong NACHA file can misdirect real payments and the tool would handle bank account numbers, a real risk to users. Not staffed. Research. Against: some banks take a plain CSV of ACH payments directly, for example Chase lets business users import a formatted CSV file of ACH payment instructions (https://chase.com/content/dam/chaseonline/en/demos/cbo/pdfs/cbo_csvfile_helpguide.pdf), and PayFile Pro already fills the browser-tool gap cheaply. Legal must check that handling bank account numbers in the browser only is acceptable."
+  "nextAction": "None. Killed."
 }

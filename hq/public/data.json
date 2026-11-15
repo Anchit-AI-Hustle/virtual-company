@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T11:48:37.197Z",
+  "builtAt": "2026-11-15T11:51:59.976Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T10:38:56.922Z",
@@ -60,6 +60,84 @@
     "monthlyCapINR": 0
   },
   "decisions": [
+    {
+      "id": "ap-company-2",
+      "title": "Screen ideas for buyers who pay despite free tools",
+      "status": "decided",
+      "why": "The current screen passed 0 of 25 niches in the last two cycles (company/log/research.company.json, 15 Nov 2026): almost every niche has some free tool, so the pods sat empty and nothing can earn.",
+      "options": [
+        {
+          "option": "Do nothing for now: keep requiring that no free tool already does the job",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "0 of 25 niches passed on 15 Nov 2026 (company/log/research.company.json), so this keeps pods empty. No honest profit figure."
+        },
+        {
+          "option": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
+          "realism": 4,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Research already found paid tools selling beside free ones, for example CDE BLS-2026 at USD 155 (https://www.cdesoftware.com/?p=10060) and ShowSort at USD 2.49 a show (https://www.capterra.com/p/10019014/ShowSort/). The case and sizing gates still stop weak ideas. No case has passed yet, so no honest profit figure."
+        },
+        {
+          "option": "Drop the screen and staff the top scored ideas as before",
+          "realism": 3,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Before the screen, 8 of 8 staffed ideas died at the business case for the same reason (see killReason in company/ventures/*.json), wasting pod cycles."
+        }
+      ],
+      "decision": {
+        "choice": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
+        "reason": "It is the only realistic option that lets an idea reach a business case at all, costs nothing, keeps the strict case and sizing gates, and is undone by reverting one charter paragraph.",
+        "decidedAt": "2026-11-15T11:51:11.376Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/10"
+    },
+    {
+      "id": "ap-company-3",
+      "title": "Main session runs the case reviewers when a lead cannot",
+      "status": "decided",
+      "why": "4 of 7 venture leads this week stopped blocked at validated because a lead session has no subagent tool (company/log/lead-*.json), so business cases waited a cycle or more.",
+      "options": [
+        {
+          "option": "Do nothing for now: leave it to the next cycle to notice blocked leads",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Leads for bake-cost, clean-quote, rally-rounds and master-key-gen all logged this block on 14 and 15 Nov 2026. No honest profit figure."
+        },
+        {
+          "option": "Make the Chief of Staff launch the independent reviewers from the main session as soon as a lead reports it needs them",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "The main session has the subagent tool, and this already worked once: master-key-gen was decided in the same cycle on 15 Nov 2026. Keeps reviewers independent of the lead. No honest profit figure."
+        },
+        {
+          "option": "Let the lead write the case, sizing and CEO verdict itself",
+          "realism": 1,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Breaks the rule that a builder never reviews its own work (CLAUDE.md, RUNBOOK-daily.md)."
+        }
+      ],
+      "decision": {
+        "choice": "Make the Chief of Staff launch the independent reviewers from the main session as soon as a lead reports it needs them",
+        "reason": "Removes a full cycle of delay at the business case gate at no cost, keeps every review independent, and is undone by reverting two charter lines.",
+        "decidedAt": "2026-11-15T11:51:11.376Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/11"
+    },
     {
       "id": "ap-company-1",
       "title": "Stop staffing ideas that have no allowed way to reach buyers",
@@ -294,6 +372,35 @@
       }
     },
     {
+      "id": "ach-batch",
+      "title": "ACH Batch",
+      "oneLiner": "Build a bank-ready NACHA ACH payment file from a spreadsheet of payees in the browser, nothing uploaded",
+      "customer": "US small businesses and bookkeepers paying contractors or payroll by ACH through their bank",
+      "revenueModel": "Monthly subscription in USD, first file free",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": "None. Killed.",
+      "metrics": null,
+      "killReason": "Removed at the weekly review: the tool would build files that move real money from bank account numbers, so one wrong file can misdirect payments, a real risk to users that the product rules keep us out of. Legal held it for that reason, some banks already take a plain CSV (Chase), and PayFile Pro already fills the browser gap cheaply.",
+      "updatedAt": "2026-11-15T11:50:25.102Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "clean-quote",
       "title": "Clean Quote",
       "oneLiner": "Instant house cleaning price quote builder for solo cleaners, shareable link",
@@ -522,35 +629,6 @@
       "businessCase": null
     },
     {
-      "id": "ach-batch",
-      "title": "ACH Batch",
-      "oneLiner": "Build a bank-ready NACHA ACH payment file from a spreadsheet of payees in the browser, nothing uploaded",
-      "customer": "US small businesses and bookkeepers paying contractors or payroll by ACH through their bank",
-      "revenueModel": "Monthly subscription in USD, first file free",
-      "priceINR": null,
-      "stage": "idea",
-      "score": 13,
-      "url": null,
-      "nextAction": "Held by Legal: a wrong NACHA file can misdirect real payments and the tool would handle bank account numbers, a real risk to users. Not staffed. Research. Against: some banks take a plain CSV of ACH payments directly, for example Chase lets business users import a formatted CSV file of ACH payment instructions (https://chase.com/content/dam/chaseonline/en/demos/cbo/pdfs/cbo_csvfile_helpguide.pdf), and PayFile Pro already fills the browser-tool gap cheaply. Legal must check that handling bank account numbers in the browser only is acceptable.",
-      "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-14T14:33:05.398Z",
-      "evidenceCount": 3,
-      "specPath": null,
-      "lead": null,
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
-    },
-    {
       "id": "csv-qbo",
       "title": "CSV to QBO",
       "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
@@ -646,35 +724,6 @@
       "businessCase": null
     },
     {
-      "id": "rota-sheet",
-      "title": "Rota Sheet",
-      "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
-      "customer": "Owners of small shops and cafes with under 10 staff",
-      "revenueModel": "Paid printable rota pack",
-      "priceINR": null,
-      "stage": "idea",
-      "score": 11,
-      "url": null,
-      "nextAction": "Research. Against: free rota tools from Findmyshift and BrightHR already exist (https://www.findmyshift.co.uk/free-staff-rota-software)",
-      "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-14T06:49:00.906Z",
-      "evidenceCount": 0,
-      "specPath": null,
-      "lead": null,
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
-    },
-    {
       "id": "sitter-sheet",
       "title": "Sitter Sheet",
       "oneLiner": "Pet sitter client intake, visit report and invoice in one phone page",
@@ -731,6 +780,35 @@
       "goDecision": null,
       "sizing": null,
       "businessCase": null
+    },
+    {
+      "id": "rota-sheet",
+      "title": "Rota Sheet",
+      "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
+      "customer": "Owners of small shops and cafes with under 10 staff",
+      "revenueModel": "Paid printable rota pack",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 10,
+      "url": null,
+      "nextAction": "Rescored at the weekly review: distribution 3 to 2, because under the search-only rule our page would have to outrank free rota tools from Findmyshift and BrightHR (https://www.findmyshift.co.uk/free-staff-rota-software). Research only if a paid gap the free tools miss is found.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-15T11:50:25.102Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
     }
   ],
   "departments": [
@@ -769,15 +847,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "idle",
-      "task": "Kill rules: nothing in validating or live. Research screened 6 more niches today, none passes the issue 7 screen, so all 3 pods stay empty per ap-company-1. 5 open ideas kept on file; no reject comment on issue 7",
-      "since": "2026-11-15T11:13:52.246Z",
+      "task": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
+      "since": "2026-11-15T11:51:48.464Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:13:40.373Z",
-        "action": "Kill rules: nothing in validating or live. Research screened 6 more niches today, none passes the issue 7 screen, so all 3 pods stay empty per ap-company-1. 5 open ideas kept on file; no reject comment on issue 7"
+        "at": "2026-11-15T11:51:48.326Z",
+        "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen"
       },
-      "actions": 26
+      "actions": 34
     },
     {
       "id": "ops",
@@ -788,15 +866,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "idle",
-      "task": "Closed the cycle: 6 niches screened, 0 staffed, pods empty, 0 live, revenue Rs 0, checks green",
-      "since": "2026-11-15T11:13:53.618Z",
+      "task": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
+      "since": "2026-11-15T11:51:48.525Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:13:53.586Z",
-        "action": "Closed the cycle: 6 niches screened, 0 staffed, pods empty, 0 live, revenue Rs 0, checks green"
+        "at": "2026-11-15T11:51:48.362Z",
+        "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green"
       },
-      "actions": 22
+      "actions": 24
     },
     {
       "id": "research",
@@ -808,7 +886,7 @@
       "charter": "agents/research.md",
       "state": "idle",
       "task": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)",
-      "since": "2026-11-15T11:13:53.326Z",
+      "since": "2026-11-15T11:51:48.590Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -827,7 +905,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live ventures to count",
-      "since": "2026-11-15T11:13:52.314Z",
+      "since": "2026-11-15T11:51:48.664Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -846,7 +924,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-15T11:13:53.502Z",
+      "since": "2026-11-15T11:51:48.725Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -865,7 +943,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-15T11:13:53.210Z",
+      "since": "2026-11-15T11:51:48.786Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -884,7 +962,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-15T11:13:52.374Z",
+      "since": "2026-11-15T11:51:48.847Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -903,7 +981,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-15T11:13:52.486Z",
+      "since": "2026-11-15T11:51:48.911Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -922,7 +1000,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-15T11:13:53.264Z",
+      "since": "2026-11-15T11:51:48.971Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -941,7 +1019,7 @@
       "charter": "agents/devops.md",
       "state": "idle",
       "task": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
-      "since": "2026-11-15T11:19:04.456Z",
+      "since": "2026-11-15T11:51:49.045Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -960,7 +1038,7 @@
       "charter": "agents/security.md",
       "state": "idle",
       "task": "Secret scan: no change since last cycle's scan; npm run check passes 36 tests",
-      "since": "2026-11-15T11:13:53.446Z",
+      "since": "2026-11-15T11:51:49.128Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -979,7 +1057,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-15T11:13:52.592Z",
+      "since": "2026-11-15T11:51:49.202Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -998,7 +1076,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-15T11:13:53.388Z",
+      "since": "2026-11-15T11:51:49.286Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1017,7 +1095,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no messages to handle",
-      "since": "2026-11-15T11:13:53.555Z",
+      "since": "2026-11-15T11:51:49.346Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1035,15 +1113,15 @@
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
       "state": "idle",
-      "task": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle",
-      "since": "2026-11-15T11:13:52.538Z",
+      "task": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
+      "since": "2026-11-15T11:51:49.411Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T10:34:59.592Z",
-        "action": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle"
+        "at": "2026-11-15T11:50:15.230Z",
+        "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page"
       },
-      "actions": 6
+      "actions": 8
     },
     {
       "id": "legal",
@@ -1055,7 +1133,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen for this sourcing round: no idea reached legal review since none passed research. Flagged while screening: dance recital ordering handles childrens names (aimed-at-children risk), pigeon race results sit next to pool betting (gambling risk), headstone layout is grief sensitive. No regulated idea added.",
-      "since": "2026-11-15T11:13:53.039Z",
+      "since": "2026-11-15T11:51:49.482Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1073,19 +1151,25 @@
       "trait": "Reviews every agent's work and fixes the process.",
       "charter": "agents/people.md",
       "state": "idle",
-      "task": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed",
-      "since": "2026-11-15T11:13:53.158Z",
+      "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
+      "since": "2026-11-15T11:51:49.562Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T07:06:57.405Z",
-        "action": "Day one review (weekly scoring not due): all charters ran and logged real work; one rule slip, a push with a failing test, fixed within minutes and logged. No charter change proposed"
+        "at": "2026-11-15T11:50:48.209Z",
+        "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
-      "actions": 1
+      "actions": 20
     }
   ],
   "ventureTrail": {
-    "ach-batch": [],
+    "ach-batch": [
+      {
+        "at": "2026-11-15T11:50:25.174Z",
+        "agent": "ceo",
+        "action": "Killed ach-batch at the idea list review: bank payment files carry real risk to users, held by Legal, banks take CSV and PayFile Pro fills the gap"
+      }
+    ],
     "bake-cost": [
       {
         "at": "2026-11-14T14:29:35.542Z",
@@ -1266,7 +1350,13 @@
         "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
       }
     ],
-    "rota-sheet": [],
+    "rota-sheet": [
+      {
+        "at": "2026-11-15T11:50:25.223Z",
+        "agent": "ceo",
+        "action": "Rescored rota-sheet to 10 (distribution 3 to 2): free Findmyshift and BrightHR rota tools own the searches"
+      }
+    ],
     "seatwise": [
       {
         "at": "2026-11-14T10:51:27.092Z",
@@ -1360,6 +1450,223 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-15T11:51:48.362Z",
+      "agent": "ops",
+      "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:51:48.326Z",
+      "agent": "ceo",
+      "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:51:48.292Z",
+      "agent": "ceo",
+      "action": "Decided: Main session runs the case reviewers when a lead cannot: Chief of Staff launches them in the same cycle; applied to agents/ops.md and agents/venture-lead.md",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:51:48.255Z",
+      "agent": "ceo",
+      "action": "Decided: Screen ideas for buyers who pay despite free tools: require proof of paying despite free tools, a named gap and rankable searches; applied to agents/research.md",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:48.209Z",
+      "agent": "people",
+      "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.422Z",
+      "agent": "people",
+      "action": "Score people (Kavya): 3 of 5. Day one check only; first full scoring this run",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.375Z",
+      "agent": "people",
+      "action": "Score legal (Vikram): 4 of 5. Held ach-batch on user risk, reviewed Seatwise and drafts. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.330Z",
+      "agent": "people",
+      "action": "Score finance (Nikhil): 4 of 5. Books at Rs 0 with source, refused an unsourced FX rate. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.292Z",
+      "agent": "people",
+      "action": "Score support (Priya): 3 of 5. Correctly reported no messages; nothing live to support",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.254Z",
+      "agent": "people",
+      "action": "Score sales (Arjun): 2 of 5. Filed Seatwise price and rail asks to the owner as pending instead of deciding at the desk; both later withdrawn or decided",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.213Z",
+      "agent": "people",
+      "action": "Score growth (Sana): 3 of 5. Seatwise search basics and drafts, unused since Seatwise stopped",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.175Z",
+      "agent": "people",
+      "action": "Score security (Tara): 4 of 5. Secret scans each cycle, Seatwise review passed with strict CSP. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.136Z",
+      "agent": "people",
+      "action": "Score devops (Neel): 4 of 5. Fixed HQ republish, paused stopped Seatwise as decided. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.099Z",
+      "agent": "people",
+      "action": "Score qa (Ishaan): 5 of 5. Found the Cloudflare injected script errors that led to decision ap-4. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.059Z",
+      "agent": "people",
+      "action": "Score engineer (Dev): 4 of 5. Fixed 7 Seatwise defects in one pass. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:37.021Z",
+      "agent": "people",
+      "action": "Score design (Zoya): 4 of 5. Caught a 41.6 px tap target, re-reviewed and passed. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.978Z",
+      "agent": "people",
+      "action": "Score product (Rohan): 4 of 5. Wrote and independently failed the Seatwise spec on a real gap. Used",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.942Z",
+      "agent": "people",
+      "action": "Score sizing (Farhan): 3 of 5. One sourced sizing (PayChase) that stopped a weak build. Ran once only",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.901Z",
+      "agent": "people",
+      "action": "Score data (Anaya): 3 of 5. Honest null counts, no fake numbers. Little to do with nothing live",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.862Z",
+      "agent": "people",
+      "action": "Score research (Meera): 3 of 5. 4 business cases and 25 niches screened, all sourced, but 0 new ideas in the last 2 cycles because the screen passes nothing",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.818Z",
+      "agent": "people",
+      "action": "Score ops (Kabir): 4 of 5. Standups, closes and digests every cycle, checks green. Used. No rule broken",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.780Z",
+      "agent": "people",
+      "action": "Score ceo (Arya): 4 of 5. Killed 9 weak ideas on sourced cases and ran 5 decisions through the desk. Used. No rule broken. Gap: 0 ideas reached a go",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:36.738Z",
+      "agent": "people",
+      "action": "Started: Weekly scoring of all 17 agents",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T11:50:25.274Z",
+      "agent": "ceo",
+      "action": "Kept class-pass 10, sitter-sheet 11, stall-tally 12 as scored: no new evidence this week. 4 open ideas left, below 5, so Research sources more next cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:25.223Z",
+      "agent": "ceo",
+      "action": "Rescored rota-sheet to 10 (distribution 3 to 2): free Findmyshift and BrightHR rota tools own the searches",
+      "ventureId": "rota-sheet",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:25.174Z",
+      "agent": "ceo",
+      "action": "Killed ach-batch at the idea list review: bank payment files carry real risk to users, held by Legal, banks take CSV and PayFile Pro fills the gap",
+      "ventureId": "ach-batch",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:25.127Z",
+      "agent": "ceo",
+      "action": "Kill rules: no venture in validating or live this week, so nothing to kill on the clock and nothing at a survival number to scale",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:15.278Z",
+      "agent": "ceo",
+      "action": "Started: Weekly review: kill rules, scaling and idea rescoring",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T11:50:15.230Z",
+      "agent": "finance",
+      "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T11:50:08.240Z",
+      "agent": "finance",
+      "action": "Started: Weekly profit and loss for the week to 15 Nov 2026",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-15T11:50:08.194Z",
+      "agent": "ops",
+      "action": "Started: Weekly review: opening the office",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-15T11:19:04.426Z",
       "agent": "devops",
@@ -1701,223 +2008,6 @@
       "agent": "lead-shaadi-budget",
       "action": "Killed at validating: 6 signals for, 6 against; free INR tools from WeddingWire India, Calcwise and others already plan by function and vendor, and paid Indian tools show near zero traction",
       "ventureId": "shaadi-budget",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:34:35.157Z",
-      "agent": "lead-csv-qbo",
-      "action": "Killed csv-qbo at validating: 4 sourced signals for, 6 against; free in-browser converters already do the job and QBO Online imports CSV natively",
-      "ventureId": "csv-qbo",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:33:45.949Z",
-      "agent": "lead-donor-letters",
-      "action": "Started: Validating donor-letters: searching for sourced demand and evidence against",
-      "ventureId": "donor-letters",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:33:45.056Z",
-      "agent": "lead-shaadi-budget",
-      "action": "Started: Validating: searching the live web for demand evidence for and against an Indian wedding budget planner",
-      "ventureId": "shaadi-budget",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:33:43.890Z",
-      "agent": "lead-csv-qbo",
-      "action": "Started: Validating csv-qbo: searching for sourced demand evidence and free alternatives",
-      "ventureId": "csv-qbo",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:33:05.526Z",
-      "agent": "ceo",
-      "action": "Refilled 3 pods: donor-letters (Myra, 13, seasonal January peak), shaadi-budget (Advait, 13), csv-qbo (Sara, 12, paid recurring comparables). ach-batch held by Legal",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:33:05.436Z",
-      "agent": "legal",
-      "action": "Screened new ideas: ach-batch held (handles bank account numbers, a bad payment file can misdirect money); donor-letters ok if it gives no tax advice; csv-qbo ok",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:32:23.227Z",
-      "agent": "research",
-      "action": "New sourced ideas: csv-qbo, ach-batch, donor-letters",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:35.644Z",
-      "agent": "ceo",
-      "action": "No-go on clean-quote: case 16 of 35, free cleaning calculators from Jobber and others and no allowed channel. Killed.",
-      "ventureId": "clean-quote",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:35.588Z",
-      "agent": "ceo",
-      "action": "No-go on rally-rounds: case 14 of 35, free browser round robins with live scores already exist. Killed.",
-      "ventureId": "rally-rounds",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:35.542Z",
-      "agent": "ceo",
-      "action": "No-go on bake-cost: case 15 of 35, free calculators meet the need and the only channel is crowded search. Killed.",
-      "ventureId": "bake-cost",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:23.748Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 16 of 35 against a bar of 24, with distribution 2 and recurringRevenue 1. Spot-checked: Jobber gives a free no-signup house cleaning cost calculator, and Housecall Pro and ShiftFlow give free ones too. The booking-page pivot in the case enters a crowded paid category and still has no channel we may use, so it does not clear the bar.",
-      "ventureId": "clean-quote",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:23.705Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 14 of 35 against a bar of 24, with willingnessToPay 2, distribution 2 and competitionGap 1. Spot-checked: Reclub is free with round robins and live scoring for up to 8 courts and 24 players, and Pickleheads gives 2 free round robins a month and sells extras at 5 USD. Search intent leans free and printable. No sourced pivot exists.",
-      "ventureId": "rally-rounds",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:29:23.660Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 15 of 35 against a bar of 24, with willingnessToPay 2 and distribution 2. Spot-checked: Craftybase gives a free no-signup cake pricing calculator with ingredients, labour, overhead and margin. Paid costing apps show almost no ratings or sales, and organic search is the only allowed channel and is crowded with free tools. No pivot named in the case clears distribution 3.",
-      "ventureId": "bake-cost",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:27:41.300Z",
-      "agent": "research",
-      "action": "Business case written: 16/35, no-go; free calculators everywhere, no channel or payment rail",
-      "ventureId": "clean-quote",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:26:33.526Z",
-      "agent": "research",
-      "action": "Business case written: 15 of 35, no-go; free calculators and apps already do it, paid costing tools barely sell, no payment rail",
-      "ventureId": "bake-cost",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:25:59.505Z",
-      "agent": "research",
-      "action": "Business case written: 14 of 35, no-go; free no-signup browser tools (PicklePal, Bounce, Bracket Maker) already fill the gap and there is no payment rail",
-      "ventureId": "rally-rounds",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:17:31.191Z",
-      "agent": "lead-clean-quote",
-      "action": "Blocked: Validated and waiting on the business case: this lead session has no subagent tool, so research, sizing and ceo cannot be launched independently. Next cycle must run research (case), sizing, then ceo for clean-quote",
-      "ventureId": "clean-quote",
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-14T14:17:00.983Z",
-      "agent": "lead-clean-quote",
-      "action": "Validated: 7 sourced signals that cleaners pay for quoting tools and Etsy pricing calculators, plus 4 free alternatives recorded against",
-      "ventureId": "clean-quote",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:16:44.642Z",
-      "agent": "lead-bake-cost",
-      "action": "Blocked: Validated. Business case, sizing and CEO decision need independent research, sizing and ceo agents; this lead session has no tool to launch subagents, and the lead may not write them itself",
-      "ventureId": "bake-cost",
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-14T14:16:42.200Z",
-      "agent": "lead-rally-rounds",
-      "action": "Blocked: Validated; business case, sizing and CEO decision need independent research, sizing and ceo subagents, and this session has no tool to launch subagents. Not writing them myself",
-      "ventureId": "rally-rounds",
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-14T14:16:14.863Z",
-      "agent": "lead-bake-cost",
-      "action": "Validating finished: stage moved to validated with sourced evidence for and against",
-      "ventureId": "bake-cost",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:16:14.819Z",
-      "agent": "research",
-      "action": "Validated bake-cost: 8 sourced signals for (paid apps USD 4.79 to 149, baker pricing questions), 3 against (free calculators, weak paid app sales)",
-      "ventureId": "bake-cost",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:16:06.998Z",
-      "agent": "lead-rally-rounds",
-      "action": "Validated: 3 independent paid signals (Dink, Pickleheads, DinkDrop) plus SFIA 24.3M players; against: Reclub free with live scores, Pickleheads 2 free a month",
-      "ventureId": "rally-rounds",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:15:20.708Z",
-      "agent": "lead-clean-quote",
-      "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder",
-      "ventureId": "clean-quote",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:15:13.593Z",
-      "agent": "lead-bake-cost",
-      "action": "Started: Validating: collecting sourced demand evidence for home baker costing",
-      "ventureId": "bake-cost",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:15:13.458Z",
-      "agent": "lead-rally-rounds",
-      "action": "Started: Validating: searching for sourced demand evidence for and against round robin tools",
-      "ventureId": "rally-rounds",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-14T14:14:21.119Z",
-      "agent": "ceo",
-      "action": "Staffed 3 pods: bake-cost (Vihaan, score 14), rally-rounds (Reyansh, 13, two paid comparables), clean-quote (Aditi, 13, paid Etsy bundles). Kept 5 open ideas",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:14:21.069Z",
-      "agent": "legal",
-      "action": "Screened new ideas: none needs a licence, none aimed at children; passport photo and tuition fee ideas dropped (ID compliance claims, minors data)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:14:21.019Z",
-      "agent": "research",
-      "action": "Gathered first live evidence for 5 new ideas: bake-cost, clean-quote, stall-tally, sitter-sheet, class-pass",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:13:07.138Z",
-      "agent": "support",
-      "action": "No live ventures, no messages",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:13:07.099Z",
-      "agent": "data",
-      "action": "No live ventures, no counts to check",
-      "ventureId": null,
       "kind": "done"
     }
   ]

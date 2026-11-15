@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-2",
+  "ventureId": null,
+  "type": "account",
+  "title": "Screen ideas for buyers who pay despite free tools",
+  "ask": "Change the idea screen from ap-company-1: instead of requiring that no free tool exists, require sourced proof that people pay despite the free tools, a named gap the free tools miss, and searches our own page could rank for",
+  "why": "The current screen passed 0 of 25 niches in the last two cycles (company/log/research.company.json, 15 Nov 2026): almost every niche has some free tool, so the pods sat empty and nothing can earn.",
+  "costINR": 0,
+  "status": "decided",
+  "createdAt": "2026-11-15T11:51:11.376Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep requiring that no free tool already does the job",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "0 of 25 niches passed on 15 Nov 2026 (company/log/research.company.json), so this keeps pods empty. No honest profit figure."
+    },
+    {
+      "option": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
+      "realism": 4,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Research already found paid tools selling beside free ones, for example CDE BLS-2026 at USD 155 (https://www.cdesoftware.com/?p=10060) and ShowSort at USD 2.49 a show (https://www.capterra.com/p/10019014/ShowSort/). The case and sizing gates still stop weak ideas. No case has passed yet, so no honest profit figure."
+    },
+    {
+      "option": "Drop the screen and staff the top scored ideas as before",
+      "realism": 3,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Before the screen, 8 of 8 staffed ideas died at the business case for the same reason (see killReason in company/ventures/*.json), wasting pod cycles."
+    }
+  ],
+  "decision": {
+    "choice": "Require sourced proof that buyers pay despite free tools, a named gap they miss, and searches our page could rank for; the business case gate stays as strict as now",
+    "reason": "It is the only realistic option that lets an idea reach a business case at all, costs nothing, keeps the strict case and sizing gates, and is undone by reverting one charter paragraph.",
+    "decidedAt": "2026-11-15T11:51:11.376Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/10"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-3",
+  "ventureId": null,
+  "type": "account",
+  "title": "Main session runs the case reviewers when a lead cannot",
+  "ask": "When a venture lead reaches validated or needs reviewers and its session cannot launch subagents, the lead stops and marks itself blocked, and the Chief of Staff launches research, sizing, ceo and the other reviewers as separate subagents from the main session in the same cycle",
+  "why": "4 of 7 venture leads this week stopped blocked at validated because a lead session has no subagent tool (company/log/lead-*.json), so business cases waited a cycle or more.",
+  "costINR": 0,
+  "status": "decided",
+  "createdAt": "2026-11-15T11:51:11.376Z",
+  "options": [
+    {
+      "option": "Do nothing for now: leave it to the next cycle to notice blocked leads",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Leads for bake-cost, clean-quote, rally-rounds and master-key-gen all logged this block on 14 and 15 Nov 2026. No honest profit figure."
+    },
+    {
+      "option": "Make the Chief of Staff launch the independent reviewers from the main session as soon as a lead reports it needs them",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "The main session has the subagent tool, and this already worked once: master-key-gen was decided in the same cycle on 15 Nov 2026. Keeps reviewers independent of the lead. No honest profit figure."
+    },
+    {
+      "option": "Let the lead write the case, sizing and CEO verdict itself",
+      "realism": 1,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Breaks the rule that a builder never reviews its own work (CLAUDE.md, RUNBOOK-daily.md)."
+    }
+  ],
+  "decision": {
+    "choice": "Make the Chief of Staff launch the independent reviewers from the main session as soon as a lead reports it needs them",
+    "reason": "Removes a full cycle of delay at the business case gate at no cost, keeps every review independent, and is undone by reverting two charter lines.",
+    "decidedAt": "2026-11-15T11:51:11.376Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/11"
+}

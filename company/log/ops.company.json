@@ -145,5 +145,19 @@
     "action": "Closed the cycle: 6 niches screened, 0 staffed, pods empty, 0 live, revenue Rs 0, checks green",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:08.194Z",
+    "agent": "ops",
+    "action": "Started: Weekly review: opening the office",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:51:48.362Z",
+    "agent": "ops",
+    "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

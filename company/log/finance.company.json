@@ -40,5 +40,19 @@
     "action": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:50:08.240Z",
+    "agent": "finance",
+    "action": "Started: Weekly profit and loss for the week to 15 Nov 2026",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:50:15.230Z",
+    "agent": "finance",
+    "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
