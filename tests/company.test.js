@@ -482,3 +482,15 @@ test('watchdog raises an alarm when the automatic tests on main fail', () => {
   assert.deepStrictEqual(ids({ conclusion: 'failure', at: '2026-11-14T11:55:00Z', title: 'x' }), [], 'a fix may be on its way for 10 minutes');
   assert.deepStrictEqual(ids({ conclusion: 'success', at: '2026-11-14T11:30:00Z', title: 'x' }), []);
 });
+
+test('every Vercel project skips builds safely and HQ deploys only for page changes', () => {
+  const cfgs = [['hq/vercel.json', 'vercel-ignore.sh']];
+  for (const id of fs.readdirSync(path.join(ROOT, 'ventures'))) cfgs.push([`ventures/${id}/vercel.json`, null]);
+  for (const [rel, must] of cfgs) {
+    const f = path.join(ROOT, rel);
+    if (!fs.existsSync(f)) continue;
+    const cmd = JSON.parse(fs.readFileSync(f, 'utf8')).ignoreCommand || '';
+    assert.ok(/vercel-ignore\.sh|^exit 0$/.test(cmd), `${rel} must use scripts/vercel-ignore.sh or exit 0, got: ${cmd}`);
+    if (must) assert.ok(cmd.includes(must) && cmd.includes('public/data.json'), 'HQ ignores data-only pushes');
+  }
+});

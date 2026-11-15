@@ -14,7 +14,9 @@ Use the Vercel tools, team id `team_yC0I2xlKsitxFcfizef9EDQl`. Never guess ids.
 2. `create_git_project` with repo `Anchit-AI-Hustle/virtual-company`, projectName `vc-<id>`,
    rootDirectory `ventures/<id>`.
 3. Make sure `ventures/<id>/vercel.json` has
-   `"ignoreCommand": "[ -z \"$VERCEL_GIT_PREVIOUS_SHA\" ] && exit 1; git diff --quiet $VERCEL_GIT_PREVIOUS_SHA HEAD -- ."`
+   `"ignoreCommand": "bash ../../scripts/vercel-ignore.sh ."` (skips the build when the folder did not change,
+   builds when it cannot tell, never fails a deploy; the project needs
+   `sourceFilesOutsideRootDirectory: true`). A stopped venture's `vercel.json` uses `"ignoreCommand": "exit 0"`
    so it rebuilds whenever its own code changed since its last deploy, and not for other
    ventures' pushes.
 4. `add_project_domain` with name `<id>.anchit-tandon.com`.
