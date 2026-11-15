@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T14:31:30.883Z",
+  "builtAt": "2026-11-15T14:31:58.936Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T12:17:01.264Z",
@@ -340,7 +340,7 @@
         "legal": null
       },
       "qaPassed": null,
-      "goDecision": null,
+      "goDecision": false,
       "sizing": null,
       "businessCase": {
         "path": "cases/mahj-league.md",
@@ -860,16 +860,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11",
-      "since": "2026-11-15T14:19:01.784Z",
-      "ventureId": "mahj-league",
-      "ventureTitle": "Mahj League",
+      "state": "idle",
+      "task": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle",
+      "since": "2026-11-15T14:31:55.667Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T14:19:01.784Z",
-        "action": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11"
+        "at": "2026-11-15T14:31:49.650Z",
+        "action": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle"
       },
-      "actions": 35
+      "actions": 37
     },
     {
       "id": "ops",
@@ -880,15 +880,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture",
-      "since": "2026-11-15T14:16:55.930Z",
+      "task": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
+      "since": "2026-11-15T14:31:57.016Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T14:16:55.930Z",
-        "action": "Standup: health ok, CI green, 38 tests pass, no reject comments on decided issues 7, 10, 11; no owner-chat issue open. 0 ventures in pods, 0 live, 4 open ideas (below 5). Research sources new ideas under the ap-company-2 screen this cycle; finance, data, support have no live venture"
+        "at": "2026-11-15T14:31:57.016Z",
+        "action": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green"
       },
-      "actions": 26
+      "actions": 27
     },
     {
       "id": "research",
@@ -898,11 +898,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: Mahj League scores 14 of 35, no-go, free apps already keep league standings and league searches have no sourced volume",
-      "since": "2026-11-15T14:31:22.164Z",
-      "ventureId": "mahj-league",
-      "ventureTitle": "Mahj League",
+      "since": "2026-11-15T14:31:56.764Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-15T14:31:22.164Z",
         "action": "Business case written: Mahj League scores 14 of 35, no-go, free apps already keep league standings and league searches have no sourced volume"
@@ -919,7 +919,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live ventures to count",
-      "since": "2026-11-15T11:51:48.664Z",
+      "since": "2026-11-15T14:31:55.721Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -938,7 +938,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-15T11:51:48.725Z",
+      "since": "2026-11-15T14:31:56.926Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -957,7 +957,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-15T11:51:48.786Z",
+      "since": "2026-11-15T14:31:56.659Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -976,7 +976,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-15T11:51:48.847Z",
+      "since": "2026-11-15T14:31:55.775Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -995,7 +995,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-15T11:51:48.911Z",
+      "since": "2026-11-15T14:31:55.885Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1014,7 +1014,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-15T11:51:48.971Z",
+      "since": "2026-11-15T14:31:56.708Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1031,9 +1031,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
-      "since": "2026-11-15T14:16:55.892Z",
+      "since": "2026-11-15T14:31:55.828Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1050,9 +1050,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-15T14:17:09.305Z",
+      "since": "2026-11-15T14:31:56.868Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1071,7 +1071,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-15T11:51:49.202Z",
+      "since": "2026-11-15T14:31:56.000Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1090,7 +1090,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-15T11:51:49.286Z",
+      "since": "2026-11-15T14:31:56.817Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1109,7 +1109,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no messages to handle",
-      "since": "2026-11-15T11:51:49.346Z",
+      "since": "2026-11-15T14:31:56.983Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1126,9 +1126,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
-      "since": "2026-11-15T14:17:09.338Z",
+      "since": "2026-11-15T14:31:55.943Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1145,11 +1145,11 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "done",
+      "state": "idle",
       "task": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
-      "since": "2026-11-15T14:19:01.737Z",
-      "ventureId": "mahj-league",
-      "ventureTitle": "Mahj League",
+      "since": "2026-11-15T14:31:56.493Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-15T14:19:01.737Z",
         "action": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children"
@@ -1166,7 +1166,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-15T11:51:49.562Z",
+      "since": "2026-11-15T14:31:56.605Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1279,6 +1279,21 @@
       }
     ],
     "mahj-league": [
+      {
+        "at": "2026-11-15T14:31:49.696Z",
+        "agent": "lead-mahj-league",
+        "action": "Venture closed: killed at the business case, 14 of 35"
+      },
+      {
+        "at": "2026-11-15T14:31:49.650Z",
+        "agent": "ceo",
+        "action": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle"
+      },
+      {
+        "at": "2026-11-15T14:31:49.605Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2; AMR Authority and PartyPot already keep free club standings, Mahjic Pro covers paid leagues, and no league search term has sourced volume. Kill stands."
+      },
       {
         "at": "2026-11-15T14:31:22.164Z",
         "agent": "research",
@@ -1496,6 +1511,34 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-15T14:31:57.016Z",
+      "agent": "ops",
+      "action": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:31:49.696Z",
+      "agent": "lead-mahj-league",
+      "action": "Venture closed: killed at the business case, 14 of 35",
+      "ventureId": "mahj-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:31:49.650Z",
+      "agent": "ceo",
+      "action": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle",
+      "ventureId": "mahj-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-15T14:31:49.605Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2; AMR Authority and PartyPot already keep free club standings, Mahjic Pro covers paid leagues, and no league search term has sourced volume. Kill stands.",
+      "ventureId": "mahj-league",
+      "kind": "done"
+    },
     {
       "at": "2026-11-15T14:31:22.164Z",
       "agent": "research",
@@ -2026,34 +2069,6 @@
       "agent": "lead-master-key-gen",
       "action": "Started: Validating: live web search on demand and free alternatives",
       "ventureId": "master-key-gen",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T05:21:02.135Z",
-      "agent": "ceo",
-      "action": "Staffed 1 pod: master-key-gen (Kian, score 12), the only idea passing the issue 7 screen. Left 2 pods empty rather than staff the 5 open ideas, which all fail it",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:21:02.101Z",
-      "agent": "legal",
-      "action": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)",
-      "ventureId": "master-key-gen",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:21:02.061Z",
-      "agent": "research",
-      "action": "Idea sourcing: 13 niches checked, 12 dropped for good free tools or no payers; 1 passes the screen: master-key-gen (paid comparables $3.99 to $120, no free web generator found)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:13:46.756Z",
-      "agent": "research",
-      "action": "Started: Sourcing new ideas that pass the channel and free-tool screen (issue 7)",
-      "ventureId": null,
       "kind": "start"
     }
   ]

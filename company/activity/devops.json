@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
   "ventureId": null,
-  "since": "2026-11-15T14:16:55.892Z"
+  "since": "2026-11-15T14:31:55.828Z"
 }

@@ -5,5 +5,19 @@
     "action": "Kill rules: nothing in validating or live. Staffed mahj-league (score 14, highest open idea, passes the ap-company-2 screen) into validating with lead Navya; 2 pods stay empty because the other 4 ideas score 10 to 12 and fail the screen. 5 open ideas on file; no reject comments on issues 7, 10, 11",
     "ventureId": "mahj-league",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:31:49.605Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2; AMR Authority and PartyPot already keep free club standings, Mahjic Pro covers paid leagues, and no league search term has sourced volume. Kill stands.",
+    "ventureId": "mahj-league",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-15T14:31:49.650Z",
+    "agent": "ceo",
+    "action": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle",
+    "ventureId": "mahj-league",
+    "kind": "done"
   }
 ]

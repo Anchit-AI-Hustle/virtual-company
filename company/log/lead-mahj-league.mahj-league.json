@@ -19,5 +19,12 @@
     "action": "Blocked: needs reviewers: research case, sizing, ceo go decision",
     "ventureId": "mahj-league",
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-15T14:31:49.696Z",
+    "agent": "lead-mahj-league",
+    "action": "Venture closed: killed at the business case, 14 of 35",
+    "ventureId": "mahj-league",
+    "kind": "done"
   }
 ]
