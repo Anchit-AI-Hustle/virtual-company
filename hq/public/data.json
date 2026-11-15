@@ -1,14 +1,9 @@
 {
-  "builtAt": "2026-11-15T12:02:03.217Z",
+  "builtAt": "2026-11-15T12:17:03.749Z",
   "health": {
-    "status": "problem",
-    "since": "2026-11-15T12:02:00.256Z",
-    "problems": [
-      {
-        "id": "hq-stale",
-        "text": "HQ is showing books from 2026-11-15T11:51 UTC, older than the latest work. The watchdog rebuilds them now."
-      }
-    ],
+    "status": "ok",
+    "since": "2026-11-15T12:17:01.264Z",
+    "problems": [],
     "lastRedeployAt": "2026-11-15T12:02:00.256Z"
   },
   "company": {
