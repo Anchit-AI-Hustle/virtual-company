@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T14:31:58.936Z",
+  "builtAt": "2026-11-15T14:32:03.537Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T12:17:01.264Z",
@@ -862,7 +862,7 @@
       "charter": "agents/ceo.md",
       "state": "idle",
       "task": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle",
-      "since": "2026-11-15T14:31:55.667Z",
+      "since": "2026-11-15T14:32:02.247Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -879,9 +879,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
-      "since": "2026-11-15T14:31:57.016Z",
+      "since": "2026-11-15T14:32:02.789Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -900,7 +900,7 @@
       "charter": "agents/research.md",
       "state": "idle",
       "task": "Business case written: Mahj League scores 14 of 35, no-go, free apps already keep league standings and league searches have no sourced volume",
-      "since": "2026-11-15T14:31:56.764Z",
+      "since": "2026-11-15T14:32:02.922Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -919,7 +919,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live ventures to count",
-      "since": "2026-11-15T14:31:55.721Z",
+      "since": "2026-11-15T14:32:02.281Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -938,7 +938,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-15T14:31:56.926Z",
+      "since": "2026-11-15T14:32:03.035Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -957,7 +957,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-15T14:31:56.659Z",
+      "since": "2026-11-15T14:32:02.859Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -976,7 +976,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-15T14:31:55.775Z",
+      "since": "2026-11-15T14:32:02.316Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -995,7 +995,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-15T14:31:55.885Z",
+      "since": "2026-11-15T14:32:02.379Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1014,7 +1014,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-15T14:31:56.708Z",
+      "since": "2026-11-15T14:32:02.888Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1033,7 +1033,7 @@
       "charter": "agents/devops.md",
       "state": "idle",
       "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
-      "since": "2026-11-15T14:31:55.828Z",
+      "since": "2026-11-15T14:32:02.348Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1052,7 +1052,7 @@
       "charter": "agents/security.md",
       "state": "idle",
       "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-15T14:31:56.868Z",
+      "since": "2026-11-15T14:32:02.991Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1071,7 +1071,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-15T14:31:56.000Z",
+      "since": "2026-11-15T14:32:02.446Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1090,7 +1090,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-15T14:31:56.817Z",
+      "since": "2026-11-15T14:32:02.954Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1109,7 +1109,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no messages to handle",
-      "since": "2026-11-15T14:31:56.983Z",
+      "since": "2026-11-15T14:32:03.068Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1128,7 +1128,7 @@
       "charter": "agents/finance.md",
       "state": "idle",
       "task": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
-      "since": "2026-11-15T14:31:55.943Z",
+      "since": "2026-11-15T14:32:02.412Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1147,7 +1147,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
-      "since": "2026-11-15T14:31:56.493Z",
+      "since": "2026-11-15T14:32:02.757Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1166,7 +1166,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-15T14:31:56.605Z",
+      "since": "2026-11-15T14:32:02.824Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
