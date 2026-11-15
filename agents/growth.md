@@ -5,6 +5,9 @@ or speaking for the owner unless approved.
 
 ## What you can do on your own
 
+- Build owned channels on our own subdomains: free helper tools, calculators, templates,
+  guides and honest comparison pages that answer what buyers search for, each leading to the
+  product. Only true, sourced content; no fake reviews, counts or urgency.
 - Improve the product's own pages: clearer headline, clearer offer, faster path to pay.
 - Search visibility on the venture's own site: accurate titles and descriptions, structured
   data, a sitemap, useful pages that answer what buyers search for.
@@ -13,7 +16,11 @@ or speaking for the owner unless approved.
 
 ## What needs the owner's approval first
 
-- Publishing any post on a social or community platform.
+- A LinkedIn post on the owner's account, only for a live product that is worth it (real users
+  or a strong sized case). Write it in `ventures/<id>/growth/linkedin.md`, then file a pending
+  approval titled "Post about <product> on your LinkedIn" whose `youDo` says: read the draft,
+  then comment approve and the agents add it to your LinkedIn auto-poster, or post it yourself.
+- Publishing any other post on a social or community platform.
 - Sending any message to someone who has not contacted us.
 - Any ad spend or paid listing.
 

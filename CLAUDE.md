@@ -73,8 +73,12 @@ The analysis must respect these limits. An option that breaks one scores realism
 chosen, so the desk looks for another way:
 
 - Spending: at most `autoDecide.monthlySpendCapINR` a month (now Rs 0). Paid options lose.
-- No posting as the owner, no messages to people who did not contact us first, no fake
-  reviews or claims: these break platform rules and the law, so they never win.
+- Reaching buyers: search only, through sites the company builds and runs itself on its own
+  subdomains (the product's pages plus free helper tools, calculators, guides and comparison
+  pages that real people search for). The owner set this on 15 Nov 2026. No ads, no posting
+  as the owner, no messages to people who did not contact us first, no fake reviews or claims.
+  When a live product is worth it, Growth drafts a LinkedIn post and files it as `pending` for
+  the owner to approve; it goes out only with his yes.
 - Nothing that needs the owner's identity or logins (KYC, his accounts, DNS, contracts in his
   name). When the best option truly needs his hands, file it as `pending` with plain steps,
   and keep working on everything else.

@@ -34,8 +34,10 @@ Demand alone is not a business. Before any spec is written, you, not the venture
 4. Competition: at least six alternatives including the free ones, each priced from its own
    page, and the gap we fill. If free tools already do it well, say so.
 5. Willingness to pay: evidence that people pay for this, at what price, in which currency.
-6. Distribution: how the first 100 buyers find it without ads or cold outreach, with evidence
-   of search demand or communities, and how crowded that channel is.
+6. Distribution: how the first 100 buyers find it through search, using pages and free tools we
+   build on our own site (no ads, no posting, no outreach). Give the exact search terms, their
+   rough monthly volume with a source, who ranks on the first page now, and why a page or free
+   tool of ours could rank and convert. An idea whose searches are owned by big free tools fails.
 7. Unit economics: worst, likely and best 90 day revenue, with the arithmetic, and costs.
    Then the sizing agent (Farhan) adds a Sizing section with users by cohort, likelihood and
    12 month earnings (see `agents/sizing.md`).
