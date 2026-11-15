@@ -19,5 +19,12 @@
     "action": "Blocked: Awaiting CEO kill or continue decision; this session cannot launch separate research, sizing or CEO agents",
     "ventureId": "master-key-gen",
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-15T05:25:12.869Z",
+    "agent": "lead-master-key-gen",
+    "action": "Venture killed by the CEO on my research verdict",
+    "ventureId": "master-key-gen",
+    "kind": "done"
   }
 ]
