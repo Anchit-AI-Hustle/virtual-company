@@ -51,9 +51,9 @@ function nextHealth(prev, result, nowIso) {
   };
 }
 
-async function get(url) {
+async function get(url, redirect = 'follow') {
   try {
-    const r = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(LIMITS.timeoutMs), headers: { 'user-agent': 'venture-hq-watchdog' } });
+    const r = await fetch(url, { redirect, signal: AbortSignal.timeout(LIMITS.timeoutMs), headers: { 'user-agent': 'venture-hq-watchdog' } });
     return { status: r.status, body: await r.text() };
   } catch (e) {
     return { status: 0, body: '' };
@@ -77,7 +77,7 @@ async function gather(root, now) {
     if ((v.stage === 'live' || v.stage === 'scaling') && v.url) products.push(Object.assign({ id: v.id, title: v.title, url: v.url }, await get(v.url)));
     else if (v.stage !== 'qa') {
       const url = `https://${v.id}.${config.domain}/`;
-      const r = await get(url);
+      const r = await get(url, 'manual'); // a redirect to a sign-in page is not the product being online
       unapproved.push({ id: v.id, title: v.title, stage: v.stage, url, status: r.status });
     }
   }
