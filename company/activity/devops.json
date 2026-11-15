@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Platform check: health ok, no platform-alert issues, watchdog ran 11:01 UTC, node scripts/watchdog.js all checks passed; 0 live products to check",
   "ventureId": null,
-  "since": "2026-11-15T11:12:46.432Z"
+  "since": "2026-11-15T11:13:52.428Z"
 }
