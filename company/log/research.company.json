@@ -54,5 +54,19 @@
     "action": "Idea sourcing (issue 7 screen): 19 niches checked, 19 dropped, 0 new ideas added. Closest was bowling league secretary (CDE BLS-2026 is Windows only at USD 155, https://www.cdesoftware.com/?p=10060) but BowlReport is a free web league tool with scores, averages, standings, schedules and printable sheets (https://www.bowlreport.com/). Lighting paperwork dropped for LuminaPlot free forever plan (https://luminaplot.com/); dance recital order for ShowSort at USD 2.49 a show (https://www.capterra.com/p/10019014/ShowSort/); GS1-128 labels for Orderful free generator; Excel to Tally for TallyPrime built in import; florist recipes for Curate free spreadsheet; screen print pricing for Printavo free calculators; others crowded or thin demand. Leaving pods empty per ap-company-1.",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:13:11.758Z",
+    "agent": "research",
+    "action": "Started: Sourcing new niches against the issue 7 screen: paid-only tools sold on open marketplaces",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:13:40.339Z",
+    "agent": "research",
+    "action": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
