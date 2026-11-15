@@ -1,7 +1,7 @@
 {
   "buildCommand": "cd .. && node scripts/build-hq.js",
   "outputDirectory": "public",
-  "ignoreCommand": "bash ../scripts/vercel-ignore.sh . ':(exclude)public/data.json' ../scripts/build-hq.js",
+  "ignoreCommand": "bash ../scripts/vercel-ignore.sh . ':(exclude)public/data.json' ../company ../scripts",
   "headers": [
     {
       "source": "/data.json",

@@ -68,5 +68,12 @@
     "action": "Platform check: health ok, no platform-alert issues, watchdog ran 11:01 UTC, node scripts/watchdog.js all checks passed; 0 live products to check",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T11:17:01.785Z",
+    "agent": "devops",
+    "action": "Started: Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/",
+    "ventureId": null,
+    "kind": "start"
   }
 ]
