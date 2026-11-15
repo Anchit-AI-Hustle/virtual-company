@@ -115,11 +115,14 @@ Publishing a product page on a subdomain of anchit-tandon.com is allowed once it
 - Vercel is the primary host, team `anchit-ai-hustle` (team id `team_yC0I2xlKsitxFcfizef9EDQl`).
   One Vercel project per venture, named `vc-<id>`, linked to this repo with the root directory
   `ventures/<id>`, on the domain `<id>.anchit-tandon.com`. See `agents/devops.md`.
-- HQ (Vercel project `venture-hq`, root directory `hq`) is linked to this repo. Every push that
-  changes `hq/`, `company/` or `scripts/` republishes it, building `data.json` from the books,
-  and the page polls that file. Pushing the books is all it takes to update the office. Keep
-  pushes to one per finished step: each push is a Vercel deployment and the plan allows about
-  100 a day across all projects.
+- HQ (Vercel project `venture-hq`, root directory `hq`) reads its live data from GitHub: every
+  `bash scripts/push.sh` rebuilds and commits `hq/public/data.json`, and the page loads that
+  file from the newest commit. Pushing the books is all it takes to update the office, with no
+  deploy. Vercel rebuilds HQ only when its page code in `hq/` changes; never make it rebuild on
+  `company/` or `scripts/` changes, because the plan allows about 100 deploys a day across all
+  projects. To confirm HQ is current, check the committed data.json (or
+  `raw.githubusercontent.com/Anchit-AI-Hustle/virtual-company/main/hq/public/data.json`), not
+  the copy deployed with the page.
 - The owner also wants every live URL to be servable from Cloudflare as a standby, with no
   proxying of one platform through the other. When a session has the tools to deploy to
   Cloudflare, do it and record it. When it does not, say so in the log and do not pretend.

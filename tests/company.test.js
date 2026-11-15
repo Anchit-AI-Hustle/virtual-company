@@ -491,7 +491,7 @@ test('every Vercel project skips builds safely and HQ deploys only for page chan
     if (!fs.existsSync(f)) continue;
     const cmd = JSON.parse(fs.readFileSync(f, 'utf8')).ignoreCommand || '';
     assert.ok(/vercel-ignore\.sh|^exit 0$/.test(cmd), `${rel} must use scripts/vercel-ignore.sh or exit 0, got: ${cmd}`);
-    if (must) assert.ok(cmd.includes(must) && cmd.includes('public/data.json'), 'HQ ignores data-only pushes');
+    if (must) assert.ok(cmd.includes(must) && cmd.includes('public/data.json') && !/\.\.\/company(\s|\/|$)|\.\.\/scripts(\s|$)/.test(cmd), 'HQ must not redeploy for books or script changes: it reads its data from GitHub');
   }
 });
 
