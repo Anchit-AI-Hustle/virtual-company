@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-15T05:21:02.036Z",
-  "updatedAt": "2026-11-15T05:21:02.036Z",
+  "updatedAt": "2026-11-15T05:24:21.120Z",
   "killReason": null,
   "lead": {
     "name": "Kian",
@@ -48,8 +48,23 @@
       "claim": "The iPhone app Pin Head, a pinning calculator with MACS checks, is paid at $3.99.",
       "url": "https://apps.apple.com/app/id782925810",
       "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "HPC MasterKing master keying software sells for $340.68, on CD only.",
+      "url": "https://www.clksupplies.com/products/hpc-masterking-software",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "Rabbitsoft sells FasterMaster master keying software from $95 (Lite) to $375 (II Pro) as Windows downloads, with time limited trials only.",
+      "url": "https://www.rabbitsoft.us/",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "claim": "A 2006 Lock Picking 101 forum thread on assigning key bittings has a member asking whether there is a free online site to generate these codes; nobody names one.",
+      "url": "https://www.lockpicking101.com/viewtopic.php?p=193021",
+      "foundAt": "2026-11-15"
     }
   ],
-  "nextAction": "Validating (lead Kian). Passed the issue 7 screen: allowed channel is organic search on long tail queries (master key system generator, pinning chart calculator) where results are vendor pages and old forum threads; no free general web generator found, only single brand designers. Against: small, old market (paid apps have 7 to 19 ratings) and lock makers give free designers, e.g. https://www.abus.com/uk/News/Design-Masterkey-Systems-Online. Legal condition: no key decoding, bypass or impressioning features; only systems the user designs for locks they own or service.",
+  "nextAction": "Research verdict 15 Nov: KILL recommended, decision for the CEO. For: people do pay for this (8 sourced items: CLK $10.15 charts, Aero Key $120, HPC MasterKing $340.68, Rabbitsoft $95 to $375, Master It $6.99, Pin Head $3.99). Against, decisive: Key-En-Lock launched a free Master Key System Builder (22 Feb 2026, free account) for property managers, facility managers and locksmiths that already does our whole product: Schlage C, Kwikset KW1, Yale, Corbin Russwin and Best SFIC, MACS checks, anti cross keying, phantom key warnings, pinning chart and door schedule PDFs (https://keyenlock.com/blog/master-key-system-builder/). Also free: ABUS online designer with pinning and cutting data (https://www.abus.com/uk/News/Design-Masterkey-Systems-Online), a free web tool MKCalc named on a 2018 forum thread (https://www.lockpicking101.com/viewtopic.php?p=481665), Pin It Now pinning calculator free to lockcodes.com subscribers (https://lockcodes.com/), open source Masterkey on SourceForge (https://sourceforge.net/projects/masterkey/). Demand is small and old: paid apps have 7 and 19 ratings, forum requests are from 2006 to 2018, no Reddit evidence found (Reddit search blocked by the proxy). Search volume figures: null, no keyword tool available. Not moved to validated; business case, sizing and CEO decision need separate agents this session could not launch.",
   "stage": "validating"
 }
