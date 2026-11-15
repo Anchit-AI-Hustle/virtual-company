@@ -1,6 +1,6 @@
 {
-  "state": "working",
-  "task": "Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/",
+  "state": "idle",
+  "task": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
   "ventureId": null,
-  "since": "2026-11-15T11:17:01.785Z"
+  "since": "2026-11-15T11:19:04.456Z"
 }

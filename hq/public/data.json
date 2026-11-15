@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T11:17:07.557Z",
+  "builtAt": "2026-11-15T11:19:04.921Z",
   "health": {
     "status": "ok",
     "since": "2026-11-15T10:38:56.922Z",
@@ -939,16 +939,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "working",
-      "task": "Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/",
-      "since": "2026-11-15T11:17:01.785Z",
+      "state": "idle",
+      "task": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
+      "since": "2026-11-15T11:19:04.456Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T11:17:01.785Z",
-        "action": "Started: Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/"
+        "at": "2026-11-15T11:19:04.426Z",
+        "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green"
       },
-      "actions": 18
+      "actions": 19
     },
     {
       "id": "security",
@@ -1360,6 +1360,13 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-15T11:19:04.426Z",
+      "agent": "devops",
+      "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-15T11:17:01.785Z",
       "agent": "devops",
@@ -1910,13 +1917,6 @@
       "at": "2026-11-14T14:13:07.099Z",
       "agent": "data",
       "action": "No live ventures, no counts to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-14T14:13:07.061Z",
-      "agent": "finance",
-      "action": "Ledger: Rs 0 revenue, Rs 0 costs. FX 94.2754 INR per USD already recorded today with source",
       "ventureId": null,
       "kind": "done"
     }

@@ -75,5 +75,12 @@
     "action": "Started: Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-15T11:19:04.426Z",
+    "agent": "devops",
+    "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
