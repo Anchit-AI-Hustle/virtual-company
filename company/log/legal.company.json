@@ -26,5 +26,12 @@
     "action": "Screened new ideas: ach-batch held (handles bank account numbers, a bad payment file can misdirect money); donor-letters ok if it gives no tax advice; csv-qbo ok",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-15T10:40:46.641Z",
+    "agent": "legal",
+    "action": "Category screen for this sourcing round: no idea reached legal review since none passed research. Flagged while screening: dance recital ordering handles childrens names (aimed-at-children risk), pigeon race results sit next to pool betting (gambling risk), headstone layout is grief sensitive. No regulated idea added.",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live revenue to record (0 live ventures). Today's USD rate not confirmed from a source page with a number, so the 14 Nov rate (94.2754, xflowpay) stays as last recorded",
+  "state": "done",
+  "task": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle",
   "ventureId": null,
-  "since": "2026-11-15T05:25:24.166Z"
+  "since": "2026-11-15T10:34:59.592Z"
 }
