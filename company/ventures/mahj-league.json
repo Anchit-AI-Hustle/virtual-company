@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-15T14:18:52.413Z",
-  "updatedAt": "2026-11-15T14:27:05.641Z",
-  "killReason": null,
+  "updatedAt": "2026-11-15T14:31:22.143Z",
+  "killReason": "Business case scored 14 of 35 (bar 24; willingnessToPay 2 and distribution 2, both need 3): free apps AMR Authority and PartyPot already keep mahjong league standings, no sourced search volume for league terms, and no payment rail.",
   "lead": {
     "name": "Navya",
     "color": "#6D3FB0",
@@ -66,6 +66,20 @@
     }
   ],
   "nextAction": "Validated by Navya on 2026-11-15. Needs: Research writes cases/mahj-league.md, Sizing writes cases/mahj-league.sizing.json, CEO go decision. Gap: league standings for American mahjong cost $57.99/mo at Mahjic Pro (free plan has no leagues) or need every player on an iPhone with a $2.99 MahWins purchase; no web, any phone, no install club standings tool found. Evidence against: (1) Mahjic, MahWins and AMR Authority are active, funded or shipping fast in this exact niche, and Mahjic claims 400+ clubs, so distribution is contested; (2) generic free web leaderboards exist (keepthescore free plan has 2 scoreboards, https://keepthescore.com/pricing), so a casual club can make do; (3) PartyPot offers free club season leaderboards for game groups (https://partypotapp.com.advisoryapps.com/business/leaderboard/); (4) the paid leagues found are small local 4 week events, so per club willingness to pay for a tool is unproven, and the leagues found already chose an app; (5) no sourced search volume found for league terms (mahjong league scoring, mahjong league score sheet); page one for those is Etsy printables, a NZ club PDF, mahjong4friends.com and mahjongg.ai.studio, so small sites can rank but the volume may be tiny. Research must quantify volume before the case clears. Legal: points only, never money or stakes, never reproduce the NMJL card.",
-  "stage": "validated",
-  "stageSince": "2026-11-15T14:27:05.641Z"
+  "stage": "killed",
+  "stageSince": "2026-11-15T14:31:22.143Z",
+  "case": {
+    "path": "cases/mahj-league.md",
+    "scores": {
+      "pain": 2,
+      "willingnessToPay": 2,
+      "marketSize": 2,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 1,
+      "recurringRevenue": 3
+    },
+    "total": 14,
+    "recommendation": "no-go"
+  }
 }
