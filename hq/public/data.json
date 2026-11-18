@@ -1,9 +1,13 @@
 {
-  "builtAt": "2026-11-16T22:36:15.587Z",
+  "builtAt": "2026-11-18T06:40:20.523Z",
   "health": {
     "status": "problem",
-    "since": "2026-11-16T22:36:09.571Z",
+    "since": "2026-11-18T06:40:19.226Z",
     "problems": [
+      {
+        "id": "hq-data",
+        "text": "HQ could not read its data from GitHub, so the office would look empty."
+      },
       {
         "id": "ci-red",
         "text": "The automatic tests on main are failing since 2026-11-16T22:22 UTC (Add website & 3D development skills, prompt pack, and launch). The next work session fixes them before anything else."
