@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T21:11:21.151Z",
+  "updatedAt": "2026-11-20T21:13:17.841Z",
   "killReason": null,
   "lead": {
     "name": "Ira",
@@ -43,9 +43,39 @@
       "claim": "The search lash map template returns mostly thin parasite template pages on unrelated university and government domains, not a strong free web tool, which suggests a real tool page could rank.",
       "url": "https://live.museum.manchester.ac.uk/library/lash-map-template.html",
       "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Lash techs ask for exactly this: a post in a lash tech Facebook group asks how other techs keep track of each client lash mapping so they know which map to use at fills.",
+      "url": "https://www.facebook.com/groups/937034773648940/posts/1703997593619317/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "In the same lash tech Facebook group another tech asks whether there is an app for digital lash mapping and what people use to put the lashes on the eyes.",
+      "url": "https://www.facebook.com/groups/937034773648940/posts/1711547082864368/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "The Lash Look, an App Store lash mapping app with saved client records, charges Premium Lash Tech $39.99 a month or $239.99 a year and Lifetime Access $499.99 (CA store, 8 ratings, 4.3), so a paid tier exists for this job.",
+      "url": "https://apps.apple.com/ca/app/the-lash-look-consultations/id6739705878",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Lash Create, a lash mapping and booking app, sells a one-time Premium Unlock at $9.99 and $69.99 plus Individual Artist $19.99 a month on the US App Store, matching our one-time unlock model; it shows too few ratings to display.",
+      "url": "https://apps.apple.com/us/app/lash-create-design-booking/id6758023090",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Lost Artistry Lash sells Digital Lash Maps, Brushes and Stamps for Procreate at $70.00 CAD, another paid mapping tool for techs.",
+      "url": "https://lostartistrylash.com/products/procreate-lash-brushes",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "RankHero keyword data shows lash map at 33,100 monthly searches globally, 67 percent from the United States, CPC $0.74, with lash mapping as a supporting term.",
+      "url": "https://www.rankhero.com/keywords/lash-map",
+      "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Lead Ira validates: find 3+ independent sourced demand signals and a search volume source for lash map maker / lash map template, then Research writes the business case.",
-  "stage": "validating",
-  "stageSince": "2026-11-20T21:11:21.151Z"
+  "nextAction": "Validated by lead Ira on 21 Nov 2026 (10 sourced signals: techs asking for per-client map tracking, paid apps and Procreate map packs, 33,100 monthly searches for lash map). Next: Research writes cases/lash-mapper.md and Sizing writes cases/lash-mapper.sizing.json, then the CEO decides go or no-go. Evidence against to weigh in the case: (1) crowded field of paid apps already doing per-client maps (The Lash Look, Lash Create, Lash Maps, Lash Atlas, Lash Dash), all with few App Store ratings, so revenue per app looks small; (2) free web tools exist (Lash Map Lab generator lashmaplab.com, The Face Report lash map tool) though they target DIY cluster wearers with no saved client records; (3) the 33,100 volume is the head term lash map, which mixes consumer DIY cluster intent with tech intent, and no volume source was found yet for lash map maker or lash map template; (4) buyers are mostly in the US, so price in USD.",
+  "stage": "validated",
+  "stageSince": "2026-11-20T21:13:17.841Z"
 }

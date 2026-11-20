@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-20T21:11:48.216Z",
+    "agent": "lead-lash-mapper",
+    "action": "Started: Validating lash-mapper: searching for independent demand signals",
+    "ventureId": "lash-mapper",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T21:13:24.536Z",
+    "agent": "lead-lash-mapper",
+    "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction",
+    "ventureId": "lash-mapper",
+    "kind": "done"
+  }
+]

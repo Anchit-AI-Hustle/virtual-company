@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T21:11:23.483Z",
+  "builtAt": "2026-11-20T21:13:32.843Z",
   "health": {
     "status": "problem",
     "since": "2026-11-18T06:55:12.435Z",
@@ -658,14 +658,14 @@
       "customer": "Lash extension technicians",
       "revenueModel": "Paid one-time unlock",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "validated",
       "score": 13,
       "url": null,
-      "nextAction": "Lead Ira validates: find 3+ independent sourced demand signals and a search volume source for lash map maker / lash map template, then Research writes the business case.",
+      "nextAction": "Validated by lead Ira on 21 Nov 2026 (10 sourced signals: techs asking for per-client map tracking, paid apps and Procreate map packs, 33,100 monthly searches for lash map). Next: Research writes cases/lash-mapper.md and Sizing writes cases/lash-mapper.sizing.json, then the CEO decides go or no-go. Evidence against to weigh in the case: (1) crowded field of paid apps already doing per-client maps (The Lash Look, Lash Create, Lash Maps, Lash Atlas, Lash Dash), all with few App Store ratings, so revenue per app looks small; (2) free web tools exist (Lash Map Lab generator lashmaplab.com, The Face Report lash map tool) though they target DIY cluster wearers with no saved client records; (3) the 33,100 volume is the head term lash map, which mixes consumer DIY cluster intent with tech intent, and no volume source was found yet for lash map maker or lash map template; (4) buyers are mostly in the US, so price in USD.",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-20T21:11:21.151Z",
-      "evidenceCount": 4,
+      "updatedAt": "2026-11-20T21:13:17.841Z",
+      "evidenceCount": 10,
       "specPath": null,
       "lead": {
         "id": "lead-lash-mapper",
@@ -1288,13 +1288,16 @@
       "trait": "Founder energy. Talks to the problem before the solution.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "lash-mapper",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction",
+      "since": "2026-11-20T21:13:24.536Z",
+      "ventureId": "lash-mapper",
+      "ventureTitle": "Lash Mapper",
+      "last": {
+        "at": "2026-11-20T21:13:24.536Z",
+        "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction"
+      },
+      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -1407,6 +1410,16 @@
       }
     ],
     "lash-mapper": [
+      {
+        "at": "2026-11-20T21:13:24.536Z",
+        "agent": "lead-lash-mapper",
+        "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction"
+      },
+      {
+        "at": "2026-11-20T21:11:48.216Z",
+        "agent": "lead-lash-mapper",
+        "action": "Started: Validating lash-mapper: searching for independent demand signals"
+      },
       {
         "at": "2026-11-20T21:11:22.957Z",
         "agent": "ceo",
@@ -1658,6 +1671,20 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-20T21:13:24.536Z",
+      "agent": "lead-lash-mapper",
+      "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T21:11:48.216Z",
+      "agent": "lead-lash-mapper",
+      "action": "Started: Validating lash-mapper: searching for independent demand signals",
+      "ventureId": "lash-mapper",
+      "kind": "start"
+    },
     {
       "at": "2026-11-20T21:11:22.957Z",
       "agent": "ceo",
@@ -2201,20 +2228,6 @@
       "at": "2026-11-15T10:34:59.683Z",
       "agent": "support",
       "action": "No live ventures, no messages to handle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:59.633Z",
-      "agent": "data",
-      "action": "No live ventures to count",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:59.592Z",
-      "agent": "finance",
-      "action": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle",
       "ventureId": null,
       "kind": "done"
     }
