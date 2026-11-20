@@ -1,0 +1,46 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "killReason": null,
+  "lead": null,
+  "id": "formula-book",
+  "title": "Formula Book",
+  "oneLiner": "Phone notebook for hair colourists to save each client's colour formula and history, offline, with a file export",
+  "customer": "Independent and booth-rent hair colourists",
+  "revenueModel": "Paid one-time unlock",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 2,
+    "total": 12
+  },
+  "evidence": [
+    {
+      "claim": "Gloss, an app that only saves client colour formulas, charges $3.99 a month or $35.99 a year and has 622 ratings averaging 4.6 on the US App Store.",
+      "url": "https://apps.apple.com/us/app/id1212498579",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Charm, another formula keeping app, sells premium at $3.99 to $5.99 a month or $34.99 to $45.99 a year, and a reviewer says it refused to save client notes.",
+      "url": "https://apps.apple.com/us/app/id1467161766",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Gap: Gloss reviewers in Jan to Mar 2025 report formulas hidden after an update, lost edit and delete, and wrong sums in formulas, so stylists fear losing records held only inside a paid app.",
+      "url": "https://apps.apple.com/us/app/id1212498579",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Goldie offers a free hair colour mixing calculator but saving a mix to a client profile needs its paid salon app, so the free tool does not keep history.",
+      "url": "https://heygoldie.com/tools/hair-color-mixing-calculator",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research. Target searches: hair color formula tracker, client color formula card, hair color formula log template; the first page for these was app store listings and small salon supply blogs, no big free web tool, but no volume source yet. Against: app stores own the intent and several free tiers exist (Charm, Gloss free month, FyleStyle), salon booking suites already store formulas, and paper client cards sell cheaply at SalonCentric (https://www.saloncentric.com/fromm-stylist-client-profile-cards.html). Distribution through our own pages is the weak part.",
+  "stage": "idea"
+}

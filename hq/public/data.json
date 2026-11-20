@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T21:06:52.211Z",
+  "builtAt": "2026-11-20T21:10:48.001Z",
   "health": {
     "status": "problem",
     "since": "2026-11-18T06:55:12.435Z",
@@ -652,6 +652,35 @@
       "businessCase": null
     },
     {
+      "id": "lash-mapper",
+      "title": "Lash Mapper",
+      "oneLiner": "Build a lash extension map on your phone by tapping each zone for length, curl and thickness, saved per client and printable",
+      "customer": "Lash extension technicians",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Research. Target searches: lash map maker, lash map template, lash mapping template printable, cat eye lash map. Against: the paying buyers above bought education and Procreate assets on an iPad, which they may prefer to a web tool; Etsy and Lemon8 dominate lash map discovery; no search volume source yet; the Etsy review counts were seen once on a search results page (two of the top four were ads), verify on the listing pages.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-20T21:10:30.405Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "csv-qbo",
       "title": "CSV to QBO",
       "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
@@ -705,6 +734,64 @@
         "name": "Kian",
         "color": "#14706B"
       },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "formula-book",
+      "title": "Formula Book",
+      "oneLiner": "Phone notebook for hair colourists to save each client's colour formula and history, offline, with a file export",
+      "customer": "Independent and booth-rent hair colourists",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 12,
+      "url": null,
+      "nextAction": "Research. Target searches: hair color formula tracker, client color formula card, hair color formula log template; the first page for these was app store listings and small salon supply blogs, no big free web tool, but no volume source yet. Against: app stores own the intent and several free tiers exist (Charm, Gloss free month, FyleStyle), salon booking suites already store formulas, and paper client cards sell cheaply at SalonCentric (https://www.saloncentric.com/fromm-stylist-client-profile-cards.html). Distribution through our own pages is the weak part.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-20T21:10:30.405Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "litter-log",
+      "title": "Litter Log",
+      "oneLiner": "Phone log for small dog breeders: whelping times, daily puppy weights with growth charts and a buyer-ready puppy record",
+      "customer": "Small hobby dog breeders with one to five litters a year",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 12,
+      "url": null,
+      "nextAction": "Research. Target searches: puppy weight chart printable, whelping chart, puppy weight tracker, litter record template. Against: paid signals are small (17 ratings, a template with no reviews), BreedTracker and other breeder software already exist (https://www.capterra.com/p/10047764/BreedTracker/), free spreadsheets do most of the job, and the vaccine and deworming logs must stay records only with no health advice. Loosely near sitter-sheet (pets) but a different buyer.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-20T21:10:30.405Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": null,
       "reviews": {
         "product": null,
         "engineer": null,
@@ -907,16 +994,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "working",
-      "task": "Find and score new ideas our own pages can rank for",
-      "since": "2026-11-20T21:06:51.645Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "New idea scored: litter-log 12/20",
+      "since": "2026-11-20T21:10:37.668Z",
+      "ventureId": "litter-log",
+      "ventureTitle": "Litter Log",
       "last": {
-        "at": "2026-11-20T21:06:51.645Z",
-        "action": "Started: Find and score new ideas our own pages can rank for"
+        "at": "2026-11-20T21:10:37.668Z",
+        "action": "New idea scored: litter-log 12/20"
       },
-      "actions": 22
+      "actions": 25
     },
     {
       "id": "data",
@@ -1287,6 +1374,27 @@
         "action": "Started: Validating donor-letters: searching for sourced demand and evidence against"
       }
     ],
+    "formula-book": [
+      {
+        "at": "2026-11-20T21:10:37.586Z",
+        "agent": "research",
+        "action": "New idea scored: formula-book 12/20"
+      }
+    ],
+    "lash-mapper": [
+      {
+        "at": "2026-11-20T21:10:37.625Z",
+        "agent": "research",
+        "action": "New idea scored: lash-mapper 13/20"
+      }
+    ],
+    "litter-log": [
+      {
+        "at": "2026-11-20T21:10:37.668Z",
+        "agent": "research",
+        "action": "New idea scored: litter-log 12/20"
+      }
+    ],
     "mahj-league": [
       {
         "at": "2026-11-15T14:31:49.696Z",
@@ -1520,6 +1628,27 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-20T21:10:37.668Z",
+      "agent": "research",
+      "action": "New idea scored: litter-log 12/20",
+      "ventureId": "litter-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T21:10:37.625Z",
+      "agent": "research",
+      "action": "New idea scored: lash-mapper 13/20",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T21:10:37.586Z",
+      "agent": "research",
+      "action": "New idea scored: formula-book 12/20",
+      "ventureId": "formula-book",
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T21:06:51.645Z",
       "agent": "research",
@@ -2058,27 +2187,6 @@
       "action": "Secret scan of tracked files: no keys, tokens or private keys found",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:25.103Z",
-      "agent": "ops",
-      "action": "Standup: health shows cycle-missed (no work since 05:25 UTC), now cleared by this cycle; watchdog ran 10:31 UTC; CI green, 35 tests pass; no reject comments on decided issue 7. 0 ventures in pods, 0 live, 5 open ideas all failing the issue 7 screen. CEO and Research to source ideas that pass it.",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:25.055Z",
-      "agent": "devops",
-      "action": "Platform alert cleared: the missed session was the 07:41 IST cycle; this cycle is working, watchdog.js confirms HQ 200, data 200, CI green, no products down",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:14.966Z",
-      "agent": "devops",
-      "action": "Started: Fix platform alert: missed work session (issue 9)",
-      "ventureId": null,
-      "kind": "start"
     }
   ]
 }

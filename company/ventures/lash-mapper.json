@@ -1,0 +1,46 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "killReason": null,
+  "lead": null,
+  "id": "lash-mapper",
+  "title": "Lash Mapper",
+  "oneLiner": "Build a lash extension map on your phone by tapping each zone for length, curl and thickness, saved per client and printable",
+  "customer": "Lash extension technicians",
+  "revenueModel": "Paid one-time unlock",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 3,
+    "total": 13
+  },
+  "evidence": [
+    {
+      "claim": "On the Etsy search for procreate lash tech map, a Lash Mapping Handbook of practice sheets shows 2.5k reviews and a Lash Map Style Guide sells at $21.23 with 48 reviews.",
+      "url": "https://www.etsy.com/market/procreate_lash_tech_map",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "The same Etsy search shows Procreate lash brushes with digital lash maps at $239.21 with 73 reviews, so lash techs pay real money for mapping tools.",
+      "url": "https://www.etsy.com/market/procreate_lash_tech_map",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Gap: free lash map help is static guides and printable maps (London Lash free lash maps blog), not a tool that builds and saves a map per client on a phone.",
+      "url": "https://londonlash.com/blogs/news/the-ultimate-guide-to-lash-mapping-part-2",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "The search lash map template returns mostly thin parasite template pages on unrelated university and government domains, not a strong free web tool, which suggests a real tool page could rank.",
+      "url": "https://live.museum.manchester.ac.uk/library/lash-map-template.html",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research. Target searches: lash map maker, lash map template, lash mapping template printable, cat eye lash map. Against: the paying buyers above bought education and Procreate assets on an iPad, which they may prefer to a web tool; Etsy and Lemon8 dominate lash map discovery; no search volume source yet; the Etsy review counts were seen once on a search results page (two of the top four were ads), verify on the listing pages.",
+  "stage": "idea"
+}

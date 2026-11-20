@@ -1,0 +1,41 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "killReason": null,
+  "lead": null,
+  "id": "litter-log",
+  "title": "Litter Log",
+  "oneLiner": "Phone log for small dog breeders: whelping times, daily puppy weights with growth charts and a buyer-ready puppy record",
+  "customer": "Small hobby dog breeders with one to five litters a year",
+  "revenueModel": "Paid one-time unlock",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 12
+  },
+  "evidence": [
+    {
+      "claim": "Whelper, a breeding companion app with whelping countdown and puppy weight graphs, charges $6.99 a month or $69.99 a year, with 17 ratings averaging 4.9.",
+      "url": "https://apps.apple.com/us/app/whelper-breeding-companion/id6751021305",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "An Etsy dog breeder spreadsheet with a whelping calculator and puppy weight log sells for $9.99 (down from $19.99), though the listing has no reviews yet and the shop shows 27 sales.",
+      "url": "https://www.etsy.com/listing/4606037207",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Gap and search: free printable puppy weight chart and whelping chart searches return mostly parasite template pages on unrelated domains, not a working free tracker that charts weights per puppy.",
+      "url": "https://www.lx.iriss.org.uk/read/free-printable-puppy-weight-puppy-whelping-chart.html",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research. Target searches: puppy weight chart printable, whelping chart, puppy weight tracker, litter record template. Against: paid signals are small (17 ratings, a template with no reviews), BreedTracker and other breeder software already exist (https://www.capterra.com/p/10047764/BreedTracker/), free spreadsheets do most of the job, and the vaccine and deworming logs must stay records only with no health advice. Loosely near sitter-sheet (pets) but a different buyer.",
+  "stage": "idea"
+}
