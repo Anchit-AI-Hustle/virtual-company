@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-20T23:26:15.177Z",
+    "agent": "lead-stem-count",
+    "action": "Started: Validating: checking free tools (Stemwise, Triangle Nursery, Curate) and Google US volumes for florist stem and quote searches",
+    "ventureId": "stem-count",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:27:32.795Z",
+    "agent": "lead-stem-count",
+    "action": "Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and florist searches are 10 to 40 a month (DataForSEO US)",
+    "ventureId": "stem-count",
+    "kind": "done"
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:26:47.805Z",
+  "builtAt": "2026-11-20T23:27:40.373Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -687,14 +687,14 @@
       "customer": "Freelance and small studio wedding and event florists",
       "revenueModel": "Free stem counter page, paid one-time unlock for saved events, wholesale order sheet and client quote PDF",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "killed",
       "score": 13,
       "url": null,
-      "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Diya. Lead gathers sourced demand evidence within 3 days, first checking whether a free no-account tool already does stems plus bunch rounding plus pricing (Stemwise, Triangle Nursery), and search volume for the target terms. Research. Target searches: stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems to order wedding. Page one now: Triangle Nursery planner, Google Docs sheets, Curate resource page, Etsy and Stan listings, FiftyFlowers DIY guides, calculator farm pages. Free helper pages to build: stems per bunch by flower, bridal bouquet stem guide, centerpiece stem guide. Against: Stemwise (getstemwise.com) offers free wedding stem count tools with a buy-in buffer (https://raw.githubusercontent.com/SaschaHeyer/flower-farm-math/main/README.md) and its pricing features were not checked; a cheap Etsy floral pricing spreadsheet exists at $2.99 (https://www.etsy.com/listing/4600785949); no search volume source yet; buyers are mostly US and UK so price in USD; quote builders failed before (clean-quote) when free calculators closed the gap, so the case must show bunch rounding plus quote is not free anywhere. Florists are the buyer, not couples, so this does not repeat seatwise or shaadi-budget.",
+      "nextAction": "None. Killed on 21 Nov 2026; see killReason. Lesson for screening: check Stemwise, Magnaflor and Fiory free calculators before staffing any florist tool, and pull DataForSEO volumes before staffing.",
       "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-20T23:25:34.609Z",
-      "evidenceCount": 7,
+      "killReason": "Killed in validation on 21 Nov 2026 by lead Diya. Florists do pay for recipe and pricing software (Details Flowers $25 to $150 a month, Curate from $275 a month, EveryStem, a $197 spreadsheet pack, a $17 Stan calculator), but the free no account part of the job is already done: Stemwise has a free phone ready wedding stem calculator with a buy-in buffer, bunch rounding from your own bunch size, a budget from cost per stem, a share link and a print PDF (https://getstemwise.com/tools/wedding-flower-calculator.html); Magnaflor gives florists free stems, bunches and boxes rounded to real pack sizes (https://magnaflor.com/resources/wedding-calculator); Fiory.AI Lens gives a free recipe with markup and retail price (https://www.fiory.ai/lens); Details Flowers, Florist App, Harvest and Verdnatura give free markup calculators. The only gap left is per variety recipe lines rounded to per variety bunches on a branded client quote, which is what the paid suites sell and is too narrow to win on a free page. Search, our only channel, is tiny where intent is florist: US Google Ads monthly averages for the last 12 months from DataForSEO (keywords/search-volume, location 2840, language en, pulled 21 Nov 2026 through Firecrawl Alexandria) are floral pricing calculator 40, flower stem calculator 30, florist proposal software 20, florist pricing formula 10, and null (too small to report) for stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems for wedding, wedding flower stem count, floral recipe template, florist recipe software, stem count template, flower bunch calculator, how many stems per bunch and stems per bunch. The bigger terms are couple intent: wedding flower cost calculator 210 and wedding flower calculator 110, where page one already has free calculators from Magnaflor, Stemwise, Blooming More, Artemis Flower Farm, Los Angeles Floral Couture and Heirloom Soul. Realistic first year revenue through search alone is near zero. This repeats the clean-quote and litter-log pattern: a free no account tool already does the job and buyer searches run 10 to 40 a month.",
+      "updatedAt": "2026-11-20T23:27:32.769Z",
+      "evidenceCount": 12,
       "specPath": null,
       "lead": {
         "id": "lead-stem-count",
@@ -986,10 +986,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1315,23 +1311,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-stem-count",
-      "name": "Diya",
-      "title": "Lead, Stem Count",
-      "department": "pods",
-      "color": "#7B3F61",
-      "trait": "Asks who pays before asking what to build.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "stem-count",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1760,6 +1739,16 @@
     "stall-tally": [],
     "stem-count": [
       {
+        "at": "2026-11-20T23:27:32.795Z",
+        "agent": "lead-stem-count",
+        "action": "Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and florist searches are 10 to 40 a month (DataForSEO US)"
+      },
+      {
+        "at": "2026-11-20T23:26:15.177Z",
+        "agent": "lead-stem-count",
+        "action": "Started: Validating: checking free tools (Stemwise, Triangle Nursery, Curate) and Google US volumes for florist stem and quote searches"
+      },
+      {
         "at": "2026-11-20T23:25:34.633Z",
         "agent": "ceo",
         "action": "Staffed stem-count with lead Diya: highest open idea at 13 of 20, a florist sells a 197 USD spreadsheet for this job; pods 2 and 3 freed by formula-book and litter-log kills"
@@ -1773,6 +1762,13 @@
   },
   "log": [
     {
+      "at": "2026-11-20T23:27:32.795Z",
+      "agent": "lead-stem-count",
+      "action": "Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and florist searches are 10 to 40 a month (DataForSEO US)",
+      "ventureId": "stem-count",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-20T23:26:37.007Z",
       "agent": "ceo",
       "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
@@ -1785,6 +1781,13 @@
       "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2. Free tools already close the gap: Lash Map Lab is a free, no sign up web lash map generator, LashMap Studio is free up to 20 clients, and Lash Dash does per client maps for USD 3.99 a month. The 33,100 lash map volume is RankHero Etsy keyword data, not Google; Google US pro intent terms total about 1,550 a month and tool terms have no measurable volume. No payment rail exists. No sourced pivot clears the bar.",
       "ventureId": "lash-mapper",
       "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:26:15.177Z",
+      "agent": "lead-stem-count",
+      "action": "Started: Validating: checking free tools (Stemwise, Triangle Nursery, Curate) and Google US volumes for florist stem and quote searches",
+      "ventureId": "stem-count",
+      "kind": "start"
     },
     {
       "at": "2026-11-20T23:25:34.633Z",
@@ -2316,20 +2319,6 @@
       "agent": "ceo",
       "action": "Kept class-pass 10, sitter-sheet 11, stall-tally 12 as scored: no new evidence this week. 4 open ideas left, below 5, so Research sources more next cycle",
       "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:25.223Z",
-      "agent": "ceo",
-      "action": "Rescored rota-sheet to 10 (distribution 3 to 2): free Findmyshift and BrightHR rota tools own the searches",
-      "ventureId": "rota-sheet",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:25.174Z",
-      "agent": "ceo",
-      "action": "Killed ach-batch at the idea list review: bank payment files carry real risk to users, held by Legal, banks take CSV and PayFile Pro fills the gap",
-      "ventureId": "ach-batch",
       "kind": "done"
     }
   ]

@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T23:24:34.692Z",
-  "updatedAt": "2026-11-20T23:25:34.609Z",
-  "killReason": null,
+  "updatedAt": "2026-11-20T23:27:32.769Z",
+  "killReason": "Killed in validation on 21 Nov 2026 by lead Diya. Florists do pay for recipe and pricing software (Details Flowers $25 to $150 a month, Curate from $275 a month, EveryStem, a $197 spreadsheet pack, a $17 Stan calculator), but the free no account part of the job is already done: Stemwise has a free phone ready wedding stem calculator with a buy-in buffer, bunch rounding from your own bunch size, a budget from cost per stem, a share link and a print PDF (https://getstemwise.com/tools/wedding-flower-calculator.html); Magnaflor gives florists free stems, bunches and boxes rounded to real pack sizes (https://magnaflor.com/resources/wedding-calculator); Fiory.AI Lens gives a free recipe with markup and retail price (https://www.fiory.ai/lens); Details Flowers, Florist App, Harvest and Verdnatura give free markup calculators. The only gap left is per variety recipe lines rounded to per variety bunches on a branded client quote, which is what the paid suites sell and is too narrow to win on a free page. Search, our only channel, is tiny where intent is florist: US Google Ads monthly averages for the last 12 months from DataForSEO (keywords/search-volume, location 2840, language en, pulled 21 Nov 2026 through Firecrawl Alexandria) are floral pricing calculator 40, flower stem calculator 30, florist proposal software 20, florist pricing formula 10, and null (too small to report) for stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems for wedding, wedding flower stem count, floral recipe template, florist recipe software, stem count template, flower bunch calculator, how many stems per bunch and stems per bunch. The bigger terms are couple intent: wedding flower cost calculator 210 and wedding flower calculator 110, where page one already has free calculators from Magnaflor, Stemwise, Blooming More, Artemis Flower Farm, Los Angeles Floral Couture and Heirloom Soul. Realistic first year revenue through search alone is near zero. This repeats the clean-quote and litter-log pattern: a free no account tool already does the job and buyer searches run 10 to 40 a month.",
   "lead": {
     "name": "Diya",
     "color": "#7B3F61",
@@ -58,9 +58,34 @@
       "claim": "Search route: page one for stem count calculator florist is spreadsheets on Google Docs, nursery help pages, an Etsy listing, a florist blog and thin calculator farm pages (ultimatefinancecalculator.com), with no big free web tool owning it.",
       "url": "https://www.trianglenursery.co.uk/help/how-to/articles/wedding-stem-counts",
       "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: Stemwise runs a free, no signup, phone ready Wedding Flower Stem Calculator for florists that totals stems per arrangement, adds a 12% buy-in buffer, rounds up to bunches by role from your own stems per bunch, estimates the flower budget from your cost per stem, and makes a share link and a printable PDF for the client.",
+      "url": "https://getstemwise.com/tools/wedding-flower-calculator.html",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: Magnaflor, a wholesaler, gives florists a free no login wedding calculator that turns event designs into stems, grower bunches and wholesale boxes with a 10% breakage buffer, rounded up to real pack sizes.",
+      "url": "https://magnaflor.com/resources/wedding-calculator",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: Fiory.AI Lens is a free florist pricing calculator that returns an itemized recipe with stem counts, wholesale costs, labor, a 2.5x to 4x markup and a retail price.",
+      "url": "https://www.fiory.ai/lens",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: page one for florist pricing calculator searches already holds free markup calculators from Details Flowers, Florist App, Harvest and Verdnatura plus EveryStem paid stem and pricing software.",
+      "url": "https://info.detailsflowers.com/markup",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Paying signal: EveryStem sells recipe, stem calculator and retail pricing software to florists, with member quotes saying it cut over-buying and lifted margins.",
+      "url": "https://www.everystem.com/features/flower-stem-calculator",
+      "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Diya. Lead gathers sourced demand evidence within 3 days, first checking whether a free no-account tool already does stems plus bunch rounding plus pricing (Stemwise, Triangle Nursery), and search volume for the target terms. Research. Target searches: stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems to order wedding. Page one now: Triangle Nursery planner, Google Docs sheets, Curate resource page, Etsy and Stan listings, FiftyFlowers DIY guides, calculator farm pages. Free helper pages to build: stems per bunch by flower, bridal bouquet stem guide, centerpiece stem guide. Against: Stemwise (getstemwise.com) offers free wedding stem count tools with a buy-in buffer (https://raw.githubusercontent.com/SaschaHeyer/flower-farm-math/main/README.md) and its pricing features were not checked; a cheap Etsy floral pricing spreadsheet exists at $2.99 (https://www.etsy.com/listing/4600785949); no search volume source yet; buyers are mostly US and UK so price in USD; quote builders failed before (clean-quote) when free calculators closed the gap, so the case must show bunch rounding plus quote is not free anywhere. Florists are the buyer, not couples, so this does not repeat seatwise or shaadi-budget.",
-  "stage": "validating",
-  "stageSince": "2026-11-20T23:25:34.609Z"
+  "nextAction": "None. Killed on 21 Nov 2026; see killReason. Lesson for screening: check Stemwise, Magnaflor and Fiory free calculators before staffing any florist tool, and pull DataForSEO volumes before staffing.",
+  "stage": "killed",
+  "stageSince": "2026-11-20T23:27:32.769Z"
 }
