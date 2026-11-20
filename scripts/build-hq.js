@@ -50,6 +50,7 @@ function buildHq(dir) {
 
   return {
     builtAt: new Date().toISOString(),
+    report: (() => { try { const rd = path.join(dir, 'company/reports'); const f = fs.readdirSync(rd).filter((x) => /^\d{4}-\d{2}-\d{2}\.md$/.test(x)).sort().pop(); return f ? { date: f.slice(0, 10), text: fs.readFileSync(path.join(rd, f), 'utf8') } : null; } catch (e) { return null; } })(),
     health: (() => { try { return JSON.parse(fs.readFileSync(path.join(dir, 'company/health.json'), 'utf8')); } catch (e) { return null; } })(),
     company: { name: config.name, domain: config.domain, owner: config.owner.name, ownerLogin: config.owner.github },
     stages: config.stages,

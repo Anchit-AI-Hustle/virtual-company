@@ -41,6 +41,11 @@
   .ask .when { display: inline-block; margin: 0 0 8px; padding: 2px 10px; border-radius: 999px; font-size: 0.8125rem; font-weight: 600; }
   .ask .when.now { background: #FBE3D6; color: #8A3300; }
   .ask .when.later { background: #E7EEF7; color: #24456E; }
+  details.report { margin: 0 0 14px; padding: 10px 14px; border-radius: 12px; background: #F1F7F3; border: 1px solid #D5E8DC; }
+  details.report summary { cursor: pointer; font-weight: 700; min-height: 32px; display: flex; align-items: center; }
+  details.report h4 { margin: 12px 0 4px; }
+  details.report ul { margin: 0; padding-left: 18px; }
+  details.report li { margin: 3px 0; line-height: 1.45; overflow-wrap: anywhere; }
   .asksh { margin: 18px 0 8px; font-size: 1.0625rem; }
   .ask.done { border-left-color: #0B7A5E; background: #F1F7F3; }
   .ask .chosen { font-weight: 700; margin: 4px 0; }
@@ -314,6 +319,7 @@
     <section class="view" id="view-activity" hidden aria-labelledby="h-act"><div class="panel">
       <h2 id="h-act">Activity</h2>
       <p class="sub">Everything the agents did, newest first.</p>
+      <details class="report" id="report" hidden><summary id="reportTitle">Morning report</summary><div id="reportBody"></div></details>
       <ul class="feed" id="feed"></ul>
     </div></section>
 
@@ -595,6 +601,19 @@
     body.appendChild(t); body.appendChild(el('p', null, e.action)); li.appendChild(body);
     return li;
   }
+  // The Management team's morning report: plain markdown headings and bullets, drawn as text.
+  function renderReport(d) {
+    var box = $('report'), r = d.report;
+    if (!r || !r.text) { box.hidden = true; return; }
+    box.hidden = false; $('reportTitle').textContent = 'Morning report, ' + new Date(r.date + 'T12:00:00Z').toLocaleDateString('en-IN', { day: 'numeric', month: 'long' });
+    var body = $('reportBody'); body.textContent = ''; var ul = null;
+    r.text.split('\n').forEach(function (line) {
+      if (/^# /.test(line) || !line.trim()) { ul = null; return; }
+      if (/^## /.test(line)) { body.appendChild(el('h4', null, line.slice(3))); ul = null; return; }
+      if (/^- /.test(line)) { if (!ul) { ul = el('ul'); body.appendChild(ul); } ul.appendChild(el('li', null, line.slice(2))); return; }
+      body.appendChild(el('p', 'help', line)); ul = null;
+    });
+  }
   function renderFeeds(d) {
     var first = !Object.keys(seen).length;
     [['feed', 60], ['sideFeed', 20]].forEach(function (f) {
@@ -687,7 +706,7 @@
     data = d;
     $('name').textContent = d.company.name;
     document.title = d.company.name;
-    renderStatus(d); renderAsks(d); renderRail(d); renderFeeds(d); renderMoney(d);
+    renderStatus(d); renderAsks(d); renderRail(d); renderFeeds(d); renderReport(d); renderMoney(d);
     if (!replaying) drawOffice();
     if (fresh.length && !replaying && view === 'office' && !room) {
       Office.play($('stage'), d, fresh, { gap: 1500, onStep: function (e) { var a = agentById(e.agent); setNow('Just now, ' + e.action, a ? a.name : e.agent); }, onEnd: drawOffice });

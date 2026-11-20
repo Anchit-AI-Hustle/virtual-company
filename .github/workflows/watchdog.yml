@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
   issues: write
-  actions: read
+  actions: write
 concurrency:
   group: watchdog
   cancel-in-progress: false
@@ -30,6 +30,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/watchdog.js
+      - name: Morning report (Management), once a day after 07:45 India time
+        id: report
+        run: |
+          if node scripts/report.js --if-due | grep -q '^Wrote'; then
+            node scripts/build-hq.js >/dev/null
+            git config user.name "watchdog"
+            git config user.email "watchdog@users.noreply.github.com"
+            git add company/reports company/outbox hq/public/data.json
+            git commit -q -m "Management: morning report $(TZ=Asia/Kolkata date +%F)"
+            for i in 1 2 3 4; do
+              if git pull --rebase -q origin main && git push -q origin HEAD:main; then echo "sent=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
+              git rebase --abort 2>/dev/null || true; sleep $((i*10))
+            done
+            exit 1
+          fi
+      - name: Send the report to WhatsApp (waits quietly until WhatsApp is set up)
+        if: steps.report.outputs.sent == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/actions/workflows/whatsapp.yml/dispatches" -f ref=main
       - name: Record the change and rebuild HQ's data (no deploy needed)
         if: steps.check.outputs.changed == 'yes'
         run: |

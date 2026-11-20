@@ -69,6 +69,13 @@ Set agents who are not blocked to idle. `npm run check`, commit, `bash scripts/p
 `gh run list --repo Anchit-AI-Hustle/virtual-company --limit 1`. HQ rebuilds from the books on
 every push.
 
+## Morning report (Management)
+Every morning after 07:45 India time, `node scripts/report.js` writes `company/reports/<date>.md`
+from the books only: each team's last 24 hours, money, ideas, decisions made, what needs the
+owner and platform health. HQ shows it under Activity, and it is queued for the owner's
+WhatsApp. The watchdog writes it even when a work session was skipped, so the first session
+after 07:45 only checks it exists and never rewrites it by hand.
+
 ## 5. Digest
 
 Finish with a short plain report, at most 6 lines, no dashes: what each pod achieved (venture,

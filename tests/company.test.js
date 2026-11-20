@@ -561,3 +561,22 @@ test('WhatsApp bridge: only Meta-signed messages from the owner reach the agents
   assert.strictEqual((await GET(new Request('https://hq.example/api/whatsapp?hub.mode=subscribe&hub.verify_token=guess&hub.challenge=42'))).status, 403);
   delete process.env.WHATSAPP_VERIFY_TOKEN;
 });
+
+test('morning report: built only from the books, once a day after 07:45 India time', () => {
+  const { buildReport, writeReport } = require('../scripts/report.js');
+  const now = Date.parse('2026-11-21T03:00:00Z'); // 08:30 India time
+  const dir = fixture({ ventures: [venture({ stage: 'validated', evidence, updatedAt: '2026-11-21T01:00:00Z' })],
+    logs: { 'research.company.json': [{ at: '2026-11-21T01:00:00Z', agent: 'research', action: 'Screened 3 ideas', ventureId: null, kind: 'done' }, { at: '2026-11-19T01:00:00Z', agent: 'research', action: 'Old work', ventureId: null, kind: 'done' }] } });
+  const r = buildReport(dir, now);
+  assert.strictEqual(r.date, '2026-11-21');
+  assert.ok(r.text.includes('Screened 3 ideas'), 'last 24 hours of work');
+  assert.ok(!r.text.includes('Old work'), 'older work left out');
+  assert.ok(/Revenue to date Rs 0/.test(r.text), 'money comes from the empty ledger, never invented');
+  assert.ok(!r.text.includes(dash) && !r.summary.includes(dash), 'no dashes');
+  assert.strictEqual(writeReport(dir, Date.parse('2026-11-21T02:00:00Z'), { ifDue: true }), null, 'not before 07:45 India time');
+  assert.ok(writeReport(dir, now, { ifDue: true }), 'written after 07:45');
+  assert.strictEqual(writeReport(dir, now + 3600e3, { ifDue: true }), null, 'only once a day');
+  const out = JSON.parse(fs.readFileSync(path.join(dir, 'company/outbox/report-2026-11-21.json'), 'utf8'));
+  assert.strictEqual(out.kind, 'text'); assert.strictEqual(out.status, 'queued');
+  assert.deepStrictEqual(rules(dir).filter((x) => x === 'outbox'), [], 'the queued WhatsApp report is valid');
+});

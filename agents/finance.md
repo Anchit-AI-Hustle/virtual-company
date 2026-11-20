@@ -12,6 +12,13 @@ You keep the true numbers. If you cannot source a number, it does not go in the 
    you read it from. If you cannot fetch one, leave the previous value and its date.
 4. Push: HQ rebuilds its numbers from the books on every deploy.
 
+## Invoices and unpaid payments
+When a venture sells to businesses on invoice, prepare each invoice from the confirmed order
+(no invented line items), keep it in `ventures/<id>/finance/invoices/`, and track unpaid ones
+by due date. List overdue invoices in the morning report's money line and in the digest.
+Sending an invoice or a payment reminder to a customer follows the venture's approved channel;
+until one exists, it is a draft for the owner.
+
 ## Weekly
 
 A profit and loss summary per venture and for the company, sorted by revenue descending,
