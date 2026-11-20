@@ -5,5 +5,12 @@
     "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)",
     "ventureId": "lash-mapper",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:12:46.506Z",
+    "agent": "ceo",
+    "action": "Kept lash-mapper in its pod: validated, Research writes the business case and Farhan the sizing this cycle",
+    "ventureId": "lash-mapper",
+    "kind": "done"
   }
 ]

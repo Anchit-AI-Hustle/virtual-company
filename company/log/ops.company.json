@@ -201,5 +201,19 @@
     "action": "Close: lash-mapper validated; next cycle business case, sizing and CEO go decision",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:12:22.631Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:12:22.672Z",
+    "agent": "ops",
+    "action": "Standup: health ok, watchdog ran 23:03 UTC, no open alerts or owner comments, checks green. 0 live, revenue Rs 0. lash-mapper validated and waits for case, sizing and CEO decision; formula-book and litter-log screened ideas wait for pods; Research to refill open ideas",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

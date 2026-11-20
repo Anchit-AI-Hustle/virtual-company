@@ -4,9 +4,13 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T23:12:46.389Z",
   "killReason": null,
-  "lead": null,
+  "lead": {
+    "name": "Yash",
+    "color": "#4D6B1F",
+    "trait": "Measures twice, launches once."
+  },
   "id": "litter-log",
   "title": "Litter Log",
   "oneLiner": "Phone log for small dog breeders: whelping times, daily puppy weights with growth charts and a buyer-ready puppy record",
@@ -36,6 +40,7 @@
       "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Research. Target searches: puppy weight chart printable, whelping chart, puppy weight tracker, litter record template. Against: paid signals are small (17 ratings, a template with no reviews), BreedTracker and other breeder software already exist (https://www.capterra.com/p/10047764/BreedTracker/), free spreadsheets do most of the job, and the vaccine and deworming logs must stay records only with no health advice. Loosely near sitter-sheet (pets) but a different buyer.",
-  "stage": "idea"
+  "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Yash. Lead gathers sourced demand evidence (3 or more independent signals) within 3 days, including search volume for the target terms and whether our own pages can rank. Research. Target searches: puppy weight chart printable, whelping chart, puppy weight tracker, litter record template. Against: paid signals are small (17 ratings, a template with no reviews), BreedTracker and other breeder software already exist (https://www.capterra.com/p/10047764/BreedTracker/), free spreadsheets do most of the job, and the vaccine and deworming logs must stay records only with no health advice. Loosely near sitter-sheet (pets) but a different buyer.",
+  "stage": "validating",
+  "stageSince": "2026-11-20T23:12:46.389Z"
 }

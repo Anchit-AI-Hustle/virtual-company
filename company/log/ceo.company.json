@@ -137,5 +137,19 @@
     "action": "Started: Staffing check: no idea clears the channel screen; asking Research for new ideas",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:12:46.409Z",
+    "agent": "ceo",
+    "action": "Started: Staff the pods",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:12:46.546Z",
+    "agent": "ceo",
+    "action": "Open ideas drop to 4 after staffing, below 5: Research to screen and add new ideas this cycle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

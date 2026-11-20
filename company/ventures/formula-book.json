@@ -4,9 +4,13 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T23:12:46.389Z",
   "killReason": null,
-  "lead": null,
+  "lead": {
+    "name": "Tanvi",
+    "color": "#2A6496",
+    "trait": "Keeps scope tiny and quality high."
+  },
   "id": "formula-book",
   "title": "Formula Book",
   "oneLiner": "Phone notebook for hair colourists to save each client's colour formula and history, offline, with a file export",
@@ -41,6 +45,7 @@
       "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Research. Target searches: hair color formula tracker, client color formula card, hair color formula log template; the first page for these was app store listings and small salon supply blogs, no big free web tool, but no volume source yet. Against: app stores own the intent and several free tiers exist (Charm, Gloss free month, FyleStyle), salon booking suites already store formulas, and paper client cards sell cheaply at SalonCentric (https://www.saloncentric.com/fromm-stylist-client-profile-cards.html). Distribution through our own pages is the weak part.",
-  "stage": "idea"
+  "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Tanvi. Lead gathers sourced demand evidence (3 or more independent signals) within 3 days, including search volume for the target terms and whether our own pages can rank. Research. Target searches: hair color formula tracker, client color formula card, hair color formula log template; the first page for these was app store listings and small salon supply blogs, no big free web tool, but no volume source yet. Against: app stores own the intent and several free tiers exist (Charm, Gloss free month, FyleStyle), salon booking suites already store formulas, and paper client cards sell cheaply at SalonCentric (https://www.saloncentric.com/fromm-stylist-client-profile-cards.html). Distribution through our own pages is the weak part.",
+  "stage": "validating",
+  "stageSince": "2026-11-20T23:12:46.389Z"
 }
