@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:25:35.214Z",
+  "builtAt": "2026-11-20T23:26:47.805Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -486,6 +486,43 @@
       "businessCase": null
     },
     {
+      "id": "lash-mapper",
+      "title": "Lash Mapper",
+      "oneLiner": "Build a lash extension map on your phone by tapping each zone for length, curl and thickness, saved per client and printable",
+      "customer": "Lash extension technicians",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 13,
+      "url": null,
+      "nextAction": "None. Killed at the business case.",
+      "metrics": null,
+      "killReason": "Business case scored 14 of 35 (bar 24; willingnessToPay 2 and distribution 2, both need 3). Free tools close the gap: Lash Map Lab is a free web lash map generator with no sign up, LashMap Studio is free up to 20 clients, and Lash Dash keeps per client maps for USD 3.99 a month. The 33,100 lash map volume was RankHero Etsy data, not Google; tech intent Google searches are small (about 1,550 a month in the US) and tool terms have no measurable volume. No payment rail.",
+      "updatedAt": "2026-11-20T23:26:36.988Z",
+      "evidenceCount": 10,
+      "specPath": null,
+      "lead": {
+        "id": "lead-lash-mapper",
+        "name": "Ira",
+        "color": "#7A3E9D"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/lash-mapper.md",
+        "total": 14,
+        "recommendation": "no-go"
+      }
+    },
+    {
       "id": "paychase",
       "title": "Paychase",
       "oneLiner": "Polite payment reminder sequence and overdue tracker for Indian freelancers",
@@ -642,43 +679,6 @@
       "goDecision": null,
       "sizing": null,
       "businessCase": null
-    },
-    {
-      "id": "lash-mapper",
-      "title": "Lash Mapper",
-      "oneLiner": "Build a lash extension map on your phone by tapping each zone for length, curl and thickness, saved per client and printable",
-      "customer": "Lash extension technicians",
-      "revenueModel": "Paid one-time unlock",
-      "priceINR": null,
-      "stage": "validated",
-      "score": 13,
-      "url": null,
-      "nextAction": "Validated by lead Ira on 21 Nov 2026 (10 sourced signals: techs asking for per-client map tracking, paid apps and Procreate map packs, 33,100 monthly searches for lash map). Next: Research writes cases/lash-mapper.md and Sizing writes cases/lash-mapper.sizing.json, then the CEO decides go or no-go. Evidence against to weigh in the case: (1) crowded field of paid apps already doing per-client maps (The Lash Look, Lash Create, Lash Maps, Lash Atlas, Lash Dash), all with few App Store ratings, so revenue per app looks small; (2) free web tools exist (Lash Map Lab generator lashmaplab.com, The Face Report lash map tool) though they target DIY cluster wearers with no saved client records; (3) the 33,100 volume is the head term lash map, which mixes consumer DIY cluster intent with tech intent, and no volume source was found yet for lash map maker or lash map template; (4) buyers are mostly in the US, so price in USD.",
-      "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-20T23:22:49.879Z",
-      "evidenceCount": 10,
-      "specPath": null,
-      "lead": {
-        "id": "lead-lash-mapper",
-        "name": "Ira",
-        "color": "#7A3E9D"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": {
-        "path": "cases/lash-mapper.md",
-        "total": 14,
-        "recommendation": "no-go"
-      }
     },
     {
       "id": "stem-count",
@@ -1002,15 +1002,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed stem-count with lead Diya: highest open idea at 13 of 20, a florist sells a 197 USD spreadsheet for this job; pods 2 and 3 freed by formula-book and litter-log kills",
-      "since": "2026-11-20T23:25:34.633Z",
-      "ventureId": "stem-count",
-      "ventureTitle": "Stem Count",
+      "task": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
+      "since": "2026-11-20T23:26:37.007Z",
+      "ventureId": "lash-mapper",
+      "ventureTitle": "Lash Mapper",
       "last": {
-        "at": "2026-11-20T23:25:34.633Z",
-        "action": "Staffed stem-count with lead Diya: highest open idea at 13 of 20, a florist sells a 197 USD spreadsheet for this job; pods 2 and 3 freed by formula-book and litter-log kills"
+        "at": "2026-11-20T23:26:37.007Z",
+        "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small"
       },
-      "actions": 45
+      "actions": 47
     },
     {
       "id": "ops",
@@ -1317,26 +1317,6 @@
       "actions": 20
     },
     {
-      "id": "lead-lash-mapper",
-      "name": "Ira",
-      "title": "Lead, Lash Mapper",
-      "department": "pods",
-      "color": "#7A3E9D",
-      "trait": "Founder energy. Talks to the problem before the solution.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "lash-mapper",
-      "state": "idle",
-      "task": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction",
-      "since": "2026-11-20T21:13:53.031Z",
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": {
-        "at": "2026-11-20T21:13:24.536Z",
-        "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction"
-      },
-      "actions": 2
-    },
-    {
       "id": "lead-stem-count",
       "name": "Diya",
       "title": "Lead, Stem Count",
@@ -1479,6 +1459,16 @@
       }
     ],
     "lash-mapper": [
+      {
+        "at": "2026-11-20T23:26:37.007Z",
+        "agent": "ceo",
+        "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small"
+      },
+      {
+        "at": "2026-11-20T23:26:36.947Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2. Free tools already close the gap: Lash Map Lab is a free, no sign up web lash map generator, LashMap Studio is free up to 20 clients, and Lash Dash does per client maps for USD 3.99 a month. The 33,100 lash map volume is RankHero Etsy keyword data, not Google; Google US pro intent terms total about 1,550 a month and tool terms have no measurable volume. No payment rail exists. No sourced pivot clears the bar."
+      },
       {
         "at": "2026-11-20T23:22:49.903Z",
         "agent": "research",
@@ -1782,6 +1772,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-20T23:26:37.007Z",
+      "agent": "ceo",
+      "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:26:36.947Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2. Free tools already close the gap: Lash Map Lab is a free, no sign up web lash map generator, LashMap Studio is free up to 20 clients, and Lash Dash does per client maps for USD 3.99 a month. The 33,100 lash map volume is RankHero Etsy keyword data, not Google; Google US pro intent terms total about 1,550 a month and tool terms have no measurable volume. No payment rail exists. No sourced pivot clears the bar.",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T23:25:34.633Z",
       "agent": "ceo",
@@ -2327,20 +2331,6 @@
       "action": "Killed ach-batch at the idea list review: bank payment files carry real risk to users, held by Legal, banks take CSV and PayFile Pro fills the gap",
       "ventureId": "ach-batch",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:25.127Z",
-      "agent": "ceo",
-      "action": "Kill rules: no venture in validating or live this week, so nothing to kill on the clock and nothing at a survival number to scale",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:15.278Z",
-      "agent": "ceo",
-      "action": "Started: Weekly review: kill rules, scaling and idea rescoring",
-      "ventureId": null,
-      "kind": "start"
     }
   ]
 }

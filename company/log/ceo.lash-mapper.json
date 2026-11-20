@@ -12,5 +12,19 @@
     "action": "Kept lash-mapper in its pod: validated, Research writes the business case and Farhan the sizing this cycle",
     "ventureId": "lash-mapper",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:26:36.947Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2. Free tools already close the gap: Lash Map Lab is a free, no sign up web lash map generator, LashMap Studio is free up to 20 clients, and Lash Dash does per client maps for USD 3.99 a month. The 33,100 lash map volume is RankHero Etsy keyword data, not Google; Google US pro intent terms total about 1,550 a month and tool terms have no measurable volume. No payment rail exists. No sourced pivot clears the bar.",
+    "ventureId": "lash-mapper",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:26:37.007Z",
+    "agent": "ceo",
+    "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
+    "ventureId": "lash-mapper",
+    "kind": "done"
   }
 ]
