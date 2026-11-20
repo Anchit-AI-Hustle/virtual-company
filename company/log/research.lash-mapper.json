@@ -5,5 +5,19 @@
     "action": "New idea scored: lash-mapper 13/20",
     "ventureId": "lash-mapper",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:13:55.186Z",
+    "agent": "research",
+    "action": "Started: Writing business case for Lash Mapper",
+    "ventureId": "lash-mapper",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:22:49.903Z",
+    "agent": "research",
+    "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google",
+    "ventureId": "lash-mapper",
+    "kind": "done"
   }
 ]

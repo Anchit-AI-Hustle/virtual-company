@@ -4,7 +4,7 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T21:13:17.841Z",
+  "updatedAt": "2026-11-20T23:22:49.879Z",
   "killReason": null,
   "lead": {
     "name": "Ira",
@@ -77,5 +77,19 @@
   ],
   "nextAction": "Validated by lead Ira on 21 Nov 2026 (10 sourced signals: techs asking for per-client map tracking, paid apps and Procreate map packs, 33,100 monthly searches for lash map). Next: Research writes cases/lash-mapper.md and Sizing writes cases/lash-mapper.sizing.json, then the CEO decides go or no-go. Evidence against to weigh in the case: (1) crowded field of paid apps already doing per-client maps (The Lash Look, Lash Create, Lash Maps, Lash Atlas, Lash Dash), all with few App Store ratings, so revenue per app looks small; (2) free web tools exist (Lash Map Lab generator lashmaplab.com, The Face Report lash map tool) though they target DIY cluster wearers with no saved client records; (3) the 33,100 volume is the head term lash map, which mixes consumer DIY cluster intent with tech intent, and no volume source was found yet for lash map maker or lash map template; (4) buyers are mostly in the US, so price in USD.",
   "stage": "validated",
-  "stageSince": "2026-11-20T21:13:17.841Z"
+  "stageSince": "2026-11-20T21:13:17.841Z",
+  "case": {
+    "path": "cases/lash-mapper.md",
+    "scores": {
+      "pain": 2,
+      "willingnessToPay": 2,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 1,
+      "recurringRevenue": 2
+    },
+    "total": 14,
+    "recommendation": "no-go"
+  }
 }

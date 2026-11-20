@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:21:20.547Z",
+  "builtAt": "2026-11-20T23:23:04.539Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -656,7 +656,7 @@
       "nextAction": "Validated by lead Ira on 21 Nov 2026 (10 sourced signals: techs asking for per-client map tracking, paid apps and Procreate map packs, 33,100 monthly searches for lash map). Next: Research writes cases/lash-mapper.md and Sizing writes cases/lash-mapper.sizing.json, then the CEO decides go or no-go. Evidence against to weigh in the case: (1) crowded field of paid apps already doing per-client maps (The Lash Look, Lash Create, Lash Maps, Lash Atlas, Lash Dash), all with few App Store ratings, so revenue per app looks small; (2) free web tools exist (Lash Map Lab generator lashmaplab.com, The Face Report lash map tool) though they target DIY cluster wearers with no saved client records; (3) the 33,100 volume is the head term lash map, which mixes consumer DIY cluster intent with tech intent, and no volume source was found yet for lash map maker or lash map template; (4) buyers are mostly in the US, so price in USD.",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-20T21:13:17.841Z",
+      "updatedAt": "2026-11-20T23:22:49.879Z",
       "evidenceCount": 10,
       "specPath": null,
       "lead": {
@@ -674,7 +674,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/lash-mapper.md",
+        "total": 14,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "csv-qbo",
@@ -1002,16 +1006,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
-      "since": "2026-11-20T21:13:52.385Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google",
+      "since": "2026-11-20T23:22:49.903Z",
+      "ventureId": "lash-mapper",
+      "ventureTitle": "Lash Mapper",
       "last": {
-        "at": "2026-11-20T21:13:52.235Z",
-        "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers"
+        "at": "2026-11-20T23:22:49.903Z",
+        "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google"
       },
-      "actions": 26
+      "actions": 28
     },
     {
       "id": "data",
@@ -1426,6 +1430,16 @@
     ],
     "lash-mapper": [
       {
+        "at": "2026-11-20T23:22:49.903Z",
+        "agent": "research",
+        "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google"
+      },
+      {
+        "at": "2026-11-20T23:13:55.186Z",
+        "agent": "research",
+        "action": "Started: Writing business case for Lash Mapper"
+      },
+      {
         "at": "2026-11-20T23:12:46.506Z",
         "agent": "ceo",
         "action": "Kept lash-mapper in its pod: validated, Research writes the business case and Farhan the sizing this cycle"
@@ -1707,6 +1721,13 @@
   },
   "log": [
     {
+      "at": "2026-11-20T23:22:49.903Z",
+      "agent": "research",
+      "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-20T23:21:01.406Z",
       "agent": "lead-litter-log",
       "action": "Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month (DataForSEO US); killed litter-log",
@@ -1719,6 +1740,13 @@
       "action": "Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App Store listings, and Hair Notes already sells the exact offline one-time product",
       "ventureId": "formula-book",
       "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:13:55.186Z",
+      "agent": "research",
+      "action": "Started: Writing business case for Lash Mapper",
+      "ventureId": "lash-mapper",
+      "kind": "start"
     },
     {
       "at": "2026-11-20T23:13:53.266Z",
@@ -2249,20 +2277,6 @@
       "at": "2026-11-15T11:19:04.426Z",
       "agent": "devops",
       "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:17:01.785Z",
-      "agent": "devops",
-      "action": "Started: Fix HQ not updating: its ignore step skips every push because it does not watch company/ or scripts/",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T11:13:53.586Z",
-      "agent": "ops",
-      "action": "Closed the cycle: 6 niches screened, 0 staffed, pods empty, 0 live, revenue Rs 0, checks green",
       "ventureId": null,
       "kind": "done"
     }
