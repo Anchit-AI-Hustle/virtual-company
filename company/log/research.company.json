@@ -89,5 +89,12 @@
     "action": "Started: Find and score new ideas our own pages can rank for",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-20T21:13:52.235Z",
+    "agent": "research",
+    "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

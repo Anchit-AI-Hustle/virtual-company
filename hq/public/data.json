@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T21:13:32.843Z",
+  "builtAt": "2026-11-20T21:13:55.408Z",
   "health": {
     "status": "problem",
     "since": "2026-11-18T06:55:12.435Z",
@@ -964,11 +964,11 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)",
-      "since": "2026-11-20T21:11:22.957Z",
-      "ventureId": "lash-mapper",
-      "ventureTitle": "Lash Mapper",
+      "since": "2026-11-20T21:13:52.308Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-20T21:11:22.957Z",
         "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)"
@@ -983,16 +983,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: no live products, 4 open ideas all below the channel screen (ap-company-1); Research to find new ideas",
-      "since": "2026-11-20T21:06:51.566Z",
+      "state": "idle",
+      "task": "Close: lash-mapper validated; next cycle business case, sizing and CEO go decision",
+      "since": "2026-11-20T21:13:52.346Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T21:06:51.566Z",
-        "action": "Standup: no live products, 4 open ideas all below the channel screen (ap-company-1); Research to find new ideas"
+        "at": "2026-11-20T21:13:52.272Z",
+        "action": "Close: lash-mapper validated; next cycle business case, sizing and CEO go decision"
       },
-      "actions": 29
+      "actions": 30
     },
     {
       "id": "research",
@@ -1002,16 +1002,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
-      "task": "New idea scored: litter-log 12/20",
-      "since": "2026-11-20T21:10:37.668Z",
-      "ventureId": "litter-log",
-      "ventureTitle": "Litter Log",
+      "state": "idle",
+      "task": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
+      "since": "2026-11-20T21:13:52.385Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T21:10:37.668Z",
-        "action": "New idea scored: litter-log 12/20"
+        "at": "2026-11-20T21:13:52.235Z",
+        "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers"
       },
-      "actions": 25
+      "actions": 26
     },
     {
       "id": "data",
@@ -1023,7 +1023,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live ventures to count",
-      "since": "2026-11-15T14:32:02.281Z",
+      "since": "2026-11-20T21:13:52.425Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1042,7 +1042,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-15T14:32:03.035Z",
+      "since": "2026-11-20T21:13:52.466Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1061,7 +1061,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-15T14:32:02.859Z",
+      "since": "2026-11-20T21:13:52.507Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1080,7 +1080,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-15T14:32:02.316Z",
+      "since": "2026-11-20T21:13:52.548Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1099,7 +1099,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-15T14:32:02.379Z",
+      "since": "2026-11-20T21:13:52.594Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1118,7 +1118,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-15T14:32:02.888Z",
+      "since": "2026-11-20T21:13:52.634Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1135,9 +1135,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "CI green again (9e12adb): dashes fixed; watchdog check passes",
-      "since": "2026-11-20T21:06:51.449Z",
+      "since": "2026-11-20T21:13:52.670Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1154,9 +1154,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of repo: none found",
-      "since": "2026-11-20T21:06:51.487Z",
+      "since": "2026-11-20T21:13:52.713Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1175,7 +1175,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-15T14:32:02.446Z",
+      "since": "2026-11-20T21:13:52.762Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1194,7 +1194,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-15T14:32:02.954Z",
+      "since": "2026-11-20T21:13:52.811Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1213,7 +1213,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no messages to handle",
-      "since": "2026-11-15T14:32:03.068Z",
+      "since": "2026-11-20T21:13:52.862Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1230,9 +1230,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Ledger: no revenue yet, Rs 0",
-      "since": "2026-11-20T21:06:51.526Z",
+      "since": "2026-11-20T21:13:52.911Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1251,7 +1251,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
-      "since": "2026-11-15T14:32:02.757Z",
+      "since": "2026-11-20T21:13:52.954Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1270,7 +1270,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-15T14:32:02.824Z",
+      "since": "2026-11-20T21:13:52.991Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1288,11 +1288,11 @@
       "trait": "Founder energy. Talks to the problem before the solution.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "lash-mapper",
-      "state": "done",
+      "state": "idle",
       "task": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction",
-      "since": "2026-11-20T21:13:24.536Z",
-      "ventureId": "lash-mapper",
-      "ventureTitle": "Lash Mapper",
+      "since": "2026-11-20T21:13:53.031Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-20T21:13:24.536Z",
         "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction"
@@ -1671,6 +1671,20 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-20T21:13:52.272Z",
+      "agent": "ops",
+      "action": "Close: lash-mapper validated; next cycle business case, sizing and CEO go decision",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T21:13:52.235Z",
+      "agent": "research",
+      "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T21:13:24.536Z",
       "agent": "lead-lash-mapper",
@@ -2216,20 +2230,6 @@
       "action": "Started: Sourcing up to 3 new ideas that pass the issue 7 screen: allowed channel and no good free tool",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-15T10:34:59.724Z",
-      "agent": "devops",
-      "action": "Uptime: no live or scaling ventures to check; HQ returns 200",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:59.683Z",
-      "agent": "support",
-      "action": "No live ventures, no messages to handle",
-      "ventureId": null,
-      "kind": "done"
     }
   ]
 }
