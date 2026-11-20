@@ -4,9 +4,13 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T21:10:30.405Z",
+  "updatedAt": "2026-11-20T21:11:21.151Z",
   "killReason": null,
-  "lead": null,
+  "lead": {
+    "name": "Ira",
+    "color": "#7A3E9D",
+    "trait": "Founder energy. Talks to the problem before the solution."
+  },
   "id": "lash-mapper",
   "title": "Lash Mapper",
   "oneLiner": "Build a lash extension map on your phone by tapping each zone for length, curl and thickness, saved per client and printable",
@@ -41,6 +45,7 @@
       "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Research. Target searches: lash map maker, lash map template, lash mapping template printable, cat eye lash map. Against: the paying buyers above bought education and Procreate assets on an iPad, which they may prefer to a web tool; Etsy and Lemon8 dominate lash map discovery; no search volume source yet; the Etsy review counts were seen once on a search results page (two of the top four were ads), verify on the listing pages.",
-  "stage": "idea"
+  "nextAction": "Lead Ira validates: find 3+ independent sourced demand signals and a search volume source for lash map maker / lash map template, then Research writes the business case.",
+  "stage": "validating",
+  "stageSince": "2026-11-20T21:11:21.151Z"
 }

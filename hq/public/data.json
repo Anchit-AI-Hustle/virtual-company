@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T21:10:48.001Z",
+  "builtAt": "2026-11-20T21:11:23.483Z",
   "health": {
     "status": "problem",
     "since": "2026-11-18T06:55:12.435Z",
@@ -658,16 +658,20 @@
       "customer": "Lash extension technicians",
       "revenueModel": "Paid one-time unlock",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "validating",
       "score": 13,
       "url": null,
-      "nextAction": "Research. Target searches: lash map maker, lash map template, lash mapping template printable, cat eye lash map. Against: the paying buyers above bought education and Procreate assets on an iPad, which they may prefer to a web tool; Etsy and Lemon8 dominate lash map discovery; no search volume source yet; the Etsy review counts were seen once on a search results page (two of the top four were ads), verify on the listing pages.",
+      "nextAction": "Lead Ira validates: find 3+ independent sourced demand signals and a search volume source for lash map maker / lash map template, then Research writes the business case.",
       "metrics": null,
       "killReason": null,
-      "updatedAt": "2026-11-20T21:10:30.405Z",
+      "updatedAt": "2026-11-20T21:11:21.151Z",
       "evidenceCount": 4,
       "specPath": null,
-      "lead": null,
+      "lead": {
+        "id": "lead-lash-mapper",
+        "name": "Ira",
+        "color": "#7A3E9D"
+      },
       "reviews": {
         "product": null,
         "engineer": null,
@@ -945,6 +949,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -956,16 +964,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "working",
-      "task": "Staffing check: no idea clears the channel screen; asking Research for new ideas",
-      "since": "2026-11-20T21:06:51.603Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)",
+      "since": "2026-11-20T21:11:22.957Z",
+      "ventureId": "lash-mapper",
+      "ventureTitle": "Lash Mapper",
       "last": {
-        "at": "2026-11-20T21:06:51.603Z",
-        "action": "Started: Staffing check: no idea clears the channel screen; asking Research for new ideas"
+        "at": "2026-11-20T21:11:22.957Z",
+        "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)"
       },
-      "actions": 38
+      "actions": 39
     },
     {
       "id": "ops",
@@ -1270,6 +1278,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-lash-mapper",
+      "name": "Ira",
+      "title": "Lead, Lash Mapper",
+      "department": "pods",
+      "color": "#7A3E9D",
+      "trait": "Founder energy. Talks to the problem before the solution.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "lash-mapper",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1382,6 +1407,11 @@
       }
     ],
     "lash-mapper": [
+      {
+        "at": "2026-11-20T21:11:22.957Z",
+        "agent": "ceo",
+        "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)"
+      },
       {
         "at": "2026-11-20T21:10:37.625Z",
         "agent": "research",
@@ -1628,6 +1658,13 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-20T21:11:22.957Z",
+      "agent": "ceo",
+      "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)",
+      "ventureId": "lash-mapper",
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T21:10:37.668Z",
       "agent": "research",
@@ -2178,13 +2215,6 @@
       "at": "2026-11-15T10:34:59.592Z",
       "agent": "finance",
       "action": "No live ventures, revenue Rs 0 in ledger. FX left at 94.2754 from 2026-11-14: no page with today's rate could be read this cycle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T10:34:59.557Z",
-      "agent": "security",
-      "action": "Secret scan of tracked files: no keys, tokens or private keys found",
       "ventureId": null,
       "kind": "done"
     }
