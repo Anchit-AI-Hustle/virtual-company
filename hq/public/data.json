@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:16:01.572Z",
+  "builtAt": "2026-11-20T23:21:20.547Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -743,6 +743,39 @@
       "businessCase": null
     },
     {
+      "id": "litter-log",
+      "title": "Litter Log",
+      "oneLiner": "Phone log for small dog breeders: whelping times, daily puppy weights with growth charts and a buyer-ready puppy record",
+      "customer": "Small hobby dog breeders with one to five litters a year",
+      "revenueModel": "Paid one-time unlock",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 12,
+      "url": null,
+      "nextAction": "None. Killed on 21 Nov 2026; see killReason. Lesson for screening: check for a free no account tool on the exact job (here BreedTools) before staffing.",
+      "metrics": null,
+      "killReason": "Killed in validation on 21 Nov 2026 by lead Yash. The gap is already closed for free: BreedTools runs a free, no account, on device litter weight tracker with a growth chart per puppy and printable records (https://breedtools.com/tools/weight-tracker), and it ranks on page one for whelping calculator; Puppy Scales is a free app that does the same (https://apps.apple.com/us/app/id1579589173); EZwhelp gives free whelping and litter weight forms (https://www.ezwhelp.com/pages/whelping-forms). This overturns the earlier gap item that said no free tracker charts weights per puppy. Search, our only channel, is too small where intent is breeder: US Google Ads monthly averages for the last 12 months from DataForSEO (keywords/search-volume, location 2840, pulled 21 Nov 2026 through Firecrawl Alexandria) are whelping chart 110, puppy weight tracker 40, whelping record 30, puppy weight tracker app 10, litter tracker 10, litter weight chart 10, newborn puppy weight chart 10, and null for litter record template and puppy weight log. The bigger terms are owner intent and owned by brands: puppy growth chart 4400 and puppy weight chart 880, where page one is Waltham, Iams, Sydney Animal Hospitals, puppyweights.com, AKC, Omni Calculator and Pearson; whelping calculator 390 is a due date tool, already served free by gundogcentral, BreedTools, Leerburg and others. Paid signals are thin: Whelper 17 ratings, Breedera 38 ratings, Breeder Tracker and Puppy Tracker too few ratings to show, and Etsy breeder templates sell at $1.29 to $9.99. Search results are also full of parasite template pages on high authority university and government domains, which a new subdomain cannot outrank soon. Realistic first year revenue through search alone is near zero.",
+      "updatedAt": "2026-11-20T23:21:01.374Z",
+      "evidenceCount": 10,
+      "specPath": null,
+      "lead": {
+        "id": "lead-litter-log",
+        "name": "Yash",
+        "color": "#4D6B1F"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "master-key-gen",
       "title": "Master Key Generator",
       "oneLiner": "Build a master key system for pin tumbler locks in the browser: printable bitting list and pinning chart with MACS and pin stack checks",
@@ -762,39 +795,6 @@
         "id": "lead-master-key-gen",
         "name": "Kian",
         "color": "#14706B"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
-    },
-    {
-      "id": "litter-log",
-      "title": "Litter Log",
-      "oneLiner": "Phone log for small dog breeders: whelping times, daily puppy weights with growth charts and a buyer-ready puppy record",
-      "customer": "Small hobby dog breeders with one to five litters a year",
-      "revenueModel": "Paid one-time unlock",
-      "priceINR": null,
-      "stage": "validating",
-      "score": 12,
-      "url": null,
-      "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Yash. Lead gathers sourced demand evidence (3 or more independent signals) within 3 days, including search volume for the target terms and whether our own pages can rank. Research. Target searches: puppy weight chart printable, whelping chart, puppy weight tracker, litter record template. Against: paid signals are small (17 ratings, a template with no reviews), BreedTracker and other breeder software already exist (https://www.capterra.com/p/10047764/BreedTracker/), free spreadsheets do most of the job, and the vaccine and deworming logs must stay records only with no health advice. Loosely near sitter-sheet (pets) but a different buyer.",
-      "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-20T23:12:46.389Z",
-      "evidenceCount": 3,
-      "specPath": null,
-      "lead": {
-        "id": "lead-litter-log",
-        "name": "Yash",
-        "color": "#4D6B1F"
       },
       "reviews": {
         "product": null,
@@ -1298,23 +1298,6 @@
         "action": "Validated lash-mapper: 6 new sourced signals (tech asks in Facebook group, The Lash Look and Lash Create paid tiers, Lost Artistry map pack, 33,100 monthly lash map searches); evidence against recorded in nextAction"
       },
       "actions": 2
-    },
-    {
-      "id": "lead-litter-log",
-      "name": "Yash",
-      "title": "Lead, Litter Log",
-      "department": "pods",
-      "color": "#4D6B1F",
-      "trait": "Measures twice, launches once.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "litter-log",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1469,6 +1452,16 @@
       }
     ],
     "litter-log": [
+      {
+        "at": "2026-11-20T23:21:01.406Z",
+        "agent": "lead-litter-log",
+        "action": "Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month (DataForSEO US); killed litter-log"
+      },
+      {
+        "at": "2026-11-20T23:13:53.266Z",
+        "agent": "lead-litter-log",
+        "action": "Started: Gather sourced demand and search evidence for litter-log"
+      },
       {
         "at": "2026-11-20T23:12:46.473Z",
         "agent": "ceo",
@@ -1714,11 +1707,25 @@
   },
   "log": [
     {
+      "at": "2026-11-20T23:21:01.406Z",
+      "agent": "lead-litter-log",
+      "action": "Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month (DataForSEO US); killed litter-log",
+      "ventureId": "litter-log",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-20T23:15:34.447Z",
       "agent": "lead-formula-book",
       "action": "Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App Store listings, and Hair Notes already sells the exact offline one-time product",
       "ventureId": "formula-book",
       "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:13:53.266Z",
+      "agent": "lead-litter-log",
+      "action": "Started: Gather sourced demand and search evidence for litter-log",
+      "ventureId": "litter-log",
+      "kind": "start"
     },
     {
       "at": "2026-11-20T23:13:52.145Z",
@@ -2256,20 +2263,6 @@
       "at": "2026-11-15T11:13:53.586Z",
       "agent": "ops",
       "action": "Closed the cycle: 6 niches screened, 0 staffed, pods empty, 0 live, revenue Rs 0, checks green",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:13:40.373Z",
-      "agent": "ceo",
-      "action": "Kill rules: nothing in validating or live. Research screened 6 more niches today, none passes the issue 7 screen, so all 3 pods stay empty per ap-company-1. 5 open ideas kept on file; no reject comment on issue 7",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:13:40.339Z",
-      "agent": "research",
-      "action": "Idea sourcing (issue 7 screen): 6 niches checked, 6 dropped, 0 new ideas. Pickleball ladders: Pickleheads runs leagues and ladders free (https://www.pickleheads.com/guides/how-to-get-pickleheads-leagues-and-ladders-for-free). Photo to cross stitch: many free generators (https://alternativeto.net/software/pcstitch). Quilt yardage: Quilt Geek and QuiltingCalc apps (https://apps.apple.com/us/app/quilt-geek/id6499062474). IFTA fuel tax: free calculators from TruckLogics and ExpressTruckTax (https://www.trucklogics.com/ifta-calculator). Tumbler wrap size: free calculators (https://heat-press-placement-tools-git.pages.dev/tumbler-wrap-size-calculator/). Model railroad track plans: big build, free tools listed (https://alternativeto.net/software/railmodeller)",
       "ventureId": null,
       "kind": "done"
     }
