@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-20T23:13:52.145Z",
+    "agent": "lead-formula-book",
+    "action": "Started: Validating formula-book: live search for demand, paying and search-volume evidence",
+    "ventureId": "formula-book",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-20T23:15:34.447Z",
+    "agent": "lead-formula-book",
+    "action": "Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App Store listings, and Hair Notes already sells the exact offline one-time product",
+    "ventureId": "formula-book",
+    "kind": "done"
+  }
+]

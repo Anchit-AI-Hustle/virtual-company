@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-20T21:10:30.405Z",
-  "updatedAt": "2026-11-20T23:12:46.389Z",
-  "killReason": null,
+  "updatedAt": "2026-11-20T23:15:34.420Z",
+  "killReason": "Killed in validating on 21 Nov 2026 by lead Tanvi: people do pay for formula apps (Gloss 622 ratings at $3.99 a month, Charm, FyleStyle, ShadeFile), but there is no search route our own pages can win. DataForSEO Google Ads US volume (Firecrawl Alexandria, Nov 2025 to Oct 2026): hair color formula app 10 a month, colorist app 10, hair color client record card 10, client card template hair salon 10, hair stylist client book 30, salon client record card 20; hair color formula tracker, color formula card, hair color formula card, client formula log template, hair color formula book and hair formula app all have no measurable volume. Page one for hair color formula app is entirely App Store listings. The only terms with volume (hair color formula 260, hair color mixing calculator 260) are informational and already full of free calculators and Goldie. The exact product we planned (offline, one-time price, export) already exists as Hair Notes at $3.99 and has 2 ratings, and new entrants (ShadeFile, Blendsor, ColorBowl) show the space is crowded with little traction. Search-only distribution cannot reach enough buyers.",
   "lead": {
     "name": "Tanvi",
     "color": "#2A6496",
@@ -43,9 +43,34 @@
       "claim": "Goldie offers a free hair colour mixing calculator but saving a mix to a client profile needs its paid salon app, so the free tool does not keep history.",
       "url": "https://heygoldie.com/tools/hair-color-mixing-calculator",
       "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Hair Notes already sells our exact product on the US App Store: per-client colour formulas and history kept on the device with no account, text and PDF export, for $3.99 one time, yet it has only 2 ratings.",
+      "url": "https://apps.apple.com/us/app/id6769820601",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "FyleStyle saves client colour formulas, costs $5.99 to download plus $4.99 a month or $44.99 a year beyond 10 free clients, and has 11 ratings averaging 4.6.",
+      "url": "https://apps.apple.com/us/app/fylestyle/id949208309",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "ShadeFile, a formula manager launched in 2026, charges $29 a month solo or $79 a month per salon with a free tier of 5 clients, and its Product Hunt page shows 1 upvote and 2 followers.",
+      "url": "https://www.producthunt.com/products/shadefile",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: ShadeFile asked stylists on Product Hunt how they track formulas and the thread has 0 replies and 3 views, and no Reddit or forum thread asking for a formula tracker turned up in live search.",
+      "url": "https://www.producthunt.com/p/shadefile/what-s-your-current-system-for-tracking-formulas-stylists-colorists",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Against: the page one results for hair color mixing calculator, the only nearby term with volume, are already crowded with free calculators (Goldie, miniwebtool, everycalculators, coolblades and more).",
+      "url": "https://heygoldie.com/tools/hair-color-mixing-calculator",
+      "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Staffed by the CEO on 21 Nov 2026 with lead Tanvi. Lead gathers sourced demand evidence (3 or more independent signals) within 3 days, including search volume for the target terms and whether our own pages can rank. Research. Target searches: hair color formula tracker, client color formula card, hair color formula log template; the first page for these was app store listings and small salon supply blogs, no big free web tool, but no volume source yet. Against: app stores own the intent and several free tiers exist (Charm, Gloss free month, FyleStyle), salon booking suites already store formulas, and paper client cards sell cheaply at SalonCentric (https://www.saloncentric.com/fromm-stylist-client-profile-cards.html). Distribution through our own pages is the weak part.",
-  "stage": "validating",
-  "stageSince": "2026-11-20T23:12:46.389Z"
+  "nextAction": "None. Killed: no rankable search demand for formula tracking terms (about 10 US searches a month or less each) and the exact gap is already filled by Hair Notes. Revisit only if a measurable search term with buyer intent appears.",
+  "stage": "killed",
+  "stageSince": "2026-11-20T23:15:34.420Z"
 }
