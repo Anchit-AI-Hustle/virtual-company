@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:23:04.539Z",
+  "builtAt": "2026-11-20T23:24:59.880Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -681,6 +681,35 @@
       }
     },
     {
+      "id": "stem-count",
+      "title": "Stem Count",
+      "oneLiner": "Phone tool for freelance event florists: enter each arrangement recipe and quantity, get the stems rounded up to wholesale bunches, the flower order and a priced client quote",
+      "customer": "Freelance and small studio wedding and event florists",
+      "revenueModel": "Free stem counter page, paid one-time unlock for saved events, wholesale order sheet and client quote PDF",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 13,
+      "url": null,
+      "nextAction": "Research. Target searches: stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems to order wedding. Page one now: Triangle Nursery planner, Google Docs sheets, Curate resource page, Etsy and Stan listings, FiftyFlowers DIY guides, calculator farm pages. Free helper pages to build: stems per bunch by flower, bridal bouquet stem guide, centerpiece stem guide. Against: Stemwise (getstemwise.com) offers free wedding stem count tools with a buy-in buffer (https://raw.githubusercontent.com/SaschaHeyer/flower-farm-math/main/README.md) and its pricing features were not checked; a cheap Etsy floral pricing spreadsheet exists at $2.99 (https://www.etsy.com/listing/4600785949); no search volume source yet; buyers are mostly US and UK so price in USD; quote builders failed before (clean-quote) when free calculators closed the gap, so the case must show bunch rounding plus quote is not free anywhere. Florists are the buyer, not couples, so this does not repeat seatwise or shaadi-budget.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-20T23:24:34.692Z",
+      "evidenceCount": 7,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "csv-qbo",
       "title": "CSV to QBO",
       "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
@@ -1007,15 +1036,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google",
-      "since": "2026-11-20T23:22:49.903Z",
-      "ventureId": "lash-mapper",
-      "ventureTitle": "Lash Mapper",
+      "task": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
+      "since": "2026-11-20T23:24:41.535Z",
+      "ventureId": "stem-count",
+      "ventureTitle": "Stem Count",
       "last": {
-        "at": "2026-11-20T23:22:49.903Z",
-        "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google"
+        "at": "2026-11-20T23:24:41.535Z",
+        "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
       },
-      "actions": 28
+      "actions": 30
     },
     {
       "id": "data",
@@ -1253,16 +1282,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "idle",
-      "task": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children",
-      "since": "2026-11-20T21:13:52.954Z",
+      "state": "done",
+      "task": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)",
+      "since": "2026-11-20T23:24:41.497Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T14:19:01.737Z",
-        "action": "Category screen mahj-league: allowed if points only, no money, stakes or settlement, no NMJL card hands reproduced, not aimed at children"
+        "at": "2026-11-20T23:24:41.497Z",
+        "action": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)"
       },
-      "actions": 11
+      "actions": 12
     },
     {
       "id": "people",
@@ -1717,9 +1746,30 @@
       }
     ],
     "sitter-sheet": [],
-    "stall-tally": []
+    "stall-tally": [],
+    "stem-count": [
+      {
+        "at": "2026-11-20T23:24:41.535Z",
+        "agent": "research",
+        "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
+      }
+    ]
   },
   "log": [
+    {
+      "at": "2026-11-20T23:24:41.535Z",
+      "agent": "research",
+      "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
+      "ventureId": "stem-count",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:24:41.497Z",
+      "agent": "legal",
+      "action": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T23:22:49.903Z",
       "agent": "research",
@@ -1740,6 +1790,13 @@
       "action": "Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App Store listings, and Hair Notes already sells the exact offline one-time product",
       "ventureId": "formula-book",
       "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:14:31.021Z",
+      "agent": "research",
+      "action": "Started: Screening 2 to 3 new ideas with live sources to refill the open idea list",
+      "ventureId": null,
+      "kind": "start"
     },
     {
       "at": "2026-11-20T23:13:55.186Z",
@@ -2256,27 +2313,6 @@
       "at": "2026-11-15T11:50:15.230Z",
       "agent": "finance",
       "action": "Weekly P and L, week to 15 Nov 2026, sorted by revenue: all 14 ventures tie at Rs 0 (USD 0 at 94.2754 from 14 Nov, xflowpay). Ledger has 0 confirmed payments and 0 approved costs, so company revenue Rs 0, costs Rs 0, profit Rs 0 this week and to date. Revenue per cycle of work Rs 0. Flag: 10 ventures took pod time and earned nothing; none reached live or a payment page",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:08.240Z",
-      "agent": "finance",
-      "action": "Started: Weekly profit and loss for the week to 15 Nov 2026",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T11:50:08.194Z",
-      "agent": "ops",
-      "action": "Started: Weekly review: opening the office",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T11:19:04.426Z",
-      "agent": "devops",
-      "action": "Fixed HQ: all 4 HQ deploys since 10:11 UTC were skipped by the ignore step, which did not watch company/ or scripts/. It now does; HQ rebuilt at 11:17 UTC, CI green",
       "ventureId": null,
       "kind": "done"
     }

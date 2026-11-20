@@ -33,5 +33,12 @@
     "action": "Category screen for this sourcing round: no idea reached legal review since none passed research. Flagged while screening: dance recital ordering handles childrens names (aimed-at-children risk), pigeon race results sit next to pool betting (gambling risk), headstone layout is grief sensitive. No regulated idea added.",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:24:41.497Z",
+    "agent": "legal",
+    "action": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

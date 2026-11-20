@@ -96,5 +96,12 @@
     "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:14:31.021Z",
+    "agent": "research",
+    "action": "Started: Screening 2 to 3 new ideas with live sources to refill the open idea list",
+    "ventureId": null,
+    "kind": "start"
   }
 ]

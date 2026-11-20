@@ -1,0 +1,61 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-20T23:24:34.692Z",
+  "updatedAt": "2026-11-20T23:24:34.692Z",
+  "killReason": null,
+  "lead": null,
+  "id": "stem-count",
+  "title": "Stem Count",
+  "oneLiner": "Phone tool for freelance event florists: enter each arrangement recipe and quantity, get the stems rounded up to wholesale bunches, the flower order and a priced client quote",
+  "customer": "Freelance and small studio wedding and event florists",
+  "revenueModel": "Free stem counter page, paid one-time unlock for saved events, wholesale order sheet and client quote PDF",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 13
+  },
+  "evidence": [
+    {
+      "claim": "Details Flowers, florist software built around recipes and stem counts, charges $25 a month (Starter, 3 events) up to $150 a month, with 223 reviews on Capterra; one reviewer says the price jumped to $150 a month after 10 total events and that more than $50 a month makes no sense for them.",
+      "url": "https://www.capterra.com/p/175475/Details-Flowers-Software/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Curate, another florist recipe and proposal tool, lists plans from $275 a month with no free version, and has 218 reviews averaging 4.7 on Capterra.",
+      "url": "https://www.capterra.com/p/174139/Curate/pricing/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "A florist sells a one-time $197 spreadsheet pack whose main jobs are the stem counter with markup and an order form that rounds up to full bunches with a breakage buffer, which shows people pay for exactly this job outside the big suites.",
+      "url": "https://paige-payseno-mx5c.squarespace.com/shop/flower-order-and-floral-recipe-spreadsheet-pack",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "A web stem cost calculator for freelance and side hustle florists sells for $17 on Stan, with recipe lines, markup and a PDF order form (no sales count shown).",
+      "url": "https://stan.store/plantitaco/p/get-my-stem-calculator-now",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Gap: the free Triangle Nursery stem count planner totals stems per variety but has no costs, markup or quote, and tells users to round up to wholesale bunch sizes by hand.",
+      "url": "https://www.trianglenursery.co.uk/stem-count-planner",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Gap: Curate gives a free recipe spreadsheet only behind an email form, as Excel or Google Sheets, and itself says Excel was not made for florists, so there is no free phone tool that rounds to bunches and prices the event.",
+      "url": "https://curate.co/resources/wedding-florist-excel-spreadsheet/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Search route: page one for stem count calculator florist is spreadsheets on Google Docs, nursery help pages, an Etsy listing, a florist blog and thin calculator farm pages (ultimatefinancecalculator.com), with no big free web tool owning it.",
+      "url": "https://www.trianglenursery.co.uk/help/how-to/articles/wedding-stem-counts",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research. Target searches: stem count calculator, florist stem calculator, flower recipe calculator, wedding flower recipe template, florist pricing calculator, how many stems to order wedding. Page one now: Triangle Nursery planner, Google Docs sheets, Curate resource page, Etsy and Stan listings, FiftyFlowers DIY guides, calculator farm pages. Free helper pages to build: stems per bunch by flower, bridal bouquet stem guide, centerpiece stem guide. Against: Stemwise (getstemwise.com) offers free wedding stem count tools with a buy-in buffer (https://raw.githubusercontent.com/SaschaHeyer/flower-farm-math/main/README.md) and its pricing features were not checked; a cheap Etsy floral pricing spreadsheet exists at $2.99 (https://www.etsy.com/listing/4600785949); no search volume source yet; buyers are mostly US and UK so price in USD; quote builders failed before (clean-quote) when free calculators closed the gap, so the case must show bunch rounding plus quote is not free anywhere. Florists are the buyer, not couples, so this does not repeat seatwise or shaadi-budget.",
+  "stage": "idea"
+}
