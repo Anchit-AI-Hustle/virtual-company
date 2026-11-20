@@ -61,5 +61,12 @@
     "action": "Books: revenue Rs 0 confirmed, no live product, no spend; rate from 14 Nov kept on file",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T21:06:51.526Z",
+    "agent": "finance",
+    "action": "Ledger: no revenue yet, Rs 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -130,5 +130,12 @@
     "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T21:06:51.603Z",
+    "agent": "ceo",
+    "action": "Started: Staffing check: no idea clears the channel screen; asking Research for new ideas",
+    "ventureId": null,
+    "kind": "start"
   }
 ]

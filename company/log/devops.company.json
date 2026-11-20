@@ -103,5 +103,12 @@
     "action": "Started: Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-20T21:06:51.449Z",
+    "agent": "devops",
+    "action": "CI green again (9e12adb): dashes fixed; watchdog check passes",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

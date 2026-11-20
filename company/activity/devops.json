@@ -1,6 +1,6 @@
 {
-  "state": "working",
-  "task": "Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md",
+  "state": "done",
+  "task": "CI green again (9e12adb): dashes fixed; watchdog check passes",
   "ventureId": null,
-  "since": "2026-11-20T21:05:13.670Z"
+  "since": "2026-11-20T21:06:51.449Z"
 }

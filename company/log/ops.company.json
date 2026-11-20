@@ -187,5 +187,12 @@
     "action": "Started: Morning standup and fix red CI",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-20T21:06:51.566Z",
+    "agent": "ops",
+    "action": "Standup: no live products, 4 open ideas all below the channel screen (ap-company-1); Research to find new ideas",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
