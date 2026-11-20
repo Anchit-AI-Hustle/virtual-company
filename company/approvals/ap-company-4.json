@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-4",
+  "ventureId": null,
+  "type": "public-post",
+  "title": "Check free tools and search volume before an idea gets a pod",
+  "ask": "Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms (DataForSEO via Firecrawl Alexandria); skip the idea if a free tool closes the gap or buyer terms total under about 500 a month",
+  "why": "On 21 Nov 2026 all four ventures worked (formula-book, litter-log, lash-mapper, stem-count) died on the same two facts, each found only after a lead was staffed: a free no-account tool already did the job, and buyer search was 10 to 110 a month (company/ventures/*.json killReason).",
+  "costINR": 0,
+  "status": "decided",
+  "createdAt": "2026-11-20T23:28:09.623Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep screening with paid signals, a named gap and page one results only",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "ap-company-2 screen passed formula-book, litter-log and stem-count, and all three were killed within one cycle of staffing (company/ventures/formula-book.json, litter-log.json, stem-count.json). No honest profit figure."
+    },
+    {
+      "option": "Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms (DataForSEO via Firecrawl Alexandria); skip the idea if a free tool closes the gap or buyer terms total under about 500 a month",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "The agents already pulled these volumes this cycle through Firecrawl Alexandria at no cash cost to the company, and the free tools that killed each idea (BreedTools, Stemwise, Lash Map Lab, Hair Notes) were found with a single search. Saves a pod cycle per weak idea. No honest profit figure since nothing has cleared a case yet."
+    },
+    {
+      "option": "Lower the business case bar so more ideas reach a build",
+      "realism": 2,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Would build products the case already says cannot reach paying buyers through search, the only allowed channel (CLAUDE.md). Output that earns nothing is not progress."
+    }
+  ],
+  "decision": {
+    "choice": "Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms (DataForSEO via Firecrawl Alexandria); skip the idea if a free tool closes the gap or buyer terms total under about 500 a month",
+    "reason": "Same zero cost, fully reversible, and it moves the two facts that killed every idea this cycle to before a lead is staffed, so pods go only to ideas that can survive the case.",
+    "decidedAt": "2026-11-20T23:28:09.623Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/16"
+}

@@ -68,5 +68,12 @@
     "action": "Ledger: no revenue yet, Rs 0",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:28:28.783Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0: no live product and no payment rail; fx unchanged",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

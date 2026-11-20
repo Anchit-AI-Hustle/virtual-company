@@ -151,5 +151,12 @@
     "action": "Open ideas drop to 4 after staffing, below 5: Research to screen and add new ideas this cycle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:28:09.647Z",
+    "agent": "ceo",
+    "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

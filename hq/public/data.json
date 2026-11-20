@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-20T23:27:40.373Z",
+  "builtAt": "2026-11-20T23:28:32.872Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -61,6 +61,45 @@
     "monthlyCapINR": 0
   },
   "decisions": [
+    {
+      "id": "ap-company-4",
+      "title": "Check free tools and search volume before an idea gets a pod",
+      "status": "decided",
+      "why": "On 21 Nov 2026 all four ventures worked (formula-book, litter-log, lash-mapper, stem-count) died on the same two facts, each found only after a lead was staffed: a free no-account tool already did the job, and buyer search was 10 to 110 a month (company/ventures/*.json killReason).",
+      "options": [
+        {
+          "option": "Do nothing for now: keep screening with paid signals, a named gap and page one results only",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "ap-company-2 screen passed formula-book, litter-log and stem-count, and all three were killed within one cycle of staffing (company/ventures/formula-book.json, litter-log.json, stem-count.json). No honest profit figure."
+        },
+        {
+          "option": "Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms (DataForSEO via Firecrawl Alexandria); skip the idea if a free tool closes the gap or buyer terms total under about 500 a month",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "The agents already pulled these volumes this cycle through Firecrawl Alexandria at no cash cost to the company, and the free tools that killed each idea (BreedTools, Stemwise, Lash Map Lab, Hair Notes) were found with a single search. Saves a pod cycle per weak idea. No honest profit figure since nothing has cleared a case yet."
+        },
+        {
+          "option": "Lower the business case bar so more ideas reach a build",
+          "realism": 2,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Would build products the case already says cannot reach paying buyers through search, the only allowed channel (CLAUDE.md). Output that earns nothing is not progress."
+        }
+      ],
+      "decision": {
+        "choice": "Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms (DataForSEO via Firecrawl Alexandria); skip the idea if a free tool closes the gap or buyer terms total under about 500 a month",
+        "reason": "Same zero cost, fully reversible, and it moves the two facts that killed every idea this cycle to before a lead is staffed, so pods go only to ideas that can survive the case.",
+        "decidedAt": "2026-11-20T23:28:09.623Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/16"
+    },
     {
       "id": "ap-company-3",
       "title": "Main session runs the case reviewers when a lead cannot",
@@ -997,16 +1036,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
-      "since": "2026-11-20T23:26:37.007Z",
-      "ventureId": "lash-mapper",
-      "ventureTitle": "Lash Mapper",
+      "state": "idle",
+      "task": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
+      "since": "2026-11-20T23:28:28.877Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:26:37.007Z",
-        "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small"
+        "at": "2026-11-20T23:28:09.647Z",
+        "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing"
       },
-      "actions": 47
+      "actions": 48
     },
     {
       "id": "ops",
@@ -1016,16 +1055,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: health ok, watchdog ran 23:03 UTC, no open alerts or owner comments, checks green. 0 live, revenue Rs 0. lash-mapper validated and waits for case, sizing and CEO decision; formula-book and litter-log screened ideas wait for pods; Research to refill open ideas",
-      "since": "2026-11-20T23:12:22.672Z",
+      "state": "idle",
+      "task": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
+      "since": "2026-11-20T23:28:30.077Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:12:22.672Z",
-        "action": "Standup: health ok, watchdog ran 23:03 UTC, no open alerts or owner comments, checks green. 0 live, revenue Rs 0. lash-mapper validated and waits for case, sizing and CEO decision; formula-book and litter-log screened ideas wait for pods; Research to refill open ideas"
+        "at": "2026-11-20T23:28:28.815Z",
+        "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas"
       },
-      "actions": 32
+      "actions": 33
     },
     {
       "id": "research",
@@ -1035,11 +1074,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
-      "since": "2026-11-20T23:24:41.535Z",
-      "ventureId": "stem-count",
-      "ventureTitle": "Stem Count",
+      "since": "2026-11-20T23:28:30.284Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-20T23:24:41.535Z",
         "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
@@ -1056,7 +1095,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live ventures to count",
-      "since": "2026-11-20T21:13:52.425Z",
+      "since": "2026-11-20T23:28:28.934Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1075,7 +1114,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-20T21:13:52.466Z",
+      "since": "2026-11-20T23:28:30.499Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1094,7 +1133,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-20T21:13:52.507Z",
+      "since": "2026-11-20T23:28:30.191Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1113,7 +1152,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-20T21:13:52.548Z",
+      "since": "2026-11-20T23:28:29.000Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1132,7 +1171,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-20T21:13:52.594Z",
+      "since": "2026-11-20T23:28:29.112Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1151,7 +1190,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-20T21:13:52.634Z",
+      "since": "2026-11-20T23:28:30.238Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1168,16 +1207,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "working",
-      "task": "Platform check: health.json ok, no platform-alert issues, no live product URLs to check",
-      "since": "2026-11-20T23:12:22.705Z",
+      "state": "idle",
+      "task": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
+      "since": "2026-11-20T23:28:29.054Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:12:22.705Z",
-        "action": "Started: Platform check: health.json ok, no platform-alert issues, no live product URLs to check"
+        "at": "2026-11-20T23:28:28.711Z",
+        "action": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products"
       },
-      "actions": 24
+      "actions": 25
     },
     {
       "id": "security",
@@ -1188,15 +1227,15 @@
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
       "state": "idle",
-      "task": "Secret scan of repo: none found",
-      "since": "2026-11-20T21:13:52.713Z",
+      "task": "Secret scan of tracked files: no keys or tokens found",
+      "since": "2026-11-20T23:28:30.430Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T21:06:51.487Z",
-        "action": "Secret scan of repo: none found"
+        "at": "2026-11-20T23:28:28.748Z",
+        "action": "Secret scan of tracked files: no keys or tokens found"
       },
-      "actions": 12
+      "actions": 13
     },
     {
       "id": "growth",
@@ -1208,7 +1247,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-20T21:13:52.762Z",
+      "since": "2026-11-20T23:28:29.235Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1227,7 +1266,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-20T21:13:52.811Z",
+      "since": "2026-11-20T23:28:30.349Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1246,7 +1285,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no messages to handle",
-      "since": "2026-11-20T21:13:52.862Z",
+      "since": "2026-11-20T23:28:30.561Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1264,15 +1303,15 @@
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
       "state": "idle",
-      "task": "Ledger: no revenue yet, Rs 0",
-      "since": "2026-11-20T21:13:52.911Z",
+      "task": "Revenue Rs 0: no live product and no payment rail; fx unchanged",
+      "since": "2026-11-20T23:28:29.173Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T21:06:51.526Z",
-        "action": "Ledger: no revenue yet, Rs 0"
+        "at": "2026-11-20T23:28:28.783Z",
+        "action": "Revenue Rs 0: no live product and no payment rail; fx unchanged"
       },
-      "actions": 10
+      "actions": 11
     },
     {
       "id": "legal",
@@ -1282,9 +1321,9 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "done",
+      "state": "idle",
       "task": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)",
-      "since": "2026-11-20T23:24:41.497Z",
+      "since": "2026-11-20T23:28:30.019Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1303,7 +1342,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-20T21:13:52.991Z",
+      "since": "2026-11-20T23:28:30.135Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1761,6 +1800,41 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-20T23:28:28.815Z",
+      "agent": "ops",
+      "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:28:28.783Z",
+      "agent": "finance",
+      "action": "Revenue Rs 0: no live product and no payment rail; fx unchanged",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:28:28.748Z",
+      "agent": "security",
+      "action": "Secret scan of tracked files: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:28:28.711Z",
+      "agent": "devops",
+      "action": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-20T23:28:09.647Z",
+      "agent": "ceo",
+      "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-20T23:27:32.795Z",
       "agent": "lead-stem-count",
@@ -2283,41 +2357,6 @@
       "at": "2026-11-15T11:50:36.901Z",
       "agent": "people",
       "action": "Score data (Anaya): 3 of 5. Honest null counts, no fake numbers. Little to do with nothing live",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.862Z",
-      "agent": "people",
-      "action": "Score research (Meera): 3 of 5. 4 business cases and 25 niches screened, all sourced, but 0 new ideas in the last 2 cycles because the screen passes nothing",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.818Z",
-      "agent": "people",
-      "action": "Score ops (Kabir): 4 of 5. Standups, closes and digests every cycle, checks green. Used. No rule broken",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.780Z",
-      "agent": "people",
-      "action": "Score ceo (Arya): 4 of 5. Killed 9 weak ideas on sourced cases and ran 5 decisions through the desk. Used. No rule broken. Gap: 0 ideas reached a go",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.738Z",
-      "agent": "people",
-      "action": "Started: Weekly scoring of all 17 agents",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T11:50:25.274Z",
-      "agent": "ceo",
-      "action": "Kept class-pass 10, sitter-sheet 11, stall-tally 12 as scored: no new evidence this week. 4 open ideas left, below 5, so Research sources more next cycle",
       "ventureId": null,
       "kind": "done"
     }

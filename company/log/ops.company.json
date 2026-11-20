@@ -215,5 +215,12 @@
     "action": "Standup: health ok, watchdog ran 23:03 UTC, no open alerts or owner comments, checks green. 0 live, revenue Rs 0. lash-mapper validated and waits for case, sizing and CEO decision; formula-book and litter-log screened ideas wait for pods; Research to refill open ideas",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T23:28:28.815Z",
+    "agent": "ops",
+    "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
