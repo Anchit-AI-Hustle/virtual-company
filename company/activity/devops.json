@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
+  "state": "working",
+  "task": "Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md",
   "ventureId": null,
-  "since": "2026-11-15T14:32:02.348Z"
+  "since": "2026-11-20T21:05:13.670Z"
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-18T06:55:16.004Z",
+  "builtAt": "2026-11-20T21:05:14.483Z",
   "health": {
     "status": "problem",
     "since": "2026-11-18T06:55:12.435Z",
@@ -888,16 +888,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
-      "since": "2026-11-15T14:32:02.789Z",
+      "state": "working",
+      "task": "Morning standup and fix red CI",
+      "since": "2026-11-20T21:05:13.607Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T14:31:57.016Z",
-        "action": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green"
+        "at": "2026-11-20T21:05:13.607Z",
+        "action": "Started: Morning standup and fix red CI"
       },
-      "actions": 27
+      "actions": 28
     },
     {
       "id": "research",
@@ -1040,16 +1040,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
-      "since": "2026-11-15T14:32:02.348Z",
+      "state": "working",
+      "task": "Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md",
+      "since": "2026-11-20T21:05:13.670Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T14:16:55.892Z",
-        "action": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check"
+        "at": "2026-11-20T21:05:13.670Z",
+        "action": "Started: Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md"
       },
-      "actions": 21
+      "actions": 22
     },
     {
       "id": "security",
@@ -1520,6 +1520,20 @@
     "stall-tally": []
   },
   "log": [
+    {
+      "at": "2026-11-20T21:05:13.670Z",
+      "agent": "devops",
+      "action": "Started: Fix CI: dashes in CLAUDE.md, prompts.md, LAUNCH-CHECKLIST.md",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-20T21:05:13.607Z",
+      "agent": "ops",
+      "action": "Started: Morning standup and fix red CI",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-15T14:31:57.016Z",
       "agent": "ops",
@@ -2065,20 +2079,6 @@
       "action": "Blocked: Awaiting CEO kill or continue decision; this session cannot launch separate research, sizing or CEO agents",
       "ventureId": "master-key-gen",
       "kind": "blocked"
-    },
-    {
-      "at": "2026-11-15T05:24:21.151Z",
-      "agent": "lead-master-key-gen",
-      "action": "Research: 8 sourced paid signals confirmed, but Key-En-Lock offers a free builder doing the whole product (Kwikset, Schlage, MACS, pinning PDFs); verdict kill recommended to CEO",
-      "ventureId": "master-key-gen",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T05:21:34.350Z",
-      "agent": "lead-master-key-gen",
-      "action": "Started: Validating: live web search on demand and free alternatives",
-      "ventureId": "master-key-gen",
-      "kind": "start"
     }
   ]
 }

@@ -180,5 +180,12 @@
     "action": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-20T21:05:13.607Z",
+    "agent": "ops",
+    "action": "Started: Morning standup and fix red CI",
+    "ventureId": null,
+    "kind": "start"
   }
 ]

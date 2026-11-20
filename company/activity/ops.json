@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Closed the cycle: 7 niches screened, mahj-league staffed, validated and killed at the case (14 of 35), pods empty, 0 live, revenue Rs 0, checks green",
+  "state": "working",
+  "task": "Morning standup and fix red CI",
   "ventureId": null,
-  "since": "2026-11-15T14:32:02.789Z"
+  "since": "2026-11-20T21:05:13.607Z"
 }
