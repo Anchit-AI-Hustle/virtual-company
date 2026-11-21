@@ -1,0 +1,50 @@
+{
+  "id": "fleet-log",
+  "title": "Fleet Service Log",
+  "oneLiner": "Phone web vehicle maintenance log and daily inspection checklist for small fleets (5 to 50 vans or trucks), with full service history and a shareable driver link",
+  "customer": "Owners and office managers of small US service fleets (plumbers, landscapers, HVAC, delivery) with 5 to 50 vehicles",
+  "revenueModel": "Free single-vehicle log; paid monthly tier for many vehicles, driver links, reminders and full history export",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 3,
+    "total": 13
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Fleetio Essential at USD 5 a vehicle a month billed monthly (no free plan); a 10 vehicle fleet pays USD 50, about Rs 4,714 at 94.2754 INR per USD",
+      "inrMonthly": 4714,
+      "source": "https://www.fleetio.com/pricing"
+    },
+    "searches": {
+      "terms": {
+        "fleet maintenance software": 1300,
+        "vehicle maintenance log": 1900,
+        "vehicle inspection checklist": 2900,
+        "dot inspection form": 880,
+        "fleet maintenance software free": 260,
+        "vehicle maintenance tracker": 210
+      },
+      "monthly": 7450,
+      "source": "https://dataforseo.com/apis/keywords-data-api",
+      "note": "DataForSEO Google Ads search volume, United States, via Firecrawl Alexandria, 21 Nov 2026. fleet maintenance software alone clears 1,000 with CPC USD 158, so buyers pay."
+    },
+    "freeGap": "The only free plan found, Simply Fleet Free, needs an account and stops at 5 vehicles, 3 users and 6 months of stored data (https://www.simplyfleet.app/pricing); Fleetio has a trial only. Fleetio free tools are downloadable spreadsheets (https://www.fleetio.com/tools), not a saved, shareable log. Gap: a no-account phone log that keeps full service history and gives drivers an inspection link. Risk: no-account alone is not a reason to pay (golf-league precedent); the paid tier must sell history, many vehicles and driver links."
+  },
+  "evidence": [],
+  "nextAction": "Lead gathers 3+ sourced demand signals (people asking for or paying for small fleet maintenance logs, complaints about limits of free plans); then Research writes the sceptical case",
+  "lead": {
+    "name": "Arnav",
+    "color": "#8B2E3C",
+    "trait": "Quick to test, quicker to kill what does not work."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-21T05:16:04.416Z",
+  "createdAt": "2026-11-21T05:16:04.416Z",
+  "updatedAt": "2026-11-21T05:16:04.416Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}
