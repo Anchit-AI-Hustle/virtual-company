@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Secret scan: no keys or private keys found in the repo",
   "ventureId": null,
-  "since": "2026-11-21T13:15:34.774Z"
+  "since": "2026-11-21T13:15:48.599Z"
 }
