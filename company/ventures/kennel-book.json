@@ -31,17 +31,38 @@
     },
     "freeGap": "DoggieDashboard is free only for the first 10 pets saved (https://doggiedashboard.com/); Runloyal's 2026 comparison of 8 dog daycare tools found no permanent free plan, only 14 day trials (https://www.runloyal.com/blog/best-dog-daycare-software/); DatCog starts at USD 54 a month (https://www.datcog.app/pet-boarding-software). Gap: a no-account phone booking book with occupancy and owner check-in that does not stop at 10 dogs. Risks: Pet Sitter Dashboard is free for sitters and walkers (https://petsitterdashboard.com/), so pet sitting is not the target; the category searches are owned by paid vendors and review sites (fleet-log precedent), so the case must show pages we can rank."
   },
-  "evidence": [],
-  "nextAction": "Lead Diya: find 3 or more sourced signals that small boarders and daycares pay for or actively seek this (forums, marketplace listings with sales, vendor prices), then hand to Research for the business case",
+  "evidence": [
+    {
+      "claim": "A worker at a dog boarding kennel and cattery asked on Reddit for simple software to manage bookings because the boss still uses pen and paper to note who is coming in, who is in and who is going out (search excerpt; Reddit blocks direct scraping).",
+      "url": "https://www.reddit.com/r/software/comments/19c1zos/simple_software_to_manage_booking_for_a_dog_kennel/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "In an r/DogDayCare thread asking for dog daycare software, a reply says the going rate for the top pet boarding apps (Gingr, Pawfinity, ProPet and others) is about $100 a month (search excerpt; Reddit blocks direct scraping).",
+      "url": "https://www.reddit.com/r/DogDayCare/comments/1nrg6fq/dog_daycare_software/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "ProPet, boarding kennel software, charges $49.99 USD a month for its base module plus $20.00 USD a month for its boarding module, after a free first month, on its own pricing page.",
+      "url": "https://www.propetware.com/pricing-subscriptions/",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Etsy sells many paid kennel booking spreadsheets and apps from different sellers: a Dog Boarding and Kennel Manager Google Sheets reservation, feeding log and kennel calendar listing at $3.39 shows 1.5k reviews (4.7 stars), a Dog Boarding Tracker with occupancy dashboard at $14.49 shows 40 reviews (4.9), and a Pet Boarding and Daycare Manager multi-user kennel booking app at $52.49 shows 75 reviews (4.5).",
+      "url": "https://www.etsy.com/market/dog_boarding_spreadsheet",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research: write cases/kennel-book.md as a sceptic, then Sizing, then CEO go or no-go. Evidence against: (1) Etsy kennel spreadsheets sell for USD 3 to 17 one time, so many small boarders may pay a few dollars once rather than a monthly fee (https://www.etsy.com/market/dog_boarding_spreadsheet); (2) DoggieDashboard is cited as the free pick for very small pet businesses (https://www.animalo.com/blog/best-pet-boarding-software-reddit-2026); (3) a near-identical product, Kennel Booking (UK), already sells a kennel board with who is in, arriving and leaving and tablets at GBP 29 to 49 a month, and is still offering founding-kennel free periods, so traction for this exact shape is unproven (https://www.kennelbooking.co.uk/); (4) the US category searches are owned by paid vendors and review sites; (5) the two Reddit signals come from search excerpts because Reddit could not be scraped directly.",
   "lead": {
     "name": "Diya",
     "color": "#7B3F61",
     "trait": "Asks who pays before asking what to build."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-21T06:17:11.000Z",
+  "stage": "validated",
+  "stageSince": "2026-11-21T06:19:09.330Z",
   "createdAt": "2026-11-21T06:17:11.000Z",
-  "updatedAt": "2026-11-21T06:17:11.000Z",
+  "updatedAt": "2026-11-21T06:19:09.330Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
