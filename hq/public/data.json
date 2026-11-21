@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T17:25:28.959Z",
+  "builtAt": "2026-11-21T17:27:17.259Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -431,6 +431,43 @@
       }
     },
     {
+      "id": "rent-ledger",
+      "title": "Rent Ledger",
+      "oneLiner": "Free online rent ledger for small landlords: log rent, late fees and payments with a running balance, export PDF or CSV, and keep it month to month",
+      "customer": "Small US landlords with 1 to 10 units who track rent by hand or in a spreadsheet",
+      "revenueModel": "Free single ledger; paid tier for saved ledgers across devices, several tenants and a tenant share link",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 14,
+      "url": null,
+      "nextAction": "None. Killed on the business case.",
+      "metrics": null,
+      "killReason": "CEO no-go on the business case. Score 16 of 35 against a bar of 24: pain 2, willingnessToPay 2, marketSize 4, distribution 2, competitionGap 1, speedToRevenue 2, recurringRevenue 3. The paid tier we would sell (saved ledgers, several tenants, late fees) is already free on Baselane Core (https://www.baselane.com/pricing) and Stessa Essentials (https://www.stessa.com/pricing/) with unlimited properties. The 7,800 monthly rent ledger searches are template downloads, and page one is held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop (cases/rent-ledger.md sources 17 to 20). Sizing (cases/rent-ledger.sizing.json): 2 cohorts, 100 paying users at Rs 4,619 a year, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000).",
+      "updatedAt": "2026-11-21T17:26:42.811Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": {
+        "id": "lead-rent-ledger",
+        "name": "Vihaan",
+        "color": "#1F6F8B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/rent-ledger.md",
+        "total": 16,
+        "recommendation": "no-go"
+      }
+    },
+    {
       "id": "seatwise",
       "title": "Seatwise",
       "oneLiner": "Plan a wedding seating chart on your phone in minutes, private, no signup",
@@ -466,38 +503,6 @@
         "total": 11,
         "recommendation": "no-go"
       }
-    },
-    {
-      "id": "rent-ledger",
-      "title": "Rent Ledger",
-      "oneLiner": "Free online rent ledger for small landlords: log rent, late fees and payments with a running balance, export PDF or CSV, and keep it month to month",
-      "customer": "Small US landlords with 1 to 10 units who track rent by hand or in a spreadsheet",
-      "revenueModel": "Free single ledger; paid tier for saved ledgers across devices, several tenants and a tenant share link",
-      "priceINR": null,
-      "stage": "validated",
-      "score": 14,
-      "url": null,
-      "nextAction": "Research writes cases/rent-ledger.md and Farhan sizes it. Evidence against: Stessa gives a tenant ledger and late fees free, and forum replies often say a spreadsheet is enough under 5 to 10 units, so the case must show why landlords would pick our ledger over free Stessa.",
-      "metrics": null,
-      "updatedAt": "2026-11-21T17:21:53.758Z",
-      "evidenceCount": 4,
-      "specPath": null,
-      "lead": {
-        "id": "lead-rent-ledger",
-        "name": "Vihaan",
-        "color": "#1F6F8B"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
     },
     {
       "id": "ach-batch",
@@ -1262,10 +1267,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1278,15 +1279,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for",
-      "since": "2026-11-21T17:20:08.767Z",
+      "task": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
+      "since": "2026-11-21T17:26:42.852Z",
       "ventureId": "rent-ledger",
       "ventureTitle": "Rent Ledger",
       "last": {
-        "at": "2026-11-21T17:20:08.767Z",
-        "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for"
+        "at": "2026-11-21T17:26:42.852Z",
+        "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed."
       },
-      "actions": 75
+      "actions": 77
     },
     {
       "id": "ops",
@@ -1591,26 +1592,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-rent-ledger",
-      "name": "Vihaan",
-      "title": "Lead, Rent Ledger",
-      "department": "pods",
-      "color": "#1F6F8B",
-      "trait": "Ships the smallest thing that earns, then iterates.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "rent-ledger",
-      "state": "done",
-      "task": "4 sourced demand signals found (2 BiggerPockets threads, TurboTenant and Stessa price pages); moved to validated",
-      "since": "2026-11-21T17:21:53.781Z",
-      "ventureId": "rent-ledger",
-      "ventureTitle": "Rent Ledger",
-      "last": {
-        "at": "2026-11-21T17:21:53.781Z",
-        "action": "4 sourced demand signals found (2 BiggerPockets threads, TurboTenant and Stessa price pages); moved to validated"
-      },
-      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2054,6 +2035,16 @@
     ],
     "rent-ledger": [
       {
+        "at": "2026-11-21T17:26:42.852Z",
+        "agent": "ceo",
+        "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed."
+      },
+      {
+        "at": "2026-11-21T17:26:42.786Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 16 of 35 (bar 24): competitionGap 1, willingnessToPay 2, distribution 2. Our paid tier (saved ledgers, several tenants, late fees) is free on Baselane Core and Stessa Essentials with unlimited properties (https://www.baselane.com/pricing, https://www.stessa.com/pricing/). Rent ledger searches (7,800 a month) are template intent held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop. Sizing: 100 paying users, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000). Spot-checked Baselane and Stessa pricing and the Landlord Studio late fee calculator; they hold."
+      },
+      {
         "at": "2026-11-21T17:25:18.498Z",
         "agent": "research",
         "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)"
@@ -2379,6 +2370,20 @@
     "work-order": []
   },
   "log": [
+    {
+      "at": "2026-11-21T17:26:42.852Z",
+      "agent": "ceo",
+      "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
+      "ventureId": "rent-ledger",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:26:42.786Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 16 of 35 (bar 24): competitionGap 1, willingnessToPay 2, distribution 2. Our paid tier (saved ledgers, several tenants, late fees) is free on Baselane Core and Stessa Essentials with unlimited properties (https://www.baselane.com/pricing, https://www.stessa.com/pricing/). Rent ledger searches (7,800 a month) are template intent held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop. Sizing: 100 paying users, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000). Spot-checked Baselane and Stessa pricing and the Landlord Studio late fee calculator; they hold.",
+      "ventureId": "rent-ledger",
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T17:25:18.498Z",
       "agent": "research",
@@ -2924,21 +2929,7 @@
       "action": "Revenue so far Rs 0 (no live products, no payments)",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:16.457Z",
-      "agent": "security",
-      "action": "Secret scan of the repo: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:16.423Z",
-      "agent": "devops",
-      "action": "Live check: HQ 200; no live products to check",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 443
+  "logTotal": 445
 }

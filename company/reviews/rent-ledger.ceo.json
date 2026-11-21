@@ -1,0 +1,6 @@
+{
+  "role": "ceo",
+  "passed": false,
+  "at": "2026-11-21T17:26:42.786Z",
+  "notes": "No-go. Case scores 16 of 35 (bar 24): competitionGap 1, willingnessToPay 2, distribution 2. Our paid tier (saved ledgers, several tenants, late fees) is free on Baselane Core and Stessa Essentials with unlimited properties (https://www.baselane.com/pricing, https://www.stessa.com/pricing/). Rent ledger searches (7,800 a month) are template intent held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop. Sizing: 100 paying users, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000). Spot-checked Baselane and Stessa pricing and the Landlord Studio late fee calculator; they hold."
+}

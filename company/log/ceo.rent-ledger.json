@@ -5,5 +5,19 @@
     "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for",
     "ventureId": "rent-ledger",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T17:26:42.786Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go. Case scores 16 of 35 (bar 24): competitionGap 1, willingnessToPay 2, distribution 2. Our paid tier (saved ledgers, several tenants, late fees) is free on Baselane Core and Stessa Essentials with unlimited properties (https://www.baselane.com/pricing, https://www.stessa.com/pricing/). Rent ledger searches (7,800 a month) are template intent held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop. Sizing: 100 paying users, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000). Spot-checked Baselane and Stessa pricing and the Landlord Studio late fee calculator; they hold.",
+    "ventureId": "rent-ledger",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T17:26:42.852Z",
+    "agent": "ceo",
+    "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
+    "ventureId": "rent-ledger",
+    "kind": "done"
   }
 ]

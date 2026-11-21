@@ -53,18 +53,33 @@
       "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Research writes cases/rent-ledger.md and Farhan sizes it. Evidence against: Stessa gives a tenant ledger and late fees free, and forum replies often say a spreadsheet is enough under 5 to 10 units, so the case must show why landlords would pick our ledger over free Stessa.",
+  "nextAction": "None. Killed on the business case.",
   "lead": {
     "name": "Vihaan",
     "color": "#1F6F8B",
     "trait": "Ships the smallest thing that earns, then iterates."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-21T17:21:53.758Z",
+  "stage": "killed",
+  "stageSince": "2026-11-21T17:26:42.811Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-21T17:21:53.758Z",
+  "updatedAt": "2026-11-21T17:26:42.811Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "killReason": "CEO no-go on the business case. Score 16 of 35 against a bar of 24: pain 2, willingnessToPay 2, marketSize 4, distribution 2, competitionGap 1, speedToRevenue 2, recurringRevenue 3. The paid tier we would sell (saved ledgers, several tenants, late fees) is already free on Baselane Core (https://www.baselane.com/pricing) and Stessa Essentials (https://www.stessa.com/pricing/) with unlimited properties. The 7,800 monthly rent ledger searches are template downloads, and page one is held by TurboTenant, Landlord Studio, TenantCloud, Baselane and DoorLoop (cases/rent-ledger.md sources 17 to 20). Sizing (cases/rent-ledger.sizing.json): 2 cohorts, 100 paying users at Rs 4,619 a year, likely Rs 4,61,900, likelihood 10% (bar 15%), expected Rs 46,190 (bar Rs 3,00,000).",
+  "case": {
+    "path": "cases/rent-ledger.md",
+    "scores": {
+      "pain": 2,
+      "willingnessToPay": 2,
+      "marketSize": 4,
+      "distribution": 2,
+      "competitionGap": 1,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 16,
+    "recommendation": "no-go"
+  }
 }
