@@ -1,7 +1,7 @@
 // The illustrated office. Every person here is one of the company's AI agents, drawn as an
-// original character. What each person is doing comes only from what that agent logged:
-// typing means "working", a raised hand means "blocked", a tick means "just finished",
-// a coffee means "idle". Hand-offs fly between desks only for real log events.
+// original character in an office chair. What each person is doing comes only from what that
+// agent logged: typing, a phone call or reading means "working" (picked from the task's words),
+// a raised hand means "blocked", stretching means "just finished", a coffee means "idle". Hand-offs fly between desks only for real log events.
 (function () {
   var SKIN = ['#8D5524', '#A0663A', '#C68642', '#7A4A2A', '#B97A57', '#D9A066', '#6B3E26', '#E0AC69'];
   var HAIR = ['#1C1A1A', '#2E2220', '#3B2A22', '#4A3428', '#5C4033', '#2A2A35'];
@@ -15,26 +15,31 @@
     function c(v) { return Math.max(0, Math.min(255, Math.round(v * f))); }
     return '#' + ((1 << 24) + (c(r) << 16) + (c(g) << 8) + c(b)).toString(16).slice(1);
   }
+  var OUTFITS = ['shirt', 'tee', 'hoodie', 'blazer', 'kurta', 'shirt', 'tee', 'polo'];
   function looks(a) {
     var h = hash(a.id + a.name);
-    return { skin: pick(SKIN, h, 0), hair: pick(HAIR, h, 3), style: pick(STYLES, h, 6), glasses: (h >>> 9) % 4 === 0, beard: (h >>> 11) % 5 === 0, shirt: a.color, sleeve: shade(a.color, 0.82) };
+    return { skin: pick(SKIN, h, 0), hair: pick(HAIR, h, 3), style: pick(STYLES, h, 6), glasses: (h >>> 9) % 4 === 0, beard: (h >>> 11) % 5 === 0,
+      shirt: a.color, sleeve: shade(a.color, 0.86), outfit: pick(OUTFITS, h, 13), phones: (h >>> 17) % 5 === 0, lanyard: (h >>> 19) % 3 === 0, watch: (h >>> 21) % 2 === 0 };
   }
 
   function hairSvg(style, c) {
-    var base = '<path d="M45 41 Q44 23 60 22 Q76 23 75 41 Q73 31 60 30 Q47 31 45 41Z" fill="' + c + '"/>';
+    var hi = shade(c, 1.45);
+    var base = '<path d="M45.5 40 Q44 22 60 21 Q76 22 74.5 40 Q72 29 60 28.5 Q48 29 45.5 40Z" fill="' + c + '"/>';
+    var shine = '<path d="M52 25 Q58 22.5 65 24" stroke="' + hi + '" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".55"/>';
     switch (style) {
-      case 'long': return base + '<path d="M45 37 Q41 55 46 62 L50 43Z M75 37 Q79 55 74 62 L70 43Z" fill="' + c + '"/>';
-      case 'bun': return base + '<circle cx="60" cy="19" r="6.5" fill="' + c + '"/>';
-      case 'curly': return '<g fill="' + c + '"><circle cx="48" cy="31" r="6"/><circle cx="55" cy="25" r="6.5"/><circle cx="64" cy="24.5" r="6.5"/><circle cx="72" cy="30" r="6"/><circle cx="46" cy="38" r="4.5"/><circle cx="74" cy="38" r="4.5"/></g>';
-      case 'quiff': return '<path d="M45 40 Q45 22 62 21 Q79 23 75 40 Q71 28 54 32Z" fill="' + c + '"/>';
-      case 'buzz': return '<path d="M46 37 Q47 25 60 25 Q73 25 74 37 Q70 30 60 30 Q50 30 46 37Z" fill="' + c + '" opacity=".85"/>';
-      case 'bob': return '<path d="M44 46 Q42 22 60 22 Q78 22 76 46 L72 46 Q72 32 60 31 Q48 32 48 46Z" fill="' + c + '"/>';
-      case 'waves': return base + '<path d="M45 40 Q42 50 46 56 Q44 48 48 44Z M75 40 Q78 50 74 56 Q76 48 72 44Z" fill="' + c + '"/>';
-      default: return base;
+      case 'long': return '<path d="M44 34 Q39 58 45 66 L50 46Z M76 34 Q81 58 75 66 L70 46Z" fill="' + c + '"/>' + base + shine;
+      case 'bun': return '<circle cx="60" cy="18" r="6.5" fill="' + c + '"/>' + base + shine;
+      case 'curly': return '<g fill="' + c + '"><circle cx="48" cy="30" r="6"/><circle cx="54.5" cy="24.5" r="6.5"/><circle cx="62" cy="23" r="6.8"/><circle cx="69.5" cy="26" r="6.3"/><circle cx="73" cy="33" r="5"/><circle cx="46" cy="37" r="4.5"/><circle cx="74.5" cy="39" r="3.8"/></g>';
+      case 'quiff': return '<path d="M45.5 39 Q44.5 21 62 19.5 Q79 21.5 74.5 39 Q71 27 54 31Z" fill="' + c + '"/>' + shine;
+      case 'buzz': return '<path d="M46.5 36 Q47.5 24.5 60 24.5 Q72.5 24.5 73.5 36 Q70 29.5 60 29.5 Q50 29.5 46.5 36Z" fill="' + c + '" opacity=".88"/>';
+      case 'bob': return '<path d="M43.5 48 Q41.5 21 60 21 Q78.5 21 76.5 48 L72 48 Q72.5 31 60 30.5 Q47.5 31 48 48Z" fill="' + c + '"/>' + shine;
+      case 'waves': return '<path d="M45 39 Q41 50 45.5 58 Q44 49 48.5 44Z M75 39 Q79 50 74.5 58 Q76 49 71.5 44Z" fill="' + c + '"/>' + base + shine;
+      default: return base + shine;
     }
   }
 
-  // One person at one desk, facing the viewer across a laptop, with one thing of their own on the desk.
+  // One person at one desk, sitting in an office chair, facing the viewer across a laptop,
+  // with one thing of their own on the desk.
   var ITEMS = ['mug', 'plant', 'papers', 'phone', 'books', 'none'];
   function deskItem(kind) {
     switch (kind) {
@@ -46,49 +51,89 @@
       default: return '';
     }
   }
-  function personSvg(a, state) {
+  function torso(L) {
+    var s = L.shirt, dk = shade(s, 0.72), out = '<path d="M31 97 Q31 66 46 62 L60 60 L74 62 Q89 66 89 97Z" fill="' + s + '"/>' +
+      '<path d="M31 97 Q31 70 43 64 Q38 82 40 97Z" fill="#000" opacity=".09"/><path d="M89 97 Q89 70 77 64 Q82 82 80 97Z" fill="#fff" opacity=".06"/>';
+    switch (L.outfit) {
+      case 'shirt': return out + '<path d="M53 60.5 L60 70 L67 60.5 L64 59 L60 64 L56 59Z" fill="#F4F6FA"/><path d="M60 70 V96" stroke="' + dk + '" stroke-width="1"/><circle cx="60" cy="76" r=".9" fill="' + dk + '"/><circle cx="60" cy="83" r=".9" fill="' + dk + '"/><circle cx="60" cy="90" r=".9" fill="' + dk + '"/>';
+      case 'polo': return out + '<path d="M54 60.5 L60 67 L66 60.5" fill="none" stroke="' + dk + '" stroke-width="2.2" stroke-linejoin="round"/><path d="M60 67 V75" stroke="' + dk + '" stroke-width="1.2"/>';
+      case 'hoodie': return out + '<path d="M47 63 Q60 54 73 63 Q66 67 60 67 Q54 67 47 63Z" fill="' + dk + '"/><path d="M56.5 66 V76 M63.5 66 V76" stroke="#F4F6FA" stroke-width="1.2" stroke-linecap="round"/><path d="M48 86 H72 V96 H48Z" fill="' + dk + '" opacity=".35"/>';
+      case 'blazer': return '<path d="M31 97 Q31 66 46 62 L60 60 L74 62 Q89 66 89 97Z" fill="#2E3A55"/><path d="M52 61 L60 96 L68 61Z" fill="' + s + '"/><path d="M46 62 L52 61 L58 80 L53 72Z M74 62 L68 61 L62 80 L67 72Z" fill="#1F2840"/><path d="M31 97 Q31 70 43 64 Q38 82 40 97Z" fill="#000" opacity=".12"/>';
+      case 'kurta': return out + '<path d="M55 60 Q60 62.5 65 60 L65 62.5 Q60 65 55 62.5Z" fill="' + dk + '"/><path d="M60 63 V80" stroke="' + dk + '" stroke-width="1.4"/><circle cx="60" cy="68" r=".9" fill="#E8C468"/><circle cx="60" cy="73" r=".9" fill="#E8C468"/><circle cx="60" cy="78" r=".9" fill="#E8C468"/>';
+      default: return out + '<path d="M53 60.8 Q60 66 67 60.8" fill="none" stroke="' + dk + '" stroke-width="2" stroke-linecap="round"/>';
+    }
+  }
+  function hand(x, y, skin, r) { return '<ellipse cx="' + x + '" cy="' + y + '" rx="' + (r || 3.8) + '" ry="' + ((r || 3.8) * 0.8) + '" fill="' + skin + '"/>'; }
+  function sleeve(d, L, cls) { return '<path class="arm' + (cls ? ' ' + cls : '') + '" d="' + d + '" stroke="' + (L.outfit === 'blazer' ? '#2E3A55' : L.sleeve) + '" stroke-width="8.5" stroke-linecap="round" fill="none"/>'; }
+
+  // Poses come only from what the agent reported: typing for most work, a phone call for
+  // talking, a hand on the chin for reviewing, a stretch for done, a raised hand when stuck.
+  function pose(state, task) {
+    if (state === 'blocked' || state === 'idle' || state === 'done') return state;
+    var t = (task || '').toLowerCase();
+    if (/build|code|fix|implement|draft|write|deploy|release|ship|page/.test(t)) return 'type';
+    var k = iconFor(task);
+    return k === 'talk' ? 'call' : k === 'review' || k === 'research' ? 'read' : 'type';
+  }
+  function personSvg(a, state, task) {
     var L = looks(a);
     var h = hash(a.id + 'item');
-    var skinShade = shade(L.skin, 0.84);
+    var sk = L.skin, skinShade = shade(sk, 0.84), p = pose(state, task);
+    var watch = L.watch ? '<rect x="45.5" y="80.5" width="5" height="3" rx="1" fill="#2B3654"/>' : '';
     var arms;
-    if (state === 'blocked') {
-      arms = '<path class="arm" d="M40 68 Q40 80 50 87" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="50" cy="87" r="3.6" fill="' + L.skin + '"/>' +
-        '<path class="arm raise" d="M80 66 Q92 52 89 34" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="89" cy="31" r="4.6" fill="' + L.skin + '"/>';
-    } else if (state === 'idle') {
-      arms = '<path class="arm" d="M40 68 Q40 80 50 87" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="50" cy="87" r="3.6" fill="' + L.skin + '"/>' +
-        '<path class="arm" d="M80 68 Q86 80 76 78" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/>' +
-        '<rect x="68" y="69" width="9" height="11" rx="2" fill="#F3F5F9" stroke="#9AA6BD"/><path d="M77 72 q3 0 3 3 q0 3 -3 3" stroke="#9AA6BD" fill="none"/><circle cx="72" cy="78" r="3.4" fill="' + L.skin + '"/>' +
+    if (p === 'blocked') {
+      arms = sleeve('M40 68 Q40 80 50 86', L) + hand(50.5, 86.5, sk) +
+        sleeve('M80 66 Q93 52 89 33', L, 'raise') + '<g class="raise"><ellipse cx="89" cy="29" rx="4.2" ry="5.2" fill="' + sk + '"/><path d="M86.5 25 v-4 M89 24.5 v-5 M91.5 25 v-4" stroke="' + sk + '" stroke-width="2" stroke-linecap="round"/></g>';
+    } else if (p === 'idle') {
+      arms = sleeve('M40 68 Q40 80 50 86', L) + hand(50.5, 86.5, sk) +
+        sleeve('M80 68 Q87 80 76 79', L) +
+        '<rect x="68" y="69" width="9" height="11" rx="2" fill="#F3F5F9" stroke="#9AA6BD"/><path d="M77 72 q3 0 3 3 q0 3 -3 3" stroke="#9AA6BD" fill="none"/>' + hand(72, 78.5, sk, 3.6) +
         '<g class="steam" stroke="#B8C2D6" stroke-width="1.4" fill="none" stroke-linecap="round"><path d="M70 66 q-2 -4 0 -7"/><path d="M74 66 q2 -4 0 -7"/></g>';
+    } else if (p === 'done') {
+      arms = sleeve('M40 66 Q30 52 42 40', L, 'stretch') + hand(43.5, 38.5, sk) + sleeve('M80 66 Q90 52 78 40', L, 'stretch') + hand(76.5, 38.5, sk);
+    } else if (p === 'call') {
+      arms = sleeve('M40 68 Q38 80 49 86', L, 'left') + hand(49.5, 86.5, sk) +
+        sleeve('M80 66 Q88 58 77 47', L) + '<rect x="72.5" y="37" width="5" height="12" rx="1.6" fill="#1D2438"/>' + hand(76, 46, sk, 3.6);
+    } else if (p === 'read') {
+      arms = sleeve('M40 68 Q38 80 49 86', L, 'left') + hand(49.5, 86.5, sk) +
+        sleeve('M80 66 Q84 60 70 53', L) + hand(67, 52.5, sk, 3.4);
     } else {
-      arms = '<path class="arm left" d="M40 68 Q38 80 49 87" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/>' +
-        '<path class="arm right" d="M80 68 Q82 80 71 87" stroke="' + L.sleeve + '" stroke-width="8" stroke-linecap="round" fill="none"/>';
+      arms = sleeve('M40 68 Q37 80 49 86', L, 'left') + sleeve('M80 68 Q83 80 71 86', L, 'right') +
+        '<g class="arm left">' + hand(49.5, 86.5, sk) + watch + '</g><g class="arm right">' + hand(70.5, 86.5, sk) + '</g>';
     }
-    var mouth = state === 'blocked' ? '<path d="M56.5 49.5 Q60 47 63.5 49.5" stroke="#3A2418" stroke-width="1.5" fill="none" stroke-linecap="round"/>'
-      : state === 'done' ? '<path d="M55.5 47 Q60 52 64.5 47" stroke="#3A2418" stroke-width="1.6" fill="#fff" stroke-linecap="round"/>'
-      : '<path d="M56.5 48 Q60 50 63.5 48" stroke="#3A2418" stroke-width="1.5" fill="none" stroke-linecap="round"/>';
-    var brows = state === 'blocked' ? '<path d="M51 35.5 l6 1.5 M69 35.5 l-6 1.5" stroke="' + L.hair + '" stroke-width="1.6" stroke-linecap="round"/>'
-      : '<path d="M51.5 36 q3 -1.6 6 0 M62.5 36 q3 -1.6 6 0" stroke="' + L.hair + '" stroke-width="1.5" fill="none" stroke-linecap="round"/>';
-    var screenGlow = state === 'working' ? '<path class="glow" d="M46 70 L74 70 L79 88 L41 88Z" fill="#9CF0D6" opacity=".45"/>' : '';
+    var lookDown = p === 'type' || p === 'read' ? 0.9 : 0;
+    var mouth = p === 'blocked' ? '<path d="M56.8 50 Q60 48 63.2 50" stroke="#7A3B30" stroke-width="1.5" fill="none" stroke-linecap="round"/>'
+      : p === 'done' ? '<path d="M55.5 48 Q60 53 64.5 48 Q60 50 55.5 48Z" fill="#7A3B30"/><path d="M57 48.6 Q60 49.6 63 48.6" stroke="#fff" stroke-width="1.1" fill="none"/>'
+      : p === 'call' ? '<ellipse cx="60" cy="49.5" rx="2.3" ry="1.6" fill="#7A3B30"/>'
+      : '<path d="M56.5 48.6 Q60 47.6 63.5 48.6 Q60 50.6 56.5 48.6Z" fill="' + shade(sk, 0.68) + '"/><path d="M56.5 48.6 Q60 49.4 63.5 48.6" stroke="#6A3328" stroke-width=".9" fill="none" opacity=".7"/>';
+    var brows = p === 'blocked' ? '<path d="M50.5 35 l6.5 1.8 M69.5 35 l-6.5 1.8" stroke="' + L.hair + '" stroke-width="1.8" stroke-linecap="round"/>'
+      : '<path d="M50.8 35.6 q3.4 -1.9 6.6 -.2 M62.6 35.4 q3.2 -1.7 6.6 .2" stroke="' + L.hair + '" stroke-width="1.7" fill="none" stroke-linecap="round"/>';
+    var eye = function (x) {
+      return '<ellipse cx="' + x + '" cy="40.6" rx="2.7" ry="1.8" fill="#FBFBF8"/><circle cx="' + x + '" cy="' + (40.6 + lookDown) + '" r="1.45" fill="#3A2416"/><circle cx="' + (x + 0.5) + '" cy="' + (40.1 + lookDown) + '" r=".45" fill="#fff"/>' +
+        '<path d="M' + (x - 2.9) + ' 40.2 Q' + x + ' 37.9 ' + (x + 2.9) + ' 40.2" stroke="#2A1A12" stroke-width="1" fill="none"/>';
+    };
+    var glow = state === 'working' && p !== 'call' ? '<path class="glow" d="M46 70 L74 70 L79 88 L41 88Z" fill="#9CF0D6" opacity=".4"/><ellipse class="glow" cx="60" cy="44" rx="13" ry="10" fill="#9CF0D6" opacity=".12"/>' : '';
+    var phones = L.phones ? '<path d="M44.5 38 Q44 20 60 19.5 Q76 20 75.5 38" stroke="#2B3654" stroke-width="2.4" fill="none"/><rect x="41.5" y="36" width="5.5" height="9" rx="2.4" fill="#2B3654"/><rect x="73" y="36" width="5.5" height="9" rx="2.4" fill="#2B3654"/>' : '';
+    var lanyard = L.lanyard && L.outfit !== 'blazer' ? '<path d="M53 61 L58 78 M67 61 L62 78" stroke="#B8324A" stroke-width="1.3"/><rect x="56" y="77" width="8" height="10" rx="1.2" fill="#F4F6FA" stroke="#9AA6BD" stroke-width=".8"/><rect x="57.5" y="79" width="5" height="2.2" fill="' + L.shirt + '"/>' : '';
     return '<svg viewBox="0 0 120 112" class="person" aria-hidden="true" focusable="false">' +
       '<ellipse cx="60" cy="108" rx="52" ry="4" fill="#000" opacity=".09"/>' +
-      '<rect x="35" y="26" width="50" height="56" rx="13" fill="#2B3654"/><rect x="39" y="30" width="42" height="48" rx="10" fill="#36456B"/>' +
-      '<g class="body"><path d="M33 96 Q33 63 60 61 Q87 63 87 96Z" fill="' + L.shirt + '"/>' +
-      '<path d="M33 96 Q33 70 45 64 Q40 80 41 96Z" fill="#000" opacity=".08"/>' +
-      '<path d="M53 61.5 L60 69 L67 61.5" fill="none" stroke="' + shade(L.shirt, 0.7) + '" stroke-width="2" stroke-linejoin="round"/>' +
-      '<rect x="55.5" y="50" width="9" height="13" rx="3" fill="' + skinShade + '"/>' +
-      '<g class="head"><ellipse cx="44.6" cy="42" rx="2.6" ry="3.6" fill="' + skinShade + '"/><ellipse cx="75.4" cy="42" rx="2.6" ry="3.6" fill="' + skinShade + '"/>' +
-      '<circle cx="60" cy="40" r="15.5" fill="' + L.skin + '"/>' +
-      '<path d="M46 46 Q50 56 60 56 Q70 56 74 46 Q70 53 60 53 Q50 53 46 46Z" fill="#000" opacity=".06"/>' +
-      hairSvg(L.style, L.hair) + brows +
-      '<g class="eyes" fill="#2A1A12"><circle cx="54.5" cy="41" r="1.8"/><circle cx="65.5" cy="41" r="1.8"/><circle cx="55" cy="40.4" r=".5" fill="#fff"/><circle cx="66" cy="40.4" r=".5" fill="#fff"/></g>' +
-      '<path d="M60 42 q-1.6 3 0 4" stroke="' + skinShade + '" stroke-width="1.4" fill="none" stroke-linecap="round"/>' +
-      '<ellipse cx="50.5" cy="46" rx="2.4" ry="1.3" fill="#E58C7A" opacity=".25"/><ellipse cx="69.5" cy="46" rx="2.4" ry="1.3" fill="#E58C7A" opacity=".25"/>' +
-      (L.glasses ? '<g stroke="#2B3654" stroke-width="1.3" fill="#fff" fill-opacity=".12"><circle cx="54.5" cy="41" r="4.3"/><circle cx="65.5" cy="41" r="4.3"/><path d="M58.8 41 h2.4" fill="none"/></g>' : '') +
-      (L.beard ? '<path d="M46.5 45 Q50 58 60 58 Q70 58 73.5 45 Q70 52.5 60 52.5 Q50 52.5 46.5 45Z" fill="' + L.hair + '" opacity=".92"/>' : '') +
+      // office chair: back and headrest behind the person
+      '<rect x="34" y="34" width="52" height="54" rx="12" fill="#2B3654"/><rect x="38" y="38" width="44" height="46" rx="9" fill="#38476E"/><path d="M42 44 h36" stroke="#45568A" stroke-width="2" stroke-linecap="round"/>' +
+      '<g class="body">' + torso(L) + lanyard +
+      '<path d="M55 50 L55 62 Q60 65 65 62 L65 50Z" fill="' + skinShade + '"/><path d="M55 58 Q60 61 65 58 V62 Q60 65 55 62Z" fill="#000" opacity=".08"/>' +
+      '<g class="head"><ellipse cx="44.8" cy="42" rx="2.5" ry="3.8" fill="' + skinShade + '"/><ellipse cx="75.2" cy="42" rx="2.5" ry="3.8" fill="' + skinShade + '"/>' +
+      '<path d="M45.5 38 Q45.5 23 60 23 Q74.5 23 74.5 38 Q74.5 50 67 54.5 Q63.5 56.5 60 56.5 Q56.5 56.5 53 54.5 Q45.5 50 45.5 38Z" fill="' + sk + '"/>' +
+      '<path d="M46.5 44 Q48.5 53 56 55.8 Q51 51 49.5 44Z" fill="#000" opacity=".07"/>' +
+      hairSvg(L.style, L.hair) + phones + brows +
+      '<g class="eyes">' + eye(54.5) + eye(65.5) + '</g>' +
+      '<path d="M60.3 41.5 Q58.6 45.5 59 46.6 Q60.2 47.3 61.6 46.6" stroke="' + shade(sk, 0.72) + '" stroke-width="1.2" fill="none" stroke-linecap="round"/>' +
+      '<ellipse cx="50.3" cy="46.2" rx="2.6" ry="1.4" fill="#E58C7A" opacity=".18"/><ellipse cx="69.7" cy="46.2" rx="2.6" ry="1.4" fill="#E58C7A" opacity=".18"/>' +
+      (L.glasses ? '<g stroke="#2B3654" stroke-width="1.2" fill="#fff" fill-opacity=".1"><rect x="50" y="37.6" width="9" height="6.6" rx="2.4"/><rect x="61" y="37.6" width="9" height="6.6" rx="2.4"/><path d="M59 40 h2 M50 40 l-4.5 -1 M70 40 l4.5 -1" fill="none"/></g>' : '') +
+      (L.beard ? '<path d="M46.8 44 Q49 56.5 60 57.6 Q71 56.5 73.2 44 Q70.5 52 64 52.6 Q60 51.2 56 52.6 Q49.5 52 46.8 44Z" fill="' + L.hair + '" opacity=".93"/>' : '') +
       mouth + '</g>' + arms + '</g>' +
-      screenGlow +
+      glow +
       '<path d="M44 88 L48 69 L72 69 L76 88Z" fill="#C9D0DC" stroke="#9AA6BD" stroke-width="1"/><path d="M48 69 L72 69 L71.2 72 L48.8 72Z" fill="#B3BCCB"/>' +
-      '<circle cx="60" cy="78.5" r="2.4" fill="' + (state === 'working' ? '#0B7A5E' : '#9AA6BD') + '"/>' +
+      '<path d="M57.6 77 q2.4 -3.4 4.8 0 q-2.4 3.4 -4.8 0Z" fill="' + (state === 'working' ? '#0B7A5E' : '#9AA6BD') + '"/>' +
       '<rect x="2" y="87" width="116" height="8" rx="2.5" fill="#9B7B5F"/><rect x="2" y="87" width="116" height="2.5" rx="1" fill="#C2A386"/><rect x="2" y="93" width="116" height="2" fill="#7E634C"/>' +
       deskItem(pick(ITEMS, h, 2)) +
       '<rect x="10" y="95" width="5" height="12" fill="#7E634C"/><rect x="105" y="95" width="5" height="12" fill="#7E634C"/>' +
@@ -163,7 +208,7 @@
     b.type = 'button';
     b.className = 'desk is-' + a.state;
     b.dataset.agent = a.id;
-    b.innerHTML = '<span class="bubble"></span>' + personSvg(a, a.state) + '<span class="tag"><b></b><small></small></span>';
+    b.innerHTML = '<span class="bubble"></span>' + personSvg(a, a.state, a.task) + '<span class="tag"><b></b><small></small></span>';
     b.querySelector('.tag b').textContent = a.name;
     b.querySelector('.tag small').textContent = a.title;
     setBubble(b, a.state, a.task, a.ventureTitle);
@@ -182,6 +227,7 @@
       : iconSvg(iconFor(task));
     bub.innerHTML = icon + '<span class="btxt"></span>';
     bub.querySelector('.btxt').textContent = task + (ventureTitle ? ' (' + ventureTitle + ')' : '');
+    desk.title = desk.querySelector('.tag b').textContent + ': ' + task;
   }
 
   // Make one person act out a real event for a moment, and fly the hand-off if the
@@ -193,7 +239,7 @@
     var state = e.kind === 'blocked' ? 'blocked' : e.kind === 'start' ? 'working' : 'done';
     var text = e.action.replace(/^(Started|Blocked): /, '');
     desk.className = 'desk is-' + state + ' is-acting';
-    desk.querySelector('.person').outerHTML = personSvg(a, state);
+    desk.querySelector('.person').outerHTML = personSvg(a, state, text);
     setBubble(desk, state, text, null);
     if (prev && prev.agent !== e.agent && prev.ventureId && prev.ventureId === e.ventureId) handoff(floor, prev.agent, e.agent);
     if (!reduce && desk.scrollIntoView && floor.dataset.follow === '1') desk.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
@@ -346,6 +392,14 @@
       }
       plan.appendChild(room);
     });
+    var atWork = d.office.filter(function (a) { return a.state === 'working'; }).length;
+    if (atWork) {
+      var live = document.createElement('div');
+      live.className = 'livepill';
+      live.innerHTML = '<i></i><b>Live</b><span></span>';
+      live.querySelector('span').textContent = atWork + (atWork === 1 ? ' agent at work' : ' agents at work');
+      plan.appendChild(live);
+    }
     stage.appendChild(plan);
     fit(stage);
   }
@@ -371,6 +425,26 @@
       '</svg>';
   }
 
+  // The back wall of a room: a whiteboard with one sticky note per venture in each column of the
+  // real pipeline, a framed print and a shelf, so the room reads as a working office.
+  function wallArt(d, depId) {
+    var cols = [['Ideas', ['idea']], ['Doing', ['validating', 'validated', 'spec', 'building', 'qa']], ['Live', ['live', 'scaling']]];
+    var colors = ['#FFE58A', '#A8E6CF', '#A9D1F7'], notes = '';
+    cols.forEach(function (c, i) {
+      var n = d.ventures.filter(function (v) { return c[1].indexOf(v.stage) > -1; }).length, x = 14 + i * 78;
+      notes += '<text x="' + x + '" y="24" font-size="10" font-weight="700" fill="#4A5670" font-family="Instrument Sans, sans-serif">' + c[0] + ' ' + n + '</text>';
+      for (var k = 0; k < Math.min(n, 8); k++) notes += '<rect x="' + (x + (k % 4) * 16) + '" y="' + (32 + Math.floor(k / 4) * 20) + '" width="13" height="15" rx="1" fill="' + colors[i] + '" transform="rotate(' + ((k * 7) % 9 - 4) + ' ' + (x + (k % 4) * 16 + 6) + ' ' + (39 + Math.floor(k / 4) * 20) + ')"/>';
+    });
+    var hue = depId === 'pods' ? '#3E8E63' : depId === 'engineering' ? '#0E6E8C' : depId === 'leadership' ? '#B8324A' : '#6B4E9B';
+    return '<svg class="wallart" viewBox="0 0 600 120" preserveAspectRatio="xMidYMin meet" aria-hidden="true">' +
+      '<g transform="translate(40,10)"><rect width="250" height="96" rx="4" fill="#FCFDFE" stroke="#8E9AB0" stroke-width="4"/><rect x="0" y="92" width="250" height="8" rx="2" fill="#B3BCCB"/>' + notes +
+      '<path d="M170 70 q12 -14 24 0 t24 0" stroke="#B8324A" stroke-width="2" fill="none" opacity=".6"/></g>' +
+      '<g transform="translate(340,14)"><rect width="86" height="66" rx="3" fill="#7E634C"/><rect x="7" y="7" width="72" height="52" fill="#E9F1F7"/>' +
+      '<path d="M7 59 L30 30 L46 46 L58 36 L79 59Z" fill="' + hue + '" opacity=".75"/><circle cx="62" cy="20" r="6" fill="#FFE07A"/></g>' +
+      '<g transform="translate(456,52)"><rect width="110" height="6" rx="2" fill="#9B7B5F"/><rect x="8" y="-22" width="6" height="22" fill="#6B4E9B"/><rect x="15" y="-18" width="6" height="18" fill="#0E6E8C"/><rect x="22" y="-24" width="6" height="24" fill="#C27A00"/>' +
+      '<path d="M78 0 h16 l-2 -12 h-12Z" fill="#B86F4C"/><path d="M86 -12 Q76 -22 80 -34 Q86 -24 86 -12Z M86 -12 Q96 -22 93 -36 Q87 -24 86 -12Z" fill="#3E8E63"/></g></svg>';
+  }
+
   // Inside one room: everyone large, with what they are doing.
   function renderRoom(stage, d, depId, opts) {
     stage.textContent = '';
@@ -381,6 +455,8 @@
     render(wrap, Object.assign({}, d, { departments: [dep], office: people }), opts);
     var win = wrap.querySelector('.decor.window');
     if (win) win.outerHTML = '<span class="roomsky">' + windowsSvg(260) + '</span>' + clockSvg();
+    var roomEl = wrap.querySelector('.room');
+    if (roomEl) roomEl.insertAdjacentHTML('beforeend', wallArt(d, depId));
     stage.dataset.daypart = daypart();
     stage.appendChild(wrap);
   }
