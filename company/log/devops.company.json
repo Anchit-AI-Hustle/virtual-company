@@ -180,5 +180,26 @@
     "action": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T08:12:11.378Z",
+    "agent": "devops",
+    "action": "Started: Fix platform alert: HQ page behind the repo, deploy venture-hq",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T08:13:29.090Z",
+    "agent": "devops",
+    "action": "Fixed platform alert: deployed venture-hq (dpl_6xT85DQGG4dKSAfcLBxTwVAR7nnN) READY, hq.anchit-tandon.com 200, watchdog checks pass; Vercel deploy quota open again",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T08:13:29.126Z",
+    "agent": "devops",
+    "action": "Lights on: HQ 200, no live products to check; Cloudflare standby skipped, nothing live",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

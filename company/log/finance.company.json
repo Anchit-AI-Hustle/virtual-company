@@ -117,5 +117,12 @@
     "action": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T08:13:34.191Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0 confirmed: no live products, no payments; FX unchanged (94.2754, 14 Nov source)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

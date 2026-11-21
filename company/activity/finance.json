@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
+  "state": "done",
+  "task": "Revenue Rs 0 confirmed: no live products, no payments; FX unchanged (94.2754, 14 Nov source)",
   "ventureId": null,
-  "since": "2026-11-21T07:15:29.283Z"
+  "since": "2026-11-21T08:13:34.191Z"
 }
