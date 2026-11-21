@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Revenue Rs 0 confirmed: no live product, no payments recorded in ledger.json; fx stays 94.2754 INR per USD from 14 Nov (xflowpay)",
+  "state": "done",
+  "task": "Owner is opening a Razorpay account himself (21 Nov 2026, 74% of onboarding done, website given as venture-hq-ten.vercel.app). Supersedes ap-2's wait. Next: Legal and Engineering build the public pages Razorpay checks before activation (terms, privacy, refunds and cancellations, contact, pricing) and Finance asks the owner to switch the Razorpay website to that page once it is live. Never ask for or store his KYC data or keys in the repo.",
   "ventureId": null,
-  "since": "2026-11-21T04:23:27.676Z"
+  "since": "2026-11-21T05:08:26.980Z"
 }
