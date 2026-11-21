@@ -373,7 +373,14 @@
   }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   function safeUrl(u) { return typeof u === 'string' && /^https:\/\//.test(u) ? u : null; }
-  function agentById(id) { return data ? data.office.filter(function (a) { return a.id === id; })[0] : null; }
+  function agentById(id) {
+    if (!data) return null;
+    var a = data.office.filter(function (x) { return x.id === id; })[0];
+    if (a) return a;
+    // A stopped venture's lead leaves the office but stays in the feed: name them from the venture.
+    var v = (data.ventures || []).filter(function (x) { return x.lead && x.lead.id === id; })[0];
+    return v ? { id: id, name: v.lead.name, color: v.lead.color, title: 'Lead, ' + v.title } : null;
+  }
   function face(a, cls) {
     var f = el('span', cls || 'mini-face'); f.setAttribute('aria-hidden', 'true');
     if (a && a.id) f.innerHTML = Office.personSvg(a, 'idle').replace('viewBox="0 0 120 112"', 'viewBox="38 18 44 44"');
@@ -750,9 +757,14 @@
   // old), then the copy deployed with this page.
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
   function json(u, opt) { return fetch(u, opt).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); }
+  // If GitHub's API says no (403 or 429: too many requests), leave it alone for 10 minutes and
+  // read the latest copy instead, so a busy network never repeats the error every 30 seconds.
+  var apiPausedUntil = 0;
   function latestData() {
-    return fetch('https://api.github.com/repos/' + REPO + '/commits/main', { cache: 'no-cache', headers: { Accept: 'application/vnd.github.sha' } })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+    var viaApi = Date.now() < apiPausedUntil ? Promise.reject(new Error('api paused')) :
+      fetch('https://api.github.com/repos/' + REPO + '/commits/main', { cache: 'no-cache', headers: { Accept: 'application/vnd.github.sha' } })
+        .then(function (r) { if (r.status === 403 || r.status === 429) apiPausedUntil = Date.now() + 600000; if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); });
+    return viaApi
       .then(function (sha) { if (!/^[0-9a-f]{40}$/.test(sha.trim())) throw new Error('bad sha'); return json(RAW + sha.trim() + '/hq/public/data.json', { cache: 'force-cache' }); })
       .catch(function () { return json(RAW + 'main/hq/public/data.json', { cache: 'no-cache' }); })
       .catch(function () { return json('data.json?t=' + Date.now(), { cache: 'no-store' }); });

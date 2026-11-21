@@ -627,3 +627,8 @@ test('watchdog flags a live HQ page that is behind the repo', () => {
   assert.deepStrictEqual(ids(page), []);
   assert.deepStrictEqual(ids('<main id="stage">Office v1</main>'), ['hq-page-behind']);
 });
+
+test('morning report counts read as plain English', () => {
+  const src = require('node:fs').readFileSync(require('node:path').join(__dirname, '../scripts/report.js'), 'utf8');
+  assert.ok(src.includes("'ideas'") && src.includes("'decision'"), 'report must say 4 ideas and 1 decision, not 4 idea or 1 decisions');
+});

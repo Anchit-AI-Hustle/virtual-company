@@ -15,6 +15,9 @@ const istDate = (ms) => new Date(ms + IST).toISOString().slice(0, 10);
 const clip = (s, n) => { s = String(s || '').replace(/\s+/g, ' ').trim(); return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '...' : s; };
 const inr = (n) => 'Rs ' + Math.round(n || 0).toLocaleString('en-IN');
 
+// "4 ideas", "1 idea"; other stages read as states: "2 killed".
+const stageCount = (s, n) => `${n} ${s === 'idea' && n !== 1 ? 'ideas' : s}`;
+
 function buildReport(dir, now = Date.now()) {
   const { config, team, ventures, approvals, log } = loadBrain(dir);
   const read = (rel, dflt) => { try { return JSON.parse(fs.readFileSync(path.join(dir, rel), 'utf8')); } catch (e) { return dflt; } };
@@ -45,7 +48,7 @@ function buildReport(dir, now = Date.now()) {
 
   const order = config.stages || ['idea', 'validating', 'validated', 'spec', 'building', 'qa', 'live', 'scaling', 'killed'];
   const counts = order.map((s) => [s, ventures.filter((v) => v.stage === s).length]).filter((x) => x[1]);
-  lines.push('## Ideas', '- ' + (counts.length ? counts.map(([s, n]) => `${n} ${s}`).join(', ') : 'none yet') + '.');
+  lines.push('## Ideas', '- ' + (counts.length ? counts.map(([s, n]) => stageCount(s, n)).join(', ') : 'none yet') + '.');
   const live = ventures.filter((v) => (v.stage === 'live' || v.stage === 'scaling') && v.url);
   lines.push('- Live products: ' + (live.length ? live.map((v) => `${v.title} (${v.url})`).join(', ') : 'none yet') + '.');
   const moved = ventures.filter((v) => v.updatedAt && Date.parse(v.updatedAt) >= since && v.stage !== 'idea').map((v) => `${v.title}: ${v.stage}`);
@@ -60,7 +63,7 @@ function buildReport(dir, now = Date.now()) {
 
   lines.push('## Platform', '- ' + (health && health.status === 'problem' ? 'Being fixed: ' + health.problems.map((p) => clip(p.text, 160)).join(' ') : 'All checks passing.'), '');
 
-  const summary = `${istDate(now)}: ${counts.map(([s, n]) => `${n} ${s}`).join(', ') || 'no ideas yet'}; ${live.length} live; revenue ${inr(revenue)}; ${decided.length} decisions made; ${pending.length} waiting on you. Full report on HQ under Activity.`;
+  const summary = `${istDate(now)}: ${counts.map(([s, n]) => stageCount(s, n)).join(', ') || 'no ideas yet'}; ${live.length} live; revenue ${inr(revenue)}; ${decided.length} ${decided.length === 1 ? 'decision' : 'decisions'} made; ${pending.length} waiting on you. Full report on HQ under Activity.`;
   return { date: istDate(now), text: lines.join('\n').replace(DASHES, '-'), summary: summary.replace(DASHES, '-') };
 }
 
