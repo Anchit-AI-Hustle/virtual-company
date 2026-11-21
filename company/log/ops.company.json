@@ -460,5 +460,19 @@
     "action": "Standup 14:12 UTC: watchdog ran 14:04, health ok, no platform alerts, no owner replies, no reject comments on decided issues 16 and 18, all 22 ventures killed, pods empty",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T15:13:11.500Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T15:13:18.753Z",
+    "agent": "ops",
+    "action": "Standup 15:13 UTC: health ok, watchdog ran 15:04, no platform alerts, no owner-chat or reject comments, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
