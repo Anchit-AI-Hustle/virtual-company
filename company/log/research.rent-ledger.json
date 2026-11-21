@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-21T17:22:54.202Z",
+    "agent": "research",
+    "action": "Started: Writing business case for rent-ledger",
+    "ventureId": "rent-ledger",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T17:25:18.498Z",
+    "agent": "research",
+    "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
+    "ventureId": "rent-ledger",
+    "kind": "done"
+  }
+]

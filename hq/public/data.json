@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T17:25:11.069Z",
+  "builtAt": "2026-11-21T17:25:28.959Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1316,15 +1316,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720",
-      "since": "2026-11-21T17:20:08.732Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
+      "since": "2026-11-21T17:25:18.498Z",
+      "ventureId": "rent-ledger",
+      "ventureTitle": "Rent Ledger",
       "last": {
-        "at": "2026-11-21T17:20:08.732Z",
-        "action": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720"
+        "at": "2026-11-21T17:25:18.498Z",
+        "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)"
       },
-      "actions": 64
+      "actions": 66
     },
     {
       "id": "data",
@@ -2054,9 +2054,19 @@
     ],
     "rent-ledger": [
       {
+        "at": "2026-11-21T17:25:18.498Z",
+        "agent": "research",
+        "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)"
+      },
+      {
         "at": "2026-11-21T17:25:02.394Z",
         "agent": "sizing",
         "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar"
+      },
+      {
+        "at": "2026-11-21T17:22:54.202Z",
+        "agent": "research",
+        "action": "Started: Writing business case for rent-ledger"
       },
       {
         "at": "2026-11-21T17:22:51.186Z",
@@ -2370,11 +2380,25 @@
   },
   "log": [
     {
+      "at": "2026-11-21T17:25:18.498Z",
+      "agent": "research",
+      "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
+      "ventureId": "rent-ledger",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T17:25:02.394Z",
       "agent": "sizing",
       "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
       "ventureId": "rent-ledger",
       "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:22:54.202Z",
+      "agent": "research",
+      "action": "Started: Writing business case for rent-ledger",
+      "ventureId": "rent-ledger",
+      "kind": "start"
     },
     {
       "at": "2026-11-21T17:22:51.186Z",
@@ -2914,21 +2938,7 @@
       "action": "Live check: HQ 200; no live products to check",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:00.542Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog 09:04, CI green, check green (44 tests); no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research tries the queued volume check now (Firecrawl credits may still be out until about 22:14 UTC)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:00.503Z",
-      "agent": "ops",
-      "action": "Started: Morning standup: 09:12 UTC cycle",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 441
+  "logTotal": 443
 }
