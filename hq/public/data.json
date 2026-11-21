@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T07:15:19.126Z",
+  "builtAt": "2026-11-21T07:15:31.767Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1190,9 +1190,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Pods stay empty: 0 of 8 new ideas passed the screen, so no lead is staffed rather than a weak idea; 0 open ideas. Next screen after Firecrawl credits reset at 22:14 UTC",
-      "since": "2026-11-21T07:15:16.815Z",
+      "since": "2026-11-21T07:15:28.850Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1209,16 +1209,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: watchdog ran 07:03, one platform alert (HQ page behind) blocked on the Vercel 100 a day deploy limit; no owner rejects on decided issues 16 and 18, no owner-chat; checks green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research and CEO screen a new batch now",
-      "since": "2026-11-21T07:13:42.191Z",
+      "state": "idle",
+      "task": "Close: 8 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Blocked: HQ page deploy (Vercel daily deploy limit, team-wide) and Research (Firecrawl credits, reset 22:14 UTC)",
+      "since": "2026-11-21T07:15:29.425Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T07:13:42.191Z",
-        "action": "Standup: watchdog ran 07:03, one platform alert (HQ page behind) blocked on the Vercel 100 a day deploy limit; no owner rejects on decided issues 16 and 18, no owner-chat; checks green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research and CEO screen a new batch now"
+        "at": "2026-11-21T07:15:29.386Z",
+        "action": "Close: 8 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Blocked: HQ page deploy (Vercel daily deploy limit, team-wide) and Research (Firecrawl credits, reset 22:14 UTC)"
       },
-      "actions": 47
+      "actions": 48
     },
     {
       "id": "research",
@@ -1247,9 +1247,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, no counts to check",
-      "since": "2026-11-21T07:13:37.541Z",
+      "since": "2026-11-21T07:15:28.932Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1268,7 +1268,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-21T06:25:00.945Z",
+      "since": "2026-11-21T07:15:28.975Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1287,7 +1287,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-21T06:25:00.986Z",
+      "since": "2026-11-21T07:15:29.017Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1306,7 +1306,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-21T06:25:01.024Z",
+      "since": "2026-11-21T07:15:29.050Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1325,7 +1325,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-21T06:25:01.066Z",
+      "since": "2026-11-21T07:15:29.082Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1344,7 +1344,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-21T06:25:01.105Z",
+      "since": "2026-11-21T07:15:29.112Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1380,9 +1380,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan clean: no keys or tokens in the repo",
-      "since": "2026-11-21T07:13:37.416Z",
+      "since": "2026-11-21T07:15:29.147Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1401,7 +1401,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-21T06:25:01.222Z",
+      "since": "2026-11-21T07:15:29.181Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1420,7 +1420,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-21T06:25:01.261Z",
+      "since": "2026-11-21T07:15:29.212Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1437,9 +1437,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T07:13:37.501Z",
+      "since": "2026-11-21T07:15:29.248Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1456,9 +1456,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
-      "since": "2026-11-21T07:13:37.456Z",
+      "since": "2026-11-21T07:15:29.283Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1477,7 +1477,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "since": "2026-11-21T06:25:01.413Z",
+      "since": "2026-11-21T07:15:29.313Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1496,7 +1496,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-21T06:25:01.453Z",
+      "since": "2026-11-21T07:15:29.350Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2234,6 +2234,13 @@
   },
   "log": [
     {
+      "at": "2026-11-21T07:15:29.386Z",
+      "agent": "ops",
+      "action": "Close: 8 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Blocked: HQ page deploy (Vercel daily deploy limit, team-wide) and Research (Firecrawl credits, reset 22:14 UTC)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T07:15:16.815Z",
       "agent": "ceo",
       "action": "Pods stay empty: 0 of 8 new ideas passed the screen, so no lead is staffed rather than a weak idea; 0 open ideas. Next screen after Firecrawl credits reset at 22:14 UTC",
@@ -2785,14 +2792,7 @@
       "action": "No live ventures, no customer messages",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T02:12:59.634Z",
-      "agent": "data",
-      "action": "No live venture counts to read",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 345
+  "logTotal": 346
 }
