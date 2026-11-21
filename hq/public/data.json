@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T04:04:32.239Z",
+  "builtAt": "2026-11-21T04:12:39.698Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1091,16 +1091,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0",
-      "since": "2026-11-21T02:20:01.332Z",
+      "state": "done",
+      "task": "Standup: health ok, watchdog ran 04:03 UTC, no platform alerts, no owner rejects, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 4 small open ideas that predate the owner's new screen (Rs 500+ a month paid, 1,000+ searches a month). Research to find bigger ideas that pass it; CEO to kill old ideas that cannot",
+      "since": "2026-11-21T04:12:39.019Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T02:20:01.044Z",
-        "action": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0"
+        "at": "2026-11-21T04:12:39.019Z",
+        "action": "Standup: health ok, watchdog ran 04:03 UTC, no platform alerts, no owner rejects, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 4 small open ideas that predate the owner's new screen (Rs 500+ a month paid, 1,000+ searches a month). Research to find bigger ideas that pass it; CEO to kill old ideas that cannot"
       },
-      "actions": 36
+      "actions": 38
     },
     {
       "id": "research",
@@ -1243,16 +1243,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
-      "since": "2026-11-21T02:20:01.188Z",
+      "state": "done",
+      "task": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC",
+      "since": "2026-11-21T04:12:39.052Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T02:12:59.502Z",
-        "action": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC"
+        "at": "2026-11-21T04:12:39.052Z",
+        "action": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC"
       },
-      "actions": 26
+      "actions": 27
     },
     {
       "id": "security",
@@ -1869,6 +1869,27 @@
   },
   "log": [
     {
+      "at": "2026-11-21T04:12:39.052Z",
+      "agent": "devops",
+      "action": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T04:12:39.019Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog ran 04:03 UTC, no platform alerts, no owner rejects, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 4 small open ideas that predate the owner's new screen (Rs 500+ a month paid, 1,000+ searches a month). Research to find bigger ideas that pass it; CEO to kill old ideas that cannot",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T04:12:38.975Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T02:20:01.044Z",
       "agent": "ops",
       "action": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0",
@@ -2404,27 +2425,6 @@
       "at": "2026-11-15T14:16:55.892Z",
       "agent": "devops",
       "action": "Platform check: health ok, watchdog ran 14:02 UTC, CI green, no platform-alert issue, 0 live products to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T14:16:44.327Z",
-      "agent": "devops",
-      "action": "Started: Platform check: health, live URLs, watchdog",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T14:16:44.297Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-15T11:51:48.362Z",
-      "agent": "ops",
-      "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
       "ventureId": null,
       "kind": "done"
     }

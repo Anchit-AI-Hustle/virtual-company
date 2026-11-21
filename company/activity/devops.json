@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
+  "state": "done",
+  "task": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC",
   "ventureId": null,
-  "since": "2026-11-21T02:20:01.188Z"
+  "since": "2026-11-21T04:12:39.052Z"
 }
