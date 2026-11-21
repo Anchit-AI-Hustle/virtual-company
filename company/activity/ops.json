@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Standup 14:12 UTC: watchdog ran 14:04, health ok, no platform alerts, no owner replies, no reject comments on decided issues 16 and 18, all 22 ventures killed, pods empty",
   "ventureId": null,
-  "since": "2026-11-21T14:12:40.839Z"
+  "since": "2026-11-21T14:15:21.573Z"
 }

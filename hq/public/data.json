@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T14:15:12.733Z",
+  "builtAt": "2026-11-21T14:15:24.668Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1185,9 +1185,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
-      "since": "2026-11-21T14:15:10.226Z",
+      "since": "2026-11-21T14:15:21.536Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1204,9 +1204,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Standup 14:12 UTC: watchdog ran 14:04, health ok, no platform alerts, no owner replies, no reject comments on decided issues 16 and 18, all 22 ventures killed, pods empty",
-      "since": "2026-11-21T14:12:40.839Z",
+      "since": "2026-11-21T14:15:21.573Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1223,9 +1223,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 26 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: home inspection software US (home inspector software 2,900, home inspection software 2,400, software for home inspectors 1,300, paid Spectora USD 109 a month spectora.com/pricing, but HomeInspector.com by Reggora is free with unlimited reports, scheduling and payments housingwire.com/articles/reggora-launches-homeinspector-com-as-free-service/), HOA management US (homeowners association management software 3,600, hoa management software 2,900, CPC USD 48, but KindHOA free plan getapp.com/all-software/a/kindhoa/ and Innago and Bitrix24 free capterra.com/hoa-software/s/free/), church management US (5,400, but ChMeetings free forever up to 50 people chmeetings.com/pricing), real estate CRM India (2,400, but Bigin free CRM bigin.com/articles/free-CRM-for-real-estate.html and free tiers at capterra.in/directory/30926/real-estate-crm/pricing/free/software), inventory software India (5,400, crowded by free tiers and repeats earlier screens). Repeat of an earlier screen: construction management India 1,300 (Powerplay lists no free plan, capterra.in/software/1036292/powerplay, but page one is vendors). Dropped on volume: WhatsApp CRM India 2,400 is mostly free-intent and integration terms with whatsapp crm software 320, quotation software India 590, staff attendance app India 320 (attendance app 5,400 is employee check-in intent), payroll small business India 390, HR software small business India 480, travel agency software India 480, contractor app India 210, home inspection report template US 590, hoa accounting software US 880, dog grooming software US 590, contractor estimating software US 720, punch list app 390, bid management 320, tutoring software 210, tattoo booking 170, music lesson scheduling 70, property inspection app 260, apartment management software India 0",
-      "since": "2026-11-21T14:15:10.184Z",
+      "since": "2026-11-21T14:15:21.617Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1244,7 +1244,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live venture counts to read",
-      "since": "2026-11-21T13:15:46.500Z",
+      "since": "2026-11-21T14:15:21.656Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1263,7 +1263,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-21T13:15:48.666Z",
+      "since": "2026-11-21T14:15:21.696Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1282,7 +1282,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-21T13:15:48.353Z",
+      "since": "2026-11-21T14:15:21.735Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1301,7 +1301,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-21T13:15:46.570Z",
+      "since": "2026-11-21T14:15:21.774Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1320,7 +1320,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-21T13:15:46.707Z",
+      "since": "2026-11-21T14:15:21.820Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1339,7 +1339,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-21T13:15:48.413Z",
+      "since": "2026-11-21T14:15:21.862Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1356,9 +1356,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Lights on: HQ returns 200, no live products to check",
-      "since": "2026-11-21T14:12:40.884Z",
+      "since": "2026-11-21T14:15:21.914Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1375,9 +1375,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys found",
-      "since": "2026-11-21T14:12:40.923Z",
+      "since": "2026-11-21T14:15:21.966Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1396,7 +1396,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-21T13:15:46.881Z",
+      "since": "2026-11-21T14:15:22.015Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1415,7 +1415,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-21T13:15:48.533Z",
+      "since": "2026-11-21T14:15:22.065Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1434,7 +1434,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T13:15:48.748Z",
+      "since": "2026-11-21T14:15:22.110Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1451,9 +1451,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Ledger has no entries: revenue Rs 0, spend Rs 0",
-      "since": "2026-11-21T14:12:40.956Z",
+      "since": "2026-11-21T14:15:22.146Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1472,7 +1472,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "since": "2026-11-21T13:15:48.103Z",
+      "since": "2026-11-21T14:15:22.192Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1491,7 +1491,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-21T13:15:48.270Z",
+      "since": "2026-11-21T14:15:22.243Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
