@@ -243,5 +243,19 @@
     "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: screenwriting software (14,800 a month US, but free screenwriting software alone is 6,600 and WriterSolo is pay what you want, nofilmschool.com/writersolo-screenwriting-software), restaurant billing India (2,900, Vyapar free page vyaparapp.in/free/restaurant-billing-software), salon software India (1,600, free plans listed at capterra.in/directory/30028/salon/pricing/free/software), visitor management India (3,600, free plans listed at capterra.in/directory/10020/visitor-management/pricing/free/software); page one for all three held by Capterra and vendors. Buyer intent wrong: milk delivery app India (2,900 is shoppers ordering milk, not dairies). Dropped on volume: library management software India 590 (library management system 8,100 is student project intent), personal training software US 880, photographer CRM US 320, punch list app US 390, hotel management software India 1,300 but hotel software clusters held by vendors, construction management software India 1,300 with free tiers, transport management India 480, optical shop software India 0, study library seat booking India 0",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T12:13:29.011Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: rent management, CA practice, petrol pump, garage, lawn care, pressure washing, events, interior design",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T12:13:29.051Z",
+    "agent": "research",
+    "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: rent management app India (rent manage app 1,000, rental management app 1,000, api.seodata.dev/v1/keyword?q=rent+management+app&country=in, but free landlord apps RentOk play and app store apps.apple.com/in/app/rentenpe/id6473885015, play.google.com/store/apps/details?id=com.tenantmanager, and NoBroker rent collection nobroker.in/prophub/property-management/rental-collection-service/; buyer intent is app store installs), lawn care software US (880 plus lawn care business software 590, CPC USD 49.55, but LawnManage free plan lawnandlandscape.com/news/lawnmanage-opens-new-free-plan and free plans listed at capterra.com/lawn-care-software/s/free/, page one held by Capterra, GetApp and Jobber). Interior design software India 2,900 is free 3D home design intent (3d home design online free 5,400). Dropped on volume: property management software India 1,300 with vendor page one, event management software India 720, CA practice management India 390, garage management software India 390, petrol pump software India 480, pressure washing software US 210, coaching institute software India 0, tiffin service software India 0, cable TV billing India 0, bookkeeping client portal US 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -166,5 +166,12 @@
     "action": "Secret scan of the repo: no keys, tokens or private keys found",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T12:13:40.456Z",
+    "agent": "security",
+    "action": "Secret scan: no keys, tokens or private keys found in the repo",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
