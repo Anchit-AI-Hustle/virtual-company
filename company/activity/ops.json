@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
+  "state": "done",
+  "task": "Standup: health ok, watchdog 12:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
   "ventureId": null,
-  "since": "2026-11-21T11:14:29.701Z"
+  "since": "2026-11-21T12:12:30.286Z"
 }

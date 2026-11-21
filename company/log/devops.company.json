@@ -222,5 +222,12 @@
     "action": "Lights: 0 live ventures, no product URL to check; health ok, no platform-alert",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T12:12:30.329Z",
+    "agent": "devops",
+    "action": "Lights on: 0 live products to check; health ok, watchdog ran 12:04 UTC",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
