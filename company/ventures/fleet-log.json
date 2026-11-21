@@ -54,16 +54,16 @@
       "foundAt": "2026-11-21T05:17:52.170Z"
     }
   ],
-  "nextAction": "Research writes the business case; sizing sizes it; CEO decides. Evidence against: replies in the Reddit thread steer small fleets to a free spreadsheet or a my-garage app, and the asker settled on a manual solution; LubeLogger is a free open source self-hosted log with many vehicles, service records and reminders (https://lubelogger.com/); Fleetio gives free spreadsheet templates (https://www.fleetio.com/tools); Etsy templates cost USD 2 to 30 once, so the paid tier must beat a one-off sheet on driver links, reminders and history.",
+  "nextAction": null,
   "lead": {
     "name": "Arnav",
     "color": "#8B2E3C",
     "trait": "Quick to test, quicker to kill what does not work."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-21T05:17:52.170Z",
+  "stage": "killed",
+  "stageSince": "2026-11-21T05:23:18.000Z",
   "createdAt": "2026-11-21T05:16:04.416Z",
-  "updatedAt": "2026-11-21T05:22:05.786Z",
+  "updatedAt": "2026-11-21T05:23:18.000Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -81,5 +81,6 @@
     },
     "total": 19,
     "recommendation": "no-go"
-  }
+  },
+  "killReason": "Buyers search \"fleet maintenance software\" (1,300 a month US, CPC USD 158), and that page one is held by MaintainX, Fleetio, Geotab and Forbes (https://www.fleetio.com/). The free end is already served: Simply Fleet Free covers up to 5 vehicles with inspections (https://www.simplyfleet.app/pricing), and Fleetio gives away maintenance spreadsheets and inspection forms (https://www.fleetio.com/tools). The case scored 19 of 35 with distribution 2, so search only distribution cannot reach paying fleets in 90 days (cases/fleet-log.md)."
 }
