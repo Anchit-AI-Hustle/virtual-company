@@ -1,6 +1,11 @@
 {
-  "status": "ok",
-  "since": "2026-11-20T21:17:57.278Z",
-  "problems": [],
+  "status": "problem",
+  "since": "2026-11-21T02:34:44.182Z",
+  "problems": [
+    {
+      "id": "hq-page-behind",
+      "text": "The live HQ page is older than the page in the repo. Vercel deploys HQ only on request: the next work session deploys it (agents/devops.md)."
+    }
+  ],
   "lastRedeployAt": "2026-11-15T12:02:00.256Z"
 }
