@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T12:13:45.538Z",
+  "builtAt": "2026-11-21T13:13:49.845Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1204,16 +1204,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
-      "since": "2026-11-21T12:13:42.353Z",
+      "state": "done",
+      "task": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
+      "since": "2026-11-21T13:13:49.091Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T12:13:40.495Z",
-        "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0"
+        "at": "2026-11-21T13:13:49.091Z",
+        "action": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5"
       },
-      "actions": 63
+      "actions": 65
     },
     {
       "id": "research",
@@ -1356,16 +1356,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: 0 live products to check; health ok, watchdog ran 12:04 UTC",
-      "since": "2026-11-21T12:13:40.794Z",
+      "state": "done",
+      "task": "Lights on: 0 live products to check; health ok, watchdog ran 13:04 UTC",
+      "since": "2026-11-21T13:13:49.046Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T12:12:30.329Z",
-        "action": "Lights on: 0 live products to check; health ok, watchdog ran 12:04 UTC"
+        "at": "2026-11-21T13:13:49.046Z",
+        "action": "Lights on: 0 live products to check; health ok, watchdog ran 13:04 UTC"
       },
-      "actions": 40
+      "actions": 41
     },
     {
       "id": "security",
@@ -2229,6 +2229,27 @@
   },
   "log": [
     {
+      "at": "2026-11-21T13:13:49.091Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T13:13:49.046Z",
+      "agent": "devops",
+      "action": "Lights on: 0 live products to check; health ok, watchdog ran 13:04 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T13:13:48.996Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T12:13:40.495Z",
       "agent": "ops",
       "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
@@ -2766,28 +2787,7 @@
       "action": "Started: Researching demand evidence for kennel-book",
       "ventureId": "kennel-book",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T06:17:11.325Z",
-      "agent": "ceo",
-      "action": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides",
-      "ventureId": "kennel-book",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T06:17:11.285Z",
-      "agent": "research",
-      "action": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T06:17:11.234Z",
-      "agent": "research",
-      "action": "Started: Screen new ideas against the owner's 21 Nov screen: Rs 500+ a month paid, 1,000+ buyer searches, a named free gap",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 400
+  "logTotal": 403
 }
