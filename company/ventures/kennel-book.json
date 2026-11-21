@@ -62,10 +62,23 @@
   "stage": "validated",
   "stageSince": "2026-11-21T06:19:09.330Z",
   "createdAt": "2026-11-21T06:17:11.000Z",
-  "updatedAt": "2026-11-21T06:19:09.330Z",
+  "updatedAt": "2026-11-21T06:23:29.928Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
   "metrics": null,
-  "case": null
+  "case": {
+    "path": "cases/kennel-book.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 2,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 4
+    },
+    "total": 18,
+    "recommendation": "no-go"
+  }
 }

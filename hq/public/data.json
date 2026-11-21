@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T06:19:50.613Z",
+  "builtAt": "2026-11-21T06:23:36.942Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1071,7 +1071,7 @@
       "url": null,
       "nextAction": "Research: write cases/kennel-book.md as a sceptic, then Sizing, then CEO go or no-go. Evidence against: (1) Etsy kennel spreadsheets sell for USD 3 to 17 one time, so many small boarders may pay a few dollars once rather than a monthly fee (https://www.etsy.com/market/dog_boarding_spreadsheet); (2) DoggieDashboard is cited as the free pick for very small pet businesses (https://www.animalo.com/blog/best-pet-boarding-software-reddit-2026); (3) a near-identical product, Kennel Booking (UK), already sells a kennel board with who is in, arriving and leaving and tablets at GBP 29 to 49 a month, and is still offering founding-kennel free periods, so traction for this exact shape is unproven (https://www.kennelbooking.co.uk/); (4) the US category searches are owned by paid vendors and review sites; (5) the two Reddit signals come from search excerpts because Reddit could not be scraped directly.",
       "metrics": null,
-      "updatedAt": "2026-11-21T06:19:09.330Z",
+      "updatedAt": "2026-11-21T06:23:29.928Z",
       "evidenceCount": 4,
       "specPath": null,
       "lead": {
@@ -1089,7 +1089,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/kennel-book.md",
+        "total": 18,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "class-pass",
@@ -1228,15 +1232,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)",
-      "since": "2026-11-21T06:17:11.285Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)",
+      "since": "2026-11-21T06:23:29.964Z",
+      "ventureId": "kennel-book",
+      "ventureTitle": "Kennel Book",
       "last": {
-        "at": "2026-11-21T06:17:11.285Z",
-        "action": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)"
+        "at": "2026-11-21T06:23:29.964Z",
+        "action": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)"
       },
-      "actions": 39
+      "actions": 41
     },
     {
       "id": "data",
@@ -1720,6 +1724,16 @@
       }
     ],
     "kennel-book": [
+      {
+        "at": "2026-11-21T06:23:29.964Z",
+        "agent": "research",
+        "action": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)"
+      },
+      {
+        "at": "2026-11-21T06:20:28.739Z",
+        "agent": "research",
+        "action": "Started: Business case for kennel-book"
+      },
       {
         "at": "2026-11-21T06:19:38.833Z",
         "agent": "lead-kennel-book",
@@ -2232,6 +2246,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T06:23:29.964Z",
+      "agent": "research",
+      "action": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)",
+      "ventureId": "kennel-book",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T06:20:28.739Z",
+      "agent": "research",
+      "action": "Started: Business case for kennel-book",
+      "ventureId": "kennel-book",
+      "kind": "start"
+    },
     {
       "at": "2026-11-21T06:19:38.833Z",
       "agent": "lead-kennel-book",
@@ -2777,21 +2805,7 @@
       "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
       "ventureId": "stem-count",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:24:41.497Z",
-      "agent": "legal",
-      "action": "Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no advice, no brand copied)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:22:49.903Z",
-      "agent": "research",
-      "action": "Business case written: Lash Mapper scores 14 of 35, no-go, as Lash Dash, LashMap Studio and free Lash Map Lab already do it and the 33,100 volume was Etsy, not Google",
-      "ventureId": "lash-mapper",
-      "kind": "done"
     }
   ],
-  "logTotal": 326
+  "logTotal": 328
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-21T06:20:28.739Z",
+    "agent": "research",
+    "action": "Started: Business case for kennel-book",
+    "ventureId": "kennel-book",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T06:23:29.964Z",
+    "agent": "research",
+    "action": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)",
+    "ventureId": "kennel-book",
+    "kind": "done"
+  }
+]
