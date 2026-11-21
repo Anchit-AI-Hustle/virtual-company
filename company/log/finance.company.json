@@ -131,5 +131,12 @@
     "action": "Revenue so far Rs 0 (no live products, no payments)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T10:12:45.349Z",
+    "agent": "finance",
+    "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Revenue so far Rs 0 (no live products, no payments)",
+  "state": "done",
+  "task": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
   "ventureId": null,
-  "since": "2026-11-21T09:15:01.239Z"
+  "since": "2026-11-21T10:12:45.349Z"
 }

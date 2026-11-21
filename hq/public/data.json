@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T09:15:03.299Z",
+  "builtAt": "2026-11-21T10:12:47.973Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1204,16 +1204,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close: 10 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl still out of credits; Research now screens volumes with seodata.dev (20 free lookups a day)",
-      "since": "2026-11-21T09:15:01.416Z",
+      "state": "done",
+      "task": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)",
+      "since": "2026-11-21T10:12:41.468Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T09:15:01.385Z",
-        "action": "Close: 10 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl still out of credits; Research now screens volumes with seodata.dev (20 free lookups a day)"
+        "at": "2026-11-21T10:12:41.468Z",
+        "action": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)"
       },
-      "actions": 54
+      "actions": 56
     },
     {
       "id": "research",
@@ -1356,16 +1356,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Live check: HQ 200; no live products to check",
-      "since": "2026-11-21T09:15:00.974Z",
+      "state": "done",
+      "task": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
+      "since": "2026-11-21T10:12:41.505Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T09:12:16.423Z",
-        "action": "Live check: HQ 200; no live products to check"
+        "at": "2026-11-21T10:12:41.505Z",
+        "action": "No live products to check; HQ 200, data 200, CI success (watchdog.js)"
       },
-      "actions": 37
+      "actions": 38
     },
     {
       "id": "security",
@@ -1375,16 +1375,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-21T09:15:01.028Z",
+      "state": "done",
+      "task": "Secret scan of tracked files: no keys or tokens found",
+      "since": "2026-11-21T10:12:45.302Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T09:12:16.457Z",
-        "action": "Secret scan of the repo: no keys or tokens found"
+        "at": "2026-11-21T10:12:45.302Z",
+        "action": "Secret scan of tracked files: no keys or tokens found"
       },
-      "actions": 23
+      "actions": 25
     },
     {
       "id": "growth",
@@ -1432,16 +1432,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live ventures, no messages",
-      "since": "2026-11-21T09:15:01.192Z",
+      "state": "done",
+      "task": "No live ventures, no customer messages",
+      "since": "2026-11-21T10:12:45.391Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T09:12:16.518Z",
-        "action": "No live ventures, no messages"
+        "at": "2026-11-21T10:12:45.391Z",
+        "action": "No live ventures, no customer messages"
       },
-      "actions": 11
+      "actions": 12
     },
     {
       "id": "finance",
@@ -1451,16 +1451,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue so far Rs 0 (no live products, no payments)",
-      "since": "2026-11-21T09:15:01.239Z",
+      "state": "done",
+      "task": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
+      "since": "2026-11-21T10:12:45.349Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T09:12:16.487Z",
-        "action": "Revenue so far Rs 0 (no live products, no payments)"
+        "at": "2026-11-21T10:12:45.349Z",
+        "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)"
       },
-      "actions": 19
+      "actions": 20
     },
     {
       "id": "legal",
@@ -2229,6 +2229,55 @@
   },
   "log": [
     {
+      "at": "2026-11-21T10:12:45.391Z",
+      "agent": "support",
+      "action": "No live ventures, no customer messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T10:12:45.349Z",
+      "agent": "finance",
+      "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T10:12:45.302Z",
+      "agent": "security",
+      "action": "Secret scan of tracked files: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T10:12:41.547Z",
+      "agent": "security",
+      "action": "Started: Secret scan of tracked files",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-21T10:12:41.505Z",
+      "agent": "devops",
+      "action": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T10:12:41.468Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T10:12:41.418Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T09:15:01.385Z",
       "agent": "ops",
       "action": "Close: 10 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl still out of credits; Research now screens volumes with seodata.dev (20 free lookups a day)",
@@ -2738,56 +2787,7 @@
       "action": "Secret scan of tracked files: no live keys, tokens or private keys found",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T05:12:44.825Z",
-      "agent": "devops",
-      "action": "Lights on: HQ returns 200, watchdog checks pass, no live products to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T05:12:44.788Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog ran 05:03 UTC, no platform alerts, no owner rejects on decided issues, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 0 open ideas. Research screens ideas under ap-company-5 (paid tools charge for saved work, sharing and teams); CEO staffs any that pass",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T05:12:31.815Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T05:08:27.084Z",
-      "agent": "legal",
-      "action": "Started: Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T05:08:26.980Z",
-      "agent": "finance",
-      "action": "Owner is opening a Razorpay account himself (21 Nov 2026, 74% of onboarding done, website given as venture-hq-ten.vercel.app). Supersedes ap-2's wait. Next: Legal and Engineering build the public pages Razorpay checks before activation (terms, privacy, refunds and cancellations, contact, pricing) and Finance asks the owner to switch the Razorpay website to that page once it is live. Never ask for or store his KYC data or keys in the repo.",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:23:27.484Z",
-      "agent": "ops",
-      "action": "Close: 0 pods (no idea passed the screen), 25 bigger ideas screened, 4 old ideas killed with sourced reasons, ap-company-5 decided; revenue Rs 0, 0 live",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:23:27.448Z",
-      "agent": "ceo",
-      "action": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 372
+  "logTotal": 379
 }

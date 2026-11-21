@@ -208,5 +208,12 @@
     "action": "Live check: HQ 200; no live products to check",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T10:12:41.505Z",
+    "agent": "devops",
+    "action": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
