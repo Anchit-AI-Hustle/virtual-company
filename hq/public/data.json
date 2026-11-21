@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T14:12:43.263Z",
+  "builtAt": "2026-11-21T14:15:12.733Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1185,16 +1185,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No pod staffed: 0 ideas passed the owner's screen this cycle; about 100 screened today, none passed",
-      "since": "2026-11-21T13:15:46.418Z",
+      "state": "done",
+      "task": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
+      "since": "2026-11-21T14:15:10.226Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T13:15:34.946Z",
-        "action": "No pod staffed: 0 ideas passed the owner's screen this cycle; about 100 screened today, none passed"
+        "at": "2026-11-21T14:15:10.226Z",
+        "action": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle"
       },
-      "actions": 71
+      "actions": 72
     },
     {
       "id": "ops",
@@ -1223,16 +1223,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 16 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: grant tracking for nonprofits (grant tracker 480, grant tracking software 260, grant tracking spreadsheet 260, grant writing software 320, paid Instrumentl capterra.com/p/233384/Instrumentl/pricing/, but free grant management at zeffy.com/blog/grant-management-software and clockify.me/grant-management-software, free Airtable template airtable.com/templates/nonprofits-and-volunteering/expwzMEi50HFbV7TN/nonprofit-grant-tracker), status page (2,400 a month, free hosted status pages betterstack.com/better-uptime/status-page), nonprofit CRM (2,900, free CRMs at zeffy.com/blog/free-crm-for-nonprofits and givebutter.com/blog/best-free-crm-for-nonprofits), proposal software (1,300, CPC USD 41.63, free plans listed at capterra.com/proposal-management-software/s/free/, page one held by vendors), client portal software (1,300, client portal free 140, page one held by vendors). Out of scope: school management software India 3,600 (aimed at children's data). Dropped on volume: ATS for small business 480, yoga studio software 480, board meeting minutes software 480, recipe management software 390, wholesale order form 210, warehouse software small business 210, open house sign in app 140, tuition management app India 0, CA firm software India 0, wedding planner software 0. Firecrawl credits ran out this cycle, so free-gap checks used web search",
-      "since": "2026-11-21T13:15:48.469Z",
+      "state": "done",
+      "task": "Screened 26 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: home inspection software US (home inspector software 2,900, home inspection software 2,400, software for home inspectors 1,300, paid Spectora USD 109 a month spectora.com/pricing, but HomeInspector.com by Reggora is free with unlimited reports, scheduling and payments housingwire.com/articles/reggora-launches-homeinspector-com-as-free-service/), HOA management US (homeowners association management software 3,600, hoa management software 2,900, CPC USD 48, but KindHOA free plan getapp.com/all-software/a/kindhoa/ and Innago and Bitrix24 free capterra.com/hoa-software/s/free/), church management US (5,400, but ChMeetings free forever up to 50 people chmeetings.com/pricing), real estate CRM India (2,400, but Bigin free CRM bigin.com/articles/free-CRM-for-real-estate.html and free tiers at capterra.in/directory/30926/real-estate-crm/pricing/free/software), inventory software India (5,400, crowded by free tiers and repeats earlier screens). Repeat of an earlier screen: construction management India 1,300 (Powerplay lists no free plan, capterra.in/software/1036292/powerplay, but page one is vendors). Dropped on volume: WhatsApp CRM India 2,400 is mostly free-intent and integration terms with whatsapp crm software 320, quotation software India 590, staff attendance app India 320 (attendance app 5,400 is employee check-in intent), payroll small business India 390, HR software small business India 480, travel agency software India 480, contractor app India 210, home inspection report template US 590, hoa accounting software US 880, dog grooming software US 590, contractor estimating software US 720, punch list app 390, bid management 320, tutoring software 210, tattoo booking 170, music lesson scheduling 70, property inspection app 260, apartment management software India 0",
+      "since": "2026-11-21T14:15:10.184Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T13:15:34.901Z",
-        "action": "Screened 16 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: grant tracking for nonprofits (grant tracker 480, grant tracking software 260, grant tracking spreadsheet 260, grant writing software 320, paid Instrumentl capterra.com/p/233384/Instrumentl/pricing/, but free grant management at zeffy.com/blog/grant-management-software and clockify.me/grant-management-software, free Airtable template airtable.com/templates/nonprofits-and-volunteering/expwzMEi50HFbV7TN/nonprofit-grant-tracker), status page (2,400 a month, free hosted status pages betterstack.com/better-uptime/status-page), nonprofit CRM (2,900, free CRMs at zeffy.com/blog/free-crm-for-nonprofits and givebutter.com/blog/best-free-crm-for-nonprofits), proposal software (1,300, CPC USD 41.63, free plans listed at capterra.com/proposal-management-software/s/free/, page one held by vendors), client portal software (1,300, client portal free 140, page one held by vendors). Out of scope: school management software India 3,600 (aimed at children's data). Dropped on volume: ATS for small business 480, yoga studio software 480, board meeting minutes software 480, recipe management software 390, wholesale order form 210, warehouse software small business 210, open house sign in app 140, tuition management app India 0, CA firm software India 0, wedding planner software 0. Firecrawl credits ran out this cycle, so free-gap checks used web search"
+        "at": "2026-11-21T14:15:10.184Z",
+        "action": "Screened 26 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: home inspection software US (home inspector software 2,900, home inspection software 2,400, software for home inspectors 1,300, paid Spectora USD 109 a month spectora.com/pricing, but HomeInspector.com by Reggora is free with unlimited reports, scheduling and payments housingwire.com/articles/reggora-launches-homeinspector-com-as-free-service/), HOA management US (homeowners association management software 3,600, hoa management software 2,900, CPC USD 48, but KindHOA free plan getapp.com/all-software/a/kindhoa/ and Innago and Bitrix24 free capterra.com/hoa-software/s/free/), church management US (5,400, but ChMeetings free forever up to 50 people chmeetings.com/pricing), real estate CRM India (2,400, but Bigin free CRM bigin.com/articles/free-CRM-for-real-estate.html and free tiers at capterra.in/directory/30926/real-estate-crm/pricing/free/software), inventory software India (5,400, crowded by free tiers and repeats earlier screens). Repeat of an earlier screen: construction management India 1,300 (Powerplay lists no free plan, capterra.in/software/1036292/powerplay, but page one is vendors). Dropped on volume: WhatsApp CRM India 2,400 is mostly free-intent and integration terms with whatsapp crm software 320, quotation software India 590, staff attendance app India 320 (attendance app 5,400 is employee check-in intent), payroll small business India 390, HR software small business India 480, travel agency software India 480, contractor app India 210, home inspection report template US 590, hoa accounting software US 880, dog grooming software US 590, contractor estimating software US 720, punch list app 390, bid management 320, tutoring software 210, tattoo booking 170, music lesson scheduling 70, property inspection app 260, apartment management software India 0"
       },
-      "actions": 57
+      "actions": 59
     },
     {
       "id": "data",
@@ -2229,6 +2229,27 @@
   },
   "log": [
     {
+      "at": "2026-11-21T14:15:10.226Z",
+      "agent": "ceo",
+      "action": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T14:15:10.184Z",
+      "agent": "research",
+      "action": "Screened 26 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: home inspection software US (home inspector software 2,900, home inspection software 2,400, software for home inspectors 1,300, paid Spectora USD 109 a month spectora.com/pricing, but HomeInspector.com by Reggora is free with unlimited reports, scheduling and payments housingwire.com/articles/reggora-launches-homeinspector-com-as-free-service/), HOA management US (homeowners association management software 3,600, hoa management software 2,900, CPC USD 48, but KindHOA free plan getapp.com/all-software/a/kindhoa/ and Innago and Bitrix24 free capterra.com/hoa-software/s/free/), church management US (5,400, but ChMeetings free forever up to 50 people chmeetings.com/pricing), real estate CRM India (2,400, but Bigin free CRM bigin.com/articles/free-CRM-for-real-estate.html and free tiers at capterra.in/directory/30926/real-estate-crm/pricing/free/software), inventory software India (5,400, crowded by free tiers and repeats earlier screens). Repeat of an earlier screen: construction management India 1,300 (Powerplay lists no free plan, capterra.in/software/1036292/powerplay, but page one is vendors). Dropped on volume: WhatsApp CRM India 2,400 is mostly free-intent and integration terms with whatsapp crm software 320, quotation software India 590, staff attendance app India 320 (attendance app 5,400 is employee check-in intent), payroll small business India 390, HR software small business India 480, travel agency software India 480, contractor app India 210, home inspection report template US 590, hoa accounting software US 880, dog grooming software US 590, contractor estimating software US 720, punch list app 390, bid management 320, tutoring software 210, tattoo booking 170, music lesson scheduling 70, property inspection app 260, apartment management software India 0",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T14:15:10.137Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: home inspection, HOA, church, real estate CRM India, WhatsApp CRM, quotation, attendance, payroll, US trade software",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T14:12:40.956Z",
       "agent": "finance",
       "action": "Ledger has no entries: revenue Rs 0, spend Rs 0",
@@ -2766,28 +2787,7 @@
       "action": "Secret scan clean: no keys or tokens in the repo",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T07:13:37.372Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T07:13:37.334Z",
-      "agent": "devops",
-      "action": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T07:13:06.092Z",
-      "agent": "devops",
-      "action": "Blocked: HQ deploy refused: Vercel free plan hit its 100 deployments a day limit (402 api-deployments-free-per-day, retry after 24h). HQ books stay current from GitHub; page deploy retried next cycle after the limit resets",
-      "ventureId": null,
-      "kind": "blocked"
     }
   ],
-  "logTotal": 413
+  "logTotal": 416
 }

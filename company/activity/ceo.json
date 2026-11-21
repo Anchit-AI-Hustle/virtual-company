@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No pod staffed: 0 ideas passed the owner's screen this cycle; about 100 screened today, none passed",
+  "state": "done",
+  "task": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
   "ventureId": null,
-  "since": "2026-11-21T13:15:46.418Z"
+  "since": "2026-11-21T14:15:10.226Z"
 }
