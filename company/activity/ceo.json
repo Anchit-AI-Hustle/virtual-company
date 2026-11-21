@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2",
-  "ventureId": "fleet-log",
-  "since": "2026-11-21T05:23:18.888Z"
+  "ventureId": null,
+  "since": "2026-11-21T05:23:50.057Z"
 }

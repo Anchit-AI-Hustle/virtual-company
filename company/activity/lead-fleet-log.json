@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Found 4 sourced demand signals (Reddit ask, Etsy paid trackers, Simply Fleet and Fleetio price pages); moved fleet-log to validated",
-  "ventureId": "fleet-log",
-  "since": "2026-11-21T05:17:52.207Z"
+  "ventureId": null,
+  "since": "2026-11-21T05:23:50.190Z"
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T05:23:25.837Z",
+  "builtAt": "2026-11-21T05:23:52.675Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1148,11 +1148,11 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2",
-      "since": "2026-11-21T05:23:18.888Z",
-      "ventureId": "fleet-log",
-      "ventureTitle": "Fleet Service Log",
+      "since": "2026-11-21T05:23:50.057Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-21T05:23:18.888Z",
         "action": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2"
@@ -1167,16 +1167,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: health ok, watchdog ran 05:03 UTC, no platform alerts, no owner rejects on decided issues, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 0 open ideas. Research screens ideas under ap-company-5 (paid tools charge for saved work, sharing and teams); CEO staffs any that pass",
-      "since": "2026-11-21T05:12:44.788Z",
+      "state": "idle",
+      "task": "Close: fleet-log screened in, validated with 4 sourced signals, then no-go at the case (19 of 35, distribution 2: search owned by Fleetio, MaintainX and FMCSA, free tiers cover small fleets). 10 ideas screened today this cycle, 0 open, 0 pods, revenue Rs 0, 0 live",
+      "since": "2026-11-21T05:23:50.292Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T05:12:44.788Z",
-        "action": "Standup: health ok, watchdog ran 05:03 UTC, no platform alerts, no owner rejects on decided issues, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 0 open ideas. Research screens ideas under ap-company-5 (paid tools charge for saved work, sharing and teams); CEO staffs any that pass"
+        "at": "2026-11-21T05:23:49.981Z",
+        "action": "Close: fleet-log screened in, validated with 4 sourced signals, then no-go at the case (19 of 35, distribution 2: search owned by Fleetio, MaintainX and FMCSA, free tiers cover small fleets). 10 ideas screened today this cycle, 0 open, 0 pods, revenue Rs 0, 0 live"
       },
-      "actions": 41
+      "actions": 42
     },
     {
       "id": "research",
@@ -1186,11 +1186,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger",
-      "since": "2026-11-21T05:22:09.692Z",
-      "ventureId": "fleet-log",
-      "ventureTitle": "Fleet Service Log",
+      "since": "2026-11-21T05:23:50.341Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-21T05:22:09.692Z",
         "action": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger"
@@ -1319,9 +1319,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Lights on: HQ returns 200, watchdog checks pass, no live products to check",
-      "since": "2026-11-21T05:12:44.825Z",
+      "since": "2026-11-21T05:23:50.104Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1338,9 +1338,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of tracked files: no live keys, tokens or private keys found",
-      "since": "2026-11-21T05:12:44.863Z",
+      "since": "2026-11-21T05:23:50.390Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1414,9 +1414,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Books: ledger empty, revenue Rs 0 confirmed, no live product earning",
-      "since": "2026-11-21T05:12:44.897Z",
+      "since": "2026-11-21T05:23:50.146Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1433,9 +1433,9 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "working",
+      "state": "idle",
       "task": "Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "since": "2026-11-21T05:08:27.084Z",
+      "since": "2026-11-21T05:23:50.241Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2150,6 +2150,13 @@
   },
   "log": [
     {
+      "at": "2026-11-21T05:23:49.981Z",
+      "agent": "ops",
+      "action": "Close: fleet-log screened in, validated with 4 sourced signals, then no-go at the case (19 of 35, distribution 2: search owned by Fleetio, MaintainX and FMCSA, free tiers cover small fleets). 10 ideas screened today this cycle, 0 open, 0 pods, revenue Rs 0, 0 live",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T05:23:18.888Z",
       "agent": "ceo",
       "action": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2",
@@ -2701,14 +2708,7 @@
       "action": "Close: lash-mapper validated; next cycle business case, sizing and CEO go decision",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-20T21:13:52.235Z",
-      "agent": "research",
-      "action": "Screened 3 new ideas (lash-mapper 13, formula-book 12, litter-log 12); dropped a tumbler template idea a free tool already covers",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 310
+  "logTotal": 311
 }
