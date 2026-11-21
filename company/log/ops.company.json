@@ -341,5 +341,12 @@
     "action": "Standup: DevOps fixed the HQ page alert (deploy READY); watchdog 08:04; no owner rejects on decided issues 16 and 18, no owner-chat; check green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch; Firecrawl may still be out of credits until 22:14 UTC",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T08:14:55.207Z",
+    "agent": "ops",
+    "action": "Close: HQ page alert fixed (deploy READY), lights on, no secrets, revenue Rs 0, 0 live, pods empty. Blocked: Research on Firecrawl credits until about 22:14 UTC",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

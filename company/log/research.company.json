@@ -180,5 +180,26 @@
     "action": "Blocked: Firecrawl credits ran out (DataForSEO volumes and web search), daily allowance resets 22:14 UTC; screening resumes then",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-21T08:14:55.036Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch: driving school, snow removal, catering, bar inventory and 50 more trade terms",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T08:14:55.084Z",
+    "agent": "research",
+    "action": "Pre-screen by web search (21 Nov): bar inventory dropped, free apps already do it (Backbar https://apps.apple.com/us/app/backbar/id1461796151, BarDog https://apps.apple.com/us/app/bardog/id1266482919). Driving school, snow removal and catering queued for the volume check: page one for each is held by Capterra, GetApp and vendor lists (capterra.com/p/196541/Schedule-2-Drive, upperinc.com free snow removal post, capterra.com/catering-software/s/free), the same distribution risk that stopped kennel-book",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T08:14:55.120Z",
+    "agent": "research",
+    "action": "Blocked: Firecrawl still out of credits (DataForSEO volume call for 60 trade terms refused, request b0b54786); daily allowance resets about 22:14 UTC, volume check runs then",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]

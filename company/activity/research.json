@@ -1,6 +1,6 @@
 {
   "state": "blocked",
-  "task": "Firecrawl credits ran out (DataForSEO volumes and web search), daily allowance resets 22:14 UTC; screening resumes then",
+  "task": "Firecrawl still out of credits (DataForSEO volume call for 60 trade terms refused, request b0b54786); daily allowance resets about 22:14 UTC, volume check runs then",
   "ventureId": null,
-  "since": "2026-11-21T07:15:16.773Z"
+  "since": "2026-11-21T08:14:55.120Z"
 }
