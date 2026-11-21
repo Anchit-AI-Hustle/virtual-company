@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-21T17:20:33.020Z",
+    "agent": "lead-rent-ledger",
+    "action": "Started: Gathering sourced demand evidence for a free online rent ledger",
+    "ventureId": "rent-ledger",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T17:21:53.781Z",
+    "agent": "lead-rent-ledger",
+    "action": "4 sourced demand signals found (2 BiggerPockets threads, TurboTenant and Stessa price pages); moved to validated",
+    "ventureId": "rent-ledger",
+    "kind": "done"
+  }
+]

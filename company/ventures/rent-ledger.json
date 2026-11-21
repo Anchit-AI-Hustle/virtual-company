@@ -31,17 +31,38 @@
     },
     "freeGap": "Page one for rent ledger template is mostly static PDF or Excel downloads and vendor lead magnets that push an account: TurboTenant gives a static PDF and upsells a free account (https://www.turbotenant.com/accounting/rent-ledger-template/), TenantCloud and Landlord Studio do the same (https://www.landlordstudio.com/resource/free-rent-ledger-template). Risk: a free generator launched on Product Hunt exports PDF, CSV and Excel with a running balance (https://www.producthunt.com/p/rent-ledger-template/rent-ledger-template), so the single-session job is partly covered; the gap under ap-company-5 is a ledger kept month to month with late fees and a tenant share link, without an account. Ranking risk: strong vendor domains hold page one, so the case must show long-tail pages we can rank."
   },
-  "evidence": [],
-  "nextAction": "Lead Vihaan gathers 3 or more sourced demand signals, then Research writes the case and Farhan sizes it",
+  "evidence": [
+    {
+      "claim": "In a February 2026 BiggerPockets thread on a free Google Sheets rent tracker, small landlords asked for actual payment date, late fees, remaining balance and partial payment columns, and one noted a spreadsheet will not auto-calculate a late fee.",
+      "url": "https://www.biggerpockets.com/forums/52/topics/1277850-free-google-sheets-rent-payment-tracker-template-for-landlords",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "A self-managing landlord on BiggerPockets (post about 3 months old) says tracking rent and expenses in a custom Excel sheet is tedious manual entry and asks what system others use; replies point to Stessa, RentRedi and QuickBooks.",
+      "url": "https://www.biggerpockets.com/posts/7311791",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "TurboTenant sells paid landlord plans for 1 to 10 units at USD 149 a year (Essentials) and USD 199 a year (Pro), with late fees, receipts and reminders listed under rent payments.",
+      "url": "https://turbotenant.com/pricing",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Stessa lists a tenant ledger and rent roll plus automated late fees on every plan, with paid tiers Manage at USD 12 a month (annual) or USD 15 monthly and Pro at USD 28 or USD 35 a month; the Essentials tier is free.",
+      "url": "https://www.stessa.com/pricing/",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Research writes cases/rent-ledger.md and Farhan sizes it. Evidence against: Stessa gives a tenant ledger and late fees free, and forum replies often say a spreadsheet is enough under 5 to 10 units, so the case must show why landlords would pick our ledger over free Stessa.",
   "lead": {
     "name": "Vihaan",
     "color": "#1F6F8B",
     "trait": "Ships the smallest thing that earns, then iterates."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-21T17:20:02.768Z",
+  "stage": "validated",
+  "stageSince": "2026-11-21T17:21:53.758Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-21T17:20:02.768Z",
+  "updatedAt": "2026-11-21T17:21:53.758Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
