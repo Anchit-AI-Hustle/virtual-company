@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Screened 17 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: roofing estimates US (roofing software 1,000, roofing company software 590, roofing estimating software 320, api.seodata.dev/v1/keyword?q=roofing+software&country=us, but Roofr has a free plan roofr.com/products, Thryv free estimate generator thryv.com/free-tools/estimate-generator/roofing-business/, STACK free roof estimating stackct.com/blog/free-roof-estimating-software-for-contractors-stack/, free plans listed at capterra.com/roofing-software/s/free/), photographer client galleries US (best online gallery for photographers 1,900, free tiers common and page one held by vendors). Dropped on volume: society management software India 170 (app for society 1,600 is resident app intent), packing list format India 880 (free template intent), moving company software US 590, export documentation software India 210, milk collection software India 170, tree service software US 110, window cleaning software US 90, food truck software US 50 (POS terms are hardware intent), sign shop software US 50, advocate diary app India 0, dairy management software India 0, insurance agent CRM India 0, housing society software India 0. seodata.dev hit its free rate limit mid-batch, so photography studio software was not measured",
   "ventureId": null,
-  "since": "2026-11-21T15:14:33.618Z"
+  "since": "2026-11-21T15:14:45.630Z"
 }
