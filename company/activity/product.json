@@ -2,5 +2,5 @@
   "state": "idle",
   "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
   "ventureId": null,
-  "since": "2026-11-21T15:14:45.790Z"
+  "since": "2026-11-21T16:13:55.323Z"
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T16:13:45.637Z",
+  "builtAt": "2026-11-21T16:13:58.078Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1185,9 +1185,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Pods stay empty: 0 of 20 new ideas cleared the screen (paid Rs 500+ a month, 1,000+ searches, no free tool closing the gap), so no venture is staffed this cycle",
-      "since": "2026-11-21T16:13:43.550Z",
+      "since": "2026-11-21T16:13:54.981Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1204,9 +1204,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Standup 16:12 UTC: health ok, watchdog ran 16:05, no platform alerts, no owner-chat or reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
-      "since": "2026-11-21T16:12:32.968Z",
+      "since": "2026-11-21T16:13:55.056Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1223,9 +1223,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 20 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap and page one is held by vendors and directories: auto repair shop software US (auto repair shop software 4,400, CPC USD 34.95, api.seodata.dev/v1/keyword?q=auto+repair+shop+software&country=us, but free plans listed at capterra.com/auto-repair-software/s/free/ and g2.com/categories/auto-shop-management/free, free mechanic invoice template shopview.com/mechanic-invoice-template), car rental software US (3,600, CPC USD 20.62, but free plans listed at capterra.com/car-rental-software/s/free/ and getapp.com/retail-consumer-services-software/car-rental/p/free), SOP software US (1,300, but free tiers at g2.com/categories/standard-operating-procedures/free and scribe.com/library/free-sop-software). Repeats of earlier screens or overlaps: fleet management software India 1,000 (overlaps killed fleet-log), school management software India 3,600 and gym management software India 1,000 (school and gym niches screened earlier, free tiers common). Dropped on volume: car rental software India 390, courier software India 210, electrician software US 260, locksmith software US 260, appliance repair software US 210, funeral home software US 210, auto body shop software US 50, kirana billing software India 0. seodata.dev hit its free rate limit mid-batch, so OKR software, timesheet app, bakery software, tow truck software and transport management software India were not measured",
-      "since": "2026-11-21T16:13:43.520Z",
+      "since": "2026-11-21T16:13:55.136Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1244,7 +1244,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live venture counts to read",
-      "since": "2026-11-21T15:14:45.683Z",
+      "since": "2026-11-21T16:13:55.199Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1263,7 +1263,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-21T15:14:45.741Z",
+      "since": "2026-11-21T16:13:55.260Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1282,7 +1282,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-21T15:14:45.790Z",
+      "since": "2026-11-21T16:13:55.323Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1301,7 +1301,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-21T15:14:45.831Z",
+      "since": "2026-11-21T16:13:55.380Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1320,7 +1320,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-21T15:14:45.870Z",
+      "since": "2026-11-21T16:13:55.445Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1339,7 +1339,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-21T15:14:45.909Z",
+      "since": "2026-11-21T16:13:55.509Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1358,7 +1358,7 @@
       "charter": "agents/devops.md",
       "state": "idle",
       "task": "Lights on: HQ returns 200, no live products to check",
-      "since": "2026-11-21T15:14:45.954Z",
+      "since": "2026-11-21T16:13:55.579Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1377,7 +1377,7 @@
       "charter": "agents/security.md",
       "state": "idle",
       "task": "Secret scan: no keys or tokens found in tracked files",
-      "since": "2026-11-21T15:14:46.006Z",
+      "since": "2026-11-21T16:13:55.651Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1396,7 +1396,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-21T15:14:46.046Z",
+      "since": "2026-11-21T16:13:55.727Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1415,7 +1415,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-21T15:14:46.086Z",
+      "since": "2026-11-21T16:13:55.798Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1434,7 +1434,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T15:14:46.132Z",
+      "since": "2026-11-21T16:13:55.868Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1453,7 +1453,7 @@
       "charter": "agents/finance.md",
       "state": "idle",
       "task": "Ledger has no entries: revenue Rs 0, spend Rs 0",
-      "since": "2026-11-21T15:14:46.184Z",
+      "since": "2026-11-21T16:13:55.943Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1472,7 +1472,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "since": "2026-11-21T15:14:46.231Z",
+      "since": "2026-11-21T16:13:56.017Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1491,7 +1491,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-21T15:14:46.270Z",
+      "since": "2026-11-21T16:13:56.088Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
