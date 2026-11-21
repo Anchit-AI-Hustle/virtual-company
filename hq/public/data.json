@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T10:15:06.622Z",
+  "builtAt": "2026-11-21T10:15:13.206Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1185,9 +1185,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Pods stay empty: 0 open ideas pass the owner's 21 Nov screen after 13 more screened this cycle; no idea is staffed without a passing sourced screen. Research screens the next batch when Firecrawl credits return at about 22:14 UTC",
-      "since": "2026-11-21T10:14:59.486Z",
+      "since": "2026-11-21T10:15:10.759Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1204,16 +1204,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)",
-      "since": "2026-11-21T10:12:41.468Z",
+      "state": "idle",
+      "task": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl credits return about 22:14 UTC",
+      "since": "2026-11-21T10:15:11.050Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T10:12:41.468Z",
-        "action": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)"
+        "at": "2026-11-21T10:15:11.009Z",
+        "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl credits return about 22:14 UTC"
       },
-      "actions": 56
+      "actions": 57
     },
     {
       "id": "research",
@@ -1223,9 +1223,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: IFTA fuel tax report (ifta calculator 1,300 plus free ifta calculator 480 a month, but free calculators at trucklogics.com/ifta-calculator, otrucking.com/tools/ifta-calculator, invoicer.ai/tools/ifta-fuel-tax-calculator), dynamic QR codes (2,400 a month, free no-signup editable codes at mobirise.com/qr/dynamic-qr-code-generator.html and hovercode.com/free-qr-code-generator), AIA pay applications (aia billing 2,400, aia invoice 1,900, but free G702 and G703 templates at servicetitan.com/templates/subcontractor/application-for-payment and enerpize.com/templates/AIA-G702-G703, page one held by Trimble and Procore, and the AIA form names are trademarked), real estate CRM India (2,400, but Zoho and HubSpot free CRM plans). Dropped on volume: towing software 320, moving company software 590, HACCP software 320, construction daily report app 110, roofing estimate software 260, commission tracking software 390 (commission calculator 6,600 is free calculator intent), COI tracking 170, cattle management software 260, milk collection software India 170, society maintenance software India 0, poultry farm software India 0",
-      "since": "2026-11-21T10:14:59.447Z",
+      "since": "2026-11-21T10:15:10.797Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1242,9 +1242,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture counts to read",
-      "since": "2026-11-21T10:14:59.531Z",
+      "since": "2026-11-21T10:15:10.834Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1356,9 +1356,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
-      "since": "2026-11-21T10:12:41.505Z",
+      "since": "2026-11-21T10:15:10.870Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1375,9 +1375,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of tracked files: no keys or tokens found",
-      "since": "2026-11-21T10:12:45.302Z",
+      "since": "2026-11-21T10:15:10.904Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1432,9 +1432,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T10:12:45.391Z",
+      "since": "2026-11-21T10:15:10.973Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1451,9 +1451,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
-      "since": "2026-11-21T10:12:45.349Z",
+      "since": "2026-11-21T10:15:10.940Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2229,6 +2229,13 @@
   },
   "log": [
     {
+      "at": "2026-11-21T10:15:11.009Z",
+      "agent": "ops",
+      "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl credits return about 22:14 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T10:14:59.531Z",
       "agent": "data",
       "action": "No live venture counts to read",
@@ -2780,14 +2787,7 @@
       "action": "Staffed fleet-log into validating with lead Arnav: only idea of 9 to clear the owner's screen (Rs 4,714 a month paid for 10 vans on Fleetio, 8,350 searches a month); the case must still prove history and driver links are worth paying for",
       "ventureId": "fleet-log",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T05:16:17.108Z",
-      "agent": "research",
-      "action": "Screened 9 save, share and team ideas under ap-company-5 (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free plan that closes the gap: HOA dues and violations (KindHOA free for unlimited homes, kindhoa.com/blog/best-free-hoa-management-software), PG and hostel rent (PGHandle free plan, RentOk free essentials; ManageMyPG single PG Rs 399 under the Rs 500 bar), gym fees India (GymMate 100 percent free, gymmate.co.in), choir management (ChoirMate free plan), job application tracker (Huntr and Teal free tiers), church software (free tiers). Passed: fleet-log, small fleet maintenance log (8,350 buyer searches a month, Fleetio USD 5 a vehicle with no free plan, Simply Fleet free stops at 5 vehicles and 6 months of data)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 383
+  "logTotal": 384
 }
