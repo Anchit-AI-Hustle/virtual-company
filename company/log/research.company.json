@@ -257,5 +257,19 @@
     "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: rent management app India (rent manage app 1,000, rental management app 1,000, api.seodata.dev/v1/keyword?q=rent+management+app&country=in, but free landlord apps RentOk play and app store apps.apple.com/in/app/rentenpe/id6473885015, play.google.com/store/apps/details?id=com.tenantmanager, and NoBroker rent collection nobroker.in/prophub/property-management/rental-collection-service/; buyer intent is app store installs), lawn care software US (880 plus lawn care business software 590, CPC USD 49.55, but LawnManage free plan lawnandlandscape.com/news/lawnmanage-opens-new-free-plan and free plans listed at capterra.com/lawn-care-software/s/free/, page one held by Capterra, GetApp and Jobber). Interior design software India 2,900 is free 3D home design intent (3d home design online free 5,400). Dropped on volume: property management software India 1,300 with vendor page one, event management software India 720, CA practice management India 390, garage management software India 390, petrol pump software India 480, pressure washing software US 210, coaching institute software India 0, tiffin service software India 0, cable TV billing India 0, bookkeeping client portal US 0",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T13:15:34.856Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: proposals, status pages, client portals, grant tracking, nonprofit CRM, school software, board minutes, yoga, ATS",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T13:15:34.901Z",
+    "agent": "research",
+    "action": "Screened 16 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: grant tracking for nonprofits (grant tracker 480, grant tracking software 260, grant tracking spreadsheet 260, grant writing software 320, paid Instrumentl capterra.com/p/233384/Instrumentl/pricing/, but free grant management at zeffy.com/blog/grant-management-software and clockify.me/grant-management-software, free Airtable template airtable.com/templates/nonprofits-and-volunteering/expwzMEi50HFbV7TN/nonprofit-grant-tracker), status page (2,400 a month, free hosted status pages betterstack.com/better-uptime/status-page), nonprofit CRM (2,900, free CRMs at zeffy.com/blog/free-crm-for-nonprofits and givebutter.com/blog/best-free-crm-for-nonprofits), proposal software (1,300, CPC USD 41.63, free plans listed at capterra.com/proposal-management-software/s/free/, page one held by vendors), client portal software (1,300, client portal free 140, page one held by vendors). Out of scope: school management software India 3,600 (aimed at children's data). Dropped on volume: ATS for small business 480, yoga studio software 480, board meeting minutes software 480, recipe management software 390, wholesale order form 210, warehouse software small business 210, open house sign in app 140, tuition management app India 0, CA firm software India 0, wedding planner software 0. Firecrawl credits ran out this cycle, so free-gap checks used web search",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

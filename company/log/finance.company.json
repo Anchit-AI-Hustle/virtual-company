@@ -138,5 +138,12 @@
     "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T13:15:34.815Z",
+    "agent": "finance",
+    "action": "Books: revenue Rs 0 confirmed, 0 live products; FX unchanged from 14 Nov record",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
