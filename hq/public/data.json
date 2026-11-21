@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T05:18:09.022Z",
+  "builtAt": "2026-11-21T05:22:24.652Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -806,7 +806,7 @@
       "url": null,
       "nextAction": "Research writes the business case; sizing sizes it; CEO decides. Evidence against: replies in the Reddit thread steer small fleets to a free spreadsheet or a my-garage app, and the asker settled on a manual solution; LubeLogger is a free open source self-hosted log with many vehicles, service records and reminders (https://lubelogger.com/); Fleetio gives free spreadsheet templates (https://www.fleetio.com/tools); Etsy templates cost USD 2 to 30 once, so the paid tier must beat a one-off sheet on driver links, reminders and history.",
       "metrics": null,
-      "updatedAt": "2026-11-21T05:17:52.170Z",
+      "updatedAt": "2026-11-21T05:22:05.786Z",
       "evidenceCount": 4,
       "specPath": null,
       "lead": {
@@ -824,7 +824,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/fleet-log.md",
+        "total": 19,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "csv-qbo",
@@ -1186,15 +1190,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 9 save, share and team ideas under ap-company-5 (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free plan that closes the gap: HOA dues and violations (KindHOA free for unlimited homes, kindhoa.com/blog/best-free-hoa-management-software), PG and hostel rent (PGHandle free plan, RentOk free essentials; ManageMyPG single PG Rs 399 under the Rs 500 bar), gym fees India (GymMate 100 percent free, gymmate.co.in), choir management (ChoirMate free plan), job application tracker (Huntr and Teal free tiers), church software (free tiers). Passed: fleet-log, small fleet maintenance log (8,350 buyer searches a month, Fleetio USD 5 a vehicle with no free plan, Simply Fleet free stops at 5 vehicles and 6 months of data)",
-      "since": "2026-11-21T05:16:17.108Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger",
+      "since": "2026-11-21T05:22:09.692Z",
+      "ventureId": "fleet-log",
+      "ventureTitle": "Fleet Service Log",
       "last": {
-        "at": "2026-11-21T05:16:17.108Z",
-        "action": "Screened 9 save, share and team ideas under ap-company-5 (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free plan that closes the gap: HOA dues and violations (KindHOA free for unlimited homes, kindhoa.com/blog/best-free-hoa-management-software), PG and hostel rent (PGHandle free plan, RentOk free essentials; ManageMyPG single PG Rs 399 under the Rs 500 bar), gym fees India (GymMate 100 percent free, gymmate.co.in), choir management (ChoirMate free plan), job application tracker (Huntr and Teal free tiers), church software (free tiers). Passed: fleet-log, small fleet maintenance log (8,350 buyer searches a month, Fleetio USD 5 a vehicle with no free plan, Simply Fleet free stops at 5 vehicles and 6 months of data)"
+        "at": "2026-11-21T05:22:09.692Z",
+        "action": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger"
       },
-      "actions": 36
+      "actions": 37
     },
     {
       "id": "data",
@@ -1592,6 +1596,11 @@
       }
     ],
     "fleet-log": [
+      {
+        "at": "2026-11-21T05:22:09.692Z",
+        "agent": "research",
+        "action": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger"
+      },
       {
         "at": "2026-11-21T05:17:52.207Z",
         "agent": "lead-fleet-log",
@@ -2154,6 +2163,13 @@
   },
   "log": [
     {
+      "at": "2026-11-21T05:22:09.692Z",
+      "agent": "research",
+      "action": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger",
+      "ventureId": "fleet-log",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T05:17:52.207Z",
       "agent": "lead-fleet-log",
       "action": "Found 4 sourced demand signals (Reddit ask, Etsy paid trackers, Simply Fleet and Fleetio price pages); moved fleet-log to validated",
@@ -2705,14 +2721,7 @@
       "action": "Started: Validating lash-mapper: searching for independent demand signals",
       "ventureId": "lash-mapper",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-20T21:11:22.957Z",
-      "agent": "ceo",
-      "action": "Staffed lash-mapper (13/20, best screened idea) with lead Ira; other ideas below the channel screen stay unstaffed (ap-company-1)",
-      "ventureId": "lash-mapper",
-      "kind": "done"
     }
   ],
-  "logTotal": 307
+  "logTotal": 308
 }

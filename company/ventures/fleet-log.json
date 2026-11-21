@@ -63,9 +63,23 @@
   "stage": "validated",
   "stageSince": "2026-11-21T05:17:52.170Z",
   "createdAt": "2026-11-21T05:16:04.416Z",
-  "updatedAt": "2026-11-21T05:17:52.170Z",
+  "updatedAt": "2026-11-21T05:22:05.786Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "case": {
+    "path": "cases/fleet-log.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 4
+    },
+    "total": 19,
+    "recommendation": "no-go"
+  }
 }
