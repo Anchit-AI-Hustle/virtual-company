@@ -32,17 +32,38 @@
     },
     "freeGap": "The only free plan found, Simply Fleet Free, needs an account and stops at 5 vehicles, 3 users and 6 months of stored data (https://www.simplyfleet.app/pricing); Fleetio has a trial only. Fleetio free tools are downloadable spreadsheets (https://www.fleetio.com/tools), not a saved, shareable log. Gap: a no-account phone log that keeps full service history and gives drivers an inspection link. Risk: no-account alone is not a reason to pay (golf-league precedent); the paid tier must sell history, many vehicles and driver links."
   },
-  "evidence": [],
-  "nextAction": "Lead gathers 3+ sourced demand signals (people asking for or paying for small fleet maintenance logs, complaints about limits of free plans); then Research writes the sceptical case",
+  "evidence": [
+    {
+      "claim": "A UK landscaping business with 8 cars and vans asked Reddit for a simple tool to track service, maintenance, mileage and running costs, saying every fleet platform found was aimed at much bigger businesses with full time fleet managers (post 7 Apr 2026, 31 comments).",
+      "url": "https://www.reddit.com/r/smallbusinessuk/comments/1set3x5/recommendations_for_software_for_managing_a_small/",
+      "foundAt": "2026-11-21T05:17:52.170Z"
+    },
+    {
+      "claim": "Etsy sells paid fleet maintenance trackers, including a Vehicle Fleet Maintenance Tracker Excel spreadsheet at USD 29.95 with 54 reviews (4.7) and a Fleet Maintenance Tracker sheet for up to 300 vans at USD 17.99 with 15 reviews (5.0).",
+      "url": "https://www.etsy.com/market/fleet_vehicle_maintenance_log",
+      "foundAt": "2026-11-21T05:17:52.170Z"
+    },
+    {
+      "claim": "Simply Fleet charges USD 3 a vehicle a month (Essential) or USD 5 (Advanced) with a 5 vehicle minimum, and its free plan stops at 5 vehicles, 3 users and 6 months of data history.",
+      "url": "https://www.simplyfleet.app/pricing",
+      "foundAt": "2026-11-21T05:17:52.170Z"
+    },
+    {
+      "claim": "Fleetio charges USD 5 a vehicle a month billed monthly for Essential (USD 4 annually), up to USD 10 for Premium, with no free plan, only a 14 day trial.",
+      "url": "https://www.fleetio.com/pricing",
+      "foundAt": "2026-11-21T05:17:52.170Z"
+    }
+  ],
+  "nextAction": "Research writes the business case; sizing sizes it; CEO decides. Evidence against: replies in the Reddit thread steer small fleets to a free spreadsheet or a my-garage app, and the asker settled on a manual solution; LubeLogger is a free open source self-hosted log with many vehicles, service records and reminders (https://lubelogger.com/); Fleetio gives free spreadsheet templates (https://www.fleetio.com/tools); Etsy templates cost USD 2 to 30 once, so the paid tier must beat a one-off sheet on driver links, reminders and history.",
   "lead": {
     "name": "Arnav",
     "color": "#8B2E3C",
     "trait": "Quick to test, quicker to kill what does not work."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-21T05:16:04.416Z",
+  "stage": "validated",
+  "stageSince": "2026-11-21T05:17:52.170Z",
   "createdAt": "2026-11-21T05:16:04.416Z",
-  "updatedAt": "2026-11-21T05:16:04.416Z",
+  "updatedAt": "2026-11-21T05:17:52.170Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

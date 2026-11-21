@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-21T05:16:45.029Z",
+    "agent": "lead-fleet-log",
+    "action": "Started: Gather sourced demand signals for fleet-log",
+    "ventureId": "fleet-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T05:17:52.207Z",
+    "agent": "lead-fleet-log",
+    "action": "Found 4 sourced demand signals (Reddit ask, Etsy paid trackers, Simply Fleet and Fleetio price pages); moved fleet-log to validated",
+    "ventureId": "fleet-log",
+    "kind": "done"
+  }
+]
