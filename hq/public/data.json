@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T06:23:36.942Z",
+  "builtAt": "2026-11-21T06:24:46.862Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1031,6 +1031,43 @@
       "businessCase": null
     },
     {
+      "id": "kennel-book",
+      "title": "Kennel Book",
+      "oneLiner": "Phone web booking book for small dog boarding and daycare businesses: who is in, who arrives and leaves today, run or kennel occupancy, feeding and medication notes, vaccination dates and a shareable owner check-in link",
+      "customer": "Owners of small US dog boarding kennels, home boarders and dog daycares with roughly 10 to 60 dogs on the books",
+      "revenueModel": "Free log for up to a few dogs; paid monthly tier for unlimited dogs, occupancy calendar, owner check-in links, vaccination reminders and history export",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 11,
+      "url": null,
+      "nextAction": null,
+      "metrics": null,
+      "killReason": "Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md).",
+      "updatedAt": "2026-11-21T06:24:32.000Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": {
+        "id": "lead-kennel-book",
+        "name": "Diya",
+        "color": "#7B3F61"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/kennel-book.md",
+        "total": 18,
+        "recommendation": "no-go"
+      }
+    },
+    {
       "id": "sitter-sheet",
       "title": "Sitter Sheet",
       "oneLiner": "Pet sitter client intake, visit report and invoice in one phone page",
@@ -1058,42 +1095,6 @@
       "goDecision": null,
       "sizing": null,
       "businessCase": null
-    },
-    {
-      "id": "kennel-book",
-      "title": "Kennel Book",
-      "oneLiner": "Phone web booking book for small dog boarding and daycare businesses: who is in, who arrives and leaves today, run or kennel occupancy, feeding and medication notes, vaccination dates and a shareable owner check-in link",
-      "customer": "Owners of small US dog boarding kennels, home boarders and dog daycares with roughly 10 to 60 dogs on the books",
-      "revenueModel": "Free log for up to a few dogs; paid monthly tier for unlimited dogs, occupancy calendar, owner check-in links, vaccination reminders and history export",
-      "priceINR": null,
-      "stage": "validated",
-      "score": 11,
-      "url": null,
-      "nextAction": "Research: write cases/kennel-book.md as a sceptic, then Sizing, then CEO go or no-go. Evidence against: (1) Etsy kennel spreadsheets sell for USD 3 to 17 one time, so many small boarders may pay a few dollars once rather than a monthly fee (https://www.etsy.com/market/dog_boarding_spreadsheet); (2) DoggieDashboard is cited as the free pick for very small pet businesses (https://www.animalo.com/blog/best-pet-boarding-software-reddit-2026); (3) a near-identical product, Kennel Booking (UK), already sells a kennel board with who is in, arriving and leaving and tablets at GBP 29 to 49 a month, and is still offering founding-kennel free periods, so traction for this exact shape is unproven (https://www.kennelbooking.co.uk/); (4) the US category searches are owned by paid vendors and review sites; (5) the two Reddit signals come from search excerpts because Reddit could not be scraped directly.",
-      "metrics": null,
-      "updatedAt": "2026-11-21T06:23:29.928Z",
-      "evidenceCount": 4,
-      "specPath": null,
-      "lead": {
-        "id": "lead-kennel-book",
-        "name": "Diya",
-        "color": "#7B3F61"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": {
-        "path": "cases/kennel-book.md",
-        "total": 18,
-        "recommendation": "no-go"
-      }
     },
     {
       "id": "class-pass",
@@ -1178,10 +1179,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1194,15 +1191,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides",
-      "since": "2026-11-21T06:17:11.325Z",
+      "task": "No-go on kennel-book: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md).",
+      "since": "2026-11-21T06:24:32.281Z",
       "ventureId": "kennel-book",
       "ventureTitle": "Kennel Book",
       "last": {
-        "at": "2026-11-21T06:17:11.325Z",
-        "action": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides"
+        "at": "2026-11-21T06:24:32.281Z",
+        "action": "No-go on kennel-book: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md)."
       },
-      "actions": 62
+      "actions": 64
     },
     {
       "id": "ops",
@@ -1507,26 +1504,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-kennel-book",
-      "name": "Diya",
-      "title": "Lead, Kennel Book",
-      "department": "pods",
-      "color": "#7B3F61",
-      "trait": "Asks who pays before asking what to build.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "kennel-book",
-      "state": "blocked",
-      "task": "needs reviewers: research case, sizing, ceo go",
-      "since": "2026-11-21T06:19:38.833Z",
-      "ventureId": "kennel-book",
-      "ventureTitle": "Kennel Book",
-      "last": {
-        "at": "2026-11-21T06:19:38.833Z",
-        "action": "Blocked: needs reviewers: research case, sizing, ceo go"
-      },
-      "actions": 3
     }
   ],
   "ventureTrail": {
@@ -1724,6 +1701,16 @@
       }
     ],
     "kennel-book": [
+      {
+        "at": "2026-11-21T06:24:32.281Z",
+        "agent": "ceo",
+        "action": "No-go on kennel-book: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md)."
+      },
+      {
+        "at": "2026-11-21T06:24:32.184Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md)."
+      },
       {
         "at": "2026-11-21T06:23:29.964Z",
         "agent": "research",
@@ -2246,6 +2233,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T06:24:32.281Z",
+      "agent": "ceo",
+      "action": "No-go on kennel-book: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md).",
+      "ventureId": "kennel-book",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T06:24:32.184Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: Buyers search \"dog boarding software\" (390 a month US) and \"kennel software\" (140), about 870 a month of buyer terms in all, and page one is held by Kennel Connection, ProPet, KennelBooker, DoggieDashboard and Capterra (https://www.capterra.com/kennel-software/); the high volume boarding searches are pet owners on Rover, Wag and Yelp. The small end is already served: DoggieDashboard is free up to 10 pets and USD 40 a month after (https://doggiedashboard.com/), and Capterra lists a free tier for PetPocketbook. The case scored 18 of 35 with distribution 2, so search only distribution cannot reach paying kennels in 90 days (cases/kennel-book.md).",
+      "ventureId": "kennel-book",
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T06:23:29.964Z",
       "agent": "research",
@@ -2791,21 +2792,7 @@
       "action": "Started: Validating: checking free tools (Stemwise, Triangle Nursery, Curate) and Google US volumes for florist stem and quote searches",
       "ventureId": "stem-count",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-20T23:25:34.633Z",
-      "agent": "ceo",
-      "action": "Staffed stem-count with lead Diya: highest open idea at 13 of 20, a florist sells a 197 USD spreadsheet for this job; pods 2 and 3 freed by formula-book and litter-log kills",
-      "ventureId": "stem-count",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:24:41.535Z",
-      "agent": "research",
-      "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
-      "ventureId": "stem-count",
-      "kind": "done"
     }
   ],
-  "logTotal": 328
+  "logTotal": 330
 }

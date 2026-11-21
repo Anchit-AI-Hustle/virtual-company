@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "needs reviewers: research case, sizing, ceo go",
-  "ventureId": "kennel-book",
-  "since": "2026-11-21T06:19:38.833Z"
+  "ventureId": null,
+  "since": "2026-11-21T06:24:32.338Z"
 }
