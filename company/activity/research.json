@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
-  "ventureId": "rent-ledger",
-  "since": "2026-11-21T17:25:18.498Z"
+  "ventureId": null,
+  "since": "2026-11-21T17:27:35.133Z"
 }

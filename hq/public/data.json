@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T17:27:17.259Z",
+  "builtAt": "2026-11-21T17:27:37.404Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1278,11 +1278,11 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
-      "since": "2026-11-21T17:26:42.852Z",
-      "ventureId": "rent-ledger",
-      "ventureTitle": "Rent Ledger",
+      "since": "2026-11-21T17:27:34.916Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-21T17:26:42.852Z",
         "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed."
@@ -1297,16 +1297,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup 17:12 UTC: health ok, watchdog ran 17:05, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; CEO reviews why about 120 screens failed today",
-      "since": "2026-11-21T17:12:30.612Z",
+      "state": "idle",
+      "task": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle",
+      "since": "2026-11-21T17:27:35.339Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.612Z",
-        "action": "Standup 17:12 UTC: health ok, watchdog ran 17:05, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; CEO reviews why about 120 screens failed today"
+        "at": "2026-11-21T17:27:35.298Z",
+        "action": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle"
       },
-      "actions": 73
+      "actions": 74
     },
     {
       "id": "research",
@@ -1316,11 +1316,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
-      "since": "2026-11-21T17:25:18.498Z",
-      "ventureId": "rent-ledger",
-      "ventureTitle": "Rent Ledger",
+      "since": "2026-11-21T17:27:35.133Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-21T17:25:18.498Z",
         "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)"
@@ -1335,9 +1335,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture, no counts to check",
-      "since": "2026-11-21T17:12:30.749Z",
+      "since": "2026-11-21T17:27:34.948Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1354,11 +1354,11 @@
       "color": "#5B3E8A",
       "trait": "Counts the buyers, group by group, before anyone builds.",
       "charter": "agents/sizing.md",
-      "state": "done",
+      "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-21T17:25:02.394Z",
-      "ventureId": "rent-ledger",
-      "ventureTitle": "Rent Ledger",
+      "since": "2026-11-21T17:27:35.216Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-21T17:25:02.394Z",
         "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar"
@@ -1449,9 +1449,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Lights on: 0 live products to check, health.json ok since 08:19 UTC",
-      "since": "2026-11-21T17:12:30.645Z",
+      "since": "2026-11-21T17:27:34.978Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1468,9 +1468,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan: no keys or tokens found in the repo",
-      "since": "2026-11-21T17:12:30.683Z",
+      "since": "2026-11-21T17:27:35.178Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1525,9 +1525,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture, no messages",
-      "since": "2026-11-21T17:12:30.781Z",
+      "since": "2026-11-21T17:27:35.261Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1544,9 +1544,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
-      "since": "2026-11-21T17:12:30.714Z",
+      "since": "2026-11-21T17:27:35.011Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2371,6 +2371,13 @@
   },
   "log": [
     {
+      "at": "2026-11-21T17:27:35.298Z",
+      "agent": "ops",
+      "action": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T17:26:42.852Z",
       "agent": "ceo",
       "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
@@ -2922,14 +2929,7 @@
       "action": "No live ventures, no messages",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:16.487Z",
-      "agent": "finance",
-      "action": "Revenue so far Rs 0 (no live products, no payments)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 445
+  "logTotal": 446
 }

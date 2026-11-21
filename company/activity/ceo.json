@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
-  "ventureId": "rent-ledger",
-  "since": "2026-11-21T17:26:42.852Z"
+  "ventureId": null,
+  "since": "2026-11-21T17:27:34.916Z"
 }

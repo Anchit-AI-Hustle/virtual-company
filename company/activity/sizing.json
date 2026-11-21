@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-  "ventureId": "rent-ledger",
-  "since": "2026-11-21T17:25:02.394Z"
+  "ventureId": null,
+  "since": "2026-11-21T17:27:35.216Z"
 }
