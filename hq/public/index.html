@@ -51,6 +51,8 @@
   .ask .chosen { font-weight: 700; margin: 4px 0; }
   table.cohorts tr.pick td { font-weight: 700; background: #E6F4EE; }
   .ask .step2 { margin: 12px 0 6px; font-weight: 700; }
+  .ask .howto input.pass { display: block; width: 100%; max-width: 320px; margin: 6px 0 8px; padding: 10px 12px; font: inherit; border: 1px solid #C9C4B8; border-radius: 10px; }
+  .ask .howto li.done { font-weight: 700; color: #0B5E47; }
   .ask .howto { margin: 10px 0 0; padding-left: 20px; font-size: 0.9375rem; line-height: 1.5; background: #F6F4EE; border-radius: 10px; padding: 10px 12px 10px 30px; }
   .status span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .status b { color: var(--ink); font-weight: 600; }
@@ -543,19 +545,37 @@
         li.appendChild(el('p', 'step2', 'Step 2: tell the agents your answer'));
         var act = el('p', 'actions');
         var guide = el('ol', 'howto'); guide.hidden = true;
-        function go(word) {
+        var n = Number((u.match(/\/issues\/(\d+)/) || [])[1]);
+        // Answer straight from HQ: HQ files it on GitHub from the owner's own account, after
+        // checking his HQ passcode (kept only on this device). Falls back to GitHub if HQ cannot.
+        function answer(word, btn) {
           return function () {
-            copyWord(word);
-            guide.textContent = '';
-            ['GitHub opened in a new tab. Sign in as ' + (d.company.ownerLogin || 'your GitHub account') + ' if it asks.',
-             'Scroll to the comment box at the bottom of that page.',
-             'Type ' + word + ' (it is already copied, so you can paste it). You can add a note after the word.',
-             'Press the green Comment button. That is all.'].forEach(function (t) { guide.appendChild(el('li', null, t)); });
-            guide.hidden = false;
+            var pass = null; try { pass = localStorage.getItem('hq-owner-passcode'); } catch (e) { pass = null; }
+            guide.textContent = ''; guide.hidden = false;
+            if (!pass) {
+              var f = el('li'); var lab = el('label', null, 'Your HQ passcode (asked once on this device)');
+              var inp = el('input'); inp.type = 'password'; inp.autocomplete = 'current-password'; inp.className = 'pass';
+              var ok = el('button', 'btn', word === 'approve' ? 'Approve now' : 'Say no now'); ok.type = 'button';
+              ok.addEventListener('click', function () { try { localStorage.setItem('hq-owner-passcode', inp.value); } catch (e) { /* private mode */ } send(word, inp.value, btn); });
+              lab.appendChild(inp); f.appendChild(lab); f.appendChild(ok); guide.appendChild(f); inp.focus(); return;
+            }
+            send(word, pass, btn);
           };
         }
-        var yes = el('a', 'btn', 'Approve'); yes.href = u + '#new_comment_field'; yes.rel = 'noopener'; yes.target = '_blank'; yes.addEventListener('click', go('approve'));
-        var no = el('a', 'btn ghost', 'Say no'); no.href = u + '#new_comment_field'; no.rel = 'noopener'; no.target = '_blank'; no.addEventListener('click', go('reject'));
+        function send(word, pass, btn) {
+          guide.textContent = ''; guide.appendChild(el('li', null, 'Sending...')); btn.disabled = true;
+          fetch('/api/decide', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-owner-passcode': pass || '' }, body: JSON.stringify({ issue: n, answer: word }) })
+            .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }); })
+            .then(function (res) {
+              guide.textContent = ''; btn.disabled = false;
+              if (res.status === 200) { guide.appendChild(el('li', 'done', (word === 'approve' ? 'Approved' : 'Answered no') + '. The agents act on it in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.')); return; }
+              if (res.status === 401) { try { localStorage.removeItem('hq-owner-passcode'); } catch (e) { /* private mode */ } guide.appendChild(el('li', null, 'That passcode is not right. Press the button again to retry.')); return; }
+              var l = el('li'); l.appendChild(document.createTextNode('HQ could not send it (' + (res.j.error || res.status) + '). ')); var a = el('a', null, 'Answer on GitHub instead'); a.href = u + '#new_comment_field'; a.target = '_blank'; a.rel = 'noopener'; l.appendChild(a); guide.appendChild(l);
+            })
+            .catch(function () { btn.disabled = false; guide.textContent = ''; guide.appendChild(el('li', null, 'No connection. Try again in a moment.')); });
+        }
+        var yes = el('button', 'btn', 'Approve'); yes.type = 'button'; yes.addEventListener('click', answer('approve', yes));
+        var no = el('button', 'btn ghost', 'Say no'); no.type = 'button'; no.addEventListener('click', answer('reject', no));
         act.appendChild(yes); act.appendChild(no); li.appendChild(act); li.appendChild(guide);
       }
       ul.appendChild(li);

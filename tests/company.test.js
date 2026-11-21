@@ -580,3 +580,16 @@ test('morning report: built only from the books, once a day after 07:45 India ti
   assert.strictEqual(out.kind, 'text'); assert.strictEqual(out.status, 'queued');
   assert.deepStrictEqual(rules(dir).filter((x) => x === 'outbox'), [], 'the queued WhatsApp report is valid');
 });
+
+test('answer from HQ: only with the right passcode, only on decision issues', async () => {
+  const { passcodeOk, validRequest } = await import('../hq/api/decide.mjs');
+  assert.ok(passcodeOk('long-secret-1', 'long-secret-1'));
+  assert.ok(!passcodeOk('long-secret-2', 'long-secret-1'));
+  assert.ok(!passcodeOk('short', 'short'), 'passcodes under 8 characters never work');
+  assert.ok(!passcodeOk('anything-long', ''), 'no passcode set means nobody can answer');
+  assert.ok(!passcodeOk(null, 'long-secret-1'));
+  assert.strictEqual(validRequest({ issue: 13, answer: 'approve' }), null);
+  assert.ok(validRequest({ issue: 13, answer: 'delete-everything' }));
+  assert.ok(validRequest({ issue: '13', answer: 'approve' }));
+  assert.ok(validRequest({ issue: 13, answer: 'reject', note: 'x'.repeat(1001) }));
+});
