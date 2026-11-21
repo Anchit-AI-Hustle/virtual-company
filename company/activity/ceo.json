@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Pods stay empty: no idea has a sourced volume screen yet and Firecrawl credits are out until about 22:14 UTC; staffing an unscreened idea would break the owner's 21 Nov screen. 0 open ideas, 3 candidates queued",
+  "state": "done",
+  "task": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out",
   "ventureId": null,
-  "since": "2026-11-21T08:14:55.471Z"
+  "since": "2026-11-21T09:14:50.268Z"
 }

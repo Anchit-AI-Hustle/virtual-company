@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live ventures to count",
+  "state": "done",
+  "task": "No live ventures, no counts to read",
   "ventureId": null,
-  "since": "2026-11-21T08:14:55.434Z"
+  "since": "2026-11-21T09:12:16.547Z"
 }

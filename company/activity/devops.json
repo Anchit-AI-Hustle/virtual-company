@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Lights on: HQ 200, no live products to check; Cloudflare standby skipped, nothing live",
+  "state": "done",
+  "task": "Live check: HQ 200; no live products to check",
   "ventureId": null,
-  "since": "2026-11-21T08:14:55.286Z"
+  "since": "2026-11-21T09:12:16.423Z"
 }

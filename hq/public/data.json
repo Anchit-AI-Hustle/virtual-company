@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T09:12:05.133Z",
+  "builtAt": "2026-11-21T09:14:50.901Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1185,16 +1185,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: no idea has a sourced volume screen yet and Firecrawl credits are out until about 22:14 UTC; staffing an unscreened idea would break the owner's 21 Nov screen. 0 open ideas, 3 candidates queued",
-      "since": "2026-11-21T08:14:55.471Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out",
+      "since": "2026-11-21T09:14:50.268Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:14:55.161Z",
-        "action": "Pods stay empty: no idea has a sourced volume screen yet and Firecrawl credits are out until about 22:14 UTC; staffing an unscreened idea would break the owner's 21 Nov screen. 0 open ideas, 3 candidates queued"
+        "at": "2026-11-21T09:14:50.268Z",
+        "action": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out"
       },
-      "actions": 66
+      "actions": 67
     },
     {
       "id": "ops",
@@ -1223,16 +1223,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "blocked",
-      "task": "Firecrawl still out of credits (DataForSEO volume call for 60 trade terms refused, request b0b54786); daily allowance resets about 22:14 UTC, volume check runs then",
-      "since": "2026-11-21T08:14:55.120Z",
+      "state": "done",
+      "task": "Screened 10 ideas (seodata.dev, Google Ads API averages, 21 Nov): none passed. Bank statement PDF to Excel and Tally, India: big volume (bank statement converter 18,100 a month, bank statement pdf to excel 4,400, excel to tally 3,600; api.seodata.dev/v1/keyword?q=bank+statement+to+excel&country=in) but free tools close the gap: AI Accountant converts in the browser free with no signup and passwords (aiaccountant.com/resources/bank-statement-converter), TaxFetch is free with a Tally page (taxfetchindia.com/bank-pdf-to-excel-converter, taxfetchindia.com/bank-statement-to-tally), Invocreto does Excel to Tally XML (invocreto.com/excel-to-xml). Dropped on volume: PG management software India (170), GSTR 2B reconciliation (480), snow removal software US (260), driving school software US (0), bank reconciliation template US (1,300, free template intent). Gym management software India (about 1,000) and catering software US (720, CPC USD 66) dropped on distribution: page one held by Capterra, GetApp and vendors, the risk that stopped kennel-book. Tally to Excel (880) overlaps the free Tally tools above",
+      "since": "2026-11-21T09:14:50.230Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:14:55.120Z",
-        "action": "Blocked: Firecrawl still out of credits (DataForSEO volume call for 60 trade terms refused, request b0b54786); daily allowance resets about 22:14 UTC, volume check runs then"
+        "at": "2026-11-21T09:14:50.230Z",
+        "action": "Screened 10 ideas (seodata.dev, Google Ads API averages, 21 Nov): none passed. Bank statement PDF to Excel and Tally, India: big volume (bank statement converter 18,100 a month, bank statement pdf to excel 4,400, excel to tally 3,600; api.seodata.dev/v1/keyword?q=bank+statement+to+excel&country=in) but free tools close the gap: AI Accountant converts in the browser free with no signup and passwords (aiaccountant.com/resources/bank-statement-converter), TaxFetch is free with a Tally page (taxfetchindia.com/bank-pdf-to-excel-converter, taxfetchindia.com/bank-statement-to-tally), Invocreto does Excel to Tally XML (invocreto.com/excel-to-xml). Dropped on volume: PG management software India (170), GSTR 2B reconciliation (480), snow removal software US (260), driving school software US (0), bank reconciliation template US (1,300, free template intent). Gym management software India (about 1,000) and catering software US (720, CPC USD 66) dropped on distribution: page one held by Capterra, GetApp and vendors, the risk that stopped kennel-book. Tally to Excel (880) overlaps the free Tally tools above"
       },
-      "actions": 47
+      "actions": 49
     },
     {
       "id": "data",
@@ -1242,16 +1242,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
-      "task": "No live ventures to count",
-      "since": "2026-11-21T08:14:55.434Z",
+      "state": "done",
+      "task": "No live ventures, no counts to read",
+      "since": "2026-11-21T09:12:16.547Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:13:34.276Z",
-        "action": "No live ventures to count"
+        "at": "2026-11-21T09:12:16.547Z",
+        "action": "No live ventures, no counts to read"
       },
-      "actions": 11
+      "actions": 12
     },
     {
       "id": "sizing",
@@ -1356,16 +1356,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: HQ 200, no live products to check; Cloudflare standby skipped, nothing live",
-      "since": "2026-11-21T08:14:55.286Z",
+      "state": "done",
+      "task": "Live check: HQ 200; no live products to check",
+      "since": "2026-11-21T09:12:16.423Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:13:29.126Z",
-        "action": "Lights on: HQ 200, no live products to check; Cloudflare standby skipped, nothing live"
+        "at": "2026-11-21T09:12:16.423Z",
+        "action": "Live check: HQ 200; no live products to check"
       },
-      "actions": 36
+      "actions": 37
     },
     {
       "id": "security",
@@ -1375,16 +1375,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan: no keys or tokens in the repo",
-      "since": "2026-11-21T08:14:55.320Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no keys or tokens found",
+      "since": "2026-11-21T09:12:16.457Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:13:34.146Z",
-        "action": "Secret scan: no keys or tokens in the repo"
+        "at": "2026-11-21T09:12:16.457Z",
+        "action": "Secret scan of the repo: no keys or tokens found"
       },
-      "actions": 22
+      "actions": 23
     },
     {
       "id": "growth",
@@ -1432,16 +1432,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T08:14:55.395Z",
+      "state": "done",
+      "task": "No live ventures, no messages",
+      "since": "2026-11-21T09:12:16.518Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:13:34.239Z",
-        "action": "No live ventures, no customer messages"
+        "at": "2026-11-21T09:12:16.518Z",
+        "action": "No live ventures, no messages"
       },
-      "actions": 10
+      "actions": 11
     },
     {
       "id": "finance",
@@ -1451,16 +1451,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue Rs 0 confirmed: no live products, no payments; FX unchanged (94.2754, 14 Nov source)",
-      "since": "2026-11-21T08:14:55.358Z",
+      "state": "done",
+      "task": "Revenue so far Rs 0 (no live products, no payments)",
+      "since": "2026-11-21T09:12:16.487Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T08:13:34.191Z",
-        "action": "Revenue Rs 0 confirmed: no live products, no payments; FX unchanged (94.2754, 14 Nov source)"
+        "at": "2026-11-21T09:12:16.487Z",
+        "action": "Revenue so far Rs 0 (no live products, no payments)"
       },
-      "actions": 18
+      "actions": 19
     },
     {
       "id": "legal",
@@ -2229,6 +2229,62 @@
   },
   "log": [
     {
+      "at": "2026-11-21T09:14:50.268Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:14:50.230Z",
+      "agent": "research",
+      "action": "Screened 10 ideas (seodata.dev, Google Ads API averages, 21 Nov): none passed. Bank statement PDF to Excel and Tally, India: big volume (bank statement converter 18,100 a month, bank statement pdf to excel 4,400, excel to tally 3,600; api.seodata.dev/v1/keyword?q=bank+statement+to+excel&country=in) but free tools close the gap: AI Accountant converts in the browser free with no signup and passwords (aiaccountant.com/resources/bank-statement-converter), TaxFetch is free with a Tally page (taxfetchindia.com/bank-pdf-to-excel-converter, taxfetchindia.com/bank-statement-to-tally), Invocreto does Excel to Tally XML (invocreto.com/excel-to-xml). Dropped on volume: PG management software India (170), GSTR 2B reconciliation (480), snow removal software US (260), driving school software US (0), bank reconciliation template US (1,300, free template intent). Gym management software India (about 1,000) and catering software US (720, CPC USD 66) dropped on distribution: page one held by Capterra, GetApp and vendors, the risk that stopped kennel-book. Tally to Excel (880) overlaps the free Tally tools above",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:14:50.182Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch with a second volume source: Firecrawl still out of credits (request 38e99582), so volumes come from seodata.dev (Google Ads API monthly averages, 20 free lookups a day)",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-21T09:12:16.547Z",
+      "agent": "data",
+      "action": "No live ventures, no counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:12:16.518Z",
+      "agent": "support",
+      "action": "No live ventures, no messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:12:16.487Z",
+      "agent": "finance",
+      "action": "Revenue so far Rs 0 (no live products, no payments)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:12:16.457Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T09:12:16.423Z",
+      "agent": "devops",
+      "action": "Live check: HQ 200; no live products to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-21T09:12:00.542Z",
       "agent": "ops",
       "action": "Standup: health ok, watchdog 09:04, CI green, check green (44 tests); no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research tries the queued volume check now (Firecrawl credits may still be out until about 22:14 UTC)",
@@ -2731,63 +2787,7 @@
       "action": "Decided: Screen for ideas where people pay to save, share or team up: next screens target saved, shared and team work on Rs 0 free tiers, free single-user tool first (ap-company-5, issue 18)",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:47.194Z",
-      "agent": "ceo",
-      "action": "Killed stall-tally: fails the owner's 21 Nov idea screen (see killReason)",
-      "ventureId": "stall-tally",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:47.159Z",
-      "agent": "ceo",
-      "action": "Killed sitter-sheet: fails the owner's 21 Nov idea screen (see killReason)",
-      "ventureId": "sitter-sheet",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:47.116Z",
-      "agent": "ceo",
-      "action": "Killed rota-sheet: fails the owner's 21 Nov idea screen (see killReason)",
-      "ventureId": "rota-sheet",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:47.073Z",
-      "agent": "ceo",
-      "action": "Killed class-pass: fails the owner's 21 Nov idea screen (see killReason)",
-      "ventureId": "class-pass",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:47.038Z",
-      "agent": "legal",
-      "action": "Category screen on 25 candidates: dropped nutrition labels (FDA labelling risk), school timetable and OMR sheets (close to the children rule); the rest were in allowed categories",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:46.998Z",
-      "agent": "research",
-      "action": "Screened 25 bigger ideas (DataForSEO via Firecrawl Alexandria, 21 Nov): none passed. Volume and paid price cleared easily; 24 failed because a free no-signup tool already does the whole job (cut list, call sheet, run of show, BBS, interior BOQ, RA bill, skills matrix, SSCC labels and more), 1 on volume (travel agent itinerary builder 770 a month). The 4 old open ideas also fail",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T04:22:46.951Z",
-      "agent": "research",
-      "action": "Started: Screen bigger ideas against the owner's 21 Nov screen: Rs 500+ a month paid, 1,000+ buyer searches a month, a named free gap",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T04:12:49.386Z",
-      "agent": "support",
-      "action": "No customer messages: no live product",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 363
+  "logTotal": 371
 }

@@ -201,5 +201,19 @@
     "action": "Blocked: Firecrawl still out of credits (DataForSEO volume call for 60 trade terms refused, request b0b54786); daily allowance resets about 22:14 UTC, volume check runs then",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-21T09:14:50.182Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch with a second volume source: Firecrawl still out of credits (request 38e99582), so volumes come from seodata.dev (Google Ads API monthly averages, 20 free lookups a day)",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T09:14:50.230Z",
+    "agent": "research",
+    "action": "Screened 10 ideas (seodata.dev, Google Ads API averages, 21 Nov): none passed. Bank statement PDF to Excel and Tally, India: big volume (bank statement converter 18,100 a month, bank statement pdf to excel 4,400, excel to tally 3,600; api.seodata.dev/v1/keyword?q=bank+statement+to+excel&country=in) but free tools close the gap: AI Accountant converts in the browser free with no signup and passwords (aiaccountant.com/resources/bank-statement-converter), TaxFetch is free with a Tally page (taxfetchindia.com/bank-pdf-to-excel-converter, taxfetchindia.com/bank-statement-to-tally), Invocreto does Excel to Tally XML (invocreto.com/excel-to-xml). Dropped on volume: PG management software India (170), GSTR 2B reconciliation (480), snow removal software US (260), driving school software US (0), bank reconciliation template US (1,300, free template intent). Gym management software India (about 1,000) and catering software US (720, CPC USD 66) dropped on distribution: page one held by Capterra, GetApp and vendors, the risk that stopped kennel-book. Tally to Excel (880) overlaps the free Tally tools above",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
