@@ -138,5 +138,12 @@
     "action": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T05:12:44.825Z",
+    "agent": "devops",
+    "action": "Lights on: HQ returns 200, watchdog checks pass, no live products to check",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
