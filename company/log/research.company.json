@@ -159,5 +159,26 @@
     "action": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T07:15:16.698Z",
+    "agent": "research",
+    "action": "Started: Screen 8 new ideas against the owner's 21 Nov screen: Rs 500+ a month paid, 1,000+ buyer searches, a named free gap",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T07:15:16.738Z",
+    "agent": "research",
+    "action": "Screened 8 ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov): none passed. Dropped on volume: tutoring software (about 280 non-brand a month), Etsy and handmade inventory (about 70; Craftybase brand 1,000), car detailing software (220), tattoo booking software (140; consent form 1,000 is free-template intent), tiffin service software India (10; tiffin service app 880 is diner intent). Dropped for a free tool that closes the gap: dance studio software (1,600 a month, but Class Manager is free, classmanager.com/dance-studio-class-management-software), music teacher studio software (about 1,090 non-brand, My Music Staff USD 16.95 and MakeMusic Studio USD 19.95 a month with no free plan, but YourVirtuoso is free to 500 families and Trio free to 10 students, getapp.com/resources/free-music-school-software)",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T07:15:16.773Z",
+    "agent": "research",
+    "action": "Blocked: Firecrawl credits ran out (DataForSEO volumes and web search), daily allowance resets 22:14 UTC; screening resumes then",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]

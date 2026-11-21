@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Business case written: 18 of 35, no-go (distribution 2: buyer terms about 870 a month held by vendors and Capterra; big terms are pet owners on Rover)",
+  "state": "blocked",
+  "task": "Firecrawl credits ran out (DataForSEO volumes and web search), daily allowance resets 22:14 UTC; screening resumes then",
   "ventureId": null,
-  "since": "2026-11-21T06:25:00.865Z"
+  "since": "2026-11-21T07:15:16.773Z"
 }
