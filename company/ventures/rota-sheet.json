@@ -1,13 +1,13 @@
 {
   "priceINR": null,
-  "stage": "idea",
+  "stage": "killed",
   "evidence": [],
   "specPath": null,
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T06:49:00.906Z",
-  "updatedAt": "2026-11-15T11:50:25.102Z",
-  "killReason": null,
+  "updatedAt": "2026-11-21T04:22:46.927Z",
+  "killReason": "Fails the owner's 21 Nov screen. India volume is real (duty roster 5,400, duty roster format 1,600, shift roster 1,300; DataForSEO via Firecrawl Alexandria, 21 Nov 2026) but free no-signup roster makers already rank for it: RosterShare, RosterMates and dutyroster.com (https://rostershare.me/duty-roster). Killed 21 Nov 2026: a free tool closes the gap.",
   "id": "rota-sheet",
   "title": "Rota Sheet",
   "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
@@ -20,6 +20,7 @@
     "distribution": 2,
     "total": 10
   },
-  "nextAction": "Rescored at the weekly review: distribution 3 to 2, because under the search-only rule our page would have to outrank free rota tools from Findmyshift and BrightHR (https://www.findmyshift.co.uk/free-staff-rota-software). Research only if a paid gap the free tools miss is found.",
-  "lead": null
+  "nextAction": null,
+  "lead": null,
+  "stageSince": "2026-11-21T04:22:46.927Z"
 }

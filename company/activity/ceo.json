@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first",
-  "ventureId": null,
-  "since": "2026-11-21T02:20:01.115Z"
+  "state": "done",
+  "task": "Killed stall-tally: fails the owner's 21 Nov idea screen (see killReason)",
+  "ventureId": "stall-tally",
+  "since": "2026-11-21T04:22:47.194Z"
 }

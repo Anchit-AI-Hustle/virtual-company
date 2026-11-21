@@ -82,5 +82,12 @@
     "action": "Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T04:12:49.308Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0 confirmed: no live product, no payments recorded in ledger.json; fx stays 94.2754 INR per USD from 14 Nov (xflowpay)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -5,5 +5,12 @@
     "action": "Rescored rota-sheet to 10 (distribution 3 to 2): free Findmyshift and BrightHR rota tools own the searches",
     "ventureId": "rota-sheet",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T04:22:47.116Z",
+    "agent": "ceo",
+    "action": "Killed rota-sheet: fails the owner's 21 Nov idea screen (see killReason)",
+    "ventureId": "rota-sheet",
+    "kind": "done"
   }
 ]

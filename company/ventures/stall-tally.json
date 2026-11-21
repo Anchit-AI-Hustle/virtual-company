@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
-  "killReason": null,
+  "updatedAt": "2026-11-21T04:22:46.927Z",
+  "killReason": "Fails the owner's 21 Nov screen. Craft fair inventory, craft fair sales tracker, vendor sales tracker and booth sales tracker returned no measurable volume and craft fair checklist is 90 a month in the US (DataForSEO via Firecrawl Alexandria, 21 Nov 2026, https://dataforseo.com), under the 1,000 bar; apps like Booth Math already serve the job. Killed 21 Nov 2026.",
   "lead": null,
   "id": "stall-tally",
   "title": "Stall Tally",
@@ -26,6 +26,7 @@
       "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Research. Against: Booth Math and VendStats apps already exist (https://apps.apple.com/us/app/id6770763212)",
-  "stage": "idea"
+  "nextAction": null,
+  "stage": "killed",
+  "stageSince": "2026-11-21T04:22:46.927Z"
 }

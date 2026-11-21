@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
-  "killReason": null,
+  "updatedAt": "2026-11-21T04:22:46.927Z",
+  "killReason": "Fails the owner's 21 Nov screen. US buyer searches total about 380 a month (pet sitting contract 210, pet sitting forms 70, pet sitter forms 70, pet sitting invoice 20, dog walking invoice 10; DataForSEO via Firecrawl Alexandria, 21 Nov 2026, https://dataforseo.com), under the 1,000 bar, and free form builders already offer pet sitting intake templates. Killed 21 Nov 2026.",
   "lead": null,
   "id": "sitter-sheet",
   "title": "Sitter Sheet",
@@ -26,6 +26,7 @@
       "foundAt": "2026-11-14"
     }
   ],
-  "nextAction": "Research: paid pet sitter form packs on vendor pages. Against: free form builders exist (Paperform, Makeform)",
-  "stage": "idea"
+  "nextAction": null,
+  "stage": "killed",
+  "stageSince": "2026-11-21T04:22:46.927Z"
 }

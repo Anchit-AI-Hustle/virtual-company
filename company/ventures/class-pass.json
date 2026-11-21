@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-14T14:14:20.986Z",
-  "updatedAt": "2026-11-14T14:14:20.986Z",
-  "killReason": null,
+  "updatedAt": "2026-11-21T04:22:46.927Z",
+  "killReason": "Fails the owner's 21 Nov screen. US buyer search is about 1,270 a month (punch card template 880, digital punch card 390; DataForSEO via Firecrawl Alexandria, 21 Nov 2026) but the intent is mostly cafe loyalty and class pass app is ClassPass brand intent; free tools already cover yoga class packs and punch cards, such as BonusQR's free plan (https://bonusqr.com/industry/yoga-pilates-studios). Killed 21 Nov 2026: a free tool closes the gap.",
   "lead": null,
   "id": "class-pass",
   "title": "Class Pass Card",
@@ -20,6 +20,7 @@
     "total": 10
   },
   "evidence": [],
-  "nextAction": "Research: no evidence gathered yet",
-  "stage": "idea"
+  "nextAction": null,
+  "stage": "killed",
+  "stageSince": "2026-11-21T04:22:46.927Z"
 }

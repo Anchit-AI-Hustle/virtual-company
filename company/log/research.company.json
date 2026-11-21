@@ -117,5 +117,19 @@
     "action": "Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already does the job: IFTA calculator (TruckLogics, OTrucking, ExpressTruckTax free), tip pool calculator (Toast, 7shifts, Connecteam, Ferry free), quilt design (Made Good Designs free pattern maker with cutting list), knitting chart maker (Made Good Designs, WaveSpeed free), beekeeping log (a dozen free apps). Dropped for buyer search under 500 a month: airbnb guidebook 260, notary journal 210, cattle records 170, bowling league software 90, swiss pairing 10. Only golf-league passed both checks",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T04:22:46.951Z",
+    "agent": "research",
+    "action": "Started: Screen bigger ideas against the owner's 21 Nov screen: Rs 500+ a month paid, 1,000+ buyer searches a month, a named free gap",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T04:22:46.998Z",
+    "agent": "research",
+    "action": "Screened 25 bigger ideas (DataForSEO via Firecrawl Alexandria, 21 Nov): none passed. Volume and paid price cleared easily; 24 failed because a free no-signup tool already does the whole job (cut list, call sheet, run of show, BBS, interior BOQ, RA bill, skills matrix, SSCC labels and more), 1 on volume (travel agent itinerary builder 770 a month). The 4 old open ideas also fail",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
