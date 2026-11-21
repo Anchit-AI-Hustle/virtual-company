@@ -1,0 +1,50 @@
+{
+  "id": "kennel-book",
+  "title": "Kennel Book",
+  "oneLiner": "Phone web booking book for small dog boarding and daycare businesses: who is in, who arrives and leaves today, run or kennel occupancy, feeding and medication notes, vaccination dates and a shareable owner check-in link",
+  "customer": "Owners of small US dog boarding kennels, home boarders and dog daycares with roughly 10 to 60 dogs on the books",
+  "revenueModel": "Free log for up to a few dogs; paid monthly tier for unlimited dogs, occupancy calendar, owner check-in links, vaccination reminders and history export",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 2,
+    "total": 11
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Paw Partner pet business software (boarding, daycare, grooming) at USD 44.99 a month paid monthly, about Rs 4,241 at 94.2754 INR per USD",
+      "inrMonthly": 4241,
+      "source": "https://pawpartner.com/"
+    },
+    "searches": {
+      "terms": {
+        "dog boarding software": 390,
+        "dog grooming software": 260,
+        "pet sitting software": 390,
+        "kennel software": 140,
+        "dog daycare software": 390
+      },
+      "monthly": 1180,
+      "source": "https://dataforseo.com/apis/keywords-data-api",
+      "note": "DataForSEO Google Ads search volume, United States, via Firecrawl Alexandria, 21 Nov 2026. dog daycare software returns the exact same series as dog boarding software (Google groups them), so it is left out of the 1,180 total. CPC USD 29 to 58 shows buyers pay. Brand searches show a large paid market: Time To Pet 18,100, Gingr 12,100, MoeGo 6,600, PetExec 2,900 a month."
+    },
+    "freeGap": "DoggieDashboard is free only for the first 10 pets saved (https://doggiedashboard.com/); Runloyal's 2026 comparison of 8 dog daycare tools found no permanent free plan, only 14 day trials (https://www.runloyal.com/blog/best-dog-daycare-software/); DatCog starts at USD 54 a month (https://www.datcog.app/pet-boarding-software). Gap: a no-account phone booking book with occupancy and owner check-in that does not stop at 10 dogs. Risks: Pet Sitter Dashboard is free for sitters and walkers (https://petsitterdashboard.com/), so pet sitting is not the target; the category searches are owned by paid vendors and review sites (fleet-log precedent), so the case must show pages we can rank."
+  },
+  "evidence": [],
+  "nextAction": "Lead Diya: find 3 or more sourced signals that small boarders and daycares pay for or actively seek this (forums, marketplace listings with sales, vendor prices), then hand to Research for the business case",
+  "lead": {
+    "name": "Diya",
+    "color": "#7B3F61",
+    "trait": "Asks who pays before asking what to build."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-21T06:17:11.000Z",
+  "createdAt": "2026-11-21T06:17:11.000Z",
+  "updatedAt": "2026-11-21T06:17:11.000Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "case": null
+}

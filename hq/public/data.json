@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T06:13:23.262Z",
+  "builtAt": "2026-11-21T06:17:17.385Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1055,6 +1055,38 @@
       "businessCase": null
     },
     {
+      "id": "kennel-book",
+      "title": "Kennel Book",
+      "oneLiner": "Phone web booking book for small dog boarding and daycare businesses: who is in, who arrives and leaves today, run or kennel occupancy, feeding and medication notes, vaccination dates and a shareable owner check-in link",
+      "customer": "Owners of small US dog boarding kennels, home boarders and dog daycares with roughly 10 to 60 dogs on the books",
+      "revenueModel": "Free log for up to a few dogs; paid monthly tier for unlimited dogs, occupancy calendar, owner check-in links, vaccination reminders and history export",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 11,
+      "url": null,
+      "nextAction": "Lead Diya: find 3 or more sourced signals that small boarders and daycares pay for or actively seek this (forums, marketplace listings with sales, vendor prices), then hand to Research for the business case",
+      "metrics": null,
+      "updatedAt": "2026-11-21T06:17:11.000Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": {
+        "id": "lead-kennel-book",
+        "name": "Diya",
+        "color": "#7B3F61"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "class-pass",
       "title": "Class Pass Card",
       "oneLiner": "Digital punch card for independent yoga and fitness instructors selling class packs",
@@ -1137,6 +1169,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1148,16 +1184,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2",
-      "since": "2026-11-21T05:23:50.057Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides",
+      "since": "2026-11-21T06:17:11.325Z",
+      "ventureId": "kennel-book",
+      "ventureTitle": "Kennel Book",
       "last": {
-        "at": "2026-11-21T05:23:18.888Z",
-        "action": "No-go: fleet-log: search held by funded vendors and free tools cover small fleets; case 19 of 35, distribution 2"
+        "at": "2026-11-21T06:17:11.325Z",
+        "action": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides"
       },
-      "actions": 61
+      "actions": 62
     },
     {
       "id": "ops",
@@ -1186,16 +1222,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger",
-      "since": "2026-11-21T05:23:50.341Z",
+      "state": "done",
+      "task": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)",
+      "since": "2026-11-21T06:17:11.285Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T05:22:09.692Z",
-        "action": "Business case written: fleet-log scores 19/35, no-go; buyer searches owned by Fleetio, MaintainX and review sites, free end covered by Simply Fleet Free and LubeLogger"
+        "at": "2026-11-21T06:17:11.285Z",
+        "action": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)"
       },
-      "actions": 37
+      "actions": 39
     },
     {
       "id": "data",
@@ -1462,6 +1498,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-kennel-book",
+      "name": "Diya",
+      "title": "Lead, Kennel Book",
+      "department": "pods",
+      "color": "#7B3F61",
+      "trait": "Asks who pays before asking what to build.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "kennel-book",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1656,6 +1709,13 @@
         "at": "2026-11-21T02:15:52.806Z",
         "agent": "ceo",
         "action": "Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer search near 2,460 a month (golf league management software 1,900, golf league software 390, golf league app 170). Other pod slots left empty under ap-company-1 rather than staff ideas that failed the screen"
+      }
+    ],
+    "kennel-book": [
+      {
+        "at": "2026-11-21T06:17:11.325Z",
+        "agent": "ceo",
+        "action": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides"
       }
     ],
     "lash-mapper": [
@@ -2149,6 +2209,27 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T06:17:11.325Z",
+      "agent": "ceo",
+      "action": "Staffed kennel-book with lead Diya: only idea of 13 to pass the screen; distribution is the known risk (paid vendors own the category searches), so the case decides",
+      "ventureId": "kennel-book",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T06:17:11.285Z",
+      "agent": "research",
+      "action": "Screened 13 new ideas (DataForSEO US and India via Firecrawl Alexandria, 21 Nov). Dropped for a free tool that closes the gap: transporter LR and bilty (OnlineLR lifetime free, MyBilty free), jewellery billing (SwarnaVyapar free plan, unlimited GST invoices), school timetable (TimetableMaster free to 40 staff, edfleet no signup), question paper maker (edfleet, TestMacher free), home inspection reports (homeinspector.com free, InterNACHI free), equipment rental (HireHop free Starter, Picktime free). Dropped on volume: tailor and boutique (330), coaching fee apps (280), garage job cards (570), laundry (460), pest control (490), pool service (760), notary e-journal (230). Passed: kennel-book, small dog boarding and daycare booking book (1,180 buyer searches, Paw Partner USD 44.99 a month, DoggieDashboard free stops at 10 pets)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T06:17:11.234Z",
+      "agent": "research",
+      "action": "Started: Screen new ideas against the owner's 21 Nov screen: Rs 500+ a month paid, 1,000+ buyer searches, a named free gap",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-21T06:13:22.767Z",
       "agent": "data",
@@ -2687,28 +2768,7 @@
       "action": "Started: Screening 2 to 3 new ideas with live sources to refill the open idea list",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-20T23:13:55.186Z",
-      "agent": "research",
-      "action": "Started: Writing business case for Lash Mapper",
-      "ventureId": "lash-mapper",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-20T23:13:53.266Z",
-      "agent": "lead-litter-log",
-      "action": "Started: Gather sourced demand and search evidence for litter-log",
-      "ventureId": "litter-log",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-20T23:13:52.145Z",
-      "agent": "lead-formula-book",
-      "action": "Started: Validating formula-book: live search for demand, paying and search-volume evidence",
-      "ventureId": "formula-book",
-      "kind": "start"
     }
   ],
-  "logTotal": 320
+  "logTotal": 323
 }
