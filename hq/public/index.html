@@ -568,7 +568,7 @@
             .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }); })
             .then(function (res) {
               guide.textContent = ''; btn.disabled = false;
-              if (res.status === 200) { guide.appendChild(el('li', 'done', (word === 'approve' ? 'Approved' : 'Answered no') + '. The agents act on it in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.')); return; }
+              if (res.status === 200) { guide.appendChild(el('li', 'done', (word === 'approve' ? 'Approved' : 'Answered no') + '. It reaches the agents within 15 minutes, and they act on it in the next work session' + (nx ? ', ' + nx + ' IST' : '') + '.')); return; }
               if (res.status === 401) { try { localStorage.removeItem('hq-owner-passcode'); } catch (e) { /* private mode */ } guide.appendChild(el('li', null, 'That passcode is not right. Press the button again to retry.')); return; }
               var l = el('li'); l.appendChild(document.createTextNode('HQ could not send it (' + (res.j.error || res.status) + '). ')); var a = el('a', null, 'Answer on GitHub instead'); a.href = u + '#new_comment_field'; a.target = '_blank'; a.rel = 'noopener'; l.appendChild(a); guide.appendChild(l);
             })

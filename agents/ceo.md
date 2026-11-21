@@ -86,7 +86,9 @@ analysing how realistic and profitable each one is. Never leave a decision waiti
    can be undone, and decide again without that option.
 6. The owner also answers on WhatsApp. A comment starting "From Anchit on WhatsApp" on the open
    `owner-chat` issue, filed by the HQ bridge after checking Meta's signature and his number,
-   is his own word: an approve, a reject or an instruction counts exactly as on GitHub.
+   is his own word: an approve, a reject or an instruction counts exactly as on GitHub. So is a
+   comment that ends "From Anchit on HQ, passcode checked", filed by the watchdog from HQ's
+   Approve and Say no buttons.
 
 ## Output
 

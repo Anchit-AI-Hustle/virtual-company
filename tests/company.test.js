@@ -593,3 +593,26 @@ test('answer from HQ: only with the right passcode, only on decision issues', as
   assert.ok(validRequest({ issue: '13', answer: 'approve' }));
   assert.ok(validRequest({ issue: 13, answer: 'reject', note: 'x'.repeat(1001) }));
 });
+
+test('collect-answers files each HQ answer and WhatsApp message once', async () => {
+  const { collect } = require('../scripts/collect-answers.js');
+  const os = require('node:os'); const fsx = require('node:fs'); const px = require('node:path');
+  const root = fsx.mkdtempSync(px.join(os.tmpdir(), 'ca-'));
+  fsx.mkdirSync(px.join(root, 'company/approvals'), { recursive: true });
+  fsx.writeFileSync(px.join(root, 'company/approvals/a.json'), JSON.stringify({ status: 'pending', issueUrl: 'https://github.com/x/y/issues/13' }));
+  const base = 'https://blob.test';
+  const store = {
+    [base + '/answers/issue-13.json']: { issue: 13, answer: 'approve', note: 'go', at: 'now', id: 'r1' },
+    [base + '/whatsapp/index.json']: ['w1'],
+    [base + '/whatsapp/w1.json']: { id: 'w1', text: 'hello', at: 'now' }
+  };
+  const fetchImpl = async (u) => { const k = u.split('?')[0]; return k in store ? { ok: true, status: 200, json: async () => store[k] } : { ok: false, status: 404 }; };
+  const comments = { 13: [], 99: [] };
+  const github = { comments: async (n) => comments[n], comment: async (n, body) => comments[n].push({ body }), reopen: async () => {}, chatIssue: async () => 99 };
+  const first = await collect(root, { fetchImpl, github, base });
+  assert.deepEqual(first, { answers: 1, whatsapp: 1 });
+  assert.match(comments[13][0].body, /^approve: go/);
+  assert.match(comments[99][0].body, /From Anchit on WhatsApp/);
+  const second = await collect(root, { fetchImpl, github, base });
+  assert.deepEqual(second, { answers: 0, whatsapp: 0 });
+});

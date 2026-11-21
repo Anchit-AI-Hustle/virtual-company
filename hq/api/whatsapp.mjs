@@ -1,12 +1,10 @@
-// Receives the owner's WhatsApp replies from Meta and files them where the agents read them:
-// one GitHub issue labelled owner-chat. Only signed requests from Meta, and only messages from
-// the owner's own number, are accepted. Settings (Vercel environment variables):
-// WHATSAPP_VERIFY_TOKEN, WHATSAPP_APP_SECRET, OWNER_WHATSAPP, GITHUB_TOKEN.
+// Receives the owner's WhatsApp replies from Meta and saves each one to the project's Vercel Blob
+// store (whatsapp/<message id>.json, listed in whatsapp/index.json). The watchdog files them on
+// the GitHub issue labelled owner-chat, where the agents read them. Only signed requests from
+// Meta, and only messages from the owner's own number, are accepted. Settings (Vercel
+// environment variables): WHATSAPP_VERIFY_TOKEN, WHATSAPP_APP_SECRET, OWNER_WHATSAPP;
+// BLOB_READ_WRITE_TOKEN is set by Vercel.
 import crypto from 'node:crypto';
-
-const REPO = 'Anchit-AI-Hustle/virtual-company';
-const LABEL = 'owner-chat';
-const TITLE = 'Owner chat: WhatsApp with Anchit';
 
 export function verifySignature(raw, header, secret) {
   if (!secret || !header || !header.startsWith('sha256=')) return false;
@@ -32,19 +30,16 @@ export function ownerMessages(payload, ownerNumber) {
   return out;
 }
 
-async function gh(path, opts = {}) {
-  const r = await fetch('https://api.github.com/repos/' + REPO + path, {
-    ...opts, headers: { Authorization: 'Bearer ' + process.env.GITHUB_TOKEN, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json', 'User-Agent': 'venture-hq-whatsapp' }
-  });
-  if (!r.ok) throw new Error('GitHub ' + r.status);
-  return r.json();
-}
+const opts = { access: 'public', addRandomSuffix: false, allowOverwrite: true, contentType: 'application/json', cacheControlMaxAge: 60 };
 
-async function chatIssue() {
-  const open = await gh(`/issues?state=open&labels=${LABEL}&per_page=1`);
-  if (open.length) return open[0].number;
-  const made = await gh('/issues', { method: 'POST', body: JSON.stringify({ title: TITLE, labels: [LABEL], body: 'Messages Anchit sends to the company on WhatsApp land here. The agents read them each work session and answer through company/outbox.' }) });
-  return made.number;
+async function save(msgs) {
+  const { put, head } = await import('@vercel/blob');
+  for (const m of msgs) await put(`whatsapp/${m.id.replace(/[^A-Za-z0-9._=-]/g, '_')}.json`, JSON.stringify(m), opts);
+  let index = [];
+  try { const h = await head('whatsapp/index.json'); index = await (await fetch(h.url + '?t=' + Date.now())).json(); } catch (e) { index = []; }
+  const ids = new Set(index);
+  for (const m of msgs) if (!ids.has(m.id)) index.push(m.id);
+  await put('whatsapp/index.json', JSON.stringify(index.slice(-500)), opts);
 }
 
 export async function GET(request) {
@@ -63,8 +58,7 @@ export async function POST(request) {
   const msgs = ownerMessages(payload, process.env.OWNER_WHATSAPP);
   if (!msgs.length) return new Response('ok');
   try {
-    const n = await chatIssue();
-    for (const m of msgs) await gh(`/issues/${n}/comments`, { method: 'POST', body: JSON.stringify({ body: `**From Anchit on WhatsApp** (${m.at}, message ${m.id}):\n\n${m.text.split('\n').map((l) => '> ' + l).join('\n')}` }) });
+    await save(msgs);
   } catch (e) {
     // Meta retries a failed delivery, so report the failure instead of losing the message.
     return new Response('Could not file the message', { status: 500 });

@@ -80,6 +80,11 @@ jobs:
           elif [ -n "$open" ]; then
             gh issue close "$open" --comment "$(cat /tmp/watchdog-report.md)"
           fi
+      - name: File the owner's answers from HQ and WhatsApp
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/collect-answers.js
       - name: Keep waiting decisions open (closing an issue is not an answer)
         if: always()
         env:

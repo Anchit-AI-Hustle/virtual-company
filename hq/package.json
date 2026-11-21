@@ -1,0 +1,8 @@
+{
+  "name": "venture-hq",
+  "private": true,
+  "description": "HQ page and its two small endpoints. Answers are stored in the project's own Vercel Blob store, so no GitHub key is needed.",
+  "dependencies": {
+    "@vercel/blob": "2.9.0"
+  }
+}
