@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Lights on: HQ 200, no live products to check, watchdog last ran 06:03 UTC, health ok",
+  "state": "done",
+  "task": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
   "ventureId": null,
-  "since": "2026-11-21T06:25:01.147Z"
+  "since": "2026-11-21T07:13:37.334Z"
 }

@@ -110,5 +110,19 @@
     "action": "Secret scan: no keys or tokens in the repo",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T07:13:37.372Z",
+    "agent": "security",
+    "action": "Started: Scan repo for secrets",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T07:13:37.416Z",
+    "agent": "security",
+    "action": "Secret scan clean: no keys or tokens in the repo",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

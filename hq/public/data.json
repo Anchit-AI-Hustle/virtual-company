@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T06:25:12.689Z",
+  "builtAt": "2026-11-21T07:13:44.608Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1209,16 +1209,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close: 13 ideas screened, kennel-book passed the screen, validated with 4 sourced signals, then no-go at the case (18 of 35, distribution 2: about 870 buyer searches, page one held by paid vendors and Capterra). 0 open, 0 pods, revenue Rs 0, 0 live",
-      "since": "2026-11-21T06:25:12.239Z",
+      "state": "done",
+      "task": "Standup: watchdog ran 07:03, one platform alert (HQ page behind) blocked on the Vercel 100 a day deploy limit; no owner rejects on decided issues 16 and 18, no owner-chat; checks green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research and CEO screen a new batch now",
+      "since": "2026-11-21T07:13:42.191Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:25:01.540Z",
-        "action": "Close: 13 ideas screened, kennel-book passed the screen, validated with 4 sourced signals, then no-go at the case (18 of 35, distribution 2: about 870 buyer searches, page one held by paid vendors and Capterra). 0 open, 0 pods, revenue Rs 0, 0 live"
+        "at": "2026-11-21T07:13:42.191Z",
+        "action": "Standup: watchdog ran 07:03, one platform alert (HQ page behind) blocked on the Vercel 100 a day deploy limit; no owner rejects on decided issues 16 and 18, no owner-chat; checks green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research and CEO screen a new batch now"
       },
-      "actions": 45
+      "actions": 47
     },
     {
       "id": "research",
@@ -1247,16 +1247,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
+      "state": "done",
       "task": "No live ventures, no counts to check",
-      "since": "2026-11-21T06:25:00.906Z",
+      "since": "2026-11-21T07:13:37.541Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:13:22.767Z",
+        "at": "2026-11-21T07:13:37.541Z",
         "action": "No live ventures, no counts to check"
       },
-      "actions": 9
+      "actions": 10
     },
     {
       "id": "sizing",
@@ -1361,16 +1361,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: HQ 200, no live products to check, watchdog last ran 06:03 UTC, health ok",
-      "since": "2026-11-21T06:25:01.147Z",
+      "state": "done",
+      "task": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
+      "since": "2026-11-21T07:13:37.334Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:13:18.867Z",
-        "action": "Lights on: HQ 200, no live products to check, watchdog last ran 06:03 UTC, health ok"
+        "at": "2026-11-21T07:13:37.334Z",
+        "action": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live"
       },
-      "actions": 30
+      "actions": 33
     },
     {
       "id": "security",
@@ -1380,16 +1380,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan: no keys or tokens in the repo",
-      "since": "2026-11-21T06:25:01.184Z",
+      "state": "done",
+      "task": "Secret scan clean: no keys or tokens in the repo",
+      "since": "2026-11-21T07:13:37.416Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:13:22.647Z",
-        "action": "Secret scan: no keys or tokens in the repo"
+        "at": "2026-11-21T07:13:37.416Z",
+        "action": "Secret scan clean: no keys or tokens in the repo"
       },
-      "actions": 18
+      "actions": 20
     },
     {
       "id": "growth",
@@ -1437,16 +1437,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
+      "state": "done",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T06:25:01.307Z",
+      "since": "2026-11-21T07:13:37.501Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:13:22.723Z",
+        "at": "2026-11-21T07:13:37.501Z",
         "action": "No live ventures, no customer messages"
       },
-      "actions": 8
+      "actions": 9
     },
     {
       "id": "finance",
@@ -1456,16 +1456,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue Rs 0 confirmed: no live product, no payments; FX unchanged at 94.2754 (14 Nov, xflowpay)",
-      "since": "2026-11-21T06:25:01.360Z",
+      "state": "done",
+      "task": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
+      "since": "2026-11-21T07:13:37.456Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T06:13:22.686Z",
-        "action": "Revenue Rs 0 confirmed: no live product, no payments; FX unchanged at 94.2754 (14 Nov, xflowpay)"
+        "at": "2026-11-21T07:13:37.456Z",
+        "action": "Revenue Rs 0 confirmed: no live products, ledger unchanged"
       },
-      "actions": 16
+      "actions": 17
     },
     {
       "id": "legal",
@@ -2234,6 +2234,76 @@
   },
   "log": [
     {
+      "at": "2026-11-21T07:13:42.191Z",
+      "agent": "ops",
+      "action": "Standup: watchdog ran 07:03, one platform alert (HQ page behind) blocked on the Vercel 100 a day deploy limit; no owner rejects on decided issues 16 and 18, no owner-chat; checks green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research and CEO screen a new batch now",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:37.541Z",
+      "agent": "data",
+      "action": "No live ventures, no counts to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:37.501Z",
+      "agent": "support",
+      "action": "No live ventures, no customer messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:37.456Z",
+      "agent": "finance",
+      "action": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:37.416Z",
+      "agent": "security",
+      "action": "Secret scan clean: no keys or tokens in the repo",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:37.372Z",
+      "agent": "security",
+      "action": "Started: Scan repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-21T07:13:37.334Z",
+      "agent": "devops",
+      "action": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T07:13:06.092Z",
+      "agent": "devops",
+      "action": "Blocked: HQ deploy refused: Vercel free plan hit its 100 deployments a day limit (402 api-deployments-free-per-day, retry after 24h). HQ books stay current from GitHub; page deploy retried next cycle after the limit resets",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-21T07:12:38.321Z",
+      "agent": "devops",
+      "action": "Started: Fix platform alert: HQ page behind the repo, deploy venture-hq",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-21T07:12:38.280Z",
+      "agent": "ops",
+      "action": "Started: Morning standup: 07:12 UTC cycle",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T06:25:01.540Z",
       "agent": "ops",
       "action": "Close: 13 ideas screened, kennel-book passed the screen, validated with 4 sourced signals, then no-go at the case (18 of 35, distribution 2: about 870 buyer searches, page one held by paid vendors and Capterra). 0 open, 0 pods, revenue Rs 0, 0 live",
@@ -2722,77 +2792,7 @@
       "action": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T02:12:33.988Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T02:12:33.917Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-20T23:28:28.815Z",
-      "agent": "ops",
-      "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:28:28.783Z",
-      "agent": "finance",
-      "action": "Revenue Rs 0: no live product and no payment rail; fx unchanged",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:28:28.748Z",
-      "agent": "security",
-      "action": "Secret scan of tracked files: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:28:28.711Z",
-      "agent": "devops",
-      "action": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:28:09.647Z",
-      "agent": "ceo",
-      "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:27:32.795Z",
-      "agent": "lead-stem-count",
-      "action": "Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and florist searches are 10 to 40 a month (DataForSEO US)",
-      "ventureId": "stem-count",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:26:37.007Z",
-      "agent": "ceo",
-      "action": "No-go on lash-mapper: 14 of 35, free tools (Lash Map Lab, LashMap Studio free tier) close the gap and tech intent search is small",
-      "ventureId": "lash-mapper",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-20T23:26:36.947Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2. Free tools already close the gap: Lash Map Lab is a free, no sign up web lash map generator, LashMap Studio is free up to 20 clients, and Lash Dash does per client maps for USD 3.99 a month. The 33,100 lash map volume is RankHero Etsy keyword data, not Google; Google US pro intent terms total about 1,550 a month and tool terms have no measurable volume. No payment rail exists. No sourced pivot clears the bar.",
-      "ventureId": "lash-mapper",
-      "kind": "done"
     }
   ],
-  "logTotal": 331
+  "logTotal": 341
 }

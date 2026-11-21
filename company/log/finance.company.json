@@ -110,5 +110,12 @@
     "action": "Revenue Rs 0 confirmed: no live product, no payments; FX unchanged at 94.2754 (14 Nov, xflowpay)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T07:13:37.456Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0 confirmed: no live products, ledger unchanged",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

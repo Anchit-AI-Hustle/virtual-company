@@ -159,5 +159,26 @@
     "action": "Lights on: HQ 200, no live products to check, watchdog last ran 06:03 UTC, health ok",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T07:12:38.321Z",
+    "agent": "devops",
+    "action": "Started: Fix platform alert: HQ page behind the repo, deploy venture-hq",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T07:13:06.092Z",
+    "agent": "devops",
+    "action": "Blocked: HQ deploy refused: Vercel free plan hit its 100 deployments a day limit (402 api-deployments-free-per-day, retry after 24h). HQ books stay current from GitHub; page deploy retried next cycle after the limit resets",
+    "ventureId": null,
+    "kind": "blocked"
+  },
+  {
+    "at": "2026-11-21T07:13:37.334Z",
+    "agent": "devops",
+    "action": "Uptime: HQ 200, no live products to check. Deploy quota used by 100 deploys in 10h across the team, mostly other projects (anchit-work-portfolio 30, anchor-autopilot 19, venture-hq 11); Cloudflare standby skipped, nothing live",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
