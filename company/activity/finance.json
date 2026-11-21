@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Books: ledger empty, revenue Rs 0 confirmed, no live product earning",
+  "state": "done",
+  "task": "Revenue Rs 0 confirmed: no live product, no payments; FX unchanged at 94.2754 (14 Nov, xflowpay)",
   "ventureId": null,
-  "since": "2026-11-21T05:23:50.146Z"
+  "since": "2026-11-21T06:13:22.686Z"
 }

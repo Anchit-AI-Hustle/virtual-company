@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No customer messages: no live product",
+  "state": "done",
+  "task": "No live ventures, no customer messages",
   "ventureId": null,
-  "since": "2026-11-21T04:23:27.885Z"
+  "since": "2026-11-21T06:13:22.723Z"
 }
