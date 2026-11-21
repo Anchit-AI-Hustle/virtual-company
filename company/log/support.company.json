@@ -82,5 +82,12 @@
     "action": "No live ventures, no customer messages",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T17:12:30.781Z",
+    "agent": "support",
+    "action": "No live venture, no messages",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

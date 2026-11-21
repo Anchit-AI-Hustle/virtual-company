@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T16:13:58.078Z",
+  "builtAt": "2026-11-21T17:12:31.279Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1204,16 +1204,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Standup 16:12 UTC: health ok, watchdog ran 16:05, no platform alerts, no owner-chat or reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
-      "since": "2026-11-21T16:13:55.056Z",
+      "state": "done",
+      "task": "Standup 17:12 UTC: health ok, watchdog ran 17:05, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; CEO reviews why about 120 screens failed today",
+      "since": "2026-11-21T17:12:30.612Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T16:12:32.968Z",
-        "action": "Standup 16:12 UTC: health ok, watchdog ran 16:05, no platform alerts, no owner-chat or reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; Research screens a new batch"
+        "at": "2026-11-21T17:12:30.612Z",
+        "action": "Standup 17:12 UTC: health ok, watchdog ran 17:05, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; CEO reviews why about 120 screens failed today"
       },
-      "actions": 71
+      "actions": 73
     },
     {
       "id": "research",
@@ -1242,16 +1242,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
-      "task": "No live venture counts to read",
-      "since": "2026-11-21T16:13:55.199Z",
+      "state": "done",
+      "task": "No live venture, no counts to check",
+      "since": "2026-11-21T17:12:30.749Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T10:14:59.531Z",
-        "action": "No live venture counts to read"
+        "at": "2026-11-21T17:12:30.749Z",
+        "action": "No live venture, no counts to check"
       },
-      "actions": 13
+      "actions": 14
     },
     {
       "id": "sizing",
@@ -1356,16 +1356,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: HQ returns 200, no live products to check",
-      "since": "2026-11-21T16:13:55.579Z",
+      "state": "done",
+      "task": "Lights on: 0 live products to check, health.json ok since 08:19 UTC",
+      "since": "2026-11-21T17:12:30.645Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T14:12:40.884Z",
-        "action": "Lights on: HQ returns 200, no live products to check"
+        "at": "2026-11-21T17:12:30.645Z",
+        "action": "Lights on: 0 live products to check, health.json ok since 08:19 UTC"
       },
-      "actions": 42
+      "actions": 43
     },
     {
       "id": "security",
@@ -1375,16 +1375,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan: no keys or tokens found in tracked files",
-      "since": "2026-11-21T16:13:55.651Z",
+      "state": "done",
+      "task": "Secret scan: no keys or tokens found in the repo",
+      "since": "2026-11-21T17:12:30.683Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T15:13:45.324Z",
-        "action": "Secret scan: no keys or tokens found in tracked files"
+        "at": "2026-11-21T17:12:30.683Z",
+        "action": "Secret scan: no keys or tokens found in the repo"
       },
-      "actions": 31
+      "actions": 32
     },
     {
       "id": "growth",
@@ -1432,16 +1432,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T16:13:55.868Z",
+      "state": "done",
+      "task": "No live venture, no messages",
+      "since": "2026-11-21T17:12:30.781Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T10:12:45.391Z",
-        "action": "No live ventures, no customer messages"
+        "at": "2026-11-21T17:12:30.781Z",
+        "action": "No live venture, no messages"
       },
-      "actions": 12
+      "actions": 13
     },
     {
       "id": "finance",
@@ -1451,16 +1451,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Ledger has no entries: revenue Rs 0, spend Rs 0",
-      "since": "2026-11-21T16:13:55.943Z",
+      "state": "done",
+      "task": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
+      "since": "2026-11-21T17:12:30.714Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T14:12:40.956Z",
-        "action": "Ledger has no entries: revenue Rs 0, spend Rs 0"
+        "at": "2026-11-21T17:12:30.714Z",
+        "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov"
       },
-      "actions": 22
+      "actions": 23
     },
     {
       "id": "legal",
@@ -2229,6 +2229,55 @@
   },
   "log": [
     {
+      "at": "2026-11-21T17:12:30.781Z",
+      "agent": "support",
+      "action": "No live venture, no messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.749Z",
+      "agent": "data",
+      "action": "No live venture, no counts to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.714Z",
+      "agent": "finance",
+      "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.683Z",
+      "agent": "security",
+      "action": "Secret scan: no keys or tokens found in the repo",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.645Z",
+      "agent": "devops",
+      "action": "Lights on: 0 live products to check, health.json ok since 08:19 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.612Z",
+      "agent": "ops",
+      "action": "Standup 17:12 UTC: health ok, watchdog ran 17:05, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; CEO reviews why about 120 screens failed today",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:12:30.577Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T16:13:43.550Z",
       "agent": "ceo",
       "action": "Pods stay empty: 0 of 20 new ideas cleared the screen (paid Rs 500+ a month, 1,000+ searches, no free tool closing the gap), so no venture is staffed this cycle",
@@ -2738,56 +2787,7 @@
       "action": "Standup: DevOps fixed the HQ page alert (deploy READY); watchdog 08:04; no owner rejects on decided issues 16 and 18, no owner-chat; check green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch; Firecrawl may still be out of credits until 22:14 UTC",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:34.276Z",
-      "agent": "data",
-      "action": "No live ventures to count",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:34.239Z",
-      "agent": "support",
-      "action": "No live ventures, no customer messages",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:34.191Z",
-      "agent": "finance",
-      "action": "Revenue Rs 0 confirmed: no live products, no payments; FX unchanged (94.2754, 14 Nov source)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:34.146Z",
-      "agent": "security",
-      "action": "Secret scan: no keys or tokens in the repo",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:29.167Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T08:13:29.126Z",
-      "agent": "devops",
-      "action": "Lights on: HQ 200, no live products to check; Cloudflare standby skipped, nothing live",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:13:29.090Z",
-      "agent": "devops",
-      "action": "Fixed platform alert: deployed venture-hq (dpl_6xT85DQGG4dKSAfcLBxTwVAR7nnN) READY, hq.anchit-tandon.com 200, watchdog checks pass; Vercel deploy quota open again",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 428
+  "logTotal": 435
 }

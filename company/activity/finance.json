@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Ledger has no entries: revenue Rs 0, spend Rs 0",
+  "state": "done",
+  "task": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
   "ventureId": null,
-  "since": "2026-11-21T16:13:55.943Z"
+  "since": "2026-11-21T17:12:30.714Z"
 }

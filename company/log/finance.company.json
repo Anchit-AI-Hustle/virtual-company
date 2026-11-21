@@ -152,5 +152,12 @@
     "action": "Ledger has no entries: revenue Rs 0, spend Rs 0",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T17:12:30.714Z",
+    "agent": "finance",
+    "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
