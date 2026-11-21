@@ -1,6 +1,6 @@
 # Company cycle
 
-One session runs the whole company. It runs every 3 hours, day and night (`config.schedule.cycles`), with nobody watching, so it decides,
+One session runs the whole company. It runs every hour, day and night (`config.schedule.cycles`), with nobody watching, so it decides,
 does the work, checks it and reports. It never waits for a human.
 
 Every agent reports what it is doing with `node scripts/act.js <agent> start|done|blocked

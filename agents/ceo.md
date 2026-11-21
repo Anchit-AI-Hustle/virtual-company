@@ -20,16 +20,25 @@ per week of effort, not on how many ideas exist.
 
 ## Generating ideas
 
-Ask Research for live evidence first, then write ideas. A good idea here:
-- earns its first rupee within 14 days of going live,
-- can be built by one engineer agent in 1 to 3 cycles with no paid services,
-- has a buyer who can be reached without paid ads or cold outreach (search, marketplaces,
-  communities that welcome it, the owner's existing audience),
-- solves a narrow, repeated, annoying problem for someone who already pays for things online.
+The owner's direction (21 Nov 2026): bigger ideas, ship faster. Twenty small tool ideas died to
+the same two facts: a free tool already did the job, or too few people searched for it. So:
 
-Consider every route to revenue: paid tools and calculators, digital products and templates,
-micro-SaaS, paid directories, niche job or deal boards, done-for-you services delivered by
-agents, affiliate and comparison sites, paid newsletters, browser extensions, API products.
+- Aim only at jobs people already pay for: a paid product's own price page shows at least
+  `config.ideaScreen.minPaidPriceINRMonthly` (Rs 500) a month, or the same as a one-time price.
+- Buyers must search for it: at least `config.ideaScreen.minSearchesMonthly` (1,000) searches a
+  month across the buyer terms, with the source (DataForSEO through Firecrawl Alexandria, or
+  another named tool).
+- Check for a free tool that already closes the gap before staffing. A big paid market where
+  free tools are weak, clunky, account-locked or missing the Indian context is the target.
+- Record the screen on the venture before it enters `validating`:
+  `screen: { paidPrice: { product, inrMonthly, source }, searches: { terms, monthly, source }, freeGap }`.
+  `node scripts/validate.js` refuses a staffed idea without it.
+- Ship fast: once an idea clears its case, sizing and spec review, the lead puts a free, useful
+  version live within `config.ideaScreen.freeVersionLiveHours` (48) hours, so search traffic
+  starts building while the paid tier is finished. The gates and QA still apply in full.
+
+Still: no paid services, buyers reached only through our own sites and search, and one engineer
+agent can build the first version in 1 to 3 cycles.
 
 Score each idea 1 to 5 on four parts and add them up:
 - demand: how strong and how recent the evidence is,
@@ -39,6 +48,7 @@ Score each idea 1 to 5 on four parts and add them up:
 
 Do not add an idea that overlaps a venture already in the brain, including killed ones,
 unless the kill reason no longer applies. Keep open ideas under the limit in `config.json`.
+Open ideas that cannot pass the screen are killed with that reason.
 
 ## Go or no-go on every business case
 

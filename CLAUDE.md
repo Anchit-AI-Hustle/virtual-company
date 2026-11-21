@@ -15,7 +15,9 @@ Waiting on the owner never stops the pipeline: file the ask and keep working on 
 
 Find, build and run small products that earn real revenue. Fresh ideas, any category, as long
 as real people can use the product on a live URL and pay for it. Output that earns nothing is
-not progress.
+not progress. The owner's direction since 21 Nov 2026: bigger ideas, ship faster. Only jobs people
+already pay Rs 500+ a month for, with 1,000+ buyer searches a month, and a free useful version live
+within 48 hours of passing the gates (`config.ideaScreen`, `agents/ceo.md`).
 
 ## How the company is organised
 

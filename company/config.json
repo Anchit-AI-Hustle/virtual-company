@@ -213,14 +213,30 @@
   "schedule": {
     "timezone": "Asia/Kolkata",
     "cycles": [
+      "00:41",
       "01:41",
+      "02:41",
+      "03:41",
       "04:41",
+      "05:41",
+      "06:41",
       "07:41",
+      "08:41",
+      "09:41",
       "10:41",
+      "11:41",
+      "12:41",
       "13:41",
+      "14:41",
+      "15:41",
       "16:41",
+      "17:41",
+      "18:41",
       "19:41",
-      "22:41"
+      "20:41",
+      "21:41",
+      "22:41",
+      "23:41"
     ],
     "weekly": {
       "day": "Sunday",
@@ -275,5 +291,12 @@
       "reversibility"
     ]
   },
-  "answersBlobBase": "https://xswpkjpl3gllotsx.public.blob.vercel-storage.com"
+  "answersBlobBase": "https://xswpkjpl3gllotsx.public.blob.vercel-storage.com",
+  "ideaScreen": {
+    "since": "2026-11-21T04:00:00Z",
+    "minPaidPriceINRMonthly": 500,
+    "minSearchesMonthly": 1000,
+    "freeVersionLiveHours": 48,
+    "note": "Set by the owner on 21 Nov 2026: bigger ideas, ship faster. Every idea staffed after `since` must carry a sourced screen before it enters validating."
+  }
 }

@@ -632,3 +632,12 @@ test('morning report counts read as plain English', () => {
   const src = require('node:fs').readFileSync(require('node:path').join(__dirname, '../scripts/report.js'), 'utf8');
   assert.ok(src.includes("'ideas'") && src.includes("'decision'"), 'report must say 4 ideas and 1 decision, not 4 idea or 1 decisions');
 });
+
+test('an idea staffed after the owner set the idea screen needs paid demand and search volume', () => {
+  const at = { stage: 'validating', stageSince: '2026-11-22T00:00:00Z', lead: lead(0) };
+  const ok = { paidPrice: { product: 'X Pro', inrMonthly: 900, source: 'https://x.example/pricing' }, searches: { terms: ['a'], monthly: 2400, source: 'https://dataforseo.com' } };
+  assert.ok(rules(fixture({ ventures: [venture(at)] })).includes('screen'));
+  assert.ok(rules(fixture({ ventures: [venture(Object.assign({}, at, { screen: Object.assign({}, ok, { searches: { monthly: 80, source: 'https://dataforseo.com' } }) }))] })).includes('screen'));
+  assert.ok(!rules(fixture({ ventures: [venture(Object.assign({}, at, { screen: ok }))] })).includes('screen'));
+  assert.ok(!rules(fixture({ ventures: [venture(Object.assign({}, at, { stageSince: '2026-11-20T00:00:00Z' }))] })).includes('screen'), 'ideas staffed before the rule are not judged by it');
+});

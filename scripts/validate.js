@@ -152,6 +152,19 @@ function validate(dir) {
   const openIdeas = ventures.filter((v) => v.stage === 'idea').length;
   if (openIdeas > config.wip.openIdeas) err('wip', `${openIdeas} open ideas, limit is ${config.wip.openIdeas}`);
 
+  // The owner's idea screen (21 Nov 2026): an idea staffed after config.ideaScreen.since must show
+  // that people already pay at least minPaidPriceINRMonthly for this job and that buyers search for
+  // it at least minSearchesMonthly times a month, each with a source link.
+  const scr = config.ideaScreen;
+  if (scr) for (const v of ventures) {
+    if (v.stage === 'idea' || !v.stageSince || Date.parse(v.stageSince) < Date.parse(scr.since)) continue;
+    if (v.stage === 'killed' && !v.screen) continue;
+    const s = v.screen || {};
+    const linked = (x) => x && typeof x.source === 'string' && /^https?:\/\//.test(x.source);
+    if (!(s.paidPrice && s.paidPrice.inrMonthly >= scr.minPaidPriceINRMonthly && linked(s.paidPrice))) err('screen', `${v.id}: needs screen.paidPrice { inrMonthly >= ${scr.minPaidPriceINRMonthly}, product, source } from a paid tool's own price page`);
+    if (!(s.searches && s.searches.monthly >= scr.minSearchesMonthly && linked(s.searches))) err('screen', `${v.id}: needs screen.searches { monthly >= ${scr.minSearchesMonthly}, terms, source }`);
+  }
+
   // Approvals
   // Only approved ideas get code: a folder in ventures/ must belong to a venture that reached
   // building (approved case, sizing, CEO go and spec review), or one stopped later (parked).
