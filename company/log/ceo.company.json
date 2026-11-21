@@ -158,5 +158,12 @@
     "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T02:15:52.856Z",
+    "agent": "ceo",
+    "action": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

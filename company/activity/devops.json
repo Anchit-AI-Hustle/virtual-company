@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
+  "state": "done",
+  "task": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
   "ventureId": null,
-  "since": "2026-11-20T23:28:29.054Z"
+  "since": "2026-11-21T02:12:59.502Z"
 }

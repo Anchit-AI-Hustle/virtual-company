@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T02:12:40.932Z",
+  "builtAt": "2026-11-21T02:15:55.382Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -898,6 +898,39 @@
       "businessCase": null
     },
     {
+      "id": "golf-league",
+      "title": "Golf League Desk",
+      "oneLiner": "Phone web tool for weekly golf league secretaries: league handicaps, weekly pairings, points and standings, shared as a read-only link",
+      "customer": "Volunteer secretaries of small weekly golf leagues (9 hole after work, men's and women's club leagues) in the US",
+      "revenueModel": "Free handicap and standings page, paid one season unlock for a full league",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 11,
+      "url": null,
+      "nextAction": "Lead Kabeer: validate. Find prices on each paid tool's own page (GolfSoftware.com, Golf League Network, Golf League Tracker, League Genius), look hard for any free no-account web tool that runs a whole league (kill if one does, as mahj-league and rally-rounds died that way), and check whether a static site with on-device data and a shared read-only link can do the job with no backend. Against: buyer search is seasonal (70 to 110 a month in Sep to Oct, 3,600 to 6,600 in May to Aug), so a page must be live and indexed by April.",
+      "metrics": null,
+      "killReason": null,
+      "updatedAt": "2026-11-21T02:15:42.840Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": {
+        "id": "lead-golf-league",
+        "name": "Kabeer",
+        "color": "#1E5F74"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "sitter-sheet",
       "title": "Sitter Sheet",
       "oneLiner": "Pet sitter client intake, visit report and invoice in one phone page",
@@ -1009,6 +1042,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1020,16 +1057,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing",
-      "since": "2026-11-20T23:28:28.877Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
+      "since": "2026-11-21T02:15:52.856Z",
+      "ventureId": "golf-league",
+      "ventureTitle": "Golf League Desk",
       "last": {
-        "at": "2026-11-20T23:28:09.647Z",
-        "action": "Decided: Check free tools and search volume before an idea gets a pod: screen every idea for a free no-account tool and Google US buyer volume before staffing"
+        "at": "2026-11-21T02:15:52.856Z",
+        "action": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle"
       },
-      "actions": 48
+      "actions": 50
     },
     {
       "id": "ops",
@@ -1058,16 +1095,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)",
-      "since": "2026-11-20T23:28:30.284Z",
+      "state": "done",
+      "task": "Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already does the job: IFTA calculator (TruckLogics, OTrucking, ExpressTruckTax free), tip pool calculator (Toast, 7shifts, Connecteam, Ferry free), quilt design (Made Good Designs free pattern maker with cutting list), knitting chart maker (Made Good Designs, WaveSpeed free), beekeeping log (a dozen free apps). Dropped for buyer search under 500 a month: airbnb guidebook 260, notary journal 210, cattle records 170, bowling league software 90, swiss pairing 10. Only golf-league passed both checks",
+      "since": "2026-11-21T02:15:52.766Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:24:41.535Z",
-        "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
+        "at": "2026-11-21T02:15:52.766Z",
+        "action": "Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already does the job: IFTA calculator (TruckLogics, OTrucking, ExpressTruckTax free), tip pool calculator (Toast, 7shifts, Connecteam, Ferry free), quilt design (Made Good Designs free pattern maker with cutting list), knitting chart maker (Made Good Designs, WaveSpeed free), beekeeping log (a dozen free apps). Dropped for buyer search under 500 a month: airbnb guidebook 260, notary journal 210, cattle records 170, bowling league software 90, swiss pairing 10. Only golf-league passed both checks"
       },
-      "actions": 30
+      "actions": 32
     },
     {
       "id": "data",
@@ -1077,16 +1114,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
-      "task": "No live ventures to count",
-      "since": "2026-11-20T23:28:28.934Z",
+      "state": "done",
+      "task": "No live venture counts to read",
+      "since": "2026-11-21T02:12:59.634Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T10:34:59.633Z",
-        "action": "No live ventures to count"
+        "at": "2026-11-21T02:12:59.634Z",
+        "action": "No live venture counts to read"
       },
-      "actions": 6
+      "actions": 7
     },
     {
       "id": "sizing",
@@ -1191,16 +1228,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
-      "since": "2026-11-20T23:28:29.054Z",
+      "state": "done",
+      "task": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
+      "since": "2026-11-21T02:12:59.502Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:28:28.711Z",
-        "action": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products"
+        "at": "2026-11-21T02:12:59.502Z",
+        "action": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC"
       },
-      "actions": 25
+      "actions": 26
     },
     {
       "id": "security",
@@ -1210,16 +1247,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of tracked files: no keys or tokens found",
-      "since": "2026-11-20T23:28:30.430Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no tokens or keys found",
+      "since": "2026-11-21T02:12:59.540Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:28:28.748Z",
-        "action": "Secret scan of tracked files: no keys or tokens found"
+        "at": "2026-11-21T02:12:59.540Z",
+        "action": "Secret scan of the repo: no tokens or keys found"
       },
-      "actions": 13
+      "actions": 14
     },
     {
       "id": "growth",
@@ -1267,16 +1304,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live ventures, no messages to handle",
-      "since": "2026-11-20T23:28:30.561Z",
+      "state": "done",
+      "task": "No live ventures, no customer messages",
+      "since": "2026-11-21T02:12:59.668Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-15T10:34:59.683Z",
-        "action": "No live ventures, no messages to handle"
+        "at": "2026-11-21T02:12:59.668Z",
+        "action": "No live ventures, no customer messages"
       },
-      "actions": 5
+      "actions": 6
     },
     {
       "id": "finance",
@@ -1286,16 +1323,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue Rs 0: no live product and no payment rail; fx unchanged",
-      "since": "2026-11-20T23:28:29.173Z",
+      "state": "done",
+      "task": "Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed",
+      "since": "2026-11-21T02:12:59.598Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:28:28.783Z",
-        "action": "Revenue Rs 0: no live product and no payment rail; fx unchanged"
+        "at": "2026-11-21T02:12:59.598Z",
+        "action": "Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed"
       },
-      "actions": 11
+      "actions": 12
     },
     {
       "id": "legal",
@@ -1334,6 +1371,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-golf-league",
+      "name": "Kabeer",
+      "title": "Lead, Golf League Desk",
+      "department": "pods",
+      "color": "#1E5F74",
+      "trait": "Turns a rough idea into a working page by evening.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "golf-league",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1458,6 +1512,13 @@
         "at": "2026-11-20T21:10:37.586Z",
         "agent": "research",
         "action": "New idea scored: formula-book 12/20"
+      }
+    ],
+    "golf-league": [
+      {
+        "at": "2026-11-21T02:15:52.806Z",
+        "agent": "ceo",
+        "action": "Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer search near 2,460 a month (golf league management software 1,900, golf league software 390, golf league app 170). Other pod slots left empty under ap-company-1 rather than staff ideas that failed the screen"
       }
     ],
     "lash-mapper": [
@@ -1784,6 +1845,69 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T02:15:52.856Z",
+      "agent": "ceo",
+      "action": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:15:52.806Z",
+      "agent": "ceo",
+      "action": "Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer search near 2,460 a month (golf league management software 1,900, golf league software 390, golf league app 170). Other pod slots left empty under ap-company-1 rather than staff ideas that failed the screen",
+      "ventureId": "golf-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:15:52.766Z",
+      "agent": "research",
+      "action": "Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already does the job: IFTA calculator (TruckLogics, OTrucking, ExpressTruckTax free), tip pool calculator (Toast, 7shifts, Connecteam, Ferry free), quilt design (Made Good Designs free pattern maker with cutting list), knitting chart maker (Made Good Designs, WaveSpeed free), beekeeping log (a dozen free apps). Dropped for buyer search under 500 a month: airbnb guidebook 260, notary journal 210, cattle records 170, bowling league software 90, swiss pairing 10. Only golf-league passed both checks",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:59.710Z",
+      "agent": "research",
+      "action": "Started: Find and screen new ideas against ap-company-4: free no-account tool check and US buyer search volume",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-21T02:12:59.668Z",
+      "agent": "support",
+      "action": "No live ventures, no customer messages",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:59.634Z",
+      "agent": "data",
+      "action": "No live venture counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:59.598Z",
+      "agent": "finance",
+      "action": "Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:59.540Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no tokens or keys found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:59.502Z",
+      "agent": "devops",
+      "action": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T02:12:34.029Z",
       "agent": "growth",
@@ -2278,69 +2402,6 @@
       "at": "2026-11-15T11:50:37.375Z",
       "agent": "people",
       "action": "Score legal (Vikram): 4 of 5. Held ach-batch on user risk, reviewed Seatwise and drafts. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.330Z",
-      "agent": "people",
-      "action": "Score finance (Nikhil): 4 of 5. Books at Rs 0 with source, refused an unsourced FX rate. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.292Z",
-      "agent": "people",
-      "action": "Score support (Priya): 3 of 5. Correctly reported no messages; nothing live to support",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.254Z",
-      "agent": "people",
-      "action": "Score sales (Arjun): 2 of 5. Filed Seatwise price and rail asks to the owner as pending instead of deciding at the desk; both later withdrawn or decided",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.213Z",
-      "agent": "people",
-      "action": "Score growth (Sana): 3 of 5. Seatwise search basics and drafts, unused since Seatwise stopped",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.175Z",
-      "agent": "people",
-      "action": "Score security (Tara): 4 of 5. Secret scans each cycle, Seatwise review passed with strict CSP. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.136Z",
-      "agent": "people",
-      "action": "Score devops (Neel): 4 of 5. Fixed HQ republish, paused stopped Seatwise as decided. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.099Z",
-      "agent": "people",
-      "action": "Score qa (Ishaan): 5 of 5. Found the Cloudflare injected script errors that led to decision ap-4. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.059Z",
-      "agent": "people",
-      "action": "Score engineer (Dev): 4 of 5. Fixed 7 Seatwise defects in one pass. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.021Z",
-      "agent": "people",
-      "action": "Score design (Zoya): 4 of 5. Caught a 41.6 px tap target, re-reviewed and passed. Used",
       "ventureId": null,
       "kind": "done"
     }

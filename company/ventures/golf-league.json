@@ -1,0 +1,46 @@
+{
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null,
+  "createdAt": "2026-11-21T02:15:42.840Z",
+  "updatedAt": "2026-11-21T02:15:42.840Z",
+  "killReason": null,
+  "lead": {
+    "name": "Kabeer",
+    "color": "#1E5F74",
+    "trait": "Turns a rough idea into a working page by evening."
+  },
+  "id": "golf-league",
+  "title": "Golf League Desk",
+  "oneLiner": "Phone web tool for weekly golf league secretaries: league handicaps, weekly pairings, points and standings, shared as a read-only link",
+  "customer": "Volunteer secretaries of small weekly golf leagues (9 hole after work, men's and women's club leagues) in the US",
+  "revenueModel": "Free handicap and standings page, paid one season unlock for a full league",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 2,
+    "buildEffort": 3,
+    "distribution": 3,
+    "total": 11
+  },
+  "evidence": [
+    {
+      "claim": "DataForSEO Google Ads US 12 month average: golf league management software 1,900 a month, peaking at 6,600 in June 2026.",
+      "url": "https://app.dataforseo.com/api-explorer/keywords-data/google-ads/search-volume-live",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Golf League Network sells league management (handicaps, pairings, standings, scoring) with only a 3 round free trial.",
+      "url": "https://golfleaguenetwork.com",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "GolfSoftware.com sells golf league software from a buy page, so secretaries already pay for this job.",
+      "url": "https://www.golfsoftware.com/buy",
+      "foundAt": "2026-11-21"
+    }
+  ],
+  "nextAction": "Lead Kabeer: validate. Find prices on each paid tool's own page (GolfSoftware.com, Golf League Network, Golf League Tracker, League Genius), look hard for any free no-account web tool that runs a whole league (kill if one does, as mahj-league and rally-rounds died that way), and check whether a static site with on-device data and a shared read-only link can do the job with no backend. Against: buyer search is seasonal (70 to 110 a month in Sep to Oct, 3,600 to 6,600 in May to Aug), so a page must be live and indexed by April.",
+  "stage": "validating",
+  "stageSince": "2026-11-21T02:15:42.840Z"
+}

@@ -124,5 +124,12 @@
     "action": "Platform ok: watchdog checks pass, HQ 200, CI green, no live products",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T02:12:59.502Z",
+    "agent": "devops",
+    "action": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
