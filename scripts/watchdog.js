@@ -31,6 +31,7 @@ function assess(s) {
   const add = (id, text) => problems.push({ id, text });
   if (!s.hq || s.hq.status !== 200) add('hq-down', `HQ did not load (${s.hq ? 'HTTP ' + s.hq.status : 'no answer'}).`);
   else if (!/id="stage"|class="plan"|Office/.test(s.hq.body || '')) add('hq-broken', 'HQ loaded but the office page is missing.');
+  else if (s.pageInRepo && s.hq.body !== s.pageInRepo) add('hq-page-behind', 'The live HQ page is older than the page in the repo. Vercel deploys HQ only on request: the next work session deploys it (agents/devops.md).');
   let redeploy = false;
   if (!s.data || s.data.status !== 200 || !s.data.json) add('hq-data', 'HQ could not read its data from GitHub, so the office would look empty.');
   else if (s.booksChangedAt) {
@@ -80,6 +81,7 @@ async function gather(root, now) {
   const config = read('company/config.json');
   const hqUrl = `https://hq.${config.domain}`;
   const hq = await get(hqUrl + '/');
+  let pageInRepo = null; try { pageInRepo = fs.readFileSync(path.join(root, 'hq/public/index.html'), 'utf8'); } catch (e) { /* no page */ }
   // The office reads its data from GitHub: check that copy is reachable, and judge freshness by
   // the committed file the page will read at the newest commit.
   const repo = process.env.GITHUB_REPOSITORY || 'Anchit-AI-Hustle/virtual-company';
@@ -116,7 +118,7 @@ async function gather(root, now) {
   } catch (e) { ci = null; }
   const hf = path.join(root, 'company/health.json');
   const health = fs.existsSync(hf) ? read('company/health.json') : null;
-  return { now, hq, data: { status: d.status, json }, products, unapproved, ci, cycles: (config.schedule || {}).cycles, lastWorkAt, booksChangedAt, health };
+  return { now, hq, pageInRepo, data: { status: d.status, json }, products, unapproved, ci, cycles: (config.schedule || {}).cycles, lastWorkAt, booksChangedAt, health };
 }
 
 module.exports = { assess, nextHealth, lastDueAt, LIMITS };

@@ -489,7 +489,9 @@ test('every Vercel project skips builds safely and HQ deploys only for page chan
   for (const [rel, must] of cfgs) {
     const f = path.join(ROOT, rel);
     if (!fs.existsSync(f)) continue;
-    const cmd = JSON.parse(fs.readFileSync(f, 'utf8')).ignoreCommand || '';
+    const conf = JSON.parse(fs.readFileSync(f, 'utf8'));
+    assert.strictEqual((conf.git || {}).deploymentEnabled, false, `${rel} must not deploy on every push: it spends the daily deploy limit and marks commits red`);
+    const cmd = conf.ignoreCommand || '';
     assert.ok(/vercel-ignore\.sh|^exit 0$/.test(cmd), `${rel} must use scripts/vercel-ignore.sh or exit 0, got: ${cmd}`);
     if (must) assert.ok(cmd.includes(must) && cmd.includes('public/data.json') && !/\.\.\/company(\s|\/|$)|\.\.\/scripts(\s|$)/.test(cmd), 'HQ must not redeploy for books or script changes: it reads its data from GitHub');
   }
@@ -615,4 +617,13 @@ test('collect-answers files each HQ answer and WhatsApp message once', async () 
   assert.match(comments[99][0].body, /From Anchit on WhatsApp/);
   const second = await collect(root, { fetchImpl, github, base });
   assert.deepEqual(second, { answers: 0, whatsapp: 0 });
+});
+
+test('watchdog flags a live HQ page that is behind the repo', () => {
+  const { assess } = require('../scripts/watchdog.js');
+  const page = '<main id="stage">Office v2</main>';
+  const base = { now: Date.parse('2026-11-21T03:00:00Z'), data: { status: 200, json: { builtAt: '2026-11-21T03:00:00Z' } }, pageInRepo: page };
+  const ids = (body) => assess(Object.assign({}, base, { hq: { status: 200, body } })).problems.map((p) => p.id);
+  assert.deepStrictEqual(ids(page), []);
+  assert.deepStrictEqual(ids('<main id="stage">Office v1</main>'), ['hq-page-behind']);
 });

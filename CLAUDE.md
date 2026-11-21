@@ -119,9 +119,10 @@ Publishing a product page on a subdomain of anchit-tandon.com is allowed once it
 - HQ (Vercel project `venture-hq`, root directory `hq`) reads its live data from GitHub: every
   `bash scripts/push.sh` rebuilds and commits `hq/public/data.json`, and the page loads that
   file from the newest commit. Pushing the books is all it takes to update the office, with no
-  deploy. Vercel rebuilds HQ only when its page code in `hq/` changes; never make it rebuild on
-  `company/` or `scripts/` changes, because the plan allows about 100 deploys a day across all
-  projects. To confirm HQ is current, check the committed data.json (or
+  deploy. Vercel never deploys on a push (`"git": {"deploymentEnabled": false}` in every
+  `vercel.json`), because the plan allows about 100 deploys a day across all projects: DevOps
+  deploys HQ on purpose only when its page code in `hq/` changes (see `agents/devops.md`), and
+  the watchdog flags a live page that is behind the repo. To confirm HQ is current, check the committed data.json (or
   `raw.githubusercontent.com/Anchit-AI-Hustle/virtual-company/main/hq/public/data.json`), not
   the copy deployed with the page.
 - The owner also wants every live URL to be servable from Cloudflare as a standby, with no
