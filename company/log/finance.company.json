@@ -145,5 +145,12 @@
     "action": "Books: revenue Rs 0 confirmed, 0 live products; FX unchanged from 14 Nov record",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T14:12:40.956Z",
+    "agent": "finance",
+    "action": "Ledger has no entries: revenue Rs 0, spend Rs 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

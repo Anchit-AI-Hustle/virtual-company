@@ -446,5 +446,19 @@
     "action": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T14:12:35.500Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T14:12:40.839Z",
+    "agent": "ops",
+    "action": "Standup 14:12 UTC: watchdog ran 14:04, health ok, no platform alerts, no owner replies, no reject comments on decided issues 16 and 18, all 22 ventures killed, pods empty",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

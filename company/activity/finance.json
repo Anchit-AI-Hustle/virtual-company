@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Books: revenue Rs 0 confirmed, 0 live products; FX unchanged from 14 Nov record",
+  "state": "done",
+  "task": "Ledger has no entries: revenue Rs 0, spend Rs 0",
   "ventureId": null,
-  "since": "2026-11-21T13:15:46.787Z"
+  "since": "2026-11-21T14:12:40.956Z"
 }
