@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-5",
+  "ventureId": null,
+  "type": "public-post",
+  "title": "Screen for ideas where people pay to save, share or team up",
+  "ask": "Next idea screens target jobs where the paid tools charge for saved work across devices, sharing and team use, served at Rs 0 on free tiers the company already uses (Vercel Blob), with the free single-user tool still live within 48 hours",
+  "why": "On 21 Nov 2026 Research screened 25 bigger ideas under the owner's new screen and none passed: 24 failed because a free no-signup browser tool already does the single-session job (company/log/research.company.json). The paid tools that clear Rs 500 a month charge for saving, sharing and teams, which a client-only page cannot offer.",
+  "costINR": 0,
+  "status": "decided",
+  "createdAt": "2026-11-21T04:40:00.000Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep screening only client-side, no-account tools",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "25 of 25 candidates failed on 21 Nov, plus about 25 more on the earlier screen the same day (company/log/research.company.json). No honest profit figure; the evidence says this path stays empty."
+    },
+    {
+      "option": "Screen for jobs where paid tools charge for saved work, sharing and team use, built at Rs 0 on free tiers already in use (Vercel Blob), free single-user tool first",
+      "realism": 4,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Paid tools in the failed niches sell exactly these features: StudioBinder USD 29 to 99 a month for production paperwork (https://www.studiobinder.com/pricing/), SiteSetu Rs 2,500 per project a month for contractor billing (https://sitesetu.app/pricing), Travefy USD 39 a month (https://travefy.com/pricing). The company already stores data on Vercel Blob (config.answersBlobBase) at no cost. Realism 4 not 5: storing user work needs a privacy note and the least data possible, checked by Security and Legal. No honest profit figure until an idea is sized."
+    },
+    {
+      "option": "Move screening to Hindi and other non-English searches where free tools are thinner",
+      "realism": 3,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Not yet measured: no sourced volumes for Hindi buyer terms were pulled this cycle, and willingness to pay Rs 500 a month is lower in that audience. Can be tried later as a second screen."
+    }
+  ],
+  "decision": {
+    "choice": "Screen for jobs where paid tools charge for saved work, sharing and team use, built at Rs 0 on free tiers already in use (Vercel Blob), free single-user tool first",
+    "reason": "Same zero cost and fully reversible as doing nothing, but it aims at the one gap the free no-signup tools leave open, which is what the paid products in these niches actually charge for. Doing nothing has produced no passing idea in about 50 screens today.",
+    "decidedAt": "2026-11-21T04:40:00.000Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/18"
+}

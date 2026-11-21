@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Killed stall-tally: fails the owner's 21 Nov idea screen (see killReason)",
-  "ventureId": "stall-tally",
-  "since": "2026-11-21T04:22:47.194Z"
+  "state": "idle",
+  "task": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle",
+  "ventureId": null,
+  "since": "2026-11-21T04:23:27.553Z"
 }

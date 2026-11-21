@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T04:22:52.984Z",
+  "builtAt": "2026-11-21T04:23:30.044Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -80,6 +80,45 @@
     "monthlyCapINR": 0
   },
   "decisions": [
+    {
+      "id": "ap-company-5",
+      "title": "Screen for ideas where people pay to save, share or team up",
+      "status": "decided",
+      "why": "On 21 Nov 2026 Research screened 25 bigger ideas under the owner's new screen and none passed: 24 failed because a free no-signup browser tool already does the single-session job (company/log/research.company.json). The paid tools that clear Rs 500 a month charge for saving, sharing and teams, which a client-only page cannot offer.",
+      "options": [
+        {
+          "option": "Do nothing for now: keep screening only client-side, no-account tools",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "25 of 25 candidates failed on 21 Nov, plus about 25 more on the earlier screen the same day (company/log/research.company.json). No honest profit figure; the evidence says this path stays empty."
+        },
+        {
+          "option": "Screen for jobs where paid tools charge for saved work, sharing and team use, built at Rs 0 on free tiers already in use (Vercel Blob), free single-user tool first",
+          "realism": 4,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Paid tools in the failed niches sell exactly these features: StudioBinder USD 29 to 99 a month for production paperwork (https://www.studiobinder.com/pricing/), SiteSetu Rs 2,500 per project a month for contractor billing (https://sitesetu.app/pricing), Travefy USD 39 a month (https://travefy.com/pricing). The company already stores data on Vercel Blob (config.answersBlobBase) at no cost. Realism 4 not 5: storing user work needs a privacy note and the least data possible, checked by Security and Legal. No honest profit figure until an idea is sized."
+        },
+        {
+          "option": "Move screening to Hindi and other non-English searches where free tools are thinner",
+          "realism": 3,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Not yet measured: no sourced volumes for Hindi buyer terms were pulled this cycle, and willingness to pay Rs 500 a month is lower in that audience. Can be tried later as a second screen."
+        }
+      ],
+      "decision": {
+        "choice": "Screen for jobs where paid tools charge for saved work, sharing and team use, built at Rs 0 on free tiers already in use (Vercel Blob), free single-user tool first",
+        "reason": "Same zero cost and fully reversible as doing nothing, but it aims at the one gap the free no-signup tools leave open, which is what the paid products in these niches actually charge for. Doing nothing has produced no passing idea in about 50 screens today.",
+        "decidedAt": "2026-11-21T04:40:00.000Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/18"
+    },
     {
       "id": "ap-company-4",
       "title": "Check free tools and search volume before an idea gets a pod",
@@ -1072,16 +1111,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "Killed stall-tally: fails the owner's 21 Nov idea screen (see killReason)",
-      "since": "2026-11-21T04:22:47.194Z",
-      "ventureId": "stall-tally",
-      "ventureTitle": "Stall Tally",
+      "state": "idle",
+      "task": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle",
+      "since": "2026-11-21T04:23:27.553Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T04:22:47.194Z",
-        "action": "Killed stall-tally: fails the owner's 21 Nov idea screen (see killReason)"
+        "at": "2026-11-21T04:23:27.448Z",
+        "action": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle"
       },
-      "actions": 55
+      "actions": 57
     },
     {
       "id": "ops",
@@ -1091,16 +1130,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: health ok, watchdog ran 04:03 UTC, no platform alerts, no owner rejects, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 4 small open ideas that predate the owner's new screen (Rs 500+ a month paid, 1,000+ searches a month). Research to find bigger ideas that pass it; CEO to kill old ideas that cannot",
-      "since": "2026-11-21T04:12:39.019Z",
+      "state": "idle",
+      "task": "Close: 0 pods (no idea passed the screen), 25 bigger ideas screened, 4 old ideas killed with sourced reasons, ap-company-5 decided; revenue Rs 0, 0 live",
+      "since": "2026-11-21T04:23:27.760Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T04:12:39.019Z",
-        "action": "Standup: health ok, watchdog ran 04:03 UTC, no platform alerts, no owner rejects, checks green (44 tests). 0 live, revenue Rs 0, pods empty, 4 small open ideas that predate the owner's new screen (Rs 500+ a month paid, 1,000+ searches a month). Research to find bigger ideas that pass it; CEO to kill old ideas that cannot"
+        "at": "2026-11-21T04:23:27.484Z",
+        "action": "Close: 0 pods (no idea passed the screen), 25 bigger ideas screened, 4 old ideas killed with sourced reasons, ap-company-5 decided; revenue Rs 0, 0 live"
       },
-      "actions": 38
+      "actions": 39
     },
     {
       "id": "research",
@@ -1110,9 +1149,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 25 bigger ideas (DataForSEO via Firecrawl Alexandria, 21 Nov): none passed. Volume and paid price cleared easily; 24 failed because a free no-signup tool already does the whole job (cut list, call sheet, run of show, BBS, interior BOQ, RA bill, skills matrix, SSCC labels and more), 1 on volume (travel agent itinerary builder 770 a month). The 4 old open ideas also fail",
-      "since": "2026-11-21T04:22:46.998Z",
+      "since": "2026-11-21T04:23:27.802Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1129,9 +1168,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture counts to read: 0 live products",
-      "since": "2026-11-21T04:12:49.351Z",
+      "since": "2026-11-21T04:23:27.593Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1243,9 +1282,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live URLs to check: every venture is killed or an idea; Seatwise was taken offline (ap-seatwise-3). Watchdog green at 04:03 UTC",
-      "since": "2026-11-21T04:12:39.052Z",
+      "since": "2026-11-21T04:23:27.632Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1262,9 +1301,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-21T04:12:49.264Z",
+      "since": "2026-11-21T04:23:27.840Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1319,9 +1358,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No customer messages: no live product",
-      "since": "2026-11-21T04:12:49.386Z",
+      "since": "2026-11-21T04:23:27.885Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1338,9 +1377,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue Rs 0 confirmed: no live product, no payments recorded in ledger.json; fx stays 94.2754 INR per USD from 14 Nov (xflowpay)",
-      "since": "2026-11-21T04:12:49.308Z",
+      "since": "2026-11-21T04:23:27.676Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1357,9 +1396,9 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "done",
+      "state": "idle",
       "task": "Category screen on 25 candidates: dropped nutrition labels (FDA labelling risk), school timetable and OMR sheets (close to the children rule); the rest were in allowed categories",
-      "since": "2026-11-21T04:22:47.038Z",
+      "since": "2026-11-21T04:23:27.718Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1891,6 +1930,27 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T04:23:27.484Z",
+      "agent": "ops",
+      "action": "Close: 0 pods (no idea passed the screen), 25 bigger ideas screened, 4 old ideas killed with sourced reasons, ap-company-5 decided; revenue Rs 0, 0 live",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T04:23:27.448Z",
+      "agent": "ceo",
+      "action": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T04:23:27.412Z",
+      "agent": "ceo",
+      "action": "Decided: Screen for ideas where people pay to save, share or team up: next screens target saved, shared and team work on Rs 0 free tiers, free single-user tool first (ap-company-5, issue 18)",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T04:22:47.194Z",
       "agent": "ceo",
@@ -2427,27 +2487,6 @@
       "at": "2026-11-15T14:31:49.696Z",
       "agent": "lead-mahj-league",
       "action": "Venture closed: killed at the business case, 14 of 35",
-      "ventureId": "mahj-league",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T14:31:49.650Z",
-      "agent": "ceo",
-      "action": "Decided no-go on mahj-league: case 14 of 35, free apps already keep club standings, no sourced search volume. Killed. 4 open ideas left, Research sources more next cycle",
-      "ventureId": "mahj-league",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T14:31:49.605Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go: case scores 14 of 35 (bar 24) with willingness to pay and distribution at 2; AMR Authority and PartyPot already keep free club standings, Mahjic Pro covers paid leagues, and no league search term has sourced volume. Kill stands.",
-      "ventureId": "mahj-league",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T14:31:22.164Z",
-      "agent": "research",
-      "action": "Business case written: Mahj League scores 14 of 35, no-go, free apps already keep league standings and league searches have no sourced volume",
       "ventureId": "mahj-league",
       "kind": "done"
     }

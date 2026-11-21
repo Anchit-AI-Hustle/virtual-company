@@ -165,5 +165,19 @@
     "action": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T04:23:27.412Z",
+    "agent": "ceo",
+    "action": "Decided: Screen for ideas where people pay to save, share or team up: next screens target saved, shared and team work on Rs 0 free tiers, free single-user tool first (ap-company-5, issue 18)",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T04:23:27.448Z",
+    "agent": "ceo",
+    "action": "Pods stay empty this cycle: no idea passed the owner's screen, so no lead is staffed rather than staffing a weak idea; 0 open ideas, Research to screen under ap-company-5 next cycle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
