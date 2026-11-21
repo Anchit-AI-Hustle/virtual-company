@@ -9,7 +9,10 @@
   "ifNo": "Product updates stay on HQ and GitHub, and LinkedIn posts are asked for there instead of WhatsApp.",
   "costINR": 0,
   "urgent": false,
-  "status": "pending",
+  "status": "approved",
   "createdAt": "2026-11-15T12:30:00.000Z",
-  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/13"
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/13",
+  "decidedBy": "owner",
+  "decidedAt": "2026-11-21T01:09:04Z",
+  "answer": "Owner commented approve on issue 13 on 21 Nov 2026 after setting up WhatsApp"
 }

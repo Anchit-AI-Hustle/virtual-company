@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T01:56:22.694Z",
+  "builtAt": "2026-11-21T02:12:40.932Z",
   "report": null,
   "health": {
     "status": "ok",
@@ -296,23 +296,7 @@
       "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4"
     }
   ],
-  "approvals": [
-    {
-      "id": "ap-company-2",
-      "ventureId": null,
-      "type": "account",
-      "title": "Set up WhatsApp so the company can talk to you",
-      "why": "You asked to discuss each live product's social discovery on WhatsApp. The company has built the messaging and the reply bridge; Meta needs your account to switch it on.",
-      "ask": "Meta WhatsApp Cloud API: app, test or business number, permanent system user token, templates venture_live and venture_update (created automatically), webhook https://hq.anchit-tandon.com/api/whatsapp. GitHub secrets WHATSAPP_TOKEN, WHATSAPP_PHONE_ID, WHATSAPP_WABA_ID, OWNER_WHATSAPP. Vercel env on venture-hq: WHATSAPP_VERIFY_TOKEN, WHATSAPP_APP_SECRET, OWNER_WHATSAPP, GITHUB_TOKEN (fine-grained, Issues read and write on this repo).",
-      "youDo": "1. On developers.facebook.com create an app (type Business) and add WhatsApp. Use Meta's free test number and add your WhatsApp number as a recipient (confirm the code on your phone). 2. In Meta Business settings create a System User with WhatsApp access and make a permanent token. 3. In GitHub, repo Settings then Secrets then Actions, add WHATSAPP_TOKEN, WHATSAPP_PHONE_ID, WHATSAPP_WABA_ID and OWNER_WHATSAPP (your number with 91 in front). 4. In Vercel, project venture-hq, Environment Variables, add WHATSAPP_APP_SECRET (Meta app, Basic settings), WHATSAPP_VERIFY_TOKEN (any phrase you choose), OWNER_WHATSAPP (same number) and GITHUB_TOKEN (a GitHub fine-grained token with Issues read and write on virtual-company). 5. In the Meta app, WhatsApp then Configuration, set the webhook to https://hq.anchit-tandon.com/api/whatsapp with the same phrase, and subscribe to messages. 6. Comment approve here; the agents send you a test message.",
-      "ifNo": "Product updates stay on HQ and GitHub, and LinkedIn posts are asked for there instead of WhatsApp.",
-      "costINR": 0,
-      "urgent": false,
-      "status": "pending",
-      "createdAt": "2026-11-15T12:30:00.000Z",
-      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/13"
-    }
-  ],
+  "approvals": [],
   "ventures": [
     {
       "id": "bake-cost",
@@ -1055,16 +1039,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
-      "since": "2026-11-20T23:28:30.077Z",
+      "state": "done",
+      "task": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
+      "since": "2026-11-21T02:12:33.988Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-20T23:28:28.815Z",
-        "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas"
+        "at": "2026-11-21T02:12:33.988Z",
+        "action": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen"
       },
-      "actions": 33
+      "actions": 35
     },
     {
       "id": "research",
@@ -1245,16 +1229,16 @@
       "color": "#C27A00",
       "trait": "Brings the right buyers without spending a rupee.",
       "charter": "agents/growth.md",
-      "state": "idle",
-      "task": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live",
-      "since": "2026-11-20T23:28:29.235Z",
+      "state": "done",
+      "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
+      "since": "2026-11-21T02:12:34.029Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-14T07:05:27.656Z",
-        "action": "Seatwise: added canonical and Open Graph tags, robots.txt and sitemap.xml; launch drafts saved in ventures/seatwise/growth (excluded from deploy), to be filed as one public-post approval once live"
+        "at": "2026-11-21T02:12:34.029Z",
+        "action": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox"
       },
-      "actions": 2
+      "actions": 3
     },
     {
       "id": "sales",
@@ -1801,6 +1785,27 @@
   },
   "log": [
     {
+      "at": "2026-11-21T02:12:34.029Z",
+      "agent": "growth",
+      "action": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:33.988Z",
+      "agent": "ops",
+      "action": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:12:33.917Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-20T23:28:28.815Z",
       "agent": "ops",
       "action": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
@@ -2336,27 +2341,6 @@
       "at": "2026-11-15T11:50:37.021Z",
       "agent": "people",
       "action": "Score design (Zoya): 4 of 5. Caught a 41.6 px tap target, re-reviewed and passed. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.978Z",
-      "agent": "people",
-      "action": "Score product (Rohan): 4 of 5. Wrote and independently failed the Seatwise spec on a real gap. Used",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.942Z",
-      "agent": "people",
-      "action": "Score sizing (Farhan): 3 of 5. One sourced sizing (PayChase) that stopped a weak build. Ran once only",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:36.901Z",
-      "agent": "people",
-      "action": "Score data (Anaya): 3 of 5. Honest null counts, no fake numbers. Little to do with nothing live",
       "ventureId": null,
       "kind": "done"
     }

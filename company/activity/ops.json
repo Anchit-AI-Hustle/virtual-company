@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Close: 4 ventures worked and killed with written reasons (formula-book, litter-log, stem-count at validating; lash-mapper at the case, 14 of 35); 1 new idea added; ap-company-4 decided; pods empty, 4 open ideas",
+  "state": "done",
+  "task": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
   "ventureId": null,
-  "since": "2026-11-20T23:28:30.077Z"
+  "since": "2026-11-21T02:12:33.988Z"
 }
