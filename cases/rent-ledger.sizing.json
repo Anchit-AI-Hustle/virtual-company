@@ -1,0 +1,56 @@
+{
+  "problem": {
+    "who": "Small US landlords, mostly individuals with one to a few rental units who manage the units themselves and track rent, partial payments and late fees by hand or in a spreadsheet. Most of them can already get a tenant ledger free from Stessa, TurboTenant or Landlord Studio, so the unmet need is narrow: a ledger with a running balance and late fees, kept month to month, without opening a full property management account.",
+    "frequency": "monthly",
+    "severity": 2,
+    "evidence": [
+      { "claim": "IRS Schedule E data via Pew: in 2018 about 10.3 million individual tax filers (6.7%) reported owning rental property, averaging 1.72 properties each.", "url": "https://www.pewresearch.org/short-reads/2021/08/02/as-national-eviction-ban-expires-a-look-at-who-rents-and-who-owns-in-the-u-s/" },
+      { "claim": "CRS on the 2021 Rental Housing Finance Survey: 19.3 million US rental properties, 70.2% owned by individual investors, 85.6% single unit.", "url": "https://www.everycrsreport.com/reports/R47332.html" },
+      { "claim": "In a February 2026 BiggerPockets thread on a free Google Sheets rent tracker, small landlords asked for payment date, late fee, remaining balance and partial payment columns, and one noted a spreadsheet will not auto-calculate a late fee.", "url": "https://www.biggerpockets.com/forums/52/topics/1277850-free-google-sheets-rent-payment-tracker-template-for-landlords" },
+      { "claim": "Free alternative: Stessa Essentials is free and lists a tenant ledger and rent roll plus online rent collection; paid Manage is USD 12 a month billed annually or USD 15 monthly.", "url": "https://www.stessa.com/pricing/" },
+      { "claim": "US searches: rent ledger 5,400 and rent ledger template 2,400 a month (7,800 counted), Google Ads averages read 21 Nov 2026 and recorded in the venture screen.", "url": "https://api.seodata.dev/v1/keyword?q=rent+ledger+template&country=us" }
+    ]
+  },
+  "cohorts": [
+    {
+      "name": "US individual landlords who manage their own rentals",
+      "country": "US",
+      "size": 8240000,
+      "sizeSource": "https://www.pewresearch.org/short-reads/2021/08/02/as-national-eviction-ban-expires-a-look-at-who-rents-and-who-owns-in-the-u-s/",
+      "reachablePct": 0.06,
+      "reachBasis": "Size: 10.3 million US tax filers reported rental property in 2018 (IRS via Pew); Baselane, citing iPropertyManagement, says 80% of individually owned rentals are self-managed (https://www.baselane.com/resources/self-managing-landlord-statistics), so 8,240,000. Reach: the only channel allowed is our own pages ranking in search, on a brand new subdomain with no backlinks and zero ad spend. The venture screen counts 7,800 US searches a month for rent ledger and rent ledger template, about 93,600 a year, and some searchers are tenants, students or bookkeepers, not landlords. Page one is held by TurboTenant, Landlord Studio and TenantCloud (venture screen). Sistrix finds position 10 gets about 2.5% of clicks and position 3 about 11% (https://www.searchenginejournal.com/google-first-page-clicks/). If we reach the bottom half of page one within the year (a generous assumption for a new domain), about 4% of 93,600 is 3,700 visits; I allow long-tail helper pages (late fee calculator, partial payment ledger) to add about as much again, so roughly 5,000 distinct landlords a year, 0.06% of the cohort. This is a judgement built on those sources, not a measured number.",
+      "payingPct": 2,
+      "payingBasis": "Lenny's Newsletter puts a good freemium free-to-paid rate at 3 to 5% and great at 6 to 8% (https://lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion). I go below good because the same job is free elsewhere: Stessa Essentials includes a tenant ledger and rent roll free (https://www.stessa.com/pricing/), TurboTenant and Landlord Studio have free plans (https://turbotenant.com/pricing, https://www.capterra.com/p/182473/Landlord-Studio/pricing/), and forum replies say a spreadsheet is enough under 5 to 10 units. Our paid tier (saved ledgers across devices, several tenants, tenant share link) has to beat a free full suite.",
+      "priceINR": 4619,
+      "purchasesPerYear": 1
+    },
+    {
+      "name": "Landlords in England who let without an agent (weakest cohort)",
+      "country": "GB",
+      "size": 266760,
+      "sizeSource": "https://www.gov.uk/government/statistics/english-private-landlord-survey-2024-main-report/english-private-landlord-survey-2024-main-report",
+      "reachablePct": 0.02,
+      "reachBasis": "Size: the English Private Landlord Survey 2024 estimates about 513,000 direct landlords (a floor, since it counts only landlords who registered deposits themselves) and 52% use no agent to let or manage, so 266,760. Reach: our search numbers are US only, UK landlords tend to search rent statement or rent book rather than rent ledger, and the product prices in USD on a US-framed page. 0.02% (about 50 landlords a year) is a judgement with no measured source.",
+      "payingPct": 1.5,
+      "payingBasis": "Below the 3 to 5% good freemium range (https://lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion) because the product is US-framed (US late fee rules and wording), pricing is in USD, and UK landlords have their own landlord software and free spreadsheet templates. Judgement, kept low.",
+      "priceINR": 4619,
+      "purchasesPerYear": 1
+    }
+  ],
+  "price": {
+    "usd": 49,
+    "period": "year",
+    "inr": 4619,
+    "fx": "94.2754 INR per USD from company/config.json usdInr",
+    "basis": "Full suites charge about USD 144 to 199 a year for small landlords: Stessa Manage USD 12 a month billed annually (https://www.stessa.com/pricing/), TurboTenant Essentials USD 149 a year and Pro USD 199 a year for 1 to 10 units (https://turbotenant.com/pricing), Landlord Studio PRO USD 12 a month flat (https://www.capterra.com/p/182473/Landlord-Studio/pricing/). A ledger-only tool with no rent collection, bank sync or tax reports cannot charge suite prices, so I take about a third of them, USD 49 a year. Not tested with buyers."
+  },
+  "likelihoodPct": 10,
+  "likelihoodBasis": "Base rate: most small products fail, and this one sells a feature that well funded vendors give away free. Stessa includes a tenant ledger in its free plan, and TurboTenant and Landlord Studio both have free plans and use free rent ledger templates as lead magnets that rank on page one for our own search terms. A free generator launched on Product Hunt already covers the single-session job. Reach is limited to our own pages ranking in search on a new subdomain with zero ad spend, against strong vendor domains. What raises it: the search demand is real (7,800 US searches a month), the pain is recurring (monthly), the build is small, and landlords in forums ask for exactly the late fee and partial payment columns spreadsheets lack. I found no comparable standalone paid rent ledger with reported revenue, so I do not go above the 10% I gave a similar free-alternative case. 10% is below the 15% bar.",
+  "comparables": [
+    { "name": "Stessa", "url": "https://www.stessa.com/pricing/", "outcome": "Free Essentials plan includes a tenant ledger, rent roll and online rent collection; makes money on Manage (USD 12 a month annual) and Pro (USD 28). Sets the price of the core ledger at zero." },
+    { "name": "TurboTenant", "url": "https://turbotenant.com/pricing", "outcome": "Free plan plus Essentials USD 149 a year and Pro USD 199 a year for 1 to 10 units. Ranks for rent ledger template with a static PDF that upsells a free account." },
+    { "name": "Landlord Studio", "url": "https://www.capterra.com/p/182473/Landlord-Studio/pricing/", "outcome": "GO free, PRO USD 12 a month flat, PRO+ USD 28. Also ranks with a free rent ledger template as a lead magnet." },
+    { "name": "Rent Ledger Template generator (Product Hunt)", "url": "https://www.producthunt.com/p/rent-ledger-template/rent-ledger-template", "outcome": "Free generator exporting PDF, CSV and Excel with a running balance. No price or revenue reported; shows the single-session job is already free." }
+  ],
+  "scenarios": { "worstFactor": 0.2, "bestFactor": 4 }
+}

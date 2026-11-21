@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T17:22:09.557Z",
+  "builtAt": "2026-11-21T17:25:11.069Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1353,16 +1353,16 @@
       "color": "#5B3E8A",
       "trait": "Counts the buyers, group by group, before anyone builds.",
       "charter": "agents/sizing.md",
-      "state": "idle",
-      "task": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar",
-      "since": "2026-11-21T16:13:55.260Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
+      "since": "2026-11-21T17:25:02.394Z",
+      "ventureId": "rent-ledger",
+      "ventureTitle": "Rent Ledger",
       "last": {
-        "at": "2026-11-14T09:45:19.653Z",
-        "action": "Sizing: PayChase, 4 groups, about 271 paying people, Rs 14,723 expected a year, 10% chance. Below the bar"
+        "at": "2026-11-21T17:25:02.394Z",
+        "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar"
       },
-      "actions": 1
+      "actions": 3
     },
     {
       "id": "product",
@@ -2054,6 +2054,16 @@
     ],
     "rent-ledger": [
       {
+        "at": "2026-11-21T17:25:02.394Z",
+        "agent": "sizing",
+        "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar"
+      },
+      {
+        "at": "2026-11-21T17:22:51.186Z",
+        "agent": "sizing",
+        "action": "Started: Sizing rent-ledger: cohorts, price, likelihood"
+      },
+      {
         "at": "2026-11-21T17:21:53.781Z",
         "agent": "lead-rent-ledger",
         "action": "4 sourced demand signals found (2 BiggerPockets threads, TurboTenant and Stessa price pages); moved to validated"
@@ -2359,6 +2369,20 @@
     "work-order": []
   },
   "log": [
+    {
+      "at": "2026-11-21T17:25:02.394Z",
+      "agent": "sizing",
+      "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
+      "ventureId": "rent-ledger",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:22:51.186Z",
+      "agent": "sizing",
+      "action": "Started: Sizing rent-ledger: cohorts, price, likelihood",
+      "ventureId": "rent-ledger",
+      "kind": "start"
+    },
     {
       "at": "2026-11-21T17:21:53.781Z",
       "agent": "lead-rent-ledger",
@@ -2904,21 +2928,7 @@
       "action": "Started: Morning standup: 09:12 UTC cycle",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T08:14:55.207Z",
-      "agent": "ops",
-      "action": "Close: HQ page alert fixed (deploy READY), lights on, no secrets, revenue Rs 0, 0 live, pods empty. Blocked: Research on Firecrawl credits until about 22:14 UTC",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:14:55.161Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: no idea has a sourced volume screen yet and Firecrawl credits are out until about 22:14 UTC; staffing an unscreened idea would break the owner's 21 Nov screen. 0 open ideas, 3 candidates queued",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 439
+  "logTotal": 441
 }

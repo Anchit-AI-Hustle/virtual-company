@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-21T17:22:51.186Z",
+    "agent": "sizing",
+    "action": "Started: Sizing rent-ledger: cohorts, price, likelihood",
+    "ventureId": "rent-ledger",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T17:25:02.394Z",
+    "agent": "sizing",
+    "action": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
+    "ventureId": "rent-ledger",
+    "kind": "done"
+  }
+]
