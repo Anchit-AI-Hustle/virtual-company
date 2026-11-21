@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-11-21T02:16:22.589Z",
+    "agent": "lead-golf-league",
+    "action": "Started: Validating golf-league: pricing paid league tools from their own pages and searching for a free tool that runs a whole league",
+    "ventureId": "golf-league",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-21T02:19:34.638Z",
+    "agent": "lead-golf-league",
+    "action": "Priced paid tools from own pages: GolfSoftware 8 USD per golfer a year (12 min), Golf League Network 9.50 to 10.50 USD per golfer capped 570 to 630 a league, Golf League Tracker 119 USD a league a season, Handicap Tracker app 49.99 USD a year",
+    "ventureId": "golf-league",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T02:19:34.672Z",
+    "agent": "lead-golf-league",
+    "action": "Page one check (web search, 21 Nov 2026): golf league software and golf league management software are held by GolfSoftware.com, Golf League Tracker, Golf League Network, LiveTourney blog, Capterra, SourceForge and App Store pages; free searches surface Squabbit",
+    "ventureId": "golf-league",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-21T02:19:34.706Z",
+    "agent": "lead-golf-league",
+    "action": "Killed golf-league: Squabbit Free already runs a whole league (league handicaps and subs, every format, recurring events, live season standings, public event site) with 5.6K ratings at 4.9; League Pro only adds stats and admin polish (squabbitgolf.com/pricing.html)",
+    "ventureId": "golf-league",
+    "kind": "done"
+  }
+]

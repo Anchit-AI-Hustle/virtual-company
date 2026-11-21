@@ -4,8 +4,8 @@
   "url": null,
   "metrics": null,
   "createdAt": "2026-11-21T02:15:42.840Z",
-  "updatedAt": "2026-11-21T02:15:42.840Z",
-  "killReason": null,
+  "updatedAt": "2026-11-21T02:19:26.720Z",
+  "killReason": "A free tool already does the whole job. Squabbit Free (5.6K App Store ratings at 4.9, web app included) runs unlimited leagues with custom league handicaps and subs, every scoring format including match play points, tee time preferences, recurring weekly events, live season standings and a public read-only event website at no cost; its paid League Pro ($249.99 a year) only adds stats, sponsors and admin polish. Golf League Guru and GOWF are further free league apps. Paid demand is real (GolfSoftware $8 per golfer a year, Golf League Network up to $570 to $630 a league, Golf League Tracker $119 a league a season), but those buyers already have a free full-league option from a well rated brand, and page one for golf league software is held by those vendors plus Capterra and the App Store. Our only gap would be no account, which is not a reason to pay. Search is also seasonal (70 to 110 a month in Sep to Oct). Killed 21 Nov 2026 under ap-company-1 and ap-company-4: a free tool closes the gap.",
   "lead": {
     "name": "Kabeer",
     "color": "#1E5F74",
@@ -38,9 +38,61 @@
       "claim": "GolfSoftware.com sells golf league software from a buy page, so secretaries already pay for this job.",
       "url": "https://www.golfsoftware.com/buy",
       "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "GolfSoftware League Manager costs $8 per golfer per year with a 12 golfer minimum.",
+      "url": "https://www.golfsoftware.com/buy",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Golf League Network charges $9.50 per golfer for course leagues (capped at $570) and $10.50 per golfer and sub for independent leagues (capped at $630), after a 3 round free trial.",
+      "url": "https://www.golfleaguenetwork.com/Pricing_Leagues",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Golf League Tracker League Manager costs $119 per league per season for one league, after a free 4 round trial.",
+      "url": "https://golfleaguetracker.com/glthome/about/pricing",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Golf League Handicap Tracker on the US App Store sells a 1-Year Group Handicap in-app purchase at $49.99 and has 420 ratings at 4.7.",
+      "url": "https://apps.apple.com/us/app/golf-league-handicap-tracker/id1005836634",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "A small church league organiser asked a forum for free golf league software after the volunteer spreadsheet keeper quit (May 2019).",
+      "url": "https://sawmillcreek.org/threads/free-golf-league-software.274328/",
+      "foundAt": "2026-11-21"
     }
   ],
-  "nextAction": "Lead Kabeer: validate. Find prices on each paid tool's own page (GolfSoftware.com, Golf League Network, Golf League Tracker, League Genius), look hard for any free no-account web tool that runs a whole league (kill if one does, as mahj-league and rally-rounds died that way), and check whether a static site with on-device data and a shared read-only link can do the job with no backend. Against: buyer search is seasonal (70 to 110 a month in Sep to Oct, 3,600 to 6,600 in May to Aug), so a page must be live and indexed by April.",
-  "stage": "validating",
-  "stageSince": "2026-11-21T02:15:42.840Z"
+  "nextAction": "None",
+  "stage": "killed",
+  "stageSince": "2026-11-21T02:19:26.720Z",
+  "evidenceAgainst": [
+    {
+      "claim": "Squabbit pricing page: the Free plan ticks unlimited players, tournaments and leagues, every game format and scoring type, live leaderboards and handicaps, a public event website, recurring events, live season standings, AI season setup, FedEx Cup and other season formats, custom league handicaps with substitutes and tee time preferences; League Pro ($249.99 a year) only adds stats, sponsors, a schedule builder, drafts, bulk actions, announcements and multiple admins.",
+      "url": "https://squabbitgolf.com/pricing.html",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Squabbit is free on the US App Store with 5.6K ratings at 4.9 and says the core app is free for everyone with no limits on players, teams or tournaments, including weekly leagues with season leaderboards.",
+      "url": "https://apps.apple.com/us/app/squabbit-golf-tournament-app/id1556538444",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Squabbit launched League Pro on 22 Sep 2026 as an add-on for organisers who want season stats and admin polish, so basic league running stays free.",
+      "url": "https://squabbitgolf.com/blog/entries/leagueProLaunch/leagueProLaunch.html",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "Golf League Guru is a free app (54 ratings, 3.0) that tracks league handicaps week to week, shows current and future pairings and standings.",
+      "url": "https://apps.apple.com/us/app/golf-league-guru/id1532264665",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "claim": "GOWF is a free app with automatic stroke handicaps, round robin matchups, points and live standings, though invite only for now.",
+      "url": "https://apps.apple.com/us/app/gowf/id6760727980",
+      "foundAt": "2026-11-21"
+    }
+  ]
 }

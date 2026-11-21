@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T02:18:46.507Z",
+  "builtAt": "2026-11-21T02:19:41.436Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -907,14 +907,14 @@
       "customer": "Volunteer secretaries of small weekly golf leagues (9 hole after work, men's and women's club leagues) in the US",
       "revenueModel": "Free handicap and standings page, paid one season unlock for a full league",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "killed",
       "score": 11,
       "url": null,
-      "nextAction": "Lead Kabeer: validate. Find prices on each paid tool's own page (GolfSoftware.com, Golf League Network, Golf League Tracker, League Genius), look hard for any free no-account web tool that runs a whole league (kill if one does, as mahj-league and rally-rounds died that way), and check whether a static site with on-device data and a shared read-only link can do the job with no backend. Against: buyer search is seasonal (70 to 110 a month in Sep to Oct, 3,600 to 6,600 in May to Aug), so a page must be live and indexed by April.",
+      "nextAction": "None",
       "metrics": null,
-      "killReason": null,
-      "updatedAt": "2026-11-21T02:15:42.840Z",
-      "evidenceCount": 3,
+      "killReason": "A free tool already does the whole job. Squabbit Free (5.6K App Store ratings at 4.9, web app included) runs unlimited leagues with custom league handicaps and subs, every scoring format including match play points, tee time preferences, recurring weekly events, live season standings and a public read-only event website at no cost; its paid League Pro ($249.99 a year) only adds stats, sponsors and admin polish. Golf League Guru and GOWF are further free league apps. Paid demand is real (GolfSoftware $8 per golfer a year, Golf League Network up to $570 to $630 a league, Golf League Tracker $119 a league a season), but those buyers already have a free full-league option from a well rated brand, and page one for golf league software is held by those vendors plus Capterra and the App Store. Our only gap would be no account, which is not a reason to pay. Search is also seasonal (70 to 110 a month in Sep to Oct). Killed 21 Nov 2026 under ap-company-1 and ap-company-4: a free tool closes the gap.",
+      "updatedAt": "2026-11-21T02:19:26.720Z",
+      "evidenceCount": 8,
       "specPath": null,
       "lead": {
         "id": "lead-golf-league",
@@ -1045,10 +1045,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1374,23 +1370,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-golf-league",
-      "name": "Kabeer",
-      "title": "Lead, Golf League Desk",
-      "department": "pods",
-      "color": "#1E5F74",
-      "trait": "Turns a rough idea into a working page by evening.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "golf-league",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1518,6 +1497,26 @@
       }
     ],
     "golf-league": [
+      {
+        "at": "2026-11-21T02:19:34.706Z",
+        "agent": "lead-golf-league",
+        "action": "Killed golf-league: Squabbit Free already runs a whole league (league handicaps and subs, every format, recurring events, live season standings, public event site) with 5.6K ratings at 4.9; League Pro only adds stats and admin polish (squabbitgolf.com/pricing.html)"
+      },
+      {
+        "at": "2026-11-21T02:19:34.672Z",
+        "agent": "lead-golf-league",
+        "action": "Page one check (web search, 21 Nov 2026): golf league software and golf league management software are held by GolfSoftware.com, Golf League Tracker, Golf League Network, LiveTourney blog, Capterra, SourceForge and App Store pages; free searches surface Squabbit"
+      },
+      {
+        "at": "2026-11-21T02:19:34.638Z",
+        "agent": "lead-golf-league",
+        "action": "Priced paid tools from own pages: GolfSoftware 8 USD per golfer a year (12 min), Golf League Network 9.50 to 10.50 USD per golfer capped 570 to 630 a league, Golf League Tracker 119 USD a league a season, Handicap Tracker app 49.99 USD a year"
+      },
+      {
+        "at": "2026-11-21T02:16:22.589Z",
+        "agent": "lead-golf-league",
+        "action": "Started: Validating golf-league: pricing paid league tools from their own pages and searching for a free tool that runs a whole league"
+      },
       {
         "at": "2026-11-21T02:15:52.806Z",
         "agent": "ceo",
@@ -1848,6 +1847,34 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T02:19:34.706Z",
+      "agent": "lead-golf-league",
+      "action": "Killed golf-league: Squabbit Free already runs a whole league (league handicaps and subs, every format, recurring events, live season standings, public event site) with 5.6K ratings at 4.9; League Pro only adds stats and admin polish (squabbitgolf.com/pricing.html)",
+      "ventureId": "golf-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:19:34.672Z",
+      "agent": "lead-golf-league",
+      "action": "Page one check (web search, 21 Nov 2026): golf league software and golf league management software are held by GolfSoftware.com, Golf League Tracker, Golf League Network, LiveTourney blog, Capterra, SourceForge and App Store pages; free searches surface Squabbit",
+      "ventureId": "golf-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:19:34.638Z",
+      "agent": "lead-golf-league",
+      "action": "Priced paid tools from own pages: GolfSoftware 8 USD per golfer a year (12 min), Golf League Network 9.50 to 10.50 USD per golfer capped 570 to 630 a league, Golf League Tracker 119 USD a league a season, Handicap Tracker app 49.99 USD a year",
+      "ventureId": "golf-league",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:16:22.589Z",
+      "agent": "lead-golf-league",
+      "action": "Started: Validating golf-league: pricing paid league tools from their own pages and searching for a free tool that runs a whole league",
+      "ventureId": "golf-league",
+      "kind": "start"
+    },
     {
       "at": "2026-11-21T02:15:52.856Z",
       "agent": "ceo",
@@ -2377,34 +2404,6 @@
       "at": "2026-11-15T11:51:48.292Z",
       "agent": "ceo",
       "action": "Decided: Main session runs the case reviewers when a lead cannot: Chief of Staff launches them in the same cycle; applied to agents/ops.md and agents/venture-lead.md",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:51:48.255Z",
-      "agent": "ceo",
-      "action": "Decided: Screen ideas for buyers who pay despite free tools: require proof of paying despite free tools, a named gap and rankable searches; applied to agents/research.md",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:48.209Z",
-      "agent": "people",
-      "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.422Z",
-      "agent": "people",
-      "action": "Score people (Kavya): 3 of 5. Day one check only; first full scoring this run",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:50:37.375Z",
-      "agent": "people",
-      "action": "Score legal (Vikram): 4 of 5. Held ach-batch on user risk, reviewed Seatwise and drafts. Used",
       "ventureId": null,
       "kind": "done"
     }
