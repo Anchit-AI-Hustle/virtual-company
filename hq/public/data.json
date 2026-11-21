@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T17:12:31.279Z",
+  "builtAt": "2026-11-21T17:20:10.973Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -466,6 +466,38 @@
         "total": 11,
         "recommendation": "no-go"
       }
+    },
+    {
+      "id": "rent-ledger",
+      "title": "Rent Ledger",
+      "oneLiner": "Free online rent ledger for small landlords: log rent, late fees and payments with a running balance, export PDF or CSV, and keep it month to month",
+      "customer": "Small US landlords with 1 to 10 units who track rent by hand or in a spreadsheet",
+      "revenueModel": "Free single ledger; paid tier for saved ledgers across devices, several tenants and a tenant share link",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 14,
+      "url": null,
+      "nextAction": "Lead Vihaan gathers 3 or more sourced demand signals, then Research writes the case and Farhan sizes it",
+      "metrics": null,
+      "updatedAt": "2026-11-21T17:20:02.768Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": {
+        "id": "lead-rent-ledger",
+        "name": "Vihaan",
+        "color": "#1F6F8B"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
     },
     {
       "id": "ach-batch",
@@ -993,6 +1025,62 @@
       "businessCase": null
     },
     {
+      "id": "change-order",
+      "title": "Change Order Form",
+      "oneLiner": "Free change order form maker for small contractors with client sign-off link",
+      "customer": "Small US service businesses and contractors",
+      "revenueModel": "Free tool, paid saved jobs and sharing",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 12,
+      "url": null,
+      "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"change order form\":1300,\"change order template\":1300} from https://api.seodata.dev/v1/keyword?q=change+order+form+template&country=us",
+      "metrics": null,
+      "updatedAt": "2026-11-21T17:20:02.768Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "work-order",
+      "title": "Work Order Maker",
+      "oneLiner": "Free work order maker for small service and maintenance businesses, upgrade to saved jobs and team use",
+      "customer": "Small US service businesses and contractors",
+      "revenueModel": "Free tool, paid saved jobs and sharing",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 12,
+      "url": null,
+      "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"work order template\":3600} from https://api.seodata.dev/v1/keyword?q=work+order+template&country=us",
+      "metrics": null,
+      "updatedAt": "2026-11-21T17:20:02.768Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "golf-league",
       "title": "Golf League Desk",
       "oneLiner": "Phone web tool for weekly golf league secretaries: league handicaps, weekly pairings, points and standings, shared as a read-only link",
@@ -1174,6 +1262,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1185,16 +1277,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: 0 of 20 new ideas cleared the screen (paid Rs 500+ a month, 1,000+ searches, no free tool closing the gap), so no venture is staffed this cycle",
-      "since": "2026-11-21T16:13:54.981Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for",
+      "since": "2026-11-21T17:20:08.767Z",
+      "ventureId": "rent-ledger",
+      "ventureTitle": "Rent Ledger",
       "last": {
-        "at": "2026-11-21T16:13:43.550Z",
-        "action": "Pods stay empty: 0 of 20 new ideas cleared the screen (paid Rs 500+ a month, 1,000+ searches, no free tool closing the gap), so no venture is staffed this cycle"
+        "at": "2026-11-21T17:20:08.767Z",
+        "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for"
       },
-      "actions": 74
+      "actions": 75
     },
     {
       "id": "ops",
@@ -1223,16 +1315,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 20 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap and page one is held by vendors and directories: auto repair shop software US (auto repair shop software 4,400, CPC USD 34.95, api.seodata.dev/v1/keyword?q=auto+repair+shop+software&country=us, but free plans listed at capterra.com/auto-repair-software/s/free/ and g2.com/categories/auto-shop-management/free, free mechanic invoice template shopview.com/mechanic-invoice-template), car rental software US (3,600, CPC USD 20.62, but free plans listed at capterra.com/car-rental-software/s/free/ and getapp.com/retail-consumer-services-software/car-rental/p/free), SOP software US (1,300, but free tiers at g2.com/categories/standard-operating-procedures/free and scribe.com/library/free-sop-software). Repeats of earlier screens or overlaps: fleet management software India 1,000 (overlaps killed fleet-log), school management software India 3,600 and gym management software India 1,000 (school and gym niches screened earlier, free tiers common). Dropped on volume: car rental software India 390, courier software India 210, electrician software US 260, locksmith software US 260, appliance repair software US 210, funeral home software US 210, auto body shop software US 50, kirana billing software India 0. seodata.dev hit its free rate limit mid-batch, so OKR software, timesheet app, bakery software, tow truck software and transport management software India were not measured",
-      "since": "2026-11-21T16:13:55.136Z",
+      "state": "done",
+      "task": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720",
+      "since": "2026-11-21T17:20:08.732Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T16:13:43.520Z",
-        "action": "Screened 20 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap and page one is held by vendors and directories: auto repair shop software US (auto repair shop software 4,400, CPC USD 34.95, api.seodata.dev/v1/keyword?q=auto+repair+shop+software&country=us, but free plans listed at capterra.com/auto-repair-software/s/free/ and g2.com/categories/auto-shop-management/free, free mechanic invoice template shopview.com/mechanic-invoice-template), car rental software US (3,600, CPC USD 20.62, but free plans listed at capterra.com/car-rental-software/s/free/ and getapp.com/retail-consumer-services-software/car-rental/p/free), SOP software US (1,300, but free tiers at g2.com/categories/standard-operating-procedures/free and scribe.com/library/free-sop-software). Repeats of earlier screens or overlaps: fleet management software India 1,000 (overlaps killed fleet-log), school management software India 3,600 and gym management software India 1,000 (school and gym niches screened earlier, free tiers common). Dropped on volume: car rental software India 390, courier software India 210, electrician software US 260, locksmith software US 260, appliance repair software US 210, funeral home software US 210, auto body shop software US 50, kirana billing software India 0. seodata.dev hit its free rate limit mid-batch, so OKR software, timesheet app, bakery software, tow truck software and transport management software India were not measured"
+        "at": "2026-11-21T17:20:08.732Z",
+        "action": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720"
       },
-      "actions": 63
+      "actions": 64
     },
     {
       "id": "data",
@@ -1499,6 +1591,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-rent-ledger",
+      "name": "Vihaan",
+      "title": "Lead, Rent Ledger",
+      "department": "pods",
+      "color": "#1F6F8B",
+      "trait": "Ships the smallest thing that earns, then iterates.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "rent-ledger",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -1546,6 +1655,7 @@
         "action": "Started: Validating: collecting sourced demand evidence for home baker costing"
       }
     ],
+    "change-order": [],
     "class-pass": [
       {
         "at": "2026-11-21T04:22:47.073Z",
@@ -1939,6 +2049,13 @@
         "action": "Rally Rounds still not yet: search shows a crowded field of organiser apps, third paying signal not yet confirmed at source"
       }
     ],
+    "rent-ledger": [
+      {
+        "at": "2026-11-21T17:20:08.767Z",
+        "agent": "ceo",
+        "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for"
+      }
+    ],
     "rota-sheet": [
       {
         "at": "2026-11-21T04:22:47.116Z",
@@ -2225,9 +2342,24 @@
         "agent": "research",
         "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
       }
-    ]
+    ],
+    "work-order": []
   },
   "log": [
+    {
+      "at": "2026-11-21T17:20:08.767Z",
+      "agent": "ceo",
+      "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for",
+      "ventureId": "rent-ledger",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T17:20:08.732Z",
+      "agent": "research",
+      "action": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T17:12:30.781Z",
       "agent": "support",
@@ -2773,21 +2905,7 @@
       "action": "Pre-screen by web search (21 Nov): bar inventory dropped, free apps already do it (Backbar https://apps.apple.com/us/app/backbar/id1461796151, BarDog https://apps.apple.com/us/app/bardog/id1266482919). Driving school, snow removal and catering queued for the volume check: page one for each is held by Capterra, GetApp and vendor lists (capterra.com/p/196541/Schedule-2-Drive, upperinc.com free snow removal post, capterra.com/catering-software/s/free), the same distribution risk that stopped kennel-book",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T08:14:55.036Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch: driving school, snow removal, catering, bar inventory and 50 more trade terms",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T08:13:34.315Z",
-      "agent": "ops",
-      "action": "Standup: DevOps fixed the HQ page alert (deploy READY); watchdog 08:04; no owner rejects on decided issues 16 and 18, no owner-chat; check green (44 tests). 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch; Firecrawl may still be out of credits until 22:14 UTC",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 435
+  "logTotal": 437
 }

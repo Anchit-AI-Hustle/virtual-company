@@ -1,0 +1,49 @@
+{
+  "id": "rent-ledger",
+  "title": "Rent Ledger",
+  "oneLiner": "Free online rent ledger for small landlords: log rent, late fees and payments with a running balance, export PDF or CSV, and keep it month to month",
+  "customer": "Small US landlords with 1 to 10 units who track rent by hand or in a spreadsheet",
+  "revenueModel": "Free single ledger; paid tier for saved ledgers across devices, several tenants and a tenant share link",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 14
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Landlord Studio PRO at USD 12 a month flat (GO plan free, PRO+ USD 28), about Rs 1,131 at 94.2754 INR per USD",
+      "inrMonthly": 1131,
+      "source": "https://www.capterra.com/p/182473/Landlord-Studio/pricing/"
+    },
+    "searches": {
+      "terms": {
+        "rent ledger": 5400,
+        "rent ledger template": 2400,
+        "rental ledger template": 2400,
+        "free rent ledger template": 590,
+        "rent ledger example": 720
+      },
+      "monthly": 7800,
+      "source": "https://api.seodata.dev/v1/keyword?q=rent+ledger+template&country=us",
+      "note": "seodata.dev (Google Ads monthly averages, United States), read 21 Nov 2026. Total counts only rent ledger and rent ledger template; rental ledger template returns the same 2,400 and may be the same Google group, so it is left out. CPC USD 3.35 to 7.67. DataForSEO through Firecrawl was not available this cycle (credits ran out)."
+    },
+    "freeGap": "Page one for rent ledger template is mostly static PDF or Excel downloads and vendor lead magnets that push an account: TurboTenant gives a static PDF and upsells a free account (https://www.turbotenant.com/accounting/rent-ledger-template/), TenantCloud and Landlord Studio do the same (https://www.landlordstudio.com/resource/free-rent-ledger-template). Risk: a free generator launched on Product Hunt exports PDF, CSV and Excel with a running balance (https://www.producthunt.com/p/rent-ledger-template/rent-ledger-template), so the single-session job is partly covered; the gap under ap-company-5 is a ledger kept month to month with late fees and a tenant share link, without an account. Ranking risk: strong vendor domains hold page one, so the case must show long-tail pages we can rank."
+  },
+  "evidence": [],
+  "nextAction": "Lead Vihaan gathers 3 or more sourced demand signals, then Research writes the case and Farhan sizes it",
+  "lead": {
+    "name": "Vihaan",
+    "color": "#1F6F8B",
+    "trait": "Ships the smallest thing that earns, then iterates."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-21T17:20:02.768Z",
+  "createdAt": "2026-11-21T17:20:02.768Z",
+  "updatedAt": "2026-11-21T17:20:02.768Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}

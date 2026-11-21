@@ -1,0 +1,25 @@
+{
+  "id": "change-order",
+  "title": "Change Order Form",
+  "oneLiner": "Free change order form maker for small contractors with client sign-off link",
+  "customer": "Small US service businesses and contractors",
+  "revenueModel": "Free tool, paid saved jobs and sharing",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 2,
+    "buildEffort": 4,
+    "distribution": 3,
+    "total": 12
+  },
+  "evidence": [],
+  "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"change order form\":1300,\"change order template\":1300} from https://api.seodata.dev/v1/keyword?q=change+order+form+template&country=us",
+  "lead": null,
+  "stage": "idea",
+  "stageSince": "2026-11-21T17:20:02.768Z",
+  "createdAt": "2026-11-21T17:20:02.768Z",
+  "updatedAt": "2026-11-21T17:20:02.768Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}
