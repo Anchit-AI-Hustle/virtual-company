@@ -12,5 +12,12 @@
     "action": "Validated: 4 sourced demand signals (kennel worker seeking booking software, about USD 100 a month going rate, ProPet USD 49.99 plus 20 a month, Etsy kennel sheets with 1.5k reviews)",
     "ventureId": "kennel-book",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T06:19:38.833Z",
+    "agent": "lead-kennel-book",
+    "action": "Blocked: needs reviewers: research case, sizing, ceo go",
+    "ventureId": "kennel-book",
+    "kind": "blocked"
   }
 ]
