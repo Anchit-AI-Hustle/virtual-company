@@ -21,7 +21,7 @@ for attempt in 1 2 3 4 5; do
     while [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] || [ -d "$(git rev-parse --git-path rebase-merge)" ]; do
       conflicted=$(git diff --name-only --diff-filter=U)
       [ -z "$conflicted" ] && break
-      if echo "$conflicted" | grep -qvE '^(company/activity/|hq/public/data\.json$)'; then
+      if echo "$conflicted" | grep -qvE '^(company/activity/|hq/public/(data|history)\.json$)'; then
         echo "Conflict outside agent status files: $conflicted" >&2
         git rebase --abort
         exit 2
@@ -39,7 +39,7 @@ for attempt in 1 2 3 4 5; do
   # HQ reads its live data from the committed hq/public/data.json, so rebuild it from the
   # merged books and fold it into this push. No Vercel deploy is needed for data changes.
   if node scripts/build-hq.js >/dev/null 2>&1; then
-    git add hq/public/data.json
+    git add hq/public/data.json hq/public/history.json
     git diff --cached --quiet || git -c user.name="$(git log -1 --format=%an)" -c user.email="$(git log -1 --format=%ae)" commit -q --amend --no-edit
   fi
 

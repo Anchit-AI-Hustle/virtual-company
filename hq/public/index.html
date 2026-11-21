@@ -251,6 +251,7 @@
   .card .lead .mini-face { width: 22px; height: 22px; }
   .facts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 0.875rem; }
   .card.is-live { box-shadow: inset 4px 0 0 var(--go); }
+  .more { margin: 16px 0 4px; text-align: center; }
   .card.is-killed { background: transparent; border: 1px dashed var(--line); }
   .card.is-killed h4 { color: var(--stop); }
   @media (max-width: 520px) { .station { grid-template-columns: 1fr; gap: 8px; } }
@@ -320,9 +321,10 @@
 
     <section class="view" id="view-activity" hidden aria-labelledby="h-act"><div class="panel">
       <h2 id="h-act">Activity</h2>
-      <p class="sub">Everything the agents did, newest first.</p>
+      <p class="sub" id="feedNote">Everything the agents did, newest first.</p>
       <details class="report" id="report" hidden><summary id="reportTitle">Morning report</summary><div id="reportBody"></div></details>
       <ul class="feed" id="feed"></ul>
+      <p class="more" id="feedMore" hidden><button type="button" class="btn" id="showAll"></button></p>
     </div></section>
 
     <section class="view" id="view-money" hidden aria-labelledby="h-money"><div class="panel">
@@ -641,9 +643,28 @@
       body.appendChild(el('p', 'help', line)); ul = null;
     });
   }
+  // Every task ever logged, from history.json at the same commit as the office data.
+  var showingAll = false;
+  function loadHistory() {
+    var u = lastSha ? RAW + lastSha + '/hq/public/history.json' : RAW + 'main/hq/public/history.json';
+    return json(u, { cache: lastSha ? 'force-cache' : 'no-cache' }).catch(function () { return json('history.json?t=' + Date.now(), { cache: 'no-store' }); });
+  }
+  function showAllTasks() {
+    var b = $('showAll'); b.disabled = true; b.textContent = 'Loading every task...';
+    loadHistory().then(function (h) {
+      showingAll = true; var ul = $('feed'); ul.textContent = '';
+      h.log.forEach(function (e) { ul.appendChild(feedItem(e)); });
+      b.disabled = false; b.textContent = 'Show newest only'; $('feedNote').textContent = 'All ' + h.total + ' tasks, newest first.';
+    }).catch(function () { b.disabled = false; b.textContent = 'Could not load the full list. Try again'; });
+  }
+  $('showAll').addEventListener('click', function () { if (showingAll) { showingAll = false; renderFeeds(data); } else showAllTasks(); });
   function renderFeeds(d) {
+    var total = d.logTotal || d.log.length, shown = Math.min(60, d.log.length);
+    $('feedMore').hidden = total <= shown;
+    if (!showingAll) { $('showAll').textContent = 'Show all ' + total + ' tasks'; $('feedNote').textContent = total > shown ? 'The newest ' + shown + ' of ' + total + ' tasks.' : 'Everything the agents did, newest first.'; }
     var first = !Object.keys(seen).length;
     [['feed', 60], ['sideFeed', 20]].forEach(function (f) {
+      if (f[0] === 'feed' && showingAll) return;
       var ul = $(f[0]); ul.textContent = '';
       if (!d.log.length) { ul.appendChild(el('li', 'empty', 'Nothing yet.')); return; }
       d.log.slice(0, f[1]).forEach(function (e) { ul.appendChild(feedItem(e, !first && !seen[e.at + e.agent + e.action] ? 'is-new' : '')); });
@@ -759,11 +780,12 @@
   function json(u, opt) { return fetch(u, opt).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); }
   // If GitHub's API says no (403 or 429: too many requests), leave it alone for 10 minutes and
   // read the latest copy instead, so a busy network never repeats the error every 30 seconds.
-  var apiPausedUntil = 0;
+  var apiPausedUntil = 0, lastSha = null;
   function latestData() {
     var viaApi = Date.now() < apiPausedUntil ? Promise.reject(new Error('api paused')) :
       fetch('https://api.github.com/repos/' + REPO + '/commits/main', { cache: 'no-cache', headers: { Accept: 'application/vnd.github.sha' } })
-        .then(function (r) { if (r.status === 403 || r.status === 429) apiPausedUntil = Date.now() + 600000; if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); });
+        .then(function (r) { if (r.status === 403 || r.status === 429) apiPausedUntil = Date.now() + 600000; if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+        .then(function (sha) { lastSha = sha.trim(); return sha; });
     return viaApi
       .then(function (sha) { if (!/^[0-9a-f]{40}$/.test(sha.trim())) throw new Error('bad sha'); return json(RAW + sha.trim() + '/hq/public/data.json', { cache: 'force-cache' }); })
       .catch(function () { return json(RAW + 'main/hq/public/data.json', { cache: 'no-cache' }); })

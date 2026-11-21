@@ -80,8 +80,11 @@ function buildHq(dir) {
     departments: departments.concat(podVentures.length ? [{ id: 'pods', name: 'Venture pods' }] : []),
     office,
     ventureTrail: Object.fromEntries(ventures.map((v) => [v.id, log.filter((e) => e.ventureId === v.id)
-      .sort((a, b) => b.at.localeCompare(a.at)).slice(0, 15).map((e) => ({ at: e.at, agent: e.agent, action: e.action }))])),
-    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 80)
+      .sort((a, b) => b.at.localeCompare(a.at)).map((e) => ({ at: e.at, agent: e.agent, action: e.action }))])),
+    // The newest 80 tasks travel with the office; the complete history is history.json, loaded on demand.
+    log: log.slice().sort((a, b) => b.at.localeCompare(a.at)).slice(0, 80),
+    logTotal: log.length,
+    history: log.slice().sort((a, b) => b.at.localeCompare(a.at)).map((e) => ({ at: e.at, agent: e.agent, action: e.action, ventureId: e.ventureId || null }))
   };
 }
 
@@ -90,6 +93,9 @@ module.exports = { buildHq };
 if (require.main === module) {
   const root = path.join(__dirname, '..');
   const out = path.join(root, 'hq/public/data.json');
-  fs.writeFileSync(out, JSON.stringify(buildHq(root), null, 2) + '\n');
-  console.log('Wrote ' + path.relative(root, out));
+  const d = buildHq(root);
+  const history = d.history; delete d.history;
+  fs.writeFileSync(out, JSON.stringify(d, null, 2) + '\n');
+  fs.writeFileSync(path.join(root, 'hq/public/history.json'), JSON.stringify({ builtAt: d.builtAt, total: history.length, log: history }) + '\n');
+  console.log('Wrote hq/public/data.json and hq/public/history.json');
 }

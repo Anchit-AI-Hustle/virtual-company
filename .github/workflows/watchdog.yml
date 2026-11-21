@@ -37,7 +37,7 @@ jobs:
             node scripts/build-hq.js >/dev/null
             git config user.name "watchdog"
             git config user.email "watchdog@users.noreply.github.com"
-            git add company/reports company/outbox hq/public/data.json
+            git add company/reports company/outbox hq/public/data.json hq/public/history.json
             git commit -q -m "Management: morning report $(TZ=Asia/Kolkata date +%F)"
             for i in 1 2 3 4; do
               if git pull --rebase -q origin main && git push -q origin HEAD:main; then echo "sent=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
@@ -56,11 +56,11 @@ jobs:
           git config user.name "watchdog"
           git config user.email "watchdog@users.noreply.github.com"
           node scripts/build-hq.js >/dev/null
-          git add company/health.json hq/public/data.json
+          git add company/health.json hq/public/data.json hq/public/history.json
           git commit -m "Watchdog: platform ${{ steps.check.outputs.status }}"
           for i in 1 2 3 4; do
-            if git pull --rebase -q origin main || { git checkout --theirs hq/public/data.json 2>/dev/null; node scripts/build-hq.js >/dev/null; git add hq/public/data.json; GIT_EDITOR=true git rebase --continue; }; then
-              node scripts/build-hq.js >/dev/null; git add hq/public/data.json; git diff --cached --quiet || git commit -q -m "Watchdog: refresh HQ data"
+            if git pull --rebase -q origin main || { git checkout --theirs hq/public/data.json hq/public/history.json 2>/dev/null; node scripts/build-hq.js >/dev/null; git add hq/public/data.json hq/public/history.json; GIT_EDITOR=true git rebase --continue; }; then
+              node scripts/build-hq.js >/dev/null; git add hq/public/data.json hq/public/history.json; git diff --cached --quiet || git commit -q -m "Watchdog: refresh HQ data"
               git push -q origin HEAD:main && exit 0
             fi
             git rebase --abort 2>/dev/null || true
