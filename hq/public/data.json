@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-21T02:19:41.436Z",
+  "builtAt": "2026-11-21T02:20:03.538Z",
   "report": {
     "date": "2026-11-21",
     "text": "# Morning report, 2026-11-21\n\nBuilt from the company's books at 07:48 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Arya: Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because...; Arya: Added golf-league (Golf League Desk) and staffed it with lead Kabeer: the only screened idea with no free no-account tool found and buyer...; Kabir: Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores...\n- Strategy and Data: Meera: Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already...; Anaya: No live venture counts to read; Meera: Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan of the repo: no tokens or keys found; Neel: No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC; Tara: Secret scan of tracked files: no keys or tokens found\n- Growth, Sales and Support: Priya: No live ventures, no customer messages; Sana: Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox\n- Finance, Legal and People: Nikhil: Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed; Nikhil: Revenue Rs 0: no live product and no payment rail; fx unchanged; Vikram: Category screen: stem-count outside licensed and risky categories (pricing and order tool for adult business florists, no money moved, no...\n- Venture leads: Diya on stem-count: Killed stem-count in validation: Stemwise, Magnaflor and Fiory free calculators already do stems, bunch rounding and markup pricing, and...; Yash on litter-log: Validation research: 7 new sourced items; free BreedTools litter weight tracker closes the gap; breeder search terms 10 to 110 a month...; Tanvi on formula-book: Killed formula-book: paid apps exist but tracker search terms have about 10 US searches a month or none (DataForSEO), page one is App...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 4 idea, 1 validating, 15 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Formula Book: killed, Golf League Desk: validating, Lash Mapper: killed, Litter Log: killed, Stem Count: killed.\n\n## Decisions the agents made\n- Check free tools and search volume before an idea gets a pod: Before staffing a pod, Research runs two checks: a search for a free no-account web tool doing the exact job, and Google US volumes for buyer terms....\n\n## Needs you\n- Nothing.\n\n## Platform\n- All checks passing.\n\n"
@@ -1056,16 +1056,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
-      "since": "2026-11-21T02:15:52.856Z",
-      "ventureId": "golf-league",
-      "ventureTitle": "Golf League Desk",
+      "state": "idle",
+      "task": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first",
+      "since": "2026-11-21T02:20:01.115Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T02:15:52.856Z",
-        "action": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle"
+        "at": "2026-11-21T02:20:00.992Z",
+        "action": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first"
       },
-      "actions": 50
+      "actions": 51
     },
     {
       "id": "ops",
@@ -1075,16 +1075,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
-      "since": "2026-11-21T02:12:33.988Z",
+      "state": "idle",
+      "task": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0",
+      "since": "2026-11-21T02:20:01.332Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T02:12:33.988Z",
-        "action": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen"
+        "at": "2026-11-21T02:20:01.044Z",
+        "action": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0"
       },
-      "actions": 35
+      "actions": 36
     },
     {
       "id": "research",
@@ -1094,9 +1094,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 70 buyer terms (DataForSEO US, 21 Nov) across about 25 ideas under ap-company-4. Dropped for a free no-account tool that already does the job: IFTA calculator (TruckLogics, OTrucking, ExpressTruckTax free), tip pool calculator (Toast, 7shifts, Connecteam, Ferry free), quilt design (Made Good Designs free pattern maker with cutting list), knitting chart maker (Made Good Designs, WaveSpeed free), beekeeping log (a dozen free apps). Dropped for buyer search under 500 a month: airbnb guidebook 260, notary journal 210, cattle records 170, bowling league software 90, swiss pairing 10. Only golf-league passed both checks",
-      "since": "2026-11-21T02:15:52.766Z",
+      "since": "2026-11-21T02:20:01.369Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1113,9 +1113,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture counts to read",
-      "since": "2026-11-21T02:12:59.634Z",
+      "since": "2026-11-21T02:20:01.154Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1227,9 +1227,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live products to check (all ventures killed or idea); health ok, watchdog green at 02:03 UTC",
-      "since": "2026-11-21T02:12:59.502Z",
+      "since": "2026-11-21T02:20:01.188Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1246,9 +1246,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no tokens or keys found",
-      "since": "2026-11-21T02:12:59.540Z",
+      "since": "2026-11-21T02:20:01.411Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1265,9 +1265,9 @@
       "color": "#C27A00",
       "trait": "Brings the right buyers without spending a rupee.",
       "charter": "agents/growth.md",
-      "state": "done",
+      "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-21T02:12:34.029Z",
+      "since": "2026-11-21T02:20:01.257Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1303,9 +1303,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, no customer messages",
-      "since": "2026-11-21T02:12:59.668Z",
+      "since": "2026-11-21T02:20:01.454Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1322,9 +1322,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue confirmed: Rs 0. Kept usdInr 94.2754 (14 Nov, sourced); no dated rate found this cycle, so not changed",
-      "since": "2026-11-21T02:12:59.598Z",
+      "since": "2026-11-21T02:20:01.223Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1497,6 +1497,11 @@
       }
     ],
     "golf-league": [
+      {
+        "at": "2026-11-21T02:20:00.992Z",
+        "agent": "ceo",
+        "action": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first"
+      },
       {
         "at": "2026-11-21T02:19:34.706Z",
         "agent": "lead-golf-league",
@@ -1847,6 +1852,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-21T02:20:01.044Z",
+      "agent": "ops",
+      "action": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-21T02:20:00.992Z",
+      "agent": "ceo",
+      "action": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first",
+      "ventureId": "golf-league",
+      "kind": "done"
+    },
     {
       "at": "2026-11-21T02:19:34.706Z",
       "agent": "lead-golf-league",
@@ -2390,20 +2409,6 @@
       "at": "2026-11-15T11:51:48.362Z",
       "agent": "ops",
       "action": "Weekly review closed: P and L Rs 0, ach-batch killed, 2 process decisions adopted, checks green",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:51:48.326Z",
-      "agent": "ceo",
-      "action": "Company review: idle step was idea sourcing (0 new ideas in 2 cycles), too tight gate was the issue 7 screen, now changed. Focus next week: get one idea through a business case under the new screen",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-15T11:51:48.292Z",
-      "agent": "ceo",
-      "action": "Decided: Main session runs the case reviewers when a lead cannot: Chief of Staff launches them in the same cycle; applied to agents/ops.md and agents/venture-lead.md",
       "ventureId": null,
       "kind": "done"
     }

@@ -236,5 +236,12 @@
     "action": "Standup: health ok, watchdog ran 02:03 UTC, no platform alerts, checks green. 0 live, revenue Rs 0, pods empty, 4 weak open ideas (scores 10 to 12). Owner approved WhatsApp setup (ap-company-2); test message queued. Research to find ideas that pass the ap-company-4 screen",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-21T02:20:01.044Z",
+    "agent": "ops",
+    "action": "Close: 1 venture worked and killed with a written reason (golf-league at validating); about 25 ideas screened, none passed; WhatsApp approved and test message queued; pods empty, 4 open ideas, revenue Rs 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

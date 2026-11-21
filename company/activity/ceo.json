@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Open ideas at 4 (rota-sheet, sitter-sheet, stall-tally, class-pass, all scored 10 to 12 and unscreened); below the target of 5 because this cycle's batch failed the screen. Research screens a new batch next cycle",
-  "ventureId": "golf-league",
-  "since": "2026-11-21T02:15:52.856Z"
+  "state": "idle",
+  "task": "golf-league killed in validation by lead Kabeer: Squabbit's free plan already runs unlimited leagues with handicaps, points and live standings (https://squabbitgolf.com/pricing.html). Pods empty; next cycle Research screens a fresh batch, checking free league apps first",
+  "ventureId": null,
+  "since": "2026-11-21T02:20:01.115Z"
 }
