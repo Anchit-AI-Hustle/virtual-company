@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:48:44.433Z",
+  "builtAt": "2026-11-27T22:12:50.318Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1450,16 +1450,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
-      "since": "2026-11-27T21:48:40.963Z",
+      "state": "done",
+      "task": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
+      "since": "2026-11-27T22:12:46.342Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:18.796Z",
-        "action": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass"
+        "at": "2026-11-27T22:12:46.342Z",
+        "action": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms"
       },
-      "actions": 76
+      "actions": 78
     },
     {
       "id": "research",
@@ -2635,6 +2635,20 @@
   },
   "log": [
     {
+      "at": "2026-11-27T22:12:46.342Z",
+      "agent": "ops",
+      "action": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:12:46.291Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-27T21:48:40.895Z",
       "agent": "ceo",
       "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
@@ -3179,21 +3193,7 @@
       "action": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:13:49.046Z",
-      "agent": "devops",
-      "action": "Lights on: 0 live products to check; health ok, watchdog ran 13:04 UTC",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:13:48.996Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 480
+  "logTotal": 482
 }

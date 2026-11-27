@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
+  "state": "done",
+  "task": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
   "ventureId": null,
-  "since": "2026-11-27T21:48:40.963Z"
+  "since": "2026-11-27T22:12:46.342Z"
 }
