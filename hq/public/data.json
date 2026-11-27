@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:31:49.436Z",
+  "builtAt": "2026-11-27T21:35:54.924Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1199,13 +1199,13 @@
       "customer": "US real estate agents and independent transaction coordinators handling a few deals a month",
       "revenueModel": "Free single transaction; paid tier for unlimited saved transactions, client and agent status links, reminders and team use",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "validated",
       "score": 11,
       "url": null,
-      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+      "nextAction": "Research writes the sceptical business case (cases/tc-desk.md), then Farhan sizes it, then the CEO decides go or no-go. Evidence against: page one is held by vendors, free tiers exist (ListedKit 1 closing, Nekst 5), Reddit threads could not be read this cycle (site blocked).",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:29:24.957Z",
-      "evidenceCount": 4,
+      "updatedAt": "2026-11-27T21:35:35.678Z",
+      "evidenceCount": 8,
       "specPath": null,
       "lead": {
         "id": "lead-tc-desk",
@@ -1742,13 +1742,16 @@
       "trait": "Makes the hard flow feel obvious.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "tc-desk",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews",
+      "since": "2026-11-27T21:35:39.371Z",
+      "ventureId": "tc-desk",
+      "ventureTitle": "Closing Desk",
+      "last": {
+        "at": "2026-11-27T21:35:39.371Z",
+        "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews"
+      },
+      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2542,7 +2545,18 @@
         "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
       }
     ],
-    "tc-desk": [],
+    "tc-desk": [
+      {
+        "at": "2026-11-27T21:35:39.371Z",
+        "agent": "lead-tc-desk",
+        "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews"
+      },
+      {
+        "at": "2026-11-27T21:30:19.100Z",
+        "agent": "lead-tc-desk",
+        "action": "Started: Gathering independent demand signals for Closing Desk"
+      }
+    ],
     "work-order": [
       {
         "at": "2026-11-27T21:31:32.929Z",
@@ -2562,6 +2576,13 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T21:35:39.371Z",
+      "agent": "lead-tc-desk",
+      "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews",
+      "ventureId": "tc-desk",
+      "kind": "done"
+    },
     {
       "at": "2026-11-27T21:31:36.827Z",
       "agent": "lead-change-order",
@@ -2595,6 +2616,13 @@
       "agent": "lead-work-order",
       "action": "Started: Gathering sourced demand signals for work-order",
       "ventureId": "work-order",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T21:30:19.100Z",
+      "agent": "lead-tc-desk",
+      "action": "Started: Gathering independent demand signals for Closing Desk",
+      "ventureId": "tc-desk",
       "kind": "start"
     },
     {
@@ -3107,21 +3135,7 @@
       "action": "Secret scan of the repo: no keys, tokens or private keys found",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T11:12:38.585Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog 11:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T11:12:38.546Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 464
+  "logTotal": 466
 }

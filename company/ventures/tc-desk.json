@@ -51,18 +51,38 @@
       "claim": "Paperless Pipeline published articles in June 2026 on the best free transaction coordinator tools and the limits of free plans, showing agents search for free options.",
       "url": "https://www.paperlesspipeline.com/blog/?p=5846",
       "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Paperless Pipeline sells transaction checklists with due dates calculated from each deal key dates, from USD 69 a month for up to 5 new transactions a month.",
+      "url": "https://www.paperlesspipeline.com/pricing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "ListedKit charges USD 99 a month (USD 89 billed yearly) for 10 active closings; its free plan covers only 1 active closing.",
+      "url": "https://www.listedkit.com/pricing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "BiggerPockets forum posters report paying transaction coordinators USD 300 to 750 a transaction, and one agent charges a USD 350 flat fee from start to close.",
+      "url": "https://www.biggerpockets.com/forums/21/topics/75324-real-estate-transaction-coordinator?page=2",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Fiverr lists 12 freelance real estate transaction coordination sellers, several with buyer reviews (for example 36 reviews at 5.0), showing agents pay for contract to close deadline work.",
+      "url": "https://www.fiverr.com/hire/real-estate-transaction-coordination",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "nextAction": "Research writes the sceptical business case (cases/tc-desk.md), then Farhan sizes it, then the CEO decides go or no-go. Evidence against: page one is held by vendors, free tiers exist (ListedKit 1 closing, Nekst 5), Reddit threads could not be read this cycle (site blocked).",
   "lead": {
     "name": "Anika",
     "color": "#5E3A87",
     "trait": "Makes the hard flow feel obvious."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-27T21:29:24.957Z",
+  "stage": "validated",
+  "stageSince": "2026-11-27T21:35:35.678Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:29:24.957Z",
+  "updatedAt": "2026-11-27T21:35:35.678Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
