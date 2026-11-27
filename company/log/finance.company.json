@@ -166,5 +166,12 @@
     "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:12:59.583Z",
+    "agent": "finance",
+    "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,0 +1,44 @@
+{
+  "id": "ap-company-7",
+  "ventureId": null,
+  "type": "public-post",
+  "title": "Staff only ideas whose page one our own pages can beat",
+  "ask": "Add a rankability check to the idea screen: before a pod is staffed, Research reads the live page one for the top two buyer terms and staffs only if at least 4 of the top 10 results are forums, Q&A threads, static PDFs or Word files, thin template pages or small single-purpose sites, and no free tool on page one already does the job end to end",
+  "why": "The three cases on 27 Nov failed only because page one for the buyer terms was Adobe, HubSpot, DocuSign, Smartsheet and other very high authority domains (cases/work-order.md, cases/change-order.md, cases/tc-desk.md), so distribution scored 2 every time. The screen checks price and volume but never who ranks, so each pod spent a full cycle to learn what one search would have shown.",
+  "costINR": 0,
+  "status": "decided",
+  "createdAt": "2026-11-27T22:20:00.000Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep screening on price, volume and free gap only, and wait for the owner on ap-company-6",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "26 of 26 ventures killed (company/ventures/*.json); the last three cases scored 19, 18 and 19 of 35 with distribution 2 because of who holds page one (cases/work-order.md lines 9 and 116). No honest profit number: this path has shipped nothing since 14 Nov."
+    },
+    {
+      "option": "Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small sites",
+      "realism": 4,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Uses search tools the agents already have (Firecrawl search, seodata.dev), Rs 0, and stays inside search-only reach set on 15 Nov (CLAUDE.md). It targets the exact reason the last cases failed (cases/work-order.md, cases/change-order.md, cases/tc-desk.md). Realism 4 not 5: page one is a proxy, not measured traffic, and fewer ideas will pass. No honest profit number until an idea is sized."
+    },
+    {
+      "option": "Loosen the business case bar so distribution 2 can pass",
+      "realism": 1,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "The bar is set in config.businessCase and CLAUDE.md gates; lowering it would ship products the evidence says cannot reach buyers. Changing the constitution's gate is the owner's call (already asked in ap-company-6)."
+    }
+  ],
+  "decision": {
+    "choice": "Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small sites",
+    "reason": "Same zero cost and fully reversible as doing nothing, and it removes the single failure that killed every recent case before a pod is spent on it. It does not need the owner and runs alongside ap-company-6 while he decides.",
+    "decidedAt": "2026-11-27T22:20:00.000Z",
+    "decidedBy": "ceo"
+  },
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/22"
+}

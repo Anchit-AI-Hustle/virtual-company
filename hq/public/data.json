@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:12:50.318Z",
+  "builtAt": "2026-11-27T22:13:36.873Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -80,6 +80,45 @@
     "monthlyCapINR": 0
   },
   "decisions": [
+    {
+      "id": "ap-company-7",
+      "title": "Staff only ideas whose page one our own pages can beat",
+      "status": "decided",
+      "why": "The three cases on 27 Nov failed only because page one for the buyer terms was Adobe, HubSpot, DocuSign, Smartsheet and other very high authority domains (cases/work-order.md, cases/change-order.md, cases/tc-desk.md), so distribution scored 2 every time. The screen checks price and volume but never who ranks, so each pod spent a full cycle to learn what one search would have shown.",
+      "options": [
+        {
+          "option": "Do nothing for now: keep screening on price, volume and free gap only, and wait for the owner on ap-company-6",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "26 of 26 ventures killed (company/ventures/*.json); the last three cases scored 19, 18 and 19 of 35 with distribution 2 because of who holds page one (cases/work-order.md lines 9 and 116). No honest profit number: this path has shipped nothing since 14 Nov."
+        },
+        {
+          "option": "Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small sites",
+          "realism": 4,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Uses search tools the agents already have (Firecrawl search, seodata.dev), Rs 0, and stays inside search-only reach set on 15 Nov (CLAUDE.md). It targets the exact reason the last cases failed (cases/work-order.md, cases/change-order.md, cases/tc-desk.md). Realism 4 not 5: page one is a proxy, not measured traffic, and fewer ideas will pass. No honest profit number until an idea is sized."
+        },
+        {
+          "option": "Loosen the business case bar so distribution 2 can pass",
+          "realism": 1,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "The bar is set in config.businessCase and CLAUDE.md gates; lowering it would ship products the evidence says cannot reach buyers. Changing the constitution's gate is the owner's call (already asked in ap-company-6)."
+        }
+      ],
+      "decision": {
+        "choice": "Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small sites",
+        "reason": "Same zero cost and fully reversible as doing nothing, and it removes the single failure that killed every recent case before a pod is spent on it. It does not need the owner and runs alongside ap-company-6 while he decides.",
+        "decidedAt": "2026-11-27T22:20:00.000Z",
+        "decidedBy": "ceo"
+      },
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/22"
+    },
     {
       "id": "ap-company-5",
       "title": "Screen for ideas where people pay to save, share or team up",
@@ -1431,16 +1470,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
-      "since": "2026-11-27T21:48:41.150Z",
+      "state": "done",
+      "task": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible",
+      "since": "2026-11-27T22:13:19.744Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:48:40.895Z",
-        "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule"
+        "at": "2026-11-27T22:13:19.744Z",
+        "action": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible"
       },
-      "actions": 85
+      "actions": 86
     },
     {
       "id": "ops",
@@ -1602,16 +1641,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
-      "since": "2026-11-27T21:48:41.195Z",
+      "state": "done",
+      "task": "No live products to check; HQ returns 200",
+      "since": "2026-11-27T22:12:59.531Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:18.853Z",
-        "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main"
+        "at": "2026-11-27T22:12:59.531Z",
+        "action": "No live products to check; HQ returns 200"
       },
-      "actions": 45
+      "actions": 46
     },
     {
       "id": "security",
@@ -1621,16 +1660,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
-      "since": "2026-11-27T21:48:41.244Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no keys or tokens found",
+      "since": "2026-11-27T22:12:59.474Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:31.345Z",
-        "action": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found"
+        "at": "2026-11-27T22:12:59.474Z",
+        "action": "Secret scan of the repo: no keys or tokens found"
       },
-      "actions": 33
+      "actions": 34
     },
     {
       "id": "growth",
@@ -1697,16 +1736,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
-      "since": "2026-11-27T21:48:41.286Z",
+      "state": "done",
+      "task": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
+      "since": "2026-11-27T22:12:59.583Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:31.385Z",
-        "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)"
+        "at": "2026-11-27T22:12:59.583Z",
+        "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)"
       },
-      "actions": 24
+      "actions": 25
     },
     {
       "id": "legal",
@@ -2635,6 +2674,34 @@
   },
   "log": [
     {
+      "at": "2026-11-27T22:13:19.744Z",
+      "agent": "ceo",
+      "action": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:12:59.583Z",
+      "agent": "finance",
+      "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:12:59.531Z",
+      "agent": "devops",
+      "action": "No live products to check; HQ returns 200",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:12:59.474Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T22:12:46.342Z",
       "agent": "ops",
       "action": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
@@ -3165,35 +3232,7 @@
       "action": "Screened 16 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: grant tracking for nonprofits (grant tracker 480, grant tracking software 260, grant tracking spreadsheet 260, grant writing software 320, paid Instrumentl capterra.com/p/233384/Instrumentl/pricing/, but free grant management at zeffy.com/blog/grant-management-software and clockify.me/grant-management-software, free Airtable template airtable.com/templates/nonprofits-and-volunteering/expwzMEi50HFbV7TN/nonprofit-grant-tracker), status page (2,400 a month, free hosted status pages betterstack.com/better-uptime/status-page), nonprofit CRM (2,900, free CRMs at zeffy.com/blog/free-crm-for-nonprofits and givebutter.com/blog/best-free-crm-for-nonprofits), proposal software (1,300, CPC USD 41.63, free plans listed at capterra.com/proposal-management-software/s/free/, page one held by vendors), client portal software (1,300, client portal free 140, page one held by vendors). Out of scope: school management software India 3,600 (aimed at children's data). Dropped on volume: ATS for small business 480, yoga studio software 480, board meeting minutes software 480, recipe management software 390, wholesale order form 210, warehouse software small business 210, open house sign in app 140, tuition management app India 0, CA firm software India 0, wedding planner software 0. Firecrawl credits ran out this cycle, so free-gap checks used web search",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:15:34.856Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: proposals, status pages, client portals, grant tracking, nonprofit CRM, school software, board minutes, yoga, ATS",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T13:15:34.815Z",
-      "agent": "finance",
-      "action": "Books: revenue Rs 0 confirmed, 0 live products; FX unchanged from 14 Nov record",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:15:34.774Z",
-      "agent": "security",
-      "action": "Secret scan: no keys or private keys found in the repo",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:13:49.091Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog 13:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 482
+  "logTotal": 486
 }

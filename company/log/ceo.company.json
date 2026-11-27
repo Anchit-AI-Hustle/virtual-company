@@ -270,5 +270,12 @@
     "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:13:19.744Z",
+    "agent": "ceo",
+    "action": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

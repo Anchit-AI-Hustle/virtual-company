@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
+  "state": "done",
+  "task": "Secret scan of the repo: no keys or tokens found",
   "ventureId": null,
-  "since": "2026-11-27T21:48:41.244Z"
+  "since": "2026-11-27T22:12:59.474Z"
 }

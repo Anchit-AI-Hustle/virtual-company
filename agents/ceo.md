@@ -30,6 +30,10 @@ the same two facts: a free tool already did the job, or too few people searched 
   another named tool).
 - Check for a free tool that already closes the gap before staffing. A big paid market where
   free tools are weak, clunky, account-locked or missing the Indian context is the target.
+- Check who holds page one (decision ap-company-7, 27 Nov 2026): read the live top 10 for the
+  two main buyer terms. Staff only if at least 4 are forums, Q&A threads, static PDFs or Word
+  files, thin template pages or small single-purpose sites, and no free tool on page one already
+  does the job end to end. Record it as `screen.serp: { terms, weakResults, ofTop, notes, source }`.
 - Record the screen on the venture before it enters `validating`:
   `screen: { paidPrice: { product, inrMonthly, source }, searches: { terms, monthly, source }, freeGap }`.
   `node scripts/validate.js` refuses a staffed idea without it.
