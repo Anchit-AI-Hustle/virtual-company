@@ -12,5 +12,12 @@
     "action": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)",
     "ventureId": "work-order",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:31:32.929Z",
+    "agent": "lead-work-order",
+    "action": "Blocked: needs reviewers: research, sizing, ceo",
+    "ventureId": "work-order",
+    "kind": "blocked"
   }
 ]
