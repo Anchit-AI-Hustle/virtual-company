@@ -13,36 +13,51 @@
   },
   "evidence": [
     {
-      "claim": "JustSignOff sells change order sign-off for contractors from USD 49 flat with no free plan: customers approve, decline or ask for changes from a text or email link without an app, and approved orders become timestamped signed PDFs.",
+      "claim": "JustSignOff sells construction change order sign-off from USD 49 a month flat (free trial): customers approve, decline or ask for changes from a text or email link without an app, and approved orders become timestamped signed PDFs.",
       "url": "https://www.capterra.co.uk/software/1107866/JustSignOff",
-      "foundAt": "2026-11-27"
+      "foundAt": "2026-11-28"
     },
     {
-      "claim": "AddWork, an iPhone app for contractor estimates and change orders with client approval by link, charges USD 9.99 a month after a 14-day trial and has 10 ratings averaging 4.6.",
+      "claim": "AddWork, an iPhone app for contractor estimates and change orders with no-login client approval by email or SMS, charges USD 9.99 a month after a 14-day trial, has 10 ratings averaging 4.6, and one reviewer says it already saved 10 times what it cost.",
       "url": "https://apps.apple.com/us/app/addwork/id6740415862",
-      "foundAt": "2026-11-27"
+      "foundAt": "2026-11-28"
     },
     {
-      "claim": "Joist puts change orders on its Elite plan at USD 24 a month and has no free plan.",
+      "claim": "Joist puts sending change orders on its Elite plan at USD 24 a month billed monthly (list USD 32); its FAQ says the free plan is no longer available.",
       "url": "https://www.joist.com/pricing/",
-      "foundAt": "2026-11-27"
+      "foundAt": "2026-11-28"
     },
     {
       "claim": "Fieldwire includes RFIs, submittals and change orders only from Business Plus at USD 89 a user a month; its free Basic plan has none of them.",
       "url": "https://www.Fieldwire.Com/pricing/",
       "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Snappii Construction Change Order App sells a USD 15.99 a month or USD 159.99 a year subscription after a 14-day trial; its one visible review complains you cannot test it without paying.",
+      "url": "https://apps.apple.com/us/app/construction-change-order-app/id1017681058",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Levelset hosts 16 pages of change order questions from contractors, including a remodeler with only emails and texts as proof whose owner will not pay for requested change order work, and a sub with USD 23,000 of extras unbilled 4 months waiting for written change orders.",
+      "url": "https://www.levelset.com/payment-help/topic/change-orders/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "ChangeSeal sells phone change orders that the homeowner signs on their own phone with no app and a signed PDF on file, on a 14-day trial, and cites a recurring ContractorTalk thread asking for a script to get change orders signed.",
+      "url": "https://www.getnaildown.app/blog/how-to-get-homeowners-to-sign-change-orders",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "nextAction": "Research writes the sceptical business case, Farhan sizes it, CEO decides go or no-go. Evidence against: the no-login homeowner sign-off link is already sold by JustSignOff, AddWork, ChangeSeal and SteelHand (https://apps.apple.com/nl/app/steelhand-contractor-estimates/id6802784970), so the gap is only that ours is free with no account; Reddit threads on unpaid unsigned extras could not be read (scraper blocked).",
   "lead": {
     "name": "Shaurya",
     "color": "#35603A",
     "trait": "Picks one metric and moves it."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-27T21:29:24.957Z",
+  "stage": "validated",
+  "stageSince": "2026-11-27T21:31:25.271Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:29:24.957Z",
+  "updatedAt": "2026-11-27T21:31:25.271Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

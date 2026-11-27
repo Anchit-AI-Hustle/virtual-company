@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:31:35.482Z",
+  "builtAt": "2026-11-27T21:31:49.436Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1030,6 +1030,38 @@
       "businessCase": null
     },
     {
+      "id": "change-order",
+      "title": "Change Order Form",
+      "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
+      "customer": "Small US service businesses and contractors",
+      "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
+      "priceINR": null,
+      "stage": "validated",
+      "score": 12,
+      "url": null,
+      "nextAction": "Research writes the sceptical business case, Farhan sizes it, CEO decides go or no-go. Evidence against: the no-login homeowner sign-off link is already sold by JustSignOff, AddWork, ChangeSeal and SteelHand (https://apps.apple.com/nl/app/steelhand-contractor-estimates/id6802784970), so the gap is only that ours is free with no account; Reddit threads on unpaid unsigned extras could not be read (scraper blocked).",
+      "metrics": null,
+      "updatedAt": "2026-11-27T21:31:25.271Z",
+      "evidenceCount": 7,
+      "specPath": null,
+      "lead": {
+        "id": "lead-change-order",
+        "name": "Shaurya",
+        "color": "#35603A"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "work-order",
       "title": "Work Order Maker",
       "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
@@ -1048,38 +1080,6 @@
         "id": "lead-work-order",
         "name": "Riya",
         "color": "#8C4A2F"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
-    },
-    {
-      "id": "change-order",
-      "title": "Change Order Form",
-      "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
-      "customer": "Small US service businesses and contractors",
-      "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
-      "priceINR": null,
-      "stage": "validating",
-      "score": 12,
-      "url": null,
-      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
-      "metrics": null,
-      "updatedAt": "2026-11-27T21:29:24.957Z",
-      "evidenceCount": 4,
-      "specPath": null,
-      "lead": {
-        "id": "lead-change-order",
-        "name": "Shaurya",
-        "color": "#35603A"
       },
       "reviews": {
         "product": null,
@@ -1694,6 +1694,26 @@
       "actions": 20
     },
     {
+      "id": "lead-change-order",
+      "name": "Shaurya",
+      "title": "Lead, Change Order Form",
+      "department": "pods",
+      "color": "#35603A",
+      "trait": "Picks one metric and moves it.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "change-order",
+      "state": "blocked",
+      "task": "needs reviewers: research, sizing, ceo",
+      "since": "2026-11-27T21:31:36.827Z",
+      "ventureId": "change-order",
+      "ventureTitle": "Change Order Form",
+      "last": {
+        "at": "2026-11-27T21:31:36.827Z",
+        "action": "Blocked: needs reviewers: research, sizing, ceo"
+      },
+      "actions": 3
+    },
+    {
       "id": "lead-work-order",
       "name": "Riya",
       "title": "Lead, Work Order Maker",
@@ -1712,23 +1732,6 @@
         "action": "Blocked: needs reviewers: research, sizing, ceo"
       },
       "actions": 3
-    },
-    {
-      "id": "lead-change-order",
-      "name": "Shaurya",
-      "title": "Lead, Change Order Form",
-      "department": "pods",
-      "color": "#35603A",
-      "trait": "Picks one metric and moves it.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "change-order",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
     },
     {
       "id": "lead-tc-desk",
@@ -1793,7 +1796,23 @@
         "action": "Started: Validating: collecting sourced demand evidence for home baker costing"
       }
     ],
-    "change-order": [],
+    "change-order": [
+      {
+        "at": "2026-11-27T21:31:36.827Z",
+        "agent": "lead-change-order",
+        "action": "Blocked: needs reviewers: research, sizing, ceo"
+      },
+      {
+        "at": "2026-11-27T21:31:36.780Z",
+        "agent": "lead-change-order",
+        "action": "Validated: 7 sourced signals (paid sign-off tools at USD 9.99 to 49 a month, Levelset change order disputes); competition for the sign-off link is crowded"
+      },
+      {
+        "at": "2026-11-27T21:30:17.716Z",
+        "agent": "lead-change-order",
+        "action": "Started: Validating: gathering sourced demand signals for change order sign-off"
+      }
+    ],
     "class-pass": [
       {
         "at": "2026-11-21T04:22:47.073Z",
@@ -2544,6 +2563,20 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:31:36.827Z",
+      "agent": "lead-change-order",
+      "action": "Blocked: needs reviewers: research, sizing, ceo",
+      "ventureId": "change-order",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-27T21:31:36.780Z",
+      "agent": "lead-change-order",
+      "action": "Validated: 7 sourced signals (paid sign-off tools at USD 9.99 to 49 a month, Levelset change order disputes); competition for the sign-off link is crowded",
+      "ventureId": "change-order",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:31:32.929Z",
       "agent": "lead-work-order",
       "action": "Blocked: needs reviewers: research, sizing, ceo",
@@ -2562,6 +2595,13 @@
       "agent": "lead-work-order",
       "action": "Started: Gathering sourced demand signals for work-order",
       "ventureId": "work-order",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T21:30:17.716Z",
+      "agent": "lead-change-order",
+      "action": "Started: Validating: gathering sourced demand signals for change order sign-off",
+      "ventureId": "change-order",
       "kind": "start"
     },
     {
@@ -3081,28 +3121,7 @@
       "action": "Started: Morning standup",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T10:15:11.009Z",
-      "agent": "ops",
-      "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl credits return about 22:14 UTC",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:14:59.531Z",
-      "agent": "data",
-      "action": "No live venture counts to read",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:14:59.486Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas pass the owner's 21 Nov screen after 13 more screened this cycle; no idea is staffed without a passing sourced screen. Research screens the next batch when Firecrawl credits return at about 22:14 UTC",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 461
+  "logTotal": 464
 }

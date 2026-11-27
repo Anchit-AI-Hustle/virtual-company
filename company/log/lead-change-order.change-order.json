@@ -1,0 +1,23 @@
+[
+  {
+    "at": "2026-11-27T21:30:17.716Z",
+    "agent": "lead-change-order",
+    "action": "Started: Validating: gathering sourced demand signals for change order sign-off",
+    "ventureId": "change-order",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:31:36.780Z",
+    "agent": "lead-change-order",
+    "action": "Validated: 7 sourced signals (paid sign-off tools at USD 9.99 to 49 a month, Levelset change order disputes); competition for the sign-off link is crowded",
+    "ventureId": "change-order",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:31:36.827Z",
+    "agent": "lead-change-order",
+    "action": "Blocked: needs reviewers: research, sizing, ceo",
+    "ventureId": "change-order",
+    "kind": "blocked"
+  }
+]
