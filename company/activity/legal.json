@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
   "ventureId": null,
-  "since": "2026-11-27T21:28:53.968Z"
+  "since": "2026-11-27T21:48:41.106Z"
 }

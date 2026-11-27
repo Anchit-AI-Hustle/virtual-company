@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
-  "ventureId": "tc-desk",
-  "since": "2026-11-27T21:47:37.596Z"
+  "state": "idle",
+  "task": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
+  "ventureId": null,
+  "since": "2026-11-27T21:48:41.150Z"
 }

@@ -1,0 +1,41 @@
+{
+  "id": "ap-company-6",
+  "ventureId": null,
+  "type": "public-post",
+  "title": "Let a free tool go live as a 14 day test before the business case",
+  "ask": "Amend CLAUDE.md so a screened idea may put one free, labelled demand-test tool live on its subdomain for 14 days (after QA, security and legal pass), and the business case then scores distribution from its real search impressions and visits instead of a guess",
+  "why": "26 of 26 ventures have been killed and nothing has shipped since 14 Nov. On 28 Nov all three new pods (work-order, change-order, tc-desk) reached validated with 7 or 8 sourced signals each, then failed the case at 18 or 19 of 35 with distribution at 2 every time: a brand new subdomain is assumed unable to outrank vendors, and the gate needs 3. Under search-only reach that guess can never be beaten without real data, so the gate as written stops every idea before any test.",
+  "youDo": "Comment on the linked issue starting with approve to allow the 14 day demand test (the agents then add the rule to CLAUDE.md and agents/ceo.md and run it on the strongest killed idea, work-order), or reject to keep the gates as they are.",
+  "ifNo": "The company keeps screening and killing ideas at the business case. Expect more cycles with nothing live.",
+  "urgent": false,
+  "costINR": 0,
+  "status": "pending",
+  "createdAt": "2026-11-27T22:30:00.000Z",
+  "options": [
+    {
+      "option": "Do nothing for now: keep the business case gate before anything goes live",
+      "realism": 5,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "26 of 26 ventures killed (company/ventures/*.json); the three cases on 28 Nov scored 19, 18 and 19 of 35 with distribution 2 (cases/work-order.md, cases/change-order.md, cases/tc-desk.md). No honest profit number: the evidence says this path ships nothing."
+    },
+    {
+      "option": "Owner amends the constitution: one free labelled demand-test tool live for 14 days per screened idea, then the case scores distribution from measured impressions and visits",
+      "realism": 3,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Rs 0 on Vercel free tier already used; reversible by pausing the project (never deleting). Realism 3 because only the owner can change CLAUDE.md and the deploy rule in agents/devops.md. No honest profit number until a test gives real traffic; CLAUDE.md already allows a labelled demand test, but devops.md forbids deploying before the gates."
+    },
+    {
+      "option": "Keep the gate and move screening to Hindi or other non-English searches where vendors hold fewer page one spots",
+      "realism": 4,
+      "profitINR12m": null,
+      "costINR": 0,
+      "reversible": true,
+      "basis": "Carried from ap-company-5 option 3; still unmeasured. Willingness to pay Rs 500 a month is unproven in that audience, and it does not fix that distribution is guessed, not measured."
+    }
+  ],
+  "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/21"
+}

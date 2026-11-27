@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "needs reviewers: research, sizing, ceo",
-  "ventureId": "tc-desk",
-  "since": "2026-11-27T21:36:02.510Z"
+  "ventureId": null,
+  "since": "2026-11-27T21:48:41.912Z"
 }

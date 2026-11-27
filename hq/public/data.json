@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:47:45.751Z",
+  "builtAt": "2026-11-27T21:48:44.433Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -354,7 +354,49 @@
       "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/4"
     }
   ],
-  "approvals": [],
+  "approvals": [
+    {
+      "id": "ap-company-6",
+      "ventureId": null,
+      "type": "public-post",
+      "title": "Let a free tool go live as a 14 day test before the business case",
+      "ask": "Amend CLAUDE.md so a screened idea may put one free, labelled demand-test tool live on its subdomain for 14 days (after QA, security and legal pass), and the business case then scores distribution from its real search impressions and visits instead of a guess",
+      "why": "26 of 26 ventures have been killed and nothing has shipped since 14 Nov. On 28 Nov all three new pods (work-order, change-order, tc-desk) reached validated with 7 or 8 sourced signals each, then failed the case at 18 or 19 of 35 with distribution at 2 every time: a brand new subdomain is assumed unable to outrank vendors, and the gate needs 3. Under search-only reach that guess can never be beaten without real data, so the gate as written stops every idea before any test.",
+      "youDo": "Comment on the linked issue starting with approve to allow the 14 day demand test (the agents then add the rule to CLAUDE.md and agents/ceo.md and run it on the strongest killed idea, work-order), or reject to keep the gates as they are.",
+      "ifNo": "The company keeps screening and killing ideas at the business case. Expect more cycles with nothing live.",
+      "urgent": false,
+      "costINR": 0,
+      "status": "pending",
+      "createdAt": "2026-11-27T22:30:00.000Z",
+      "options": [
+        {
+          "option": "Do nothing for now: keep the business case gate before anything goes live",
+          "realism": 5,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "26 of 26 ventures killed (company/ventures/*.json); the three cases on 28 Nov scored 19, 18 and 19 of 35 with distribution 2 (cases/work-order.md, cases/change-order.md, cases/tc-desk.md). No honest profit number: the evidence says this path ships nothing."
+        },
+        {
+          "option": "Owner amends the constitution: one free labelled demand-test tool live for 14 days per screened idea, then the case scores distribution from measured impressions and visits",
+          "realism": 3,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Rs 0 on Vercel free tier already used; reversible by pausing the project (never deleting). Realism 3 because only the owner can change CLAUDE.md and the deploy rule in agents/devops.md. No honest profit number until a test gives real traffic; CLAUDE.md already allows a labelled demand test, but devops.md forbids deploying before the gates."
+        },
+        {
+          "option": "Keep the gate and move screening to Hindi or other non-English searches where vendors hold fewer page one spots",
+          "realism": 4,
+          "profitINR12m": null,
+          "costINR": 0,
+          "reversible": true,
+          "basis": "Carried from ap-company-5 option 3; still unmeasured. Willingness to pay Rs 500 a month is unproven in that audience, and it does not fix that distribution is guessed, not measured."
+        }
+      ],
+      "issueUrl": "https://github.com/Anchit-AI-Hustle/virtual-company/issues/21"
+    }
+  ],
   "ventures": [
     {
       "id": "bake-cost",
@@ -1389,16 +1431,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
-      "since": "2026-11-27T21:47:37.596Z",
-      "ventureId": "tc-desk",
-      "ventureTitle": "Closing Desk",
+      "state": "idle",
+      "task": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
+      "since": "2026-11-27T21:48:41.150Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:47:37.596Z",
-        "action": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed."
+        "at": "2026-11-27T21:48:40.895Z",
+        "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule"
       },
-      "actions": 84
+      "actions": 85
     },
     {
       "id": "ops",
@@ -1408,9 +1450,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
-      "since": "2026-11-27T21:13:18.796Z",
+      "since": "2026-11-27T21:48:40.963Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1427,11 +1469,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
-      "since": "2026-11-27T21:45:53.655Z",
-      "ventureId": "tc-desk",
-      "ventureTitle": "Closing Desk",
+      "since": "2026-11-27T21:48:41.045Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-27T21:45:53.655Z",
         "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents"
@@ -1446,9 +1488,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture, so no counts to read",
-      "since": "2026-11-27T21:13:31.428Z",
+      "since": "2026-11-27T21:48:41.327Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1467,7 +1509,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-21T17:27:35.216Z",
+      "since": "2026-11-27T21:48:41.505Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1486,7 +1528,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-21T16:13:55.323Z",
+      "since": "2026-11-27T21:48:41.554Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1505,7 +1547,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-21T16:13:55.380Z",
+      "since": "2026-11-27T21:48:41.605Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1524,7 +1566,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-21T16:13:55.445Z",
+      "since": "2026-11-27T21:48:41.654Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1543,7 +1585,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-21T16:13:55.509Z",
+      "since": "2026-11-27T21:48:41.716Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1560,9 +1602,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
-      "since": "2026-11-27T21:13:18.853Z",
+      "since": "2026-11-27T21:48:41.195Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1579,9 +1621,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
-      "since": "2026-11-27T21:13:31.345Z",
+      "since": "2026-11-27T21:48:41.244Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1600,7 +1642,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-21T16:13:55.727Z",
+      "since": "2026-11-27T21:48:41.459Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1619,7 +1661,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-21T16:13:55.798Z",
+      "since": "2026-11-27T21:48:41.411Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1636,9 +1678,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live venture and no open owner-chat issue, so no messages to handle",
-      "since": "2026-11-27T21:13:31.469Z",
+      "since": "2026-11-27T21:48:41.369Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1655,9 +1697,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
-      "since": "2026-11-27T21:13:31.385Z",
+      "since": "2026-11-27T21:48:41.286Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1674,9 +1716,9 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "done",
+      "state": "idle",
       "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "since": "2026-11-27T21:28:53.968Z",
+      "since": "2026-11-27T21:48:41.106Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1695,7 +1737,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-21T16:13:56.088Z",
+      "since": "2026-11-27T21:48:41.775Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2593,6 +2635,13 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:48:40.895Z",
+      "agent": "ceo",
+      "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:47:37.596Z",
       "agent": "ceo",
       "action": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
@@ -3144,14 +3193,7 @@
       "action": "Started: Morning standup",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T12:13:40.495Z",
-      "agent": "ops",
-      "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 479
+  "logTotal": 480
 }
