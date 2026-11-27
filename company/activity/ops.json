@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle",
+  "state": "done",
+  "task": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
   "ventureId": null,
-  "since": "2026-11-21T17:27:35.339Z"
+  "since": "2026-11-27T21:13:18.796Z"
 }

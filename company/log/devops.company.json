@@ -250,5 +250,19 @@
     "action": "Lights on: 0 live products to check, health.json ok since 08:19 UTC",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:13:06.410Z",
+    "agent": "devops",
+    "action": "Started: Platform health: cycle-missed alert, no session since 21 Nov",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:13:18.853Z",
+    "agent": "devops",
+    "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

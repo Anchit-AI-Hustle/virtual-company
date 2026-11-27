@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T02:27:21.624Z",
+  "builtAt": "2026-11-27T21:13:19.346Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1302,16 +1302,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle",
-      "since": "2026-11-21T17:27:35.339Z",
+      "state": "done",
+      "task": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
+      "since": "2026-11-27T21:13:18.796Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:27:35.298Z",
-        "action": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle"
+        "at": "2026-11-27T21:13:18.796Z",
+        "action": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass"
       },
-      "actions": 74
+      "actions": 76
     },
     {
       "id": "research",
@@ -1454,16 +1454,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: 0 live products to check, health.json ok since 08:19 UTC",
-      "since": "2026-11-21T17:27:34.978Z",
+      "state": "done",
+      "task": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
+      "since": "2026-11-27T21:13:18.853Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.645Z",
-        "action": "Lights on: 0 live products to check, health.json ok since 08:19 UTC"
+        "at": "2026-11-27T21:13:18.853Z",
+        "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main"
       },
-      "actions": 43
+      "actions": 45
     },
     {
       "id": "security",
@@ -2376,6 +2376,34 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:13:18.853Z",
+      "agent": "devops",
+      "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:13:18.796Z",
+      "agent": "ops",
+      "action": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:13:06.410Z",
+      "agent": "devops",
+      "action": "Started: Platform health: cycle-missed alert, no session since 21 Nov",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T21:12:51.827Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-21T17:27:35.298Z",
       "agent": "ops",
       "action": "Close the day: rent-ledger staffed, validated, then killed at the case gate (16 of 35, sizing Rs 46,190 at 10%); 2 ideas open; agents idle",
@@ -2906,35 +2934,7 @@
       "action": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:14:50.230Z",
-      "agent": "research",
-      "action": "Screened 10 ideas (seodata.dev, Google Ads API averages, 21 Nov): none passed. Bank statement PDF to Excel and Tally, India: big volume (bank statement converter 18,100 a month, bank statement pdf to excel 4,400, excel to tally 3,600; api.seodata.dev/v1/keyword?q=bank+statement+to+excel&country=in) but free tools close the gap: AI Accountant converts in the browser free with no signup and passwords (aiaccountant.com/resources/bank-statement-converter), TaxFetch is free with a Tally page (taxfetchindia.com/bank-pdf-to-excel-converter, taxfetchindia.com/bank-statement-to-tally), Invocreto does Excel to Tally XML (invocreto.com/excel-to-xml). Dropped on volume: PG management software India (170), GSTR 2B reconciliation (480), snow removal software US (260), driving school software US (0), bank reconciliation template US (1,300, free template intent). Gym management software India (about 1,000) and catering software US (720, CPC USD 66) dropped on distribution: page one held by Capterra, GetApp and vendors, the risk that stopped kennel-book. Tally to Excel (880) overlaps the free Tally tools above",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:14:50.182Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch with a second volume source: Firecrawl still out of credits (request 38e99582), so volumes come from seodata.dev (Google Ads API monthly averages, 20 free lookups a day)",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T09:12:16.547Z",
-      "agent": "data",
-      "action": "No live ventures, no counts to read",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:12:16.518Z",
-      "agent": "support",
-      "action": "No live ventures, no messages",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 446
+  "logTotal": 450
 }
