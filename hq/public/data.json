@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T23:12:41.783Z",
+  "builtAt": "2026-11-27T23:13:35.628Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1480,16 +1480,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle",
-      "since": "2026-11-27T22:37:47.831Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "since": "2026-11-27T23:13:34.967Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:37:40.795Z",
-        "action": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle"
+        "at": "2026-11-27T23:13:34.967Z",
+        "action": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 90
+      "actions": 91
     },
     {
       "id": "ops",
@@ -1519,15 +1519,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
-      "since": "2026-11-27T22:37:40.834Z",
+      "task": "Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
+      "since": "2026-11-27T23:13:34.930Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T22:37:40.834Z",
-        "action": "Blocked: Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email"
+        "at": "2026-11-27T23:13:34.930Z",
+        "action": "Blocked: Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle"
       },
-      "actions": 81
+      "actions": 83
     },
     {
       "id": "data",
@@ -1651,16 +1651,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "No live products to check; HQ returns 200",
-      "since": "2026-11-27T22:37:47.959Z",
+      "state": "done",
+      "task": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
+      "since": "2026-11-27T23:13:34.781Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:12:59.531Z",
-        "action": "No live products to check; HQ returns 200"
+        "at": "2026-11-27T23:13:34.781Z",
+        "action": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts"
       },
-      "actions": 46
+      "actions": 47
     },
     {
       "id": "security",
@@ -1670,16 +1670,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
+      "state": "done",
       "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-27T22:37:49.130Z",
+      "since": "2026-11-27T23:13:34.822Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:12:59.474Z",
+        "at": "2026-11-27T23:13:34.822Z",
         "action": "Secret scan of the repo: no keys or tokens found"
       },
-      "actions": 34
+      "actions": 35
     },
     {
       "id": "growth",
@@ -1746,16 +1746,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
-      "since": "2026-11-27T22:37:48.071Z",
+      "state": "done",
+      "task": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
+      "since": "2026-11-27T23:13:34.857Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:12:59.583Z",
-        "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)"
+        "at": "2026-11-27T23:13:34.857Z",
+        "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one"
       },
-      "actions": 25
+      "actions": 26
     },
     {
       "id": "legal",
@@ -2731,6 +2731,48 @@
   },
   "log": [
     {
+      "at": "2026-11-27T23:13:34.967Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T23:13:34.930Z",
+      "agent": "research",
+      "action": "Blocked: Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-27T23:13:34.893Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch of ideas (punch list, HOA, inspections, trades and studio software) with DataForSEO",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T23:13:34.857Z",
+      "agent": "finance",
+      "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T23:13:34.822Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T23:13:34.781Z",
+      "agent": "devops",
+      "action": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T23:12:41.345Z",
       "agent": "ops",
       "action": "Standup 23:15 UTC: health ok, watchdog ran 22:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research retries a new screen if search volume tools have recovered",
@@ -3247,49 +3289,7 @@
       "action": "Started: Morning standup",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T16:13:43.550Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 of 20 new ideas cleared the screen (paid Rs 500+ a month, 1,000+ searches, no free tool closing the gap), so no venture is staffed this cycle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T16:13:43.520Z",
-      "agent": "research",
-      "action": "Screened 20 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap and page one is held by vendors and directories: auto repair shop software US (auto repair shop software 4,400, CPC USD 34.95, api.seodata.dev/v1/keyword?q=auto+repair+shop+software&country=us, but free plans listed at capterra.com/auto-repair-software/s/free/ and g2.com/categories/auto-shop-management/free, free mechanic invoice template shopview.com/mechanic-invoice-template), car rental software US (3,600, CPC USD 20.62, but free plans listed at capterra.com/car-rental-software/s/free/ and getapp.com/retail-consumer-services-software/car-rental/p/free), SOP software US (1,300, but free tiers at g2.com/categories/standard-operating-procedures/free and scribe.com/library/free-sop-software). Repeats of earlier screens or overlaps: fleet management software India 1,000 (overlaps killed fleet-log), school management software India 3,600 and gym management software India 1,000 (school and gym niches screened earlier, free tiers common). Dropped on volume: car rental software India 390, courier software India 210, electrician software US 260, locksmith software US 260, appliance repair software US 210, funeral home software US 210, auto body shop software US 50, kirana billing software India 0. seodata.dev hit its free rate limit mid-batch, so OKR software, timesheet app, bakery software, tow truck software and transport management software India were not measured",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T16:13:43.481Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: auto repair shops, car rental, SOP software, fleet, school and gym management India, trades software",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T16:12:32.968Z",
-      "agent": "ops",
-      "action": "Standup 16:12 UTC: health ok, watchdog ran 16:05, no platform alerts, no owner-chat or reject comments on decided issues 16 and 18, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T16:12:32.934Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T15:14:33.669Z",
-      "agent": "ceo",
-      "action": "No idea passed the screen this cycle; pods stay empty, 0 open ideas; screening continues under ap-company-5",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 502
+  "logTotal": 508
 }

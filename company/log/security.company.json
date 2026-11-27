@@ -222,5 +222,12 @@
     "action": "Secret scan of the repo: no keys or tokens found",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T23:13:34.822Z",
+    "agent": "security",
+    "action": "Secret scan of the repo: no keys or tokens found",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live products to check; HQ returns 200",
+  "state": "done",
+  "task": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
   "ventureId": null,
-  "since": "2026-11-27T22:37:47.959Z"
+  "since": "2026-11-27T23:13:34.781Z"
 }

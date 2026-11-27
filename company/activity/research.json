@@ -1,6 +1,6 @@
 {
   "state": "blocked",
-  "task": "Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
+  "task": "Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
   "ventureId": "rfi-log",
-  "since": "2026-11-27T22:37:40.834Z"
+  "since": "2026-11-27T23:13:34.930Z"
 }

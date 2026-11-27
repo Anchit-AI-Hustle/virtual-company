@@ -173,5 +173,12 @@
     "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T23:13:34.857Z",
+    "agent": "finance",
+    "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
