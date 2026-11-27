@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:37:21.404Z",
+  "builtAt": "2026-11-27T22:37:51.652Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1480,16 +1480,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
-      "task": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands",
-      "since": "2026-11-27T22:37:12.699Z",
-      "ventureId": "rfi-log",
-      "ventureTitle": "RFI Log",
+      "state": "idle",
+      "task": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle",
+      "since": "2026-11-27T22:37:47.831Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:37:12.699Z",
-        "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands"
+        "at": "2026-11-27T22:37:40.795Z",
+        "action": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle"
       },
-      "actions": 89
+      "actions": 90
     },
     {
       "id": "ops",
@@ -1499,16 +1499,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
-      "since": "2026-11-27T22:12:46.342Z",
+      "state": "idle",
+      "task": "Close the day: rfi-log staffed (Kabeer), validated with 5 signals, killed at the case (17 of 35, page one held by Asana, Notion, Smartsheet, Procore); consign-ledger killed on page one; ap-company-7 decided; 0 open ideas, Research blocked on search volume credits; agents idle",
+      "since": "2026-11-27T22:37:49.290Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T22:12:46.342Z",
-        "action": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms"
+        "at": "2026-11-27T22:37:49.242Z",
+        "action": "Close the day: rfi-log staffed (Kabeer), validated with 5 signals, killed at the case (17 of 35, page one held by Asana, Notion, Smartsheet, Procore); consign-ledger killed on page one; ap-company-7 decided; 0 open ideas, Research blocked on search volume credits; agents idle"
       },
-      "actions": 78
+      "actions": 79
     },
     {
       "id": "research",
@@ -1518,16 +1518,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
-      "task": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
-      "since": "2026-11-27T22:36:05.299Z",
+      "state": "blocked",
+      "task": "Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
+      "since": "2026-11-27T22:37:40.834Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T22:36:05.299Z",
-        "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)"
+        "at": "2026-11-27T22:37:40.834Z",
+        "action": "Blocked: Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email"
       },
-      "actions": 80
+      "actions": 81
     },
     {
       "id": "data",
@@ -1651,9 +1651,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live products to check; HQ returns 200",
-      "since": "2026-11-27T22:12:59.531Z",
+      "since": "2026-11-27T22:37:47.959Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1670,9 +1670,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-27T22:12:59.474Z",
+      "since": "2026-11-27T22:37:49.130Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1746,9 +1746,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
-      "since": "2026-11-27T22:12:59.583Z",
+      "since": "2026-11-27T22:37:48.071Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2731,6 +2731,27 @@
   },
   "log": [
     {
+      "at": "2026-11-27T22:37:49.242Z",
+      "agent": "ops",
+      "action": "Close the day: rfi-log staffed (Kabeer), validated with 5 signals, killed at the case (17 of 35, page one held by Asana, Notion, Smartsheet, Procore); consign-ledger killed on page one; ap-company-7 decided; 0 open ideas, Research blocked on search volume credits; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:37:40.834Z",
+      "agent": "research",
+      "action": "Blocked: Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-27T22:37:40.795Z",
+      "agent": "ceo",
+      "action": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T22:37:12.699Z",
       "agent": "ceo",
       "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands",
@@ -3268,28 +3289,7 @@
       "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: housing society, advocate diary, dairy collection, export documents, insurance agent CRM, roofing, tree service, moving, window cleaning, photography studio",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T15:13:45.324Z",
-      "agent": "security",
-      "action": "Secret scan: no keys or tokens found in tracked files",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T15:13:29.839Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T15:13:18.753Z",
-      "agent": "ops",
-      "action": "Standup 15:13 UTC: health ok, watchdog ran 15:04, no platform alerts, no owner-chat or reject comments, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 497
+  "logTotal": 500
 }

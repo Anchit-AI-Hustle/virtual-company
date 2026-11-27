@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
+  "state": "blocked",
+  "task": "Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
   "ventureId": "rfi-log",
-  "since": "2026-11-27T22:36:05.299Z"
+  "since": "2026-11-27T22:37:40.834Z"
 }

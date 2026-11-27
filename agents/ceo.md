@@ -33,7 +33,9 @@ the same two facts: a free tool already did the job, or too few people searched 
 - Check who holds page one (decision ap-company-7, 27 Nov 2026): read the live top 10 for the
   two main buyer terms. Staff only if at least 4 are forums, Q&A threads, static PDFs or Word
   files, thin template pages or small single-purpose sites, and no free tool on page one already
-  does the job end to end. Record it as `screen.serp: { terms, weakResults, ofTop, notes, source }`.
+  does the job end to end. Confirm the count on a second search source (WebSearch), since on
+  27 Nov Firecrawl showed small sites for "rfi template" where WebSearch showed Asana, Notion and
+  Smartsheet; count the weaker of the two. Record it as `screen.serp: { terms, weakResults, ofTop, notes, source }`.
 - Record the screen on the venture before it enters `validating`:
   `screen: { paidPrice: { product, inrMonthly, source }, searches: { terms, monthly, source }, freeGap }`.
   `node scripts/validate.js` refuses a staffed idea without it.
