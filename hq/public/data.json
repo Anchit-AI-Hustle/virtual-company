@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:35:54.924Z",
+  "builtAt": "2026-11-27T21:36:12.565Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1742,16 +1742,16 @@
       "trait": "Makes the hard flow feel obvious.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "tc-desk",
-      "state": "done",
-      "task": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews",
-      "since": "2026-11-27T21:35:39.371Z",
+      "state": "blocked",
+      "task": "needs reviewers: research, sizing, ceo",
+      "since": "2026-11-27T21:36:02.510Z",
       "ventureId": "tc-desk",
       "ventureTitle": "Closing Desk",
       "last": {
-        "at": "2026-11-27T21:35:39.371Z",
-        "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews"
+        "at": "2026-11-27T21:36:02.510Z",
+        "action": "Blocked: needs reviewers: research, sizing, ceo"
       },
-      "actions": 2
+      "actions": 3
     }
   ],
   "ventureTrail": {
@@ -2547,6 +2547,11 @@
     ],
     "tc-desk": [
       {
+        "at": "2026-11-27T21:36:02.510Z",
+        "agent": "lead-tc-desk",
+        "action": "Blocked: needs reviewers: research, sizing, ceo"
+      },
+      {
         "at": "2026-11-27T21:35:39.371Z",
         "agent": "lead-tc-desk",
         "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews"
@@ -2576,6 +2581,13 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T21:36:02.510Z",
+      "agent": "lead-tc-desk",
+      "action": "Blocked: needs reviewers: research, sizing, ceo",
+      "ventureId": "tc-desk",
+      "kind": "blocked"
+    },
     {
       "at": "2026-11-27T21:35:39.371Z",
       "agent": "lead-tc-desk",
@@ -3128,14 +3140,7 @@
       "action": "Lights: 0 live ventures, no product URL to check; health ok, no platform-alert",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T11:13:39.014Z",
-      "agent": "security",
-      "action": "Secret scan of the repo: no keys, tokens or private keys found",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 466
+  "logTotal": 467
 }

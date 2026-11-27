@@ -12,5 +12,12 @@
     "action": "Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC sellers with reviews",
     "ventureId": "tc-desk",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:36:02.510Z",
+    "agent": "lead-tc-desk",
+    "action": "Blocked: needs reviewers: research, sizing, ceo",
+    "ventureId": "tc-desk",
+    "kind": "blocked"
   }
 ]
