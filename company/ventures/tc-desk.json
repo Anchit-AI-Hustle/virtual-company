@@ -1,0 +1,66 @@
+{
+  "id": "tc-desk",
+  "title": "Closing Desk",
+  "oneLiner": "Free real estate transaction checklist for agents and transaction coordinators: enter the contract dates, get every deadline and task, share a status link with the client",
+  "customer": "US real estate agents and independent transaction coordinators handling a few deals a month",
+  "revenueModel": "Free single transaction; paid tier for unlimited saved transactions, client and agent status links, reminders and team use",
+  "score": {
+    "demand": 3,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 2,
+    "total": 11
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Nekst Solo Pro at USD 790 a year (about USD 66 a month) plus USD 299 onboarding; the free Solo Lite stops at 5 transactions. About Rs 6,206 a month at 94.2754 INR per USD",
+      "inrMonthly": 6206,
+      "source": "https://nekst.com/pricing"
+    },
+    "searches": {
+      "terms": {
+        "real estate transaction management software": 1300,
+        "transaction coordinator software": 320,
+        "transaction management for real estate": 320,
+        "real estate transaction coordinator software": 260,
+        "best transaction coordinator software": 210
+      },
+      "monthly": 2410,
+      "source": "https://api.seodata.dev/v1/keyword?q=transaction+coordinator+software&country=us",
+      "note": "seodata.dev (Google Ads monthly averages, United States, cached 12 Nov 2026), read 2026-11-27. CPC USD 17 to 37. Similar terms may share Google groups, so the total may be overstated; checklist terms were not measured this cycle."
+    },
+    "freeGap": "Free options are checklists and capped plans: dotloop and template.net give printable TC checklists (https://dotloop.com/resource-center/downloads/transaction-coordinator-checklists, https://www.template.net/edit-online/283065/real-estate-transaction-coordinator-checklist); Nekst Solo Lite is free for only 5 transactions (https://nekst.com/pricing); Transactly's USD 0 plan charges USD 399 a transaction for coordination (https://transactly.com/pricing); dotloop starts at USD 29 a month (https://www.sourceforge.net/software/real-estate-transaction-management/free-version). Gap: unlimited free deadline checklists from contract dates plus a client status link. Risk: page one held by vendors (Paperless Pipeline, ListedKit, dotloop); contract deadlines vary by state, so the tool must calculate dates the user enters and never advise on contract terms."
+  },
+  "evidence": [
+    {
+      "claim": "Nekst charges USD 790 a year for Solo Pro with unlimited transactions; its free Solo Lite plan covers only 5 transactions for one user.",
+      "url": "https://nekst.com/pricing",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Transactly sells transaction coordination at USD 339 to 399 a transaction and mentions a USD 49 a month platform-only plan.",
+      "url": "https://transactly.com/pricing",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "SourceForge lists dotloop from USD 29 a month, Trackxi from USD 39 and Nekst from USD 15 for real estate transaction management.",
+      "url": "https://www.sourceforge.net/software/real-estate-transaction-management/free-version",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Paperless Pipeline published articles in June 2026 on the best free transaction coordinator tools and the limits of free plans, showing agents search for free options.",
+      "url": "https://www.paperlesspipeline.com/blog/?p=5846",
+      "foundAt": "2026-11-27"
+    }
+  ],
+  "nextAction": "Screen passed on 2026-11-27. Before a case: check the free-plan limits Paperless Pipeline names in its June 2026 free tools article and measure checklist search terms; Legal to confirm the tool only calculates dates the user enters.",
+  "lead": null,
+  "stage": "idea",
+  "stageSince": "2026-11-27T21:28:43.704Z",
+  "createdAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}

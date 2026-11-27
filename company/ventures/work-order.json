@@ -1,25 +1,66 @@
 {
   "id": "work-order",
   "title": "Work Order Maker",
-  "oneLiner": "Free work order maker for small service and maintenance businesses, upgrade to saved jobs and team use",
+  "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
   "customer": "Small US service businesses and contractors",
-  "revenueModel": "Free tool, paid saved jobs and sharing",
+  "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
   "score": {
     "demand": 3,
-    "speedToRevenue": 2,
+    "speedToRevenue": 3,
     "buildEffort": 4,
-    "distribution": 3,
+    "distribution": 2,
     "total": 12
   },
-  "evidence": [],
-  "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"work order template\":3600} from https://api.seodata.dev/v1/keyword?q=work+order+template&country=us",
+  "evidence": [
+    {
+      "claim": "Joist sells work orders on its Pro plan at USD 12.75 a month and change orders on Elite at USD 24 a month, and says its free plan is no longer available.",
+      "url": "https://www.joist.com/pricing/",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Contractor Foreman, a paid contractor app with no free plan, lists work orders on its Standard plan at USD 105 a month flat for up to 3 users.",
+      "url": "https://www.capterra.com/p/166113/Contractor-Foreman/pricing/",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Jobber's free work order generator only exports a PDF; saving the template needs a Jobber sign-up, and the customer signature is a space on the printed form.",
+      "url": "https://getjobber.com/free-tools/work-order-generator/contractor/",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Zoho FSM's free edition caps a business at 30 appointments a month with no carry-over.",
+      "url": "https://www.zoho.com/fsm/pricing.html",
+      "foundAt": "2026-11-27"
+    }
+  ],
+  "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Before a case: overlaps change-order and rfi-log (same small contractor buyer), so the CEO should consider one contractor paperwork product; the case must show long-tail pages we can rank (work order template is held by Jobber and template.net).",
   "lead": null,
   "stage": "idea",
   "stageSince": "2026-11-21T17:20:02.768Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-21T17:20:02.768Z",
+  "updatedAt": "2026-11-27T21:28:43.704Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "screen": {
+    "paidPrice": {
+      "product": "Joist Pro at USD 12.75 a month billed monthly (list USD 17), the first Joist plan that generates work orders; Joist has no free plan. About Rs 1,202 at 94.2754 INR per USD",
+      "inrMonthly": 1202,
+      "source": "https://www.joist.com/pricing/"
+    },
+    "searches": {
+      "terms": {
+        "work order template": 2900,
+        "work order form": 880,
+        "work order software": 720,
+        "work order app": 260,
+        "free work order software": 140
+      },
+      "monthly": 4900,
+      "source": "https://api.seodata.dev/v1/keyword?q=work+order+template&country=us",
+      "note": "DataForSEO Google Ads search volume (United States) through Firecrawl Alexandria, request 4908d495-cca6-4d96-82d7-3c3039db7ae2, read 2026-11-27. seodata.dev (cached 13 Aug 2026) shows work order template at 3,600 and work order template free at 590 on the source page; the total uses the lower DataForSEO figures. CPC USD 9 to 140 shows vendors pay heavily for these buyers."
+    },
+    "freeGap": "Free work order tools are one-off PDF makers: Jobber's free generator exports a PDF and asks for an account only to save the template, with the customer signature as a printed line (https://getjobber.com/free-tools/work-order-generator/contractor/); a Product Hunt generator says no sign-up, fill, print and go (https://www.producthunt.com/products/free-work-order-generator-tool). Free plans that save jobs are capped: Zoho FSM Free allows 30 appointments a month (https://www.zoho.com/fsm/pricing.html), Contractor+ Freedom 5 estimates or invoices a month (https://www.capterra.com/p/213952/Contractor/pricing/). The gap under ap-company-5 is saved jobs, an on-screen customer signature and a customer link with no app. Risk: Jobber, template.net and Invoicefly hold page one for work order template, and MaintainX and others give free plans for internal maintenance work orders."
+  }
 }

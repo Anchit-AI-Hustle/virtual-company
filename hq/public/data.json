@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:14:23.891Z",
+  "builtAt": "2026-11-27T21:29:01.288Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1032,17 +1032,17 @@
     {
       "id": "change-order",
       "title": "Change Order Form",
-      "oneLiner": "Free change order form maker for small contractors with client sign-off link",
+      "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
       "customer": "Small US service businesses and contractors",
-      "revenueModel": "Free tool, paid saved jobs and sharing",
+      "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
       "priceINR": null,
       "stage": "idea",
       "score": 12,
       "url": null,
-      "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"change order form\":1300,\"change order template\":1300} from https://api.seodata.dev/v1/keyword?q=change+order+form+template&country=us",
+      "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Overlaps work-order and rfi-log (same buyer); consider one product. The case must show pages we can rank against Housecall Pro, Smartsheet and template.net.",
       "metrics": null,
-      "updatedAt": "2026-11-21T17:20:02.768Z",
-      "evidenceCount": 0,
+      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "evidenceCount": 4,
       "specPath": null,
       "lead": null,
       "reviews": {
@@ -1060,17 +1060,17 @@
     {
       "id": "work-order",
       "title": "Work Order Maker",
-      "oneLiner": "Free work order maker for small service and maintenance businesses, upgrade to saved jobs and team use",
+      "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
       "customer": "Small US service businesses and contractors",
-      "revenueModel": "Free tool, paid saved jobs and sharing",
+      "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
       "priceINR": null,
       "stage": "idea",
       "score": 12,
       "url": null,
-      "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"work order template\":3600} from https://api.seodata.dev/v1/keyword?q=work+order+template&country=us",
+      "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Before a case: overlaps change-order and rfi-log (same small contractor buyer), so the CEO should consider one contractor paperwork product; the case must show long-tail pages we can rank (work order template is held by Jobber and template.net).",
       "metrics": null,
-      "updatedAt": "2026-11-21T17:20:02.768Z",
-      "evidenceCount": 0,
+      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "evidenceCount": 4,
       "specPath": null,
       "lead": null,
       "reviews": {
@@ -1185,6 +1185,34 @@
       "businessCase": null
     },
     {
+      "id": "tc-desk",
+      "title": "Closing Desk",
+      "oneLiner": "Free real estate transaction checklist for agents and transaction coordinators: enter the contract dates, get every deadline and task, share a status link with the client",
+      "customer": "US real estate agents and independent transaction coordinators handling a few deals a month",
+      "revenueModel": "Free single transaction; paid tier for unlimited saved transactions, client and agent status links, reminders and team use",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 11,
+      "url": null,
+      "nextAction": "Screen passed on 2026-11-27. Before a case: check the free-plan limits Paperless Pipeline names in its June 2026 free tools article and measure checklist search terms; Legal to confirm the tool only calculates dates the user enters.",
+      "metrics": null,
+      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "evidenceCount": 4,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "class-pass",
       "title": "Class Pass Card",
       "oneLiner": "Digital punch card for independent yoga and fitness instructors selling class packs",
@@ -1228,6 +1256,62 @@
       "killReason": "Fails the owner's 21 Nov screen. India volume is real (duty roster 5,400, duty roster format 1,600, shift roster 1,300; DataForSEO via Firecrawl Alexandria, 21 Nov 2026) but free no-signup roster makers already rank for it: RosterShare, RosterMates and dutyroster.com (https://rostershare.me/duty-roster). Killed 21 Nov 2026: a free tool closes the gap.",
       "updatedAt": "2026-11-21T04:22:46.927Z",
       "evidenceCount": 0,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "rfi-log",
+      "title": "RFI Log",
+      "oneLiner": "Free RFI and submittal log for small general contractors: write an RFI on the phone, send the architect or owner a reply link, keep the log with due dates",
+      "customer": "Small US general contractors and subcontractors on projects too small for Procore",
+      "revenueModel": "Free single RFI with PDF; paid tier for a saved project log, reply links, reminders and team use",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 10,
+      "url": null,
+      "nextAction": "Screen passed on 2026-11-27 with weak volume (1,530, part mixed intent). Same buyer as change-order and work-order; best sold as one contractor paperwork product rather than staffed alone.",
+      "metrics": null,
+      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "evidenceCount": 3,
+      "specPath": null,
+      "lead": null,
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
+      "id": "consign-ledger",
+      "title": "Consignor Ledger",
+      "oneLiner": "Free consignor ledger for small consignment and resale shops: log items by consignor, record sales and splits, share each consignor a live statement link",
+      "customer": "Small US consignment, resale and vendor-booth shops that do not run Shopify",
+      "revenueModel": "Free ledger for a few consignors; paid tier for unlimited consignors, consignor statement links, booth rent and team use",
+      "priceINR": null,
+      "stage": "idea",
+      "score": 9,
+      "url": null,
+      "nextAction": "Screen passed on 2026-11-27 on price and volume only; demand is weak (rival apps have 0 reviews). Research must find people paying for consignor tracking outside Shopify before a case.",
+      "metrics": null,
+      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "evidenceCount": 3,
       "specPath": null,
       "lead": null,
       "reviews": {
@@ -1316,16 +1400,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
-      "since": "2026-11-21T17:27:35.133Z",
+      "state": "done",
+      "task": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product",
+      "since": "2026-11-27T21:28:53.921Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:25:18.498Z",
-        "action": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)"
+        "at": "2026-11-27T21:28:53.921Z",
+        "action": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product"
       },
-      "actions": 66
+      "actions": 68
     },
     {
       "id": "data",
@@ -1563,16 +1647,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "idle",
-      "task": "Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone",
-      "since": "2026-11-21T16:13:56.017Z",
+      "state": "done",
+      "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
+      "since": "2026-11-27T21:28:53.968Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T05:08:27.084Z",
-        "action": "Started: Draft terms, privacy, refund and contact pages for Razorpay activation: plain, no legal promises beyond what the products do; contact through a form, not the owner's phone"
+        "at": "2026-11-27T21:28:53.968Z",
+        "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)"
       },
-      "actions": 14
+      "actions": 15
     },
     {
       "id": "people",
@@ -1679,6 +1763,7 @@
         "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder"
       }
     ],
+    "consign-ledger": [],
     "csv-qbo": [
       {
         "at": "2026-11-14T14:34:35.157Z",
@@ -2080,6 +2165,7 @@
         "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for"
       }
     ],
+    "rfi-log": [],
     "rota-sheet": [
       {
         "at": "2026-11-21T04:22:47.116Z",
@@ -2367,9 +2453,31 @@
         "action": "Screened 1 new idea, stem-count 13; dropped bead pattern maker (free web tools already make word charts), balloon quote tool (thin paid traction, Omni owns counting) and dance formation planner (ArrangeUs free tier and free web tools close the gap)"
       }
     ],
+    "tc-desk": [],
     "work-order": []
   },
   "log": [
+    {
+      "at": "2026-11-27T21:28:53.968Z",
+      "agent": "legal",
+      "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:28:53.921Z",
+      "agent": "research",
+      "action": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:14:25.584Z",
+      "agent": "research",
+      "action": "Started: Screen work-order and change-order and a new batch under the 21 Nov screen and ap-company-5",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-27T21:13:31.469Z",
       "agent": "support",
@@ -2908,28 +3016,7 @@
       "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:12:45.302Z",
-      "agent": "security",
-      "action": "Secret scan of tracked files: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:12:41.547Z",
-      "agent": "security",
-      "action": "Started: Secret scan of tracked files",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T10:12:41.505Z",
-      "agent": "devops",
-      "action": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 454
+  "logTotal": 457
 }

@@ -1,0 +1,59 @@
+{
+  "id": "consign-ledger",
+  "title": "Consignor Ledger",
+  "oneLiner": "Free consignor ledger for small consignment and resale shops: log items by consignor, record sales and splits, share each consignor a live statement link",
+  "customer": "Small US consignment, resale and vendor-booth shops that do not run Shopify",
+  "revenueModel": "Free ledger for a few consignors; paid tier for unlimited consignors, consignor statement links, booth rent and team use",
+  "score": {
+    "demand": 2,
+    "speedToRevenue": 2,
+    "buildEffort": 3,
+    "distribution": 2,
+    "total": 9
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Consignment Hub Premium on the Shopify App Store at USD 19.99 a month (free plan up to 3 active consignors). About Rs 1,885 at 94.2754 INR per USD",
+      "inrMonthly": 1885,
+      "source": "https://apps.shopify.com/consignment-hub"
+    },
+    "searches": {
+      "terms": {
+        "consignment software": 1600,
+        "software for consignment shop": 260,
+        "consignment store programs": 170
+      },
+      "monthly": 2030,
+      "source": "https://api.seodata.dev/v1/keyword?q=consignment+software&country=us",
+      "note": "seodata.dev (Google Ads monthly averages, United States, cached 22 Aug 2026), read 2026-11-27. consignment store software, consignment program and others also show 1,600 and are likely the same Google group, so they are counted once. CPC USD 20 to 35. Buyers searching consignment store software may want a full point of sale, which this is not."
+    },
+    "freeGap": "Free tools are Shopify-only and capped: What's Their Cut is free to 10 consignors and USD 19 a month after (https://apps.shopify.com/whats-their-cut), ConsignKit free to 5 consignors and 25 products (https://apps.shopify.com/consignkit), Consignment Hub free to 3 (https://apps.shopify.com/consignment-hub). A shop not on Shopify has spreadsheets or a paid point of sale. Gap: a free web consignor ledger with consignor statement links and no Shopify store. Risk: these apps all show 0 reviews, a weak sign of demand, and paid rivals start at USD 9 a month."
+  },
+  "evidence": [
+    {
+      "claim": "Consignment Hub on Shopify charges USD 19.99 a month for unlimited consignors, booth rent and no-fee payouts; its free plan stops at 3 active consignors.",
+      "url": "https://apps.shopify.com/consignment-hub",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "What's Their Cut charges USD 19 a month for unlimited consignors and is free up to 10.",
+      "url": "https://apps.shopify.com/whats-their-cut",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "ConsignKit charges USD 9 a month plus a 2% payout fee, or USD 199 a month for no fees, for unlimited consignors with PDF statements.",
+      "url": "https://apps.shopify.com/consignkit",
+      "foundAt": "2026-11-27"
+    }
+  ],
+  "nextAction": "Screen passed on 2026-11-27 on price and volume only; demand is weak (rival apps have 0 reviews). Research must find people paying for consignor tracking outside Shopify before a case.",
+  "lead": null,
+  "stage": "idea",
+  "stageSince": "2026-11-27T21:28:43.704Z",
+  "createdAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}

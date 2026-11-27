@@ -1,25 +1,65 @@
 {
   "id": "change-order",
   "title": "Change Order Form",
-  "oneLiner": "Free change order form maker for small contractors with client sign-off link",
+  "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
   "customer": "Small US service businesses and contractors",
-  "revenueModel": "Free tool, paid saved jobs and sharing",
+  "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
   "score": {
     "demand": 3,
-    "speedToRevenue": 2,
+    "speedToRevenue": 3,
     "buildEffort": 4,
-    "distribution": 3,
+    "distribution": 2,
     "total": 12
   },
-  "evidence": [],
-  "nextAction": "Screen needs a paid price page and a free-tool check before staffing; searches so far {\"change order form\":1300,\"change order template\":1300} from https://api.seodata.dev/v1/keyword?q=change+order+form+template&country=us",
+  "evidence": [
+    {
+      "claim": "JustSignOff sells change order sign-off for contractors from USD 49 flat with no free plan: customers approve, decline or ask for changes from a text or email link without an app, and approved orders become timestamped signed PDFs.",
+      "url": "https://www.capterra.co.uk/software/1107866/JustSignOff",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "AddWork, an iPhone app for contractor estimates and change orders with client approval by link, charges USD 9.99 a month after a 14-day trial and has 10 ratings averaging 4.6.",
+      "url": "https://apps.apple.com/us/app/addwork/id6740415862",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Joist puts change orders on its Elite plan at USD 24 a month and has no free plan.",
+      "url": "https://www.joist.com/pricing/",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "Fieldwire includes RFIs, submittals and change orders only from Business Plus at USD 89 a user a month; its free Basic plan has none of them.",
+      "url": "https://www.Fieldwire.Com/pricing/",
+      "foundAt": "2026-11-27"
+    }
+  ],
+  "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Overlaps work-order and rfi-log (same buyer); consider one product. The case must show pages we can rank against Housecall Pro, Smartsheet and template.net.",
   "lead": null,
   "stage": "idea",
   "stageSince": "2026-11-21T17:20:02.768Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-21T17:20:02.768Z",
+  "updatedAt": "2026-11-27T21:28:43.704Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "screen": {
+    "paidPrice": {
+      "product": "Joist Elite at USD 24 a month billed monthly (list USD 32), the Joist plan that adds and sends change orders; no free plan. About Rs 2,263 at 94.2754 INR per USD",
+      "inrMonthly": 2263,
+      "source": "https://www.joist.com/pricing/"
+    },
+    "searches": {
+      "terms": {
+        "construction change order": 1300,
+        "change order template": 1000,
+        "change order form": 720,
+        "change order form template": 110
+      },
+      "monthly": 3130,
+      "source": "https://api.seodata.dev/v1/keyword?q=construction+change+order&country=us",
+      "note": "DataForSEO Google Ads search volume (United States) through Firecrawl Alexandria, request 4908d495-cca6-4d96-82d7-3c3039db7ae2, read 2026-11-27. seodata.dev (cached 27 Sep 2026) shows construction change order 1,600 and change order 3,600 on the source page; change order alone is mixed with definition intent and is left out."
+    },
+    "freeGap": "Free change order tools are downloads signed by hand: Housecall Pro gives an Excel or Google Sheets template behind a lead form with signature blocks (https://www.housecallpro.com/general-contractor/templates-calculators/free-change-order-template/), CountBricks a PDF with signature lines and e-sign only in its paid app after a 7-day trial (https://www.countbricks.com/post/free-change-order-forms-for-contractors). Paid tools sell the sign-off link: JustSignOff from USD 49 with no free plan (https://www.capterra.co.uk/software/1107866/JustSignOff), AddWork USD 9.99 a month after a 14-day trial (https://apps.apple.com/us/app/addwork/id6740415862), Fieldwire only on Business Plus at USD 89 a user (https://www.Fieldwire.Com/pricing/). The gap is a free change order with a homeowner approve link and a signed record, no account. Risk: Housecall Pro, Smartsheet, template.net and Jotform hold page one."
+  }
 }

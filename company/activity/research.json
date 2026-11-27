@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Business case written: rent-ledger scores 16 of 35, no-go (Stessa and Baselane give the ledger and late fees free; page one held by vendors)",
+  "state": "done",
+  "task": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product",
   "ventureId": null,
-  "since": "2026-11-21T17:27:35.133Z"
+  "since": "2026-11-27T21:28:53.921Z"
 }
