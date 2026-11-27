@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T21:37:10.896Z",
+    "agent": "research",
+    "action": "Started: Business case for change-order: reading competitors, search volumes and page one",
+    "ventureId": "change-order",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:45:32.412Z",
+    "agent": "research",
+    "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
+    "ventureId": "change-order",
+    "kind": "done"
+  }
+]

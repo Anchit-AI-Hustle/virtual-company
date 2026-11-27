@@ -57,7 +57,7 @@
   "stage": "validated",
   "stageSince": "2026-11-27T21:31:25.271Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:31:25.271Z",
+  "updatedAt": "2026-11-27T21:45:32.384Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -80,5 +80,19 @@
       "note": "DataForSEO Google Ads search volume (United States) through Firecrawl Alexandria, request 4908d495-cca6-4d96-82d7-3c3039db7ae2, read 2026-11-27. seodata.dev (cached 27 Sep 2026) shows construction change order 1,600 and change order 3,600 on the source page; change order alone is mixed with definition intent and is left out."
     },
     "freeGap": "Free change order tools are downloads signed by hand: Housecall Pro gives an Excel or Google Sheets template behind a lead form with signature blocks (https://www.housecallpro.com/general-contractor/templates-calculators/free-change-order-template/), CountBricks a PDF with signature lines and e-sign only in its paid app after a 7-day trial (https://www.countbricks.com/post/free-change-order-forms-for-contractors). Paid tools sell the sign-off link: JustSignOff from USD 49 with no free plan (https://www.capterra.co.uk/software/1107866/JustSignOff), AddWork USD 9.99 a month after a 14-day trial (https://apps.apple.com/us/app/addwork/id6740415862), Fieldwire only on Business Plus at USD 89 a user (https://www.Fieldwire.Com/pricing/). The gap is a free change order with a homeowner approve link and a signed record, no account. Risk: Housecall Pro, Smartsheet, template.net and Jotform hold page one."
+  },
+  "case": {
+    "path": "cases/change-order.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 18,
+    "recommendation": "no-go"
   }
 }

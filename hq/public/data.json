@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:40:58.716Z",
+  "builtAt": "2026-11-27T21:45:51.012Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1041,7 +1041,7 @@
       "url": null,
       "nextAction": "Research writes the sceptical business case, Farhan sizes it, CEO decides go or no-go. Evidence against: the no-login homeowner sign-off link is already sold by JustSignOff, AddWork, ChangeSeal and SteelHand (https://apps.apple.com/nl/app/steelhand-contractor-estimates/id6802784970), so the gap is only that ours is free with no account; Reddit threads on unpaid unsigned extras could not be read (scraper blocked).",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:31:25.271Z",
+      "updatedAt": "2026-11-27T21:45:32.384Z",
       "evidenceCount": 7,
       "specPath": null,
       "lead": {
@@ -1059,7 +1059,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/change-order.md",
+        "total": 18,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "work-order",
@@ -1421,15 +1425,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Business case written: work-order 19 of 35, no-go; page one held by Adobe, HubSpot, DocuSign and free ServiceM8 and Zoho FSM tiers already give signed work orders",
-      "since": "2026-11-27T21:40:40.620Z",
-      "ventureId": "work-order",
-      "ventureTitle": "Work Order Maker",
+      "task": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
+      "since": "2026-11-27T21:45:32.412Z",
+      "ventureId": "change-order",
+      "ventureTitle": "Change Order Form",
       "last": {
-        "at": "2026-11-27T21:40:40.620Z",
-        "action": "Business case written: work-order 19 of 35, no-go; page one held by Adobe, HubSpot, DocuSign and free ServiceM8 and Zoho FSM tiers already give signed work orders"
+        "at": "2026-11-27T21:45:32.412Z",
+        "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro"
       },
-      "actions": 70
+      "actions": 72
     },
     {
       "id": "data",
@@ -1804,6 +1808,16 @@
       }
     ],
     "change-order": [
+      {
+        "at": "2026-11-27T21:45:32.412Z",
+        "agent": "research",
+        "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro"
+      },
+      {
+        "at": "2026-11-27T21:37:10.896Z",
+        "agent": "research",
+        "action": "Started: Business case for change-order: reading competitors, search volumes and page one"
+      },
       {
         "at": "2026-11-27T21:31:36.827Z",
         "agent": "lead-change-order",
@@ -2596,6 +2610,13 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:45:32.412Z",
+      "agent": "research",
+      "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
+      "ventureId": "change-order",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:40:40.620Z",
       "agent": "research",
       "action": "Business case written: work-order 19 of 35, no-go; page one held by Adobe, HubSpot, DocuSign and free ServiceM8 and Zoho FSM tiers already give signed work orders",
@@ -2607,6 +2628,13 @@
       "agent": "research",
       "action": "Started: Business case for work-order: reading competitors, search and page one",
       "ventureId": "work-order",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T21:37:10.896Z",
+      "agent": "research",
+      "action": "Started: Business case for change-order: reading competitors, search volumes and page one",
+      "ventureId": "change-order",
       "kind": "start"
     },
     {
@@ -3140,21 +3168,7 @@
       "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T11:14:29.536Z",
-      "agent": "ceo",
-      "action": "No idea cleared the 21 Nov screen this cycle, so pods stay empty rather than staff a weak idea; Research screens again next cycle, with DataForSEO back when Firecrawl credits reset about 22:14 UTC",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T11:14:29.495Z",
-      "agent": "research",
-      "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: screenwriting software (14,800 a month US, but free screenwriting software alone is 6,600 and WriterSolo is pay what you want, nofilmschool.com/writersolo-screenwriting-software), restaurant billing India (2,900, Vyapar free page vyaparapp.in/free/restaurant-billing-software), salon software India (1,600, free plans listed at capterra.in/directory/30028/salon/pricing/free/software), visitor management India (3,600, free plans listed at capterra.in/directory/10020/visitor-management/pricing/free/software); page one for all three held by Capterra and vendors. Buyer intent wrong: milk delivery app India (2,900 is shoppers ordering milk, not dairies). Dropped on volume: library management software India 590 (library management system 8,100 is student project intent), personal training software US 880, photographer CRM US 320, punch list app US 390, hotel management software India 1,300 but hotel software clusters held by vendors, construction management software India 1,300 with free tiers, transport management India 480, optical shop software India 0, study library seat booking India 0",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 469
+  "logTotal": 471
 }
