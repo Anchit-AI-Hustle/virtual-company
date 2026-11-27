@@ -61,12 +61,16 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Page one check passed on 2026-11-28 (rfi template 9 of 10 weak, submittal log 6 of 10 weak). Still weak on volume (1,530, part mixed intent) and shares the contractor buyer of killed change-order and work-order, whose kill reason (page one held by Adobe, Procore and similar) does not apply to these terms. CEO may staff; Research should confirm on a second search source that Procore and Smartsheet do not hold Google page one for rfi template.",
-  "lead": null,
-  "stage": "idea",
-  "stageSince": "2026-11-27T21:28:43.704Z",
+  "nextAction": "Lead Kabeer validates: find 3+ sourced signals that small contractors pay for or actively seek an RFI log with reply links outside Procore, confirm page one for rfi template on a second search source, then Research writes the case",
+  "lead": {
+    "name": "Kabeer",
+    "color": "#1E5F74",
+    "trait": "Turns a rough idea into a working page by evening."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-27T22:26:22.648Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T22:25:38.500Z",
+  "updatedAt": "2026-11-27T22:26:22.648Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

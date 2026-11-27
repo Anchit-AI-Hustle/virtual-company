@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:25:53.102Z",
+  "builtAt": "2026-11-27T22:26:23.186Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1385,15 +1385,19 @@
       "customer": "Small US general contractors and subcontractors on projects too small for Procore",
       "revenueModel": "Free single RFI with PDF; paid tier for a saved project log, reply links, reminders and team use",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "validating",
       "score": 10,
       "url": null,
-      "nextAction": "Page one check passed on 2026-11-28 (rfi template 9 of 10 weak, submittal log 6 of 10 weak). Still weak on volume (1,530, part mixed intent) and shares the contractor buyer of killed change-order and work-order, whose kill reason (page one held by Adobe, Procore and similar) does not apply to these terms. CEO may staff; Research should confirm on a second search source that Procore and Smartsheet do not hold Google page one for rfi template.",
+      "nextAction": "Lead Kabeer validates: find 3+ sourced signals that small contractors pay for or actively seek an RFI log with reply links outside Procore, confirm page one for rfi template on a second search source, then Research writes the case",
       "metrics": null,
-      "updatedAt": "2026-11-27T22:25:38.500Z",
+      "updatedAt": "2026-11-27T22:26:22.648Z",
       "evidenceCount": 4,
       "specPath": null,
-      "lead": null,
+      "lead": {
+        "id": "lead-rfi-log",
+        "name": "Kabeer",
+        "color": "#1E5F74"
+      },
       "reviews": {
         "product": null,
         "engineer": null,
@@ -1460,6 +1464,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1472,15 +1480,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible",
-      "since": "2026-11-27T22:13:19.744Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on",
+      "since": "2026-11-27T22:26:22.676Z",
+      "ventureId": "rfi-log",
+      "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T22:13:19.744Z",
-        "action": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible"
+        "at": "2026-11-27T22:26:22.676Z",
+        "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on"
       },
-      "actions": 86
+      "actions": 87
     },
     {
       "id": "ops",
@@ -1785,6 +1793,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-rfi-log",
+      "name": "Kabeer",
+      "title": "Lead, RFI Log",
+      "department": "pods",
+      "color": "#1E5F74",
+      "trait": "Turns a rough idea into a working page by evening.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "rfi-log",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -2318,6 +2343,11 @@
     ],
     "rfi-log": [
       {
+        "at": "2026-11-27T22:26:22.676Z",
+        "agent": "ceo",
+        "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on"
+      },
+      {
         "at": "2026-11-27T22:25:38.611Z",
         "agent": "research",
         "action": "rfi-log passed the page one check: rfi template 9 of 10 weak, submittal log 6 of 10 weak (Scribd, Pinterest, small template sites); kept as an idea"
@@ -2686,6 +2716,13 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T22:26:22.676Z",
+      "agent": "ceo",
+      "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on",
+      "ventureId": "rfi-log",
+      "kind": "done"
+    },
     {
       "at": "2026-11-27T22:25:46.172Z",
       "agent": "research",
@@ -3238,14 +3275,7 @@
       "action": "Secret scan of the repo: no keys found",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T14:12:40.884Z",
-      "agent": "devops",
-      "action": "Lights on: HQ returns 200, no live products to check",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 490
+  "logTotal": 491
 }
