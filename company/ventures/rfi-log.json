@@ -95,7 +95,7 @@
   "stage": "validated",
   "stageSince": "2026-11-27T22:28:03.192Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T22:28:03.192Z",
+  "updatedAt": "2026-11-27T22:35:59.918Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -106,5 +106,19 @@
       "rfi template": "Page one is mostly procurement intent and big brands: safetyculture.com, docs.oracle.com x2, asana.com x2, Harvard PDF, notion.com, Google Docs, spendflo.com, autodesk.com x2, responsive.io, clickup.com, monday.com, mass.gov, smartsheet.com x2, projectmanager.com x2, casrai.org, visme.co, levelset.com (Procore), mastt.com. Construction results are Autodesk, Smartsheet, ProjectManager, Levelset and Mastt. Small weak sites seen on the first source (mitti, dailybuild, planspan, scribd, pinterest) did not appear.",
       "rfi log": "Page one is mostly off topic (radio frequency interference, remote file inclusion attacks, NetApp RTFI, Oracle and AGI docs, Wikipedia) plus help pages from Newforma, Autodesk Forma Build, Hexagon EcoSys and a Freshdesk help article. No free RFI log tool ranks."
     }
+  },
+  "case": {
+    "path": "cases/rfi-log.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 2,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 17,
+    "recommendation": "no-go"
   }
 }

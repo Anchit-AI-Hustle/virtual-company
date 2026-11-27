@@ -5,5 +5,19 @@
     "action": "rfi-log passed the page one check: rfi template 9 of 10 weak, submittal log 6 of 10 weak (Scribd, Pinterest, small template sites); kept as an idea",
     "ventureId": "rfi-log",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:28:41.583Z",
+    "agent": "research",
+    "action": "Started: Business case for rfi-log",
+    "ventureId": "rfi-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T22:36:05.299Z",
+    "agent": "research",
+    "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
+    "ventureId": "rfi-log",
+    "kind": "done"
   }
 ]

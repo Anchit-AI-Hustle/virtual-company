@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:28:11.468Z",
+  "builtAt": "2026-11-27T22:36:12.548Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1390,7 +1390,7 @@
       "url": null,
       "nextAction": "Waiting for Research business case, Farhan sizing and CEO decision. Evidence against: on WebSearch, rfi template page one is mostly procurement intent and big brands (Asana, Notion, Oracle, monday, ClickUp, Smartsheet, Autodesk, ProjectManager, Levelset by Procore), so the weak results seen on Firecrawl did not hold; rfi log page one is mostly off topic (radio frequency interference, security), which means mixed intent and a small construction slice of the 210 searches; the VitalMX GC who found Procore too big still bought Procore; the Payhip RFI kit shows no reviews or sales; Knowify, Fieldwire and Procore already sell this inside wider suites.",
       "metrics": null,
-      "updatedAt": "2026-11-27T22:28:03.192Z",
+      "updatedAt": "2026-11-27T22:35:59.918Z",
       "evidenceCount": 9,
       "specPath": null,
       "lead": {
@@ -1408,7 +1408,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/rfi-log.md",
+        "total": 17,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "consign-ledger",
@@ -1518,15 +1522,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
-      "since": "2026-11-27T22:25:46.172Z",
+      "task": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
+      "since": "2026-11-27T22:36:05.299Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T22:25:46.172Z",
-        "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch."
+        "at": "2026-11-27T22:36:05.299Z",
+        "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)"
       },
-      "actions": 78
+      "actions": 80
     },
     {
       "id": "data",
@@ -2346,6 +2350,16 @@
     ],
     "rfi-log": [
       {
+        "at": "2026-11-27T22:36:05.299Z",
+        "agent": "research",
+        "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)"
+      },
+      {
+        "at": "2026-11-27T22:28:41.583Z",
+        "agent": "research",
+        "action": "Started: Business case for rfi-log"
+      },
+      {
         "at": "2026-11-27T22:28:10.856Z",
         "agent": "lead-rfi-log",
         "action": "rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit); WebSearch shows rfi template page one held by big brands"
@@ -2729,6 +2743,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T22:36:05.299Z",
+      "agent": "research",
+      "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
+      "ventureId": "rfi-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:28:41.583Z",
+      "agent": "research",
+      "action": "Started: Business case for rfi-log",
+      "ventureId": "rfi-log",
+      "kind": "start"
+    },
     {
       "at": "2026-11-27T22:28:10.856Z",
       "agent": "lead-rfi-log",
@@ -3274,21 +3302,7 @@
       "action": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T14:15:10.184Z",
-      "agent": "research",
-      "action": "Screened 26 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: home inspection software US (home inspector software 2,900, home inspection software 2,400, software for home inspectors 1,300, paid Spectora USD 109 a month spectora.com/pricing, but HomeInspector.com by Reggora is free with unlimited reports, scheduling and payments housingwire.com/articles/reggora-launches-homeinspector-com-as-free-service/), HOA management US (homeowners association management software 3,600, hoa management software 2,900, CPC USD 48, but KindHOA free plan getapp.com/all-software/a/kindhoa/ and Innago and Bitrix24 free capterra.com/hoa-software/s/free/), church management US (5,400, but ChMeetings free forever up to 50 people chmeetings.com/pricing), real estate CRM India (2,400, but Bigin free CRM bigin.com/articles/free-CRM-for-real-estate.html and free tiers at capterra.in/directory/30926/real-estate-crm/pricing/free/software), inventory software India (5,400, crowded by free tiers and repeats earlier screens). Repeat of an earlier screen: construction management India 1,300 (Powerplay lists no free plan, capterra.in/software/1036292/powerplay, but page one is vendors). Dropped on volume: WhatsApp CRM India 2,400 is mostly free-intent and integration terms with whatsapp crm software 320, quotation software India 590, staff attendance app India 320 (attendance app 5,400 is employee check-in intent), payroll small business India 390, HR software small business India 480, travel agency software India 480, contractor app India 210, home inspection report template US 590, hoa accounting software US 880, dog grooming software US 590, contractor estimating software US 720, punch list app 390, bid management 320, tutoring software 210, tattoo booking 170, music lesson scheduling 70, property inspection app 260, apartment management software India 0",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T14:15:10.137Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: home inspection, HOA, church, real estate CRM India, WhatsApp CRM, quotation, attendance, payroll, US trade software",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 493
+  "logTotal": 495
 }
