@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Close the day: rfi-log staffed (Kabeer), validated with 5 signals, killed at the case (17 of 35, page one held by Asana, Notion, Smartsheet, Procore); consign-ledger killed on page one; ap-company-7 decided; 0 open ideas, Research blocked on search volume credits; agents idle",
+  "state": "done",
+  "task": "Standup 23:15 UTC: health ok, watchdog ran 22:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research retries a new screen if search volume tools have recovered",
   "ventureId": null,
-  "since": "2026-11-27T22:37:49.290Z"
+  "since": "2026-11-27T23:12:41.345Z"
 }
