@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:36:12.548Z",
+  "builtAt": "2026-11-27T22:37:21.404Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1350,6 +1350,43 @@
       "businessCase": null
     },
     {
+      "id": "rfi-log",
+      "title": "RFI Log",
+      "oneLiner": "Free RFI and submittal log for small general contractors: write an RFI on the phone, send the architect or owner a reply link, keep the log with due dates",
+      "customer": "Small US general contractors and subcontractors on projects too small for Procore",
+      "revenueModel": "Free single RFI with PDF; paid tier for a saved project log, reply links, reminders and team use",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 10,
+      "url": null,
+      "nextAction": "None. Killed on the business case.",
+      "metrics": null,
+      "killReason": "CEO no-go on the business case. Score 17 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 2, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus, https://fieldwire.com/pricing/business-plus; Knowify from USD 99 a month, https://knowify.com/rfi-submittal-management-software/). The log itself is free from Procore (https://procore.com/library/rfi-templates) and Smartsheet (https://www.smartsheet.com/content/construction-rfi-templates), and the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview). The 1,530 monthly searches are small and mixed with procurement and radio intent, and page one for rfi template is held by SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset (cases/rfi-log.md sources 11 and 12, rechecked 28 Nov 2026). No sizing was done; the case bar already fails.",
+      "updatedAt": "2026-11-27T22:37:12.669Z",
+      "evidenceCount": 9,
+      "specPath": null,
+      "lead": {
+        "id": "lead-rfi-log",
+        "name": "Kabeer",
+        "color": "#1E5F74"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/rfi-log.md",
+        "total": 17,
+        "recommendation": "no-go"
+      }
+    },
+    {
       "id": "rota-sheet",
       "title": "Rota Sheet",
       "oneLiner": "Printable weekly staff rota for tiny shops and cafes",
@@ -1377,42 +1414,6 @@
       "goDecision": null,
       "sizing": null,
       "businessCase": null
-    },
-    {
-      "id": "rfi-log",
-      "title": "RFI Log",
-      "oneLiner": "Free RFI and submittal log for small general contractors: write an RFI on the phone, send the architect or owner a reply link, keep the log with due dates",
-      "customer": "Small US general contractors and subcontractors on projects too small for Procore",
-      "revenueModel": "Free single RFI with PDF; paid tier for a saved project log, reply links, reminders and team use",
-      "priceINR": null,
-      "stage": "validated",
-      "score": 10,
-      "url": null,
-      "nextAction": "Waiting for Research business case, Farhan sizing and CEO decision. Evidence against: on WebSearch, rfi template page one is mostly procurement intent and big brands (Asana, Notion, Oracle, monday, ClickUp, Smartsheet, Autodesk, ProjectManager, Levelset by Procore), so the weak results seen on Firecrawl did not hold; rfi log page one is mostly off topic (radio frequency interference, security), which means mixed intent and a small construction slice of the 210 searches; the VitalMX GC who found Procore too big still bought Procore; the Payhip RFI kit shows no reviews or sales; Knowify, Fieldwire and Procore already sell this inside wider suites.",
-      "metrics": null,
-      "updatedAt": "2026-11-27T22:35:59.918Z",
-      "evidenceCount": 9,
-      "specPath": null,
-      "lead": {
-        "id": "lead-rfi-log",
-        "name": "Kabeer",
-        "color": "#1E5F74"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": {
-        "path": "cases/rfi-log.md",
-        "total": 17,
-        "recommendation": "no-go"
-      }
     },
     {
       "id": "consign-ledger",
@@ -1468,10 +1469,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1484,15 +1481,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on",
-      "since": "2026-11-27T22:26:22.676Z",
+      "task": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands",
+      "since": "2026-11-27T22:37:12.699Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T22:26:22.676Z",
-        "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on"
+        "at": "2026-11-27T22:37:12.699Z",
+        "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands"
       },
-      "actions": 87
+      "actions": 89
     },
     {
       "id": "ops",
@@ -1797,26 +1794,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-rfi-log",
-      "name": "Kabeer",
-      "title": "Lead, RFI Log",
-      "department": "pods",
-      "color": "#1E5F74",
-      "trait": "Turns a rough idea into a working page by evening.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "rfi-log",
-      "state": "done",
-      "task": "rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit); WebSearch shows rfi template page one held by big brands",
-      "since": "2026-11-27T22:28:10.856Z",
-      "ventureId": "rfi-log",
-      "ventureTitle": "RFI Log",
-      "last": {
-        "at": "2026-11-27T22:28:10.856Z",
-        "action": "rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit); WebSearch shows rfi template page one held by big brands"
-      },
-      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2350,6 +2327,16 @@
     ],
     "rfi-log": [
       {
+        "at": "2026-11-27T22:37:12.699Z",
+        "agent": "ceo",
+        "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands"
+      },
+      {
+        "at": "2026-11-27T22:37:12.613Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 17 of 35 (bar 24), distribution 2, marketSize 2, competitionGap 2. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus lists RFIs and submittals, https://fieldwire.com/pricing/business-plus); the log is free from Procore and Smartsheet (https://procore.com/library/rfi-templates, https://www.smartsheet.com/content/construction-rfi-templates); the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview) and Knowify. About 1,530 US searches a month, and a live search on 28 Nov 2026 confirmed rfi template page one is SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset. No sizing file exists, but it cannot clear the case bar either way."
+      },
+      {
         "at": "2026-11-27T22:36:05.299Z",
         "agent": "research",
         "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)"
@@ -2743,6 +2730,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T22:37:12.699Z",
+      "agent": "ceo",
+      "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands",
+      "ventureId": "rfi-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:37:12.613Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 17 of 35 (bar 24), distribution 2, marketSize 2, competitionGap 2. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus lists RFIs and submittals, https://fieldwire.com/pricing/business-plus); the log is free from Procore and Smartsheet (https://procore.com/library/rfi-templates, https://www.smartsheet.com/content/construction-rfi-templates); the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview) and Knowify. About 1,530 US searches a month, and a live search on 28 Nov 2026 confirmed rfi template page one is SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset. No sizing file exists, but it cannot clear the case bar either way.",
+      "ventureId": "rfi-log",
+      "kind": "done"
+    },
     {
       "at": "2026-11-27T22:36:05.299Z",
       "agent": "research",
@@ -3288,21 +3289,7 @@
       "action": "Standup 15:13 UTC: health ok, watchdog ran 15:04, no platform alerts, no owner-chat or reject comments, 0 live products, 0 open ideas, pods empty; Research screens a new batch",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T15:13:11.500Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T14:15:10.226Z",
-      "agent": "ceo",
-      "action": "No idea passed the screen; pods stay empty; keep ap-company-5 direction and screen again next cycle",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 495
+  "logTotal": 497
 }

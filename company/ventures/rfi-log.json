@@ -86,16 +86,16 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Waiting for Research business case, Farhan sizing and CEO decision. Evidence against: on WebSearch, rfi template page one is mostly procurement intent and big brands (Asana, Notion, Oracle, monday, ClickUp, Smartsheet, Autodesk, ProjectManager, Levelset by Procore), so the weak results seen on Firecrawl did not hold; rfi log page one is mostly off topic (radio frequency interference, security), which means mixed intent and a small construction slice of the 210 searches; the VitalMX GC who found Procore too big still bought Procore; the Payhip RFI kit shows no reviews or sales; Knowify, Fieldwire and Procore already sell this inside wider suites.",
+  "nextAction": "None. Killed on the business case.",
   "lead": {
     "name": "Kabeer",
     "color": "#1E5F74",
     "trait": "Turns a rough idea into a working page by evening."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-27T22:28:03.192Z",
+  "stage": "killed",
+  "stageSince": "2026-11-27T22:37:12.669Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T22:35:59.918Z",
+  "updatedAt": "2026-11-27T22:37:12.669Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -120,5 +120,6 @@
     },
     "total": 17,
     "recommendation": "no-go"
-  }
+  },
+  "killReason": "CEO no-go on the business case. Score 17 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 2, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus, https://fieldwire.com/pricing/business-plus; Knowify from USD 99 a month, https://knowify.com/rfi-submittal-management-software/). The log itself is free from Procore (https://procore.com/library/rfi-templates) and Smartsheet (https://www.smartsheet.com/content/construction-rfi-templates), and the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview). The 1,530 monthly searches are small and mixed with procurement and radio intent, and page one for rfi template is held by SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset (cases/rfi-log.md sources 11 and 12, rechecked 28 Nov 2026). No sizing was done; the case bar already fails."
 }

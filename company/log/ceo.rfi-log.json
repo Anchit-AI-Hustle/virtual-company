@@ -5,5 +5,19 @@
     "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on",
     "ventureId": "rfi-log",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:37:12.613Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go. Case scores 17 of 35 (bar 24), distribution 2, marketSize 2, competitionGap 2. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus lists RFIs and submittals, https://fieldwire.com/pricing/business-plus); the log is free from Procore and Smartsheet (https://procore.com/library/rfi-templates, https://www.smartsheet.com/content/construction-rfi-templates); the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview) and Knowify. About 1,530 US searches a month, and a live search on 28 Nov 2026 confirmed rfi template page one is SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset. No sizing file exists, but it cannot clear the case bar either way.",
+    "ventureId": "rfi-log",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:37:12.699Z",
+    "agent": "ceo",
+    "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands",
+    "ventureId": "rfi-log",
+    "kind": "done"
   }
 ]
