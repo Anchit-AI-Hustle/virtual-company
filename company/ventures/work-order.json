@@ -53,7 +53,7 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Research writes the business case (cases/work-order.md) as a sceptic, then Farhan sizes it, then the CEO decides go or no-go. Evidence against: two of the four buyer posts are the same person; buyers are QuickBooks users who may want it inside their invoicing tool; Jobber, template.net and Invoicefly hold page one for work order template.",
+  "nextAction": "CEO decides go or no-go on the business case (cases/work-order.md, 19 of 35, research recommends no-go: distribution 2, page one held by Adobe, HubSpot, DocuSign, Smartsheet; ServiceM8 and Zoho FSM give signed work orders free up to 30 jobs a month). Farhan may size it first.",
   "lead": {
     "name": "Riya",
     "color": "#8C4A2F",
@@ -62,7 +62,7 @@
   "stage": "validated",
   "stageSince": "2026-11-27T21:31:11.934Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:31:11.934Z",
+  "updatedAt": "2026-11-27T21:40:33.212Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -86,5 +86,19 @@
       "note": "DataForSEO Google Ads search volume (United States) through Firecrawl Alexandria, request 4908d495-cca6-4d96-82d7-3c3039db7ae2, read 2026-11-27. seodata.dev (cached 13 Aug 2026) shows work order template at 3,600 and work order template free at 590 on the source page; the total uses the lower DataForSEO figures. CPC USD 9 to 140 shows vendors pay heavily for these buyers."
     },
     "freeGap": "Free work order tools are one-off PDF makers: Jobber's free generator exports a PDF and asks for an account only to save the template, with the customer signature as a printed line (https://getjobber.com/free-tools/work-order-generator/contractor/); a Product Hunt generator says no sign-up, fill, print and go (https://www.producthunt.com/products/free-work-order-generator-tool). Free plans that save jobs are capped: Zoho FSM Free allows 30 appointments a month (https://www.zoho.com/fsm/pricing.html), Contractor+ Freedom 5 estimates or invoices a month (https://www.capterra.com/p/213952/Contractor/pricing/). The gap under ap-company-5 is saved jobs, an on-screen customer signature and a customer link with no app. Risk: Jobber, template.net and Invoicefly hold page one for work order template, and MaintainX and others give free plans for internal maintenance work orders."
+  },
+  "case": {
+    "path": "cases/work-order.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 4,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 19,
+    "recommendation": "no-go"
   }
 }

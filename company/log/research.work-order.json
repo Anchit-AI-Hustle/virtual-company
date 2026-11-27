@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T21:39:20.695Z",
+    "agent": "research",
+    "action": "Started: Business case for work-order: reading competitors, search and page one",
+    "ventureId": "work-order",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:40:40.620Z",
+    "agent": "research",
+    "action": "Business case written: work-order 19 of 35, no-go; page one held by Adobe, HubSpot, DocuSign and free ServiceM8 and Zoho FSM tiers already give signed work orders",
+    "ventureId": "work-order",
+    "kind": "done"
+  }
+]
