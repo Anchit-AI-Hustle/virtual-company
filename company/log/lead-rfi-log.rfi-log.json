@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T22:26:48.828Z",
+    "agent": "lead-rfi-log",
+    "action": "Started: Validating rfi-log: gathering sourced demand evidence",
+    "ventureId": "rfi-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T22:28:10.856Z",
+    "agent": "lead-rfi-log",
+    "action": "rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit); WebSearch shows rfi template page one held by big brands",
+    "ventureId": "rfi-log",
+    "kind": "done"
+  }
+]

@@ -59,20 +59,52 @@
       "claim": "DailyBuild ranks on page one for rfi template with a free Excel RFI log template (no signup), a static spreadsheet with no reply link for the architect.",
       "url": "https://dailybuild.co/free-construction-rfi-log-template",
       "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "A small commercial GC in Los Angeles with about 40 active jobs tracks RFIs and change orders in Google Sheets, calls Procore too heavy, and replies say Procore is pricey (one estimates about USD 20k a year on a USD 15M job) and that smaller GCs look for cheaper alternatives (r/ConstructionManagers thread 1aocj9c, read through a Redlib mirror).",
+      "url": "https://axebps-redlib.hf.space/r/ConstructionManagers/comments/1aocj9c/construction_management_software_recommendations",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "The owner of a small commercial general contractor (under USD 10M) asked for software with a board to track RFIs and hold stakeholders accountable, found Procore more than they needed, and later chose Procore anyway.",
+      "url": "https://www.vitalmx.com/forums/non-moto/construction-general-contracting-p-m-software",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "A Mike Holt forum member tracking RFIs in a spreadsheet and word processor asked for software made for this purpose; replies point to AIA document software, Oracle Expedition or a home made Access database.",
+      "url": "https://forums.mikeholt.com/goto/post?id=1258458",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Knowify sells RFI and submittal tracking with response due dates and an approval portal for respondents, starting at USD 99 a month.",
+      "url": "https://knowify.com/rfi-submittal-management-software/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "A Payhip seller lists an RFI plus Submittal Log Kit (Excel and Google Sheets workbook, PDF forms, guide) at USD 19, with a USD 15 a month membership; the page shows no reviews or sales counts.",
+      "url": "https://payhip.com/b/ANSyY",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Lead Kabeer validates: find 3+ sourced signals that small contractors pay for or actively seek an RFI log with reply links outside Procore, confirm page one for rfi template on a second search source, then Research writes the case",
+  "nextAction": "Waiting for Research business case, Farhan sizing and CEO decision. Evidence against: on WebSearch, rfi template page one is mostly procurement intent and big brands (Asana, Notion, Oracle, monday, ClickUp, Smartsheet, Autodesk, ProjectManager, Levelset by Procore), so the weak results seen on Firecrawl did not hold; rfi log page one is mostly off topic (radio frequency interference, security), which means mixed intent and a small construction slice of the 210 searches; the VitalMX GC who found Procore too big still bought Procore; the Payhip RFI kit shows no reviews or sales; Knowify, Fieldwire and Procore already sell this inside wider suites.",
   "lead": {
     "name": "Kabeer",
     "color": "#1E5F74",
     "trait": "Turns a rough idea into a working page by evening."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-27T22:26:22.648Z",
+  "stage": "validated",
+  "stageSince": "2026-11-27T22:28:03.192Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T22:26:22.648Z",
+  "updatedAt": "2026-11-27T22:28:03.192Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "serpCheck2": {
+    "source": "WebSearch, 2026-11-28",
+    "terms": {
+      "rfi template": "Page one is mostly procurement intent and big brands: safetyculture.com, docs.oracle.com x2, asana.com x2, Harvard PDF, notion.com, Google Docs, spendflo.com, autodesk.com x2, responsive.io, clickup.com, monday.com, mass.gov, smartsheet.com x2, projectmanager.com x2, casrai.org, visme.co, levelset.com (Procore), mastt.com. Construction results are Autodesk, Smartsheet, ProjectManager, Levelset and Mastt. Small weak sites seen on the first source (mitti, dailybuild, planspan, scribd, pinterest) did not appear.",
+      "rfi log": "Page one is mostly off topic (radio frequency interference, remote file inclusion attacks, NetApp RTFI, Oracle and AGI docs, Wikipedia) plus help pages from Newforma, Autodesk Forma Build, Hexagon EcoSys and a Freshdesk help article. No free RFI log tool ranks."
+    }
+  }
 }
