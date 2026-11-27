@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T21:31:11.890Z",
+    "agent": "lead-work-order",
+    "action": "Started: Gathering sourced demand signals for work-order",
+    "ventureId": "work-order",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:31:12.005Z",
+    "agent": "lead-work-order",
+    "action": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)",
+    "ventureId": "work-order",
+    "kind": "done"
+  }
+]

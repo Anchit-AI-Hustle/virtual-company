@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:29:31.496Z",
+  "builtAt": "2026-11-27T21:31:23.572Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1030,6 +1030,38 @@
       "businessCase": null
     },
     {
+      "id": "work-order",
+      "title": "Work Order Maker",
+      "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
+      "customer": "Small US service businesses and contractors",
+      "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
+      "priceINR": null,
+      "stage": "validated",
+      "score": 12,
+      "url": null,
+      "nextAction": "Research writes the business case (cases/work-order.md) as a sceptic, then Farhan sizes it, then the CEO decides go or no-go. Evidence against: two of the four buyer posts are the same person; buyers are QuickBooks users who may want it inside their invoicing tool; Jobber, template.net and Invoicefly hold page one for work order template.",
+      "metrics": null,
+      "updatedAt": "2026-11-27T21:31:11.934Z",
+      "evidenceCount": 8,
+      "specPath": null,
+      "lead": {
+        "id": "lead-work-order",
+        "name": "Riya",
+        "color": "#8C4A2F"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "change-order",
       "title": "Change Order Form",
       "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
@@ -1048,38 +1080,6 @@
         "id": "lead-change-order",
         "name": "Shaurya",
         "color": "#35603A"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": null
-    },
-    {
-      "id": "work-order",
-      "title": "Work Order Maker",
-      "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
-      "customer": "Small US service businesses and contractors",
-      "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
-      "priceINR": null,
-      "stage": "validating",
-      "score": 12,
-      "url": null,
-      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
-      "metrics": null,
-      "updatedAt": "2026-11-27T21:29:24.957Z",
-      "evidenceCount": 4,
-      "specPath": null,
-      "lead": {
-        "id": "lead-work-order",
-        "name": "Riya",
-        "color": "#8C4A2F"
       },
       "reviews": {
         "product": null,
@@ -1694,23 +1694,6 @@
       "actions": 20
     },
     {
-      "id": "lead-change-order",
-      "name": "Shaurya",
-      "title": "Lead, Change Order Form",
-      "department": "pods",
-      "color": "#35603A",
-      "trait": "Picks one metric and moves it.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "change-order",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
-    },
-    {
       "id": "lead-work-order",
       "name": "Riya",
       "title": "Lead, Work Order Maker",
@@ -1719,6 +1702,26 @@
       "trait": "Reads every support message twice.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "work-order",
+      "state": "done",
+      "task": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)",
+      "since": "2026-11-27T21:31:12.005Z",
+      "ventureId": "work-order",
+      "ventureTitle": "Work Order Maker",
+      "last": {
+        "at": "2026-11-27T21:31:12.005Z",
+        "action": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)"
+      },
+      "actions": 2
+    },
+    {
+      "id": "lead-change-order",
+      "name": "Shaurya",
+      "title": "Lead, Change Order Form",
+      "department": "pods",
+      "color": "#35603A",
+      "trait": "Picks one metric and moves it.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "change-order",
       "state": "idle",
       "task": null,
       "since": null,
@@ -2521,9 +2524,34 @@
       }
     ],
     "tc-desk": [],
-    "work-order": []
+    "work-order": [
+      {
+        "at": "2026-11-27T21:31:12.005Z",
+        "agent": "lead-work-order",
+        "action": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)"
+      },
+      {
+        "at": "2026-11-27T21:31:11.890Z",
+        "agent": "lead-work-order",
+        "action": "Started: Gathering sourced demand signals for work-order"
+      }
+    ]
   },
   "log": [
+    {
+      "at": "2026-11-27T21:31:12.005Z",
+      "agent": "lead-work-order",
+      "action": "Validated: 8 sourced signals (4 paid tool prices, 4 buyer posts asking for a phone work order with on screen signature)",
+      "ventureId": "work-order",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:31:11.890Z",
+      "agent": "lead-work-order",
+      "action": "Started: Gathering sourced demand signals for work-order",
+      "ventureId": "work-order",
+      "kind": "start"
+    },
     {
       "at": "2026-11-27T21:29:29.365Z",
       "agent": "ceo",
@@ -3069,21 +3097,7 @@
       "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: IFTA fuel tax report (ifta calculator 1,300 plus free ifta calculator 480 a month, but free calculators at trucklogics.com/ifta-calculator, otrucking.com/tools/ifta-calculator, invoicer.ai/tools/ifta-fuel-tax-calculator), dynamic QR codes (2,400 a month, free no-signup editable codes at mobirise.com/qr/dynamic-qr-code-generator.html and hovercode.com/free-qr-code-generator), AIA pay applications (aia billing 2,400, aia invoice 1,900, but free G702 and G703 templates at servicetitan.com/templates/subcontractor/application-for-payment and enerpize.com/templates/AIA-G702-G703, page one held by Trimble and Procore, and the AIA form names are trademarked), real estate CRM India (2,400, but Zoho and HubSpot free CRM plans). Dropped on volume: towing software 320, moving company software 590, HACCP software 320, construction daily report app 110, roofing estimate software 260, commission tracking software 390 (commission calculator 6,600 is free calculator intent), COI tracking 170, cattle management software 260, milk collection software India 170, society maintenance software India 0, poultry farm software India 0",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:14:13.352Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: IFTA fuel tax, towing, moving, HACCP, roofing, commissions, dairy milk collection, livestock, dynamic QR",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T10:12:45.391Z",
-      "agent": "support",
-      "action": "No live ventures, no customer messages",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 458
+  "logTotal": 460
 }

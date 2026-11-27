@@ -13,9 +13,9 @@
   },
   "evidence": [
     {
-      "claim": "Joist sells work orders on its Pro plan at USD 12.75 a month and change orders on Elite at USD 24 a month, and says its free plan is no longer available.",
+      "claim": "Joist lists Generate work orders on its Pro plan at USD 12.75 a month billed monthly (USD 17 list), not on the USD 10 Basics plan, and says its free plan is no longer available.",
       "url": "https://www.joist.com/pricing/",
-      "foundAt": "2026-11-27"
+      "foundAt": "2026-11-28"
     },
     {
       "claim": "Contractor Foreman, a paid contractor app with no free plan, lists work orders on its Standard plan at USD 105 a month flat for up to 3 users.",
@@ -31,18 +31,38 @@
       "claim": "Zoho FSM's free edition caps a business at 30 appointments a month with no carry-over.",
       "url": "https://www.zoho.com/fsm/pricing.html",
       "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "A small business owner on r/smallbusiness asks for software so field staff fill the job completed form on a phone, the customer signs on screen and it is emailed automatically, because QuickBooks has no document for it and they still use carbon copy paper forms.",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ood7lu/anyone_using_software_that_allows_you_to_get_a/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "The same QuickBooks Online user posted again on r/smallbusiness asking for software that lets the customer electronically sign the work order on a tablet or phone, to stop writing up and storing paper work orders.",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ko1wxv/looking_for_invoicing_software_that_allows_us_to/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "A commercial HVAC company on r/smallbusiness asks which work order app to use to move from paper work order write ups to an app that sends field findings and pictures to the customer and the office.",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1hfktp3/work_order_app_which_is_best/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "An independent operator looking after five or six properties asks r/FacilityManagement for a free or cheap, simple work order app that three partners can share.",
+      "url": "https://www.reddit.com/r/FacilityManagement/comments/1jumtoq/work_order_app/",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "nextAction": "Research writes the business case (cases/work-order.md) as a sceptic, then Farhan sizes it, then the CEO decides go or no-go. Evidence against: two of the four buyer posts are the same person; buyers are QuickBooks users who may want it inside their invoicing tool; Jobber, template.net and Invoicefly hold page one for work order template.",
   "lead": {
     "name": "Riya",
     "color": "#8C4A2F",
     "trait": "Reads every support message twice."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-27T21:29:24.957Z",
+  "stage": "validated",
+  "stageSince": "2026-11-27T21:31:11.934Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:29:24.957Z",
+  "updatedAt": "2026-11-27T21:31:11.934Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
