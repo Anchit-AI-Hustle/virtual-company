@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:45:51.012Z",
+  "builtAt": "2026-11-27T21:46:00.565Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1210,9 +1210,9 @@
       "stage": "validated",
       "score": 11,
       "url": null,
-      "nextAction": "Research writes the sceptical business case (cases/tc-desk.md), then Farhan sizes it, then the CEO decides go or no-go. Evidence against: page one is held by vendors, free tiers exist (ListedKit 1 closing, Nekst 5), Reddit threads could not be read this cycle (site blocked).",
+      "nextAction": "Research case says no-go (19 of 35, distribution 2): checklist searches total at most about 590 a month and are crowded, deadline calculator searches are 0, Nekst and ListedKit free tiers cover a light agent. Farhan sizes it, then the CEO decides go or kill.",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:35:35.678Z",
+      "updatedAt": "2026-11-27T21:45:53.629Z",
       "evidenceCount": 8,
       "specPath": null,
       "lead": {
@@ -1230,7 +1230,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/tc-desk.md",
+        "total": 19,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "class-pass",
@@ -1425,15 +1429,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
-      "since": "2026-11-27T21:45:32.412Z",
-      "ventureId": "change-order",
-      "ventureTitle": "Change Order Form",
+      "task": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
+      "since": "2026-11-27T21:45:53.655Z",
+      "ventureId": "tc-desk",
+      "ventureTitle": "Closing Desk",
       "last": {
-        "at": "2026-11-27T21:45:32.412Z",
-        "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro"
+        "at": "2026-11-27T21:45:53.655Z",
+        "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents"
       },
-      "actions": 72
+      "actions": 74
     },
     {
       "id": "data",
@@ -2565,6 +2569,16 @@
     ],
     "tc-desk": [
       {
+        "at": "2026-11-27T21:45:53.655Z",
+        "agent": "research",
+        "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents"
+      },
+      {
+        "at": "2026-11-27T21:37:14.018Z",
+        "agent": "research",
+        "action": "Started: Writing the sceptical business case for Closing Desk"
+      },
+      {
         "at": "2026-11-27T21:36:02.510Z",
         "agent": "lead-tc-desk",
         "action": "Blocked: needs reviewers: research, sizing, ceo"
@@ -2610,6 +2624,13 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:45:53.655Z",
+      "agent": "research",
+      "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
+      "ventureId": "tc-desk",
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:45:32.412Z",
       "agent": "research",
       "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
@@ -2628,6 +2649,13 @@
       "agent": "research",
       "action": "Started: Business case for work-order: reading competitors, search and page one",
       "ventureId": "work-order",
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-27T21:37:14.018Z",
+      "agent": "research",
+      "action": "Started: Writing the sceptical business case for Closing Desk",
+      "ventureId": "tc-desk",
       "kind": "start"
     },
     {
@@ -3154,21 +3182,7 @@
       "action": "Standup: health ok, watchdog 12:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:12:30.246Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T11:14:29.583Z",
-      "agent": "ops",
-      "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 471
+  "logTotal": 473
 }

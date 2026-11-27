@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T21:37:14.018Z",
+    "agent": "research",
+    "action": "Started: Writing the sceptical business case for Closing Desk",
+    "ventureId": "tc-desk",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T21:45:53.655Z",
+    "agent": "research",
+    "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
+    "ventureId": "tc-desk",
+    "kind": "done"
+  }
+]

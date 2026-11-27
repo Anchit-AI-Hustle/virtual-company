@@ -73,7 +73,7 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Research writes the sceptical business case (cases/tc-desk.md), then Farhan sizes it, then the CEO decides go or no-go. Evidence against: page one is held by vendors, free tiers exist (ListedKit 1 closing, Nekst 5), Reddit threads could not be read this cycle (site blocked).",
+  "nextAction": "Research case says no-go (19 of 35, distribution 2): checklist searches total at most about 590 a month and are crowded, deadline calculator searches are 0, Nekst and ListedKit free tiers cover a light agent. Farhan sizes it, then the CEO decides go or kill.",
   "lead": {
     "name": "Anika",
     "color": "#5E3A87",
@@ -82,9 +82,23 @@
   "stage": "validated",
   "stageSince": "2026-11-27T21:35:35.678Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:35:35.678Z",
+  "updatedAt": "2026-11-27T21:45:53.629Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "case": {
+    "path": "cases/tc-desk.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 4,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 19,
+    "recommendation": "no-go"
+  }
 }
