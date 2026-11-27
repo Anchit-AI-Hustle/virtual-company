@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live venture, no messages",
+  "state": "done",
+  "task": "No live venture and no open owner-chat issue, so no messages to handle",
   "ventureId": null,
-  "since": "2026-11-21T17:27:35.261Z"
+  "since": "2026-11-27T21:13:31.469Z"
 }

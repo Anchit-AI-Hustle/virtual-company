@@ -159,5 +159,12 @@
     "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:13:31.385Z",
+    "agent": "finance",
+    "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

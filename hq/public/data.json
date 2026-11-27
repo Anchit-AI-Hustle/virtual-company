@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:13:19.346Z",
+  "builtAt": "2026-11-27T21:13:31.920Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1340,16 +1340,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
-      "task": "No live venture, no counts to check",
-      "since": "2026-11-21T17:27:34.948Z",
+      "state": "done",
+      "task": "No live venture, so no counts to read",
+      "since": "2026-11-27T21:13:31.428Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.749Z",
-        "action": "No live venture, no counts to check"
+        "at": "2026-11-27T21:13:31.428Z",
+        "action": "No live venture, so no counts to read"
       },
-      "actions": 14
+      "actions": 15
     },
     {
       "id": "sizing",
@@ -1473,16 +1473,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan: no keys or tokens found in the repo",
-      "since": "2026-11-21T17:27:35.178Z",
+      "state": "done",
+      "task": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
+      "since": "2026-11-27T21:13:31.345Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.683Z",
-        "action": "Secret scan: no keys or tokens found in the repo"
+        "at": "2026-11-27T21:13:31.345Z",
+        "action": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found"
       },
-      "actions": 32
+      "actions": 33
     },
     {
       "id": "growth",
@@ -1530,16 +1530,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live venture, no messages",
-      "since": "2026-11-21T17:27:35.261Z",
+      "state": "done",
+      "task": "No live venture and no open owner-chat issue, so no messages to handle",
+      "since": "2026-11-27T21:13:31.469Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.781Z",
-        "action": "No live venture, no messages"
+        "at": "2026-11-27T21:13:31.469Z",
+        "action": "No live venture and no open owner-chat issue, so no messages to handle"
       },
-      "actions": 13
+      "actions": 14
     },
     {
       "id": "finance",
@@ -1549,16 +1549,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
-      "since": "2026-11-21T17:27:35.011Z",
+      "state": "done",
+      "task": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
+      "since": "2026-11-27T21:13:31.385Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:12:30.714Z",
-        "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov"
+        "at": "2026-11-27T21:13:31.385Z",
+        "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)"
       },
-      "actions": 23
+      "actions": 24
     },
     {
       "id": "legal",
@@ -2376,6 +2376,34 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:13:31.469Z",
+      "agent": "support",
+      "action": "No live venture and no open owner-chat issue, so no messages to handle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:13:31.428Z",
+      "agent": "data",
+      "action": "No live venture, so no counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:13:31.385Z",
+      "agent": "finance",
+      "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:13:31.345Z",
+      "agent": "security",
+      "action": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:13:18.853Z",
       "agent": "devops",
       "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
@@ -2906,35 +2934,7 @@
       "action": "No live products to check; HQ 200, data 200, CI success (watchdog.js)",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:12:41.468Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog 10:04 UTC, CI green, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new save, share and team batch (ap-company-5)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:12:41.418Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T09:15:01.385Z",
-      "agent": "ops",
-      "action": "Close: 10 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0. Firecrawl still out of credits; Research now screens volumes with seodata.dev (20 free lookups a day)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T09:14:50.268Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 of 10 screened ideas passed the owner's 21 Nov screen; the strongest (bank statement to Excel and Tally, 18,100 India searches) fails on free in-browser tools that already do the job. No weak idea is staffed. 0 open ideas; Research screens again next cycle with seodata.dev volumes while Firecrawl is out",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 450
+  "logTotal": 454
 }

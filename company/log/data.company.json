@@ -82,5 +82,12 @@
     "action": "No live venture, no counts to check",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:13:31.428Z",
+    "agent": "data",
+    "action": "No live venture, so no counts to read",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
