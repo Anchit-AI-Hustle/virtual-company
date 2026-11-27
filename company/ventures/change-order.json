@@ -48,20 +48,21 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Research writes the sceptical business case, Farhan sizes it, CEO decides go or no-go. Evidence against: the no-login homeowner sign-off link is already sold by JustSignOff, AddWork, ChangeSeal and SteelHand (https://apps.apple.com/nl/app/steelhand-contractor-estimates/id6802784970), so the gap is only that ours is free with no account; Reddit threads on unpaid unsigned extras could not be read (scraper blocked).",
+  "nextAction": "None. Killed on the business case.",
   "lead": {
     "name": "Shaurya",
     "color": "#35603A",
     "trait": "Picks one metric and moves it."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-27T21:31:25.271Z",
+  "stage": "killed",
+  "stageSince": "2026-11-27T21:47:37.467Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:45:32.384Z",
+  "updatedAt": "2026-11-27T21:47:37.467Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
   "metrics": null,
+  "killReason": "CEO no-go on the business case. Score 18 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 3, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no reviews, so contractors buy change orders inside suites, not alone. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month (cases/change-order.md sources 13, 16 to 18). The trade-specific long tail pivot has no measured volume and is unlikely to clear the 1,000 search screen. No sizing was done; the case bar already fails.",
   "screen": {
     "paidPrice": {
       "product": "Joist Elite at USD 24 a month billed monthly (list USD 32), the Joist plan that adds and sends change orders; no free plan. About Rs 2,263 at 94.2754 INR per USD",

@@ -73,20 +73,21 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Research case says no-go (19 of 35, distribution 2): checklist searches total at most about 590 a month and are crowded, deadline calculator searches are 0, Nekst and ListedKit free tiers cover a light agent. Farhan sizes it, then the CEO decides go or kill.",
+  "nextAction": "None. Killed on the business case.",
   "lead": {
     "name": "Anika",
     "color": "#5E3A87",
     "trait": "Makes the hard flow feel obvious."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-27T21:35:35.678Z",
+  "stage": "killed",
+  "stageSince": "2026-11-27T21:47:37.467Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:45:53.629Z",
+  "updatedAt": "2026-11-27T21:47:37.467Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
   "metrics": null,
+  "killReason": "CEO no-go on the business case. Score 19 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 4, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. Nekst Solo Lite (https://nekst.com/pricing) already gives 5 free transactions with deadline sync and client portals, and ListedKit gives 1 free closing. We may only do date arithmetic on dates the user enters (Texas TREC), which rules out the contract reading and state templates buyers pay for. Winnable checklist searches total at most about 590 a month, deadline calculator searches are 0, and page one is held by dotloop, Paperless Pipeline, Transactly, ListedKit, Process Street, DealTC and DocJacket (cases/tc-desk.md sources 2, 4b, 20). No sizing was done; the case bar already fails.",
   "case": {
     "path": "cases/tc-desk.md",
     "scores": {

@@ -53,20 +53,21 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "CEO decides go or no-go on the business case (cases/work-order.md, 19 of 35, research recommends no-go: distribution 2, page one held by Adobe, HubSpot, DocuSign, Smartsheet; ServiceM8 and Zoho FSM give signed work orders free up to 30 jobs a month). Farhan may size it first.",
+  "nextAction": "None. Killed on the business case.",
   "lead": {
     "name": "Riya",
     "color": "#8C4A2F",
     "trait": "Reads every support message twice."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-27T21:31:11.934Z",
+  "stage": "killed",
+  "stageSince": "2026-11-27T21:47:37.467Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:40:33.212Z",
+  "updatedAt": "2026-11-27T21:47:37.467Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
   "metrics": null,
+  "killReason": "CEO no-go on the business case. Score 19 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 4, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. The paid tier we would sell (saved jobs, on-screen customer signature, several technicians) is already free in capped form on ServiceM8 Free (https://www.servicem8.com/pricing) and Zoho FSM Free (https://www.zoho.com/fsm/pricing.html), and free on Formester and MaintainX. The 4,900 monthly work order searches are template and form downloads, and page one is held by Adobe, HubSpot, SafetyCulture, DocuSign, Smartsheet, monday.com, Jobber, ClickUp and UpKeep (cases/work-order.md sources 13 and 14). No sizing was done; the case bar already fails.",
   "screen": {
     "paidPrice": {
       "product": "Joist Pro at USD 12.75 a month billed monthly (list USD 17), the first Joist plan that generates work orders; Joist has no free plan. About Rs 1,202 at 94.2754 INR per USD",

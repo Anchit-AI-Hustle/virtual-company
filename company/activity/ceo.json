@@ -1,6 +1,6 @@
 {
   "state": "done",
-  "task": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
-  "ventureId": null,
-  "since": "2026-11-27T21:29:29.365Z"
+  "task": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+  "ventureId": "tc-desk",
+  "since": "2026-11-27T21:47:37.596Z"
 }

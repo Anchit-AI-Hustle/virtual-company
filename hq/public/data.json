@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:46:00.565Z",
+  "builtAt": "2026-11-27T21:47:45.751Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -869,6 +869,43 @@
       "businessCase": null
     },
     {
+      "id": "change-order",
+      "title": "Change Order Form",
+      "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
+      "customer": "Small US service businesses and contractors",
+      "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
+      "priceINR": null,
+      "stage": "killed",
+      "score": 12,
+      "url": null,
+      "nextAction": "None. Killed on the business case.",
+      "metrics": null,
+      "killReason": "CEO no-go on the business case. Score 18 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 3, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no reviews, so contractors buy change orders inside suites, not alone. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month (cases/change-order.md sources 13, 16 to 18). The trade-specific long tail pivot has no measured volume and is unlikely to clear the 1,000 search screen. No sizing was done; the case bar already fails.",
+      "updatedAt": "2026-11-27T21:47:37.467Z",
+      "evidenceCount": 7,
+      "specPath": null,
+      "lead": {
+        "id": "lead-change-order",
+        "name": "Shaurya",
+        "color": "#35603A"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": false,
+      "sizing": null,
+      "businessCase": {
+        "path": "cases/change-order.md",
+        "total": 18,
+        "recommendation": "no-go"
+      }
+    },
+    {
       "id": "csv-qbo",
       "title": "CSV to QBO",
       "oneLiner": "Turn any bank or card CSV into a QBO, QFX or OFX file for QuickBooks in the browser, nothing uploaded",
@@ -1030,54 +1067,19 @@
       "businessCase": null
     },
     {
-      "id": "change-order",
-      "title": "Change Order Form",
-      "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
-      "customer": "Small US service businesses and contractors",
-      "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
-      "priceINR": null,
-      "stage": "validated",
-      "score": 12,
-      "url": null,
-      "nextAction": "Research writes the sceptical business case, Farhan sizes it, CEO decides go or no-go. Evidence against: the no-login homeowner sign-off link is already sold by JustSignOff, AddWork, ChangeSeal and SteelHand (https://apps.apple.com/nl/app/steelhand-contractor-estimates/id6802784970), so the gap is only that ours is free with no account; Reddit threads on unpaid unsigned extras could not be read (scraper blocked).",
-      "metrics": null,
-      "updatedAt": "2026-11-27T21:45:32.384Z",
-      "evidenceCount": 7,
-      "specPath": null,
-      "lead": {
-        "id": "lead-change-order",
-        "name": "Shaurya",
-        "color": "#35603A"
-      },
-      "reviews": {
-        "product": null,
-        "engineer": null,
-        "design": null,
-        "security": null,
-        "legal": null
-      },
-      "qaPassed": null,
-      "goDecision": null,
-      "sizing": null,
-      "businessCase": {
-        "path": "cases/change-order.md",
-        "total": 18,
-        "recommendation": "no-go"
-      }
-    },
-    {
       "id": "work-order",
       "title": "Work Order Maker",
       "oneLiner": "Free work order maker for small service businesses: fill a work order on the phone, get the customer to sign on screen, then upgrade to saved jobs, a customer link and team use",
       "customer": "Small US service businesses and contractors",
       "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
       "priceINR": null,
-      "stage": "validated",
+      "stage": "killed",
       "score": 12,
       "url": null,
-      "nextAction": "CEO decides go or no-go on the business case (cases/work-order.md, 19 of 35, research recommends no-go: distribution 2, page one held by Adobe, HubSpot, DocuSign, Smartsheet; ServiceM8 and Zoho FSM give signed work orders free up to 30 jobs a month). Farhan may size it first.",
+      "nextAction": "None. Killed on the business case.",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:40:33.212Z",
+      "killReason": "CEO no-go on the business case. Score 19 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 4, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. The paid tier we would sell (saved jobs, on-screen customer signature, several technicians) is already free in capped form on ServiceM8 Free (https://www.servicem8.com/pricing) and Zoho FSM Free (https://www.zoho.com/fsm/pricing.html), and free on Formester and MaintainX. The 4,900 monthly work order searches are template and form downloads, and page one is held by Adobe, HubSpot, SafetyCulture, DocuSign, Smartsheet, monday.com, Jobber, ClickUp and UpKeep (cases/work-order.md sources 13 and 14). No sizing was done; the case bar already fails.",
+      "updatedAt": "2026-11-27T21:47:37.467Z",
       "evidenceCount": 8,
       "specPath": null,
       "lead": {
@@ -1093,7 +1095,7 @@
         "legal": null
       },
       "qaPassed": null,
-      "goDecision": null,
+      "goDecision": false,
       "sizing": null,
       "businessCase": {
         "path": "cases/work-order.md",
@@ -1207,12 +1209,13 @@
       "customer": "US real estate agents and independent transaction coordinators handling a few deals a month",
       "revenueModel": "Free single transaction; paid tier for unlimited saved transactions, client and agent status links, reminders and team use",
       "priceINR": null,
-      "stage": "validated",
+      "stage": "killed",
       "score": 11,
       "url": null,
-      "nextAction": "Research case says no-go (19 of 35, distribution 2): checklist searches total at most about 590 a month and are crowded, deadline calculator searches are 0, Nekst and ListedKit free tiers cover a light agent. Farhan sizes it, then the CEO decides go or kill.",
+      "nextAction": "None. Killed on the business case.",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:45:53.629Z",
+      "killReason": "CEO no-go on the business case. Score 19 of 35 against a bar of 24: pain 3, willingnessToPay 3, marketSize 4, distribution 2, competitionGap 2, speedToRevenue 2, recurringRevenue 3. Nekst Solo Lite (https://nekst.com/pricing) already gives 5 free transactions with deadline sync and client portals, and ListedKit gives 1 free closing. We may only do date arithmetic on dates the user enters (Texas TREC), which rules out the contract reading and state templates buyers pay for. Winnable checklist searches total at most about 590 a month, deadline calculator searches are 0, and page one is held by dotloop, Paperless Pipeline, Transactly, ListedKit, Process Street, DealTC and DocJacket (cases/tc-desk.md sources 2, 4b, 20). No sizing was done; the case bar already fails.",
+      "updatedAt": "2026-11-27T21:47:37.467Z",
       "evidenceCount": 8,
       "specPath": null,
       "lead": {
@@ -1228,7 +1231,7 @@
         "legal": null
       },
       "qaPassed": null,
-      "goDecision": null,
+      "goDecision": false,
       "sizing": null,
       "businessCase": {
         "path": "cases/tc-desk.md",
@@ -1375,10 +1378,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1391,15 +1390,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
-      "since": "2026-11-27T21:29:29.365Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+      "since": "2026-11-27T21:47:37.596Z",
+      "ventureId": "tc-desk",
+      "ventureTitle": "Closing Desk",
       "last": {
-        "at": "2026-11-27T21:29:29.365Z",
-        "action": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer"
+        "at": "2026-11-27T21:47:37.596Z",
+        "action": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed."
       },
-      "actions": 78
+      "actions": 84
     },
     {
       "id": "ops",
@@ -1704,66 +1703,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-change-order",
-      "name": "Shaurya",
-      "title": "Lead, Change Order Form",
-      "department": "pods",
-      "color": "#35603A",
-      "trait": "Picks one metric and moves it.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "change-order",
-      "state": "blocked",
-      "task": "needs reviewers: research, sizing, ceo",
-      "since": "2026-11-27T21:31:36.827Z",
-      "ventureId": "change-order",
-      "ventureTitle": "Change Order Form",
-      "last": {
-        "at": "2026-11-27T21:31:36.827Z",
-        "action": "Blocked: needs reviewers: research, sizing, ceo"
-      },
-      "actions": 3
-    },
-    {
-      "id": "lead-work-order",
-      "name": "Riya",
-      "title": "Lead, Work Order Maker",
-      "department": "pods",
-      "color": "#8C4A2F",
-      "trait": "Reads every support message twice.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "work-order",
-      "state": "blocked",
-      "task": "needs reviewers: research, sizing, ceo",
-      "since": "2026-11-27T21:31:32.929Z",
-      "ventureId": "work-order",
-      "ventureTitle": "Work Order Maker",
-      "last": {
-        "at": "2026-11-27T21:31:32.929Z",
-        "action": "Blocked: needs reviewers: research, sizing, ceo"
-      },
-      "actions": 3
-    },
-    {
-      "id": "lead-tc-desk",
-      "name": "Anika",
-      "title": "Lead, Closing Desk",
-      "department": "pods",
-      "color": "#5E3A87",
-      "trait": "Makes the hard flow feel obvious.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "tc-desk",
-      "state": "blocked",
-      "task": "needs reviewers: research, sizing, ceo",
-      "since": "2026-11-27T21:36:02.510Z",
-      "ventureId": "tc-desk",
-      "ventureTitle": "Closing Desk",
-      "last": {
-        "at": "2026-11-27T21:36:02.510Z",
-        "action": "Blocked: needs reviewers: research, sizing, ceo"
-      },
-      "actions": 3
     }
   ],
   "ventureTrail": {
@@ -1812,6 +1751,16 @@
       }
     ],
     "change-order": [
+      {
+        "at": "2026-11-27T21:47:37.545Z",
+        "agent": "ceo",
+        "action": "No-go on change-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed."
+      },
+      {
+        "at": "2026-11-27T21:47:25.408Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 18 of 35 (bar 24), distribution 2, competitionGap 2. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no traction, so contractors buy it inside suites. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month. The trade-specific long tail pivot is unmeasured and unlikely to reach the 1,000 searches screen, so no pivot. No sizing file exists. Spot-checked the AddWork App Store listing; it holds."
+      },
       {
         "at": "2026-11-27T21:45:32.412Z",
         "agent": "research",
@@ -2569,6 +2518,16 @@
     ],
     "tc-desk": [
       {
+        "at": "2026-11-27T21:47:37.596Z",
+        "agent": "ceo",
+        "action": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed."
+      },
+      {
+        "at": "2026-11-27T21:47:25.463Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Nekst Solo Lite (https://nekst.com/pricing) gives 5 free transactions with deadline sync and client portals and ListedKit gives 1 free closing, covering a light agent. The legal limit (date arithmetic on user entered dates only, Texas TREC) removes the features buyers pay for. Winnable checklist searches total at most about 590 a month and deadline calculator searches are 0; a live search on 28 Nov 2026 confirmed page one is RealTrends, dotloop, Process Street, Paperless Pipeline, Transactly, ListedKit, DealTC and DocJacket. No sizing file exists. Spot-checked Nekst pricing and the checklist page one; they hold."
+      },
+      {
         "at": "2026-11-27T21:45:53.655Z",
         "agent": "research",
         "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents"
@@ -2595,6 +2554,16 @@
       }
     ],
     "work-order": [
+      {
+        "at": "2026-11-27T21:47:37.495Z",
+        "agent": "ceo",
+        "action": "No-go on work-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed."
+      },
+      {
+        "at": "2026-11-27T21:47:25.337Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Our paid tier (saved jobs, on-screen signature, several techs) is already free in capped form on ServiceM8 Free (https://www.servicem8.com/pricing) and Zoho FSM Free (https://www.zoho.com/fsm/pricing.html), and free on Formester and MaintainX. The 4,900 monthly searches are template downloads; a live search on 28 Nov 2026 confirmed page one is Adobe, HubSpot, SafetyCulture, DocuSign, Smartsheet, monday.com, Jobber, ClickUp and UpKeep. No sizing file exists, but it cannot clear the case bar either way. Spot-checked ServiceM8 pricing and free plan pages and the work order template page one; they hold."
+      },
       {
         "at": "2026-11-27T21:40:40.620Z",
         "agent": "research",
@@ -2623,6 +2592,48 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T21:47:37.596Z",
+      "agent": "ceo",
+      "action": "No-go on tc-desk: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+      "ventureId": "tc-desk",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:47:37.545Z",
+      "agent": "ceo",
+      "action": "No-go on change-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+      "ventureId": "change-order",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:47:37.495Z",
+      "agent": "ceo",
+      "action": "No-go on work-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+      "ventureId": "work-order",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:47:25.463Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Nekst Solo Lite (https://nekst.com/pricing) gives 5 free transactions with deadline sync and client portals and ListedKit gives 1 free closing, covering a light agent. The legal limit (date arithmetic on user entered dates only, Texas TREC) removes the features buyers pay for. Winnable checklist searches total at most about 590 a month and deadline calculator searches are 0; a live search on 28 Nov 2026 confirmed page one is RealTrends, dotloop, Process Street, Paperless Pipeline, Transactly, ListedKit, DealTC and DocJacket. No sizing file exists. Spot-checked Nekst pricing and the checklist page one; they hold.",
+      "ventureId": "tc-desk",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:47:25.408Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 18 of 35 (bar 24), distribution 2, competitionGap 2. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no traction, so contractors buy it inside suites. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month. The trade-specific long tail pivot is unmeasured and unlikely to reach the 1,000 searches screen, so no pivot. No sizing file exists. Spot-checked the AddWork App Store listing; it holds.",
+      "ventureId": "change-order",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T21:47:25.337Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Our paid tier (saved jobs, on-screen signature, several techs) is already free in capped form on ServiceM8 Free (https://www.servicem8.com/pricing) and Zoho FSM Free (https://www.zoho.com/fsm/pricing.html), and free on Formester and MaintainX. The 4,900 monthly searches are template downloads; a live search on 28 Nov 2026 confirmed page one is Adobe, HubSpot, SafetyCulture, DocuSign, Smartsheet, monday.com, Jobber, ClickUp and UpKeep. No sizing file exists, but it cannot clear the case bar either way. Spot-checked ServiceM8 pricing and free plan pages and the work order template page one; they hold.",
+      "ventureId": "work-order",
+      "kind": "done"
+    },
     {
       "at": "2026-11-27T21:45:53.655Z",
       "agent": "research",
@@ -3140,49 +3151,7 @@
       "action": "Close: 13 ideas screened, none passed; 0 open, 0 pods, 0 live, revenue Rs 0",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:13:40.456Z",
-      "agent": "security",
-      "action": "Secret scan: no keys, tokens or private keys found in the repo",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:13:29.089Z",
-      "agent": "ceo",
-      "action": "No idea passed the screen this cycle; pods stay empty, 0 open ideas. Screening continues under ap-company-5 next cycle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:13:29.051Z",
-      "agent": "research",
-      "action": "Screened 13 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: rent management app India (rent manage app 1,000, rental management app 1,000, api.seodata.dev/v1/keyword?q=rent+management+app&country=in, but free landlord apps RentOk play and app store apps.apple.com/in/app/rentenpe/id6473885015, play.google.com/store/apps/details?id=com.tenantmanager, and NoBroker rent collection nobroker.in/prophub/property-management/rental-collection-service/; buyer intent is app store installs), lawn care software US (880 plus lawn care business software 590, CPC USD 49.55, but LawnManage free plan lawnandlandscape.com/news/lawnmanage-opens-new-free-plan and free plans listed at capterra.com/lawn-care-software/s/free/, page one held by Capterra, GetApp and Jobber). Interior design software India 2,900 is free 3D home design intent (3d home design online free 5,400). Dropped on volume: property management software India 1,300 with vendor page one, event management software India 720, CA practice management India 390, garage management software India 390, petrol pump software India 480, pressure washing software US 210, coaching institute software India 0, tiffin service software India 0, cable TV billing India 0, bookkeeping client portal US 0",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:13:29.011Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch under ap-company-5 with seodata.dev volumes: rent management, CA practice, petrol pump, garage, lawn care, pressure washing, events, interior design",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T12:12:30.329Z",
-      "agent": "devops",
-      "action": "Lights on: 0 live products to check; health ok, watchdog ran 12:04 UTC",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T12:12:30.286Z",
-      "agent": "ops",
-      "action": "Standup: health ok, watchdog 12:04 UTC, check green; no platform-alert, no owner-chat, no rejects on decided issues 16 and 18. 0 live, revenue Rs 0, 0 open ideas, pods empty. Research screens a new batch under ap-company-5",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 473
+  "logTotal": 479
 }

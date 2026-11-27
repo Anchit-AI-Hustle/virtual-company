@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-27T21:47:25.408Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go. Case scores 18 of 35 (bar 24), distribution 2, competitionGap 2. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no traction, so contractors buy it inside suites. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month. The trade-specific long tail pivot is unmeasured and unlikely to reach the 1,000 searches screen, so no pivot. No sizing file exists. Spot-checked the AddWork App Store listing; it holds.",
+    "ventureId": "change-order",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-27T21:47:37.545Z",
+    "agent": "ceo",
+    "action": "No-go on change-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
+    "ventureId": "change-order",
+    "kind": "done"
+  }
+]
