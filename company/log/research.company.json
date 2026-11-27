@@ -334,5 +334,19 @@
     "action": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-27T22:14:21.654Z",
+    "agent": "research",
+    "action": "Started: Screening new ideas and re-screening consign-ledger and rfi-log with the page one check",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-27T22:25:46.172Z",
+    "agent": "research",
+    "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

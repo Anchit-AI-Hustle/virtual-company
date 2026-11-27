@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
-  "ventureId": null,
-  "since": "2026-11-27T21:48:41.045Z"
+  "state": "done",
+  "task": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
+  "ventureId": "rfi-log",
+  "since": "2026-11-27T22:25:46.172Z"
 }

@@ -27,7 +27,17 @@
       "source": "https://api.seodata.dev/v1/keyword?q=consignment+software&country=us",
       "note": "seodata.dev (Google Ads monthly averages, United States, cached 22 Aug 2026), read 2026-11-27. consignment store software, consignment program and others also show 1,600 and are likely the same Google group, so they are counted once. CPC USD 20 to 35. Buyers searching consignment store software may want a full point of sale, which this is not."
     },
-    "freeGap": "Free tools are Shopify-only and capped: What's Their Cut is free to 10 consignors and USD 19 a month after (https://apps.shopify.com/whats-their-cut), ConsignKit free to 5 consignors and 25 products (https://apps.shopify.com/consignkit), Consignment Hub free to 3 (https://apps.shopify.com/consignment-hub). A shop not on Shopify has spreadsheets or a paid point of sale. Gap: a free web consignor ledger with consignor statement links and no Shopify store. Risk: these apps all show 0 reviews, a weak sign of demand, and paid rivals start at USD 9 a month."
+    "freeGap": "Free tools are Shopify-only and capped: What's Their Cut is free to 10 consignors and USD 19 a month after (https://apps.shopify.com/whats-their-cut), ConsignKit free to 5 consignors and 25 products (https://apps.shopify.com/consignkit), Consignment Hub free to 3 (https://apps.shopify.com/consignment-hub). A shop not on Shopify has spreadsheets or a paid point of sale. Gap: a free web consignor ledger with consignor statement links and no Shopify store. Risk: these apps all show 0 reviews, a weak sign of demand, and paid rivals start at USD 9 a month.",
+    "serp": {
+      "terms": [
+        "consignment software",
+        "software for consignment shop"
+      ],
+      "weakResults": 2,
+      "ofTop": 10,
+      "notes": "consignment software: weak only reddit.com/r/smallbusiness thread and perhaps secnd.ca and getcircular.ai blog lists; the rest are paid consignment POS vendors with exact-match product pages (simpleconsign.com, ricoconsign.com, consigncloud.com, resaleworld.com, consignorconnect.com) plus capterra.com and fitsmallbusiness.com. software for consignment shop: weak only the same reddit.com thread (twice) and bestconsignmentshopsoftware.com; the rest are simpleconsign.com, ricoconsign.com, consigncloud.com, capterra.com, syncrostore.com, softwareadvice.com and consignorconnect.com. Buyers on these terms want a full point of sale, which a free ledger is not.",
+      "source": "Firecrawl search, 2026-11-28"
+    }
   },
   "evidence": [
     {
@@ -46,14 +56,15 @@
       "foundAt": "2026-11-27"
     }
   ],
-  "nextAction": "Screen passed on 2026-11-27 on price and volume only; demand is weak (rival apps have 0 reviews). Research must find people paying for consignor tracking outside Shopify before a case.",
+  "nextAction": "None. Killed at the page one check.",
   "lead": null,
-  "stage": "idea",
-  "stageSince": "2026-11-27T21:28:43.704Z",
+  "stage": "killed",
+  "stageSince": "2026-11-27T22:25:38.500Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T22:25:38.500Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "killReason": "Fails the page one check (decision ap-company-7) on 2026-11-28: only 2 of the top 10 results for consignment software and for software for consignment shop are weak (a reddit.com thread, a couple of small blog lists); page one is held by paid consignment POS vendors (SimpleConsign, Ricochet, ConsignCloud, Consignor Connect, Resaleworld) and Capterra or Software Advice, and the searcher wants a full point of sale. Demand was already weak (rival Shopify apps show 0 reviews)."
 }

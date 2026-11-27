@@ -27,7 +27,17 @@
       "source": "https://api.seodata.dev/v1/keyword?q=rfi+template&country=us",
       "note": "seodata.dev (Google Ads monthly averages, United States, cached 26 Aug 2026) for rfi template; submittal log from https://api.seodata.dev/v1/keyword?q=submittal+log&country=us (construction submittal log 390, submittal log template 210 also shown); rfi log from DataForSEO Google Ads search volume (United States) through Firecrawl Alexandria, request 4908d495-cca6-4d96-82d7-3c3039db7ae2, read 2026-11-27. rfi forms 720 and request for information templates 720 are left out because they mix in procurement intent. Risk: rfi template itself also carries some procurement intent."
     },
-    "freeGap": "Free RFI help is templates: Smartsheet, Procore and Down to Bid give Word, Excel or PDF RFI forms (https://smartsheet.com/content/construction-rfi-templates, https://procore.com/library/rfi-templates, https://downtobid.com/blog/rfi-template). Fieldwire's free Basic plan has no RFIs (https://www.Fieldwire.Com/pricing/). Gap: a free RFI log with an answer link for the architect and due dates, no account. Risk: Procore, Smartsheet and Archdesk hold page one."
+    "freeGap": "Free RFI help is templates: Smartsheet, Procore and Down to Bid give Word, Excel or PDF RFI forms (https://smartsheet.com/content/construction-rfi-templates, https://procore.com/library/rfi-templates, https://downtobid.com/blog/rfi-template). Fieldwire's free Basic plan has no RFIs (https://www.Fieldwire.Com/pricing/). Gap: a free RFI log with an answer link for the architect and due dates, no account. Risk: Procore, Smartsheet and Archdesk hold page one.",
+    "serp": {
+      "terms": [
+        "rfi template",
+        "submittal log"
+      ],
+      "weakResults": 6,
+      "ofTop": 10,
+      "notes": "rfi template: 9 of 10 weak - mitti.com RFI log template page, scribd.com x2 static PDF/Word, pinterest.com x3 thin pins, ingenious.build small blog, dailybuild.co small single-purpose site with a free Excel log, planspan.ai small template page; only surveysparrow.com is a mid-size form builder. submittal log: 6 of 10 weak - constructionlogs.com Excel download, ingenious.build blog, submittal.com small site, mylosscontrolservices.com static .xlsx, dailybuild.co blog, permute.ai small blog; strong are projectmanager.com, autodesk.com, fieldwire.com, procore.com. Counted on the weaker of the two terms. No free web tool on page one does the job end to end: dailybuild and mitti give static templates (dailybuild Excel with no reply link, checked https://dailybuild.co/free-construction-rfi-log-template). Caveat: Firecrawl search results are a proxy for Google page one, not Google itself; Procore, Smartsheet and Autodesk still appear for the second term.",
+      "source": "Firecrawl search, 2026-11-28"
+    }
   },
   "evidence": [
     {
@@ -44,14 +54,19 @@
       "claim": "Smartsheet ranks with a free collection of construction RFI form templates in Word and Excel.",
       "url": "https://smartsheet.com/content/construction-rfi-templates",
       "foundAt": "2026-11-27"
+    },
+    {
+      "claim": "DailyBuild ranks on page one for rfi template with a free Excel RFI log template (no signup), a static spreadsheet with no reply link for the architect.",
+      "url": "https://dailybuild.co/free-construction-rfi-log-template",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Screen passed on 2026-11-27 with weak volume (1,530, part mixed intent). Same buyer as change-order and work-order; best sold as one contractor paperwork product rather than staffed alone.",
+  "nextAction": "Page one check passed on 2026-11-28 (rfi template 9 of 10 weak, submittal log 6 of 10 weak). Still weak on volume (1,530, part mixed intent) and shares the contractor buyer of killed change-order and work-order, whose kill reason (page one held by Adobe, Procore and similar) does not apply to these terms. CEO may staff; Research should confirm on a second search source that Procore and Smartsheet do not hold Google page one for rfi template.",
   "lead": null,
   "stage": "idea",
   "stageSince": "2026-11-27T21:28:43.704Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T22:25:38.500Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

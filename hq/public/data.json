@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T22:13:36.873Z",
+  "builtAt": "2026-11-27T22:25:53.102Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1388,10 +1388,10 @@
       "stage": "idea",
       "score": 10,
       "url": null,
-      "nextAction": "Screen passed on 2026-11-27 with weak volume (1,530, part mixed intent). Same buyer as change-order and work-order; best sold as one contractor paperwork product rather than staffed alone.",
+      "nextAction": "Page one check passed on 2026-11-28 (rfi template 9 of 10 weak, submittal log 6 of 10 weak). Still weak on volume (1,530, part mixed intent) and shares the contractor buyer of killed change-order and work-order, whose kill reason (page one held by Adobe, Procore and similar) does not apply to these terms. CEO may staff; Research should confirm on a second search source that Procore and Smartsheet do not hold Google page one for rfi template.",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:28:43.704Z",
-      "evidenceCount": 3,
+      "updatedAt": "2026-11-27T22:25:38.500Z",
+      "evidenceCount": 4,
       "specPath": null,
       "lead": null,
       "reviews": {
@@ -1413,12 +1413,13 @@
       "customer": "Small US consignment, resale and vendor-booth shops that do not run Shopify",
       "revenueModel": "Free ledger for a few consignors; paid tier for unlimited consignors, consignor statement links, booth rent and team use",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "killed",
       "score": 9,
       "url": null,
-      "nextAction": "Screen passed on 2026-11-27 on price and volume only; demand is weak (rival apps have 0 reviews). Research must find people paying for consignor tracking outside Shopify before a case.",
+      "nextAction": "None. Killed at the page one check.",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "killReason": "Fails the page one check (decision ap-company-7) on 2026-11-28: only 2 of the top 10 results for consignment software and for software for consignment shop are weak (a reddit.com thread, a couple of small blog lists); page one is held by paid consignment POS vendors (SimpleConsign, Ricochet, ConsignCloud, Consignor Connect, Resaleworld) and Capterra or Software Advice, and the searcher wants a full point of sale. Demand was already weak (rival Shopify apps show 0 reviews).",
+      "updatedAt": "2026-11-27T22:25:38.500Z",
       "evidenceCount": 3,
       "specPath": null,
       "lead": null,
@@ -1508,16 +1509,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
-      "since": "2026-11-27T21:48:41.045Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
+      "since": "2026-11-27T22:25:46.172Z",
+      "ventureId": "rfi-log",
+      "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T21:45:53.655Z",
-        "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents"
+        "at": "2026-11-27T22:25:46.172Z",
+        "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch."
       },
-      "actions": 74
+      "actions": 78
     },
     {
       "id": "data",
@@ -1907,7 +1908,13 @@
         "action": "Started: Validating: searching the live web for demand evidence for and against a cleaning quote builder"
       }
     ],
-    "consign-ledger": [],
+    "consign-ledger": [
+      {
+        "at": "2026-11-27T22:25:38.537Z",
+        "agent": "research",
+        "action": "Killed consign-ledger at the page one check: 2 of 10 weak results for consignment software, page one held by paid consignment POS vendors and Capterra"
+      }
+    ],
     "csv-qbo": [
       {
         "at": "2026-11-14T14:34:35.157Z",
@@ -2309,7 +2316,13 @@
         "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for"
       }
     ],
-    "rfi-log": [],
+    "rfi-log": [
+      {
+        "at": "2026-11-27T22:25:38.611Z",
+        "agent": "research",
+        "action": "rfi-log passed the page one check: rfi template 9 of 10 weak, submittal log 6 of 10 weak (Scribd, Pinterest, small template sites); kept as an idea"
+      }
+    ],
     "rota-sheet": [
       {
         "at": "2026-11-21T04:22:47.116Z",
@@ -2673,6 +2686,34 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-27T22:25:46.172Z",
+      "agent": "research",
+      "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:25:38.611Z",
+      "agent": "research",
+      "action": "rfi-log passed the page one check: rfi template 9 of 10 weak, submittal log 6 of 10 weak (Scribd, Pinterest, small template sites); kept as an idea",
+      "ventureId": "rfi-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:25:38.537Z",
+      "agent": "research",
+      "action": "Killed consign-ledger at the page one check: 2 of 10 weak results for consignment software, page one held by paid consignment POS vendors and Capterra",
+      "ventureId": "consign-ledger",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-27T22:14:21.654Z",
+      "agent": "research",
+      "action": "Started: Screening new ideas and re-screening consign-ledger and rfi-log with the page one check",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-27T22:13:19.744Z",
       "agent": "ceo",
@@ -3204,35 +3245,7 @@
       "action": "Lights on: HQ returns 200, no live products to check",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T14:12:40.839Z",
-      "agent": "ops",
-      "action": "Standup 14:12 UTC: watchdog ran 14:04, health ok, no platform alerts, no owner replies, no reject comments on decided issues 16 and 18, all 22 ventures killed, pods empty",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T14:12:35.500Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-21T13:15:34.946Z",
-      "agent": "ceo",
-      "action": "No pod staffed: 0 ideas passed the owner's screen this cycle; about 100 screened today, none passed",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T13:15:34.901Z",
-      "agent": "research",
-      "action": "Screened 16 ideas (seodata.dev, Google Ads API monthly averages, US and India, 21 Nov): none passed. Free tool closes the gap: grant tracking for nonprofits (grant tracker 480, grant tracking software 260, grant tracking spreadsheet 260, grant writing software 320, paid Instrumentl capterra.com/p/233384/Instrumentl/pricing/, but free grant management at zeffy.com/blog/grant-management-software and clockify.me/grant-management-software, free Airtable template airtable.com/templates/nonprofits-and-volunteering/expwzMEi50HFbV7TN/nonprofit-grant-tracker), status page (2,400 a month, free hosted status pages betterstack.com/better-uptime/status-page), nonprofit CRM (2,900, free CRMs at zeffy.com/blog/free-crm-for-nonprofits and givebutter.com/blog/best-free-crm-for-nonprofits), proposal software (1,300, CPC USD 41.63, free plans listed at capterra.com/proposal-management-software/s/free/, page one held by vendors), client portal software (1,300, client portal free 140, page one held by vendors). Out of scope: school management software India 3,600 (aimed at children's data). Dropped on volume: ATS for small business 480, yoga studio software 480, board meeting minutes software 480, recipe management software 390, wholesale order form 210, warehouse software small business 210, open house sign in app 140, tuition management app India 0, CA firm software India 0, wedding planner software 0. Firecrawl credits ran out this cycle, so free-gap checks used web search",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 486
+  "logTotal": 490
 }
