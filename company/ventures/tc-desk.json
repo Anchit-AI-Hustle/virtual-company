@@ -53,12 +53,16 @@
       "foundAt": "2026-11-27"
     }
   ],
-  "nextAction": "Screen passed on 2026-11-27. Before a case: check the free-plan limits Paperless Pipeline names in its June 2026 free tools article and measure checklist search terms; Legal to confirm the tool only calculates dates the user enters.",
-  "lead": null,
-  "stage": "idea",
-  "stageSince": "2026-11-27T21:28:43.704Z",
+  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "lead": {
+    "name": "Anika",
+    "color": "#5E3A87",
+    "trait": "Makes the hard flow feel obvious."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-27T21:29:24.957Z",
   "createdAt": "2026-11-27T21:28:43.704Z",
-  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T21:29:24.957Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

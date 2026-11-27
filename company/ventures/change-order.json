@@ -33,12 +33,16 @@
       "foundAt": "2026-11-27"
     }
   ],
-  "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Overlaps work-order and rfi-log (same buyer); consider one product. The case must show pages we can rank against Housecall Pro, Smartsheet and template.net.",
-  "lead": null,
-  "stage": "idea",
-  "stageSince": "2026-11-21T17:20:02.768Z",
+  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "lead": {
+    "name": "Shaurya",
+    "color": "#35603A",
+    "trait": "Picks one metric and moves it."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-27T21:29:24.957Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T21:29:24.957Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

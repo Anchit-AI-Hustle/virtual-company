@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
+  "state": "done",
+  "task": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
   "ventureId": null,
-  "since": "2026-11-21T17:27:34.916Z"
+  "since": "2026-11-27T21:29:29.365Z"
 }

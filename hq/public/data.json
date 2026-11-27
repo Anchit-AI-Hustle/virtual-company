@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-27T21:29:01.288Z",
+  "builtAt": "2026-11-27T21:29:31.496Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1036,15 +1036,19 @@
       "customer": "Small US service businesses and contractors",
       "revenueModel": "Free single change order with PDF; paid tier for saved jobs, client sign-off links with a timestamped record and team use",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "validating",
       "score": 12,
       "url": null,
-      "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Overlaps work-order and rfi-log (same buyer); consider one product. The case must show pages we can rank against Housecall Pro, Smartsheet and template.net.",
+      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "updatedAt": "2026-11-27T21:29:24.957Z",
       "evidenceCount": 4,
       "specPath": null,
-      "lead": null,
+      "lead": {
+        "id": "lead-change-order",
+        "name": "Shaurya",
+        "color": "#35603A"
+      },
       "reviews": {
         "product": null,
         "engineer": null,
@@ -1064,15 +1068,19 @@
       "customer": "Small US service businesses and contractors",
       "revenueModel": "Free single work order with PDF; paid tier for saved jobs, customer signature links and several technicians",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "validating",
       "score": 12,
       "url": null,
-      "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Before a case: overlaps change-order and rfi-log (same small contractor buyer), so the CEO should consider one contractor paperwork product; the case must show long-tail pages we can rank (work order template is held by Jobber and template.net).",
+      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "updatedAt": "2026-11-27T21:29:24.957Z",
       "evidenceCount": 4,
       "specPath": null,
-      "lead": null,
+      "lead": {
+        "id": "lead-work-order",
+        "name": "Riya",
+        "color": "#8C4A2F"
+      },
       "reviews": {
         "product": null,
         "engineer": null,
@@ -1191,15 +1199,19 @@
       "customer": "US real estate agents and independent transaction coordinators handling a few deals a month",
       "revenueModel": "Free single transaction; paid tier for unlimited saved transactions, client and agent status links, reminders and team use",
       "priceINR": null,
-      "stage": "idea",
+      "stage": "validating",
       "score": 11,
       "url": null,
-      "nextAction": "Screen passed on 2026-11-27. Before a case: check the free-plan limits Paperless Pipeline names in its June 2026 free tools article and measure checklist search terms; Legal to confirm the tool only calculates dates the user enters.",
+      "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
       "metrics": null,
-      "updatedAt": "2026-11-27T21:28:43.704Z",
+      "updatedAt": "2026-11-27T21:29:24.957Z",
       "evidenceCount": 4,
       "specPath": null,
-      "lead": null,
+      "lead": {
+        "id": "lead-tc-desk",
+        "name": "Anika",
+        "color": "#5E3A87"
+      },
       "reviews": {
         "product": null,
         "engineer": null,
@@ -1351,6 +1363,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1362,16 +1378,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed.",
-      "since": "2026-11-21T17:27:34.916Z",
+      "state": "done",
+      "task": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
+      "since": "2026-11-27T21:29:29.365Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-21T17:26:42.852Z",
-        "action": "No-go on rent-ledger: case 16 of 35 (competitionGap 1, WTP 2, distribution 2), the paid tier is free on Baselane and Stessa, and sizing expects Rs 46,190 at 10% likelihood against a Rs 3,00,000 and 15% bar. Killed, lead freed."
+        "at": "2026-11-27T21:29:29.365Z",
+        "action": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer"
       },
-      "actions": 77
+      "actions": 78
     },
     {
       "id": "ops",
@@ -1676,6 +1692,57 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-change-order",
+      "name": "Shaurya",
+      "title": "Lead, Change Order Form",
+      "department": "pods",
+      "color": "#35603A",
+      "trait": "Picks one metric and moves it.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "change-order",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "lead-work-order",
+      "name": "Riya",
+      "title": "Lead, Work Order Maker",
+      "department": "pods",
+      "color": "#8C4A2F",
+      "trait": "Reads every support message twice.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "work-order",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
+    },
+    {
+      "id": "lead-tc-desk",
+      "name": "Anika",
+      "title": "Lead, Closing Desk",
+      "department": "pods",
+      "color": "#5E3A87",
+      "trait": "Makes the hard flow feel obvious.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "tc-desk",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -2458,6 +2525,13 @@
   },
   "log": [
     {
+      "at": "2026-11-27T21:29:29.365Z",
+      "agent": "ceo",
+      "action": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-27T21:28:53.968Z",
       "agent": "legal",
       "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
@@ -3009,14 +3083,7 @@
       "action": "No live ventures, no customer messages",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T10:12:45.349Z",
-      "agent": "finance",
-      "action": "Revenue confirmed Rs 0: no live product, no payment rail; fx unchanged (94.2754, 14 Nov, sourced)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 457
+  "logTotal": 458
 }

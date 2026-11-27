@@ -33,12 +33,16 @@
       "foundAt": "2026-11-27"
     }
   ],
-  "nextAction": "Screen passed on 2026-11-27. Ready for the CEO to staff. Before a case: overlaps change-order and rfi-log (same small contractor buyer), so the CEO should consider one contractor paperwork product; the case must show long-tail pages we can rank (work order template is held by Jobber and template.net).",
-  "lead": null,
-  "stage": "idea",
-  "stageSince": "2026-11-21T17:20:02.768Z",
+  "nextAction": "Lead gathers 3+ sourced demand signals, then Research writes the business case and Farhan sizes it",
+  "lead": {
+    "name": "Riya",
+    "color": "#8C4A2F",
+    "trait": "Reads every support message twice."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-27T21:29:24.957Z",
   "createdAt": "2026-11-21T17:20:02.768Z",
-  "updatedAt": "2026-11-27T21:28:43.704Z",
+  "updatedAt": "2026-11-27T21:29:24.957Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
