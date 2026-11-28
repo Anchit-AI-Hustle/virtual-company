@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T14:15:44.153Z",
+  "builtAt": "2026-11-28T15:12:34.246Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1610,16 +1610,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term",
-      "since": "2026-11-28T14:15:41.057Z",
+      "state": "done",
+      "task": "Standup 15:12 UTC: npm run check passes, health ok, 0 platform alerts, watchdog ran 15:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products",
+      "since": "2026-11-28T15:12:22.780Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T14:13:32.877Z",
-        "action": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term"
+        "at": "2026-11-28T15:12:22.780Z",
+        "action": "Standup 15:12 UTC: npm run check passes, health ok, 0 platform alerts, watchdog ran 15:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products"
       },
-      "actions": 124
+      "actions": 126
     },
     {
       "id": "research",
@@ -1762,16 +1762,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
-      "since": "2026-11-28T14:15:38.698Z",
+      "state": "done",
+      "task": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
+      "since": "2026-11-28T15:12:22.818Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T14:13:38.088Z",
-        "action": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC"
+        "at": "2026-11-28T15:12:22.818Z",
+        "action": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues"
       },
-      "actions": 66
+      "actions": 67
     },
     {
       "id": "security",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
-      "since": "2026-11-28T14:15:41.452Z",
+      "state": "done",
+      "task": "Secret scan of tracked files: no keys, tokens or private keys found",
+      "since": "2026-11-28T15:12:27.149Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T14:13:38.036Z",
-        "action": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files"
+        "at": "2026-11-28T15:12:27.149Z",
+        "action": "Secret scan of tracked files: no keys, tokens or private keys found"
       },
-      "actions": 57
+      "actions": 58
     },
     {
       "id": "growth",
@@ -1857,16 +1857,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "No live ventures, confirmed revenue still Rs 0 in ledger.json",
-      "since": "2026-11-28T14:15:38.874Z",
+      "state": "done",
+      "task": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
+      "since": "2026-11-28T15:12:27.199Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:12:54.965Z",
-        "action": "No live ventures, confirmed revenue still Rs 0 in ledger.json"
+        "at": "2026-11-28T15:12:27.199Z",
+        "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0"
       },
-      "actions": 33
+      "actions": 34
     },
     {
       "id": "legal",
@@ -2963,6 +2963,41 @@
   },
   "log": [
     {
+      "at": "2026-11-28T15:12:27.199Z",
+      "agent": "finance",
+      "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T15:12:27.149Z",
+      "agent": "security",
+      "action": "Secret scan of tracked files: no keys, tokens or private keys found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T15:12:22.818Z",
+      "agent": "devops",
+      "action": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T15:12:22.780Z",
+      "agent": "ops",
+      "action": "Standup 15:12 UTC: npm run check passes, health ok, 0 platform alerts, watchdog ran 15:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T15:12:22.738Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T14:15:33.558Z",
       "agent": "ceo",
       "action": "No pod staffed: 0 open ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass (volume tools reset by 22:14 UTC)",
@@ -3486,42 +3521,7 @@
       "action": "Failed the ceo review: No-go: case scores 18 of 35 against the 24 bar (competitionGap, speedToRevenue, recurringRevenue all 2). Spot checked 28 Nov 2026: Techpacker has no free plan, only a 7 day trial, and USD 35 a month billed yearly buys PLM collaboration, not a form (techpacker.com/pricing); AI Tech Packs sells no-subscription credits at USD 1 each with a standard pack at 20 credits, so buyers already get about USD 20 a pack with no monthly plan (aitechpacks.com/pricing). The buyers a free search tool reaches pay USD 8 to 12 once for a template and reuse it, well under Rs 500 a month; CLO-SET and template.net already serve the free intent; likely 90 day revenue about USD 24. Per-pack pivot clears the floor only at 4+ packs a year and meets the USD 20 incumbent, so no pivot.",
       "ventureId": "tech-pack",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:28:29.375Z",
-      "agent": "research",
-      "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent",
-      "ventureId": "tech-pack",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:24:33.624Z",
-      "agent": "lead-tech-pack",
-      "action": "Blocked: needs research, sizing, ceo: this session cannot launch subagents; business case (Meera, test per-pack vs Rs 500/mo), sizing (Farhan) and CEO go/no-go need launching from the main session",
-      "ventureId": "tech-pack",
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-28T07:24:12.246Z",
-      "agent": "lead-tech-pack",
-      "action": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly",
-      "ventureId": "tech-pack",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:23:06.765Z",
-      "agent": "lead-tech-pack",
-      "action": "Started: Validating: gathering 3+ sourced demand signals for tech pack tools and templates",
-      "ventureId": "tech-pack",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T07:22:35.976Z",
-      "agent": "ceo",
-      "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it",
-      "ventureId": "tech-pack",
-      "kind": "done"
     }
   ],
-  "logTotal": 670
+  "logTotal": 675
 }
