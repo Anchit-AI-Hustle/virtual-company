@@ -579,5 +579,26 @@
     "action": "Blocked: Cannot measure punch list, preventive maintenance or banquet event order: seodata.dev rate limited at 16:16 UTC after 2 lookups (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-28T17:13:36.880Z",
+    "agent": "research",
+    "action": "Started: Screen the 3 unmeasured terms: punch list, preventive maintenance checklist, banquet event order",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T17:13:36.920Z",
+    "agent": "research",
+    "action": "Screened 3 ideas (WebSearch page one 17:15 UTC; seodata.dev still rate limited, volume not measured), 0 passed: page one is vendors with free templates. Punch list template: procore.com/library/punch-list-template, safetyculture.com/checklists/punch-list-template, smartsheet.com/free-punch-list-templates, clickup.com, asana.com, atlassian.com, jotform.com, projectmanager.com, servicetitan.com. Preventive maintenance checklist: fiixsoftware.com, fleetio.com, safetyculture.com/checklists/preventive-maintenance, gofmx.com, ibm.com, template.net. Banquet event order template: tripleseat.com, perfectvenue.com, toasttab.com, touchbistro.com, typeform.com, roommaster.com. Not added as ideas",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-28T17:13:36.962Z",
+    "agent": "research",
+    "action": "Blocked: Cannot measure buyer search volume: seodata.dev rate limited at 17:15 UTC (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]
