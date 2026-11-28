@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T04:12:49.120Z",
+  "builtAt": "2026-11-28T04:13:02.891Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1480,16 +1480,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
+      "state": "done",
       "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T03:13:06.541Z",
+      "since": "2026-11-28T04:13:02.443Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T03:12:55.796Z",
+        "at": "2026-11-28T04:13:02.443Z",
         "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 95
+      "actions": 96
     },
     {
       "id": "ops",
@@ -1519,15 +1519,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 19 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "since": "2026-11-28T03:12:55.758Z",
+      "task": "Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "since": "2026-11-28T04:13:02.403Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-28T03:12:55.758Z",
-        "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 19 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
+        "at": "2026-11-28T04:13:02.403Z",
+        "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
       },
-      "actions": 91
+      "actions": 93
     },
     {
       "id": "data",
@@ -1651,16 +1651,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
+      "state": "done",
       "task": "HQ returns 200; no venture is live, so no product URL to check",
-      "since": "2026-11-28T03:13:06.576Z",
+      "since": "2026-11-28T04:13:02.234Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T03:12:55.591Z",
+        "at": "2026-11-28T04:13:02.234Z",
         "action": "HQ returns 200; no venture is live, so no product URL to check"
       },
-      "actions": 53
+      "actions": 55
     },
     {
       "id": "security",
@@ -1670,16 +1670,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
+      "state": "done",
       "task": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "since": "2026-11-28T03:13:06.613Z",
+      "since": "2026-11-28T04:13:02.320Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T03:12:55.679Z",
+        "at": "2026-11-28T04:13:02.320Z",
         "action": "Secret scan clean (no keys, tokens or private keys in tracked files)"
       },
-      "actions": 42
+      "actions": 44
     },
     {
       "id": "growth",
@@ -2731,6 +2731,55 @@
   },
   "log": [
     {
+      "at": "2026-11-28T04:13:02.443Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T04:13:02.403Z",
+      "agent": "research",
+      "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T04:13:02.363Z",
+      "agent": "research",
+      "action": "Started: Check whether search volume tools are back to screen a new batch",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T04:13:02.320Z",
+      "agent": "security",
+      "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T04:13:02.273Z",
+      "agent": "security",
+      "action": "Started: Scan repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T04:13:02.234Z",
+      "agent": "devops",
+      "action": "HQ returns 200; no venture is live, so no product URL to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T04:13:02.191Z",
+      "agent": "devops",
+      "action": "Started: Check live URLs",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T04:12:48.696Z",
       "agent": "ops",
       "action": "Standup 04:12 UTC: health ok, watchdog ran 03:59 UTC (success), no platform alerts, no owner-chat issue, no new comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas",
@@ -3240,56 +3289,7 @@
       "action": "No-go on work-order: case scores below the 24 of 35 bar with distribution 2; free tiers already cover the paid gap and page one is held by high authority vendors and template sites. Killed.",
       "ventureId": "work-order",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:47:25.463Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Nekst Solo Lite (https://nekst.com/pricing) gives 5 free transactions with deadline sync and client portals and ListedKit gives 1 free closing, covering a light agent. The legal limit (date arithmetic on user entered dates only, Texas TREC) removes the features buyers pay for. Winnable checklist searches total at most about 590 a month and deadline calculator searches are 0; a live search on 28 Nov 2026 confirmed page one is RealTrends, dotloop, Process Street, Paperless Pipeline, Transactly, ListedKit, DealTC and DocJacket. No sizing file exists. Spot-checked Nekst pricing and the checklist page one; they hold.",
-      "ventureId": "tc-desk",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:47:25.408Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 18 of 35 (bar 24), distribution 2, competitionGap 2. The no-account homeowner sign-off link is already sold by JustSignOff, AddWork (https://apps.apple.com/us/app/addwork/id6740415862), SteelHand and ChangeSeal with almost no traction, so contractors buy it inside suites. The 3,130 monthly searches are template and definition intent held by Smartsheet, Procore, Autodesk, Jotform, Typeform and Housecall Pro; buying intent searches are 20 to 90 a month. The trade-specific long tail pivot is unmeasured and unlikely to reach the 1,000 searches screen, so no pivot. No sizing file exists. Spot-checked the AddWork App Store listing; it holds.",
-      "ventureId": "change-order",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:47:25.337Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 19 of 35 (bar 24), distribution 2, competitionGap 2. Our paid tier (saved jobs, on-screen signature, several techs) is already free in capped form on ServiceM8 Free (https://www.servicem8.com/pricing) and Zoho FSM Free (https://www.zoho.com/fsm/pricing.html), and free on Formester and MaintainX. The 4,900 monthly searches are template downloads; a live search on 28 Nov 2026 confirmed page one is Adobe, HubSpot, SafetyCulture, DocuSign, Smartsheet, monday.com, Jobber, ClickUp and UpKeep. No sizing file exists, but it cannot clear the case bar either way. Spot-checked ServiceM8 pricing and free plan pages and the work order template page one; they hold.",
-      "ventureId": "work-order",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:45:53.655Z",
-      "agent": "research",
-      "action": "Business case written: Closing Desk 19 of 35, no-go, checklist searches small and crowded and free tiers cover light agents",
-      "ventureId": "tc-desk",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:45:32.412Z",
-      "agent": "research",
-      "action": "Business case written: change-order 18 of 35, no-go; paid sign-off apps show little traction and template searches are owned by Smartsheet, Procore, Jotform and Housecall Pro",
-      "ventureId": "change-order",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:40:40.620Z",
-      "agent": "research",
-      "action": "Business case written: work-order 19 of 35, no-go; page one held by Adobe, HubSpot, DocuSign and free ServiceM8 and Zoho FSM tiers already give signed work orders",
-      "ventureId": "work-order",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:39:20.695Z",
-      "agent": "research",
-      "action": "Started: Business case for work-order: reading competitors, search and page one",
-      "ventureId": "work-order",
-      "kind": "start"
     }
   ],
-  "logTotal": 549
+  "logTotal": 556
 }

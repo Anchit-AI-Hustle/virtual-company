@@ -1,6 +1,6 @@
 {
-  "state": "idle",
+  "state": "done",
   "task": "Secret scan clean (no keys, tokens or private keys in tracked files)",
   "ventureId": null,
-  "since": "2026-11-28T03:13:06.613Z"
+  "since": "2026-11-28T04:13:02.320Z"
 }
