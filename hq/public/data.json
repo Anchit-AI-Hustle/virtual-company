@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T13:34:29.036Z",
+  "builtAt": "2026-11-28T14:13:46.522Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1610,16 +1610,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Standup 13:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 13:00 UTC, no owner comments on decided issues 16, 18, 22, 0 active ventures; seodata.dev answers again at 13:13 UTC so Research resumes screening",
-      "since": "2026-11-28T13:34:25.779Z",
+      "state": "done",
+      "task": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term",
+      "since": "2026-11-28T14:13:32.877Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:12:50.736Z",
-        "action": "Standup 13:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 13:00 UTC, no owner comments on decided issues 16, 18, 22, 0 active ventures; seodata.dev answers again at 13:13 UTC so Research resumes screening"
+        "at": "2026-11-28T14:13:32.877Z",
+        "action": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term"
       },
-      "actions": 122
+      "actions": 124
     },
     {
       "id": "research",
@@ -1762,16 +1762,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Step 1: no live ventures to check; health.json ok since 09:00 UTC",
-      "since": "2026-11-28T13:34:26.135Z",
+      "state": "done",
+      "task": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
+      "since": "2026-11-28T14:13:38.088Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:12:54.919Z",
-        "action": "Step 1: no live ventures to check; health.json ok since 09:00 UTC"
+        "at": "2026-11-28T14:13:38.088Z",
+        "action": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC"
       },
-      "actions": 65
+      "actions": 66
     },
     {
       "id": "security",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-28T13:34:26.219Z",
+      "state": "done",
+      "task": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
+      "since": "2026-11-28T14:13:38.036Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:12:54.879Z",
-        "action": "Secret scan of the repo: no keys, tokens or private keys found"
+        "at": "2026-11-28T14:13:38.036Z",
+        "action": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files"
       },
-      "actions": 55
+      "actions": 57
     },
     {
       "id": "growth",
@@ -2963,6 +2963,41 @@
   },
   "log": [
     {
+      "at": "2026-11-28T14:13:38.088Z",
+      "agent": "devops",
+      "action": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T14:13:38.036Z",
+      "agent": "security",
+      "action": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T14:13:32.928Z",
+      "agent": "security",
+      "action": "Started: Scan the repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T14:13:32.877Z",
+      "agent": "ops",
+      "action": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T14:12:17.712Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T13:34:25.606Z",
       "agent": "ceo",
       "action": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner",
@@ -3486,42 +3521,7 @@
       "action": "0 live ventures, no messages to handle",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:12.287Z",
-      "agent": "finance",
-      "action": "Revenue confirmed Rs 0 (ledger has no payments); no live product",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:12.239Z",
-      "agent": "data",
-      "action": "0 live ventures, no counts to read",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:12.191Z",
-      "agent": "security",
-      "action": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:08.031Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T07:13:07.996Z",
-      "agent": "devops",
-      "action": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 661
+  "logTotal": 666
 }
