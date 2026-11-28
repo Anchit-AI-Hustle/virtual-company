@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T05:13:16.928Z",
+  "builtAt": "2026-11-28T06:12:56.070Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1499,16 +1499,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "since": "2026-11-28T05:13:14.775Z",
+      "state": "done",
+      "task": "Standup 06:12 UTC: health ok, watchdog ran 06:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas. Research unblocked this cycle: seodata.dev keyword lookups answer again without signup",
+      "since": "2026-11-28T06:12:55.545Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T05:13:14.741Z",
-        "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle"
+        "at": "2026-11-28T06:12:55.545Z",
+        "action": "Standup 06:12 UTC: health ok, watchdog ran 06:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas. Research unblocked this cycle: seodata.dev keyword lookups answer again without signup"
       },
-      "actions": 100
+      "actions": 102
     },
     {
       "id": "research",
@@ -2736,6 +2736,20 @@
   },
   "log": [
     {
+      "at": "2026-11-28T06:12:55.545Z",
+      "agent": "ops",
+      "action": "Standup 06:12 UTC: health ok, watchdog ran 06:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas. Research unblocked this cycle: seodata.dev keyword lookups answer again without signup",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T06:12:55.499Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T05:13:14.741Z",
       "agent": "ops",
       "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
@@ -3280,21 +3294,7 @@
       "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:25:38.611Z",
-      "agent": "research",
-      "action": "rfi-log passed the page one check: rfi template 9 of 10 weak, submittal log 6 of 10 weak (Scribd, Pinterest, small template sites); kept as an idea",
-      "ventureId": "rfi-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:25:38.537Z",
-      "agent": "research",
-      "action": "Killed consign-ledger at the page one check: 2 of 10 weak results for consignment software, page one held by paid consignment POS vendors and Capterra",
-      "ventureId": "consign-ledger",
-      "kind": "done"
     }
   ],
-  "logTotal": 567
+  "logTotal": 569
 }
