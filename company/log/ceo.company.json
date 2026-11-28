@@ -417,5 +417,19 @@
     "action": "Keep pods empty: 0 open ideas pass the screen (ap-company-7 page one check); Research retries after Firecrawl credits return about 22:14 UTC",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T19:13:12.647Z",
+    "agent": "ceo",
+    "action": "Started: Decide whether to staff a pod",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T19:13:12.688Z",
+    "agent": "ceo",
+    "action": "Keep pods empty: 0 open ideas pass config.ideaScreen (volume unmeasured); tiffin service management is queued for volume measurement after Firecrawl credits return about 22:14 UTC; ap-company-6 (issue 21) still the open ask, no owner comment, no new decision needed",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
