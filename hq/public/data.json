@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T16:12:32.136Z",
+  "builtAt": "2026-11-28T16:13:25.340Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,16 +1591,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No pod staffed: 0 of 13 newly screened ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
-      "since": "2026-11-28T15:15:00.808Z",
+      "state": "done",
+      "task": "No pod staffed: 0 open ideas, 0 of 2 newly screened ideas pass config.ideaScreen (page one held by vendors); pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
+      "since": "2026-11-28T16:13:23.200Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T15:14:48.880Z",
-        "action": "No pod staffed: 0 of 13 newly screened ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed"
+        "at": "2026-11-28T16:13:23.200Z",
+        "action": "No pod staffed: 0 open ideas, 0 of 2 newly screened ideas pass config.ideaScreen (page one held by vendors); pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed"
       },
-      "actions": 115
+      "actions": 116
     },
     {
       "id": "ops",
@@ -1630,15 +1630,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Cannot finish the batch: seodata.dev rate limited at 15:14 UTC and Firecrawl out of credits until about 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
-      "since": "2026-11-28T15:14:48.847Z",
+      "task": "Cannot measure punch list, preventive maintenance or banquet event order: seodata.dev rate limited at 16:16 UTC after 2 lookups (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
+      "since": "2026-11-28T16:13:23.160Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T15:14:48.847Z",
-        "action": "Blocked: Cannot finish the batch: seodata.dev rate limited at 15:14 UTC and Firecrawl out of credits until about 22:14 UTC; no other sourced search volume tool usable without the owner's accounts"
+        "at": "2026-11-28T16:13:23.160Z",
+        "action": "Blocked: Cannot measure punch list, preventive maintenance or banquet event order: seodata.dev rate limited at 16:16 UTC after 2 lookups (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC"
       },
-      "actions": 117
+      "actions": 120
     },
     {
       "id": "data",
@@ -2963,6 +2963,34 @@
   },
   "log": [
     {
+      "at": "2026-11-28T16:13:23.200Z",
+      "agent": "ceo",
+      "action": "No pod staffed: 0 open ideas, 0 of 2 newly screened ideas pass config.ideaScreen (page one held by vendors); pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T16:13:23.160Z",
+      "agent": "research",
+      "action": "Blocked: Cannot measure punch list, preventive maintenance or banquet event order: seodata.dev rate limited at 16:16 UTC after 2 lookups (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T16:13:23.121Z",
+      "agent": "research",
+      "action": "Screened 2 ideas (seodata.dev US 16:15 UTC, WebSearch page one), 0 passed. Call sheets for film shoots: call sheet template 2,900 and call sheet template word 3,600 a month (api.seodata.dev/v1/keyword?q=call+sheet+template&country=us), but page one is vendors and media: studiobinder.com/sample-call-sheet-templates, boords.com/call-sheet-template, wrapbook.com/resources/call-sheet-template, soundstripe.com, nofilmschool.com, premiumbeat.com, backstage.com; weak only business-in-a-box.com and a SetHero post on medium.com, 2 of 11. Run of show for events: run of show template 1,900, run of show templates 2,400 (seodata.dev), but page one is event vendors with free templates or free plans: craft.do/templates/run-of-show, nunify.com, sessionboard.com, hi.events/run-of-show-template, rundownstudio.app/templates, rundown.pro/run-of-show-template, vfairs.com, expopass.com; weak only eventplanning.com and myvenuehq.com, 2 of 10. Not added as ideas",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T16:13:23.069Z",
+      "agent": "research",
+      "action": "Started: Screen the unmeasured terms from 15:14 UTC: run of show, call sheet, punch list, preventive maintenance, banquet event order",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T16:12:31.678Z",
       "agent": "security",
       "action": "Secret scan 16:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
@@ -3493,35 +3521,7 @@
       "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo",
       "ventureId": "temp-log",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:22:33.501Z",
-      "agent": "lead-temp-log",
-      "action": "Started: Validating: gathering sourced demand evidence and checking TempLogs, Temkeep, GoTemp and other free apps",
-      "ventureId": "temp-log",
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T08:22:02.522Z",
-      "agent": "ceo",
-      "action": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed",
-      "ventureId": "temp-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:22:02.477Z",
-      "agent": "legal",
-      "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:22:02.408Z",
-      "agent": "research",
-      "action": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 685
+  "logTotal": 689
 }

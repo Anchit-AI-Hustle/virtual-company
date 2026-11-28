@@ -396,5 +396,12 @@
     "action": "No pod staffed: 0 of 13 newly screened ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T16:13:23.200Z",
+    "agent": "ceo",
+    "action": "No pod staffed: 0 open ideas, 0 of 2 newly screened ideas pass config.ideaScreen (page one held by vendors); pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
