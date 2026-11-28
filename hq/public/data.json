@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:13:12.738Z",
+  "builtAt": "2026-11-28T07:22:38.523Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -437,6 +437,38 @@
     }
   ],
   "ventures": [
+    {
+      "id": "tech-pack",
+      "title": "Tech Pack Builder",
+      "oneLiner": "Free in-browser tech pack builder for small clothing brands: style info, flat sketch upload, measurement spec table with size grading, bill of materials, construction notes and colourways, exported as a factory-ready PDF with no signup",
+      "customer": "Independent and first-time apparel brands, freelance fashion designers and small private-label sellers (US, UK and India) who send tech packs to manufacturers",
+      "revenueModel": "Free: one complete tech pack printed to PDF, no account. Paid tier (price to be tested in the case, monthly against one-time or per pack): saved style library, auto-grading, BOM cost roll-up, templates, share link for factories",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 15,
+      "url": null,
+      "nextAction": "Lead Mahi gathers 3 or more sourced demand signals, then Research writes cases/tech-pack.md testing a one-time or per-pack price against the Rs 500 a month floor, and reruns the page one count on Firecrawl after 22:14 UTC",
+      "metrics": {},
+      "updatedAt": "2026-11-28T07:22:31.615Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": {
+        "id": "lead-tech-pack",
+        "name": "Mahi",
+        "color": "#946200"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
     {
       "id": "bake-cost",
       "title": "Bake Cost",
@@ -1506,6 +1538,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1517,16 +1553,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher.",
-      "since": "2026-11-28T06:29:29.158Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it",
+      "since": "2026-11-28T07:22:35.976Z",
+      "ventureId": "tech-pack",
+      "ventureTitle": "Tech Pack Builder",
       "last": {
-        "at": "2026-11-28T06:28:50.286Z",
-        "action": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher."
+        "at": "2026-11-28T07:22:35.976Z",
+        "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it"
       },
-      "actions": 100
+      "actions": 102
     },
     {
       "id": "ops",
@@ -1555,16 +1591,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
-      "since": "2026-11-28T06:29:29.371Z",
+      "state": "done",
+      "task": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job",
+      "since": "2026-11-28T07:22:31.568Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T06:27:43.879Z",
-        "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers"
+        "at": "2026-11-28T07:22:31.568Z",
+        "action": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job"
       },
-      "actions": 98
+      "actions": 100
     },
     {
       "id": "data",
@@ -1831,6 +1867,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-tech-pack",
+      "name": "Mahi",
+      "title": "Lead, Tech Pack Builder",
+      "department": "pods",
+      "color": "#946200",
+      "trait": "Prices with proof from the market.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "tech-pack",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -2775,6 +2828,13 @@
         "action": "Started: Gathering independent demand signals for Closing Desk"
       }
     ],
+    "tech-pack": [
+      {
+        "at": "2026-11-28T07:22:35.976Z",
+        "agent": "ceo",
+        "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it"
+      }
+    ],
     "work-order": [
       {
         "at": "2026-11-27T21:47:37.495Z",
@@ -2814,6 +2874,34 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T07:22:35.976Z",
+      "agent": "ceo",
+      "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it",
+      "ventureId": "tech-pack",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:22:31.568Z",
+      "agent": "research",
+      "action": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:32.176Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T07:13:32.139Z",
+      "agent": "ceo",
+      "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T07:13:12.339Z",
       "agent": "support",
@@ -3345,35 +3433,7 @@
       "action": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:08.086Z",
-      "agent": "ops",
-      "action": "Standup 00:12 UTC: health ok, watchdog ran 23:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:08.044Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-27T23:13:43.985Z",
-      "agent": "ops",
-      "action": "Close the day: lights on, Research blocked on search volume credits (Firecrawl refresh in about 23 hours), 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:13:34.967Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 587
+  "logTotal": 591
 }

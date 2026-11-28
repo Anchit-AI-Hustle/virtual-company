@@ -1,0 +1,59 @@
+{
+  "id": "tech-pack",
+  "title": "Tech Pack Builder",
+  "oneLiner": "Free in-browser tech pack builder for small clothing brands: style info, flat sketch upload, measurement spec table with size grading, bill of materials, construction notes and colourways, exported as a factory-ready PDF with no signup",
+  "customer": "Independent and first-time apparel brands, freelance fashion designers and small private-label sellers (US, UK and India) who send tech packs to manufacturers",
+  "revenueModel": "Free: one complete tech pack printed to PDF, no account. Paid tier (price to be tested in the case, monthly against one-time or per pack): saved style library, auto-grading, BOM cost roll-up, templates, share link for factories",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 4,
+    "total": 15
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "Techpacker Techpack Builder plan, USD 35 per user per month billed yearly; AI Tech Packs Starter USD 50 a month. About Rs 3,300 a month at about 94.3 INR per USD",
+      "inrMonthly": 3300,
+      "source": "https://techpacker.com/pricing"
+    },
+    "searches": {
+      "terms": {
+        "tech pack template": 2400,
+        "tech pack": 5400,
+        "free tech pack template": 590,
+        "tech pack template (IN)": 720
+      },
+      "monthly": 2400,
+      "source": "https://api.seodata.dev/v1/keyword?q=tech%20pack%20template&country=us",
+      "note": "seodata.dev, read 2026-11-28. Only the head buyer term is counted; tech pack templates (1,900) shares its group; tech pack (5,400) is broader and partly informational; tech pack maker and tech pack software are 90 each, so buyers search for the template, not the software. Also https://aitechpacks.com/pricing for the second paid price."
+    },
+    "freeGap": "Free options are static files or account-locked: PDF, Excel and Illustrator downloads (bommestudio.com/free-tech-pack-template, collectivestudioltd.com/resources/tech-pack-template, aitechpacks.com/blog/fashion-tech-pack-template, techpacktemplates.com) that do not grade sizes or export a filled pack; template.net/edit-online/518489/tech-pack is a generic editor with accounts and a Pro tier; sewport.com/tech-pack needs an account; Techpacker is a 7 day trial with no free plan (techpacker.com/pricing). Gap: no free, no-signup tool on page one builds a structured tech pack (spec table with grading, BOM, sketch, callouts) and exports a PDF. Risk: small brands need few packs a year, so a monthly price may convert poorly.",
+    "serp": {
+      "terms": [
+        "tech pack template",
+        "tech pack"
+      ],
+      "weakResults": 5,
+      "ofTop": 10,
+      "notes": "tech pack template (WebSearch standard): 10 of 10 weak (template.net, university and spam mirrors, slideshare, techpacks.squarespace.com, makeitbritish.co.uk, payhip.com). Same term (WebSearch extended): 8 of 10 weak (techpacktemplates.com, collectivestudioltd.com, madeapt.com, tchpack.com, amylynnsdesign.com, fibr.online, studio.graphtick.com, fupstudio.gumroad.com; vendors skema3d.com and aitechpacks.com). tech pack (WebSearch standard): about 5 of 10 weak (fridaythread.substack.com twice, makeitbritish.co.uk, racklify.com, a producthunt collection; vendor blogs worldfashionexchange.com, gembah.com, portless.com). No Canva, Smartsheet, SafetyCulture or Jotform on page one. Weaker count 5 of 10. Firecrawl search was out of credits on 28 Nov, so the second source is WebSearch extended; Firecrawl recheck due after 22:14 UTC before the case is decided.",
+      "source": "WebSearch standard and extended, 2026-11-28"
+    }
+  },
+  "legal": "Legal (Vikram) screen: clean. B2B apparel production documents, no regulated category, nothing aimed at children, no brand copying, no compliance or legal promises",
+  "evidence": [],
+  "nextAction": "Lead Mahi gathers 3 or more sourced demand signals, then Research writes cases/tech-pack.md testing a one-time or per-pack price against the Rs 500 a month floor, and reruns the page one count on Firecrawl after 22:14 UTC",
+  "lead": {
+    "name": "Mahi",
+    "color": "#946200",
+    "trait": "Prices with proof from the market."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-28T07:22:31.615Z",
+  "createdAt": "2026-11-28T07:22:31.615Z",
+  "updatedAt": "2026-11-28T07:22:31.615Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": {}
+}

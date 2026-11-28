@@ -446,5 +446,19 @@
     "action": "Started: Check whether search volume tools are back to screen a new batch",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-28T07:13:32.176Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T07:22:31.568Z",
+    "agent": "research",
+    "action": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
