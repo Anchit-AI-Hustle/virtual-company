@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T06:14:50.418Z",
+  "builtAt": "2026-11-28T06:23:05.177Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -956,13 +956,13 @@
       "customer": "US employers with 11 to 250 staff who must keep OSHA injury and illness records (construction, manufacturing, warehousing, healthcare, retail) and keep them in PDFs or spreadsheets today",
       "revenueModel": "Free log for one establishment; paid tier for several establishments, team access, multi-year history and import of old logs",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "validated",
       "score": 13,
       "url": null,
-      "nextAction": "Veer validates: find 3 or more sourced signals that small employers pay for or actively seek an online OSHA 300 log, and price the paid rivals from their own pages.",
+      "nextAction": "Research writes cases/osha-log.md and Farhan sizes it; then the CEO decides go or no-go. Evidence against, checked on vendors own pages 2026-11-28: (1) IncidentLog has a free version that makes 300, 300A and 301 PDFs (AlternativeTo listing), but its own site incidentlog.com now only redirects to a /lander parking page, so its free limits and ITA CSV could not be verified; Research should re-check. (2) SafetyCulture rebranded to Mitti; its OSHA 300 log and OSHA recordkeeping software pages now redirect to a not-found route, and its free plan is generic checklists for up to 10 users, with no 300A totals or ITA CSV shown. (3) Paperform OSHA 300 template is free but is an intake form with day counters, not a kept log with 300A totals, 301 or ITA CSV. (4) OSHA 300 Cloud is paid (USD 99 a year), not free. (5) Official OSHA PDF and Excel forms and LogStead free auto-totaling workbook remain free file options that may satisfy the smallest employers. Weak spots: no forum or Reddit threads of buyers asking were found by WebSearch; SiteSafety HQ shows 0 reviews; most paid rivals are small or new, so paid demand is shown by price pages, not by review counts. Pages that blocked reads: slashdot.org, busybusy.com (Cloudflare), goodfirms.co, saashub.com.",
       "metrics": null,
-      "updatedAt": "2026-11-28T06:14:43.909Z",
-      "evidenceCount": 1,
+      "updatedAt": "2026-11-28T06:22:49.221Z",
+      "evidenceCount": 6,
       "specPath": null,
       "lead": {
         "id": "lead-osha-log",
@@ -1840,13 +1840,16 @@
       "trait": "Cuts features without regret.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "osha-log",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found.",
+      "since": "2026-11-28T06:22:54.721Z",
+      "ventureId": "osha-log",
+      "ventureTitle": "OSHA Log",
+      "last": {
+        "at": "2026-11-28T06:22:54.721Z",
+        "action": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found."
+      },
+      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2278,6 +2281,16 @@
       }
     ],
     "osha-log": [
+      {
+        "at": "2026-11-28T06:22:54.721Z",
+        "agent": "lead-osha-log",
+        "action": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found."
+      },
+      {
+        "at": "2026-11-28T06:15:16.541Z",
+        "agent": "lead-osha-log",
+        "action": "Started: Validating osha-log: gathering sourced demand evidence and free rival checks"
+      },
       {
         "at": "2026-11-28T06:14:49.784Z",
         "agent": "ceo",
@@ -2800,6 +2813,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T06:22:54.721Z",
+      "agent": "lead-osha-log",
+      "action": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found.",
+      "ventureId": "osha-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T06:15:16.541Z",
+      "agent": "lead-osha-log",
+      "action": "Started: Validating osha-log: gathering sourced demand evidence and free rival checks",
+      "ventureId": "osha-log",
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T06:14:49.784Z",
       "agent": "ceo",
@@ -3345,21 +3372,7 @@
       "action": "Started: Business case for rfi-log",
       "ventureId": "rfi-log",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-27T22:28:10.856Z",
-      "agent": "lead-rfi-log",
-      "action": "rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit); WebSearch shows rfi template page one held by big brands",
-      "ventureId": "rfi-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:26:48.828Z",
-      "agent": "lead-rfi-log",
-      "action": "Started: Validating rfi-log: gathering sourced demand evidence",
-      "ventureId": "rfi-log",
-      "kind": "start"
     }
   ],
-  "logTotal": 571
+  "logTotal": 573
 }

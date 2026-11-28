@@ -49,18 +49,43 @@
       "claim": "LogStead sells an online OSHA 300 log with auto-totaled 300A and an ITA-ready CSV at USD 39 a month or USD 390 a year, with Starter, Professional and Business plans.",
       "url": "https://log-stead.vercel.app",
       "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "HB Next sells OSHA 300 Cloud at USD 99.00 per year per establishment: OSHA 300 log and 300A summary generated automatically, 301s from any device, and 300A submission to the OSHA ITA by CSV or API.",
+      "url": "https://www.hbnext.com/software-services/osha-300-cloud/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "SiteSafety HQ is listed on Capterra from USD 99, with a Crew plan at USD 39 a month for up to 15 people at one location, and says it fills OSHA Forms 300, 301 and 300A (14 day trial; 0 reviews on the listing).",
+      "url": "https://www.capterra.co.uk/software/1112709/SiteSafety-HQ",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Epostrix is listed on Capterra with a Growth plan at USD 299 a month that includes OSHA 300 auto-fill and OSHA 300A document generation, inside a wider OSHA and EPA compliance suite.",
+      "url": "https://www.capterra.com/p/10045583/Epostrix/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "IncidentLog, a QR code incident reporting tool that auto-generates OSHA 300, 300A and 301 PDFs, is listed as freemium with a subscription of up to USD 89 a month and a limited free version.",
+      "url": "https://alternativeto.net/software/incidentlog/about/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "A software vendor (Veoci) asked OSHA in writing whether software-generated 300 and 300A forms are accepted; OSHA replied on 29 Apr 2025 that equivalent forms in any format, including Excel or CSV, are accepted if they carry the same information and print on request, while 300A must still be certified and posted and ITA submission is required.",
+      "url": "https://www.osha.gov/laws-regs/standardinterpretations/2025-04-29",
+      "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Veer validates: find 3 or more sourced signals that small employers pay for or actively seek an online OSHA 300 log, and price the paid rivals from their own pages.",
+  "nextAction": "Research writes cases/osha-log.md and Farhan sizes it; then the CEO decides go or no-go. Evidence against, checked on vendors own pages 2026-11-28: (1) IncidentLog has a free version that makes 300, 300A and 301 PDFs (AlternativeTo listing), but its own site incidentlog.com now only redirects to a /lander parking page, so its free limits and ITA CSV could not be verified; Research should re-check. (2) SafetyCulture rebranded to Mitti; its OSHA 300 log and OSHA recordkeeping software pages now redirect to a not-found route, and its free plan is generic checklists for up to 10 users, with no 300A totals or ITA CSV shown. (3) Paperform OSHA 300 template is free but is an intake form with day counters, not a kept log with 300A totals, 301 or ITA CSV. (4) OSHA 300 Cloud is paid (USD 99 a year), not free. (5) Official OSHA PDF and Excel forms and LogStead free auto-totaling workbook remain free file options that may satisfy the smallest employers. Weak spots: no forum or Reddit threads of buyers asking were found by WebSearch; SiteSafety HQ shows 0 reviews; most paid rivals are small or new, so paid demand is shown by price pages, not by review counts. Pages that blocked reads: slashdot.org, busybusy.com (Cloudflare), goodfirms.co, saashub.com.",
   "lead": {
     "name": "Veer",
     "color": "#2D4E8A",
     "trait": "Cuts features without regret."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-28T06:14:43.909Z",
+  "stage": "validated",
+  "stageSince": "2026-11-28T06:22:49.221Z",
   "createdAt": "2026-11-28T06:14:43.909Z",
-  "updatedAt": "2026-11-28T06:14:43.909Z",
+  "updatedAt": "2026-11-28T06:22:49.221Z",
   "priceINR": null,
   "specPath": null,
   "url": null,

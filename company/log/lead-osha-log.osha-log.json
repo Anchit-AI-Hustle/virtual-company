@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-28T06:15:16.541Z",
+    "agent": "lead-osha-log",
+    "action": "Started: Validating osha-log: gathering sourced demand evidence and free rival checks",
+    "ventureId": "osha-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T06:22:54.721Z",
+    "agent": "lead-osha-log",
+    "action": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found.",
+    "ventureId": "osha-log",
+    "kind": "done"
+  }
+]
