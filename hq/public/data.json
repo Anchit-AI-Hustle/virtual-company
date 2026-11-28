@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T18:13:17.372Z",
+  "builtAt": "2026-11-28T18:13:28.643Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,9 +1591,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Keep pods empty: 0 open ideas pass the screen (ap-company-7 page one check); Research retries after Firecrawl credits return about 22:14 UTC",
-      "since": "2026-11-28T18:13:14.933Z",
+      "since": "2026-11-28T18:13:25.802Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1611,15 +1611,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Standup 18:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 18:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research screens fresh terms for the empty pipeline",
-      "since": "2026-11-28T18:12:26.212Z",
+      "task": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
+      "since": "2026-11-28T18:13:26.188Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T18:12:26.212Z",
-        "action": "Standup 18:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 18:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research screens fresh terms for the empty pipeline"
+        "at": "2026-11-28T18:13:26.188Z",
+        "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)"
       },
-      "actions": 135
+      "actions": 136
     },
     {
       "id": "research",
@@ -1650,7 +1650,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "0 live ventures, no counts to read",
-      "since": "2026-11-28T17:13:48.087Z",
+      "since": "2026-11-28T18:13:25.944Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1762,9 +1762,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Lights on: 0 live products to check, health.json ok since 09:00 UTC",
-      "since": "2026-11-28T18:12:26.263Z",
+      "since": "2026-11-28T18:13:25.848Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1783,7 +1783,7 @@
       "charter": "agents/security.md",
       "state": "idle",
       "task": "Secret scan 17:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
-      "since": "2026-11-28T17:13:48.353Z",
+      "since": "2026-11-28T18:13:25.896Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1802,7 +1802,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "No live products and no open owner-chat issue: no growth work this cycle",
-      "since": "2026-11-28T17:13:48.400Z",
+      "since": "2026-11-28T18:13:26.079Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1821,7 +1821,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-28T17:13:48.441Z",
+      "since": "2026-11-28T18:13:26.130Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1840,7 +1840,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live venture, no customer messages to handle",
-      "since": "2026-11-28T17:13:48.484Z",
+      "since": "2026-11-28T18:13:26.031Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1859,7 +1859,7 @@
       "charter": "agents/finance.md",
       "state": "idle",
       "task": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
-      "since": "2026-11-28T17:13:48.521Z",
+      "since": "2026-11-28T18:13:25.986Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2963,6 +2963,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T18:13:26.188Z",
+      "agent": "ops",
+      "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T18:13:14.933Z",
       "agent": "ceo",
       "action": "Keep pods empty: 0 open ideas pass the screen (ap-company-7 page one check); Research retries after Firecrawl credits return about 22:14 UTC",
@@ -3514,14 +3521,7 @@
       "action": "Secret scan of the repo: no keys or tokens found",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T10:12:05.110Z",
-      "agent": "devops",
-      "action": "Health check: health.json ok, 0 platform alerts, watchdog last ran 10:00 UTC, no live products to check",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 710
+  "logTotal": 711
 }
