@@ -87,7 +87,7 @@
   "stage": "validated",
   "stageSince": "2026-11-28T07:24:01.282Z",
   "createdAt": "2026-11-28T07:22:31.615Z",
-  "updatedAt": "2026-11-28T07:24:01.282Z",
+  "updatedAt": "2026-11-28T07:28:29.350Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -96,5 +96,19 @@
     "Etsy templates sell at USD 8 to 17 one-time, so many buyers expect a one-off price far below Rs 500 a month (https://www.etsy.com/listing/1698863971).",
     "AI Tech Packs already offers no-subscription per-pack credits at about USD 20 a pack, which suggests buyers who need few packs a year resist monthly plans (https://aitechpacks.com/pricing).",
     "Fiverr designers at USD 60 to 150 a garment compete for the brand that would rather outsource than fill a form (https://fiverr.com/oti_will/create-a-professional-clothing-tech-pack-for-manufacturing)."
-  ]
+  ],
+  "case": {
+    "path": "cases/tech-pack.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 3,
+      "distribution": 3,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 2
+    },
+    "total": 18,
+    "recommendation": "no-go"
+  }
 }

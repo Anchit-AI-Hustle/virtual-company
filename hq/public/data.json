@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:24:34.047Z",
+  "builtAt": "2026-11-28T07:28:38.126Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -449,7 +449,7 @@
       "url": null,
       "nextAction": "Research (Meera) writes cases/tech-pack.md and must test a one-time or per-pack price (Etsy USD 8 to 17, AI Tech Packs about USD 20 a pack, Fiverr USD 60 to 150 a garment) against the Rs 500 a month floor, and rerun the page one count on Firecrawl after 22:14 UTC; then sizing (Farhan) and the CEO go or no-go.",
       "metrics": {},
-      "updatedAt": "2026-11-28T07:24:01.282Z",
+      "updatedAt": "2026-11-28T07:28:29.350Z",
       "evidenceCount": 7,
       "specPath": null,
       "lead": {
@@ -467,7 +467,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/tech-pack.md",
+        "total": 18,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "bake-cost",
@@ -1592,15 +1596,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job",
-      "since": "2026-11-28T07:22:31.568Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent",
+      "since": "2026-11-28T07:28:29.375Z",
+      "ventureId": "tech-pack",
+      "ventureTitle": "Tech Pack Builder",
       "last": {
-        "at": "2026-11-28T07:22:31.568Z",
-        "action": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job"
+        "at": "2026-11-28T07:28:29.375Z",
+        "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent"
       },
-      "actions": 100
+      "actions": 101
     },
     {
       "id": "data",
@@ -2833,6 +2837,11 @@
     ],
     "tech-pack": [
       {
+        "at": "2026-11-28T07:28:29.375Z",
+        "agent": "research",
+        "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent"
+      },
+      {
         "at": "2026-11-28T07:24:33.624Z",
         "agent": "lead-tech-pack",
         "action": "Blocked: needs research, sizing, ceo: this session cannot launch subagents; business case (Meera, test per-pack vs Rs 500/mo), sizing (Farhan) and CEO go/no-go need launching from the main session"
@@ -2892,6 +2901,13 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T07:28:29.375Z",
+      "agent": "research",
+      "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent",
+      "ventureId": "tech-pack",
+      "kind": "done"
+    },
     {
       "at": "2026-11-28T07:24:33.624Z",
       "agent": "lead-tech-pack",
@@ -3444,14 +3460,7 @@
       "action": "Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then",
       "ventureId": null,
       "kind": "blocked"
-    },
-    {
-      "at": "2026-11-28T00:12:51.563Z",
-      "agent": "research",
-      "action": "Started: Check whether search volume tools are back to screen a new batch",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 594
+  "logTotal": 595
 }
