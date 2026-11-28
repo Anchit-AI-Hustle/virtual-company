@@ -348,5 +348,12 @@
     "action": "Secret scan clean: no keys or tokens in tracked files",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T12:13:15.545Z",
+    "agent": "security",
+    "action": "Secret scan of tracked files: no keys or tokens found",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

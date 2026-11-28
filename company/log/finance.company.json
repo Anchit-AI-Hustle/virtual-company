@@ -215,5 +215,12 @@
     "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T12:13:15.579Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

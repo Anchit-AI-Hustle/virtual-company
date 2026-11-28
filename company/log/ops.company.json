@@ -817,5 +817,19 @@
     "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 pods, Rs 0 revenue; agents idle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T12:13:15.435Z",
+    "agent": "ops",
+    "action": "Started: Standup 12:12 UTC: 0 active ventures, research blocked on search volume tools until about 22:14 UTC",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T12:13:15.472Z",
+    "agent": "ops",
+    "action": "Standup 12:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 12:00 UTC, no owner comments on issues 16, 18, 21, 22",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
