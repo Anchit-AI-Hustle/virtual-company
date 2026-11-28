@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:12:55.125Z",
+  "builtAt": "2026-11-28T07:13:12.738Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1574,16 +1574,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
-      "task": "No live venture, so no counts to read",
-      "since": "2026-11-28T06:29:29.455Z",
+      "state": "done",
+      "task": "0 live ventures, no counts to read",
+      "since": "2026-11-28T07:13:12.239Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:31.428Z",
-        "action": "No live venture, so no counts to read"
+        "at": "2026-11-28T07:13:12.239Z",
+        "action": "0 live ventures, no counts to read"
       },
-      "actions": 15
+      "actions": 16
     },
     {
       "id": "sizing",
@@ -1688,16 +1688,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "HQ returns 200; no venture is live, so no product URL to check",
-      "since": "2026-11-28T06:29:29.917Z",
+      "state": "done",
+      "task": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
+      "since": "2026-11-28T07:13:07.996Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T05:13:02.082Z",
-        "action": "HQ returns 200; no venture is live, so no product URL to check"
+        "at": "2026-11-28T07:13:07.996Z",
+        "action": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check"
       },
-      "actions": 57
+      "actions": 59
     },
     {
       "id": "security",
@@ -1707,16 +1707,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "since": "2026-11-28T06:29:29.985Z",
+      "state": "done",
+      "task": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files",
+      "since": "2026-11-28T07:13:12.191Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T05:13:02.152Z",
-        "action": "Secret scan clean (no keys, tokens or private keys in tracked files)"
+        "at": "2026-11-28T07:13:12.191Z",
+        "action": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files"
       },
-      "actions": 46
+      "actions": 48
     },
     {
       "id": "growth",
@@ -1764,16 +1764,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No live venture and no open owner-chat issue, so no messages to handle",
-      "since": "2026-11-28T06:29:30.233Z",
+      "state": "done",
+      "task": "0 live ventures, no messages to handle",
+      "since": "2026-11-28T07:13:12.339Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:13:31.469Z",
-        "action": "No live venture and no open owner-chat issue, so no messages to handle"
+        "at": "2026-11-28T07:13:12.339Z",
+        "action": "0 live ventures, no messages to handle"
       },
-      "actions": 14
+      "actions": 15
     },
     {
       "id": "finance",
@@ -1783,16 +1783,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
-      "since": "2026-11-28T06:29:30.308Z",
+      "state": "done",
+      "task": "Revenue confirmed Rs 0 (ledger has no payments); no live product",
+      "since": "2026-11-28T07:13:12.287Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T00:12:51.515Z",
-        "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend"
+        "at": "2026-11-28T07:13:12.287Z",
+        "action": "Revenue confirmed Rs 0 (ledger has no payments); no live product"
       },
-      "actions": 27
+      "actions": 28
     },
     {
       "id": "legal",
@@ -2815,6 +2815,55 @@
   },
   "log": [
     {
+      "at": "2026-11-28T07:13:12.339Z",
+      "agent": "support",
+      "action": "0 live ventures, no messages to handle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:12.287Z",
+      "agent": "finance",
+      "action": "Revenue confirmed Rs 0 (ledger has no payments); no live product",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:12.239Z",
+      "agent": "data",
+      "action": "0 live ventures, no counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:12.191Z",
+      "agent": "security",
+      "action": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:08.031Z",
+      "agent": "security",
+      "action": "Started: Scan repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T07:13:07.996Z",
+      "agent": "devops",
+      "action": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:13:07.954Z",
+      "agent": "devops",
+      "action": "Started: Check live URLs",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T07:12:54.732Z",
       "agent": "ops",
       "action": "Standup 07:15 UTC: health ok, watchdog ran 07:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after osha-log was killed at 06:28 UTC. Research can screen: seodata.dev answered last cycle",
@@ -3324,56 +3373,7 @@
       "action": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:13:34.930Z",
-      "agent": "research",
-      "action": "Blocked: Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
-      "ventureId": null,
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-27T23:13:34.893Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch of ideas (punch list, HOA, inspections, trades and studio software) with DataForSEO",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-27T23:13:34.857Z",
-      "agent": "finance",
-      "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:13:34.822Z",
-      "agent": "security",
-      "action": "Secret scan of the repo: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:13:34.781Z",
-      "agent": "devops",
-      "action": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:12:41.345Z",
-      "agent": "ops",
-      "action": "Standup 23:15 UTC: health ok, watchdog ran 22:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research retries a new screen if search volume tools have recovered",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T23:12:37.800Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 580
+  "logTotal": 587
 }

@@ -306,5 +306,19 @@
     "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T07:13:08.031Z",
+    "agent": "security",
+    "action": "Started: Scan repo for secrets",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T07:13:12.191Z",
+    "agent": "security",
+    "action": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
