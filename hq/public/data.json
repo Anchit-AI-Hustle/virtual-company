@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T02:12:28.055Z",
+  "builtAt": "2026-11-28T02:13:01.107Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1482,14 +1482,14 @@
       "charter": "agents/ceo.md",
       "state": "idle",
       "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T01:13:07.895Z",
+      "since": "2026-11-28T02:12:54.378Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T01:13:03.309Z",
+        "at": "2026-11-28T02:12:54.202Z",
         "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 93
+      "actions": 94
     },
     {
       "id": "ops",
@@ -1499,16 +1499,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
-      "since": "2026-11-28T02:12:13.181Z",
+      "state": "idle",
+      "task": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "since": "2026-11-28T02:12:54.268Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T02:12:13.181Z",
-        "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back"
+        "at": "2026-11-28T02:12:54.234Z",
+        "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle"
       },
-      "actions": 90
+      "actions": 91
     },
     {
       "id": "research",
@@ -1519,15 +1519,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "since": "2026-11-28T01:13:03.265Z",
+      "task": "Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "since": "2026-11-28T02:12:54.167Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-28T01:13:03.265Z",
-        "action": "Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
+        "at": "2026-11-28T02:12:54.167Z",
+        "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
       },
-      "actions": 87
+      "actions": 89
     },
     {
       "id": "data",
@@ -1652,15 +1652,15 @@
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
       "state": "idle",
-      "task": "Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)",
-      "since": "2026-11-28T01:13:07.783Z",
+      "task": "No live products to check; watchdog confirms HQ 200, data 200, CI success",
+      "since": "2026-11-28T02:12:54.303Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T01:13:03.173Z",
-        "action": "Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)"
+        "at": "2026-11-28T02:12:54.021Z",
+        "action": "No live products to check; watchdog confirms HQ 200, data 200, CI success"
       },
-      "actions": 49
+      "actions": 51
     },
     {
       "id": "security",
@@ -1671,15 +1671,15 @@
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
       "state": "idle",
-      "task": "Secret scan of tracked files: no keys, tokens or private keys found",
-      "since": "2026-11-28T01:13:07.837Z",
+      "task": "Secret scan clean: no keys or tokens in tracked files",
+      "since": "2026-11-28T02:12:54.341Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T01:13:03.131Z",
-        "action": "Secret scan of tracked files: no keys, tokens or private keys found"
+        "at": "2026-11-28T02:12:54.093Z",
+        "action": "Secret scan clean: no keys or tokens in tracked files"
       },
-      "actions": 38
+      "actions": 40
     },
     {
       "id": "growth",
@@ -2731,6 +2731,62 @@
   },
   "log": [
     {
+      "at": "2026-11-28T02:12:54.234Z",
+      "agent": "ops",
+      "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T02:12:54.202Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T02:12:54.167Z",
+      "agent": "research",
+      "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T02:12:54.130Z",
+      "agent": "research",
+      "action": "Started: Check whether search volume tools are back to screen a new batch",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T02:12:54.093Z",
+      "agent": "security",
+      "action": "Secret scan clean: no keys or tokens in tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T02:12:54.057Z",
+      "agent": "security",
+      "action": "Started: Scan the repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T02:12:54.021Z",
+      "agent": "devops",
+      "action": "No live products to check; watchdog confirms HQ 200, data 200, CI success",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T02:12:53.971Z",
+      "agent": "devops",
+      "action": "Started: Check every live URL",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T02:12:13.181Z",
       "agent": "ops",
       "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
@@ -3233,63 +3289,7 @@
       "action": "Staffed 3 pods from 5 screened ideas: work-order (Riya, score 12, 4,900 searches, Joist Pro Rs 1,202 a month), change-order (Shaurya, score 12, 3,130 searches, sign-off links paid), tc-desk (Anika, score 11, 2,410 searches, Nekst Rs 6,206 a month; Legal limits it to never interpreting contract terms). rfi-log and consign-ledger wait as ideas: lower scores and rfi-log overlaps the contractor buyer",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:28:53.968Z",
-      "agent": "legal",
-      "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:28:53.921Z",
-      "agent": "research",
-      "action": "Screened 2 open and 14 new ideas (DataForSEO US via Firecrawl Alexandria until credits ran out, then seodata.dev, 27 Nov). Passed: work-order (4,900 searches, Joist Pro USD 12.75 a month joist.com/pricing, free tools are PDF only or capped), change-order (3,130, Joist Elite USD 24, JustSignOff USD 49, free tools are hand-signed downloads), rfi-log (1,530, Fieldwire RFIs only at USD 89 a user), tc-desk (2,410, Nekst Solo Pro USD 790 a year, free Solo Lite 5 transactions), consign-ledger (2,030, Consignment Hub USD 19.99, free Shopify apps cap 3 to 10 consignors; weak demand). Dropped: accounting practice management (1,300+, Financial Cents USD 19 to 69 a user, but QuickBooks Online Accountant has free practice management, intuit.com/company/press-room/press-releases/2017/intuit-launches-free-practice-management-features-in-quickbooks-online-accountant/), trucking dispatch software (2,900, AscendTMS markets a free TMS, fleetowner.com/technology/article/21696188/dat-and-ascend-offer-free-tms-software), multi stop route planner (4,400, needs a paid routing service and free planners exist), mileage log (7,360, paid value is automatic GPS tracking a web page cannot do), delivery challan India (8,100, template intent), purchase order template (6,600), timesheet, meeting minutes, incident report and sign in sheet templates (free template intent), venue management (590), line sheet (480), month end close checklist (720 alone, folded into accounting), job card format India (1,900, overlaps garage job cards screened earlier). Work-order, change-order and rfi-log share one buyer and may be one product",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:14:25.584Z",
-      "agent": "research",
-      "action": "Started: Screen work-order and change-order and a new batch under the 21 Nov screen and ap-company-5",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-27T21:13:31.469Z",
-      "agent": "support",
-      "action": "No live venture and no open owner-chat issue, so no messages to handle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:31.428Z",
-      "agent": "data",
-      "action": "No live venture, so no counts to read",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:31.385Z",
-      "agent": "finance",
-      "action": "Books: Rs 0 confirmed revenue, Rs 0 spend; no live product, so nothing to record. FX stays at 94.2754 INR per USD from 14 Nov (source in config)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:31.345Z",
-      "agent": "security",
-      "action": "Secret scan of tracked files (live keys, GitHub tokens, AWS keys, Slack tokens, private keys, Vercel tokens): none found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:18.853Z",
-      "agent": "devops",
-      "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 529
+  "logTotal": 537
 }
