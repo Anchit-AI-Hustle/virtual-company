@@ -410,5 +410,12 @@
     "action": "No pod staffed: 0 open ideas, 0 of 3 newly screened ideas pass config.ideaScreen (page one held by vendors); pods stay empty until Research has a sourced pass; ap-company-6 (issue 21) still the open ask to the owner, no new decision needed",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T18:13:14.933Z",
+    "agent": "ceo",
+    "action": "Keep pods empty: 0 open ideas pass the screen (ap-company-7 page one check); Research retries after Firecrawl credits return about 22:14 UTC",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

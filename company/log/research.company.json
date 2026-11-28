@@ -600,5 +600,26 @@
     "action": "Blocked: Cannot measure buyer search volume: seodata.dev rate limited at 17:15 UTC (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-28T18:13:14.804Z",
+    "agent": "research",
+    "action": "Started: Screen fresh terms: QR code menu (US), packing list template (US), salary slip format (India)",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T18:13:14.846Z",
+    "agent": "research",
+    "action": "Screened 3 ideas (seodata.dev US cached 18:15 UTC, WebSearch page one 18:16 UTC), 0 passed. QR code menu: qr code menu 1,000 and qr code menus 1,600 a month (api.seodata.dev/v1/keyword?q=qr+code+menu&country=us), but page one is vendors with free menu QR makers: adobe.com/express, wix.com/tools/qr-code-generator, touchbistro.com, musthavemenus.com, qr.io/types/menu, uniqode.com, qrcode-tiger.com, jotform.com, qr-code-generator.com; weak only a slideshare.net upload, 1 of 10. Packing list template 3,600 a month (seodata.dev) is mostly travel packing, no paid buyer job. Salary slip format not measured (seodata.dev rate limited). Not added as ideas",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-28T18:13:14.892Z",
+    "agent": "research",
+    "action": "Blocked: Cannot measure new buyer terms: seodata.dev rate limited at 18:15 UTC (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]

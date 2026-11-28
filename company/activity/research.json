@@ -1,6 +1,6 @@
 {
   "state": "blocked",
-  "task": "Cannot measure buyer search volume: seodata.dev rate limited at 17:15 UTC (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
+  "task": "Cannot measure new buyer terms: seodata.dev rate limited at 18:15 UTC (more needs an email signup in the owner's name), Firecrawl out of credits until about 22:14 UTC",
   "ventureId": null,
-  "since": "2026-11-28T17:13:36.962Z"
+  "since": "2026-11-28T18:13:14.892Z"
 }
