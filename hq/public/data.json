@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T13:13:18.768Z",
+  "builtAt": "2026-11-28T13:34:06.386Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1629,16 +1629,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "blocked",
-      "task": "Still cannot screen ideas: Firecrawl refused a probe at 12:13 UTC (out of credits, resets 22:14 UTC) and seodata.dev still rate limited at 12:12 UTC; no other sourced search volume tool usable without the owner's accounts",
-      "since": "2026-11-28T12:13:15.660Z",
+      "state": "done",
+      "task": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)",
+      "since": "2026-11-28T13:33:58.958Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T12:13:15.660Z",
-        "action": "Blocked: Still cannot screen ideas: Firecrawl refused a probe at 12:13 UTC (out of credits, resets 22:14 UTC) and seodata.dev still rate limited at 12:12 UTC; no other sourced search volume tool usable without the owner's accounts"
+        "at": "2026-11-28T13:33:58.958Z",
+        "action": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)"
       },
-      "actions": 109
+      "actions": 111
     },
     {
       "id": "data",
@@ -2963,6 +2963,20 @@
   },
   "log": [
     {
+      "at": "2026-11-28T13:33:58.958Z",
+      "agent": "research",
+      "action": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T13:16:23.146Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T13:12:54.965Z",
       "agent": "finance",
       "action": "No live ventures, confirmed revenue still Rs 0 in ledger.json",
@@ -3507,21 +3521,7 @@
       "action": "Started: Check live URLs",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-28T07:12:54.732Z",
-      "agent": "ops",
-      "action": "Standup 07:15 UTC: health ok, watchdog ran 07:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after osha-log was killed at 06:28 UTC. Research can screen: seodata.dev answered last cycle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:12:54.690Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 658
+  "logTotal": 660
 }
