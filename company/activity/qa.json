@@ -2,5 +2,5 @@
   "state": "idle",
   "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
   "ventureId": null,
-  "since": "2026-11-28T12:13:32.071Z"
+  "since": "2026-11-28T14:15:41.283Z"
 }

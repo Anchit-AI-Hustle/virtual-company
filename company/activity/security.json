@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
   "ventureId": null,
-  "since": "2026-11-28T14:13:38.036Z"
+  "since": "2026-11-28T14:15:41.452Z"
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T14:14:09.124Z",
+  "builtAt": "2026-11-28T14:15:44.153Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1592,15 +1592,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "idle",
-      "task": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner",
-      "since": "2026-11-28T13:34:25.707Z",
+      "task": "No pod staffed: 0 open ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass (volume tools reset by 22:14 UTC)",
+      "since": "2026-11-28T14:15:38.448Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:34:25.606Z",
-        "action": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner"
+        "at": "2026-11-28T14:15:33.558Z",
+        "action": "No pod staffed: 0 open ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass (volume tools reset by 22:14 UTC)"
       },
-      "actions": 113
+      "actions": 114
     },
     {
       "id": "ops",
@@ -1610,9 +1610,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term",
-      "since": "2026-11-28T14:13:32.877Z",
+      "since": "2026-11-28T14:15:41.057Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1629,16 +1629,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)",
-      "since": "2026-11-28T13:34:26.528Z",
+      "state": "blocked",
+      "task": "Cannot screen a further batch this cycle: seodata.dev rate limited at 14:13 UTC after one lookup, Firecrawl out of credits until 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
+      "since": "2026-11-28T14:15:33.511Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T13:33:58.958Z",
-        "action": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)"
+        "at": "2026-11-28T14:15:33.511Z",
+        "action": "Blocked: Cannot screen a further batch this cycle: seodata.dev rate limited at 14:13 UTC after one lookup, Firecrawl out of credits until 22:14 UTC; no other sourced search volume tool usable without the owner's accounts"
       },
-      "actions": 111
+      "actions": 114
     },
     {
       "id": "data",
@@ -1650,7 +1650,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "0 live ventures, no counts to read",
-      "since": "2026-11-28T12:13:31.881Z",
+      "since": "2026-11-28T14:15:38.519Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1669,7 +1669,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-28T12:13:31.920Z",
+      "since": "2026-11-28T14:15:41.530Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1688,7 +1688,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-28T12:13:31.960Z",
+      "since": "2026-11-28T14:15:41.212Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1707,7 +1707,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-28T12:13:31.999Z",
+      "since": "2026-11-28T14:15:38.613Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1726,7 +1726,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-28T12:13:32.035Z",
+      "since": "2026-11-28T14:15:38.784Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1745,7 +1745,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-28T12:13:32.071Z",
+      "since": "2026-11-28T14:15:41.283Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1762,9 +1762,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
-      "since": "2026-11-28T14:13:38.088Z",
+      "since": "2026-11-28T14:15:38.698Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1781,9 +1781,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
-      "since": "2026-11-28T14:13:38.036Z",
+      "since": "2026-11-28T14:15:41.452Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1802,7 +1802,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-28T12:13:32.218Z",
+      "since": "2026-11-28T14:15:38.962Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1821,7 +1821,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-28T12:13:32.258Z",
+      "since": "2026-11-28T14:15:41.378Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1840,7 +1840,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live venture, no customer messages to handle",
-      "since": "2026-11-28T12:13:32.296Z",
+      "since": "2026-11-28T14:15:41.602Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1859,7 +1859,7 @@
       "charter": "agents/finance.md",
       "state": "idle",
       "task": "No live ventures, confirmed revenue still Rs 0 in ledger.json",
-      "since": "2026-11-28T13:34:26.406Z",
+      "since": "2026-11-28T14:15:38.874Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1878,7 +1878,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Flagged: HVAC Manual J (ACCA standard, permit-ready claims would be a legal promise), PF ECR file (statutory filing), meesho label crop (leans on a marketplace brand). Others clear",
-      "since": "2026-11-28T12:13:32.375Z",
+      "since": "2026-11-28T14:15:40.971Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1897,7 +1897,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-28T12:13:32.411Z",
+      "since": "2026-11-28T14:15:41.141Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2963,6 +2963,34 @@
   },
   "log": [
     {
+      "at": "2026-11-28T14:15:33.558Z",
+      "agent": "ceo",
+      "action": "No pod staffed: 0 open ideas pass config.ideaScreen; pods stay empty until Research has a sourced pass (volume tools reset by 22:14 UTC)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T14:15:33.511Z",
+      "agent": "research",
+      "action": "Blocked: Cannot screen a further batch this cycle: seodata.dev rate limited at 14:13 UTC after one lookup, Firecrawl out of credits until 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T14:15:33.464Z",
+      "agent": "research",
+      "action": "Screened society maintenance billing (India), 0 passed: searches clear 1,000 only as a sum of template terms (society maintenance bill 320, bill format 210, receipt format 210, flat and apartment receipt format 210 each, society billing software 260; seodata.dev India 28 Nov), so buyers mostly want a sheet, not software. Paid price is vendor quoted only: ADDA 'pricing on request' (ind.adda.io/pricing), myBillBook society page Pro Max from Rs 570 a month but Plus Rs 349 (mybillbook.in/s/society-billing-and-accounting-software). Page one fails ap-company-7: 'society maintenance receipt format' is held by vyaparapp.in (3 results), nobrokerhood.com (4), signnow.com (3), only 2 weak (nobroker.in forum, shriramfinance.in FAQ); 'society maintenance bill format' is nobrokerhood blogs plus PRS bill PDFs off intent. Not added as an idea",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T14:14:18.708Z",
+      "agent": "research",
+      "action": "Started: Screen society maintenance billing (India): paid price, searches, free gap, page one",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T14:13:38.088Z",
       "agent": "devops",
       "action": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
@@ -3493,35 +3521,7 @@
       "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it",
       "ventureId": "tech-pack",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:22:31.568Z",
-      "agent": "research",
-      "action": "Screened 19 ideas, 1 passes: tech-pack (Techpacker USD 35 a month, 'tech pack template' 2,400 US searches, page one 5 of 10 weak on WebSearch; Firecrawl out of credits, recheck after 22:14 UTC). 18 rejected: under 1,000 searches or a free tool already does the job",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:32.176Z",
-      "agent": "research",
-      "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T07:13:32.139Z",
-      "agent": "ceo",
-      "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T07:13:12.339Z",
-      "agent": "support",
-      "action": "0 live ventures, no messages to handle",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 666
+  "logTotal": 670
 }
