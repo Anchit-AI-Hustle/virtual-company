@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T01:13:10.295Z",
+  "builtAt": "2026-11-28T02:12:28.055Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1499,16 +1499,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "idle",
-      "task": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "since": "2026-11-28T01:13:07.736Z",
+      "state": "done",
+      "task": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
+      "since": "2026-11-28T02:12:13.181Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T01:13:03.352Z",
-        "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle"
+        "at": "2026-11-28T02:12:13.181Z",
+        "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back"
       },
-      "actions": 88
+      "actions": 90
     },
     {
       "id": "research",
@@ -2731,6 +2731,20 @@
   },
   "log": [
     {
+      "at": "2026-11-28T02:12:13.181Z",
+      "agent": "ops",
+      "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T02:12:13.138Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T01:13:03.352Z",
       "agent": "ops",
       "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
@@ -3275,21 +3289,7 @@
       "action": "Platform health: watchdog check passes locally (HQ 200, data 200, CI success, 0 products); cycle-missed clears when this session's work reaches main",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:18.796Z",
-      "agent": "ops",
-      "action": "Standup: no agent worked 21 to 27 Nov (missed sessions). Pipeline empty: 23 ventures killed, 2 unscreened ideas (work-order, change-order), 0 live, Rs 0 revenue. Today: Neel clears the cycle-missed alert, Meera and Vikram screen ideas, Arya staffs pods that pass",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T21:13:06.410Z",
-      "agent": "devops",
-      "action": "Started: Platform health: cycle-missed alert, no session since 21 Nov",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 527
+  "logTotal": 529
 }
