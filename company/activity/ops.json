@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Standup 11:12 UTC: health ok, watchdog ran 11:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18, 22 or on needs-owner 21; 0 live products, 0 pods, check passing",
+  "state": "idle",
+  "task": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 pods, Rs 0 revenue; agents idle",
   "ventureId": null,
-  "since": "2026-11-28T11:12:36.092Z"
+  "since": "2026-11-28T11:12:49.299Z"
 }

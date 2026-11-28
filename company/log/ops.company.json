@@ -810,5 +810,12 @@
     "action": "Standup 11:12 UTC: health ok, watchdog ran 11:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18, 22 or on needs-owner 21; 0 live products, 0 pods, check passing",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T11:12:49.251Z",
+    "agent": "ops",
+    "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 pods, Rs 0 revenue; agents idle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
