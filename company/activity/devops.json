@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Step 1: no live ventures to check; health.json ok since 09:00 UTC",
+  "state": "done",
+  "task": "No live products to check (all 31 ventures killed); health.json ok since 09:00 UTC",
   "ventureId": null,
-  "since": "2026-11-28T13:34:26.135Z"
+  "since": "2026-11-28T14:13:38.088Z"
 }

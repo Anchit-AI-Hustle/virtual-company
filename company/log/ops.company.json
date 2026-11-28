@@ -845,5 +845,19 @@
     "action": "Standup 13:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 13:00 UTC, no owner comments on decided issues 16, 18, 22, 0 active ventures; seodata.dev answers again at 13:13 UTC so Research resumes screening",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T14:12:17.712Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T14:13:32.877Z",
+    "agent": "ops",
+    "action": "Standup 14:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 14:05 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; seodata.dev rate limited again after one lookup at 14:13 UTC, so Research screens with WebSearch page one checks on the one measured term",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
