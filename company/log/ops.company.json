@@ -712,5 +712,19 @@
     "action": "Close the day: Research unblocked (seodata.dev answers again), osha-log screened, staffed with Veer, validated with 6 signals, then killed at the business case (20 of 35, bar 24); 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T07:12:54.690Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T07:12:54.732Z",
+    "agent": "ops",
+    "action": "Standup 07:15 UTC: health ok, watchdog ran 07:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after osha-log was killed at 06:28 UTC. Research can screen: seodata.dev answered last cycle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
