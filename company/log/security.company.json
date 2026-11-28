@@ -383,5 +383,12 @@
     "action": "Secret scan 14:14 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T15:12:27.149Z",
+    "agent": "security",
+    "action": "Secret scan of tracked files: no keys, tokens or private keys found",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

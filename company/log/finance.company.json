@@ -229,5 +229,12 @@
     "action": "No live ventures, confirmed revenue still Rs 0 in ledger.json",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T15:12:27.199Z",
+    "agent": "finance",
+    "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
