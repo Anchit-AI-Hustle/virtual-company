@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T08:22:03.328Z",
+  "builtAt": "2026-11-28T08:24:23.928Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -481,13 +481,13 @@
       "customer": "Small US restaurants, cafes, food trucks, caterers and food banks that log fridge and food temperatures every day on paper sheets",
       "revenueModel": "Free: one device, data kept in the browser. Paid monthly tier per location: several units and staff, history synced across phones, missed check reminders and exports (sync needs a free-tier backend, a spec decision)",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "validated",
       "score": 15,
       "url": null,
-      "nextAction": "Lead Ayaan gathers 3 or more sourced demand signals (and checks whether TempLogs, Temkeep and GoTemp are free without signup), then Research writes cases/temp-log.md and Farhan sizes it",
+      "nextAction": "Validated 2026-11-28 with 7 sourced signals (paid tools USD 9 to 69 a month, 229-rating app, 1,000 to 1,900 monthly searches). Needs reviewers: research writes cases/temp-log.md (weigh the free TTS FOOD app and signup-gated free tiers, and that searches are for sheets not apps), sizing (Farhan) writes cases/temp-log.sizing.json, then the CEO gives go or no-go.",
       "metrics": {},
-      "updatedAt": "2026-11-28T08:22:02.364Z",
-      "evidenceCount": 0,
+      "updatedAt": "2026-11-28T08:24:05.501Z",
+      "evidenceCount": 7,
       "specPath": null,
       "lead": {
         "id": "lead-temp-log",
@@ -1914,13 +1914,16 @@
       "trait": "Finds where buyers already gather.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "temp-log",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo",
+      "since": "2026-11-28T08:24:23.087Z",
+      "ventureId": "temp-log",
+      "ventureTitle": "Kitchen Temp Log",
+      "last": {
+        "at": "2026-11-28T08:24:23.087Z",
+        "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo"
+      },
+      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2904,6 +2907,16 @@
     ],
     "temp-log": [
       {
+        "at": "2026-11-28T08:24:23.087Z",
+        "agent": "lead-temp-log",
+        "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo"
+      },
+      {
+        "at": "2026-11-28T08:22:33.501Z",
+        "agent": "lead-temp-log",
+        "action": "Started: Validating: gathering sourced demand evidence and checking TempLogs, Temkeep, GoTemp and other free apps"
+      },
+      {
         "at": "2026-11-28T08:22:02.522Z",
         "agent": "ceo",
         "action": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed"
@@ -2948,6 +2961,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T08:24:23.087Z",
+      "agent": "lead-temp-log",
+      "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo",
+      "ventureId": "temp-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T08:22:33.501Z",
+      "agent": "lead-temp-log",
+      "action": "Started: Validating: gathering sourced demand evidence and checking TempLogs, Temkeep, GoTemp and other free apps",
+      "ventureId": "temp-log",
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T08:22:02.522Z",
       "agent": "ceo",
@@ -3493,21 +3520,7 @@
       "action": "No live products to check; watchdog confirms HQ 200, data 200, CI success",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T02:12:53.971Z",
-      "agent": "devops",
-      "action": "Started: Check every live URL",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T02:12:13.181Z",
-      "agent": "ops",
-      "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 608
+  "logTotal": 610
 }

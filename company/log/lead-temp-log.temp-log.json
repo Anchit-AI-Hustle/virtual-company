@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-28T08:22:33.501Z",
+    "agent": "lead-temp-log",
+    "action": "Started: Validating: gathering sourced demand evidence and checking TempLogs, Temkeep, GoTemp and other free apps",
+    "ventureId": "temp-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T08:24:23.087Z",
+    "agent": "lead-temp-log",
+    "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo",
+    "ventureId": "temp-log",
+    "kind": "done"
+  }
+]

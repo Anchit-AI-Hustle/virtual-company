@@ -28,7 +28,7 @@
       "source": "https://api.seodata.dev/v1/keyword?q=temperature%20log&country=us",
       "note": "seodata.dev US, read 2026-11-28. temperature log and temp log are one cluster, not added. Part of the demand is vaccine and clinic fridge logs (CDC and state PDFs); we target food service only."
     },
-    "freeGap": "Page one is printable sheets and PDFs (inkpx.com/fridge-temperature-log, easytemperature.com/guides/fridge-temperature-log-template, printblame.com/business/refrigerator-temperature-logs/, workfeed.io/blog/temperature-log/). Digital options need an account: SafetyCulture (safetyculture.com/logs/temperature-log) and the FoodDocs trial. No free web tool found that logs readings, flags them and prints the month without signup. Caveat: phone apps exist (TempLogs on the App Store, Temkeep on Google Play, GoTemp); whether they are free without signup is not yet checked, the lead checks it in validation.",
+    "freeGap": "Page one is printable sheets and PDFs (inkpx.com/fridge-temperature-log, easytemperature.com/guides/fridge-temperature-log-template, printblame.com/business/refrigerator-temperature-logs/, workfeed.io/blog/temperature-log/). Digital options need an account: SafetyCulture (safetyculture.com/logs/temperature-log) and the FoodDocs trial. No free web tool found that logs readings, flags them and prints the month without signup. Apps checked 2026-11-28 (see evidenceAgainst): TempLogs is a USD 24.99 invoicing app, Temkeep is a subscription with an account, GoTemp is now AD Temp and needs logins, Kitchen HACCP Logs and PassMyKitchen are free only with signup, Temperature Log Book needs registration and rates 1.8. Only TTS FOOD Temperature Log is free without stated signup, iPhone only, 1 rating, no out-of-range flags or corrective actions listed. The no-signup web gap holds, narrowly.",
     "serp": {
       "terms": [
         "temperature log",
@@ -41,19 +41,97 @@
     }
   },
   "legal": "Legal (Vikram) screen: clear. Record keeping only, no medical or food safety advice, no licence. Copy must not promise compliance with health codes and must not target vaccine or clinical fridges",
-  "evidence": [],
-  "nextAction": "Lead Ayaan gathers 3 or more sourced demand signals (and checks whether TempLogs, Temkeep and GoTemp are free without signup), then Research writes cases/temp-log.md and Farhan sizes it",
+  "evidence": [
+    {
+      "claim": "FreshCheq, a digital food safety checklist and temperature log tool for restaurants, costs USD 50 a month flat (USD 499 a year), has no free version, and has 78 Capterra reviews averaging 4.5; one operating partner says it helped them stay consistent with temperature logs.",
+      "url": "https://www.capterra.com/p/169124/FreshCheq",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "LogChill, a temperature logging app for independent restaurants, cafes, food trucks and caterers that replaces paper logs and checks readings against FDA Food Code limits with PDF reports, charges USD 24 per location a month or USD 240 a year, with no free version.",
+      "url": "https://www.capterra.in/software/1326590/LogChill",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "PassMyKitchen sells mobile food safety software with timestamped temperature and cleaning logs from USD 29 a month (Starter) and USD 49 a month for up to 5 locations.",
+      "url": "https://www.capterra.com/p/10043722/PassMyKitchen/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "FoodDocs sells digital food safety and temperature monitoring from USD 69 per location per month on its own pricing page.",
+      "url": "https://www.fooddocs.com/pricing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "ThermoWorks markets paperless HACCP temperature logging to replace paper logs; its Bluetooth thermometer app starts at USD 9 a month and checklists need a paid tier.",
+      "url": "https://www.thermoworks.com/still-using-paper-temperature-logs/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "AD Temp (formerly GoTemp, by ZippyYum), a food temperature logging app with missed-check and corrective action alerts, has 229 App Store ratings averaging 4.4, showing kitchens adopt phone temperature logging.",
+      "url": "https://apps.apple.com/us/app/-/id1080248530",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "US monthly searches (seodata.dev, read 2026-11-28): refrigerator temperature log 1,000, temp log 1,900 (CPC USD 3.91 to 4.95), food temp log 480, freezer temp log 320, restaurant temp log 140, temperature logs for kitchen 140.",
+      "url": "https://api.seodata.dev/v1/keyword?q=refrigerator%20temperature%20log&country=us",
+      "foundAt": "2026-11-28"
+    }
+  ],
+  "nextAction": "Validated 2026-11-28 with 7 sourced signals (paid tools USD 9 to 69 a month, 229-rating app, 1,000 to 1,900 monthly searches). Needs reviewers: research writes cases/temp-log.md (weigh the free TTS FOOD app and signup-gated free tiers, and that searches are for sheets not apps), sizing (Farhan) writes cases/temp-log.sizing.json, then the CEO gives go or no-go.",
   "lead": {
     "name": "Ayaan",
     "color": "#17655F",
     "trait": "Finds where buyers already gather."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-28T08:22:02.364Z",
+  "stage": "validated",
+  "stageSince": "2026-11-28T08:24:05.501Z",
   "createdAt": "2026-11-28T08:22:02.364Z",
-  "updatedAt": "2026-11-28T08:22:02.364Z",
+  "updatedAt": "2026-11-28T08:24:05.501Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": {}
+  "metrics": {},
+  "evidenceAgainst": [
+    {
+      "claim": "Temperature Log by TTS FOOD is a free iPhone app with no subscription that logs food temperatures with reminders, set points, photos and printable reports; the listing does not say it needs an account. It has 1 rating (2.0) and does not mention out-of-range flags or corrective actions. Closest free competitor, iPhone only.",
+      "url": "https://apps.apple.com/us/app/id1579256016",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Kitchen HACCP Logs (Igloo Restaurants) is free to start with one manager account: it flags out-of-range fridge, freezer, cooking and hot-holding readings and exports PDF, but needs signup, and exports, team members and longer history are paid. No ratings yet.",
+      "url": "https://apps.apple.com/app/id6756550638",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "AD Temp (formerly GoTemp) is a free download but is built around logins and a manager portal in the ZippyYum ecosystem, not a no-signup tool.",
+      "url": "https://apps.apple.com/us/app/-/id1080248530",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "TempLogs (Elton Nushi) is a USD 24.99 paid iPhone app sold mainly as an invoicing and receipts manager with kitchen logs as a side feature; no ratings.",
+      "url": "https://apps.apple.com/us/app/templogs/id1639910315",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Temkeep: Food Safety Log on Google Play is a subscription after a free trial, backs records up to an account, and shows 1+ downloads with no ratings.",
+      "url": "https://play.google.com/store/apps/details?id=com.temkeep.app",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Temperature Log Book (Rocket Splash Games) needs registration, Premium is GBP 17.99 a year, and its 5 ratings average 1.8 with reviews saying it does not work.",
+      "url": "https://apps.apple.com/gb/app/temperature-log-book/id1449271996",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "PassMyKitchen lists a free version (with signup), so a free digital log behind an account exists.",
+      "url": "https://www.capterra.com/p/10043722/PassMyKitchen/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "seodata.dev US shows 0 monthly searches for temperature log app and food temperature log app: buyers search for sheets and templates, so our page must rank as a sheet replacement, not as an app. Part of the fridge and freezer log demand is vaccine logs (vfc freezer temperature log 110), which we do not target.",
+      "url": "https://api.seodata.dev/v1/keyword?q=temperature%20log%20app&country=us",
+      "foundAt": "2026-11-28"
+    }
+  ]
 }
