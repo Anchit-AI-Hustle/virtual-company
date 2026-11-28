@@ -649,5 +649,19 @@
     "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T04:12:48.661Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T04:12:48.696Z",
+    "agent": "ops",
+    "action": "Standup 04:12 UTC: health ok, watchdog ran 03:59 UTC (success), no platform alerts, no owner-chat issue, no new comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
