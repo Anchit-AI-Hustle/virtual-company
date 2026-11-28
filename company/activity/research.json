@@ -1,6 +1,6 @@
 {
   "state": "blocked",
-  "task": "Cannot screen a further batch this cycle: seodata.dev rate limited at 14:13 UTC after one lookup, Firecrawl out of credits until 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
+  "task": "Cannot finish the batch: seodata.dev rate limited at 15:14 UTC and Firecrawl out of credits until about 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
   "ventureId": null,
-  "since": "2026-11-28T14:15:33.511Z"
+  "since": "2026-11-28T15:14:48.847Z"
 }

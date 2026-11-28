@@ -537,5 +537,26 @@
     "action": "Blocked: Cannot screen a further batch this cycle: seodata.dev rate limited at 14:13 UTC after one lookup, Firecrawl out of credits until 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-28T15:14:48.772Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch of ideas: searches on seodata.dev, page one on WebSearch",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T15:14:48.812Z",
+    "agent": "research",
+    "action": "Screened 13 ideas (seodata.dev US and WebSearch standard, 28 Nov 15:15 UTC), 0 passed. Under 1,000 buyer searches: airbnb welcome book template 480 and airbnb guidebook 390 (Hostfully, Touch Stay), rental inspection checklist 880, move in inspection checklist 590 (move in checklist 1,900 is tenant intent), commission tracker 480, volunteer schedule template 170, property inspection report template 70. Free tool on page one does the job: open house sign in sheet 5,400 (free digital sign in at jotform.com/table-templates/open-house-sign-in-sheet and commoninja.com/free-tools/business/open-house-sign-in-sheet). Vendors hold page one: board meeting minutes template 2,400 (nasdaq.com, slack.com, diligent.com, clickup.com, fellow.app). Free tool plus buyer does not pay: wedding timeline template 3,600 (theknot.com/wedding-timeline free tool, honeybook.com). Not measured, seodata.dev rate limited after 9 lookups: run of show template, call sheet template, punch list template, preventive maintenance checklist, banquet event order",
+    "ventureId": null,
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-28T15:14:48.847Z",
+    "agent": "research",
+    "action": "Blocked: Cannot finish the batch: seodata.dev rate limited at 15:14 UTC and Firecrawl out of credits until about 22:14 UTC; no other sourced search volume tool usable without the owner's accounts",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]
