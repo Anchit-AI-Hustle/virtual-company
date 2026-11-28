@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo",
-  "ventureId": "temp-log",
-  "since": "2026-11-28T08:24:23.087Z"
+  "ventureId": null,
+  "since": "2026-11-28T08:31:18.295Z"
 }
