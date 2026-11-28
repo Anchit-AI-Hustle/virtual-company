@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T10:14:36.054Z",
+  "builtAt": "2026-11-28T11:12:38.617Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,16 +1591,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T10:13:18.503Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 open ideas and none can pass the 1,000 searches gate until search volume tools return at about 22:14 UTC; no new decision needed",
+      "since": "2026-11-28T11:12:36.381Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T10:13:07.803Z",
-        "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
+        "at": "2026-11-28T11:12:36.381Z",
+        "action": "Pods stay empty: 0 open ideas and none can pass the 1,000 searches gate until search volume tools return at about 22:14 UTC; no new decision needed"
       },
-      "actions": 110
+      "actions": 111
     },
     {
       "id": "ops",
@@ -1611,15 +1611,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Close the day: research blocked on search volume tools until about 22:14 UTC, 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle",
-      "since": "2026-11-28T10:13:18.534Z",
+      "task": "Standup 11:12 UTC: health ok, watchdog ran 11:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18, 22 or on needs-owner 21; 0 live products, 0 pods, check passing",
+      "since": "2026-11-28T11:12:36.092Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T10:13:18.534Z",
-        "action": "Close the day: research blocked on search volume tools until about 22:14 UTC, 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle"
+        "at": "2026-11-28T11:12:36.092Z",
+        "action": "Standup 11:12 UTC: health ok, watchdog ran 11:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18, 22 or on needs-owner 21; 0 live products, 0 pods, check passing"
       },
-      "actions": 115
+      "actions": 117
     },
     {
       "id": "research",
@@ -1630,15 +1630,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:13 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
-      "since": "2026-11-28T10:13:07.763Z",
+      "task": "Still cannot screen ideas: Firecrawl refused a probe at 11:12 UTC (out of credits, resets 22:14 UTC) and seodata.dev is at its free daily limit; no other sourced search volume tool usable without the owner's accounts",
+      "since": "2026-11-28T11:12:36.329Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T10:13:07.763Z",
-        "action": "Blocked: Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:13 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle"
+        "at": "2026-11-28T11:12:36.329Z",
+        "action": "Blocked: Still cannot screen ideas: Firecrawl refused a probe at 11:12 UTC (out of credits, resets 22:14 UTC) and seodata.dev is at its free daily limit; no other sourced search volume tool usable without the owner's accounts"
       },
-      "actions": 107
+      "actions": 108
     },
     {
       "id": "data",
@@ -1762,16 +1762,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Health check: health.json ok, 0 platform alerts, watchdog last ran 10:00 UTC, no live products to check",
-      "since": "2026-11-28T10:13:18.443Z",
+      "state": "done",
+      "task": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
+      "since": "2026-11-28T11:12:36.138Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T10:12:05.110Z",
-        "action": "Health check: health.json ok, 0 platform alerts, watchdog last ran 10:00 UTC, no live products to check"
+        "at": "2026-11-28T11:12:36.138Z",
+        "action": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues"
       },
-      "actions": 62
+      "actions": 63
     },
     {
       "id": "security",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-28T10:13:18.474Z",
+      "state": "done",
+      "task": "Secret scan clean: no keys or tokens in tracked files",
+      "since": "2026-11-28T11:12:36.188Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T10:13:07.728Z",
-        "action": "Secret scan of the repo: no keys or tokens found"
+        "at": "2026-11-28T11:12:36.188Z",
+        "action": "Secret scan clean: no keys or tokens in tracked files"
       },
-      "actions": 51
+      "actions": 52
     },
     {
       "id": "growth",
@@ -1838,16 +1838,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "No messages: no live venture",
-      "since": "2026-11-28T09:32:34.105Z",
+      "state": "done",
+      "task": "No live venture and no open owner-chat issue, so no messages to handle",
+      "since": "2026-11-28T11:12:36.274Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:32:20.907Z",
-        "action": "No messages: no live venture"
+        "at": "2026-11-28T11:12:36.274Z",
+        "action": "No live venture and no open owner-chat issue, so no messages to handle"
       },
-      "actions": 17
+      "actions": 18
     },
     {
       "id": "finance",
@@ -1857,16 +1857,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov",
-      "since": "2026-11-28T09:32:34.146Z",
+      "state": "done",
+      "task": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+      "since": "2026-11-28T11:12:36.230Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:32:20.847Z",
-        "action": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov"
+        "at": "2026-11-28T11:12:36.230Z",
+        "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend"
       },
-      "actions": 30
+      "actions": 31
     },
     {
       "id": "legal",
@@ -2963,6 +2963,62 @@
   },
   "log": [
     {
+      "at": "2026-11-28T11:12:36.381Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can pass the 1,000 searches gate until search volume tools return at about 22:14 UTC; no new decision needed",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.329Z",
+      "agent": "research",
+      "action": "Blocked: Still cannot screen ideas: Firecrawl refused a probe at 11:12 UTC (out of credits, resets 22:14 UTC) and seodata.dev is at its free daily limit; no other sourced search volume tool usable without the owner's accounts",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T11:12:36.274Z",
+      "agent": "support",
+      "action": "No live venture and no open owner-chat issue, so no messages to handle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.230Z",
+      "agent": "finance",
+      "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.188Z",
+      "agent": "security",
+      "action": "Secret scan clean: no keys or tokens in tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.138Z",
+      "agent": "devops",
+      "action": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.092Z",
+      "agent": "ops",
+      "action": "Standup 11:12 UTC: health ok, watchdog ran 11:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18, 22 or on needs-owner 21; 0 live products, 0 pods, check passing",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T11:12:36.052Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T10:13:18.534Z",
       "agent": "ops",
       "action": "Close the day: research blocked on search volume tools until about 22:14 UTC, 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle",
@@ -3465,63 +3521,7 @@
       "action": "Started: Check whether search volume tools are back to screen a new batch",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-28T05:13:02.152Z",
-      "agent": "security",
-      "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T05:13:02.117Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T05:13:02.082Z",
-      "agent": "devops",
-      "action": "HQ returns 200; no venture is live, so no product URL to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T05:13:02.044Z",
-      "agent": "devops",
-      "action": "Started: Check live URLs",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T05:12:48.729Z",
-      "agent": "ops",
-      "action": "Standup 05:12 UTC: health ok, watchdog ran 05:00 UTC, no platform alerts, no owner-chat issue, no new comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T05:12:48.691Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T04:13:15.024Z",
-      "agent": "ops",
-      "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T04:13:02.443Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 635
+  "logTotal": 643
 }

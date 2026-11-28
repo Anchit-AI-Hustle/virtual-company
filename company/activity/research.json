@@ -1,6 +1,6 @@
 {
   "state": "blocked",
-  "task": "Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:13 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
+  "task": "Still cannot screen ideas: Firecrawl refused a probe at 11:12 UTC (out of credits, resets 22:14 UTC) and seodata.dev is at its free daily limit; no other sourced search volume tool usable without the owner's accounts",
   "ventureId": null,
-  "since": "2026-11-28T10:13:07.763Z"
+  "since": "2026-11-28T11:12:36.329Z"
 }
