@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live products to check; watchdog confirms HQ 200, data 200, CI success",
+  "state": "done",
+  "task": "HQ returns 200; no venture is live, so no product URL to check",
   "ventureId": null,
-  "since": "2026-11-28T02:12:54.303Z"
+  "since": "2026-11-28T03:12:55.591Z"
 }
