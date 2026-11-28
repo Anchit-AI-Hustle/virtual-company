@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Standup 03:12 UTC: health ok, watchdog ran 02:59 UTC, no platform alerts, no owner comments on decision issues; 0 open ideas, 0 pods; Research still blocked on Firecrawl credits (refresh about 22:14 UTC)",
+  "state": "idle",
+  "task": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
   "ventureId": null,
-  "since": "2026-11-28T03:12:40.193Z"
+  "since": "2026-11-28T03:13:06.687Z"
 }
