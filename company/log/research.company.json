@@ -485,7 +485,7 @@
   {
     "at": "2026-11-28T10:13:07.763Z",
     "agent": "research",
-    "action": "Blocked: Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:20 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
+    "action": "Blocked: Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:13 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
     "ventureId": null,
     "kind": "blocked"
   }
