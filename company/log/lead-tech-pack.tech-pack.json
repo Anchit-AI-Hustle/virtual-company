@@ -1,0 +1,16 @@
+[
+  {
+    "at": "2026-11-28T07:23:06.765Z",
+    "agent": "lead-tech-pack",
+    "action": "Started: Validating: gathering 3+ sourced demand signals for tech pack tools and templates",
+    "ventureId": "tech-pack",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T07:24:12.246Z",
+    "agent": "lead-tech-pack",
+    "action": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly",
+    "ventureId": "tech-pack",
+    "kind": "done"
+  }
+]

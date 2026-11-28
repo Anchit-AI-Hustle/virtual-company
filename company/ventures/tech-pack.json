@@ -41,19 +41,60 @@
     }
   },
   "legal": "Legal (Vikram) screen: clean. B2B apparel production documents, no regulated category, nothing aimed at children, no brand copying, no compliance or legal promises",
-  "evidence": [],
-  "nextAction": "Lead Mahi gathers 3 or more sourced demand signals, then Research writes cases/tech-pack.md testing a one-time or per-pack price against the Rs 500 a month floor, and reruns the page one count on Firecrawl after 22:14 UTC",
+  "evidence": [
+    {
+      "claim": "UrbanDistro on Etsy sells a Fashion Tech Pack Template Bundle (USD 8.22 on sale from 16.43); the shop shows 10.5k sales and the listing 73 reviews.",
+      "url": "https://www.etsy.com/listing/1698863971",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "FIBRTechpacks on Etsy sells an editable Excel tech pack template (cover, measurements for 9 sizes, costing, colourways, cut sheet) for about USD 11.82; the shop shows 764 sales and the listing 32 ratings averaging 4.5.",
+      "url": "https://www.etsy.com/listing/889838795",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Make it British sells a Tech Pack Bundle of InDesign, Google Sheets and PDF templates with a checklist and examples for GBP 39 plus VAT, one-time.",
+      "url": "https://makeitbritish.co.uk/tech-pack-bundle/",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Techpacker sells its Techpack Builder plan at USD 35 per user per month billed yearly (USD 420 a year), with only a 7 day free trial and no free plan.",
+      "url": "https://techpacker.com/pricing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "AI Tech Packs sells a Starter plan at USD 50 a month (about 3 tech packs) up to USD 150 a month unlimited, and also one-time credits at USD 1 each with a standard tech pack costing 20 credits, so a per-pack price of about USD 20 is already on the market.",
+      "url": "https://aitechpacks.com/pricing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "Fiverr freelancers are paid per garment to make tech packs: one gig sells a simple 1 garment tech pack at USD 150 (seller rated 5.0 from 12 reviews), another a 2 item pack with BOM and size chart at USD 60 (seller 117 reviews).",
+      "url": "https://fiverr.com/oti_will/create-a-professional-clothing-tech-pack-for-manufacturing",
+      "foundAt": "2026-11-28"
+    },
+    {
+      "claim": "People search how to make a tech pack about 260 times a month in the US, alongside tech pack template 2,400, tech pack example 590 and garment tech pack 1,000 (seodata.dev).",
+      "url": "https://api.seodata.dev/v1/keyword?q=how%20to%20make%20a%20tech%20pack&country=us",
+      "foundAt": "2026-11-28"
+    }
+  ],
+  "nextAction": "Research (Meera) writes cases/tech-pack.md and must test a one-time or per-pack price (Etsy USD 8 to 17, AI Tech Packs about USD 20 a pack, Fiverr USD 60 to 150 a garment) against the Rs 500 a month floor, and rerun the page one count on Firecrawl after 22:14 UTC; then sizing (Farhan) and the CEO go or no-go.",
   "lead": {
     "name": "Mahi",
     "color": "#946200",
     "trait": "Prices with proof from the market."
   },
-  "stage": "validating",
-  "stageSince": "2026-11-28T07:22:31.615Z",
+  "stage": "validated",
+  "stageSince": "2026-11-28T07:24:01.282Z",
   "createdAt": "2026-11-28T07:22:31.615Z",
-  "updatedAt": "2026-11-28T07:22:31.615Z",
+  "updatedAt": "2026-11-28T07:24:01.282Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": {}
+  "metrics": {},
+  "evidenceAgainst": [
+    "Etsy templates sell at USD 8 to 17 one-time, so many buyers expect a one-off price far below Rs 500 a month (https://www.etsy.com/listing/1698863971).",
+    "AI Tech Packs already offers no-subscription per-pack credits at about USD 20 a pack, which suggests buyers who need few packs a year resist monthly plans (https://aitechpacks.com/pricing).",
+    "Fiverr designers at USD 60 to 150 a garment compete for the brand that would rather outsource than fill a form (https://fiverr.com/oti_will/create-a-professional-clothing-tech-pack-for-manufacturing)."
+  ]
 }

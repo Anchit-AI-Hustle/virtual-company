@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:22:38.523Z",
+  "builtAt": "2026-11-28T07:24:24.035Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -444,13 +444,13 @@
       "customer": "Independent and first-time apparel brands, freelance fashion designers and small private-label sellers (US, UK and India) who send tech packs to manufacturers",
       "revenueModel": "Free: one complete tech pack printed to PDF, no account. Paid tier (price to be tested in the case, monthly against one-time or per pack): saved style library, auto-grading, BOM cost roll-up, templates, share link for factories",
       "priceINR": null,
-      "stage": "validating",
+      "stage": "validated",
       "score": 15,
       "url": null,
-      "nextAction": "Lead Mahi gathers 3 or more sourced demand signals, then Research writes cases/tech-pack.md testing a one-time or per-pack price against the Rs 500 a month floor, and reruns the page one count on Firecrawl after 22:14 UTC",
+      "nextAction": "Research (Meera) writes cases/tech-pack.md and must test a one-time or per-pack price (Etsy USD 8 to 17, AI Tech Packs about USD 20 a pack, Fiverr USD 60 to 150 a garment) against the Rs 500 a month floor, and rerun the page one count on Firecrawl after 22:14 UTC; then sizing (Farhan) and the CEO go or no-go.",
       "metrics": {},
-      "updatedAt": "2026-11-28T07:22:31.615Z",
-      "evidenceCount": 0,
+      "updatedAt": "2026-11-28T07:24:01.282Z",
+      "evidenceCount": 7,
       "specPath": null,
       "lead": {
         "id": "lead-tech-pack",
@@ -1877,13 +1877,16 @@
       "trait": "Prices with proof from the market.",
       "charter": "agents/venture-lead.md",
       "ventureOwned": "tech-pack",
-      "state": "idle",
-      "task": null,
-      "since": null,
-      "ventureId": null,
-      "ventureTitle": null,
-      "last": null,
-      "actions": 0
+      "state": "done",
+      "task": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly",
+      "since": "2026-11-28T07:24:12.246Z",
+      "ventureId": "tech-pack",
+      "ventureTitle": "Tech Pack Builder",
+      "last": {
+        "at": "2026-11-28T07:24:12.246Z",
+        "action": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly"
+      },
+      "actions": 2
     }
   ],
   "ventureTrail": {
@@ -2830,6 +2833,16 @@
     ],
     "tech-pack": [
       {
+        "at": "2026-11-28T07:24:12.246Z",
+        "agent": "lead-tech-pack",
+        "action": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly"
+      },
+      {
+        "at": "2026-11-28T07:23:06.765Z",
+        "agent": "lead-tech-pack",
+        "action": "Started: Validating: gathering 3+ sourced demand signals for tech pack tools and templates"
+      },
+      {
         "at": "2026-11-28T07:22:35.976Z",
         "agent": "ceo",
         "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it"
@@ -2874,6 +2887,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T07:24:12.246Z",
+      "agent": "lead-tech-pack",
+      "action": "Validated: 7 sourced demand signals (Etsy 10.5k-sale and 764-sale tech pack template shops, Make it British GBP 39 bundle, Techpacker USD 35/mo, AI Tech Packs USD 50/mo or about USD 20 per pack, Fiverr USD 60-150 per garment, 260 how-to searches/mo); against: one-off template prices USD 8-17 and per-pack credits point to a per-pack price over monthly",
+      "ventureId": "tech-pack",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:23:06.765Z",
+      "agent": "lead-tech-pack",
+      "action": "Started: Validating: gathering 3+ sourced demand signals for tech pack tools and templates",
+      "ventureId": "tech-pack",
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T07:22:35.976Z",
       "agent": "ceo",
@@ -3419,21 +3446,7 @@
       "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:51.472Z",
-      "agent": "security",
-      "action": "Secret scan of the repo: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:51.431Z",
-      "agent": "devops",
-      "action": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 591
+  "logTotal": 593
 }
