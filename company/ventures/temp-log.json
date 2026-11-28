@@ -1,0 +1,59 @@
+{
+  "id": "temp-log",
+  "title": "Kitchen Temp Log",
+  "oneLiner": "Phone-first fridge, freezer and hot-holding temperature log: staff tap in each reading, out-of-range readings are flagged with a corrective action note, and the month prints as a clean sheet for the inspector. Free, no signup",
+  "customer": "Small US restaurants, cafes, food trucks, caterers and food banks that log fridge and food temperatures every day on paper sheets",
+  "revenueModel": "Free: one device, data kept in the browser. Paid monthly tier per location: several units and staff, history synced across phones, missed check reminders and exports (sync needs a free-tier backend, a spec decision)",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 4,
+    "distribution": 4,
+    "total": 15
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "FoodDocs Standard, USD 69 per location per month (G2 lists USD 199 to 299 a month, https://www.g2.com/products/fooddocs/pricing). About Rs 6,507 a month at about 94.3 INR per USD",
+      "inrMonthly": 6507,
+      "source": "https://www.fooddocs.com/pricing"
+    },
+    "searches": {
+      "terms": {
+        "temperature log": 1900,
+        "temp log": 1900,
+        "fridge temperature log": 880,
+        "food temperature log": 480
+      },
+      "monthly": 1900,
+      "source": "https://api.seodata.dev/v1/keyword?q=temperature%20log&country=us",
+      "note": "seodata.dev US, read 2026-11-28. temperature log and temp log are one cluster, not added. Part of the demand is vaccine and clinic fridge logs (CDC and state PDFs); we target food service only."
+    },
+    "freeGap": "Page one is printable sheets and PDFs (inkpx.com/fridge-temperature-log, easytemperature.com/guides/fridge-temperature-log-template, printblame.com/business/refrigerator-temperature-logs/, workfeed.io/blog/temperature-log/). Digital options need an account: SafetyCulture (safetyculture.com/logs/temperature-log) and the FoodDocs trial. No free web tool found that logs readings, flags them and prints the month without signup. Caveat: phone apps exist (TempLogs on the App Store, Temkeep on Google Play, GoTemp); whether they are free without signup is not yet checked, the lead checks it in validation.",
+    "serp": {
+      "terms": [
+        "temperature log",
+        "fridge temperature log"
+      ],
+      "weakResults": 5,
+      "ofTop": 10,
+      "notes": "temperature log, WebSearch standard: 8 of 10 weak (SafetyCulture 2 spots; GitHub repo and government or health PDF and Word files). temperature log, WebSearch extended: 5 of 9 weak (Toast blog, Mitti, two renergytech articles strong; StateFoodSafety template page, mysupplyclub glossary, immunize.org and FoodHandler PDFs weak). fridge temperature log, standard: 6 weak, mostly state PDFs; extended: 7 weak (VDH and in.gov PDFs, inkpx, easytemperature, printblame, forkto, StateFoodSafety). Weaker count 5. No free tool on page one does the job end to end. Firecrawl not used (out of credits until about 22:14 UTC).",
+      "source": "WebSearch standard and extended, 2026-11-28"
+    }
+  },
+  "legal": "Legal (Vikram) screen: clear. Record keeping only, no medical or food safety advice, no licence. Copy must not promise compliance with health codes and must not target vaccine or clinical fridges",
+  "evidence": [],
+  "nextAction": "Lead Ayaan gathers 3 or more sourced demand signals (and checks whether TempLogs, Temkeep and GoTemp are free without signup), then Research writes cases/temp-log.md and Farhan sizes it",
+  "lead": {
+    "name": "Ayaan",
+    "color": "#17655F",
+    "trait": "Finds where buyers already gather."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-28T08:22:02.364Z",
+  "createdAt": "2026-11-28T08:22:02.364Z",
+  "updatedAt": "2026-11-28T08:22:02.364Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": {}
+}

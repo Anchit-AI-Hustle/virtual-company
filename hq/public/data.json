@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T08:12:37.829Z",
+  "builtAt": "2026-11-28T08:22:03.328Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -473,6 +473,38 @@
         "total": 18,
         "recommendation": "no-go"
       }
+    },
+    {
+      "id": "temp-log",
+      "title": "Kitchen Temp Log",
+      "oneLiner": "Phone-first fridge, freezer and hot-holding temperature log: staff tap in each reading, out-of-range readings are flagged with a corrective action note, and the month prints as a clean sheet for the inspector. Free, no signup",
+      "customer": "Small US restaurants, cafes, food trucks, caterers and food banks that log fridge and food temperatures every day on paper sheets",
+      "revenueModel": "Free: one device, data kept in the browser. Paid monthly tier per location: several units and staff, history synced across phones, missed check reminders and exports (sync needs a free-tier backend, a spec decision)",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 15,
+      "url": null,
+      "nextAction": "Lead Ayaan gathers 3 or more sourced demand signals (and checks whether TempLogs, Temkeep and GoTemp are free without signup), then Research writes cases/temp-log.md and Farhan sizes it",
+      "metrics": {},
+      "updatedAt": "2026-11-28T08:22:02.364Z",
+      "evidenceCount": 0,
+      "specPath": null,
+      "lead": {
+        "id": "lead-temp-log",
+        "name": "Ayaan",
+        "color": "#17655F"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
     },
     {
       "id": "bake-cost",
@@ -1543,6 +1575,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1554,16 +1590,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version",
-      "since": "2026-11-28T07:30:12.194Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed",
+      "since": "2026-11-28T08:22:02.522Z",
+      "ventureId": "temp-log",
+      "ventureTitle": "Kitchen Temp Log",
       "last": {
-        "at": "2026-11-28T07:29:27.870Z",
-        "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version"
+        "at": "2026-11-28T08:22:02.522Z",
+        "action": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed"
       },
-      "actions": 104
+      "actions": 105
     },
     {
       "id": "ops",
@@ -1592,16 +1628,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent",
-      "since": "2026-11-28T07:30:12.353Z",
+      "state": "done",
+      "task": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one",
+      "since": "2026-11-28T08:22:02.408Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T07:28:29.375Z",
-        "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent"
+        "at": "2026-11-28T08:22:02.408Z",
+        "action": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one"
       },
-      "actions": 101
+      "actions": 102
     },
     {
       "id": "data",
@@ -1839,16 +1875,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "idle",
-      "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "since": "2026-11-28T07:30:13.278Z",
+      "state": "done",
+      "task": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
+      "since": "2026-11-28T08:22:02.477Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T21:28:53.968Z",
-        "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)"
+        "at": "2026-11-28T08:22:02.477Z",
+        "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges"
       },
-      "actions": 15
+      "actions": 16
     },
     {
       "id": "people",
@@ -1868,6 +1904,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-temp-log",
+      "name": "Ayaan",
+      "title": "Lead, Kitchen Temp Log",
+      "department": "pods",
+      "color": "#17655F",
+      "trait": "Finds where buyers already gather.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "temp-log",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -2849,6 +2902,13 @@
         "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it"
       }
     ],
+    "temp-log": [
+      {
+        "at": "2026-11-28T08:22:02.522Z",
+        "agent": "ceo",
+        "action": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed"
+      }
+    ],
     "work-order": [
       {
         "at": "2026-11-27T21:47:37.495Z",
@@ -2888,6 +2948,27 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T08:22:02.522Z",
+      "agent": "ceo",
+      "action": "Staffed temp-log with lead Ayaan: only idea of 19 to pass the screen; 2 pods stay empty because no other idea passed",
+      "ventureId": "temp-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T08:22:02.477Z",
+      "agent": "legal",
+      "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T08:22:02.408Z",
+      "agent": "research",
+      "action": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one",
+      "ventureId": null,
+      "kind": "done"
+    },
     {
       "at": "2026-11-28T08:12:37.296Z",
       "agent": "support",
@@ -3426,28 +3507,7 @@
       "action": "Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T02:12:13.138Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T01:13:03.352Z",
-      "agent": "ops",
-      "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T01:13:03.309Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 605
+  "logTotal": 608
 }

@@ -61,5 +61,12 @@
     "action": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T08:22:02.477Z",
+    "agent": "legal",
+    "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
