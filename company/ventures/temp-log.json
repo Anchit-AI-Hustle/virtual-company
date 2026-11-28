@@ -78,16 +78,16 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Business case by research (Meera) 2026-11-28: 16 of 35, no-go. Fails the 24 bar and willingnessToPay and distribution are 2 (need 3): standalone small kitchen logs LogChill and PassMyKitchen have 0 reviews, paper is free, head terms are .gov PDFs and a third vaccine logs, sheet intent held by Toast, FoodDocs and Mitti. Sizing (Farhan) and the CEO verdict to follow.",
+  "nextAction": "None.",
   "lead": {
     "name": "Ayaan",
     "color": "#17655F",
     "trait": "Finds where buyers already gather."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-28T08:24:05.501Z",
+  "stage": "killed",
+  "stageSince": "2026-11-28T08:29:37.418Z",
   "createdAt": "2026-11-28T08:22:02.364Z",
-  "updatedAt": "2026-11-28T08:28:43.680Z",
+  "updatedAt": "2026-11-28T08:29:37.418Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -147,5 +147,6 @@
     },
     "total": 16,
     "recommendation": "no-go"
-  }
+  },
+  "killReason": "CEO no-go 2026-11-28: case 16 of 35 under the 24 bar, willingnessToPay and distribution 2 (need 3). Paper sheets are free and accepted; standalone small kitchen logs (LogChill USD 24, PassMyKitchen USD 29) have 0 reviews; buyers search for sheets not apps; page one is .gov PDFs plus Toast, FoodDocs and Mitti, and a third of the head term is vaccine logs we cannot target; no payment rail. Likely 90 day revenue about USD 9."
 }
