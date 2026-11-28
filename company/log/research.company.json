@@ -369,5 +369,19 @@
     "action": "Blocked: Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
     "ventureId": null,
     "kind": "blocked"
+  },
+  {
+    "at": "2026-11-28T00:12:51.563Z",
+    "agent": "research",
+    "action": "Started: Check whether search volume tools are back to screen a new batch",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T00:12:51.617Z",
+    "agent": "research",
+    "action": "Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then",
+    "ventureId": null,
+    "kind": "blocked"
   }
 ]

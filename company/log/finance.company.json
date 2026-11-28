@@ -180,5 +180,12 @@
     "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T00:12:51.515Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

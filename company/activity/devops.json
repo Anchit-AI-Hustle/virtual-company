@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
+  "state": "done",
+  "task": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
   "ventureId": null,
-  "since": "2026-11-27T23:13:43.672Z"
+  "since": "2026-11-28T00:12:51.431Z"
 }

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T00:12:08.616Z",
+  "builtAt": "2026-11-28T00:12:54.272Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1480,16 +1480,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-27T23:13:43.356Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "since": "2026-11-28T00:12:51.667Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T23:13:34.967Z",
-        "action": "Pods stay empty: 0 open ideas and no idea can be screened until search volume tools return; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
+        "at": "2026-11-28T00:12:51.667Z",
+        "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 91
+      "actions": 92
     },
     {
       "id": "ops",
@@ -1519,15 +1519,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle",
-      "since": "2026-11-27T23:13:34.930Z",
+      "task": "Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then",
+      "since": "2026-11-28T00:12:51.617Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-27T23:13:34.930Z",
-        "action": "Blocked: Blocked: Firecrawl account out of credits (refresh in about 23 hours, so DataForSEO via Alexandria did not run); seodata.dev needs an email signup; no other sourced search volume tool, so no idea can pass the 1,000 searches screen this cycle"
+        "at": "2026-11-28T00:12:51.617Z",
+        "action": "Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then"
       },
-      "actions": 83
+      "actions": 85
     },
     {
       "id": "data",
@@ -1651,16 +1651,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts",
-      "since": "2026-11-27T23:13:43.672Z",
+      "state": "done",
+      "task": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
+      "since": "2026-11-28T00:12:51.431Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T23:13:34.781Z",
-        "action": "Lights on: 0 live products to check, health ok, watchdog ran 22:59 UTC, no platform alerts"
+        "at": "2026-11-28T00:12:51.431Z",
+        "action": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check"
       },
-      "actions": 47
+      "actions": 48
     },
     {
       "id": "security",
@@ -1670,16 +1670,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
+      "state": "done",
       "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-27T23:13:43.714Z",
+      "since": "2026-11-28T00:12:51.472Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T23:13:34.822Z",
+        "at": "2026-11-28T00:12:51.472Z",
         "action": "Secret scan of the repo: no keys or tokens found"
       },
-      "actions": 35
+      "actions": 36
     },
     {
       "id": "growth",
@@ -1746,16 +1746,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one",
-      "since": "2026-11-27T23:13:43.868Z",
+      "state": "done",
+      "task": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+      "since": "2026-11-28T00:12:51.515Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-27T23:13:34.857Z",
-        "action": "Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one"
+        "at": "2026-11-28T00:12:51.515Z",
+        "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend"
       },
-      "actions": 26
+      "actions": 27
     },
     {
       "id": "legal",
@@ -2731,6 +2731,48 @@
   },
   "log": [
     {
+      "at": "2026-11-28T00:12:51.667Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T00:12:51.617Z",
+      "agent": "research",
+      "action": "Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T00:12:51.563Z",
+      "agent": "research",
+      "action": "Started: Check whether search volume tools are back to screen a new batch",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T00:12:51.515Z",
+      "agent": "finance",
+      "action": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T00:12:51.472Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T00:12:51.431Z",
+      "agent": "devops",
+      "action": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T00:12:08.086Z",
       "agent": "ops",
       "action": "Standup 00:12 UTC: health ok, watchdog ran 23:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
@@ -3247,49 +3289,7 @@
       "action": "Started: Gathering sourced demand evidence for a free online rent ledger",
       "ventureId": "rent-ledger",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-21T17:20:08.767Z",
-      "agent": "ceo",
-      "action": "Staffed rent-ledger into validating with lead Vihaan: it clears the owner's screen (Rs 1,131 a month paid, 7,800 searches) and fits ap-company-5, a ledger kept month to month is what the paid tools charge for",
-      "ventureId": "rent-ledger",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:20:08.732Z",
-      "agent": "research",
-      "action": "Screened free-intent landlord and trades terms (seodata.dev cached volumes, US, 21 Nov; DataForSEO credits ran out): rent ledger passes (rent ledger 5,400, rent ledger template 2,400; Landlord Studio PRO USD 12 a month, capterra.com/p/182473/Landlord-Studio/pricing; page one is static PDFs and vendor lead magnets). Added as ideas: work order maker (work order template 3,600) and change order form (2,600); dropped on volume: cleaning quote template 210, landscaping estimate template 390, lawn care invoice template 390, hvac invoice template 480, plumbing invoice template 480, handyman invoice template 720",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:12:30.781Z",
-      "agent": "support",
-      "action": "No live venture, no messages",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:12:30.749Z",
-      "agent": "data",
-      "action": "No live venture, no counts to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:12:30.714Z",
-      "agent": "finance",
-      "action": "Revenue so far Rs 0 (no product has ever sold; ledger.json); fx stays Rs 94.2754 per USD as of 14 Nov",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:12:30.683Z",
-      "agent": "security",
-      "action": "Secret scan: no keys or tokens found in the repo",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 511
+  "logTotal": 517
 }
