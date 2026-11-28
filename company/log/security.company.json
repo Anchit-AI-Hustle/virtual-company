@@ -236,5 +236,19 @@
     "action": "Secret scan of the repo: no keys or tokens found",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T01:13:03.081Z",
+    "agent": "security",
+    "action": "Started: Scan the repo for secrets",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T01:13:03.131Z",
+    "agent": "security",
+    "action": "Secret scan of tracked files: no keys, tokens or private keys found",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
