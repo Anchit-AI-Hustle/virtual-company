@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T00:12:54.272Z",
+  "builtAt": "2026-11-28T00:13:05.763Z",
   "report": {
     "date": "2026-11-27",
     "text": "# Morning report, 2026-11-27\n\nBuilt from the company's books at 07:57 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: no work logged.\n- Strategy and Data: no work logged.\n- Product and Design: no work logged.\n- Engineering: no work logged.\n- Growth, Sales and Support: no work logged.\n- Finance, Legal and People: no work logged.\n- Venture leads: no work logged.\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 2 ideas, 23 killed.\n- Live products: none yet.\n\n## Decisions the agents made\n- None in the last 24 hours.\n\n## Needs you\n- Nothing.\n\n## Platform\n- Being fixed: No agent has worked since 2026-11-21T17:27 UTC. A scheduled work session was missed, often because the plan's usage limit was reached.\n\n"
@@ -1480,9 +1480,9 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T00:12:51.667Z",
+      "since": "2026-11-28T00:13:03.035Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1500,15 +1500,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Standup 00:12 UTC: health ok, watchdog ran 23:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back",
-      "since": "2026-11-28T00:12:08.086Z",
+      "task": "Close the day: lights on, Research blocked on search volume credits until 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "since": "2026-11-28T00:13:03.646Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T00:12:08.086Z",
-        "action": "Standup 00:12 UTC: health ok, watchdog ran 23:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; Research checks whether search volume tools are back"
+        "at": "2026-11-28T00:13:03.646Z",
+        "action": "Close the day: lights on, Research blocked on search volume credits until 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle"
       },
-      "actions": 84
+      "actions": 85
     },
     {
       "id": "research",
@@ -1539,7 +1539,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live venture, so no counts to read",
-      "since": "2026-11-27T23:13:43.432Z",
+      "since": "2026-11-28T00:13:03.108Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1558,7 +1558,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-27T23:13:43.470Z",
+      "since": "2026-11-28T00:13:03.140Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1577,7 +1577,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-27T23:13:43.510Z",
+      "since": "2026-11-28T00:13:03.180Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1596,7 +1596,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-27T23:13:43.553Z",
+      "since": "2026-11-28T00:13:03.214Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1615,7 +1615,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-27T23:13:43.591Z",
+      "since": "2026-11-28T00:13:03.247Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1634,7 +1634,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-27T23:13:43.634Z",
+      "since": "2026-11-28T00:13:03.281Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1651,9 +1651,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Lights on: HQ 200, watchdog.js all checks passed, 0 live products to check",
-      "since": "2026-11-28T00:12:51.431Z",
+      "since": "2026-11-28T00:13:03.316Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1670,9 +1670,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys or tokens found",
-      "since": "2026-11-28T00:12:51.472Z",
+      "since": "2026-11-28T00:13:03.361Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1691,7 +1691,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-27T23:13:43.755Z",
+      "since": "2026-11-28T00:13:03.403Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1710,7 +1710,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-27T23:13:43.794Z",
+      "since": "2026-11-28T00:13:03.438Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1729,7 +1729,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live venture and no open owner-chat issue, so no messages to handle",
-      "since": "2026-11-27T23:13:43.832Z",
+      "since": "2026-11-28T00:13:03.473Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1746,9 +1746,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
-      "since": "2026-11-28T00:12:51.515Z",
+      "since": "2026-11-28T00:13:03.519Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1767,7 +1767,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "since": "2026-11-27T23:13:43.906Z",
+      "since": "2026-11-28T00:13:03.569Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1786,7 +1786,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-27T23:13:43.945Z",
+      "since": "2026-11-28T00:13:03.608Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2731,6 +2731,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T00:13:03.646Z",
+      "agent": "ops",
+      "action": "Close the day: lights on, Research blocked on search volume credits until 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T00:12:51.667Z",
       "agent": "ceo",
       "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
@@ -3282,14 +3289,7 @@
       "action": "4 sourced demand signals found (2 BiggerPockets threads, TurboTenant and Stessa price pages); moved to validated",
       "ventureId": "rent-ledger",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-21T17:20:33.020Z",
-      "agent": "lead-rent-ledger",
-      "action": "Started: Gathering sourced demand evidence for a free online rent ledger",
-      "ventureId": "rent-ledger",
-      "kind": "start"
     }
   ],
-  "logTotal": 517
+  "logTotal": 518
 }
