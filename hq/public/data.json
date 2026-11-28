@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T06:29:11.224Z",
+  "builtAt": "2026-11-28T06:29:33.223Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1517,11 +1517,11 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher.",
-      "since": "2026-11-28T06:28:50.286Z",
-      "ventureId": "osha-log",
-      "ventureTitle": "OSHA Log",
+      "since": "2026-11-28T06:29:29.158Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-28T06:28:50.286Z",
         "action": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher."
@@ -1537,15 +1537,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Standup 06:12 UTC: health ok, watchdog ran 06:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas. Research unblocked this cycle: seodata.dev keyword lookups answer again without signup",
-      "since": "2026-11-28T06:12:55.545Z",
+      "task": "Close the day: Research unblocked (seodata.dev answers again), osha-log screened, staffed with Veer, validated with 6 signals, then killed at the business case (20 of 35, bar 24); 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "since": "2026-11-28T06:29:30.547Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T06:12:55.545Z",
-        "action": "Standup 06:12 UTC: health ok, watchdog ran 06:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas. Research unblocked this cycle: seodata.dev keyword lookups answer again without signup"
+        "at": "2026-11-28T06:29:30.547Z",
+        "action": "Close the day: Research unblocked (seodata.dev answers again), osha-log screened, staffed with Veer, validated with 6 signals, then killed at the business case (20 of 35, bar 24); 0 open ideas, 0 pods, Rs 0 revenue; agents idle"
       },
-      "actions": 102
+      "actions": 103
     },
     {
       "id": "research",
@@ -1555,11 +1555,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
-      "since": "2026-11-28T06:27:43.879Z",
-      "ventureId": "osha-log",
-      "ventureTitle": "OSHA Log",
+      "since": "2026-11-28T06:29:29.371Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-28T06:27:43.879Z",
         "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers"
@@ -1576,7 +1576,7 @@
       "charter": "agents/data.md",
       "state": "idle",
       "task": "No live venture, so no counts to read",
-      "since": "2026-11-28T00:13:03.108Z",
+      "since": "2026-11-28T06:29:29.455Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1595,7 +1595,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-28T00:13:03.140Z",
+      "since": "2026-11-28T06:29:29.528Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1614,7 +1614,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-28T00:13:03.180Z",
+      "since": "2026-11-28T06:29:29.606Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1633,7 +1633,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-28T00:13:03.214Z",
+      "since": "2026-11-28T06:29:29.693Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1652,7 +1652,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-28T00:13:03.247Z",
+      "since": "2026-11-28T06:29:29.777Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1671,7 +1671,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-28T00:13:03.281Z",
+      "since": "2026-11-28T06:29:29.851Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1690,7 +1690,7 @@
       "charter": "agents/devops.md",
       "state": "idle",
       "task": "HQ returns 200; no venture is live, so no product URL to check",
-      "since": "2026-11-28T05:13:13.715Z",
+      "since": "2026-11-28T06:29:29.917Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1709,7 +1709,7 @@
       "charter": "agents/security.md",
       "state": "idle",
       "task": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "since": "2026-11-28T05:13:14.663Z",
+      "since": "2026-11-28T06:29:29.985Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1728,7 +1728,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-28T00:13:03.403Z",
+      "since": "2026-11-28T06:29:30.069Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1747,7 +1747,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-28T00:13:03.438Z",
+      "since": "2026-11-28T06:29:30.153Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1766,7 +1766,7 @@
       "charter": "agents/support.md",
       "state": "idle",
       "task": "No live venture and no open owner-chat issue, so no messages to handle",
-      "since": "2026-11-28T00:13:03.473Z",
+      "since": "2026-11-28T06:29:30.233Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1785,7 +1785,7 @@
       "charter": "agents/finance.md",
       "state": "idle",
       "task": "Revenue Rs 0 confirmed (ledger empty); no live product, no spend",
-      "since": "2026-11-28T00:13:03.519Z",
+      "since": "2026-11-28T06:29:30.308Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1804,7 +1804,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "since": "2026-11-28T00:13:03.569Z",
+      "since": "2026-11-28T06:29:30.384Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1823,7 +1823,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-28T00:13:03.608Z",
+      "since": "2026-11-28T06:29:30.445Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2815,6 +2815,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T06:29:30.547Z",
+      "agent": "ops",
+      "action": "Close the day: Research unblocked (seodata.dev answers again), osha-log screened, staffed with Veer, validated with 6 signals, then killed at the business case (20 of 35, bar 24); 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T06:28:50.286Z",
       "agent": "ceo",
       "action": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher.",
@@ -3366,14 +3373,7 @@
       "action": "Blocked: Search volume tools unavailable: Firecrawl credits used up (refresh in about 24 hours), DataForSEO via Alexandria returned 503, seodata.dev requires a signup with an email",
       "ventureId": null,
       "kind": "blocked"
-    },
-    {
-      "at": "2026-11-27T22:37:40.795Z",
-      "agent": "ceo",
-      "action": "Screen tightened under ap-company-7: page one count must be confirmed on a second search source, after rfi-log passed on Firecrawl (9 of 10 weak) but failed on WebSearch and was killed at 17 of 35. 0 open ideas; search volume tools are out of credits until tomorrow, so the next batch is screened next cycle",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 577
+  "logTotal": 578
 }

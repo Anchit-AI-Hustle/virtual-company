@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
-  "ventureId": "osha-log",
-  "since": "2026-11-28T06:27:43.879Z"
+  "ventureId": null,
+  "since": "2026-11-28T06:29:29.371Z"
 }
