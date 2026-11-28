@@ -1,0 +1,6 @@
+{
+  "role": "ceo",
+  "passed": false,
+  "at": "2026-11-28T06:28:50.218Z",
+  "notes": "No-go: case scores 20 of 35 against a bar of 24 (competitionGap 2, speedToRevenue 2). Spot checked 28 Nov 2026: Salus gives a free Excel OSHA 300 log with 300A totals (salussafety.io/us/osha/300-log), LogStead gives a free auto-totaling 300/300A workbook and ITA CSV validator (log-stead.vercel.app/tools), HB Next sells the online log at USD 99 a year per establishment (hbnext.com), and the head term osha 300 log is 8,100 a month (seodata.dev). Our free single-establishment tier gives away what most buyers need, there is no payment rail, and a new subdomain will miss the Feb 2027 peak. The paid-per-establishment pivot meets a USD 99 a year incumbent and free workbooks with no new buyer evidence, so no pivot."
+}

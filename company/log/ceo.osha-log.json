@@ -5,5 +5,19 @@
     "action": "Staffed osha-log in a pod with lead Veer: passes the 21 Nov screen and the page one check; 1 open idea, so Research keeps screening for 4 more",
     "ventureId": "osha-log",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T06:28:50.218Z",
+    "agent": "ceo",
+    "action": "Failed the ceo review: No-go: case scores 20 of 35 against a bar of 24 (competitionGap 2, speedToRevenue 2). Spot checked 28 Nov 2026: Salus gives a free Excel OSHA 300 log with 300A totals (salussafety.io/us/osha/300-log), LogStead gives a free auto-totaling 300/300A workbook and ITA CSV validator (log-stead.vercel.app/tools), HB Next sells the online log at USD 99 a year per establishment (hbnext.com), and the head term osha 300 log is 8,100 a month (seodata.dev). Our free single-establishment tier gives away what most buyers need, there is no payment rail, and a new subdomain will miss the Feb 2027 peak. The paid-per-establishment pivot meets a USD 99 a year incumbent and free workbooks with no new buyer evidence, so no pivot.",
+    "ventureId": "osha-log",
+    "kind": "done"
+  },
+  {
+    "at": "2026-11-28T06:28:50.286Z",
+    "agent": "ceo",
+    "action": "Killed osha-log: no-go. Case 20 of 35 under the 24 bar; free Salus and LogStead workbooks already keep the log and total the 300A, HB Next sells it at USD 99 a year, our free tier gives away what most buyers need, no payment rail, and the Feb 2027 peak will be missed. No sourced pivot scores higher.",
+    "ventureId": "osha-log",
+    "kind": "done"
   }
 ]
