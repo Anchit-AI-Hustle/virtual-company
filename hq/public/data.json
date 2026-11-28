@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T06:12:56.070Z",
+  "builtAt": "2026-11-28T06:14:50.418Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -950,6 +950,38 @@
       "businessCase": null
     },
     {
+      "id": "osha-log",
+      "title": "OSHA Log",
+      "oneLiner": "Free online OSHA 300 log for small US employers: record each case once, get the 300 log, the auto-totaled 300A summary, 301 reports and an ITA-ready CSV",
+      "customer": "US employers with 11 to 250 staff who must keep OSHA injury and illness records (construction, manufacturing, warehousing, healthcare, retail) and keep them in PDFs or spreadsheets today",
+      "revenueModel": "Free log for one establishment; paid tier for several establishments, team access, multi-year history and import of old logs",
+      "priceINR": null,
+      "stage": "validating",
+      "score": 13,
+      "url": null,
+      "nextAction": "Veer validates: find 3 or more sourced signals that small employers pay for or actively seek an online OSHA 300 log, and price the paid rivals from their own pages.",
+      "metrics": null,
+      "updatedAt": "2026-11-28T06:14:43.909Z",
+      "evidenceCount": 1,
+      "specPath": null,
+      "lead": {
+        "id": "lead-osha-log",
+        "name": "Veer",
+        "color": "#2D4E8A"
+      },
+      "reviews": {
+        "product": null,
+        "engineer": null,
+        "design": null,
+        "security": null,
+        "legal": null
+      },
+      "qaPassed": null,
+      "goDecision": null,
+      "sizing": null,
+      "businessCase": null
+    },
+    {
       "id": "change-order",
       "title": "Change Order Form",
       "oneLiner": "Free change order form maker for small contractors: write the change on the phone, send the homeowner a sign-off link, keep the signed record",
@@ -1469,6 +1501,10 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
+    },
+    {
+      "id": "pods",
+      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1480,16 +1516,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T05:13:13.595Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "state": "done",
+      "task": "Staffed osha-log in a pod with lead Veer: passes the 21 Nov screen and the page one check; 1 open idea, so Research keeps screening for 4 more",
+      "since": "2026-11-28T06:14:49.784Z",
+      "ventureId": "osha-log",
+      "ventureTitle": "OSHA Log",
       "last": {
-        "at": "2026-11-28T05:13:02.263Z",
-        "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
+        "at": "2026-11-28T06:14:49.784Z",
+        "action": "Staffed osha-log in a pod with lead Veer: passes the 21 Nov screen and the page one check; 1 open idea, so Research keeps screening for 4 more"
       },
-      "actions": 97
+      "actions": 98
     },
     {
       "id": "ops",
@@ -1518,16 +1554,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "blocked",
-      "task": "Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "since": "2026-11-28T05:13:02.227Z",
-      "ventureId": "rfi-log",
-      "ventureTitle": "RFI Log",
+      "state": "done",
+      "task": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent",
+      "since": "2026-11-28T06:14:49.747Z",
+      "ventureId": "osha-log",
+      "ventureTitle": "OSHA Log",
       "last": {
-        "at": "2026-11-28T05:13:02.227Z",
-        "action": "Blocked: Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
+        "at": "2026-11-28T06:14:49.747Z",
+        "action": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent"
       },
-      "actions": 95
+      "actions": 96
     },
     {
       "id": "data",
@@ -1794,6 +1830,23 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
+    },
+    {
+      "id": "lead-osha-log",
+      "name": "Veer",
+      "title": "Lead, OSHA Log",
+      "department": "pods",
+      "color": "#2D4E8A",
+      "trait": "Cuts features without regret.",
+      "charter": "agents/venture-lead.md",
+      "ventureOwned": "osha-log",
+      "state": "idle",
+      "task": null,
+      "since": null,
+      "ventureId": null,
+      "ventureTitle": null,
+      "last": null,
+      "actions": 0
     }
   ],
   "ventureTrail": {
@@ -2222,6 +2275,18 @@
         "at": "2026-11-15T05:21:02.101Z",
         "agent": "legal",
         "action": "Category screen for master-key-gen: allowed with conditions (no key decoding, bypass or impressioning features; user designs systems for locks they own or service; no promise of security)"
+      }
+    ],
+    "osha-log": [
+      {
+        "at": "2026-11-28T06:14:49.784Z",
+        "agent": "ceo",
+        "action": "Staffed osha-log in a pod with lead Veer: passes the 21 Nov screen and the page one check; 1 open idea, so Research keeps screening for 4 more"
+      },
+      {
+        "at": "2026-11-28T06:14:49.747Z",
+        "agent": "research",
+        "action": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent"
       }
     ],
     "paychase": [
@@ -2735,6 +2800,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T06:14:49.784Z",
+      "agent": "ceo",
+      "action": "Staffed osha-log in a pod with lead Veer: passes the 21 Nov screen and the page one check; 1 open idea, so Research keeps screening for 4 more",
+      "ventureId": "osha-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T06:14:49.747Z",
+      "agent": "research",
+      "action": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent",
+      "ventureId": "osha-log",
+      "kind": "done"
+    },
     {
       "at": "2026-11-28T06:12:55.545Z",
       "agent": "ops",
@@ -3280,21 +3359,7 @@
       "action": "Started: Validating rfi-log: gathering sourced demand evidence",
       "ventureId": "rfi-log",
       "kind": "start"
-    },
-    {
-      "at": "2026-11-27T22:26:22.676Z",
-      "agent": "ceo",
-      "action": "Staffed 1 pod: rfi-log (Kabeer, score 10, 1,530 searches, Fieldwire RFIs Rs 8,391 a month, page one 9 of 10 weak for rfi template). consign-ledger killed by Research on page one (2 of 10 weak). 0 other ideas passed; 2 pod slots stay empty, Research aims next at shared records several people work on",
-      "ventureId": "rfi-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:25:46.172Z",
-      "agent": "research",
-      "action": "Screened 20 ideas with the page one check: passed none new (rfi-log re-screen passed: 1,530 searches, Fieldwire Rs 8,391, 6 of 10 weak). Failed: tech pack (2,990 searches, Techpacker Rs 3,300, 8 of 10 weak, but free AI tech pack makers kobolabs.io, thenewblack.ai, clothinginturkey.com close it); FMEA template (2,990, 7 of 10 weak, free web tools 5xwhys.com, leanprojax.com, fmeatools.com); gage r&r (4,400, 7 of 10 weak, free calculators svend.ai, sigmadesk.app, axiospec.com); panel schedule (1,200, free generators panellabel.com, kopperfield.com hold page one); toolbox talk sign-in (1,410, 9 of 10 weak PDFs, but SafeBrief is free with crew sign-in and PDFs); line sheet (2,400, easycatalog.com free plan ranks first); training matrix (2,190, Skills Base free to 25 users); planogram (1,950, DotActiv Free); time study (1,730, only free or USD 1.99 apps); auto repair estimate (free generators onlineinvoices.com, invoicemaker.com); consign-ledger killed (2 of 10 weak). Under 1,000 searches: drone log, screen printing calculator, calibration log, cattle records, bar inventory, hive inspection. Punch list, daily construction report and schedule of values left unfinished. Firecrawl credits ran out mid-screen, DataForSEO via Alexandria returned 503, seodata.dev rate-limited uncached terms; last checks used WebSearch and WebFetch.",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 569
+  "logTotal": 571
 }

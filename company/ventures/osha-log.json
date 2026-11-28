@@ -1,0 +1,68 @@
+{
+  "id": "osha-log",
+  "title": "OSHA Log",
+  "oneLiner": "Free online OSHA 300 log for small US employers: record each case once, get the 300 log, the auto-totaled 300A summary, 301 reports and an ITA-ready CSV",
+  "customer": "US employers with 11 to 250 staff who must keep OSHA injury and illness records (construction, manufacturing, warehousing, healthcare, retail) and keep them in PDFs or spreadsheets today",
+  "revenueModel": "Free log for one establishment; paid tier for several establishments, team access, multi-year history and import of old logs",
+  "score": {
+    "demand": 4,
+    "speedToRevenue": 3,
+    "buildEffort": 3,
+    "distribution": 3,
+    "total": 13
+  },
+  "screen": {
+    "paidPrice": {
+      "product": "LogStead OSHA recordkeeping software at USD 39 a month or USD 390 a year (14 day trial). About Rs 3,677 a month at 94.2754 INR per USD",
+      "inrMonthly": 3677,
+      "source": "https://log-stead.vercel.app"
+    },
+    "searches": {
+      "terms": {
+        "osha form 300": 9900,
+        "osha log 300": 9900,
+        "osha form 300a": 9900,
+        "osha 300 log": 8100,
+        "osha 300a": 2900,
+        "osha form 301": 1900,
+        "osha log": 1600,
+        "ita osha": 1600
+      },
+      "monthly": 8100,
+      "source": "https://api.seodata.dev/v1/keyword?q=osha+300+log&country=us",
+      "note": "seodata.dev (Google Ads monthly averages, United States), read 2026-11-28. Variants like osha form 300 and osha log 300 likely share one Google group, so only the head term (8,100) is counted toward the screen. Also https://api.seodata.dev/v1/keyword?q=osha+301&country=us. The exact software terms are tiny (osha recordkeeping software 30, CPC USD 90), so buyers arrive on form terms, not software terms."
+    },
+    "freeGap": "Free options are files or single slices: the official OSHA forms are PDFs and fillable spreadsheets (https://www.osha.gov/recordkeeping/forms, https://labor.arkansas.gov/wp-content/uploads/OSHA-300-fillable.pdf), and LogStead gives away a recordability checker, ITA CSV validator and an auto-totaling Excel workbook but keeps the online log, 301 reports and the ITA CSV export paid (https://log-stead.vercel.app/tools). Gap: a free online log that keeps the cases and produces 300, 300A, 301 and the ITA CSV end to end. Risk: LogStead already runs this exact free tools plus USD 39 plan, and SafetyCulture publishes an OSHA 300 log page (https://safetyculture.com/logs/osha-300-log); the free workbook may be enough for very small employers.",
+    "serp": {
+      "terms": [
+        "osha 300 log",
+        "osha form 300"
+      ],
+      "weakResults": 6,
+      "ofTop": 10,
+      "notes": "osha 300 log (WebSearch): static PDFs from dir.nv.gov (two), slh.wisc.edu, dol.ks.gov, osha.oregon.gov, labor.arkansas.gov and bls.gov fill most of the top 10, plus biotech.law.lsu.edu, safetyculture.com, docs.oracle.com and hsi.com. osha form 300 (WebSearch): PDFs from slh.wisc.edu, bls.gov, nj.gov, labor.hawaii.gov, labor.arkansas.gov (two) and dir.nv.gov, plus bamboohr.com glossary pages and osha.gov. No free tool on page one keeps the log end to end. Firecrawl search was out of credits, so only one source was read; count is the WebSearch count.",
+      "source": "WebSearch, 2026-11-28"
+    }
+  },
+  "evidence": [
+    {
+      "claim": "LogStead sells an online OSHA 300 log with auto-totaled 300A and an ITA-ready CSV at USD 39 a month or USD 390 a year, with Starter, Professional and Business plans.",
+      "url": "https://log-stead.vercel.app",
+      "foundAt": "2026-11-28"
+    }
+  ],
+  "nextAction": "Veer validates: find 3 or more sourced signals that small employers pay for or actively seek an online OSHA 300 log, and price the paid rivals from their own pages.",
+  "lead": {
+    "name": "Veer",
+    "color": "#2D4E8A",
+    "trait": "Cuts features without regret."
+  },
+  "stage": "validating",
+  "stageSince": "2026-11-28T06:14:43.909Z",
+  "createdAt": "2026-11-28T06:14:43.909Z",
+  "updatedAt": "2026-11-28T06:14:43.909Z",
+  "priceINR": null,
+  "specPath": null,
+  "url": null,
+  "metrics": null
+}
