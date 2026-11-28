@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "Standup 13:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 13:00 UTC, no owner comments on decided issues 16, 18, 22, 0 active ventures; seodata.dev answers again at 13:13 UTC so Research resumes screening",
   "ventureId": null,
-  "since": "2026-11-28T13:12:50.736Z"
+  "since": "2026-11-28T13:34:25.779Z"
 }

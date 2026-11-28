@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T13:34:06.386Z",
+  "builtAt": "2026-11-28T13:34:29.036Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1592,15 +1592,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "idle",
-      "task": "Pods stay empty: 0 open ideas and none can pass the 1,000 searches gate until search volume tools return at about 22:14 UTC; ap-company-6 (issue 21) still waits on the owner; no new decision needed",
-      "since": "2026-11-28T12:13:31.808Z",
+      "task": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner",
+      "since": "2026-11-28T13:34:25.707Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T12:13:15.696Z",
-        "action": "Pods stay empty: 0 open ideas and none can pass the 1,000 searches gate until search volume tools return at about 22:14 UTC; ap-company-6 (issue 21) still waits on the owner; no new decision needed"
+        "at": "2026-11-28T13:34:25.606Z",
+        "action": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner"
       },
-      "actions": 112
+      "actions": 113
     },
     {
       "id": "ops",
@@ -1610,9 +1610,9 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Standup 13:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 13:00 UTC, no owner comments on decided issues 16, 18, 22, 0 active ventures; seodata.dev answers again at 13:13 UTC so Research resumes screening",
-      "since": "2026-11-28T13:12:50.736Z",
+      "since": "2026-11-28T13:34:25.779Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1629,9 +1629,9 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)",
-      "since": "2026-11-28T13:33:58.958Z",
+      "since": "2026-11-28T13:34:26.528Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1762,9 +1762,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "Step 1: no live ventures to check; health.json ok since 09:00 UTC",
-      "since": "2026-11-28T13:12:54.919Z",
+      "since": "2026-11-28T13:34:26.135Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1781,9 +1781,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-28T13:12:54.879Z",
+      "since": "2026-11-28T13:34:26.219Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1857,9 +1857,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "No live ventures, confirmed revenue still Rs 0 in ledger.json",
-      "since": "2026-11-28T13:12:54.965Z",
+      "since": "2026-11-28T13:34:26.406Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2963,6 +2963,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T13:34:25.606Z",
+      "agent": "ceo",
+      "action": "Keep pods empty: Research screened 19 new ideas at 13:15 to 13:35 UTC and none passed the paid price, 1,000 searches, free gap and page one screen; ap-company-6 still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T13:33:58.958Z",
       "agent": "research",
       "action": "Screened 19 ideas (seodata.dev US, WebSearch standard and extended, 28 Nov): 0 passed. Free tool closes the gap: Bates numbering (bates numbering 2,900, free no-signup stampers i2pdf.com, wildandfreetools.com, pdf.net; page one vendor blogs zapproved.com, everlaw.com, adobe.com), stage plot (2,400, free makers tecrider.com, aboutmysound.com, stageplot.app, stage-plan.com on page one), electronic press kit and media kit (1,600 each, free builders soundcamps.com, chartmetric onesheet via hypebot.com, template.net). Vendors hold page one: risk register template (1,600, atlassian.com, hubspot.com, asana.com, smartsheet.com), employee write up form (3,600, rippling.com, typeform.com, jotform.com, legalzoom.com, indeed.com), work instruction template (1,300, safetyculture.com, smartsheet.com, clickup.com, projectmanager.com), silent auction bid sheet (5,400, donorbox.org, jotform.com, 32auctions.com, givebutter.com, plus a free generator funraise.org), first article inspection (2,400 mostly info intent, report 320; 3 of 10 weak, deltek.com, engineering.com, qualitymag.com). Under 1,000: split sheet 880, dance formation app 480 to 590, traceability matrix template 480, art inventory software 140, fixed asset register 260, 13 week cash flow template 70, asc 842 calculator 30, window sticker template 0. Not measured (seodata.dev rate_limited): forklift inspection checklist, job hazard analysis template. seodata.dev: about 47 requests, 18 answered, rest rate_limited. Firecrawl not used (out of credits until about 22:14 UTC)",
@@ -3514,14 +3521,7 @@
       "action": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T07:13:07.954Z",
-      "agent": "devops",
-      "action": "Started: Check live URLs",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 660
+  "logTotal": 661
 }
