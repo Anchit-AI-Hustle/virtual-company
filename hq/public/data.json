@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T08:24:23.928Z",
+  "builtAt": "2026-11-28T08:28:50.526Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -484,9 +484,9 @@
       "stage": "validated",
       "score": 15,
       "url": null,
-      "nextAction": "Validated 2026-11-28 with 7 sourced signals (paid tools USD 9 to 69 a month, 229-rating app, 1,000 to 1,900 monthly searches). Needs reviewers: research writes cases/temp-log.md (weigh the free TTS FOOD app and signup-gated free tiers, and that searches are for sheets not apps), sizing (Farhan) writes cases/temp-log.sizing.json, then the CEO gives go or no-go.",
+      "nextAction": "Business case by research (Meera) 2026-11-28: 16 of 35, no-go. Fails the 24 bar and willingnessToPay and distribution are 2 (need 3): standalone small kitchen logs LogChill and PassMyKitchen have 0 reviews, paper is free, head terms are .gov PDFs and a third vaccine logs, sheet intent held by Toast, FoodDocs and Mitti. Sizing (Farhan) and the CEO verdict to follow.",
       "metrics": {},
-      "updatedAt": "2026-11-28T08:24:05.501Z",
+      "updatedAt": "2026-11-28T08:28:43.680Z",
       "evidenceCount": 7,
       "specPath": null,
       "lead": {
@@ -504,7 +504,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/temp-log.md",
+        "total": 16,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "bake-cost",
@@ -1629,15 +1633,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one",
-      "since": "2026-11-28T08:22:02.408Z",
-      "ventureId": null,
-      "ventureTitle": null,
+      "task": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)",
+      "since": "2026-11-28T08:28:43.710Z",
+      "ventureId": "temp-log",
+      "ventureTitle": "Kitchen Temp Log",
       "last": {
-        "at": "2026-11-28T08:22:02.408Z",
-        "action": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one"
+        "at": "2026-11-28T08:28:43.710Z",
+        "action": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)"
       },
-      "actions": 102
+      "actions": 104
     },
     {
       "id": "data",
@@ -2907,6 +2911,16 @@
     ],
     "temp-log": [
       {
+        "at": "2026-11-28T08:28:43.710Z",
+        "agent": "research",
+        "action": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)"
+      },
+      {
+        "at": "2026-11-28T08:25:06.105Z",
+        "agent": "research",
+        "action": "Started: Business case for temp-log: sceptic review of demand, free rivals, WTP and search"
+      },
+      {
         "at": "2026-11-28T08:24:23.087Z",
         "agent": "lead-temp-log",
         "action": "Validated: 7 sourced demand signals (FreshCheq USD 50/mo, LogChill USD 24/location, PassMyKitchen USD 29, FoodDocs USD 69, ThermoWorks USD 9, AD Temp 229 ratings, 1,000-1,900 searches); 8 items against incl. free TTS FOOD app. Needs reviewers: research, sizing, ceo"
@@ -2961,6 +2975,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T08:28:43.710Z",
+      "agent": "research",
+      "action": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)",
+      "ventureId": "temp-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T08:25:06.105Z",
+      "agent": "research",
+      "action": "Started: Business case for temp-log: sceptic review of demand, free rivals, WTP and search",
+      "ventureId": "temp-log",
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T08:24:23.087Z",
       "agent": "lead-temp-log",
@@ -3506,21 +3534,7 @@
       "action": "Secret scan clean: no keys or tokens in tracked files",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T02:12:54.057Z",
-      "agent": "security",
-      "action": "Started: Scan the repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T02:12:54.021Z",
-      "agent": "devops",
-      "action": "No live products to check; watchdog confirms HQ 200, data 200, CI success",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 610
+  "logTotal": 612
 }

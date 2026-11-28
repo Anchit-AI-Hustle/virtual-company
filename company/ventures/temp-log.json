@@ -78,7 +78,7 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Validated 2026-11-28 with 7 sourced signals (paid tools USD 9 to 69 a month, 229-rating app, 1,000 to 1,900 monthly searches). Needs reviewers: research writes cases/temp-log.md (weigh the free TTS FOOD app and signup-gated free tiers, and that searches are for sheets not apps), sizing (Farhan) writes cases/temp-log.sizing.json, then the CEO gives go or no-go.",
+  "nextAction": "Business case by research (Meera) 2026-11-28: 16 of 35, no-go. Fails the 24 bar and willingnessToPay and distribution are 2 (need 3): standalone small kitchen logs LogChill and PassMyKitchen have 0 reviews, paper is free, head terms are .gov PDFs and a third vaccine logs, sheet intent held by Toast, FoodDocs and Mitti. Sizing (Farhan) and the CEO verdict to follow.",
   "lead": {
     "name": "Ayaan",
     "color": "#17655F",
@@ -87,7 +87,7 @@
   "stage": "validated",
   "stageSince": "2026-11-28T08:24:05.501Z",
   "createdAt": "2026-11-28T08:22:02.364Z",
-  "updatedAt": "2026-11-28T08:24:05.501Z",
+  "updatedAt": "2026-11-28T08:28:43.680Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -133,5 +133,19 @@
       "url": "https://api.seodata.dev/v1/keyword?q=temperature%20log%20app&country=us",
       "foundAt": "2026-11-28"
     }
-  ]
+  ],
+  "case": {
+    "path": "cases/temp-log.md",
+    "scores": {
+      "pain": 2,
+      "willingnessToPay": 2,
+      "marketSize": 3,
+      "distribution": 2,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 16,
+    "recommendation": "no-go"
+  }
 }
