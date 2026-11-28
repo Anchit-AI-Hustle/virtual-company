@@ -75,5 +75,12 @@
     "action": "Started: Screen new idea categories for licence and risk",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-28T09:32:20.727Z",
+    "agent": "legal",
+    "action": "Flagged: HVAC Manual J (ACCA standard, permit-ready claims would be a legal promise), PF ECR file (statutory filing), meesho label crop (leans on a marketplace brand). Others clear",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

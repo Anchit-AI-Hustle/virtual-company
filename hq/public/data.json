@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T09:12:48.133Z",
+  "builtAt": "2026-11-28T09:32:23.692Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,16 +1591,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "working",
-      "task": "Generate and screen a new batch of ideas with Research and Legal",
-      "since": "2026-11-28T09:12:47.412Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 of 22 new ideas cleared the screen (closest, nutrition labels, loses to a free recipe calculator at number 1). No new decision needed; ap-company-6 (issue 21) still waits on the owner",
+      "since": "2026-11-28T09:32:20.788Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:12:47.412Z",
-        "action": "Started: Generate and screen a new batch of ideas with Research and Legal"
+        "at": "2026-11-28T09:32:20.788Z",
+        "action": "Pods stay empty: 0 of 22 new ideas cleared the screen (closest, nutrition labels, loses to a free recipe calculator at number 1). No new decision needed; ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 108
+      "actions": 109
     },
     {
       "id": "ops",
@@ -1629,16 +1629,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "working",
-      "task": "Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
-      "since": "2026-11-28T09:12:47.456Z",
+      "state": "done",
+      "task": "Screened 22 new ideas (seodata.dev US and India, WebSearch page one, 28 Nov): none passed. Free tool closes the gap: nutrition label from recipe (5,400 searches, ReciPal USD 59 a month recipal.com, page one weak, but GoVisually free recipe calculator ranks first govisually.com/free-tools/nutrition-label), meesho label crop India (49,500, free croppers pdfcropper.in, tools4free.in), HVAC load calc (2,900, Lennox free Manual J lennoxpros.com; ACCA standard, Legal flag), pallet calculator (1,300, free 3D calculators omnicalculator.com/other/pallet). Vendors hold page one: campground reservations (2,170, Capterra and Campspot, 0 of 10 weak), PTO tracker (1,000, HR vendors and power take-off results). Wrong intent: certificate generator 3,600 is SSL developer intent, estate sale software 480 vs shopper terms. Under 1,000: gang sheet builder, volunteer hours, calculator builder, KDP interiors, container load plan, reseller inventory, crosslisting, guard tour, cemetery software, changelog, size chart, app store screenshots, backflow reports, PF ECR file. Firecrawl out of credits (DataForSEO and second page one source not run) until about 22:14 UTC",
+      "since": "2026-11-28T09:32:20.621Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:12:47.456Z",
-        "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources"
+        "at": "2026-11-28T09:32:20.621Z",
+        "action": "Screened 22 new ideas (seodata.dev US and India, WebSearch page one, 28 Nov): none passed. Free tool closes the gap: nutrition label from recipe (5,400 searches, ReciPal USD 59 a month recipal.com, page one weak, but GoVisually free recipe calculator ranks first govisually.com/free-tools/nutrition-label), meesho label crop India (49,500, free croppers pdfcropper.in, tools4free.in), HVAC load calc (2,900, Lennox free Manual J lennoxpros.com; ACCA standard, Legal flag), pallet calculator (1,300, free 3D calculators omnicalculator.com/other/pallet). Vendors hold page one: campground reservations (2,170, Capterra and Campspot, 0 of 10 weak), PTO tracker (1,000, HR vendors and power take-off results). Wrong intent: certificate generator 3,600 is SSL developer intent, estate sale software 480 vs shopper terms. Under 1,000: gang sheet builder, volunteer hours, calculator builder, KDP interiors, container load plan, reseller inventory, crosslisting, guard tour, cemetery software, changelog, size chart, app store screenshots, backflow reports, PF ECR file. Firecrawl out of credits (DataForSEO and second page one source not run) until about 22:14 UTC"
       },
-      "actions": 105
+      "actions": 106
     },
     {
       "id": "data",
@@ -1838,16 +1838,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
-      "task": "0 live ventures and no owner-chat issue, no messages to handle",
-      "since": "2026-11-28T08:31:18.531Z",
+      "state": "done",
+      "task": "No messages: no live venture",
+      "since": "2026-11-28T09:32:20.907Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:12:37.296Z",
-        "action": "0 live ventures and no owner-chat issue, no messages to handle"
+        "at": "2026-11-28T09:32:20.907Z",
+        "action": "No messages: no live venture"
       },
-      "actions": 16
+      "actions": 17
     },
     {
       "id": "finance",
@@ -1857,16 +1857,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
-      "task": "Revenue confirmed Rs 0 (company/ledger.json has no payments); no live product, no spend",
-      "since": "2026-11-28T08:31:18.237Z",
+      "state": "done",
+      "task": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov",
+      "since": "2026-11-28T09:32:20.847Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:12:37.203Z",
-        "action": "Revenue confirmed Rs 0 (company/ledger.json has no payments); no live product, no spend"
+        "at": "2026-11-28T09:32:20.847Z",
+        "action": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov"
       },
-      "actions": 29
+      "actions": 30
     },
     {
       "id": "legal",
@@ -1876,16 +1876,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "working",
-      "task": "Screen new idea categories for licence and risk",
-      "since": "2026-11-28T09:12:47.498Z",
+      "state": "done",
+      "task": "Flagged: HVAC Manual J (ACCA standard, permit-ready claims would be a legal promise), PF ECR file (statutory filing), meesho label crop (leans on a marketplace brand). Others clear",
+      "since": "2026-11-28T09:32:20.727Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:12:47.498Z",
-        "action": "Started: Screen new idea categories for licence and risk"
+        "at": "2026-11-28T09:32:20.727Z",
+        "action": "Flagged: HVAC Manual J (ACCA standard, permit-ready claims would be a legal promise), PF ECR file (statutory filing), meesho label crop (leans on a marketplace brand). Others clear"
       },
-      "actions": 17
+      "actions": 18
     },
     {
       "id": "people",
@@ -2963,6 +2963,41 @@
   },
   "log": [
     {
+      "at": "2026-11-28T09:32:20.907Z",
+      "agent": "support",
+      "action": "No messages: no live venture",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T09:32:20.847Z",
+      "agent": "finance",
+      "action": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T09:32:20.788Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 of 22 new ideas cleared the screen (closest, nutrition labels, loses to a free recipe calculator at number 1). No new decision needed; ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T09:32:20.727Z",
+      "agent": "legal",
+      "action": "Flagged: HVAC Manual J (ACCA standard, permit-ready claims would be a legal promise), PF ECR file (statutory filing), meesho label crop (leans on a marketplace brand). Others clear",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T09:32:20.621Z",
+      "agent": "research",
+      "action": "Screened 22 new ideas (seodata.dev US and India, WebSearch page one, 28 Nov): none passed. Free tool closes the gap: nutrition label from recipe (5,400 searches, ReciPal USD 59 a month recipal.com, page one weak, but GoVisually free recipe calculator ranks first govisually.com/free-tools/nutrition-label), meesho label crop India (49,500, free croppers pdfcropper.in, tools4free.in), HVAC load calc (2,900, Lennox free Manual J lennoxpros.com; ACCA standard, Legal flag), pallet calculator (1,300, free 3D calculators omnicalculator.com/other/pallet). Vendors hold page one: campground reservations (2,170, Capterra and Campspot, 0 of 10 weak), PTO tracker (1,000, HR vendors and power take-off results). Wrong intent: certificate generator 3,600 is SSL developer intent, estate sale software 480 vs shopper terms. Under 1,000: gang sheet builder, volunteer hours, calculator builder, KDP interiors, container load plan, reseller inventory, crosslisting, guard tour, cemetery software, changelog, size chart, app store screenshots, backflow reports, PF ECR file. Firecrawl out of credits (DataForSEO and second page one source not run) until about 22:14 UTC",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T09:12:47.541Z",
       "agent": "security",
       "action": "Secret scan of the repo: no keys, tokens or private keys found",
@@ -3486,42 +3521,7 @@
       "action": "Started: Morning standup",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-28T03:13:06.650Z",
-      "agent": "ops",
-      "action": "Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T03:12:55.796Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T03:12:55.758Z",
-      "agent": "research",
-      "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 19 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "ventureId": null,
-      "kind": "blocked"
-    },
-    {
-      "at": "2026-11-28T03:12:55.718Z",
-      "agent": "research",
-      "action": "Started: Check whether search volume tools are back to screen a new batch",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T03:12:55.679Z",
-      "agent": "security",
-      "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 622
+  "logTotal": 627
 }

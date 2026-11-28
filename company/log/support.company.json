@@ -110,5 +110,12 @@
     "action": "0 live ventures and no owner-chat issue, no messages to handle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T09:32:20.907Z",
+    "agent": "support",
+    "action": "No messages: no live venture",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

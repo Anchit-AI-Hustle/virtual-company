@@ -201,5 +201,12 @@
     "action": "Revenue confirmed Rs 0 (company/ledger.json has no payments); no live product, no spend",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T09:32:20.847Z",
+    "agent": "finance",
+    "action": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Revenue confirmed Rs 0 (company/ledger.json has no payments); no live product, no spend",
+  "state": "done",
+  "task": "Revenue Rs 0: no live product, no payment rail (ap-2); fx unchanged, 94.2754 INR per USD from 14 Nov",
   "ventureId": null,
-  "since": "2026-11-28T08:31:18.237Z"
+  "since": "2026-11-28T09:32:20.847Z"
 }
