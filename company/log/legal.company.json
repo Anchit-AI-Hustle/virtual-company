@@ -68,5 +68,12 @@
     "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T09:12:47.498Z",
+    "agent": "legal",
+    "action": "Started: Screen new idea categories for licence and risk",
+    "ventureId": null,
+    "kind": "start"
   }
 ]

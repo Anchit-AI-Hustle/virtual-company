@@ -340,5 +340,12 @@
     "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
     "ventureId": null,
     "kind": "start"
+  },
+  {
+    "at": "2026-11-28T09:12:47.412Z",
+    "agent": "ceo",
+    "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
+    "ventureId": null,
+    "kind": "start"
   }
 ]

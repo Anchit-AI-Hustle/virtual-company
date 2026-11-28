@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T09:12:06.333Z",
+  "builtAt": "2026-11-28T09:12:48.133Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,16 +1591,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "No-go on temp-log: case 16 of 35 under the 24 bar; paper sheets are free and accepted, standalone small kitchen logs show 0 reviews, page one is .gov PDFs plus Toast, FoodDocs and Mitti, likely 90 day revenue about USD 9",
-      "since": "2026-11-28T08:31:18.045Z",
+      "state": "working",
+      "task": "Generate and screen a new batch of ideas with Research and Legal",
+      "since": "2026-11-28T09:12:47.412Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:29:37.444Z",
-        "action": "No-go on temp-log: case 16 of 35 under the 24 bar; paper sheets are free and accepted, standalone small kitchen logs show 0 reviews, page one is .gov PDFs plus Toast, FoodDocs and Mitti, likely 90 day revenue about USD 9"
+        "at": "2026-11-28T09:12:47.412Z",
+        "action": "Started: Generate and screen a new batch of ideas with Research and Legal"
       },
-      "actions": 107
+      "actions": 108
     },
     {
       "id": "ops",
@@ -1629,16 +1629,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)",
-      "since": "2026-11-28T08:31:18.447Z",
+      "state": "working",
+      "task": "Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+      "since": "2026-11-28T09:12:47.456Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:28:43.710Z",
-        "action": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)"
+        "at": "2026-11-28T09:12:47.456Z",
+        "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources"
       },
-      "actions": 104
+      "actions": 105
     },
     {
       "id": "data",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan clean: no keys, tokens or private keys in tracked files",
-      "since": "2026-11-28T08:31:18.490Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no keys, tokens or private keys found",
+      "since": "2026-11-28T09:12:47.541Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:12:37.162Z",
-        "action": "Secret scan clean: no keys, tokens or private keys in tracked files"
+        "at": "2026-11-28T09:12:47.541Z",
+        "action": "Secret scan of the repo: no keys, tokens or private keys found"
       },
-      "actions": 49
+      "actions": 50
     },
     {
       "id": "growth",
@@ -1876,16 +1876,16 @@
       "color": "#A84D63",
       "trait": "Keeps every claim true and every category safe.",
       "charter": "agents/legal.md",
-      "state": "idle",
-      "task": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges",
-      "since": "2026-11-28T08:31:18.346Z",
+      "state": "working",
+      "task": "Screen new idea categories for licence and risk",
+      "since": "2026-11-28T09:12:47.498Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:22:02.477Z",
-        "action": "Category screen temp-log: clear, record keeping only; no compliance promises, not for vaccine or clinic fridges"
+        "at": "2026-11-28T09:12:47.498Z",
+        "action": "Started: Screen new idea categories for licence and risk"
       },
-      "actions": 16
+      "actions": 17
     },
     {
       "id": "people",
@@ -2963,6 +2963,34 @@
   },
   "log": [
     {
+      "at": "2026-11-28T09:12:47.541Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys, tokens or private keys found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T09:12:47.498Z",
+      "agent": "legal",
+      "action": "Started: Screen new idea categories for licence and risk",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T09:12:47.456Z",
+      "agent": "research",
+      "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T09:12:47.412Z",
+      "agent": "ceo",
+      "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T09:12:05.865Z",
       "agent": "devops",
       "action": "No live URLs to check: 0 live ventures; health.json ok",
@@ -3493,35 +3521,7 @@
       "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T03:12:55.637Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T03:12:55.591Z",
-      "agent": "devops",
-      "action": "HQ returns 200; no venture is live, so no product URL to check",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T03:12:55.555Z",
-      "agent": "devops",
-      "action": "Started: Check live URLs",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T03:12:40.193Z",
-      "agent": "ops",
-      "action": "Standup 03:12 UTC: health ok, watchdog ran 02:59 UTC, no platform alerts, no owner comments on decision issues; 0 open ideas, 0 pods; Research still blocked on Firecrawl credits (refresh about 22:14 UTC)",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 618
+  "logTotal": 622
 }

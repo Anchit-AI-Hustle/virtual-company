@@ -467,5 +467,12 @@
     "action": "Screened 19 ideas, 1 passes: temp-log (FoodDocs USD 69 a location a month, temperature log 1,900 US searches on seodata.dev, page one 5 of 10 weak on WebSearch). 18 rejected: under 1,000 searches, a free tool already does it, or vendors hold page one",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T09:12:47.456Z",
+    "agent": "research",
+    "action": "Started: Screen a new batch of ideas: paid price, searches, free gap, page one on two sources",
+    "ventureId": null,
+    "kind": "start"
   }
 ]
