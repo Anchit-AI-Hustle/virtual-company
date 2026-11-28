@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
+  "state": "done",
+  "task": "Lights on: HQ checked, 0 live products to check, watchdog 08:00 UTC success",
   "ventureId": null,
-  "since": "2026-11-28T07:30:12.840Z"
+  "since": "2026-11-28T08:12:31.854Z"
 }

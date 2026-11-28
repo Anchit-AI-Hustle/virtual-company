@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Revenue confirmed Rs 0 (ledger has no payments); no live product",
+  "state": "done",
+  "task": "Revenue confirmed Rs 0 (company/ledger.json has no payments); no live product, no spend",
   "ventureId": null,
-  "since": "2026-11-28T07:30:13.220Z"
+  "since": "2026-11-28T08:12:37.203Z"
 }
