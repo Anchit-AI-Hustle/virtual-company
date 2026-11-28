@@ -85,9 +85,23 @@
   "stage": "validated",
   "stageSince": "2026-11-28T06:22:49.221Z",
   "createdAt": "2026-11-28T06:14:43.909Z",
-  "updatedAt": "2026-11-28T06:22:49.221Z",
+  "updatedAt": "2026-11-28T06:27:37.410Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
-  "metrics": null
+  "metrics": null,
+  "case": {
+    "path": "cases/osha-log.md",
+    "scores": {
+      "pain": 3,
+      "willingnessToPay": 3,
+      "marketSize": 4,
+      "distribution": 3,
+      "competitionGap": 2,
+      "speedToRevenue": 2,
+      "recurringRevenue": 3
+    },
+    "total": 20,
+    "recommendation": "no-go"
+  }
 }

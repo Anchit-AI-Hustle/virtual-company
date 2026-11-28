@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T06:23:05.177Z",
+  "builtAt": "2026-11-28T06:27:54.491Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -961,7 +961,7 @@
       "url": null,
       "nextAction": "Research writes cases/osha-log.md and Farhan sizes it; then the CEO decides go or no-go. Evidence against, checked on vendors own pages 2026-11-28: (1) IncidentLog has a free version that makes 300, 300A and 301 PDFs (AlternativeTo listing), but its own site incidentlog.com now only redirects to a /lander parking page, so its free limits and ITA CSV could not be verified; Research should re-check. (2) SafetyCulture rebranded to Mitti; its OSHA 300 log and OSHA recordkeeping software pages now redirect to a not-found route, and its free plan is generic checklists for up to 10 users, with no 300A totals or ITA CSV shown. (3) Paperform OSHA 300 template is free but is an intake form with day counters, not a kept log with 300A totals, 301 or ITA CSV. (4) OSHA 300 Cloud is paid (USD 99 a year), not free. (5) Official OSHA PDF and Excel forms and LogStead free auto-totaling workbook remain free file options that may satisfy the smallest employers. Weak spots: no forum or Reddit threads of buyers asking were found by WebSearch; SiteSafety HQ shows 0 reviews; most paid rivals are small or new, so paid demand is shown by price pages, not by review counts. Pages that blocked reads: slashdot.org, busybusy.com (Cloudflare), goodfirms.co, saashub.com.",
       "metrics": null,
-      "updatedAt": "2026-11-28T06:22:49.221Z",
+      "updatedAt": "2026-11-28T06:27:37.410Z",
       "evidenceCount": 6,
       "specPath": null,
       "lead": {
@@ -979,7 +979,11 @@
       "qaPassed": null,
       "goDecision": null,
       "sizing": null,
-      "businessCase": null
+      "businessCase": {
+        "path": "cases/osha-log.md",
+        "total": 20,
+        "recommendation": "no-go"
+      }
     },
     {
       "id": "change-order",
@@ -1555,15 +1559,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "done",
-      "task": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent",
-      "since": "2026-11-28T06:14:49.747Z",
+      "task": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
+      "since": "2026-11-28T06:27:43.879Z",
       "ventureId": "osha-log",
       "ventureTitle": "OSHA Log",
       "last": {
-        "at": "2026-11-28T06:14:49.747Z",
-        "action": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent"
+        "at": "2026-11-28T06:27:43.879Z",
+        "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers"
       },
-      "actions": 96
+      "actions": 98
     },
     {
       "id": "data",
@@ -2282,6 +2286,16 @@
     ],
     "osha-log": [
       {
+        "at": "2026-11-28T06:27:43.879Z",
+        "agent": "research",
+        "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers"
+      },
+      {
+        "at": "2026-11-28T06:23:43.743Z",
+        "agent": "research",
+        "action": "Started: Business case for osha-log"
+      },
+      {
         "at": "2026-11-28T06:22:54.721Z",
         "agent": "lead-osha-log",
         "action": "Validated osha-log with 6 sourced signals: LogStead USD 39/mo, HB Next OSHA 300 Cloud USD 99/yr per establishment, SiteSafety HQ USD 39/mo, Epostrix USD 299/mo, IncidentLog up to USD 89/mo, OSHA 2025 letter accepting software and CSV equivalent forms. No verified free tool keeps the 300, 300A, 301 and ITA CSV end to end; IncidentLog free tier unverifiable (site parked), SafetyCulture OSHA pages gone after Mitti rebrand, Paperform is intake only. No buyer forum threads found."
@@ -2813,6 +2827,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T06:27:43.879Z",
+      "agent": "research",
+      "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
+      "ventureId": "osha-log",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T06:23:43.743Z",
+      "agent": "research",
+      "action": "Started: Business case for osha-log",
+      "ventureId": "osha-log",
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T06:22:54.721Z",
       "agent": "lead-osha-log",
@@ -3358,21 +3386,7 @@
       "action": "Failed the ceo review: No-go. Case scores 17 of 35 (bar 24), distribution 2, marketSize 2, competitionGap 2. Contractors pay for RFI tracking only inside suites (Fieldwire Business Plus lists RFIs and submittals, https://fieldwire.com/pricing/business-plus); the log is free from Procore and Smartsheet (https://procore.com/library/rfi-templates, https://www.smartsheet.com/content/construction-rfi-templates); the one open edge, a no-account reply link for the architect, already exists in Raken guest mode on its Performance plan (https://help.rakenapp.com/en/articles/14540383-rfis-overview) and Knowify. About 1,530 US searches a month, and a live search on 28 Nov 2026 confirmed rfi template page one is SafetyCulture, Oracle, Asana, Notion, Autodesk, ClickUp, monday, Smartsheet, ProjectManager and Levelset. No sizing file exists, but it cannot clear the case bar either way.",
       "ventureId": "rfi-log",
       "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:36:05.299Z",
-      "agent": "research",
-      "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
-      "ventureId": "rfi-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:28:41.583Z",
-      "agent": "research",
-      "action": "Started: Business case for rfi-log",
-      "ventureId": "rfi-log",
-      "kind": "start"
     }
   ],
-  "logTotal": 573
+  "logTotal": 575
 }

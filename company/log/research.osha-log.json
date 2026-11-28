@@ -5,5 +5,19 @@
     "action": "Screened 13 terms with seodata.dev (works again without signup) and WebSearch: osha-log passed (osha 300 log 8,100 a month US, LogStead USD 39 a month, 6 of 10 page one results are static PDFs). Failed: driver qualification file (1,000 a month, page one held by Motive, J.J. Keller, Verizon Connect, FADV); EEO-1 reporting (5,400 a month but filed free on the EEOC portal and holds employee race data); dropped on volume: calibration management software 260, LOTO procedure template 590, PPAP software 170, 8D report template 260, work instruction software 210, control plan template 260, certificate of conformance 1,900 is free template intent",
     "ventureId": "osha-log",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T06:23:43.743Z",
+    "agent": "research",
+    "action": "Started: Business case for osha-log",
+    "ventureId": "osha-log",
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T06:27:43.879Z",
+    "agent": "research",
+    "action": "Business case written: osha-log 20 of 35, no-go; free Salus and LogStead workbooks already log, total the 300A and build the ITA row, and the free single-establishment tier leaves few payers",
+    "ventureId": "osha-log",
+    "kind": "done"
   }
 ]
