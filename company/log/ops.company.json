@@ -915,5 +915,12 @@
     "action": "Standup 17:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 17:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research retries the 3 unmeasured terms",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T17:13:48.615Z",
+    "agent": "ops",
+    "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
