@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T05:12:49.176Z",
+  "builtAt": "2026-11-28T05:13:02.640Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1480,16 +1480,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
+      "state": "done",
       "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T04:13:13.793Z",
+      "since": "2026-11-28T05:13:02.263Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T04:13:02.443Z",
+        "at": "2026-11-28T05:13:02.263Z",
         "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 96
+      "actions": 97
     },
     {
       "id": "ops",
@@ -1519,15 +1519,15 @@
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
       "state": "blocked",
-      "task": "Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "since": "2026-11-28T04:13:02.403Z",
+      "task": "Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "since": "2026-11-28T05:13:02.227Z",
       "ventureId": "rfi-log",
       "ventureTitle": "RFI Log",
       "last": {
-        "at": "2026-11-28T04:13:02.403Z",
-        "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
+        "at": "2026-11-28T05:13:02.227Z",
+        "action": "Blocked: Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
       },
-      "actions": 93
+      "actions": 95
     },
     {
       "id": "data",
@@ -1651,16 +1651,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
+      "state": "done",
       "task": "HQ returns 200; no venture is live, so no product URL to check",
-      "since": "2026-11-28T04:13:13.919Z",
+      "since": "2026-11-28T05:13:02.082Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T04:13:02.234Z",
+        "at": "2026-11-28T05:13:02.082Z",
         "action": "HQ returns 200; no venture is live, so no product URL to check"
       },
-      "actions": 55
+      "actions": 57
     },
     {
       "id": "security",
@@ -1670,16 +1670,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
+      "state": "done",
       "task": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "since": "2026-11-28T04:13:14.928Z",
+      "since": "2026-11-28T05:13:02.152Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T04:13:02.320Z",
+        "at": "2026-11-28T05:13:02.152Z",
         "action": "Secret scan clean (no keys, tokens or private keys in tracked files)"
       },
-      "actions": 44
+      "actions": 46
     },
     {
       "id": "growth",
@@ -2327,6 +2327,11 @@
     ],
     "rfi-log": [
       {
+        "at": "2026-11-28T05:13:02.227Z",
+        "agent": "research",
+        "action": "Blocked: Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle"
+      },
+      {
         "at": "2026-11-27T22:37:12.699Z",
         "agent": "ceo",
         "action": "No-go: rfi-log 17 of 35, distribution 2; RFI logs are free from Procore and Smartsheet, the reply link exists in Raken and Knowify, and page one is held by big brands"
@@ -2730,6 +2735,55 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T05:13:02.263Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T05:13:02.227Z",
+      "agent": "research",
+      "action": "Blocked: Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+      "ventureId": "rfi-log",
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T05:13:02.192Z",
+      "agent": "research",
+      "action": "Started: Check whether search volume tools are back to screen a new batch",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T05:13:02.152Z",
+      "agent": "security",
+      "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T05:13:02.117Z",
+      "agent": "security",
+      "action": "Started: Scan repo for secrets",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
+      "at": "2026-11-28T05:13:02.082Z",
+      "agent": "devops",
+      "action": "HQ returns 200; no venture is live, so no product URL to check",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T05:13:02.044Z",
+      "agent": "devops",
+      "action": "Started: Check live URLs",
+      "ventureId": null,
+      "kind": "start"
+    },
     {
       "at": "2026-11-28T05:12:48.729Z",
       "agent": "ops",
@@ -3240,56 +3294,7 @@
       "action": "Started: Screening new ideas and re-screening consign-ledger and rfi-log with the page one check",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-27T22:13:19.744Z",
-      "agent": "ceo",
-      "action": "Decided: Staff only ideas whose page one our own pages can beat: add a page one rankability check to the screen (4 of top 10 weak results, no free tool doing the job), zero cost, reversible",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:12:59.583Z",
-      "agent": "finance",
-      "action": "Revenue confirmed Rs 0 (no live product, ledger unchanged)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:12:59.531Z",
-      "agent": "devops",
-      "action": "No live products to check; HQ returns 200",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:12:59.474Z",
-      "agent": "security",
-      "action": "Secret scan of the repo: no keys or tokens found",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:12:46.342Z",
-      "agent": "ops",
-      "action": "Standup 22:15 UTC: health ok, watchdog ran 21:59, no platform alerts, no owner-chat issue, no reject comments on decided issues 16 and 18, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 2 open ideas; Research screens a new batch for rankable buyer terms",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-27T22:12:46.291Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-27T21:48:40.895Z",
-      "agent": "ceo",
-      "action": "Filed ap-company-6 for the owner (issue 21): 26 of 26 ventures killed, distribution scored 2 on every case because it is guessed; asked to allow a 14 day labelled free demand test before the case. Needs the owner because it changes CLAUDE.md and the deploy rule",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 559
+  "logTotal": 566
 }

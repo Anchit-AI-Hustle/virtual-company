@@ -19,5 +19,12 @@
     "action": "Business case written: 17 of 35, no-go (suites own RFIs, free Procore and Smartsheet logs, page one held by Asana, Oracle, Smartsheet, Autodesk, Procore)",
     "ventureId": "rfi-log",
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T05:13:02.227Z",
+    "agent": "research",
+    "action": "Blocked: Firecrawl still out of credits (search refused before running, allowance refreshes around 22:14 UTC, about 17 hours); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
+    "ventureId": "rfi-log",
+    "kind": "blocked"
   }
 ]
