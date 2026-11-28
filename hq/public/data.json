@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:29:34.441Z",
+  "builtAt": "2026-11-28T07:30:15.893Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1554,11 +1554,11 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "done",
+      "state": "idle",
       "task": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version",
-      "since": "2026-11-28T07:29:27.870Z",
-      "ventureId": "tech-pack",
-      "ventureTitle": "Tech Pack Builder",
+      "since": "2026-11-28T07:30:12.194Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-28T07:29:27.870Z",
         "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version"
@@ -1573,16 +1573,16 @@
       "color": "#3D4F7C",
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
-      "state": "done",
-      "task": "Standup 07:15 UTC: health ok, watchdog ran 07:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after osha-log was killed at 06:28 UTC. Research can screen: seodata.dev answered last cycle",
-      "since": "2026-11-28T07:12:54.732Z",
+      "state": "idle",
+      "task": "Close the day: 19 ideas screened, 1 staffed (tech-pack), validated with 7 signals, case 18 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; Firecrawl page one recheck and next batch after 22:14 UTC; agents idle",
+      "since": "2026-11-28T07:30:13.482Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T07:12:54.732Z",
-        "action": "Standup 07:15 UTC: health ok, watchdog ran 07:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after osha-log was killed at 06:28 UTC. Research can screen: seodata.dev answered last cycle"
+        "at": "2026-11-28T07:30:13.436Z",
+        "action": "Close the day: 19 ideas screened, 1 staffed (tech-pack), validated with 7 signals, case 18 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; Firecrawl page one recheck and next batch after 22:14 UTC; agents idle"
       },
-      "actions": 105
+      "actions": 106
     },
     {
       "id": "research",
@@ -1592,11 +1592,11 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "done",
+      "state": "idle",
       "task": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent",
-      "since": "2026-11-28T07:28:29.375Z",
-      "ventureId": "tech-pack",
-      "ventureTitle": "Tech Pack Builder",
+      "since": "2026-11-28T07:30:12.353Z",
+      "ventureId": null,
+      "ventureTitle": null,
       "last": {
         "at": "2026-11-28T07:28:29.375Z",
         "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent"
@@ -1611,9 +1611,9 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "done",
+      "state": "idle",
       "task": "0 live ventures, no counts to read",
-      "since": "2026-11-28T07:13:12.239Z",
+      "since": "2026-11-28T07:30:12.426Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1632,7 +1632,7 @@
       "charter": "agents/sizing.md",
       "state": "idle",
       "task": "Sizing: 100 paying users, expected Rs 46,190 a year, 10% likely (likely Rs 4,61,900); below config.sizing bar",
-      "since": "2026-11-28T06:29:29.528Z",
+      "since": "2026-11-28T07:30:12.485Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1651,7 +1651,7 @@
       "charter": "agents/product.md",
       "state": "idle",
       "task": "Failed the product review: Checked all 9 template sections, scope, tests and evidence: flow is small and end to end, but section 4 has no demand test that records intent (Pro page and stats.json capture nothing, so willingness to pay cannot be learned), and tests miss error states for invalid table inputs, guests exceeding seats and groups larger than a table. Also: viewport and zero console error test covers Home only, print needs an event name no screen collects, and the never leaves this device promise has no test for zero network requests.",
-      "since": "2026-11-28T06:29:29.606Z",
+      "since": "2026-11-28T07:30:12.551Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1670,7 +1670,7 @@
       "charter": "agents/design.md",
       "state": "idle",
       "task": "No design work: Seatwise reviewed and passed, no new spec this run",
-      "since": "2026-11-28T06:29:29.693Z",
+      "since": "2026-11-28T07:30:12.618Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1689,7 +1689,7 @@
       "charter": "agents/engineer.md",
       "state": "idle",
       "task": "No build work: Seatwise code passes QA; only an owner-side Cloudflare change remains. WIP limit blocks a second build",
-      "since": "2026-11-28T06:29:29.777Z",
+      "since": "2026-11-28T07:30:12.686Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1708,7 +1708,7 @@
       "charter": "agents/qa.md",
       "state": "idle",
       "task": "Seatwise live regression after Growth change: all product checks pass, 0 errors from our code, still 3 Cloudflare-injected console errors per page; waiting on ap-4",
-      "since": "2026-11-28T06:29:29.851Z",
+      "since": "2026-11-28T07:30:12.760Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1725,9 +1725,9 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "done",
+      "state": "idle",
       "task": "HQ https://hq.anchit-tandon.com returns 200; 0 live products to check",
-      "since": "2026-11-28T07:13:07.996Z",
+      "since": "2026-11-28T07:30:12.840Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1744,9 +1744,9 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "done",
+      "state": "idle",
       "task": "Secret scan clean: no keys, tokens or private keys in tracked files, no .env files",
-      "since": "2026-11-28T07:13:12.191Z",
+      "since": "2026-11-28T07:30:12.919Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1765,7 +1765,7 @@
       "charter": "agents/growth.md",
       "state": "idle",
       "task": "Owner approved WhatsApp setup on issue 13; recorded ap-company-2 as approved and queued a test message in company/outbox",
-      "since": "2026-11-28T06:29:30.069Z",
+      "since": "2026-11-28T07:30:12.996Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1784,7 +1784,7 @@
       "charter": "agents/sales.md",
       "state": "idle",
       "task": "Seatwise price INR 799 and payment rail still awaiting owner (issues 1 and 2). Nothing to sell until then",
-      "since": "2026-11-28T06:29:30.153Z",
+      "since": "2026-11-28T07:30:13.082Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1801,9 +1801,9 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "done",
+      "state": "idle",
       "task": "0 live ventures, no messages to handle",
-      "since": "2026-11-28T07:13:12.339Z",
+      "since": "2026-11-28T07:30:13.161Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1820,9 +1820,9 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "done",
+      "state": "idle",
       "task": "Revenue confirmed Rs 0 (ledger has no payments); no live product",
-      "since": "2026-11-28T07:13:12.287Z",
+      "since": "2026-11-28T07:30:13.220Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1841,7 +1841,7 @@
       "charter": "agents/legal.md",
       "state": "idle",
       "task": "Category screen on 5 open ideas: work-order, change-order, rfi-log, consign-ledger clear (no licence, no regulated advice, no children, no brand copy). tc-desk clears on condition that it only calculates deadlines from dates the user enters and never interprets contract terms or gives legal advice. Dropped from consideration on category: hot work permit and JSA safety forms (safety compliance claims), lien waivers and service agreements (legal documents)",
-      "since": "2026-11-28T06:29:30.384Z",
+      "since": "2026-11-28T07:30:13.278Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -1860,7 +1860,7 @@
       "charter": "agents/people.md",
       "state": "idle",
       "task": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3",
-      "since": "2026-11-28T06:29:30.445Z",
+      "since": "2026-11-28T07:30:13.339Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
@@ -2889,6 +2889,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T07:30:13.436Z",
+      "agent": "ops",
+      "action": "Close the day: 19 ideas screened, 1 staffed (tech-pack), validated with 7 signals, case 18 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; Firecrawl page one recheck and next batch after 22:14 UTC; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T07:29:27.870Z",
       "agent": "ceo",
       "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version",
@@ -3440,14 +3447,7 @@
       "action": "Started: Morning standup",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-28T00:13:03.646Z",
-      "agent": "ops",
-      "action": "Close the day: lights on, Research blocked on search volume credits until 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
-      "ventureId": null,
-      "kind": "done"
     }
   ],
-  "logTotal": 597
+  "logTotal": 598
 }

@@ -1,6 +1,6 @@
 {
-  "state": "blocked",
+  "state": "idle",
   "task": "needs research, sizing, ceo: this session cannot launch subagents; business case (Meera, test per-pack vs Rs 500/mo), sizing (Farhan) and CEO go/no-go need launching from the main session",
-  "ventureId": "tech-pack",
-  "since": "2026-11-28T07:24:33.624Z"
+  "ventureId": null,
+  "since": "2026-11-28T07:30:13.401Z"
 }
