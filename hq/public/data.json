@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T07:28:38.126Z",
+  "builtAt": "2026-11-28T07:29:34.441Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -444,12 +444,13 @@
       "customer": "Independent and first-time apparel brands, freelance fashion designers and small private-label sellers (US, UK and India) who send tech packs to manufacturers",
       "revenueModel": "Free: one complete tech pack printed to PDF, no account. Paid tier (price to be tested in the case, monthly against one-time or per pack): saved style library, auto-grading, BOM cost roll-up, templates, share link for factories",
       "priceINR": null,
-      "stage": "validated",
+      "stage": "killed",
       "score": 15,
       "url": null,
-      "nextAction": "Research (Meera) writes cases/tech-pack.md and must test a one-time or per-pack price (Etsy USD 8 to 17, AI Tech Packs about USD 20 a pack, Fiverr USD 60 to 150 a garment) against the Rs 500 a month floor, and rerun the page one count on Firecrawl after 22:14 UTC; then sizing (Farhan) and the CEO go or no-go.",
+      "nextAction": "None.",
       "metrics": {},
-      "updatedAt": "2026-11-28T07:28:29.350Z",
+      "killReason": "No-go: case scores 18 of 35 against a bar of 24 (competitionGap 2, speedToRevenue 2, recurringRevenue 2). Spot checked 28 Nov 2026: Techpacker has no free plan, a 7 day trial and USD 35 a month billed yearly for collaboration features (techpacker.com/pricing); AI Tech Packs sells one-time credits at USD 1 each, 20 credits a standard pack, so about USD 20 a pack with no subscription (aitechpacks.com/pricing). Search buyers pay USD 8 to 12 once for a reusable template (etsy.com/listing/1698863971), far below Rs 500 a month; CLO-SET and template.net already give the free version; no payment rail; likely 90 day revenue about USD 24. A per-pack pivot clears the floor only at 4 or more packs a year and meets a USD 20 incumbent with no new buyer evidence, so no pivot.",
+      "updatedAt": "2026-11-28T07:29:27.846Z",
       "evidenceCount": 7,
       "specPath": null,
       "lead": {
@@ -465,7 +466,7 @@
         "legal": null
       },
       "qaPassed": null,
-      "goDecision": null,
+      "goDecision": false,
       "sizing": null,
       "businessCase": {
         "path": "cases/tech-pack.md",
@@ -1542,10 +1543,6 @@
     {
       "id": "business",
       "name": "Finance, Legal and People"
-    },
-    {
-      "id": "pods",
-      "name": "Venture pods"
     }
   ],
   "office": [
@@ -1558,15 +1555,15 @@
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
       "state": "done",
-      "task": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it",
-      "since": "2026-11-28T07:22:35.976Z",
+      "task": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version",
+      "since": "2026-11-28T07:29:27.870Z",
       "ventureId": "tech-pack",
       "ventureTitle": "Tech Pack Builder",
       "last": {
-        "at": "2026-11-28T07:22:35.976Z",
-        "action": "Staffed 1 pod: tech-pack (Mahi, score 15, 'tech pack template' 2,400 US searches, Techpacker Rs 3,300 a month, page one 5 of 10 weak). Other 18 candidates failed the screen. 2 pod slots stay empty rather than staff ideas that fail it"
+        "at": "2026-11-28T07:29:27.870Z",
+        "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version"
       },
-      "actions": 102
+      "actions": 104
     },
     {
       "id": "ops",
@@ -1871,26 +1868,6 @@
         "action": "Findings: the idea screen from ap-company-1 passed 0 of 25 niches in 2 cycles, and 4 of 7 venture leads stalled at validated because a lead session cannot launch the research, sizing and ceo subagents. Filed ap-company-2 and ap-company-3"
       },
       "actions": 20
-    },
-    {
-      "id": "lead-tech-pack",
-      "name": "Mahi",
-      "title": "Lead, Tech Pack Builder",
-      "department": "pods",
-      "color": "#946200",
-      "trait": "Prices with proof from the market.",
-      "charter": "agents/venture-lead.md",
-      "ventureOwned": "tech-pack",
-      "state": "blocked",
-      "task": "needs research, sizing, ceo: this session cannot launch subagents; business case (Meera, test per-pack vs Rs 500/mo), sizing (Farhan) and CEO go/no-go need launching from the main session",
-      "since": "2026-11-28T07:24:33.624Z",
-      "ventureId": "tech-pack",
-      "ventureTitle": "Tech Pack Builder",
-      "last": {
-        "at": "2026-11-28T07:24:33.624Z",
-        "action": "Blocked: needs research, sizing, ceo: this session cannot launch subagents; business case (Meera, test per-pack vs Rs 500/mo), sizing (Farhan) and CEO go/no-go need launching from the main session"
-      },
-      "actions": 3
     }
   ],
   "ventureTrail": {
@@ -2837,6 +2814,16 @@
     ],
     "tech-pack": [
       {
+        "at": "2026-11-28T07:29:27.870Z",
+        "agent": "ceo",
+        "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version"
+      },
+      {
+        "at": "2026-11-28T07:29:27.788Z",
+        "agent": "ceo",
+        "action": "Failed the ceo review: No-go: case scores 18 of 35 against the 24 bar (competitionGap, speedToRevenue, recurringRevenue all 2). Spot checked 28 Nov 2026: Techpacker has no free plan, only a 7 day trial, and USD 35 a month billed yearly buys PLM collaboration, not a form (techpacker.com/pricing); AI Tech Packs sells no-subscription credits at USD 1 each with a standard pack at 20 credits, so buyers already get about USD 20 a pack with no monthly plan (aitechpacks.com/pricing). The buyers a free search tool reaches pay USD 8 to 12 once for a template and reuse it, well under Rs 500 a month; CLO-SET and template.net already serve the free intent; likely 90 day revenue about USD 24. Per-pack pivot clears the floor only at 4+ packs a year and meets the USD 20 incumbent, so no pivot."
+      },
+      {
         "at": "2026-11-28T07:28:29.375Z",
         "agent": "research",
         "action": "Business case written: 18 of 35, no-go; buyers pay USD 8 to 12 once, CLO-SET and template.net serve the free intent"
@@ -2901,6 +2888,20 @@
     ]
   },
   "log": [
+    {
+      "at": "2026-11-28T07:29:27.870Z",
+      "agent": "ceo",
+      "action": "No-go on tech-pack: case 18 of 35 under the 24 bar; search buyers pay USD 8 to 12 once for a template, AI Tech Packs already sells about USD 20 a pack with no subscription, CLO-SET gives the free version",
+      "ventureId": "tech-pack",
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T07:29:27.788Z",
+      "agent": "ceo",
+      "action": "Failed the ceo review: No-go: case scores 18 of 35 against the 24 bar (competitionGap, speedToRevenue, recurringRevenue all 2). Spot checked 28 Nov 2026: Techpacker has no free plan, only a 7 day trial, and USD 35 a month billed yearly buys PLM collaboration, not a form (techpacker.com/pricing); AI Tech Packs sells no-subscription credits at USD 1 each with a standard pack at 20 credits, so buyers already get about USD 20 a pack with no monthly plan (aitechpacks.com/pricing). The buyers a free search tool reaches pay USD 8 to 12 once for a template and reuse it, well under Rs 500 a month; CLO-SET and template.net already serve the free intent; likely 90 day revenue about USD 24. Per-pack pivot clears the floor only at 4+ packs a year and meets the USD 20 incumbent, so no pivot.",
+      "ventureId": "tech-pack",
+      "kind": "done"
+    },
     {
       "at": "2026-11-28T07:28:29.375Z",
       "agent": "research",
@@ -3446,21 +3447,7 @@
       "action": "Close the day: lights on, Research blocked on search volume credits until 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:51.667Z",
-      "agent": "ceo",
-      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T00:12:51.617Z",
-      "agent": "research",
-      "action": "Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads keyword source the company may use without the owner's accounts; no sourced search volume, so no idea can pass the 1,000 searches screen until then",
-      "ventureId": null,
-      "kind": "blocked"
     }
   ],
-  "logTotal": 595
+  "logTotal": 597
 }

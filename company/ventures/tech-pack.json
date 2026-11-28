@@ -78,16 +78,16 @@
       "foundAt": "2026-11-28"
     }
   ],
-  "nextAction": "Research (Meera) writes cases/tech-pack.md and must test a one-time or per-pack price (Etsy USD 8 to 17, AI Tech Packs about USD 20 a pack, Fiverr USD 60 to 150 a garment) against the Rs 500 a month floor, and rerun the page one count on Firecrawl after 22:14 UTC; then sizing (Farhan) and the CEO go or no-go.",
+  "nextAction": "None.",
   "lead": {
     "name": "Mahi",
     "color": "#946200",
     "trait": "Prices with proof from the market."
   },
-  "stage": "validated",
-  "stageSince": "2026-11-28T07:24:01.282Z",
+  "stage": "killed",
+  "stageSince": "2026-11-28T07:29:27.846Z",
   "createdAt": "2026-11-28T07:22:31.615Z",
-  "updatedAt": "2026-11-28T07:28:29.350Z",
+  "updatedAt": "2026-11-28T07:29:27.846Z",
   "priceINR": null,
   "specPath": null,
   "url": null,
@@ -110,5 +110,6 @@
     },
     "total": 18,
     "recommendation": "no-go"
-  }
+  },
+  "killReason": "No-go: case scores 18 of 35 against a bar of 24 (competitionGap 2, speedToRevenue 2, recurringRevenue 2). Spot checked 28 Nov 2026: Techpacker has no free plan, a 7 day trial and USD 35 a month billed yearly for collaboration features (techpacker.com/pricing); AI Tech Packs sells one-time credits at USD 1 each, 20 credits a standard pack, so about USD 20 a pack with no subscription (aitechpacks.com/pricing). Search buyers pay USD 8 to 12 once for a reusable template (etsy.com/listing/1698863971), far below Rs 500 a month; CLO-SET and template.net already give the free version; no payment rail; likely 90 day revenue about USD 24. A per-pack pivot clears the floor only at 4 or more packs a year and meets a USD 20 incumbent with no new buyer evidence, so no pivot."
 }
