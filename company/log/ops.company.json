@@ -775,5 +775,19 @@
     "action": "Close the day: 22 ideas screened, none passed, no pod staffed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; Firecrawl back about 22:14 UTC; ap-company-6 (issue 21) still waits on the owner; agents idle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T10:12:05.044Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T10:12:05.079Z",
+    "agent": "ops",
+    "action": "Standup 10:15 UTC: health ok, watchdog ran 10:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas; morning report for 28 Nov exists. Research screens a new batch now",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "No live URLs to check: 0 live ventures; health.json ok",
+  "state": "done",
+  "task": "Health check: health.json ok, 0 platform alerts, watchdog last ran 10:00 UTC, no live products to check",
   "ventureId": null,
-  "since": "2026-11-28T09:32:33.907Z"
+  "since": "2026-11-28T10:12:05.110Z"
 }
