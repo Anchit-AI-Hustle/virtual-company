@@ -369,5 +369,12 @@
     "action": "Lights on: HQ checked, 0 live products to check, watchdog 08:00 UTC success",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T09:12:05.865Z",
+    "agent": "devops",
+    "action": "No live URLs to check: 0 live ventures; health.json ok",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
