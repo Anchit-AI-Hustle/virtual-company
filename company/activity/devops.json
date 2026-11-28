@@ -1,6 +1,6 @@
 {
-  "state": "done",
+  "state": "idle",
   "task": "HQ returns 200; no venture is live, so no product URL to check",
   "ventureId": null,
-  "since": "2026-11-28T04:13:02.234Z"
+  "since": "2026-11-28T04:13:13.919Z"
 }
