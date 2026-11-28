@@ -131,5 +131,12 @@
     "action": "No live venture, no customer messages to handle",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T17:13:11.021Z",
+    "agent": "support",
+    "action": "No live venture, no customer messages to handle",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

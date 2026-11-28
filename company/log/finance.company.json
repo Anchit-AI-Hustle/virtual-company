@@ -236,5 +236,12 @@
     "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T17:13:10.919Z",
+    "agent": "finance",
+    "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
+    "ventureId": null,
+    "kind": "done"
   }
 ]

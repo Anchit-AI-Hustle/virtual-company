@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T16:13:36.260Z",
+  "builtAt": "2026-11-28T17:13:11.539Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1611,15 +1611,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
-      "since": "2026-11-28T16:13:34.240Z",
+      "task": "Standup 17:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 17:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research retries the 3 unmeasured terms",
+      "since": "2026-11-28T17:13:10.776Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T16:13:34.240Z",
-        "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)"
+        "at": "2026-11-28T17:13:10.776Z",
+        "action": "Standup 17:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 17:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research retries the 3 unmeasured terms"
       },
-      "actions": 130
+      "actions": 132
     },
     {
       "id": "research",
@@ -1648,16 +1648,16 @@
       "color": "#8A6BC2",
       "trait": "Defines what gets counted, and counts it honestly.",
       "charter": "agents/data.md",
-      "state": "idle",
+      "state": "done",
       "task": "0 live ventures, no counts to read",
-      "since": "2026-11-28T14:15:38.519Z",
+      "since": "2026-11-28T17:13:10.971Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:12:37.248Z",
+        "at": "2026-11-28T17:13:10.971Z",
         "action": "0 live ventures, no counts to read"
       },
-      "actions": 17
+      "actions": 18
     },
     {
       "id": "sizing",
@@ -1762,16 +1762,16 @@
       "color": "#4FB394",
       "trait": "Nothing is shipped until the live URL works.",
       "charter": "agents/devops.md",
-      "state": "idle",
-      "task": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
-      "since": "2026-11-28T16:13:34.145Z",
+      "state": "done",
+      "task": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, watchdog.js all checks passed, no platform-alert issues",
+      "since": "2026-11-28T17:13:10.824Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T16:12:28.140Z",
-        "action": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues"
+        "at": "2026-11-28T17:13:10.824Z",
+        "action": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, watchdog.js all checks passed, no platform-alert issues"
       },
-      "actions": 68
+      "actions": 69
     },
     {
       "id": "security",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan 16:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
-      "since": "2026-11-28T16:13:34.185Z",
+      "state": "done",
+      "task": "Secret scan 17:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
+      "since": "2026-11-28T17:13:10.870Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T16:12:31.678Z",
-        "action": "Secret scan 16:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files"
+        "at": "2026-11-28T17:13:10.870Z",
+        "action": "Secret scan 17:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files"
       },
-      "actions": 59
+      "actions": 60
     },
     {
       "id": "growth",
@@ -1800,16 +1800,16 @@
       "color": "#C27A00",
       "trait": "Brings the right buyers without spending a rupee.",
       "charter": "agents/growth.md",
-      "state": "idle",
+      "state": "done",
       "task": "No live products and no open owner-chat issue: no growth work this cycle",
-      "since": "2026-11-28T15:15:01.089Z",
+      "since": "2026-11-28T17:13:11.065Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T15:14:48.917Z",
+        "at": "2026-11-28T17:13:11.065Z",
         "action": "No live products and no open owner-chat issue: no growth work this cycle"
       },
-      "actions": 4
+      "actions": 5
     },
     {
       "id": "sales",
@@ -1838,16 +1838,16 @@
       "color": "#B36B00",
       "trait": "Nobody waits. Every complaint becomes a fix.",
       "charter": "agents/support.md",
-      "state": "idle",
+      "state": "done",
       "task": "No live venture, no customer messages to handle",
-      "since": "2026-11-28T14:15:41.602Z",
+      "since": "2026-11-28T17:13:11.021Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T12:13:15.622Z",
+        "at": "2026-11-28T17:13:11.021Z",
         "action": "No live venture, no customer messages to handle"
       },
-      "actions": 19
+      "actions": 20
     },
     {
       "id": "finance",
@@ -1857,16 +1857,16 @@
       "color": "#8C3B4F",
       "trait": "If it has no source, it is not in the books.",
       "charter": "agents/finance.md",
-      "state": "idle",
+      "state": "done",
       "task": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
-      "since": "2026-11-28T15:15:01.026Z",
+      "since": "2026-11-28T17:13:10.919Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T15:12:27.199Z",
+        "at": "2026-11-28T17:13:10.919Z",
         "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0"
       },
-      "actions": 34
+      "actions": 35
     },
     {
       "id": "legal",
@@ -2963,6 +2963,62 @@
   },
   "log": [
     {
+      "at": "2026-11-28T17:13:11.065Z",
+      "agent": "growth",
+      "action": "No live products and no open owner-chat issue: no growth work this cycle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:11.021Z",
+      "agent": "support",
+      "action": "No live venture, no customer messages to handle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:10.971Z",
+      "agent": "data",
+      "action": "0 live ventures, no counts to read",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:10.919Z",
+      "agent": "finance",
+      "action": "No revenue to record: 0 live products, ledger unchanged at Rs 0",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:10.870Z",
+      "agent": "security",
+      "action": "Secret scan 17:13 UTC: 0 hits for live keys, GitHub tokens, AWS keys or private keys across tracked files",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:10.824Z",
+      "agent": "devops",
+      "action": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, watchdog.js all checks passed, no platform-alert issues",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:13:10.776Z",
+      "agent": "ops",
+      "action": "Standup 17:13 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 17:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research retries the 3 unmeasured terms",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T17:12:39.881Z",
+      "agent": "ops",
+      "action": "Started: Morning standup",
+      "ventureId": null,
+      "kind": "start"
+    },
+    {
       "at": "2026-11-28T16:13:34.240Z",
       "agent": "ops",
       "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
@@ -3465,63 +3521,7 @@
       "action": "Started: Generate and screen a new batch of ideas with Research and Legal",
       "ventureId": null,
       "kind": "start"
-    },
-    {
-      "at": "2026-11-28T09:12:05.865Z",
-      "agent": "devops",
-      "action": "No live URLs to check: 0 live ventures; health.json ok",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T09:12:05.824Z",
-      "agent": "ops",
-      "action": "Standup 09:15 UTC: health ok, watchdog ran 09:00 UTC, no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after temp-log was killed at 08:29 UTC; morning report for 28 Nov exists. Research screens a new batch now",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T09:12:05.780Z",
-      "agent": "ops",
-      "action": "Started: Morning standup",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T08:30:02.736Z",
-      "agent": "ops",
-      "action": "Close the day: 19 ideas screened, 1 staffed (temp-log, lead Ayaan), validated with 7 signals, case 16 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:29:37.444Z",
-      "agent": "ceo",
-      "action": "No-go on temp-log: case 16 of 35 under the 24 bar; paper sheets are free and accepted, standalone small kitchen logs show 0 reviews, page one is .gov PDFs plus Toast, FoodDocs and Mitti, likely 90 day revenue about USD 9",
-      "ventureId": "temp-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:29:31.125Z",
-      "agent": "ceo",
-      "action": "Failed the ceo review: No-go. Case scores 16 of 35 against the 24 bar, and willingnessToPay and distribution are 2 where 3 is required. Spot checks hold: LogChill USD 24 a location a month with 0 reviews (capterra.in), FoodDocs Standard USD 69 a location with a free HACCP tier (fooddocs.com/pricing), Wisconsin DATCP only recommends logs. Paper sheets are free and accepted, buyers search for sheets not apps (temperature log app 0), page one is .gov PDFs plus Toast, FoodDocs and Mitti, a third of the head term is vaccine logs we cannot target, and there is no payment rail. Likely 90 day revenue about USD 9. No pivot clears the Rs 500 a month screen.",
-      "ventureId": "temp-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:28:43.710Z",
-      "agent": "research",
-      "action": "Business case written: temp-log 16 of 35, no-go (paper is free, standalone logs show 0 reviews, page one is .gov PDFs and a third vaccine intent)",
-      "ventureId": "temp-log",
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T08:25:06.105Z",
-      "agent": "research",
-      "action": "Started: Business case for temp-log: sceptic review of demand, free rivals, WTP and search",
-      "ventureId": "temp-log",
-      "kind": "start"
     }
   ],
-  "logTotal": 690
+  "logTotal": 698
 }
