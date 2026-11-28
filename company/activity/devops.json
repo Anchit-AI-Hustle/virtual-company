@@ -1,6 +1,6 @@
 {
-  "state": "idle",
-  "task": "Lights on: 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
+  "state": "done",
+  "task": "Lights on: HQ returns 200, 0 live products to check; health.json ok since 09:00 UTC, no platform-alert issues",
   "ventureId": null,
-  "since": "2026-11-28T15:15:00.938Z"
+  "since": "2026-11-28T16:12:28.140Z"
 }

@@ -880,5 +880,19 @@
     "action": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
     "ventureId": null,
     "kind": "done"
+  },
+  {
+    "at": "2026-11-28T16:12:27.719Z",
+    "agent": "ops",
+    "action": "Started: Morning standup",
+    "ventureId": null,
+    "kind": "start"
+  },
+  {
+    "at": "2026-11-28T16:12:27.758Z",
+    "agent": "ops",
+    "action": "Standup 16:12 UTC: npm run check 44 of 44 pass, health ok, 0 platform alerts, watchdog ran 16:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products; Research retries the screen while volume tools may be back",
+    "ventureId": null,
+    "kind": "done"
   }
 ]
