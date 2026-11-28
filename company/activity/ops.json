@@ -1,6 +1,6 @@
 {
-  "state": "done",
-  "task": "Standup 15:12 UTC: npm run check passes, health ok, 0 platform alerts, watchdog ran 15:01 UTC, no owner comments on decided issues 16, 18, 22 or needs-owner 21, 0 active ventures and 0 live products",
+  "state": "idle",
+  "task": "Closed the cycle: agents idle except research (blocked on search volume tools until about 22:14 UTC)",
   "ventureId": null,
-  "since": "2026-11-28T15:12:22.780Z"
+  "since": "2026-11-28T15:15:02.173Z"
 }
