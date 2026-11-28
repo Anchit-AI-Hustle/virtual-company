@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T08:29:44.060Z",
+  "builtAt": "2026-11-28T08:30:05.179Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1611,15 +1611,15 @@
       "trait": "Runs the day: standup, handoffs, books, digest.",
       "charter": "agents/ops.md",
       "state": "done",
-      "task": "Standup 08:15 UTC: health ok, watchdog ran 08:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after tech-pack was killed at 07:29 UTC. Research screens a new batch now; seodata.dev answers",
-      "since": "2026-11-28T08:12:31.812Z",
+      "task": "Close the day: 19 ideas screened, 1 staffed (temp-log, lead Ayaan), validated with 7 signals, case 16 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle",
+      "since": "2026-11-28T08:30:02.736Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T08:12:31.812Z",
-        "action": "Standup 08:15 UTC: health ok, watchdog ran 08:00 UTC (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18 and 22, ap-company-6 (issue 21) still waiting on the owner; 0 live, 0 pods, 0 open ideas after tech-pack was killed at 07:29 UTC. Research screens a new batch now; seodata.dev answers"
+        "at": "2026-11-28T08:30:02.736Z",
+        "action": "Close the day: 19 ideas screened, 1 staffed (temp-log, lead Ayaan), validated with 7 signals, case 16 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle"
       },
-      "actions": 108
+      "actions": 109
     },
     {
       "id": "research",
@@ -2963,6 +2963,13 @@
   },
   "log": [
     {
+      "at": "2026-11-28T08:30:02.736Z",
+      "agent": "ops",
+      "action": "Close the day: 19 ideas screened, 1 staffed (temp-log, lead Ayaan), validated with 7 signals, case 16 of 35, CEO no-go and killed. 0 live, 0 pods, 0 open ideas, Rs 0 revenue; ap-company-6 (issue 21) still waits on the owner; agents idle",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T08:29:37.444Z",
       "agent": "ceo",
       "action": "No-go on temp-log: case 16 of 35 under the 24 bar; paper sheets are free and accepted, standalone small kitchen logs show 0 reviews, page one is .gov PDFs plus Toast, FoodDocs and Mitti, likely 90 day revenue about USD 9",
@@ -3514,14 +3521,7 @@
       "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
       "ventureId": null,
       "kind": "done"
-    },
-    {
-      "at": "2026-11-28T02:12:54.167Z",
-      "agent": "research",
-      "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
-      "ventureId": null,
-      "kind": "blocked"
     }
   ],
-  "logTotal": 614
+  "logTotal": 615
 }
