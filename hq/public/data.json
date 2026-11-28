@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-28T10:12:05.613Z",
+  "builtAt": "2026-11-28T10:13:08.284Z",
   "report": {
     "date": "2026-11-28",
     "text": "# Morning report, 2026-11-28\n\nBuilt from the company's books at 07:45 India time, covering the last 24 hours.\n\n## What each team did\n- Leadership: Kabir: Close the day: lights on, Research blocked on search volume credits until about 22:14 UTC, 0 open ideas, 0 pods, Rs 0 revenue; agents idle; Arya: Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed,...; Kabir: Standup 02:12 UTC: health ok, watchdog ran 01:59 (success), no platform alerts, no owner-chat issue, no comments on decided issues 16, 18...\n- Strategy and Data: Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, daily allowance refreshes in about 20 hours,...; Meera (blocked): Blocked: Firecrawl still out of credits (DataForSEO via Alexandria refused before running, allowance refreshes about 22:14 UTC); no other...; Meera (blocked): Blocked: Firecrawl still out of credits (allowance resets 2026-11-28 22:14 UTC), so DataForSEO via Alexandria cannot run; no Google Ads...\n- Product and Design: no work logged.\n- Engineering: Tara: Secret scan clean: no keys or tokens in tracked files; Neel: No live products to check; watchdog confirms HQ 200, data 200, CI success; Neel: Lights on: 0 live products to check; HQ data current; watchdog ran 00:59 UTC (success)\n- Growth, Sales and Support: Priya: No live venture and no open owner-chat issue, so no messages to handle\n- Finance, Legal and People: Nikhil: Revenue Rs 0 confirmed (ledger empty); no live product, no spend; Nikhil: Books: revenue Rs 0, costs Rs 0 (company/ledger.json empty); no rate recorded, no live product needs one; Nikhil: Revenue confirmed Rs 0 (no live product, ledger unchanged)\n- Venture leads: Kabeer on rfi-log: rfi-log validated: 5 new sourced signals (2 GC forum asks, r/ConstructionManagers thread, Knowify USD 99 a month, Payhip USD 19 kit);...; Anika on tc-desk: Blocked: needs reviewers: research, sizing, ceo; Anika on tc-desk: Validated with 8 sourced signals: paid tools from USD 69 to 99 a month with capped free tiers, TCs paid USD 300 to 750 a file, Fiverr TC...\n\n## Money\n- Revenue to date Rs 0, in the last 24 hours Rs 0. Costs to date Rs 0. Net Rs 0.\n\n## Ideas\n- 28 killed.\n- Live products: none yet.\n- Moved in the last 24 hours: Change Order Form: killed, Consignor Ledger: killed, RFI Log: killed, Closing Desk: killed, Work Order Maker: killed.\n\n## Decisions the agents made\n- Staff only ideas whose page one our own pages can beat: Add a page one rankability check to the screen before staffing, so pods go only to ideas whose buyer terms are held by forums, PDFs, thin templates or small....\n\n## Needs you\n- Let a free tool go live as a 14 day test before the business case (https://github.com/Anchit-AI-Hustle/virtual-company/issues/21)\n\n## Platform\n- All checks passing.\n\n"
@@ -1591,16 +1591,16 @@
       "color": "#14213D",
       "trait": "Decisive. Kills weak ideas fast and backs the one with proof.",
       "charter": "agents/ceo.md",
-      "state": "idle",
-      "task": "Pods stay empty: 0 of 22 new ideas cleared the screen (closest, nutrition labels, loses to a free recipe calculator at number 1). No new decision needed; ap-company-6 (issue 21) still waits on the owner",
-      "since": "2026-11-28T09:32:33.418Z",
+      "state": "done",
+      "task": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "since": "2026-11-28T10:13:07.803Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:32:20.788Z",
-        "action": "Pods stay empty: 0 of 22 new ideas cleared the screen (closest, nutrition labels, loses to a free recipe calculator at number 1). No new decision needed; ap-company-6 (issue 21) still waits on the owner"
+        "at": "2026-11-28T10:13:07.803Z",
+        "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner"
       },
-      "actions": 109
+      "actions": 110
     },
     {
       "id": "ops",
@@ -1629,16 +1629,16 @@
       "color": "#6B4E9B",
       "trait": "No link, no claim. Hunts for people already paying.",
       "charter": "agents/research.md",
-      "state": "idle",
-      "task": "Screened 22 new ideas (seodata.dev US and India, WebSearch page one, 28 Nov): none passed. Free tool closes the gap: nutrition label from recipe (5,400 searches, ReciPal USD 59 a month recipal.com, page one weak, but GoVisually free recipe calculator ranks first govisually.com/free-tools/nutrition-label), meesho label crop India (49,500, free croppers pdfcropper.in, tools4free.in), HVAC load calc (2,900, Lennox free Manual J lennoxpros.com; ACCA standard, Legal flag), pallet calculator (1,300, free 3D calculators omnicalculator.com/other/pallet). Vendors hold page one: campground reservations (2,170, Capterra and Campspot, 0 of 10 weak), PTO tracker (1,000, HR vendors and power take-off results). Wrong intent: certificate generator 3,600 is SSL developer intent, estate sale software 480 vs shopper terms. Under 1,000: gang sheet builder, volunteer hours, calculator builder, KDP interiors, container load plan, reseller inventory, crosslisting, guard tour, cemetery software, changelog, size chart, app store screenshots, backflow reports, PF ECR file. Firecrawl out of credits (DataForSEO and second page one source not run) until about 22:14 UTC",
-      "since": "2026-11-28T09:32:33.533Z",
+      "state": "blocked",
+      "task": "Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:20 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
+      "since": "2026-11-28T10:13:07.763Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:32:20.621Z",
-        "action": "Screened 22 new ideas (seodata.dev US and India, WebSearch page one, 28 Nov): none passed. Free tool closes the gap: nutrition label from recipe (5,400 searches, ReciPal USD 59 a month recipal.com, page one weak, but GoVisually free recipe calculator ranks first govisually.com/free-tools/nutrition-label), meesho label crop India (49,500, free croppers pdfcropper.in, tools4free.in), HVAC load calc (2,900, Lennox free Manual J lennoxpros.com; ACCA standard, Legal flag), pallet calculator (1,300, free 3D calculators omnicalculator.com/other/pallet). Vendors hold page one: campground reservations (2,170, Capterra and Campspot, 0 of 10 weak), PTO tracker (1,000, HR vendors and power take-off results). Wrong intent: certificate generator 3,600 is SSL developer intent, estate sale software 480 vs shopper terms. Under 1,000: gang sheet builder, volunteer hours, calculator builder, KDP interiors, container load plan, reseller inventory, crosslisting, guard tour, cemetery software, changelog, size chart, app store screenshots, backflow reports, PF ECR file. Firecrawl out of credits (DataForSEO and second page one source not run) until about 22:14 UTC"
+        "at": "2026-11-28T10:13:07.763Z",
+        "action": "Blocked: Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:20 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle"
       },
-      "actions": 106
+      "actions": 107
     },
     {
       "id": "data",
@@ -1781,16 +1781,16 @@
       "color": "#167A6A",
       "trait": "No secrets in code, no personal data in public.",
       "charter": "agents/security.md",
-      "state": "idle",
-      "task": "Secret scan of the repo: no keys, tokens or private keys found",
-      "since": "2026-11-28T09:32:33.953Z",
+      "state": "done",
+      "task": "Secret scan of the repo: no keys or tokens found",
+      "since": "2026-11-28T10:13:07.728Z",
       "ventureId": null,
       "ventureTitle": null,
       "last": {
-        "at": "2026-11-28T09:12:47.541Z",
-        "action": "Secret scan of the repo: no keys, tokens or private keys found"
+        "at": "2026-11-28T10:13:07.728Z",
+        "action": "Secret scan of the repo: no keys or tokens found"
       },
-      "actions": 50
+      "actions": 51
     },
     {
       "id": "growth",
@@ -2963,6 +2963,27 @@
   },
   "log": [
     {
+      "at": "2026-11-28T10:13:07.803Z",
+      "agent": "ceo",
+      "action": "Pods stay empty: 0 open ideas and none can be screened until search volume tools return at about 22:14 UTC; no new decision needed, ap-company-6 (issue 21) still waits on the owner",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
+      "at": "2026-11-28T10:13:07.763Z",
+      "agent": "research",
+      "action": "Blocked: Cannot screen a new batch: seodata.dev hit its free daily limit (rate_limited at 10:20 UTC) and Firecrawl is out of credits until about 22:14 UTC; no other sourced search volume tool the company may use without the owner's accounts, so no idea can show 1,000 searches this cycle",
+      "ventureId": null,
+      "kind": "blocked"
+    },
+    {
+      "at": "2026-11-28T10:13:07.728Z",
+      "agent": "security",
+      "action": "Secret scan of the repo: no keys or tokens found",
+      "ventureId": null,
+      "kind": "done"
+    },
+    {
       "at": "2026-11-28T10:12:05.110Z",
       "agent": "devops",
       "action": "Health check: health.json ok, 0 platform alerts, watchdog last ran 10:00 UTC, no live products to check",
@@ -3500,28 +3521,7 @@
       "action": "Blocked: Firecrawl still out of credits (DataForSEO search volume refused before running, allowance refreshes in about 18 hours, around 22:14 UTC); no other sourced search volume tool the company may use without the owner's accounts, so no idea can pass the 1,000 searches screen this cycle",
       "ventureId": null,
       "kind": "blocked"
-    },
-    {
-      "at": "2026-11-28T04:13:02.363Z",
-      "agent": "research",
-      "action": "Started: Check whether search volume tools are back to screen a new batch",
-      "ventureId": null,
-      "kind": "start"
-    },
-    {
-      "at": "2026-11-28T04:13:02.320Z",
-      "agent": "security",
-      "action": "Secret scan clean (no keys, tokens or private keys in tracked files)",
-      "ventureId": null,
-      "kind": "done"
-    },
-    {
-      "at": "2026-11-28T04:13:02.273Z",
-      "agent": "security",
-      "action": "Started: Scan repo for secrets",
-      "ventureId": null,
-      "kind": "start"
     }
   ],
-  "logTotal": 631
+  "logTotal": 634
 }
